@@ -1,0 +1,530 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "nzlii-nzacc-2018-82-html",
+  "source": "BAILII",
+  "jurisdiction": "UK",
+  "court": "Unknown",
+  "decision_date": "2018-05-31",
+  "url": "https://example.com/nzlii-nzacc-2018-82-html",
+  "case_name": "Osborn v Accident Compensation Corporation (Medical Mishap) [2018] NZACC 82 (31 May 2018)",
+  "neutral_citation": null,
+  "clinical_domain": "OBSTETRICS_GYNAECOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Osborn v Accident Compensation Corporation (Medical Mishap) [2018] NZACC 82 (31 May 2018). Medical malpractice case involving obstetrics gynaecology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "The Committee considers that this baby's problems began some considerable time before his mother was admitted to hospital.",
+      "paragraph_ref": "23",
+      "speaker": "Committee finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Associate Professor Westgate considered the possibility that the decision to attempt to induce labour with syntocinon could have worsened the outcome.",
+      "paragraph_ref": "8",
+      "speaker": "Associate Professor Westgate"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "LEGAL_FINDING",
+      "text": "The appellant\u2019s concern appears to be that the judgment under appeal might be seen as endorsing a proposition that personal injury suffered by a patient in a hospital or a professional healthcare environment might merely by reason of the incidental environment be entitled to compensation on the grounds of medical mishap.",
+      "paragraph_ref": "130",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "COURT_REASONING",
+      "text": "The legal approach to causation is different from the medical or scientific approach.",
+      "paragraph_ref": "66",
+      "speaker": "Court reasoning"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "Joanne was transferred to the Delivery Suite at 1900 and a syntocinon infusion was commenced shortly thereafter.",
+      "paragraph_ref": "18",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "MEDICAL_RECORD",
+      "text": "The CTG tracing in the Assessment Unit was abnormal, showing a baseline of between 150 and 160 bpm with reduced variability and no accelerations.",
+      "paragraph_ref": "11",
+      "speaker": "Medical record"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "EXPERT_TESTIMONY",
+      "text": "The experts agree Cory had sustained significant damage by the time of the first fetal heart rate recording.",
+      "paragraph_ref": "258",
+      "speaker": "Expert consensus"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "LEGAL_FINDING",
+      "text": "Birth asphyxia, possible brain damage and complications allegedly as a result of delay in delivery is not considered to have been due to a failure by the registered health professional to observe a standard of care and skill that was reasonable in the circumstances.",
+      "paragraph_ref": "125",
+      "speaker": "Committee finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "COURT_REASONING",
+      "text": "The different methodology used under the legal method means the Court\u2019s assessment of causation can differ from the expert opinion.",
+      "paragraph_ref": "67",
+      "speaker": "Court reasoning"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "FACTUAL_FINDING",
+      "text": "Cory was delivered covered in \u201cmoderately thick\u201d meconium and weighed 2980 grams.",
+      "paragraph_ref": "26",
+      "speaker": "Court finding"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "male",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Reduced fetal movements and oedema",
+      "history_of_present_illness": "Joanne Osborn, pregnant with her first child, reported reduced fetal movements and leg oedema.",
+      "past_medical_history": [
+        "Upper respiratory tract infections",
+        "Rapid weight gain",
+        "Indications suggestive of pre-eclampsia"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "125/85",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "abdomen": "Engaged fetal head with fetal heart heard"
+        }
+      },
+      "initial_working_problem": "Possible pre-eclampsia and reduced fetal movements",
+      "known_constraints": null,
+      "initial_differential": [
+        "Pre-eclampsia",
+        "Fetal distress"
+      ],
+      "critical_findings": [
+        "Abnormal CTG with reduced variability and decelerations"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E005",
+        "E006",
+        "E007"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "CTG",
+        "description": "Cardiotocographic fetal heart-rate tracing",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Abnormal CTG with baseline 150-160 bpm, reduced variability, no accelerations, and late variable decelerations",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates fetal distress",
+          "decision_impact": "Should prompt immediate delivery consideration",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "IMAGING",
+        "name": "Cranial Ultrasound",
+        "description": "Ultrasound of the brain",
+        "available_phase": "postop",
+        "reveal": {
+          "result_summary": "No structural abnormality, effaced ventricles suggesting generalized edema",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates possible hypoxic injury",
+          "decision_impact": "Supports diagnosis of hypoxic ischemic encephalopathy",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E029"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with reduced fetal movements and oedema",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Patient assessed by GP and referred to hospital",
+            "timestamp": "20 January 1992",
+            "evidence_ids": [
+              "E005"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Hospital Assessment",
+        "description": "Assessment and monitoring in hospital",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "CTG monitoring commenced",
+            "timestamp": "20 January 1992",
+            "evidence_ids": [
+              "E006"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "decision",
+        "name": "Decision to Induce",
+        "description": "Decision made to attempt induction of labor",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Syntocinon induction commenced",
+            "timestamp": "20 January 1992",
+            "evidence_ids": [
+              "E018"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "procedure",
+        "name": "Emergency Caesarean Section",
+        "description": "Caesarean section performed after failed induction",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Caesarean section performed",
+            "timestamp": "20 January 1992",
+            "evidence_ids": [
+              "E025"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient in hospital with abnormal CTG",
+        "prompt": "What should be the next step in management?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Proceed with emergency caesarean section",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Immediate delivery is indicated due to fetal distress"
+          },
+          {
+            "option_id": "B",
+            "description": "Attempt induction of labor with syntocinon",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Induction is inappropriate given the CTG findings"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Induction with syntocinon was attempted",
+          "reasoning_stated": "Induction was chosen despite CTG abnormalities",
+          "evidence_ids": [
+            "E005",
+            "E018"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Emergency caesarean section should have been performed",
+          "standard_of_care_basis": "Expert evidence indicated immediate delivery was necessary",
+          "evidence_ids": [
+            "E008",
+            "E018"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Induction was inappropriate given the CTG findings indicating fetal distress",
+          "what_should_have_happened": "Immediate caesarean section should have been performed",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E008",
+            "E018"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Cory was born with severe brain injury and required resuscitation",
+        "severity": "PERMANENT_SEVERE_DISABILITY",
+        "long_term_effects": "Cerebral palsy, severe developmental delay",
+        "evidence_ids": [
+          "E008",
+          "E010"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Failure to perform emergency cesarean section",
+          "Causation established - delay in delivery contributed to injury"
+        ],
+        "evidence_ids": [
+          "E008",
+          "E010"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to perform emergency cesarean section",
+        "counterfactual": "Immediate delivery would have prevented further injury",
+        "evidence_ids": [
+          "E008",
+          "E010"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "20 January 1992",
+        "event": "Patient presents with reduced fetal movements",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "timestamp": "20 January 1992",
+        "event": "CTG monitoring commenced",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "timestamp": "20 January 1992",
+        "event": "Syntocinon induction commenced",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E018"
+        ]
+      },
+      {
+        "timestamp": "20 January 1992",
+        "event": "Caesarean section performed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E025"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Patient admitted for induction of labor",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "CTG",
+        "date": "20 January 1992",
+        "result": "Abnormal with reduced variability and decelerations",
+        "interpretation": null,
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "test_name": "Cranial Ultrasound",
+        "date": "21 January 1992",
+        "result": "No structural abnormality, effaced ventricles",
+        "interpretation": null,
+        "evidence_ids": [
+          "E029"
+        ]
+      },
+      {
+        "test_name": "CTG Monitoring",
+        "date": "Date not specified in judgment",
+        "result": "Abnormal with decelerations",
+        "interpretation": null,
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Hypoxic ischemic encephalopathy",
+        "when_made": "Post-delivery",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E032"
+        ]
+      },
+      {
+        "diagnosis": "Fetal distress",
+        "when_made": "Date not specified in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Emergency caesarean section",
+        "date": "20 January 1992",
+        "provider": null,
+        "outcome": "Cory delivered with complications",
+        "evidence_ids": [
+          "E025"
+        ]
+      },
+      {
+        "treatment": "Syntocinon infusion",
+        "date": "Date not specified in judgment",
+        "provider": null,
+        "outcome": "Increased fetal distress",
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Cerebral palsy",
+        "when_occurred": "Post-delivery",
+        "severity": "Moderately severe",
+        "evidence_ids": [
+          "E033"
+        ]
+      },
+      {
+        "complication": "Severe brain injury",
+        "when_occurred": "At birth",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E008",
+          "E010"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Delay in decision for caesarean section",
+        "against": "Medical team",
+        "found_proven": false,
+        "evidence_ids": [
+          "E127"
+        ]
+      },
+      {
+        "allegation": "Failure to perform emergency cesarean section",
+        "against": "Defendant obstetrician",
+        "found_proven": true,
+        "evidence_ids": [
+          "E008"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Management was appropriate",
+        "legal_significance": "No breach of duty",
+        "evidence_ids": [
+          "E127"
+        ]
+      },
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E008"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "TREATMENT_PROCEDURE_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.03289473684210526,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 08:55:20.667120",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

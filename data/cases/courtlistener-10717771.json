@@ -1,0 +1,801 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10717771",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2025-10-21",
+  "url": "https://example.com/courtlistener-10717771",
+  "case_name": "SanMiguel v. Grimaldi",
+  "neutral_citation": null,
+  "clinical_domain": "OBSTETRICS_GYNAECOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "SanMiguel v. Grimaldi. Medical malpractice case involving obstetrics gynaecology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "LEGAL_FINDING",
+      "text": "The Appellate Division modified Supreme Court's order to grant St. Barnabas's separate motion for summary judgment dismissing a cause of action not at issue on this appeal",
+      "paragraph_ref": "15",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "LEGAL_FINDING",
+      "text": "Dr. Grimaldi and St. Barnabas appeal only from so much of the Appellate Division order as affirmed Supreme Court's denial of Dr. Grimaldi's motion for summary judgment dismissing plaintiff's fourth cause of action.",
+      "paragraph_ref": "16",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Expert testimony is also required to establish a prima facie case of lack of informed consent",
+      "paragraph_ref": "18",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "LEGAL_FINDING",
+      "text": "Expansive liability for lack-of-informed-consent claims would be at odds with the purpose of the governing statutory scheme",
+      "paragraph_ref": "19",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "Ms. SanMiguel voluntarily dismissed her medical malpractice claims, leaving only her claim for lack of informed consent before us on this appeal.",
+      "paragraph_ref": "27",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "COURT_REASONING",
+      "text": "The majority's focus on the relative recency of Sheppard-Mobley, decided 20 years ago, as a reason not to overturn it is inconsistent with the Court's approach to stare decisis",
+      "paragraph_ref": "26",
+      "speaker": "Court finding"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Admitted for induction of labor",
+      "history_of_present_illness": "Patient admitted to St. Barnabas Hospital after not going into labor by due date.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "abdomen": "Examination mentioned but findings not specified"
+        }
+      },
+      "initial_working_problem": "Induction of labor",
+      "known_constraints": null,
+      "initial_differential": [
+        "Not documented in judgment"
+      ],
+      "critical_findings": [
+        "Not documented in judgment"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E005"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSENT_DISCUSSION",
+        "name": "Informed Consent for Vacuum Extraction",
+        "description": "Discussion of risks, benefits, and alternatives for vacuum extraction",
+        "available_phase": "decision",
+        "reveal": {
+          "result_summary": "Not documented in judgment",
+          "detailed_findings": null,
+          "clinical_significance": "Critical for informed consent claim",
+          "decision_impact": "Determines if informed consent was obtained",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Hospital Admission",
+        "description": "Patient admitted for induction of labor",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Patient admitted to St. Barnabas Hospital",
+            "timestamp": "July 1, 2012",
+            "evidence_ids": [
+              "E005"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "decision",
+        "name": "Delivery Attempt",
+        "description": "Attempted delivery via vacuum extraction",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Attempted vacuum extraction",
+            "timestamp": "July 3, 2012",
+            "evidence_ids": [
+              "E005"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "decision",
+        "name": "Labor and Delivery",
+        "description": "Prolonged labor with failed vacuum extractions leading to emergency cesarean section",
+        "duration": "42 hours",
+        "key_events": [
+          {
+            "event": "Failed vacuum extractions",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E002"
+            ]
+          },
+          {
+            "event": "Emergency cesarean section",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "procedure",
+        "name": "Delivery Attempt",
+        "description": "Attempted vacuum extraction followed by emergency C-section",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Vacuum extraction attempted",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E001",
+              "E002"
+            ]
+          },
+          {
+            "event": "Emergency C-section performed",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E001",
+              "E002"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "decision",
+        "clinical_context": "Attempt to deliver baby via vacuum extraction",
+        "prompt": "Was informed consent obtained for the vacuum extraction procedure?",
+        "action_type": "DISCLOSE_ALTERNATIVES",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Obtain informed consent with full disclosure",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard practice to ensure patient is informed"
+          },
+          {
+            "option_id": "B",
+            "description": "Proceed without obtaining informed consent",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Lack of documentation of informed consent"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant proceeded without documented informed consent",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E005"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Informed consent should have been obtained",
+          "standard_of_care_basis": "Legal requirement for informed consent",
+          "evidence_ids": [
+            "E003"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to obtain informed consent is a breach of duty",
+          "what_should_have_happened": "Informed consent should have been documented",
+          "legal_standard_applied": "Informed consent law",
+          "evidence_ids": [
+            "E003",
+            "E005"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Not documented in judgment",
+        "severity": "Not documented in judgment",
+        "long_term_effects": "Not documented in judgment",
+        "evidence_ids": []
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Breach of duty in failing to obtain informed consent",
+          "Informed consent is a form of medical malpractice"
+        ],
+        "evidence_ids": [
+          "E003",
+          "E005"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": false,
+        "point_of_failure": "Failure to obtain informed consent",
+        "counterfactual": "Informed consent would have provided patient with decision-making autonomy",
+        "evidence_ids": [
+          "E003",
+          "E005"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "July 1, 2012",
+        "event": "Patient admitted to St. Barnabas Hospital",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "timestamp": "July 3, 2012",
+        "event": "Attempted vacuum extraction",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Patient admitted for labor induction",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "July 1, 2012",
+        "event": "Patient admitted to St. Barnabas Hospital",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "July 3, 2012",
+        "event": "Attempted vacuum extraction and emergency C-section",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001",
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Patient admitted for labor induction",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "timestamp": "July 1, 2012",
+        "event": "Patient admitted to St. Barnabas Hospital",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E070"
+        ]
+      },
+      {
+        "timestamp": "July 3, 2012",
+        "event": "Attempted vacuum extraction",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E070"
+        ]
+      },
+      {
+        "timestamp": "July 3, 2012",
+        "event": "Emergency C-section performed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E070"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Patient admitted to hospital for labor induction",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "timestamp": "July 1, 2012",
+        "event": "Patient admitted to St. Barnabas Hospital",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E099"
+        ]
+      },
+      {
+        "timestamp": "July 3, 2012",
+        "event": "Attempted vacuum extraction",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E099"
+        ]
+      },
+      {
+        "timestamp": "July 3, 2012",
+        "event": "Emergency C-section performed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E099"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Patient admitted to hospital for labor induction",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Patient admitted for delivery",
+        "actor": null,
+        "location": null,
+        "evidence_ids": []
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "X-ray",
+        "date": "Date not specified in judgment",
+        "result": "Imaging performed but findings not detailed in judgment",
+        "interpretation": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "test_name": "X-ray",
+        "date": "Date not specified in judgment",
+        "result": "Not documented in judgment",
+        "interpretation": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "test_name": "X-ray",
+        "date": "Date not specified in judgment",
+        "result": "Not documented in judgment",
+        "interpretation": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "test_name": "X-ray",
+        "date": "Date not specified in judgment",
+        "result": "Not documented in judgment",
+        "interpretation": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Neonatal encephalopathy",
+        "when_made": "Date not specified in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "diagnosis": "Neonatal encephalopathy",
+        "when_made": "Post-delivery",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "diagnosis": "Neonatal encephalopathy",
+        "when_made": "Date not specified in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "diagnosis": "Neonatal encephalopathy",
+        "when_made": "Date not specified in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Emergency C-section",
+        "date": "July 3, 2012",
+        "provider": null,
+        "outcome": "Infant delivered alive",
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "treatment": "Emergency cesarean section",
+        "date": "Date not specified in judgment",
+        "provider": null,
+        "outcome": "Infant born with severe impairments",
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "treatment": "Emergency C-section",
+        "date": "July 3, 2012",
+        "provider": null,
+        "outcome": "Infant delivered in serious condition",
+        "evidence_ids": [
+          "E001",
+          "E002"
+        ]
+      },
+      {
+        "treatment": "Emergency cesarean section",
+        "date": "Date not specified in judgment",
+        "provider": null,
+        "outcome": "Infant delivered with severe impairment",
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "treatment": "Emergency C-section",
+        "date": "July 3, 2012",
+        "provider": null,
+        "outcome": "Infant delivered alive",
+        "evidence_ids": [
+          "E070"
+        ]
+      },
+      {
+        "treatment": "Emergency cesarean section",
+        "date": "Date not specified in judgment",
+        "provider": null,
+        "outcome": "Infant born with severe impairments",
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "treatment": "Emergency cesarean section",
+        "date": "Date not specified in judgment",
+        "provider": null,
+        "outcome": "Infant delivered with severe impairments",
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Infant in serious condition, died eight days later",
+        "when_occurred": "July 11, 2012",
+        "severity": "Fatal",
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "complication": "Severe neurological impairments",
+        "when_occurred": "Immediately after birth",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "complication": "Infant death",
+        "when_occurred": "Eight days after birth",
+        "severity": "Fatal",
+        "evidence_ids": [
+          "E001",
+          "E002"
+        ]
+      },
+      {
+        "complication": "Severe neurological impairment",
+        "when_occurred": "Immediately post-delivery",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "complication": "Infant death",
+        "when_occurred": "Eight days after birth",
+        "severity": "Fatal",
+        "evidence_ids": [
+          "E070"
+        ]
+      },
+      {
+        "complication": "Severe neurological impairments",
+        "when_occurred": "Immediately post-delivery",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "complication": "Severe neurological impairments",
+        "when_occurred": "Immediately post-delivery",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Lack of informed consent for vacuum extraction",
+        "against": "Dr. Grimaldi",
+        "found_proven": false,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "allegation": "Failure to perform timely cesarean section",
+        "against": "Dr. Grimaldi",
+        "found_proven": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "allegation": "Lack of informed consent for vacuum extraction",
+        "against": "Dr. Grimaldi",
+        "found_proven": false,
+        "evidence_ids": [
+          "E001",
+          "E002",
+          "E005"
+        ]
+      },
+      {
+        "allegation": "Failure to timely perform cesarean section",
+        "against": "Dr. Grimaldi",
+        "found_proven": false,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "allegation": "Lack of informed consent for vacuum extraction",
+        "against": "Dr. Meryl Y. Grimaldi",
+        "found_proven": false,
+        "evidence_ids": [
+          "E070"
+        ]
+      },
+      {
+        "allegation": "Failure to timely perform cesarean section",
+        "against": "Dr. Grimaldi",
+        "found_proven": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "allegation": "Lack of informed consent for vacuum extraction",
+        "against": "Dr. Grimaldi",
+        "found_proven": false,
+        "evidence_ids": [
+          "E099"
+        ]
+      },
+      {
+        "allegation": "Failure to timely perform cesarean section",
+        "against": "Dr. Grimaldi",
+        "found_proven": false,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "allegation": "Failure to obtain informed consent",
+        "against": "Defendant doctor",
+        "found_proven": true,
+        "evidence_ids": [
+          "E003",
+          "E005"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Claim for lack of informed consent dismissed",
+        "legal_significance": "Emotional damages not recoverable",
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "finding": "Defendant breached duty of care by delaying cesarean section",
+        "legal_significance": "Breach led to neonatal distress",
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "finding": "Lack of informed consent claim dismissed",
+        "legal_significance": "Emotional damages not recoverable",
+        "evidence_ids": [
+          "E001",
+          "E002",
+          "E005"
+        ]
+      },
+      {
+        "finding": "No breach of duty in timing of cesarean section",
+        "legal_significance": "No liability found",
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "finding": "Lack of informed consent claim dismissed",
+        "legal_significance": "Sheppard-Mobley precedent applied",
+        "evidence_ids": [
+          "E070"
+        ]
+      },
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Failure to perform timely C-section",
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "finding": "Lack of informed consent claim dismissed",
+        "legal_significance": "Emotional damages not recoverable",
+        "evidence_ids": [
+          "E099"
+        ]
+      },
+      {
+        "finding": "No breach of duty in timing of cesarean section",
+        "legal_significance": "No liability found",
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "finding": "Defendant breached duty of care by failing to obtain informed consent",
+        "legal_significance": "Lack of informed consent is a form of medical malpractice",
+        "evidence_ids": [
+          "E003",
+          "E005"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "INFORMED_CONSENT",
+      "DIAGNOSIS_ERROR",
+      "TREATMENT_PROCEDURE_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.05128205128205128,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 09:17:04.398382",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

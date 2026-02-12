@@ -1,0 +1,358 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10586750",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2025-05-14",
+  "url": "https://example.com/courtlistener-10586750",
+  "case_name": "Logan v. Waterford Operations, LLC",
+  "neutral_citation": null,
+  "clinical_domain": "ONCOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Logan v. Waterford Operations, LLC. Medical malpractice case involving oncology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Plaintiff\u2019s mother was a resident at defendant\u2019s skilled nursing facility in Medford. On May 18, 2019, plaintiff\u2019s mother was taken from the facility to a hospital, where she died on June 3, 2019.",
+      "paragraph_ref": "5",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Plaintiff visited her mother daily. Plaintiff was unable to visit between May 13 and May 18, 2019, because her mother had an infection.",
+      "paragraph_ref": "2018",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "When plaintiff visited on May 18, 2019, she observed staff slapping her mother and yelling her mother\u2019s name because she wasn\u2019t waking up.",
+      "paragraph_ref": "2018",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "Her mother was \u201cmotionless with black feet and super, super cold.\u201d Her \u201cface was gray and her lips were blue.\u201d",
+      "paragraph_ref": "2018",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "A physician told plaintiff to create a timeline of events, and that her mother had been administered two doses of Narcan because she was \u201coverdosed and unconscious.\u201d",
+      "paragraph_ref": "2018",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "On or before May 23, 2019, plaintiff learned that staff at the nursing facility had failed to act on \u201cbad lab results.\u201d",
+      "paragraph_ref": "2018",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "LEGAL_FINDING",
+      "text": "We affirm the trial court\u2019s grant of summary judgment in favor of defendant.",
+      "paragraph_ref": "5",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "LEGAL_FINDING",
+      "text": "Plaintiff\u2019s wrongful death action, which was filed on June 3, 2022, was time-barred.",
+      "paragraph_ref": "20",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Unresponsive with blue hue",
+      "history_of_present_illness": "Patient was found motionless with black feet, super cold, gray face, and blue lips. Staff were slapping and yelling at her to wake her up.",
+      "past_medical_history": [
+        "Stroke"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "general": "Motionless with black feet, super cold, gray face, and blue lips"
+        }
+      },
+      "initial_working_problem": "Unresponsive state with possible overdose",
+      "known_constraints": null,
+      "initial_differential": [
+        "Overdose",
+        "Sepsis",
+        "Stroke"
+      ],
+      "critical_findings": [
+        "Unresponsive",
+        "Blue hue",
+        "Cold extremities"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E003",
+        "E004"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "LAB",
+        "name": "Lab Results",
+        "description": "Lab results indicating possible kidney failure",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not documented in judgment",
+          "detailed_findings": null,
+          "clinical_significance": "Indicated possible kidney failure",
+          "decision_impact": "Should have prompted immediate medical intervention",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient found unresponsive at nursing facility",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Patient found unresponsive with blue hue",
+            "timestamp": "May 18, 2019",
+            "evidence_ids": [
+              "E003",
+              "E004"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient found unresponsive with signs of possible overdose",
+        "prompt": "What immediate action should be taken?",
+        "action_type": "ESCALATE_CARE",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Call for emergency medical services immediately",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Immediate medical intervention required for unresponsive state"
+          },
+          {
+            "option_id": "B",
+            "description": "Attempt to wake patient by slapping and yelling",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Inappropriate and ineffective for medical emergency"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Staff attempted to wake patient by slapping and yelling",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E003"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Emergency services should have been called immediately",
+          "standard_of_care_basis": "Immediate medical intervention is standard for unresponsive patients",
+          "evidence_ids": [
+            "E003",
+            "E004"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to provide immediate medical care",
+          "what_should_have_happened": "Emergency services should have been called",
+          "legal_standard_applied": "Standard of care for unresponsive patients",
+          "evidence_ids": [
+            "E003",
+            "E004"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient died in hospital after being found unresponsive",
+        "severity": "FATAL",
+        "long_term_effects": "Not applicable",
+        "evidence_ids": [
+          "E001",
+          "E005"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "None",
+        "key_findings": [
+          "Action was time-barred",
+          "Plaintiff had actual knowledge of harm by May 23, 2019"
+        ],
+        "evidence_ids": [
+          "E007",
+          "E008"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Failure to provide immediate medical care",
+        "counterfactual": "Immediate medical intervention could have altered outcome",
+        "evidence_ids": [
+          "E003",
+          "E004"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "May 18, 2019",
+        "event": "Patient found unresponsive at nursing facility",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003",
+          "E004"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Lab Results",
+        "date": "Not documented in judgment",
+        "result": "Indicated possible kidney failure",
+        "interpretation": null,
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Acute kidney failure",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Administered Narcan",
+        "date": "May 18, 2019",
+        "provider": null,
+        "outcome": "Patient remained unresponsive",
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Death",
+        "when_occurred": "June 3, 2019",
+        "severity": "Fatal",
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to provide immediate medical care",
+        "against": "Nursing facility staff",
+        "found_proven": false,
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Action was time-barred",
+        "legal_significance": "Statute of limitations expired",
+        "evidence_ids": [
+          "E007",
+          "E008"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.38095238095238093,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 09:51:29.128895",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

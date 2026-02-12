@@ -1,0 +1,345 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10651488",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "1256-07-22",
+  "url": "https://example.com/courtlistener-10651488",
+  "case_name": "Potter v. South",
+  "neutral_citation": null,
+  "clinical_domain": "PSYCHIATRY",
+  "outcome_severity": "TEMPORARY_HARM",
+  "summary": {
+    "brief": "Potter v. South. Medical malpractice case involving psychiatry.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Kevin Potter suffered injuries related to a medical procedure\u2014a celiac plexus block\u2014performed by Dr. South on January 9, 2019, at Mercy Health.",
+      "paragraph_ref": "23",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "LEGAL_FINDING",
+      "text": "The Butler County Court of Common Pleas granted summary judgment to the Defendants.",
+      "paragraph_ref": "17",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "LEGAL_FINDING",
+      "text": "The trial court did not err by granting summary judgment to the Defendants.",
+      "paragraph_ref": "332",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "The Potters attached to their complaint an 'Affidavit of Merit' signed by Dr. Vladimir Kushnir, dated June 2, 2020.",
+      "paragraph_ref": "25",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "LEGAL_FINDING",
+      "text": "We overrule the Potters' sole assignment of error.",
+      "paragraph_ref": "330",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "The Potters failed to disclose any expert witnesses by the court's deadline.",
+      "paragraph_ref": "62",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "COURT_REASONING",
+      "text": "Summary judgment is a procedural device used to terminate litigation when there is no genuine issue of any material fact.",
+      "paragraph_ref": "132",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "FACTUAL_FINDING",
+      "text": "The Potters' new trial counsel did not appear for the hearing but arranged for substitute counsel to appear in his place.",
+      "paragraph_ref": "84",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "LEGAL_FINDING",
+      "text": "The trial court correctly granted summary judgment to the Defendants.",
+      "paragraph_ref": "279",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "FACTUAL_FINDING",
+      "text": "The Potters again attached Dr. Kushnir's June 2, 2020 Affidavit of Merit to the new complaint.",
+      "paragraph_ref": "41",
+      "speaker": "Court finding"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "unknown",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Not documented in judgment",
+      "history_of_present_illness": "Kevin Potter suffered injuries related to a medical procedure\u2014a celiac plexus block\u2014performed by Dr. South on January 9, 2019, at Mercy Health.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "system": "Examination mentioned but findings not specified"
+        }
+      },
+      "initial_working_problem": "Not documented in judgment",
+      "known_constraints": null,
+      "initial_differential": [],
+      "critical_findings": [],
+      "urgency_level": "Not documented in judgment",
+      "evidence_ids": [
+        "E001"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSULT_NOTE",
+        "name": "Affidavit of Merit",
+        "description": "Affidavit of Merit signed by Dr. Vladimir Kushnir",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Affidavit of Merit attached to complaint",
+          "detailed_findings": null,
+          "clinical_significance": "Intended to support medical malpractice claim",
+          "decision_impact": "Required for establishing expert testimony",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E004",
+          "E010"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Filing",
+        "description": "Initial medical malpractice complaint filed",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Complaint filed with Affidavit of Merit",
+            "timestamp": "June 5, 2020",
+            "evidence_ids": [
+              "E004"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Pretrial Preparation",
+        "description": "Preparation for trial including expert disclosures",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Deadline for expert disclosure",
+            "timestamp": "November 13, 2023",
+            "evidence_ids": [
+              "E064"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Preparation for medical malpractice trial",
+        "prompt": "What should be done to prepare for trial?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Disclose expert witnesses and submit expert reports",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Necessary to establish standard of care and causation"
+          },
+          {
+            "option_id": "B",
+            "description": "Do not disclose expert witnesses or submit reports",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Failure to meet legal requirements for malpractice claim"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Failed to disclose expert witnesses and submit reports",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E006",
+            "E064"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Expert witnesses and reports should have been disclosed",
+          "standard_of_care_basis": "Required by Civ.R. 26(B)(7)",
+          "evidence_ids": [
+            "E064",
+            "E065"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to disclose expert witnesses and reports",
+          "what_should_have_happened": "Expert disclosure and reports were necessary",
+          "legal_standard_applied": "Civ.R. 26(B)(7) requirements",
+          "evidence_ids": [
+            "E064",
+            "E065"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Not documented in judgment",
+        "severity": "Not documented in judgment",
+        "long_term_effects": "Not documented in judgment",
+        "evidence_ids": []
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "None",
+        "key_findings": [
+          "Failure to disclose expert witnesses and reports",
+          "Summary judgment granted to Defendants"
+        ],
+        "evidence_ids": [
+          "E002",
+          "E003",
+          "E009"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Failure to disclose expert witnesses and reports",
+        "counterfactual": "Expert testimony was necessary to establish malpractice",
+        "evidence_ids": [
+          "E064",
+          "E065"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "June 5, 2020",
+        "event": "Initial complaint filed with Affidavit of Merit",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "timestamp": "November 13, 2023",
+        "event": "Deadline for expert disclosure",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E064"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [],
+    "treatments": [],
+    "complications": [],
+    "allegations": [
+      {
+        "allegation": "Failure to disclose expert witnesses and reports",
+        "against": "Potters",
+        "found_proven": true,
+        "evidence_ids": [
+          "E064",
+          "E065"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Summary judgment granted to Defendants",
+        "legal_significance": "Failure to meet expert disclosure requirements",
+        "evidence_ids": [
+          "E002",
+          "E003",
+          "E009"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.029154518950437316,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 08:05:40.973461",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

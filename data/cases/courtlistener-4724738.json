@@ -1,0 +1,618 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-4724738",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "0011-04-18",
+  "url": "https://example.com/courtlistener-4724738",
+  "case_name": "Jesus Virlar, M.D. and GMG Health Systems Associates, P.A., A/K/A and D/B/A Gonzaba Medical Group v. Jo Ann Puente",
+  "neutral_citation": null,
+  "clinical_domain": "PAEDIATRICS",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Jesus Virlar, M.D. and GMG Health Systems Associates, P.A., A/K/A and D/B/A Gonzaba Medical Group v. Jo Ann Puente. Medical malpractice case involving paediatrics.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "On November 28, 2011, Appellee Jo Ann Puente underwent 'Roux-en-Y' gastric bypass surgery, which was performed by Dr. Nilesh Patel.",
+      "paragraph_ref": "40",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "On January 16, 2012, Appellant Dr. Jesus Virlar, also a hospitalist and Gonzaba employee, assumed Puente\u2019s care and treated her until she was discharged on January 26, 2012.",
+      "paragraph_ref": "61",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Altman testified thiamine deficiency caused Puente to develop 'changes in her mental state, causing confusion [and] behavioral changes.'",
+      "paragraph_ref": "7",
+      "speaker": "Dr. David Joseph Altman"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "MEDICAL_RECORD",
+      "text": "Puente\u2019s medical records reflect that she was awake, alert, and able to follow commands. She did not have any 'deficit of movement' to her upper or lower extremities.",
+      "paragraph_ref": "53",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "LEGAL_FINDING",
+      "text": "The jury returned a verdict in favor of Puente; it found that Dr. Patel was 40% responsible;",
+      "paragraph_ref": "176",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "COURT_REASONING",
+      "text": "We affirm the judgment in part conditioned on a remittitur of damages in the amount of $8,000.00.",
+      "paragraph_ref": "1382",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Altman testified symptoms of Wernicke\u2019s encephalopathy include 'ataxia, or problems with coordination; confusion, which is also called encephalopathy; and eye movement abnormalities.'",
+      "paragraph_ref": "7",
+      "speaker": "Dr. David Joseph Altman"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "FACTUAL_FINDING",
+      "text": "On January 21, 2012, Puente\u2019s surgeon, Dr. Patel, wrote in her medical records to 'start TPN'; however, Puente was not started on TPN that day.",
+      "paragraph_ref": "92",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "LEGAL_FINDING",
+      "text": "We reverse the judgment in part and remand the cause for the trial court (1) to conduct an evidentiary hearing on any benefit received by Puente from C.P.\u2019s settlement with the hospital.",
+      "paragraph_ref": "1391",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "FACTUAL_FINDING",
+      "text": "Puente was put on a trial of clear fluids, but was not able to tolerate the fluids by mouth.",
+      "paragraph_ref": "90",
+      "speaker": "Court finding"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Vomiting and complications post-gastric bypass surgery",
+      "history_of_present_illness": "Patient underwent Roux-en-Y gastric bypass surgery on November 28, 2011, and began experiencing complications including nausea and vomiting on December 24, 2011. She reported vomiting solids but could keep liquids down. A dilation procedure was performed on January 11, 2012, for a suspected stricture.",
+      "past_medical_history": [
+        "Gastric bypass surgery"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "neurological": "Patient was awake, alert, and able to follow commands initially. Later developed dizziness, tingling in fingers, tight muscles, and unsteady gait.",
+          "gastrointestinal": "Vomiting, unable to tolerate clear fluids by mouth."
+        }
+      },
+      "initial_working_problem": "Post-surgical complications with suspected nutritional deficiencies",
+      "known_constraints": null,
+      "initial_differential": [
+        "Esophageal rupture",
+        "Pancreatitis",
+        "Dehydration"
+      ],
+      "critical_findings": [
+        "Vomiting",
+        "Unsteady gait",
+        "Dizziness"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002",
+        "E004",
+        "E010"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "LAB",
+        "name": "Thiamine Level",
+        "description": "Measurement of vitamin B-1 (thiamine) level",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Abnormally low thiamine level (30 nanomoles)",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates severe thiamine deficiency",
+          "decision_impact": "Should prompt immediate thiamine supplementation",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": [
+          "E116"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "IMAGING",
+        "name": "CT Scan",
+        "description": "CT scan performed to assess for esophageal rupture",
+        "available_phase": "presentation",
+        "reveal": {
+          "result_summary": null,
+          "detailed_findings": "Imaging performed but findings not detailed in judgment",
+          "clinical_significance": null,
+          "decision_impact": null,
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E050"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with post-surgical complications",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Patient admitted to ICU with suspected esophageal rupture",
+            "timestamp": "January 14, 2012",
+            "evidence_ids": [
+              "E050"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Hospitalization and Workup",
+        "description": "Patient undergoes evaluation and management in hospital",
+        "duration": "January 14, 2012 to January 26, 2012",
+        "key_events": [
+          {
+            "event": "Nutritional assessment recommends TPN",
+            "timestamp": "January 20, 2012",
+            "evidence_ids": [
+              "E008"
+            ]
+          },
+          {
+            "event": "Patient discharged with TPN orders",
+            "timestamp": "January 26, 2012",
+            "evidence_ids": [
+              "E101"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient with post-surgical complications and suspected nutritional deficiencies",
+        "prompt": "What nutritional support should be initiated?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Initiate TPN with thiamine supplementation",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard care for suspected thiamine deficiency in post-bariatric patients"
+          },
+          {
+            "option_id": "B",
+            "description": "Continue current management without thiamine",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Failed to recognize the risk of thiamine deficiency"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant did not initiate thiamine supplementation",
+          "reasoning_stated": "Did not recognize the need for thiamine",
+          "evidence_ids": [
+            "E104",
+            "E105"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Thiamine should have been supplemented",
+          "standard_of_care_basis": "Expert testimony indicated thiamine supplementation is critical",
+          "evidence_ids": [
+            "E003",
+            "E007"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to supplement thiamine led to Wernicke's encephalopathy",
+          "what_should_have_happened": "Thiamine supplementation could have prevented neurological damage",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E003",
+            "E007",
+            "E104"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient developed Wernicke\u2019s encephalopathy",
+        "severity": "PERMANENT_MODERATE_DISABILITY",
+        "long_term_effects": "Changes in mental state, ataxia",
+        "evidence_ids": [
+          "E003",
+          "E007"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Breach of duty in failing to administer thiamine",
+          "Causation established - thiamine deficiency led to Wernicke\u2019s encephalopathy"
+        ],
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to administer thiamine",
+        "counterfactual": "Thiamine supplementation could have prevented encephalopathy",
+        "evidence_ids": [
+          "E003",
+          "E007"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "November 28, 2011",
+        "event": "Patient underwent Roux-en-Y gastric bypass surgery",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "January 14, 2012",
+        "event": "Patient admitted to ICU with suspected esophageal rupture",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E050"
+        ]
+      },
+      {
+        "timestamp": "January 26, 2012",
+        "event": "Patient discharged with TPN orders",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E101"
+        ]
+      },
+      {
+        "timestamp": "November 28, 2011",
+        "event": "Patient underwent Roux-en-Y gastric bypass surgery",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "January 16, 2012",
+        "event": "Dr. Virlar assumed care of the patient",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "November 28, 2011",
+        "event": "Roux-en-Y gastric bypass surgery",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "January 16, 2012",
+        "event": "Dr. Virlar assumes care",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "January 21, 2012",
+        "event": "Dr. Patel notes to start TPN",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E008"
+        ]
+      },
+      {
+        "timestamp": "November 28, 2011",
+        "event": "Patient underwent Roux-en-Y gastric bypass surgery",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "January 16, 2012",
+        "event": "Dr. Virlar assumed care of the patient",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Thiamine Level",
+        "date": "January 27, 2012",
+        "result": "Abnormally low",
+        "interpretation": null,
+        "evidence_ids": [
+          "E116"
+        ]
+      },
+      {
+        "test_name": "Thiamine Level",
+        "date": "Not documented in judgment",
+        "result": "Not documented in judgment",
+        "interpretation": null,
+        "evidence_ids": []
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Wernicke's encephalopathy",
+        "when_made": "February 11, 2012",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E129"
+        ]
+      },
+      {
+        "diagnosis": "Wernicke's encephalopathy",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "diagnosis": "Wernicke\u2019s encephalopathy",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "diagnosis": "Wernicke\u2019s encephalopathy",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "TPN without thiamine",
+        "date": "January 26, 2012",
+        "provider": null,
+        "outcome": "Did not prevent neurological damage",
+        "evidence_ids": [
+          "E105"
+        ]
+      },
+      {
+        "treatment": "Oral diet advancement",
+        "date": "Not documented in judgment",
+        "provider": null,
+        "outcome": "Failed to address thiamine deficiency",
+        "evidence_ids": [
+          "E008"
+        ]
+      },
+      {
+        "treatment": "TPN initiation",
+        "date": "Delayed",
+        "provider": null,
+        "outcome": "Led to thiamine deficiency",
+        "evidence_ids": [
+          "E008"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Korsakoff's syndrome",
+        "when_occurred": "After January 26, 2012",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E135"
+        ]
+      },
+      {
+        "complication": "Wernicke's encephalopathy",
+        "when_occurred": "Not documented in judgment",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "complication": "Thiamine deficiency",
+        "when_occurred": "Not documented in judgment",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "complication": "Wernicke\u2019s encephalopathy",
+        "when_occurred": "Not documented in judgment",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E003",
+          "E007"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to supplement thiamine",
+        "against": "Dr. Virlar",
+        "found_proven": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "allegation": "Failure to treat thiamine deficiency",
+        "against": "Dr. Virlar",
+        "found_proven": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "allegation": "Delay in TPN initiation",
+        "against": "Dr. Virlar and Gonzaba",
+        "found_proven": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "allegation": "Failure to administer thiamine",
+        "against": "Dr. Virlar",
+        "found_proven": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.0071581961345740875,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 10:05:13.530577",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

@@ -1,0 +1,453 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "bailii-qb-2020-3453-html",
+  "source": "BAILII",
+  "jurisdiction": "UK",
+  "court": "Unknown",
+  "decision_date": "2020-12-16",
+  "url": "https://example.com/bailii-qb-2020-3453-html",
+  "case_name": "Mostyn J also considered the learning inGestminin another family case,Carmarthenshire Council v Y[2017] EWHC 36 (Fam),[2017] 4 WLR 136. Warby J summarised it in this way:",
+  "neutral_citation": "[2020] EWHC 3453",
+  "clinical_domain": "NEUROLOGY",
+  "outcome_severity": "TEMPORARY_HARM",
+  "summary": {
+    "brief": "Mostyn J also considered the learning inGestminin another family case,Carmarthenshire Council v Y[2017] EWHC 36 (Fam),[2017] 4 WLR 136. Warby J summarised it in this way:. Medical malpractice case involving neurology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Ms Naziyah Ismail ('the Claimant') has brought a claim in clinical negligence against a general practitioner ('GP'), Dr Ciaran Joyce.",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "It is alleged that when Dr Joyce saw the Claimant at his surgery on 10 August 2011, he should have referred her for a chest x-ray because there were signs that she might be suffering from tuberculosis ('TB').",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "The correct diagnosis was indeed TB infecting her lung and then spreading to other organs including the brain and the spinal cord.",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "The Claimant has some residual brain damage, albeit mild, coupled with more marked spinal cord damage.",
+      "paragraph_ref": "14",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "She is currently reliant upon a wheelchair. She also suffers from fatigue and headaches, as well as bladder and bowel problems.",
+      "paragraph_ref": "14",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "EXPERT_TESTIMONY",
+      "text": "I have been assisted by expert evidence from Dr Lieberman called on behalf of the Claimant, and Dr Smith called on behalf of Dr Joyce.",
+      "paragraph_ref": "20",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "In early 2011, the Claimant complained of frequent colds with a runny nose, sore throat and feeling heavy headed.",
+      "paragraph_ref": "25",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "FACTUAL_FINDING",
+      "text": "On 9 May 2011, she saw Dr Manam at the GP surgery. Her throat was said to be slightly inflamed but it was not thought necessary to prescribe any medication.",
+      "paragraph_ref": "25",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "FACTUAL_FINDING",
+      "text": "The Claimant described being in the kitchen at home when she started to cough up saliva into the kitchen sink. She called her sister over to have a look; and she confirmed that there were some specks of blood.",
+      "paragraph_ref": "27",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "FACTUAL_FINDING",
+      "text": "The appointment was arranged for 20 July 2011 when the Claimant saw Dr Wood. She was accompanied by her sister.",
+      "paragraph_ref": "28",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E011",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr Wood examined the elbow and noted that there was a lack of extension. She prescribed ibuprofen and gave the Claimant an x-ray request form.",
+      "paragraph_ref": "28",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E012",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr Joyce noted that the Claimant had had a cough for the last three weeks and that she was sweaty at night.",
+      "paragraph_ref": "32",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E013",
+      "type": "FACTUAL_FINDING",
+      "text": "He prescribed an antibiotic, Clarithromycin (250mg). It emerged during the trial that the prescription period was five days.",
+      "paragraph_ref": "32",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E014",
+      "type": "FACTUAL_FINDING",
+      "text": "At about 11:30pm on 23 August 2011, the Claimant attended at the walk-in centre at Whipps Cross Hospital in the company of her mother and sister.",
+      "paragraph_ref": "33",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E015",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr Smith accepted that if the Claimant had been complaining of a persistent productive cough for three weeks or more with night sweats, then a chest x-ray was mandatory.",
+      "paragraph_ref": "108",
+      "speaker": "Expert testimony"
+    },
+    {
+      "evidence_id": "E016",
+      "type": "LEGAL_FINDING",
+      "text": "On that very narrow point, this claim succeeds.",
+      "paragraph_ref": "122",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "16 years",
+        "sex": "female",
+        "relevant_social_history": "Lives with family in Newham, east London"
+      },
+      "chief_complaint": "Persistent cough and night sweats",
+      "history_of_present_illness": "Patient reports a persistent cough for three weeks and night sweats. She also experiences fatigue, loss of appetite, and nausea.",
+      "past_medical_history": [
+        "Unremarkable medical history prior to TB"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "respiratory": "Not documented in judgment"
+        }
+      },
+      "initial_working_problem": "Upper respiratory tract infection",
+      "known_constraints": null,
+      "initial_differential": [
+        "Upper respiratory tract infection",
+        "Tuberculosis"
+      ],
+      "critical_findings": [
+        "Persistent cough",
+        "Night sweats"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E012",
+        "E013",
+        "E014"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "Chest X-ray",
+        "description": "Radiographic imaging of the chest to assess for pulmonary conditions",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not performed at initial consultation",
+          "detailed_findings": null,
+          "clinical_significance": "Could have identified TB earlier",
+          "decision_impact": "Would have prompted earlier TB diagnosis",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": [
+          "E002",
+          "E118"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents to GP with symptoms",
+        "duration": "Not specified in judgment",
+        "key_events": [
+          {
+            "event": "Consultation with Dr Joyce",
+            "timestamp": "10 August 2011",
+            "evidence_ids": [
+              "E012"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Follow-up and Deterioration",
+        "description": "Patient's condition deteriorates leading to hospital admission",
+        "duration": "13 days",
+        "key_events": [
+          {
+            "event": "Visit to walk-in centre",
+            "timestamp": "23 August 2011",
+            "evidence_ids": [
+              "E014"
+            ]
+          },
+          {
+            "event": "Hospital admission",
+            "timestamp": "30 August 2011",
+            "evidence_ids": [
+              "E035"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient presents with persistent cough and night sweats",
+        "prompt": "What should be the next step in management?",
+        "action_type": "ORDER_TEST",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Order chest X-ray",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Persistent cough and night sweats in high TB prevalence area warrant imaging"
+          },
+          {
+            "option_id": "B",
+            "description": "Prescribe antibiotics and provide safety netting advice",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Assumed upper respiratory tract infection"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant prescribed antibiotics and did not order chest X-ray",
+          "reasoning_stated": "Assumed upper respiratory tract infection",
+          "evidence_ids": [
+            "E013",
+            "E014"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Chest X-ray should have been ordered",
+          "standard_of_care_basis": "High TB prevalence and symptoms warranted imaging",
+          "evidence_ids": [
+            "E118",
+            "E119"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to order chest X-ray despite symptoms and local TB prevalence",
+          "what_should_have_happened": "Chest X-ray should have been ordered to rule out TB",
+          "legal_standard_applied": "Bolam test",
+          "evidence_ids": [
+            "E118",
+            "E119",
+            "E120"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient developed TB with complications",
+        "severity": "PERMANENT_MODERATE_DISABILITY",
+        "long_term_effects": "Residual brain damage, spinal cord damage, reliance on wheelchair",
+        "evidence_ids": [
+          "E004",
+          "E005"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not specified in judgment",
+        "key_findings": [
+          "Breach of duty in failing to order chest X-ray",
+          "Causation established - earlier diagnosis would have improved outcome"
+        ],
+        "evidence_ids": [
+          "E120",
+          "E121"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to order chest X-ray",
+        "counterfactual": "Chest X-ray would have led to earlier TB diagnosis",
+        "evidence_ids": [
+          "E118",
+          "E119",
+          "E120"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "10 August 2011",
+        "event": "Consultation with Dr Joyce",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E012"
+        ]
+      },
+      {
+        "timestamp": "23 August 2011",
+        "event": "Visit to walk-in centre",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E014"
+        ]
+      },
+      {
+        "timestamp": "30 August 2011",
+        "event": "Hospital admission",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E035"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "MRI",
+        "date": "5 September 2011",
+        "result": "Confirmed TB diagnosis",
+        "interpretation": null,
+        "evidence_ids": [
+          "E036"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Tuberculosis",
+        "when_made": "5 September 2011",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E036"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Antibiotics",
+        "date": "10 August 2011",
+        "provider": null,
+        "outcome": "No improvement",
+        "evidence_ids": [
+          "E013"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Residual brain and spinal cord damage",
+        "when_occurred": "Post-diagnosis",
+        "severity": "Moderate",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to order chest X-ray",
+        "against": "Dr Joyce",
+        "found_proven": true,
+        "evidence_ids": [
+          "E120"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Breach of duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E120"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.12903225806451613,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 07:20:21.785653",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

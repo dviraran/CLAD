@@ -1,0 +1,511 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10374388",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2024-09-24",
+  "url": "https://example.com/courtlistener-10374388",
+  "case_name": "Travis Dantzler v. Tonia Baldwin",
+  "neutral_citation": null,
+  "clinical_domain": "CARDIOLOGY",
+  "outcome_severity": "PERMANENT_SEVERE_DISABILITY",
+  "summary": {
+    "brief": "Travis Dantzler v. Tonia Baldwin. Medical malpractice case involving cardiology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "On February 17, 2020, Dantzler, an inmate at the Anamosa State Penitentiary (ASP), first reported right knee pain.",
+      "paragraph_ref": "14",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. Baldwin observed 'marked swelling around the knee' and 'swelling of the infrapatella bursa.'",
+      "paragraph_ref": "22",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "On January 22, 2021, at a follow-up appointment, Dantzler reported that his knee 'fe[lt] close to the same as the last time he was seen.'",
+      "paragraph_ref": "23",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "LEGAL_FINDING",
+      "text": "The district court further concluded that Dr. Baldwin was not entitled to qualified immunity because 'cases clearly establish [that] the intentional denial or delay of access to medical care may violate the Eighth Amendment.'",
+      "paragraph_ref": "64",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "COURT_REASONING",
+      "text": "We hold 'that every reasonable official in [Dr. Baldwin\u2019s] position would have understood that [delaying an MRI for the nonmedical reason of an inmate\u2019s possibility of parole] violated' Dantzler\u2019s Eighth Amendment rights.",
+      "paragraph_ref": "113",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "On March 26, 2020, Dr. Michael Dehner examined Dantzler at ASP. Dantzler reported that he had strained his right knee playing basketball.",
+      "paragraph_ref": "16",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "On July 6, 2020, Dantzler reinjured his knee playing basketball; he saw a nurse that same day.",
+      "paragraph_ref": "17",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "FACTUAL_FINDING",
+      "text": "On December 27, 2020, Dantzler reported, '[I] have severe pain in my right knee\u2014it[\u2019]s been this way since [F]ebruary.'",
+      "paragraph_ref": "19",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "LEGAL_FINDING",
+      "text": "We affirm the judgment of the district court.",
+      "paragraph_ref": "124",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "COURT_REASONING",
+      "text": "Dr. Baldwin delayed his MRI for a nonmedical reason (the possibility of parole) instead of based on her medical judgment.",
+      "paragraph_ref": "122",
+      "speaker": "Judge's analysis"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "male",
+        "relevant_social_history": "Inmate at Anamosa State Penitentiary"
+      },
+      "chief_complaint": "Severe right knee pain",
+      "history_of_present_illness": "Patient reports severe right knee pain since February 2020, with multiple reinjuries and persistent symptoms despite conservative management.",
+      "past_medical_history": [
+        "Not documented in judgment"
+      ],
+      "medications": [
+        "Ibuprofen",
+        "Diclofenac"
+      ],
+      "allergies": [
+        "Not documented in judgment"
+      ],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "knee": "Marked swelling around the knee, swelling of the infrapatella bursa, no meniscal tear on exam"
+        }
+      },
+      "initial_working_problem": "Chronic knee pain with suspected structural damage",
+      "known_constraints": null,
+      "initial_differential": [
+        "Knee sprain",
+        "Meniscal tear",
+        "Bursitis"
+      ],
+      "critical_findings": [
+        "Marked swelling",
+        "Persistent pain"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002",
+        "E006",
+        "E008"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "MRI of the right knee",
+        "description": "Magnetic Resonance Imaging to assess structural damage",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "MFC cartilage defect, joint effusion, medial meniscal tear (possible root)",
+          "detailed_findings": null,
+          "clinical_significance": "Confirms structural damage requiring surgical intervention",
+          "decision_impact": "Should prompt surgical referral and intervention",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E054"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "CONSULT_NOTE",
+        "name": "Orthopedic consultation",
+        "description": "Consultation with orthopedic specialist for knee evaluation",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Recommended surgical intervention for meniscal tear",
+          "detailed_findings": null,
+          "clinical_significance": "Confirms need for surgical repair",
+          "decision_impact": "Should lead to scheduling of surgical procedure",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E054"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with knee pain and swelling",
+        "duration": "February 2020",
+        "key_events": [
+          {
+            "event": "First report of knee pain",
+            "timestamp": "February 17, 2020",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Workup and Management",
+        "description": "Ongoing management and delayed imaging",
+        "duration": "February 2020 - September 2021",
+        "key_events": [
+          {
+            "event": "Reinjury and continued pain",
+            "timestamp": "July 6, 2020",
+            "evidence_ids": [
+              "E007"
+            ]
+          },
+          {
+            "event": "Delayed MRI decision",
+            "timestamp": "April 29, 2021",
+            "evidence_ids": [
+              "E064"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "decision",
+        "name": "Decision to Order MRI",
+        "description": "Decision to finally order MRI after parole denial",
+        "duration": "September 2021",
+        "key_events": [
+          {
+            "event": "MRI ordered",
+            "timestamp": "September 16, 2021",
+            "evidence_ids": [
+              "E050"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient with chronic knee pain and suspected structural damage",
+        "prompt": "Should an MRI be ordered to assess the knee?",
+        "action_type": "ORDER_TEST",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Order MRI immediately to assess structural damage",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "MRI is necessary to confirm structural damage and guide treatment"
+          },
+          {
+            "option_id": "B",
+            "description": "Delay MRI until parole decision",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Nonmedical reason for delay, not appropriate"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant delayed MRI until parole decision",
+          "reasoning_stated": "Defendant stated MRI would be scheduled if parole was denied",
+          "evidence_ids": [
+            "E010",
+            "E064"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "MRI should have been ordered immediately",
+          "standard_of_care_basis": "Expert evidence established MRI was necessary for diagnosis",
+          "evidence_ids": [
+            "E064"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Delay based on nonmedical reasons violated standard of care",
+          "what_should_have_happened": "MRI should have been ordered to assess and treat the knee condition",
+          "legal_standard_applied": "Eighth Amendment violation for deliberate indifference",
+          "evidence_ids": [
+            "E064",
+            "E065"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient experienced prolonged pain and delayed diagnosis",
+        "severity": "MODERATE_DISABILITY",
+        "long_term_effects": "Potential worsening of knee condition due to delayed imaging",
+        "evidence_ids": [
+          "E106"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not specified in judgment",
+        "key_findings": [
+          "Breach of duty in delaying MRI for nonmedical reasons",
+          "Deliberate indifference established"
+        ],
+        "evidence_ids": [
+          "E113",
+          "E123"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to order MRI due to nonmedical reasons",
+        "counterfactual": "MRI would have provided necessary diagnostic information",
+        "evidence_ids": [
+          "E113",
+          "E115",
+          "E123"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "February 17, 2020",
+        "event": "Patient reports right knee pain",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "July 6, 2020",
+        "event": "Patient reinjures knee playing basketball",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      {
+        "timestamp": "April 29, 2021",
+        "event": "Dr. Baldwin considers MRI but delays based on parole",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E064"
+        ]
+      },
+      {
+        "timestamp": "September 16, 2021",
+        "event": "MRI ordered after parole denial",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E050"
+        ]
+      },
+      {
+        "timestamp": "February 17, 2020",
+        "event": "Patient reports knee pain and swelling",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "MRI of right knee",
+        "date": "November 5, 2021",
+        "result": "MFC cartilage defect, joint effusion, medial meniscal tear",
+        "interpretation": null,
+        "evidence_ids": [
+          "E054"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Medial meniscal tear",
+        "when_made": "November 5, 2021",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E054"
+        ]
+      },
+      {
+        "diagnosis": "Knee condition requiring MRI",
+        "when_made": "Not specified in judgment",
+        "made_by": null,
+        "correct": false,
+        "evidence_ids": [
+          "E010"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Right knee arthroscopy and meniscal repair",
+        "date": "January 12, 2022",
+        "provider": null,
+        "outcome": "Surgical repair of meniscal tear",
+        "evidence_ids": [
+          "E055"
+        ]
+      },
+      {
+        "treatment": "Ibuprofen and knee sleeve",
+        "date": "Not specified in judgment",
+        "provider": null,
+        "outcome": "Temporary pain relief",
+        "evidence_ids": [
+          "E100"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Prolonged pain and disability",
+        "when_occurred": "Throughout 2020-2021",
+        "severity": "Moderate",
+        "evidence_ids": [
+          "E081"
+        ]
+      },
+      {
+        "complication": "Prolonged pain due to delayed MRI",
+        "when_occurred": "Not specified in judgment",
+        "severity": "Moderate",
+        "evidence_ids": [
+          "E106"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Delay in ordering MRI for nonmedical reasons",
+        "against": "Dr. Baldwin",
+        "found_proven": true,
+        "evidence_ids": [
+          "E064"
+        ]
+      },
+      {
+        "allegation": "Delay in ordering MRI for nonmedical reasons",
+        "against": "Dr. Baldwin",
+        "found_proven": true,
+        "evidence_ids": [
+          "E113"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Dr. Baldwin was deliberately indifferent to serious medical needs",
+        "legal_significance": "Violation of Eighth Amendment rights",
+        "evidence_ids": [
+          "E064",
+          "E065"
+        ]
+      },
+      {
+        "finding": "Dr. Baldwin was deliberately indifferent",
+        "legal_significance": "Breach of duty established",
+        "evidence_ids": [
+          "E113"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.07692307692307693,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 15:48:40.240696",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

@@ -1,0 +1,378 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtliste-10740270-david-timpanaro-v-jenkinsons-pavilion-inc",
+  "source": "BAILII",
+  "jurisdiction": "UK",
+  "court": "Unknown",
+  "decision_date": "2025-11-21",
+  "url": "https://example.com/courtliste-10740270-david-timpanaro-v-jenkinsons-pavilion-inc",
+  "case_name": "David Timpanaro v. Jenkinson's Pavilion, Inc.",
+  "neutral_citation": null,
+  "clinical_domain": "PAEDIATRICS",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "David Timpanaro v. Jenkinson's Pavilion, Inc.. Medical malpractice case involving paediatrics.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "On September 23, 2020, plaintiffs, accompanied by their minor child, C.T., and then sixty-nine-year-old father and grandfather, Anthony Timpanaro ('decedent'), traveled to defendants' beachfront property to spend the day.",
+      "paragraph_ref": "26",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "The family made their way onto the beach where they settled into beach chairs and decedent and his grandson began searching for seashells and chasing seagulls.",
+      "paragraph_ref": "38",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "Plaintiffs admit they observed three large signs on the property: one advertising the boardwalk, beach, arcade games and rides; another which conveyed that the 'beach was closed[,] [n]o swimming'; and another stating 'no swimming when lifeguards are off-duty.'",
+      "paragraph_ref": "40",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "At some point, decedent joined Lia and C.T. at the water's edge. He was not wearing shoes and had the legs of his pants 'rolled up a little.'",
+      "paragraph_ref": "44",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "A wave came in while they were standing on wet sand and 'it was stronger than [she] thought it would have been. And [her] feet [sank] in and [she] teetered with the wave and stepped back. [Decedent] also teetered with the wave and stepped back, and then lost his balance.'",
+      "paragraph_ref": "46",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "Another wave engulfed decedent, prompting David to venture into the water to pick him up and the next thing she knew, decedent was out in the ocean yelling for help.",
+      "paragraph_ref": "49",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "Lia called 9-1-1 and went to the boardwalk area to help direct first responders to the area where the decedent had been hit by the wave.",
+      "paragraph_ref": "52",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "FACTUAL_FINDING",
+      "text": "When she returned with the emergency personnel, decedent was back on the beach facedown. He died after all efforts to revive him failed.",
+      "paragraph_ref": "54",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "LEGAL_FINDING",
+      "text": "The court granted summary judgment in favor of defendants and issued a",
+      "paragraph_ref": "212",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "LEGAL_FINDING",
+      "text": "Plaintiffs cannot establish a prima facie case of negligence and defendants were entitled to summary judgment in their favor.",
+      "paragraph_ref": "577",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E011",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Plaintiffs' expert argued defendants were 'grossly negligent in failing to close the seawall gate.'",
+      "paragraph_ref": "482",
+      "speaker": "Plaintiffs' expert"
+    },
+    {
+      "evidence_id": "E012",
+      "type": "COURT_REASONING",
+      "text": "The court soundly concluded defendants were entitled to judgment as a matter of law, based on its finding that decedent exceeded the scope of his",
+      "paragraph_ref": "548",
+      "speaker": "Judge's analysis"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "69 years",
+        "sex": "male",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Drowning incident at the beach",
+      "history_of_present_illness": "Decedent was at the beach with family, standing at the water's edge when a wave knocked him off balance and he was swept into the ocean.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "general": "Decedent was found facedown on the beach after being swept into the ocean."
+        }
+      },
+      "initial_working_problem": "Drowning incident",
+      "known_constraints": null,
+      "initial_differential": [
+        "Drowning",
+        "Cardiac event"
+      ],
+      "critical_findings": [
+        "Facedown on the beach",
+        "No lifeguards present"
+      ],
+      "urgency_level": "EMERGENCY",
+      "evidence_ids": [
+        "E004",
+        "E005",
+        "E008"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSULT_NOTE",
+        "name": "Emergency Response",
+        "description": "Details of the emergency response and resuscitation efforts",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Emergency personnel attempted resuscitation on the beach but were unsuccessful.",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates the severity of the drowning incident",
+          "decision_impact": "Highlights the need for immediate and effective emergency response",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E007",
+          "E008"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Beach Visit",
+        "description": "Family visits the beach on a day with no lifeguards present",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Family arrives at the beach",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E001",
+              "E002"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "presentation",
+        "clinical_context": "Beachgoers at a closed beach with no lifeguards",
+        "prompt": "What safety measures should have been in place?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Ensure clear signage and barriers to prevent beach access",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Proper signage and barriers could prevent access to dangerous areas."
+          },
+          {
+            "option_id": "B",
+            "description": "Allow access with minimal signage",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Insufficient to prevent accidents in dangerous conditions."
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Allowed access with minimal signage",
+          "reasoning_stated": "Defendants believed signage was adequate",
+          "evidence_ids": [
+            "E003",
+            "E004",
+            "E005"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Clear signage and barriers should have been in place",
+          "standard_of_care_basis": "Expert testimony indicated need for better safety measures",
+          "evidence_ids": [
+            "E011",
+            "E012"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Based on evidence E011-E012",
+          "what_should_have_happened": "Clearer signage and barriers should have been implemented",
+          "legal_standard_applied": "Duty to warn and protect invitees",
+          "evidence_ids": [
+            "E011",
+            "E012"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Decedent died after being engulfed by a wave",
+        "severity": "FATAL",
+        "long_term_effects": "Not applicable",
+        "evidence_ids": [
+          "E008"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "None",
+        "key_findings": [
+          "Defendants owed no duty to close the beach",
+          "Signage was adequate to convey no swimming was allowed"
+        ],
+        "evidence_ids": [
+          "E009",
+          "E010"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Not applicable",
+        "counterfactual": "Not applicable",
+        "evidence_ids": [
+          "E009",
+          "E010"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "September 23, 2020",
+        "event": "Family arrives at the beach",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "September 23, 2020",
+        "event": "Family arrived at the beach",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "Not documented in judgment",
+        "event": "Wave engulfed decedent",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [],
+    "treatments": [],
+    "complications": [],
+    "allegations": [
+      {
+        "allegation": "Failure to provide adequate safety measures",
+        "against": "Jenkinson's Pavilion, Inc.",
+        "found_proven": false,
+        "evidence_ids": [
+          "E009",
+          "E010"
+        ]
+      },
+      {
+        "allegation": "Failure to provide adequate warning signage",
+        "against": "Defendant",
+        "found_proven": false,
+        "evidence_ids": [
+          "E010"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendants not liable under the Landowner's Liability Act",
+        "legal_significance": "No duty to warn or protect under the circumstances",
+        "evidence_ids": [
+          "E009",
+          "E010"
+        ]
+      },
+      {
+        "finding": "Defendants owed no duty to close the beach",
+        "legal_significance": "Summary judgment in favor of defendants",
+        "evidence_ids": [
+          "E009"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "SYSTEM_COMMUNICATION"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.01804511278195489,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 10:03:55.487833",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

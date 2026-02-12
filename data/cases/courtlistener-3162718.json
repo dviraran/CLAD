@@ -1,0 +1,405 @@
+{
+  "case_id": "courtlistener-3162718",
+  "source": "courtlistener",
+  "source_url": "local://courtlistener-3162718.html",
+  "jurisdiction": "US",
+  "extraction_metadata": {
+    "version": "batch_api_v1",
+    "model": "gpt-4o",
+    "extracted_at": "2026-01-21T17:56:57.919189",
+    "simulation_extracted_at": "2026-01-21T18:19:59.302660",
+    "simulation_model": "gpt-4o"
+  },
+  "case_metadata": {
+    "case_name": "Diane Christian, et ux v. Antoine Tohmeh, MD, et ux",
+    "citation": "No. 32578-4-111",
+    "court": "W A State Court of Appeals, Division III",
+    "date": "DECEMBER 15, 2015"
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "Diane Christian experienced chronic low back pain and weakness in her legs. On April 14, 2005, defendant Dr. Antoine Tohmeh evaluated Christian to address her continuing symptoms.",
+      "paragraph_ref": "40",
+      "paragraph_starts_with": "Plaintiff Diane Christian",
+      "summary": "Patient had chronic low back pain and leg weakness; evaluated by Dr. Tohmeh on April 14, 2005.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "On December 5, 2005, Dr. Anotine Tohmeh performed on Diane Christian partial L-2, complete L-3, complete L-4, and complete L-5 laminectomies.",
+      "paragraph_ref": "72",
+      "paragraph_starts_with": "On December 5, 2005, Dr.",
+      "summary": "Dr. Tohmeh performed laminectomies on December 5, 2005.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "During the surgery, Dr. Tohmeh accidentally punctured Christian's dura, a thick membrane surrounding the spinal cord.",
+      "paragraph_ref": "79",
+      "paragraph_starts_with": "During the surgery, Dr.",
+      "summary": "Accidental puncture of dura during surgery.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "While recovering from surgery, Diane Christian experienced symptoms from which she did not earlier suffer.",
+      "paragraph_ref": "84",
+      "paragraph_starts_with": "While recovering from surgery,",
+      "summary": "Post-surgery, patient experienced new symptoms.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "EXPERT_TESTIMONY",
+      "verbatim_quote": "Dr. Seroussi testified that Dr. Antoine Tohmeh breached the standard of care in his treatment of Diane Christian.",
+      "paragraph_ref": "271",
+      "paragraph_starts_with": "Seroussi testified that Dr.",
+      "summary": "Expert testified breach of standard of care by Dr. Tohmeh.",
+      "speaker": "Expert witness"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "LEGAL_FINDING",
+      "verbatim_quote": "We affirm in part and reverse in part the trial court's dismissal of plaintiffs Christians' claim.",
+      "paragraph_ref": "708",
+      "paragraph_starts_with": "We affirm in part and",
+      "summary": "Partial reversal of trial court's dismissal.",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "LEGAL_FINDING",
+      "verbatim_quote": "We reverse the summary judgment dismissal of the Christians' cause of action for medical malpractice.",
+      "paragraph_ref": "711",
+      "paragraph_starts_with": "We reverse the summary",
+      "summary": "Reversal of summary judgment on medical malpractice claim.",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "verdict_detected": {
+    "outcome": "PARTIAL_LIABILITY",
+    "key_phrase": "We affirm in part and reverse in part the trial court's dismissal of plaintiffs Christians' claim.",
+    "paragraph_ref": "708"
+  },
+  "extraction_notes": {
+    "total_paragraphs_analyzed": 714,
+    "key_sections_found": [
+      "Facts",
+      "Expert Evidence",
+      "Conclusion"
+    ],
+    "gaps_identified": [
+      "No specific lab values mentioned",
+      "Timing of events unclear"
+    ]
+  },
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Chronic low back pain and leg weakness",
+      "history_of_present_illness": "Patient reports ongoing low back pain and weakness in legs, evaluated by Dr. Tohmeh on April 14, 2005.",
+      "past_medical_history": "Not documented in judgment",
+      "medications": "Not documented in judgment",
+      "allergies": "Not documented in judgment",
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment"
+        },
+        "focused_exam": {
+          "neurological": "Not documented in judgment"
+        }
+      },
+      "initial_working_problem": "Chronic low back pain with leg weakness",
+      "initial_differential": [
+        "spinal stenosis",
+        "herniated disc"
+      ],
+      "critical_findings": [
+        "Chronic low back pain",
+        "Leg weakness"
+      ],
+      "urgency_level": "ELECTIVE",
+      "evidence_ids": [
+        "E001"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "MRI of the lumbar spine",
+        "description": "Magnetic resonance imaging to assess spinal structures",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not documented in judgment",
+          "clinical_significance": "Not documented in judgment",
+          "decision_impact": "Not documented in judgment"
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": []
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "procedure",
+        "clinical_context": "Patient undergoing lumbar laminectomy",
+        "prompt": "What precautions should be taken to avoid dural puncture during laminectomy?",
+        "action_type": "SELECT_TECHNIQUE",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Use intraoperative imaging guidance",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Intraoperative imaging can help avoid accidental dural puncture."
+          },
+          {
+            "option_id": "B",
+            "description": "Proceed without imaging guidance",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Increases risk of accidental dural puncture."
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant proceeded without imaging guidance",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E003"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Intraoperative imaging should have been used",
+          "standard_of_care_basis": "Expert testimony indicated breach of standard of care",
+          "evidence_ids": [
+            "E005"
+          ]
+        },
+        "explanation": {
+          "why_defendant_wrong": "Based on expert testimony E005",
+          "what_should_have_happened": "Intraoperative imaging should have been used to prevent dural puncture",
+          "legal_standard_applied": "Bolam test",
+          "evidence_ids": [
+            "E005"
+          ]
+        },
+        "is_malpractice_point": true
+      },
+      {
+        "decision_id": "D002",
+        "phase_id": "postop",
+        "clinical_context": "Patient recovering from lumbar laminectomy",
+        "prompt": "How should new postoperative symptoms be managed?",
+        "action_type": "ESCALATE_CARE",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Immediate neurological assessment and imaging",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "New symptoms post-surgery require urgent evaluation to rule out complications."
+          },
+          {
+            "option_id": "B",
+            "description": "Monitor symptoms without immediate intervention",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Delays potential identification and treatment of complications."
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant chose to monitor symptoms",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E004"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Immediate assessment and imaging should have been performed",
+          "standard_of_care_basis": "Expert testimony indicated breach of standard of care",
+          "evidence_ids": [
+            "E005"
+          ]
+        },
+        "explanation": {
+          "why_defendant_wrong": "Based on expert testimony E005",
+          "what_should_have_happened": "Immediate assessment and imaging should have been performed",
+          "legal_standard_applied": "Bolam test",
+          "evidence_ids": [
+            "E005"
+          ]
+        },
+        "is_malpractice_point": true
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Evaluation",
+        "description": "Patient evaluated for chronic low back pain and leg weakness",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Evaluation by Dr. Tohmeh",
+            "timestamp": "April 14, 2005",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "procedure",
+        "name": "Surgical Intervention",
+        "description": "Laminectomies performed by Dr. Tohmeh",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Laminectomies performed",
+            "timestamp": "December 5, 2005",
+            "evidence_ids": [
+              "E002"
+            ]
+          },
+          {
+            "event": "Accidental dural puncture",
+            "timestamp": "During surgery",
+            "evidence_ids": [
+              "E003"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "postop",
+        "name": "Postoperative Recovery",
+        "description": "Patient experienced new symptoms post-surgery",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "New symptoms experienced",
+            "timestamp": "Post-surgery",
+            "evidence_ids": [
+              "E004"
+            ]
+          }
+        ]
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient experienced new symptoms post-surgery",
+        "severity": "Not documented in judgment",
+        "long_term_effects": "Not documented in judgment",
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Breach of duty in surgical technique",
+          "Causation established by expert testimony"
+        ],
+        "evidence_ids": [
+          "E005",
+          "E007"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to use intraoperative imaging",
+        "counterfactual": "Imaging could have prevented dural puncture",
+        "evidence_ids": [
+          "E005",
+          "E007"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "April 14, 2005",
+        "event": "Patient evaluated by Dr. Tohmeh",
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "December 5, 2005",
+        "event": "Laminectomies performed",
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [],
+    "treatments": [
+      {
+        "treatment": "Laminectomies",
+        "date": "December 5, 2005",
+        "outcome": "Accidental dural puncture",
+        "evidence_ids": [
+          "E002",
+          "E003"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "New symptoms post-surgery",
+        "when_occurred": "Post-surgery",
+        "severity": "Not documented in judgment",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to use intraoperative imaging",
+        "against": "Dr. Tohmeh",
+        "found_proven": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Breach of duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ]
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "TREATMENT_PROCEDURE_ERROR"
+    ],
+    "diagnosis_subtypes": []
+  }
+}

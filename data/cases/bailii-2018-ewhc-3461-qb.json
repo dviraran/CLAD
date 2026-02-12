@@ -1,0 +1,376 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "bailii-2018-ewhc-3461-qb",
+  "source": "BAILII",
+  "jurisdiction": "UK",
+  "court": "Unknown",
+  "decision_date": "2018-12-14",
+  "url": "https://example.com/bailii-2018-ewhc-3461-qb",
+  "case_name": "JAH v Burne & Ors [2018] EWHC 3461 (QB) (14 December 2018)",
+  "neutral_citation": "[2018] EWHC 3461",
+  "clinical_domain": "PAEDIATRICS",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Medical malpractice case involving paediatrics.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "In July 2012, the blood supply to the Claimant's left arm became compromised by a thrombo-embolus which led to a below-elbow amputation on 19 July 2012, and then an above-elbow amputation on 24 July 2012.",
+      "paragraph_ref": "12",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "The First Defendant is a General Practitioner who, on 8 May 2012, was working as a locum at Ryalls Park Surgery in Yeovil where the Claimant was registered as a patient.",
+      "paragraph_ref": "16",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "The Second Defendant is now retired but was, in May, a partner at the Ryalls Park Medical Centre and she practised as a GP for 35 years.",
+      "paragraph_ref": "17",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "The Third Defendant, also a GP at the practice, saw the Claimant on 11 June 2012.",
+      "paragraph_ref": "18",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "The Fourth Defendant is the NHS Trust responsible for the staff and treatment at Yeovil District Hospital.",
+      "paragraph_ref": "19",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Professor Beard, the Defendants' expert in vascular surgery, told me that this might have been the first sign of the micro-embolic process starting.",
+      "paragraph_ref": "46",
+      "speaker": "Professor Beard"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr Stevens was an excellent expert witness whose evidence I preferred to that of Mr Richmond, both generally and in relation to the issue.",
+      "paragraph_ref": "55",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "LEGAL_FINDING",
+      "text": "I reject all the allegations of breach of duty arising out of the attendance on 6 May 2012 and I find that Nurse Foran acted reasonably, professionally and responsibly.",
+      "paragraph_ref": "63",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "LEGAL_FINDING",
+      "text": "For the above reasons, I find that causation is established against the Third Defendant, Dr Jackson in relation to the arm alone, thus entitling the Claimant to damages in the agreed sum of \u00a3150,000.",
+      "paragraph_ref": "148",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "LEGAL_FINDING",
+      "text": "For the reasons stated in this judgment, the claim is dismissed against the First, Second and Fourth Defendants.",
+      "paragraph_ref": "150",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "56 years",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Pain in calves and left foot",
+      "history_of_present_illness": "Patient presented with a history of bilateral posterior calf pain when walking and left foot pain.",
+      "past_medical_history": [
+        "Developmental delay",
+        "Learning difficulties"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "lower_extremities": "Calf circumferences equal, no skin changes apart from thread veins, tender inferior calf muscle"
+        }
+      },
+      "initial_working_problem": "Calf muscle sprain",
+      "known_constraints": null,
+      "initial_differential": [
+        "Calf muscle sprain",
+        "Peripheral arterial disease"
+      ],
+      "critical_findings": [
+        "Tender inferior calf muscle"
+      ],
+      "urgency_level": "ROUTINE",
+      "evidence_ids": [
+        "E002",
+        "E003",
+        "E004"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSULT_NOTE",
+        "name": "Vascular Surgery Consultation",
+        "description": "Consultation with a vascular surgeon to assess the need for anticoagulation and further vascular intervention.",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Consultation not performed; urgent referral was indicated.",
+          "detailed_findings": null,
+          "clinical_significance": "Could have led to timely anticoagulation and prevention of upper limb ischaemia.",
+          "decision_impact": "Referral would have prompted anticoagulation, potentially preventing arm amputation.",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": [
+          "E009",
+          "E143"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with foot and leg pain.",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Patient seen by Dr Jackson",
+            "timestamp": "11 June 2012",
+            "evidence_ids": [
+              "E004"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Workup and Missed Referral",
+        "description": "Assessment of the patient's condition without appropriate referral.",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "No vascular referral made",
+            "timestamp": "11 June 2012",
+            "evidence_ids": [
+              "E143"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient presents with foot pain and preserved pedal pulses.",
+        "prompt": "Should an urgent vascular referral be made?",
+        "action_type": "REFER",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Make an urgent vascular referral",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Referral was necessary to assess for thrombo-embolic cause and initiate anticoagulation."
+          },
+          {
+            "option_id": "B",
+            "description": "Do not make a vascular referral",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Defendant did not refer, missing the opportunity for timely intervention."
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant did not make a vascular referral",
+          "reasoning_stated": "No indication for referral was perceived due to preserved pedal pulses.",
+          "evidence_ids": [
+            "E143"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Urgent vascular referral should have been made",
+          "standard_of_care_basis": "Expert evidence indicated referral was necessary to prevent further complications.",
+          "evidence_ids": [
+            "E009",
+            "E143"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to refer led to missed opportunity for anticoagulation.",
+          "what_should_have_happened": "Referral would have allowed for timely intervention.",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E009",
+            "E143"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient developed upper limb ischaemia leading to amputation of the left arm.",
+        "severity": "PERMANENT_SEVERE_DISABILITY",
+        "long_term_effects": "Loss of left arm, significant impact on quality of life.",
+        "evidence_ids": [
+          "E001",
+          "E148"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "150000",
+        "key_findings": [
+          "Breach of duty by Dr Jackson for not making an urgent vascular referral.",
+          "Causation established for the arm amputation due to lack of anticoagulation."
+        ],
+        "evidence_ids": [
+          "E148",
+          "E150"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to make an urgent vascular referral",
+        "counterfactual": "Referral would have led to anticoagulation, preventing arm ischaemia.",
+        "evidence_ids": [
+          "E148",
+          "E150"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "11 June 2012",
+        "event": "Patient seen by Dr Jackson",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [
+      {
+        "diagnosis": "Upper limb ischaemia",
+        "when_made": "July 2012",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Amputation of left arm",
+        "date": "July 2012",
+        "provider": null,
+        "outcome": "Loss of left arm",
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Upper limb ischaemia",
+        "when_occurred": "July 2012",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to make an urgent vascular referral",
+        "against": "Dr Jackson",
+        "found_proven": true,
+        "evidence_ids": [
+          "E148"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Dr Jackson breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E148"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.06666666666666667,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-21 19:27:29.546246",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

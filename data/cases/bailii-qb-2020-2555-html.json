@@ -1,0 +1,357 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "bailii-qb-2020-2555-html",
+  "source": "BAILII",
+  "jurisdiction": "UK",
+  "court": "Unknown",
+  "decision_date": "2020-07-09",
+  "url": "https://example.com/bailii-qb-2020-2555-html",
+  "case_name": "Wilcox v  King's College Hospital NHS Foundation Trust [2020] EWHC 2555 (QB) (09 July 2020)",
+  "neutral_citation": "[2020] EWHC 2555",
+  "clinical_domain": "PAEDIATRICS",
+  "outcome_severity": "PERMANENT_SEVERE_DISABILITY",
+  "summary": {
+    "brief": "Medical malpractice case involving paediatrics.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "The claim arises from an admitted delay in the diagnosis and treatment of the Claimant's cauda equina compression in August 2016.",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "The Claimant has sustained a permanent disability in the form of an incomplete paraplegia at L3 with reduced lower limb strength and sensation and neuropathic pain affecting both lower limbs.",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "EXPERT_TESTIMONY",
+      "text": "A report on condition and prognosis from Mr Gawronski, annexed to the Particulars of Claim, substantiates the Claimant's complaints.",
+      "paragraph_ref": "13",
+      "speaker": "Expert witness"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "LEGAL_FINDING",
+      "text": "Judgment was entered on the basis of the admission that there had been a culpable delay in treating the Claimant's symptoms.",
+      "paragraph_ref": "14",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "WITNESS_STATEMENT",
+      "text": "The Claimant's witness statement of October 2019 which refers to the impact of Claimant's disabilities on his activities of daily living.",
+      "paragraph_ref": "15",
+      "speaker": "Claimant"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "COURT_REASONING",
+      "text": "The Deputy Master concluded that there was no reason to impugn the work undertaken by Robertson and Co nor the selection of the footage included in the clip which the Defendant proposed to deploy.",
+      "paragraph_ref": "18",
+      "speaker": "Deputy Master"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "COURT_REASONING",
+      "text": "The Deputy Master found that there were really no significant inconsistencies between what the Claimant was shown to be doing on the footage and what he had said concerning his disabilities.",
+      "paragraph_ref": "26",
+      "speaker": "Deputy Master"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "LEGAL_FINDING",
+      "text": "I dismiss the appeal for two reasons.",
+      "paragraph_ref": "25",
+      "speaker": "Mrs Justice Lambert"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "COURT_REASONING",
+      "text": "The video evidence is not admissible simply because it is not relevant.",
+      "paragraph_ref": "29",
+      "speaker": "Mrs Justice Lambert"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "unknown",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Symptoms suggestive of cauda equina compression",
+      "history_of_present_illness": "Not documented in judgment",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "neurological": "Not documented in judgment"
+        }
+      },
+      "initial_working_problem": "Suspected cauda equina compression",
+      "known_constraints": null,
+      "initial_differential": [
+        "Cauda equina syndrome"
+      ],
+      "critical_findings": [
+        "Not documented in judgment"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E004"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "MRI Spine",
+        "description": "Imaging to confirm cauda equina compression",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not documented in judgment",
+          "detailed_findings": null,
+          "clinical_significance": "Essential for diagnosing cauda equina compression",
+          "decision_impact": "Should prompt urgent surgical intervention",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with symptoms suggestive of cauda equina compression",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Initial assessment",
+            "timestamp": "Not documented in judgment",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient with suspected cauda equina compression",
+        "prompt": "What is the appropriate imaging to confirm diagnosis?",
+        "action_type": "ORDER_TEST",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Order MRI of the spine",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "MRI is the standard imaging for diagnosing cauda equina compression"
+          },
+          {
+            "option_id": "B",
+            "description": "Delay imaging",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Delay in imaging can lead to worsening of condition"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant delayed imaging",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E001",
+            "E004"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "MRI should have been ordered promptly",
+          "standard_of_care_basis": "Expert evidence established MRI is standard",
+          "evidence_ids": [
+            "E001",
+            "E004"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Delay in imaging led to delay in treatment",
+          "what_should_have_happened": "MRI should have been performed urgently",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E001",
+            "E004"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient sustained permanent disability due to delayed treatment",
+        "severity": "PERMANENT_MODERATE_DISABILITY",
+        "long_term_effects": "Incomplete paraplegia at L3, reduced lower limb strength and sensation, neuropathic pain",
+        "evidence_ids": [
+          "E002",
+          "E003"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Breach of duty in delaying diagnosis and treatment",
+          "Causation established - earlier intervention would have improved outcome"
+        ],
+        "evidence_ids": [
+          "E004",
+          "E005"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to promptly order MRI and treat cauda equina compression",
+        "counterfactual": "Timely MRI and surgery would have prevented or reduced disability",
+        "evidence_ids": [
+          "E001",
+          "E004"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "August 2016",
+        "event": "Delay in diagnosis and treatment of cauda equina compression",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "MRI Spine",
+        "date": "Not documented in judgment",
+        "result": "Not documented in judgment",
+        "interpretation": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Cauda equina compression",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Decompression surgery",
+        "date": "Not documented in judgment",
+        "provider": null,
+        "outcome": "Not documented in judgment",
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Incomplete paraplegia at L3",
+        "when_occurred": "Not documented in judgment",
+        "severity": "Permanent",
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Delay in diagnosis and treatment",
+        "against": "Defendant",
+        "found_proven": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.3,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 09:47:26.487651",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

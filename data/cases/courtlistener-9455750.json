@@ -1,0 +1,473 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-9455750",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2023-03-21",
+  "url": "https://example.com/courtlistener-9455750",
+  "case_name": "McCarthy v. Lee",
+  "neutral_citation": null,
+  "clinical_domain": "PAEDIATRICS",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "McCarthy v. Lee. Medical malpractice case involving paediatrics.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "In 2010, Dr. Peter K. Lee began treating Kathleen McCarthy for rectal bleeding and related symptoms.",
+      "paragraph_ref": "2",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "After performing a colonoscopy during which no cancerous lesions were found, Dr. Lee diagnosed Kathleen with hemorrhoids.",
+      "paragraph_ref": "2",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "When Kathleen returned to Dr. Lee in 2015 for continued and worsening symptoms, his diagnosis remained unchanged.",
+      "paragraph_ref": "2",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "Two years later, Kathleen was diagnosed with stage-three colon cancer, which progressed to stage four.",
+      "paragraph_ref": "2",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "Kathleen and her husband, Brett McCarthy, filed a civil action against Dr. Lee and his associated medical practices and employees in October 2018 but dismissed the complaint voluntarily.",
+      "paragraph_ref": "3",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "In January 2020, the McCarthys refiled the complaint, alleging negligent care in the treatment of Kathleen\u2019s condition.",
+      "paragraph_ref": "3",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "LEGAL_FINDING",
+      "text": "The trial court agreed and dismissed the McCarthys\u2019 complaint.",
+      "paragraph_ref": "3",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "FACTUAL_FINDING",
+      "text": "In April 2021, the McCarthys filed a civil action on behalf of their three minor children against Dr. Lee and OhioHealth Physician Group, Inc.",
+      "paragraph_ref": "4",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "LEGAL_FINDING",
+      "text": "The trial court granted the motion, concluding that because the McCarthys\u2019 medical claim was barred by the statute of repose, the children had 'no right to a cognizable claim under Ohio law.'",
+      "paragraph_ref": "6",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "COURT_REASONING",
+      "text": "Once the medical-negligence claim was extinguished by the statute of repose, the children\u2019s derivative claim no longer existed.",
+      "paragraph_ref": "4",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E011",
+      "type": "LEGAL_FINDING",
+      "text": "We therefore affirm the Tenth District Court of Appeals\u2019 judgment upholding the dismissal of the children\u2019s claim.",
+      "paragraph_ref": "4",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Rectal bleeding and related symptoms",
+      "history_of_present_illness": "Patient presented with rectal bleeding and related symptoms. Initial colonoscopy performed by Dr. Lee showed no cancerous lesions, and the patient was diagnosed with hemorrhoids. Symptoms continued and worsened over time.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "abdomen": "Examination mentioned but findings not specified"
+        }
+      },
+      "initial_working_problem": "Rectal bleeding - differential includes hemorrhoids",
+      "known_constraints": null,
+      "initial_differential": [
+        "hemorrhoids",
+        "other causes not specified"
+      ],
+      "critical_findings": [
+        "Rectal bleeding"
+      ],
+      "urgency_level": "Not documented in judgment",
+      "evidence_ids": [
+        "E001",
+        "E002",
+        "E003"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "Colonoscopy",
+        "description": "Colonoscopy performed to investigate rectal bleeding",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "No cancerous lesions found",
+          "detailed_findings": null,
+          "clinical_significance": "Initial diagnosis of hemorrhoids",
+          "decision_impact": "Did not prompt further investigation at the time",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with rectal bleeding and related symptoms",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Initial colonoscopy performed",
+            "timestamp": "2010",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Follow-up Presentation",
+        "description": "Patient returns with worsening symptoms",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Symptoms worsened, diagnosis unchanged",
+            "timestamp": "2015",
+            "evidence_ids": [
+              "E003"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient returned with continued and worsening symptoms",
+        "prompt": "What should be the next step in management?",
+        "action_type": "ORDER_TEST",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Order repeat colonoscopy or further imaging",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Worsening symptoms should prompt further investigation"
+          },
+          {
+            "option_id": "B",
+            "description": "Maintain diagnosis of hemorrhoids without further testing",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Initial diagnosis was maintained despite worsening symptoms"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant maintained diagnosis of hemorrhoids",
+          "reasoning_stated": "Defendant did not pursue further testing",
+          "evidence_ids": [
+            "E003"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Further investigation should have been conducted",
+          "standard_of_care_basis": "Worsening symptoms warranted additional testing",
+          "evidence_ids": [
+            "E004"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to investigate worsening symptoms led to delayed diagnosis",
+          "what_should_have_happened": "Further testing could have identified cancer earlier",
+          "legal_standard_applied": "Breach of duty due to failure to investigate",
+          "evidence_ids": [
+            "E004"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient diagnosed with stage-four colon cancer",
+        "severity": "PERMANENT_SEVERE_DISABILITY",
+        "long_term_effects": "Progression to stage-four cancer",
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "None",
+        "key_findings": [
+          "Statute of repose barred the claim",
+          "Procedural issues prevented the case from proceeding"
+        ],
+        "evidence_ids": [
+          "E007",
+          "E009"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Failure to order further investigation",
+        "counterfactual": "Earlier diagnosis could have been made",
+        "evidence_ids": [
+          "E004",
+          "E005"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "2010",
+        "event": "Initial treatment by Dr. Lee",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "2015",
+        "event": "Patient returned with worsening symptoms",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "timestamp": "2017",
+        "event": "Diagnosis of stage-three colon cancer",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "timestamp": "2010",
+        "event": "Initial consultation and colonoscopy",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001",
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "2015",
+        "event": "Follow-up consultation with worsening symptoms",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "timestamp": "April 2021",
+        "event": "Children's loss-of-consortium claims filed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E008"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Colonoscopy",
+        "date": "2010",
+        "result": "No cancerous lesions found",
+        "interpretation": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "test_name": "Colonoscopy",
+        "date": "2010",
+        "result": "No cancerous lesions found",
+        "interpretation": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Hemorrhoids",
+        "when_made": "2010",
+        "made_by": null,
+        "correct": false,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "diagnosis": "Stage-three colon cancer",
+        "when_made": "2017",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "diagnosis": "Stage-four colon cancer",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Not documented in judgment",
+        "date": "Not documented in judgment",
+        "provider": null,
+        "outcome": "Not documented in judgment",
+        "evidence_ids": []
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Progression to stage-four cancer",
+        "when_occurred": "Not documented in judgment",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to investigate worsening symptoms",
+        "against": "Dr. Lee",
+        "found_proven": false,
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      },
+      {
+        "allegation": "Failure to order further investigation",
+        "against": "Dr. Lee",
+        "found_proven": false,
+        "evidence_ids": [
+          "E007",
+          "E009"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Claim barred by statute of repose",
+        "legal_significance": "No liability found",
+        "evidence_ids": [
+          "E007",
+          "E009"
+        ]
+      },
+      {
+        "finding": "Statute of repose barred the claim",
+        "legal_significance": "Procedural bar due to statute of repose",
+        "evidence_ids": [
+          "E007",
+          "E009"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.1111111111111111,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 10:08:39.116333",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

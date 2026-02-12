@@ -1,0 +1,380 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "bailii-qb-2020-3029-html",
+  "source": "BAILII",
+  "jurisdiction": "UK",
+  "court": "Unknown",
+  "decision_date": "2020-11-11",
+  "url": "https://example.com/bailii-qb-2020-3029-html",
+  "case_name": "Constance v Ministry of Defence & Anor [2020] EWHC 3029 (QB) (11 November 2020)",
+  "neutral_citation": "[2020] EWHC 3029",
+  "clinical_domain": "OBSTETRICS_GYNAECOLOGY",
+  "outcome_severity": "PERMANENT_SEVERE_DISABILITY",
+  "summary": {
+    "brief": "Medical malpractice case involving obstetrics gynaecology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Mr Warren Constance, who was a serving soldier in the Royal Artillery from 18 January 1993 until his enforced medical retirement from the Army on 10 August 2011, claims damages arising out of the failure of two doctors",
+      "paragraph_ref": "12",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "The negligence on the part of both the doctors and the MoD is partially admitted but there are considerable disputes between the parties about what would have happened to Mr Constance if he had been given proper advice",
+      "paragraph_ref": "12",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "Mr Constance was born on 31 July 1968 and grew up in Cornwall. After school he went into the building trade. He enlisted in the Army on 18 January 1993 when aged 24.",
+      "paragraph_ref": "23",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "Mr Caldera correctly diagnosed that Mr Constance was suffering from moderate form of conductive hearing loss.",
+      "paragraph_ref": "35",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "EXPERT_TESTIMONY",
+      "text": "All of the experts agreed that an ENT surgeon should discuss both options with the patient and that it is negligent not to do so.",
+      "paragraph_ref": "40",
+      "speaker": "Expert testimony"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "There is no reference in the notes made by Mr Caldera in any of the consultations where he saw Mr Constance to clinical treatment options for the treatment of his otosclerosis being discussed.",
+      "paragraph_ref": "42",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "WITNESS_STATEMENT",
+      "text": "Mr Constance's evidence was that, although he could not precisely remember what was said to him in consultations with Mr Caldera, no one ever explained to him that he was suffering from conductive hearing loss",
+      "paragraph_ref": "43",
+      "speaker": "Mr Constance"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "LEGAL_FINDING",
+      "text": "I find that Mr Caldera had breached his duty of care to Mr Constance by failing to discuss the option of surgery with him during, at latest, the appointment in January 2005",
+      "paragraph_ref": "44",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "FACTUAL_FINDING",
+      "text": "The reference to Mr Constance being 'restricted from noise exposure and firing weapons' can only have been based on an assumption that Mr Constance was suffering from NIHL",
+      "paragraph_ref": "65",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "EXPERT_TESTIMONY",
+      "text": "The expert evidence confirmed that there is no good reason to impose these restrictions on a soldier who is suffering from conductive hearing loss.",
+      "paragraph_ref": "65",
+      "speaker": "Expert testimony"
+    },
+    {
+      "evidence_id": "E011",
+      "type": "LEGAL_FINDING",
+      "text": "The MoD have accepted that the error in attributing his hearing loss to NIHL constituted negligence.",
+      "paragraph_ref": "81",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E012",
+      "type": "COURT_REASONING",
+      "text": "I thus consider that the losses suffered by Mr Constance were the exclusive responsibility of the MoD in the period mid-2006 to mid-2008, and thereafter both the Trust and the MoD are jointly responsible",
+      "paragraph_ref": "213",
+      "speaker": "Judge's analysis"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "36 years",
+        "sex": "male",
+        "relevant_social_history": "Serving soldier in the Royal Artillery"
+      },
+      "chief_complaint": "Hearing loss",
+      "history_of_present_illness": "Mr. Constance reported gradual hearing loss over 5 years, unable to hear conversation in his right ear.",
+      "past_medical_history": [
+        "Conductive hearing loss"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "ears": "Both tympanic membranes looked normal, no evidence of middle ear disease or effusion."
+        }
+      },
+      "initial_working_problem": "Conductive hearing loss",
+      "known_constraints": null,
+      "initial_differential": [
+        "otosclerosis",
+        "noise-induced hearing loss"
+      ],
+      "critical_findings": [
+        "Conductive hearing loss worse on the right"
+      ],
+      "urgency_level": "ROUTINE",
+      "evidence_ids": [
+        "E004",
+        "E027"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSULT_NOTE",
+        "name": "ENT Consultation",
+        "description": "Consultation with ENT specialist regarding hearing loss",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Conductive hearing loss diagnosed",
+          "detailed_findings": null,
+          "clinical_significance": "Confirms the type of hearing loss",
+          "decision_impact": "Should prompt discussion of treatment options",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with hearing loss",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "ENT consultation",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E004"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient diagnosed with conductive hearing loss",
+        "prompt": "What treatment options should be discussed with the patient?",
+        "action_type": "DISCLOSE_ALTERNATIVES",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Discuss both hearing aids and stapedectomy",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard practice to discuss all viable treatment options"
+          },
+          {
+            "option_id": "B",
+            "description": "Discuss only hearing aids",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Failed to provide full information on treatment options"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant discussed only hearing aids",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E008"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Both hearing aids and stapedectomy should have been discussed",
+          "standard_of_care_basis": "Expert evidence and standard practice",
+          "evidence_ids": [
+            "E005",
+            "E008"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failed to discuss surgical option which could have improved hearing",
+          "what_should_have_happened": "Patient should have been informed of all treatment options",
+          "legal_standard_applied": "Bolam test",
+          "evidence_ids": [
+            "E005",
+            "E008"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient experienced prolonged hearing loss and psychiatric symptoms",
+        "severity": "MODERATE_DISABILITY",
+        "long_term_effects": "Loss of congenial employment, psychiatric condition",
+        "evidence_ids": [
+          "E167",
+          "E168"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not specified in judgment",
+        "key_findings": [
+          "Failure to discuss surgical option constituted negligence",
+          "Causation established - earlier intervention could have improved hearing"
+        ],
+        "evidence_ids": [
+          "E008",
+          "E212"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to discuss stapedectomy",
+        "counterfactual": "Stapedectomy could have improved hearing",
+        "evidence_ids": [
+          "E008",
+          "E212"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "ENT consultation diagnosing conductive hearing loss",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Audiogram",
+        "date": "Not documented in judgment",
+        "result": "Not documented in judgment",
+        "interpretation": null,
+        "evidence_ids": [
+          "E133"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Conductive hearing loss",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Hearing aids",
+        "date": "Not documented in judgment",
+        "provider": null,
+        "outcome": "Temporary improvement in hearing",
+        "evidence_ids": [
+          "E167"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Psychiatric condition",
+        "when_occurred": "Not documented in judgment",
+        "severity": "Mild to moderate",
+        "evidence_ids": [
+          "E168"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to discuss surgical option",
+        "against": "ENT specialist",
+        "found_proven": true,
+        "evidence_ids": [
+          "E008"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care by not discussing stapedectomy",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E008"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "INFORMED_CONSENT"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.055299539170506916,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 09:44:33.781305",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

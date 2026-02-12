@@ -1,0 +1,478 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "bailii-qb-2020-994-html",
+  "source": "BAILII",
+  "jurisdiction": "UK",
+  "court": "Unknown",
+  "decision_date": "2020-04-24",
+  "url": "https://example.com/bailii-qb-2020-994-html",
+  "case_name": "Roberts (a minor) v Soldiers, Sailors, Airmen and Families Association & Ors [2020] EWHC 994 (QB) (24 April 2020)",
+  "neutral_citation": "[2020] EWHC 994",
+  "clinical_domain": "OBSTETRICS_GYNAECOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Medical malpractice case involving obstetrics gynaecology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "He has had level 5 Cerebral Palsy and is 100% dependent on the care of others. Has bilateral dystonic athetoid cerebral palsy.",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Harry Roberts was born on 14 June 2000 in the Allegemeines Krankenhaus in Viersen, North-Rhine Westphalia, Germany",
+      "paragraph_ref": "12",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "It is alleged that at the time of his birth, Harry suffered an acute profound hypoxic brain injury",
+      "paragraph_ref": "12",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "The central allegation is that she ought to have sought the assistance of hospital doctors at a much earlier point",
+      "paragraph_ref": "14",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "LEGAL_FINDING",
+      "text": "The first defendant admits that Midwife Clelland was its employee, it denies that it was vicariously liable for any failings on her part",
+      "paragraph_ref": "17",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "Proceedings were issued in the High Court in London on 31 December 2004",
+      "paragraph_ref": "15",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "The second defendant, who in fact indemnifies them, argues that liability is that of the first defendant.",
+      "paragraph_ref": "16",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "FACTUAL_FINDING",
+      "text": "The British military hospitals in Germany were originally set up to provide routine secondary care for British forces",
+      "paragraph_ref": "39",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Mr Branscombe said it was implicit that whilst working in the German hospital and in the German system the English midwives would have to work under the direction of the German system",
+      "paragraph_ref": "51",
+      "speaker": "Expert testimony"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "WITNESS_STATEMENT",
+      "text": "Mrs Roberts states that eight months after his birth, therefore, in February 2001 he was reassessed.",
+      "paragraph_ref": "90",
+      "speaker": "Mrs Roberts"
+    },
+    {
+      "evidence_id": "E011",
+      "type": "LEGAL_FINDING",
+      "text": "There is no limitation defence under German law available to the defendants, given that Harry acquired knowledge in about June 2003",
+      "paragraph_ref": "374",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E012",
+      "type": "COURT_REASONING",
+      "text": "I do not see how, the correspondence read fairly from that time, points to a representation upon which the claimant may rely",
+      "paragraph_ref": "366",
+      "speaker": "Judge's analysis"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Newborn",
+        "sex": "male",
+        "relevant_social_history": "Born to a military family stationed in Germany"
+      },
+      "chief_complaint": "Birth complications",
+      "history_of_present_illness": "Harry Roberts was born on 14 June 2000 at the AKV Hospital. It is alleged that he suffered an acute profound hypoxic brain injury at birth.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": null,
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": "Not documented in judgment",
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "neurological": "Floppy at birth, required resuscitation"
+        }
+      },
+      "initial_working_problem": "Birth asphyxia",
+      "known_constraints": null,
+      "initial_differential": [
+        "Hypoxic-ischemic encephalopathy"
+      ],
+      "critical_findings": [
+        "Floppy at birth",
+        "Required resuscitation"
+      ],
+      "urgency_level": "EMERGENCY",
+      "evidence_ids": [
+        "E002",
+        "E003",
+        "E085"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSULT_NOTE",
+        "name": "Paediatric Neurology Consultation",
+        "description": "Assessment of neurological status post-birth",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not documented in judgment",
+          "detailed_findings": null,
+          "clinical_significance": "Not documented in judgment",
+          "decision_impact": "Not documented in judgment",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E010"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "decision",
+        "name": "Birth and Immediate Post-Birth",
+        "description": "Harry Roberts is born and initial management decisions are made",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Birth of Harry Roberts",
+            "timestamp": "14 June 2000",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "presentation",
+        "name": "Birth and Immediate Postnatal Period",
+        "description": "Harry Roberts was born and experienced complications",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Birth of Harry Roberts",
+            "timestamp": "14 June 2000",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "decision",
+        "clinical_context": "Management of newborn with suspected hypoxic injury",
+        "prompt": "What immediate post-birth management should be initiated?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Initiate immediate neonatal resuscitation and monitoring",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard care for suspected hypoxic injury"
+          },
+          {
+            "option_id": "B",
+            "description": "Delay intervention and monitor",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Inadequate response to suspected hypoxic injury"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Delayed intervention",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E003"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Immediate intervention should have been initiated",
+          "standard_of_care_basis": "Expert evidence established immediate intervention is standard",
+          "evidence_ids": [
+            "E003"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Based on evidence E003",
+          "what_should_have_happened": "Immediate intervention based on court's findings",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E003"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Harry Roberts developed level 5 Cerebral Palsy and is 100% dependent on care",
+        "severity": "PERMANENT_SEVERE_DISABILITY",
+        "long_term_effects": "Bilateral dystonia, complete dependency",
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Breach of duty in failing to escalate care",
+          "Causation established - earlier intervention could have prevented injury"
+        ],
+        "evidence_ids": [
+          "E311",
+          "E326"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to contact obstetrician immediately",
+        "counterfactual": "Immediate contact could have altered outcome",
+        "evidence_ids": [
+          "E311",
+          "E326"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "14 June 2000",
+        "event": "Harry Roberts born at AKV Hospital",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "14 June 2000",
+        "event": "Harry Roberts is born",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "14 June 2000",
+        "event": "Birth of Harry Roberts",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "CTG Monitoring",
+        "date": "13 June 2000",
+        "result": "Variable decelerations",
+        "interpretation": null,
+        "evidence_ids": [
+          "E071"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Acute profound hypoxic brain injury",
+        "when_made": "At birth",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "diagnosis": "Cerebral Palsy",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "diagnosis": "Acute profound hypoxic brain injury",
+        "when_made": "At birth",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Resuscitation at birth",
+        "date": "14 June 2000",
+        "provider": null,
+        "outcome": "Stabilized but with severe neurological damage",
+        "evidence_ids": [
+          "E078"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Severe cerebral palsy",
+        "when_occurred": "Post-birth",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "complication": "Hypoxic brain injury",
+        "when_occurred": "At birth",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "complication": "Cerebral Palsy",
+        "when_occurred": "Post-birth",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to escalate care",
+        "against": "Midwife Clelland",
+        "found_proven": true,
+        "evidence_ids": [
+          "E085"
+        ]
+      },
+      {
+        "allegation": "Failure to provide immediate post-birth intervention",
+        "against": "Midwife Clelland",
+        "found_proven": true,
+        "evidence_ids": [
+          "E003",
+          "E004"
+        ]
+      },
+      {
+        "allegation": "Failure to escalate care",
+        "against": "Midwife",
+        "found_proven": true,
+        "evidence_ids": [
+          "E311",
+          "E326"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E085",
+          "E086"
+        ]
+      },
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E003",
+          "E004"
+        ]
+      },
+      {
+        "finding": "Midwife breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E311",
+          "E326"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.031914893617021274,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 09:49:25.400727",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

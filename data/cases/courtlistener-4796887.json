@@ -1,0 +1,443 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-4796887",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2015-02-24",
+  "url": "https://example.com/courtlistener-4796887",
+  "case_name": "Gysegem v. Ohio State Univ. Wexner Med. Ctr.",
+  "neutral_citation": null,
+  "clinical_domain": "PAEDIATRICS",
+  "outcome_severity": "TEMPORARY_HARM",
+  "summary": {
+    "brief": "Gysegem v. Ohio State Univ. Wexner Med. Ctr.. Medical malpractice case involving paediatrics.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "In February 2015 Tim Gysegem\u2014who has been diagnosed with, among other things, monoclonal B cell lymphocytosis\u2014presented to the emergency room at OSUWMC after he experienced abdominal pain and other symptoms, including fever and nausea.",
+      "paragraph_ref": "7",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "MEDICAL_RECORD",
+      "text": "On February 23, 2015, a CT scan was performed on Tim Gysegem. A radiologist noted that the CT scan showed 'an extraluminal collection containing an air-fluid level adjacent to the appendix with an appendicolith in this region, measuring approximately 2.6 x 4.4 cm.'",
+      "paragraph_ref": "8",
+      "speaker": "Radiologist"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "On February 24, 2015, Dr. Eiferman performed a laparoscopic appendectomy on Tim Gysegem at OSUWMC.",
+      "paragraph_ref": "11",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Eiferman testified that he would have used a surgical instrument to 'get out what\u2019s inside that abscess cavity, that pus, any stones, any inflammatory debris.'",
+      "paragraph_ref": "12",
+      "speaker": "Dr. Eiferman"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "Tim Gysegem was discharged from the hospital on February 26, 2015 with instructions to follow up with Dr. Eiferman.",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "On March 3, 2015, Tim Gysegem underwent an endoscopic retrograde cholangiopancreatography (ERCP) with sphincterotomy to evaluate a potential biliary obstruction.",
+      "paragraph_ref": "16",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "On March 4, 2015, the interventional radiology team drained 10 ml of fluid, which was sent for culture.",
+      "paragraph_ref": "17",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "FACTUAL_FINDING",
+      "text": "On March 9, 2015, Tim Gysegem was discharged from OSUWMC with instructions to schedule a follow-up appointment with Dr. Eiferman.",
+      "paragraph_ref": "18",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "FACTUAL_FINDING",
+      "text": "On March 27, 2015, Dr. Eiferman performed a laparoscopic cholecystectomy on Tim Gysegem at OSUWMC.",
+      "paragraph_ref": "19",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Steinberg advised the Gysegems that the CT scan demonstrated an abscess in an area not previously seen and that it had encompassed the right lung, had gone through the diaphragm, and had invaded the chest.",
+      "paragraph_ref": "31",
+      "speaker": "Dr. Steinberg"
+    },
+    {
+      "evidence_id": "E011",
+      "type": "LEGAL_FINDING",
+      "text": "The court concludes by preponderance of the evidence that Dr. Eiferman did not breach the standard of care during the laparoscopic appendectomy by failing to remove the appendicolith that was identified in the CT scan of February 23, 2015.",
+      "paragraph_ref": "48",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E012",
+      "type": "LEGAL_FINDING",
+      "text": "The court finds by a preponderance of the evidence that Dr. Eiferman met the standard of care during the laparoscopic cholecystectomy.",
+      "paragraph_ref": "50",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E013",
+      "type": "LEGAL_FINDING",
+      "text": "The Gysegems cannot prevail on their claim of medical negligence against OSUWMC.",
+      "paragraph_ref": "53",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E014",
+      "type": "LEGAL_FINDING",
+      "text": "The court holds that the Gysegems have not proven by a preponderance of the evidence that OSUWMC should be held liable for medical malpractice or a derivative loss of consortium.",
+      "paragraph_ref": "55",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "male",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Abdominal pain, fever, and nausea",
+      "history_of_present_illness": "Patient presented to the emergency room with abdominal pain and other symptoms, including fever and nausea.",
+      "past_medical_history": [
+        "Monoclonal B cell lymphocytosis"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "abdomen": "Examination mentioned but findings not specified"
+        }
+      },
+      "initial_working_problem": "Acute abdomen - differential includes appendicitis",
+      "known_constraints": null,
+      "initial_differential": [
+        "appendicitis",
+        "abscess"
+      ],
+      "critical_findings": [
+        "Extraluminal collection with air-fluid level on CT"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "CT scan of abdomen",
+        "description": "CT scan performed to evaluate abdominal pain",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Extraluminal collection with air-fluid level adjacent to the appendix with an appendicolith",
+          "detailed_findings": null,
+          "clinical_significance": "Consistent with a contained fluid collection secondary to perforated appendicitis",
+          "decision_impact": "Indicated need for surgical intervention",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "PROCEDURE_NOTE",
+        "name": "Laparoscopic appendectomy",
+        "description": "Surgical note from appendectomy",
+        "available_phase": "procedure",
+        "reveal": {
+          "result_summary": "Appendectomy performed, no mention of appendicolith removal",
+          "detailed_findings": null,
+          "clinical_significance": "Potential oversight in not documenting removal of appendicolith",
+          "decision_impact": "Could lead to complications if appendicolith not removed",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Emergency Presentation",
+        "description": "Patient presents to ED with acute symptoms",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "CT scan performed",
+            "timestamp": "February 23, 2015",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "procedure",
+        "name": "Laparoscopic Appendectomy",
+        "description": "Surgical intervention for appendicitis",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Appendectomy performed",
+            "timestamp": "February 24, 2015",
+            "evidence_ids": [
+              "E003"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "procedure",
+        "clinical_context": "During laparoscopic appendectomy",
+        "prompt": "Should the appendicolith identified on CT be removed?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Ensure removal of appendicolith during surgery",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard practice to remove appendicolith to prevent infection"
+          },
+          {
+            "option_id": "B",
+            "description": "Proceed without ensuring appendicolith removal",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Risk of leaving appendicolith leading to complications"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Appendicolith removal not documented",
+          "reasoning_stated": "Not explicitly stated in surgical note",
+          "evidence_ids": [
+            "E003"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Appendicolith should have been removed",
+          "standard_of_care_basis": "Expert testimony indicated necessity",
+          "evidence_ids": [
+            "E011",
+            "E012"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to ensure removal of appendicolith could lead to infection",
+          "what_should_have_happened": "Appendicolith should have been removed during appendectomy",
+          "legal_standard_applied": "Standard of care requires removal if safely possible",
+          "evidence_ids": [
+            "E011",
+            "E012"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient experienced recurring infections and required multiple follow-up procedures",
+        "severity": "CHRONIC_COMPLICATIONS",
+        "long_term_effects": "Ongoing abdominal issues and multiple surgeries",
+        "evidence_ids": [
+          "E005",
+          "E008",
+          "E009"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "None",
+        "key_findings": [
+          "No breach of standard of care found",
+          "Plaintiffs failed to prove negligence by preponderance of evidence"
+        ],
+        "evidence_ids": [
+          "E011",
+          "E013",
+          "E014"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Not applicable",
+        "counterfactual": "Not applicable",
+        "evidence_ids": [
+          "E011",
+          "E013",
+          "E014"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "February 23, 2015",
+        "event": "CT scan performed showing appendicolith",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "February 24, 2015",
+        "event": "Laparoscopic appendectomy performed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "CT scan",
+        "date": "February 23, 2015",
+        "result": "Extraluminal collection with appendicolith",
+        "interpretation": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Perforated appendicitis",
+        "when_made": "February 23, 2015",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Laparoscopic appendectomy",
+        "date": "February 24, 2015",
+        "provider": null,
+        "outcome": "Appendix removed, appendicolith removal not documented",
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Recurring infections",
+        "when_occurred": "Post-surgery",
+        "severity": "Chronic",
+        "evidence_ids": [
+          "E005",
+          "E008"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to remove appendicolith",
+        "against": "Dr. Eiferman",
+        "found_proven": false,
+        "evidence_ids": [
+          "E011",
+          "E012"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "No breach of standard of care",
+        "legal_significance": "Plaintiffs did not prove negligence",
+        "evidence_ids": [
+          "E011",
+          "E013",
+          "E014"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.3888888888888889,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 09:47:52.600983",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

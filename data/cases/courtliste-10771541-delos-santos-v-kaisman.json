@@ -1,0 +1,338 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtliste-10771541-delos-santos-v-kaisman",
+  "source": "BAILII",
+  "jurisdiction": "UK",
+  "court": "Unknown",
+  "decision_date": "2025-12-31",
+  "url": "https://example.com/courtliste-10771541-delos-santos-v-kaisman",
+  "case_name": "Delos-Santos v. Kaisman",
+  "neutral_citation": null,
+  "clinical_domain": "PAEDIATRICS",
+  "outcome_severity": "TEMPORARY_HARM",
+  "summary": {
+    "brief": "Delos-Santos v. Kaisman. Medical malpractice case involving paediatrics.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "The amended complaint and the bill of particulars alleged, among other things, that the defendant performed an endoscopic lumbar discectomy on the right side of the plaintiff's body, despite the plaintiff seeking treatment to address pain and discomfort on the left side of her body",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "The amended complaint and the bill of particulars further alleged that the defendant failed to inform her of the possible risks associated with preforming an endoscopic lumbar discectomy.",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "LEGAL_FINDING",
+      "text": "The defendant failed to establish his prima facie entitlement to judgment as a matter of law dismissing the cause of action to recover damages for medical malpractice insofar as asserted against him.",
+      "paragraph_ref": "13",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "LEGAL_FINDING",
+      "text": "The Supreme Court properly denied his motion for summary judgment dismissing the amended complaint insofar as asserted against him, regardless of the sufficiency of the plaintiff's opposition papers.",
+      "paragraph_ref": "13",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "COURT_REASONING",
+      "text": "The affidavit of the defendant's expert failed to address and rebut all of the specific allegations of medical malpractice set forth in the amended complaint and verified bill of particulars.",
+      "paragraph_ref": "13",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "COURT_REASONING",
+      "text": "The defendant's submissions were insufficient to establish, prima facie, that the plaintiff was informed of the risks, benefits, and alternatives to an endoscopic lumbar discectomy in a language that she could understand.",
+      "paragraph_ref": "13",
+      "speaker": "Judge's analysis"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "unknown",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Pain and discomfort on the left side of the body",
+      "history_of_present_illness": "Patient sought treatment for left-sided pain and discomfort.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "system": "Examination mentioned but findings not specified"
+        }
+      },
+      "initial_working_problem": "Left-sided pain - differential includes lumbar disc pathology",
+      "known_constraints": null,
+      "initial_differential": [
+        "lumbar disc pathology"
+      ],
+      "critical_findings": [
+        "Pain on left side"
+      ],
+      "urgency_level": "Not documented in judgment",
+      "evidence_ids": [
+        "E001",
+        "E002"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSENT_DISCUSSION",
+        "name": "Informed Consent Discussion",
+        "description": "Discussion of risks, benefits, and alternatives to endoscopic lumbar discectomy",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not documented in judgment",
+          "detailed_findings": null,
+          "clinical_significance": "Critical for informed consent",
+          "decision_impact": "Impacts patient's understanding and consent validity",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": [
+          "E002",
+          "E006"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with left-sided pain",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Patient seeks treatment for left-sided pain",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "procedure",
+        "name": "Surgical Procedure",
+        "description": "Endoscopic lumbar discectomy performed",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Discectomy performed on right side",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "procedure",
+        "clinical_context": "Patient undergoing endoscopic lumbar discectomy",
+        "prompt": "Which side should the discectomy be performed on?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Perform discectomy on the left side",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Patient's symptoms were on the left side"
+          },
+          {
+            "option_id": "B",
+            "description": "Perform discectomy on the right side",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Performed on the wrong side"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant performed discectomy on the right side",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E001"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Discectomy should have been performed on the left side",
+          "standard_of_care_basis": "Based on patient's symptoms",
+          "evidence_ids": [
+            "E001"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Performed procedure on incorrect side",
+          "what_should_have_happened": "Procedure should have been on the left side",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E001",
+            "E003"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient experienced nerve damage due to incorrect side surgery",
+        "severity": "Not documented in judgment",
+        "long_term_effects": "Not documented in judgment",
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Breach of duty in performing surgery on the wrong side",
+          "Lack of informed consent"
+        ],
+        "evidence_ids": [
+          "E001",
+          "E002",
+          "E003"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to perform surgery on correct side",
+        "counterfactual": "Surgery on left side would have addressed symptoms",
+        "evidence_ids": [
+          "E001",
+          "E002"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Patient seeks treatment for left-sided pain",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [],
+    "treatments": [
+      {
+        "treatment": "Endoscopic lumbar discectomy",
+        "date": "Not documented in judgment",
+        "provider": null,
+        "outcome": "Performed on right side",
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Nerve damage",
+        "when_occurred": "Not documented in judgment",
+        "severity": "Not documented in judgment",
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to perform surgery on correct side",
+        "against": "Defendant surgeon",
+        "found_proven": true,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "allegation": "Lack of informed consent",
+        "against": "Defendant surgeon",
+        "found_proven": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "INFORMED_CONSENT"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.2222222222222222,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 10:08:09.170366",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

@@ -1,0 +1,432 @@
+{
+  "case_id": "courtlistener-10654174",
+  "source": "courtlistener",
+  "source_url": "local://courtlistener-10654174.html",
+  "jurisdiction": "US",
+  "extraction_metadata": {
+    "version": "batch_api_v1",
+    "model": "gpt-4o",
+    "extracted_at": "2026-01-21T17:56:57.873981",
+    "simulation_extracted_at": "2026-01-21T18:29:59.545783",
+    "simulation_model": "gpt-4o"
+  },
+  "case_metadata": {
+    "case_name": "CHI St. Luke's Community Health Services – the Woodlands Hospital v. Sharon Smith",
+    "citation": "NO. 09-25-00044-CV",
+    "court": "Ninth District of Texas at Beaumont",
+    "date": "August 14, 2025"
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "Ms. Smith presented to [SLWH] on May 20, 2023 at 8:03 pm. Dr. Luu evaluated Ms. Smith at 8:13pm and documented that Ms. Smith’s symptoms of right-sided numbness had started one hour prior to arrival.",
+      "paragraph_ref": "8",
+      "paragraph_starts_with": "Ms. Smith presented to",
+      "summary": "Ms. Smith presented to SLWH on May 20, 2023, with right-sided numbness.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "Dr. Luu performed a neurological examination, documenting that Ms. Smith had objective numbness in her right arm, leg, and face.",
+      "paragraph_ref": "8",
+      "paragraph_starts_with": "Ms. Smith presented to",
+      "summary": "Dr. Luu documented objective numbness in Ms. Smith's right arm, leg, and face.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "Dr. Luu did not activate a code stroke protocol. Dr. Luu did not consult a neurologist and/or a stroke team to evaluate Ms. Smith.",
+      "paragraph_ref": "8",
+      "paragraph_starts_with": "Ms. Smith presented to",
+      "summary": "Dr. Luu did not activate a code stroke protocol or consult a neurologist.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "Dr. Luu’s failure to order Ms. Smith’s CT scans as acute stroke protocols to ensure timely completion and interpretation was a breach of the standard of care.",
+      "paragraph_ref": "8",
+      "paragraph_starts_with": "Ms. Smith presented to",
+      "summary": "Dr. Luu's failure to order CT scans as acute stroke protocols was a breach of care.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "EXPERT_TESTIMONY",
+      "verbatim_quote": "The standard of care for emergency physicians in initially evaluating patients with stroke symptoms is to promptly determine the patient’s “last known well” time and perform a comprehensive neurological examination.",
+      "paragraph_ref": "127",
+      "paragraph_starts_with": "The standard of care for",
+      "summary": "Standard of care requires determining 'last known well' time and comprehensive neurological exam.",
+      "speaker": "Expert testimony"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "EXPERT_TESTIMONY",
+      "verbatim_quote": "Dr. Luu breached the standard of care by failing to diagnose Ms. Smith with an acute stroke, failing to offer thrombolytic therapy, and failing to admit Ms. Smith to the hospital.",
+      "paragraph_ref": "130",
+      "paragraph_starts_with": "Dr. Luu ultimately discharged",
+      "summary": "Dr. Luu breached care by not diagnosing stroke, offering thrombolytics, or admitting Ms. Smith.",
+      "speaker": "Expert testimony"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "Dr. Luu advised Ms. Smith in her discharge papers that her symptoms were likely related to elevated blood pressure.",
+      "paragraph_ref": "131",
+      "paragraph_starts_with": "Additionally, Dr. Luu advised",
+      "summary": "Dr. Luu advised symptoms were likely due to elevated blood pressure.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "EXPERT_TESTIMONY",
+      "verbatim_quote": "Dr. Luu breached the standard of care by inappropriately relying on a normal CT of the head to exclude acute stroke.",
+      "paragraph_ref": "132",
+      "paragraph_starts_with": "Dr. Luu also advised Ms.",
+      "summary": "Dr. Luu breached care by relying on normal CT to exclude stroke.",
+      "speaker": "Expert testimony"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "The breaches in the standard of care enumerated above caused a delay in diagnosis and treatment of Ms. Smith’s stroke.",
+      "paragraph_ref": "134",
+      "paragraph_starts_with": "The breaches in the standard",
+      "summary": "Breaches caused delay in diagnosis and treatment of stroke.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "LEGAL_FINDING",
+      "verbatim_quote": "Accordingly, we overrule Appellant’s issue, and we affirm the trial court’s",
+      "paragraph_ref": "414",
+      "paragraph_starts_with": "Accordingly, we overrule",
+      "summary": "Court affirms trial court's decision.",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "verdict_detected": {
+    "outcome": "NO_LIABILITY",
+    "key_phrase": "Accordingly, we overrule Appellant’s issue, and we affirm the trial court’s",
+    "paragraph_ref": "414"
+  },
+  "extraction_notes": {
+    "total_paragraphs_analyzed": 418,
+    "key_sections_found": [
+      "Background",
+      "Key Findings and Analysis",
+      "Conclusion and Verdict"
+    ],
+    "gaps_identified": [
+      "No specific lab values mentioned",
+      "Timing of events unclear"
+    ]
+  },
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Right-sided numbness",
+      "history_of_present_illness": "Ms. Smith's symptoms of right-sided numbness started one hour prior to arrival.",
+      "past_medical_history": "Not documented in judgment",
+      "medications": "Not documented in judgment",
+      "allergies": "Not documented in judgment",
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment"
+        },
+        "focused_exam": {
+          "neurological": "Objective numbness in right arm, leg, and face"
+        }
+      },
+      "initial_working_problem": "Possible acute stroke",
+      "initial_differential": [
+        "acute stroke",
+        "elevated blood pressure effects"
+      ],
+      "critical_findings": [
+        "Objective numbness in right arm, leg, and face"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "CT Head",
+        "description": "CT scan of the head to evaluate for acute stroke",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Normal CT of the head",
+          "clinical_significance": "Does not exclude acute stroke",
+          "decision_impact": "Should not be solely relied upon to exclude stroke"
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E008"
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient in ED with symptoms suggestive of stroke",
+        "prompt": "What should be the next step in management?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Activate code stroke protocol and consult neurology",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard of care for suspected stroke"
+          },
+          {
+            "option_id": "B",
+            "description": "Discharge with advice on elevated blood pressure",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Inappropriate given the symptoms"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant discharged patient with advice on elevated blood pressure",
+          "reasoning_stated": "Symptoms attributed to elevated blood pressure",
+          "evidence_ids": [
+            "E007"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Activate code stroke protocol and consult neurology",
+          "standard_of_care_basis": "Expert evidence established this as standard",
+          "evidence_ids": [
+            "E005",
+            "E006"
+          ]
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to follow stroke protocol and consult neurology",
+          "what_should_have_happened": "Code stroke should have been activated",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E003",
+            "E004",
+            "E009"
+          ]
+        },
+        "is_malpractice_point": true
+      },
+      {
+        "decision_id": "D002",
+        "phase_id": "workup",
+        "clinical_context": "Patient with suspected stroke symptoms",
+        "prompt": "What diagnostic test should be ordered?",
+        "action_type": "ORDER_TEST",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Order CT angiography to assess for vascular occlusion",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Appropriate for suspected acute stroke"
+          },
+          {
+            "option_id": "B",
+            "description": "Rely on normal CT head to exclude stroke",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Inappropriate as normal CT does not exclude stroke"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant relied on normal CT head to exclude stroke",
+          "reasoning_stated": "Normal CT interpreted as excluding stroke",
+          "evidence_ids": [
+            "E008"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Order CT angiography",
+          "standard_of_care_basis": "Expert evidence established this as standard",
+          "evidence_ids": [
+            "E005",
+            "E006"
+          ]
+        },
+        "explanation": {
+          "why_defendant_wrong": "Normal CT does not exclude stroke; further imaging needed",
+          "what_should_have_happened": "CT angiography should have been ordered",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E004",
+            "E008",
+            "E009"
+          ]
+        },
+        "is_malpractice_point": true
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Emergency Presentation",
+        "description": "Patient presents to ED with acute symptoms",
+        "duration": "10 minutes",
+        "key_events": [
+          {
+            "event": "Patient arrives at ED",
+            "timestamp": "May 20, 2023 8:03 pm",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Initial Evaluation and Workup",
+        "description": "Initial assessment and decision-making",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Neurological examination performed",
+            "timestamp": "May 20, 2023 8:13 pm",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Delay in diagnosis and treatment of stroke",
+        "severity": "PERMANENT_MODERATE_DISABILITY",
+        "long_term_effects": "Not documented in judgment",
+        "evidence_ids": [
+          "E009"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Breach of duty in failing to activate stroke protocol",
+          "Causation established - delay in treatment of stroke"
+        ],
+        "evidence_ids": [
+          "E010"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to activate stroke protocol and consult neurology",
+        "counterfactual": "Timely activation of stroke protocol would have led to appropriate treatment",
+        "evidence_ids": [
+          "E003",
+          "E004",
+          "E009"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "May 20, 2023 8:03 pm",
+        "event": "Patient arrives at ED",
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "CT Head",
+        "date": "Not documented in judgment",
+        "result": "Normal",
+        "evidence_ids": [
+          "E008"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Acute stroke",
+        "when_made": "Not documented in judgment",
+        "correct": false,
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "None",
+        "date": "Not documented in judgment",
+        "outcome": "Delay in treatment",
+        "evidence_ids": [
+          "E009"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Delay in diagnosis and treatment of stroke",
+        "when_occurred": "Not documented in judgment",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E009"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to activate stroke protocol",
+        "against": "Dr. Luu",
+        "found_proven": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E010"
+        ]
+      }
+    ]
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "diagnosis_subtypes": [
+      "DELAYED_DIAGNOSIS",
+      "FAILURE_TO_INVESTIGATE"
+    ]
+  }
+}

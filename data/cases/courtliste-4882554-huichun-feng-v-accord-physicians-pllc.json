@@ -1,0 +1,455 @@
+{
+  "case_id": "courtliste-4882554-huichun-feng-v-accord-physicians-pllc",
+  "source": "courtlistener",
+  "source_url": "local://courtliste-4882554-huichun-feng-v-accord-physicians-pllc.html",
+  "jurisdiction": "US",
+  "extraction_metadata": {
+    "version": "batch_api_v1",
+    "model": "gpt-4o",
+    "extracted_at": "2026-01-21T17:56:57.945852",
+    "simulation_extracted_at": "2026-01-21T18:29:59.598719",
+    "simulation_model": "gpt-4o"
+  },
+  "case_metadata": {
+    "case_name": "Huichun Feng v. Accord Physicians, PLLC",
+    "citation": "2021 NY Slip Op 03024",
+    "court": "SUPREME COURT OF THE STATE OF NEW YORK, Appellate Division, Second Judicial Department",
+    "date": "May 12, 2021"
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "On August 4, 2014, the then 70-year-old plaintiff presented at the offices of the defendants, Accord Physicians, PLLC, and Vitaly Raykhman, after being referred for an elevated level of prostate-specific antigen.",
+      "paragraph_ref": "13",
+      "paragraph_starts_with": "In an action to recover damages",
+      "summary": "Plaintiff presented to defendants on August 4, 2014, for elevated PSA.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "On August 13, 2014, Raykhman performed a transrectal prostate biopsy on the plaintiff.",
+      "paragraph_ref": "13",
+      "paragraph_starts_with": "In an action to recover damages",
+      "summary": "Transrectal prostate biopsy performed on August 13, 2014.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "Following the procedure, the plaintiff used the bathroom and observed blood from his rectum in the toilet bowl.",
+      "paragraph_ref": "13",
+      "paragraph_starts_with": "In an action to recover damages",
+      "summary": "Plaintiff observed rectal bleeding after biopsy.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "Raykhman looked in the toilet bowl and relayed to the interpreter that this was a normal amount of blood from the procedure.",
+      "paragraph_ref": "13",
+      "paragraph_starts_with": "In an action to recover damages",
+      "summary": "Raykhman considered bleeding normal post-procedure.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "An ambulance was called and the plaintiff was transported to the hospital, where he was given a blood transfusion and underwent surgery at the site of the biopsy to repair a laceration.",
+      "paragraph_ref": "13",
+      "paragraph_starts_with": "In an action to recover damages",
+      "summary": "Plaintiff required blood transfusion and surgery for biopsy site laceration.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "LEGAL_FINDING",
+      "verbatim_quote": "The essential elements of medical malpractice are (1) a deviation or departure from accepted medical practice, and (2) evidence that such departure was a proximate cause of injury.",
+      "paragraph_ref": "13",
+      "paragraph_starts_with": "In an action to recover damages",
+      "summary": "Court outlines elements of medical malpractice.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "LEGAL_FINDING",
+      "verbatim_quote": "The defendants failed to establish their prima facie entitlement to summary judgment dismissing the complaint.",
+      "paragraph_ref": "13",
+      "paragraph_starts_with": "In an action to recover damages",
+      "summary": "Defendants did not meet burden for summary judgment.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "LEGAL_FINDING",
+      "verbatim_quote": "The affidavit of the defendants' expert failed to address and rebut the specific allegations of malpractice set forth in the complaint and bill of particulars.",
+      "paragraph_ref": "13",
+      "paragraph_starts_with": "In an action to recover damages",
+      "summary": "Defendants' expert affidavit insufficient.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "LEGAL_FINDING",
+      "verbatim_quote": "The Supreme Court should have denied that branch of their motion which was for summary judgment dismissing the cause of action alleging lack of informed consent.",
+      "paragraph_ref": "13",
+      "paragraph_starts_with": "In an action to recover damages",
+      "summary": "Court reverses summary judgment on informed consent claim.",
+      "speaker": "Court finding"
+    }
+  ],
+  "verdict_detected": {
+    "outcome": "NO_LIABILITY",
+    "key_phrase": "ORDERED that the order is reversed, on the law, with costs, and the defendants' motion for summary judgment dismissing the complaint is denied.",
+    "paragraph_ref": "13"
+  },
+  "extraction_notes": {
+    "total_paragraphs_analyzed": 14,
+    "key_sections_found": [
+      "Facts",
+      "Legal Findings",
+      "Conclusion"
+    ],
+    "gaps_identified": [
+      "No specific lab values mentioned",
+      "No detailed expert testimony included"
+    ]
+  },
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "70 years",
+        "sex": "male",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Referred for elevated prostate-specific antigen (PSA)",
+      "history_of_present_illness": "Patient presented for evaluation of elevated PSA levels.",
+      "past_medical_history": "Not documented in judgment",
+      "medications": "Not documented in judgment",
+      "allergies": "Not documented in judgment",
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment"
+        },
+        "focused_exam": {
+          "system": "Examination mentioned but findings not specified"
+        }
+      },
+      "initial_working_problem": "Elevated PSA requiring further investigation",
+      "initial_differential": [
+        "Prostate cancer",
+        "Benign prostatic hyperplasia"
+      ],
+      "critical_findings": [
+        "Elevated PSA"
+      ],
+      "urgency_level": "ROUTINE",
+      "evidence_ids": [
+        "E001"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "PROCEDURE_NOTE",
+        "name": "Transrectal Prostate Biopsy",
+        "description": "Procedure note for biopsy performed on August 13, 2014",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Biopsy performed, post-procedure bleeding observed",
+          "clinical_significance": "Post-procedure bleeding noted",
+          "decision_impact": "Requires monitoring and potential intervention"
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E002",
+          "E003"
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "procedure",
+        "clinical_context": "Post-biopsy observation of rectal bleeding",
+        "prompt": "How should the post-procedure bleeding be managed?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Monitor the patient and provide reassurance",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Defendant considered bleeding normal post-procedure"
+          },
+          {
+            "option_id": "B",
+            "description": "Initiate further investigation and consider intervention",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Significant bleeding may indicate a complication requiring intervention"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "A",
+          "description": "Defendant reassured patient that bleeding was normal",
+          "reasoning_stated": "Defendant considered bleeding normal post-procedure",
+          "evidence_ids": [
+            "E004"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "B",
+          "description": "Further investigation and intervention should have been considered",
+          "standard_of_care_basis": "Significant bleeding post-procedure requires evaluation",
+          "evidence_ids": [
+            "E005"
+          ]
+        },
+        "explanation": {
+          "why_defendant_wrong": "Significant bleeding was not adequately addressed",
+          "what_should_have_happened": "Further investigation and potential intervention",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E005",
+            "E006"
+          ]
+        },
+        "is_malpractice_point": true
+      },
+      {
+        "decision_id": "D002",
+        "phase_id": "procedure",
+        "clinical_context": "Informed consent for transrectal prostate biopsy",
+        "prompt": "Was informed consent adequately obtained?",
+        "action_type": "DISCLOSE_ALTERNATIVES",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Informed consent was adequately obtained",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Defendant believed consent was sufficient"
+          },
+          {
+            "option_id": "B",
+            "description": "Informed consent was not adequately obtained",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Court found lack of informed consent"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "A",
+          "description": "Defendant believed informed consent was adequate",
+          "reasoning_stated": "Defendant's position on informed consent",
+          "evidence_ids": [
+            "E009"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "B",
+          "description": "Informed consent was not adequately obtained",
+          "standard_of_care_basis": "Court reversed summary judgment on informed consent claim",
+          "evidence_ids": [
+            "E009"
+          ]
+        },
+        "explanation": {
+          "why_defendant_wrong": "Informed consent was not adequately addressed",
+          "what_should_have_happened": "Proper informed consent process",
+          "legal_standard_applied": "Informed consent legal standards",
+          "evidence_ids": [
+            "E009"
+          ]
+        },
+        "is_malpractice_point": true
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents for elevated PSA evaluation",
+        "duration": "Not specified in judgment",
+        "key_events": [
+          {
+            "event": "Patient referred for elevated PSA",
+            "timestamp": "August 4, 2014",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "procedure",
+        "name": "Prostate Biopsy",
+        "description": "Transrectal prostate biopsy performed",
+        "duration": "Not specified in judgment",
+        "key_events": [
+          {
+            "event": "Biopsy performed",
+            "timestamp": "August 13, 2014",
+            "evidence_ids": [
+              "E002"
+            ]
+          },
+          {
+            "event": "Post-procedure bleeding observed",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E003"
+            ]
+          }
+        ]
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient required blood transfusion and surgery for biopsy site laceration",
+        "severity": "SEVERE",
+        "long_term_effects": "Not documented in judgment",
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Breach of duty in failing to address post-procedure bleeding",
+          "Lack of informed consent"
+        ],
+        "evidence_ids": [
+          "E006",
+          "E009"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to address post-procedure bleeding and lack of informed consent",
+        "counterfactual": "Proper management and informed consent could have prevented complications",
+        "evidence_ids": [
+          "E005",
+          "E009"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "August 4, 2014",
+        "event": "Patient presents for elevated PSA evaluation",
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "August 13, 2014",
+        "event": "Transrectal prostate biopsy performed",
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Post-procedure bleeding observed",
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Transrectal Prostate Biopsy",
+        "date": "August 13, 2014",
+        "result": "Bleeding observed post-procedure",
+        "evidence_ids": [
+          "E002",
+          "E003"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Biopsy site laceration",
+        "when_made": "Date not specified in judgment",
+        "correct": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Blood transfusion and surgery",
+        "date": "Date not specified in judgment",
+        "outcome": "Laceration repaired",
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Biopsy site laceration",
+        "when_occurred": "Date not specified in judgment",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to address post-procedure bleeding",
+        "against": "Defendant physician",
+        "found_proven": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "allegation": "Lack of informed consent",
+        "against": "Defendant physician",
+        "found_proven": true,
+        "evidence_ids": [
+          "E009"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "finding": "Lack of informed consent",
+        "legal_significance": "Informed consent standards not met",
+        "evidence_ids": [
+          "E009"
+        ]
+      }
+    ]
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "TREATMENT_PROCEDURE_ERROR",
+      "INFORMED_CONSENT"
+    ],
+    "diagnosis_subtypes": [
+      "FAILURE_TO_MONITOR",
+      "LACK_OF_INFORMED_CONSENT"
+    ]
+  }
+}

@@ -1,0 +1,425 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "nzlii-nzca-2023-617-html",
+  "source": "BAILII",
+  "jurisdiction": "UK",
+  "court": "Unknown",
+  "decision_date": "2023-12-06",
+  "url": "https://example.com/nzlii-nzca-2023-617-html",
+  "case_name": "Accident Compensation Corporation v AZ [2023] NZCA 617; [2023] 3 NZLR 445 (6 December 2023)",
+  "neutral_citation": "[2021] UKSC 21",
+  "clinical_domain": "OBSTETRICS_GYNAECOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Accident Compensation Corporation v AZ [2023] NZCA 617; [2023] 3 NZLR 445 (6 December 2023). Medical malpractice case involving obstetrics gynaecology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "AZ, who is now 20 years old, developed spina bifida in utero at approximately five weeks\u2019 gestation.",
+      "paragraph_ref": "40",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "AZ\u2019s mother underwent a 20-week ultrasound scan when she was almost 20 weeks pregnant. The spina bifida should have been detected by the health professional who read the scan.",
+      "paragraph_ref": "40",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "It is an accepted fact that had AZ\u2019s mother been informed the foetus had spina bifida, she would have sought and obtained a lawful termination of her pregnancy when she was about 20 weeks pregnant.",
+      "paragraph_ref": "2",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "LEGAL_FINDING",
+      "text": "The appeal is dismissed.",
+      "paragraph_ref": "28",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "COURT_REASONING",
+      "text": "We are satisfied that the terms \u201ctreatment\u201d and \u201ctreatment injury\u201d in ss 32 and 33 of the Act are broader than the traditional curative-focused definitions of treatment relied upon by ACC.",
+      "paragraph_ref": "37",
+      "speaker": "Court reasoning"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "LEGAL_FINDING",
+      "text": "If AZ has personal injuries that are a treatment injury, she has cover under the Act.",
+      "paragraph_ref": "125",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "AZ was born with spina bifida and several other related health conditions.",
+      "paragraph_ref": "40",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "COURT_REASONING",
+      "text": "The spinal defects associated with spina bifida satisfy the natural and ordinary meaning of the term physical injury.",
+      "paragraph_ref": "34",
+      "speaker": "Court reasoning"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "LEGAL_FINDING",
+      "text": "To hold that there was no cover in the circumstances of this case would be to create what the Court of Appeal majority in Accident Compensation Corporation v D recognised would be an \u201codd\u201d gap in the general coverage for medical misadventure.",
+      "paragraph_ref": "77",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "COURT_REASONING",
+      "text": "The exclusion is not for natural processes per se. It is for gradual processes that are not of a certain kind. The focus is on the cause of the gradual process.",
+      "paragraph_ref": "79",
+      "speaker": "Court reasoning"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "20 years",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Not applicable as the case involves prenatal diagnosis",
+      "history_of_present_illness": "AZ developed spina bifida in utero at approximately five weeks\u2019 gestation. The condition was not detected during a 20-week ultrasound scan.",
+      "past_medical_history": [
+        "Spina bifida",
+        "Related health conditions"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "system": "Examination mentioned but findings not specified"
+        }
+      },
+      "initial_working_problem": "Undiagnosed spina bifida during prenatal period",
+      "known_constraints": null,
+      "initial_differential": [
+        "Spina bifida"
+      ],
+      "critical_findings": [
+        "Misdiagnosis of 20-week ultrasound scan"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002",
+        "E007"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "20-week Ultrasound Scan",
+        "description": "Ultrasound scan performed at 20 weeks of gestation",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": null,
+          "detailed_findings": "Imaging performed but findings not detailed in judgment",
+          "clinical_significance": "Should have detected spina bifida",
+          "decision_impact": "Failure to detect led to missed opportunity for termination",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Prenatal Presentation",
+        "description": "20-week ultrasound scan performed",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Ultrasound scan performed",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "20-week ultrasound scan for prenatal assessment",
+        "prompt": "What should have been done upon reviewing the ultrasound scan?",
+        "action_type": "ORDER_TEST",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Correctly identify spina bifida on the ultrasound",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard practice to identify major fetal abnormalities"
+          },
+          {
+            "option_id": "B",
+            "description": "Misread the ultrasound scan",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Failure to detect spina bifida"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant misread the ultrasound scan",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E002",
+            "E003"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Spina bifida should have been detected",
+          "standard_of_care_basis": "Expert evidence established detection is standard",
+          "evidence_ids": [
+            "E002",
+            "E003"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to detect spina bifida led to missed opportunity for termination",
+          "what_should_have_happened": "Spina bifida should have been identified, allowing for informed decision-making",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E002",
+            "E003"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "AZ was born with spina bifida due to missed diagnosis at 20-week scan.",
+        "severity": "PERMANENT_MODERATE_DISABILITY",
+        "long_term_effects": "Chronic health issues related to spina bifida",
+        "evidence_ids": [
+          "E007",
+          "E080"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not specified in judgment",
+        "key_findings": [
+          "Failure to diagnose spina bifida at 20-week scan",
+          "Causation established - missed opportunity for termination"
+        ],
+        "evidence_ids": [
+          "E080",
+          "E081"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to diagnose spina bifida at 20-week scan",
+        "counterfactual": "If diagnosed, termination could have been considered",
+        "evidence_ids": [
+          "E080",
+          "E081"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "20-week ultrasound scan performed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "20-week ultrasound scan performed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "20-week Ultrasound",
+        "date": "Date not specified in judgment",
+        "result": "Spina bifida not detected",
+        "interpretation": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "test_name": "20-week Ultrasound Scan",
+        "date": "Date not specified in judgment",
+        "result": "Spina bifida not detected",
+        "interpretation": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Spina bifida",
+        "when_made": "Post-birth",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E001",
+          "E007"
+        ]
+      },
+      {
+        "diagnosis": "Spina bifida",
+        "when_made": "At birth",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Not applicable",
+        "date": "Not applicable",
+        "provider": null,
+        "outcome": "Not applicable",
+        "evidence_ids": []
+      },
+      {
+        "treatment": "Not applicable",
+        "date": "Not applicable",
+        "provider": null,
+        "outcome": "Not applicable",
+        "evidence_ids": []
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Related health conditions",
+        "when_occurred": "Post-birth",
+        "severity": "Moderate",
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      {
+        "complication": "Chronic health issues related to spina bifida",
+        "when_occurred": "Since birth",
+        "severity": "Moderate",
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to detect spina bifida on ultrasound",
+        "against": "Medical practitioner/radiologist",
+        "found_proven": true,
+        "evidence_ids": [
+          "E002",
+          "E003"
+        ]
+      },
+      {
+        "allegation": "Failure to diagnose spina bifida at 20-week scan",
+        "against": "Defendant radiologist",
+        "found_proven": true,
+        "evidence_ids": [
+          "E080"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E003",
+          "E004"
+        ]
+      },
+      {
+        "finding": "Defendant breached duty of care by failing to diagnose spina bifida",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E080"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.023529411764705882,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 08:53:38.913198",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

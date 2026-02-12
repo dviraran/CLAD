@@ -1,0 +1,341 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "nzlii-nzhpdt-2019-1057-html",
+  "source": "BAILII",
+  "jurisdiction": "UK",
+  "court": "Unknown",
+  "decision_date": "2019-12-18",
+  "url": "https://example.com/nzlii-nzhpdt-2019-1057-html",
+  "case_name": "Professional Conduct Committee appointed by the Medical Council of New Zealand v R [2019] NZHPDT 1057 (18 December 2019)",
+  "neutral_citation": null,
+  "clinical_domain": "ONCOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Professional Conduct Committee appointed by the Medical Council of New Zealand v R [2019] NZHPDT 1057 (18 December 2019). Medical malpractice case involving oncology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr R indiscriminately used pethidine for Mrs N for her various problems including headaches of various types and that the dosages were often excessive and frequent.",
+      "paragraph_ref": "82",
+      "speaker": "PCC Dr Harrison"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "LEGAL_FINDING",
+      "text": "The Tribunal was not satisfied on the evidence that this had been inappropriate or excessive. There was no evidence of development of dependence on the drug or any complications arising from its use.",
+      "paragraph_ref": "110",
+      "speaker": "Tribunal"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr Harrison evidence - Mrs N described as '2 \u2013 3 years', although he had been asked about the period 1 January 2014 to 1 January 2017, a period of three years.",
+      "paragraph_ref": "81",
+      "speaker": "Dr Harrison"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "LEGAL_FINDING",
+      "text": "Dr R\u2019s conduct, as detailed above, was in breach of his ethical obligations and/or legal obligations and/or accepted standards of practice.",
+      "paragraph_ref": "177",
+      "speaker": "Tribunal"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "COURT_REASONING",
+      "text": "The purpose of the disciplinary procedure is the protection of the public by the maintenance of professional standards.",
+      "paragraph_ref": "101",
+      "speaker": "Tribunal"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr R failed to accurately and/or adequately document the prescribing of pethidine in Ms N\u2019s patient records.",
+      "paragraph_ref": "172",
+      "speaker": "Tribunal"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "LEGAL_FINDING",
+      "text": "The conduct alleged above amounts to professional misconduct in that, either separately or cumulatively, it: amounts to malpractice and/or negligence.",
+      "paragraph_ref": "181",
+      "speaker": "Tribunal"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Chronic migraines and headaches",
+      "history_of_present_illness": "Patient has a history of chronic daily headaches and migraines, treated with pethidine.",
+      "past_medical_history": [
+        "Chronic migraines",
+        "Medication overuse headaches"
+      ],
+      "medications": [
+        "Pethidine"
+      ],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "neurological": "Examination mentioned but findings not specified"
+        }
+      },
+      "initial_working_problem": "Chronic migraine management",
+      "known_constraints": null,
+      "initial_differential": [
+        "Medication overuse headache",
+        "Chronic migraine"
+      ],
+      "critical_findings": [
+        "Frequent use of pethidine"
+      ],
+      "urgency_level": "ROUTINE",
+      "evidence_ids": [
+        "E001",
+        "E002",
+        "E003"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSULT_NOTE",
+        "name": "Pain Clinic Referral",
+        "description": "Referral to Pain Clinic for migraine management",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Referral noted concerns about medication overuse and recommended alternative treatments.",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates need for change in management strategy.",
+          "decision_impact": "Should prompt review of current medication regimen.",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E052"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with chronic migraines managed with pethidine.",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Patient reports frequent migraines",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient with chronic migraines on pethidine",
+        "prompt": "What should be the approach to managing the patient's migraines?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Continue pethidine as needed",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Patient reports relief with pethidine, but risks of dependency and overuse are high."
+          },
+          {
+            "option_id": "B",
+            "description": "Transition to non-opioid migraine management",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard practice to avoid opioids for migraine due to risk of medication overuse headaches."
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "A",
+          "description": "Defendant continued pethidine",
+          "reasoning_stated": "Believed it was the only effective treatment",
+          "evidence_ids": [
+            "E001",
+            "E002"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "B",
+          "description": "Transition to non-opioid management",
+          "standard_of_care_basis": "Expert evidence and guidelines against opioid use for migraines",
+          "evidence_ids": [
+            "E052",
+            "E053"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Continued use of pethidine despite known risks and recommendations against it.",
+          "what_should_have_happened": "Patient should have been transitioned to alternative migraine management.",
+          "legal_standard_applied": "Breach of standard care for migraine management",
+          "evidence_ids": [
+            "E052",
+            "E053",
+            "E054"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient developed medication overuse headaches.",
+        "severity": "MODERATE",
+        "long_term_effects": "Chronic headache management complications",
+        "evidence_ids": [
+          "E001",
+          "E002"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Breach of duty in continuing pethidine despite risks",
+          "Failure to transition to alternative migraine management"
+        ],
+        "evidence_ids": [
+          "E004",
+          "E007"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to transition from pethidine",
+        "counterfactual": "Alternative management would have reduced medication overuse",
+        "evidence_ids": [
+          "E004",
+          "E007"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Patient treated with pethidine for migraines",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [
+      {
+        "diagnosis": "Medication overuse headache",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Pethidine administration",
+        "date": "Not documented in judgment",
+        "provider": null,
+        "outcome": "Temporary relief but risk of dependency",
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Medication overuse headache",
+        "when_occurred": "Not documented in judgment",
+        "severity": "Moderate",
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Inappropriate prescribing of pethidine",
+        "against": "Dr R",
+        "found_proven": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Dr R breached duty of care",
+        "legal_significance": "Failure to adhere to standard migraine management practices",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "TREATMENT_PROCEDURE_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.03804347826086957,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 09:11:04.077422",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

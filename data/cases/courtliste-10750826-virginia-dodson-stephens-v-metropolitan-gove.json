@@ -1,0 +1,461 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtliste-10750826-virginia-dodson-stephens-v-metropolitan-gove",
+  "source": "BAILII",
+  "jurisdiction": "UK",
+  "court": "Unknown",
+  "decision_date": "2025-12-09",
+  "url": "https://example.com/courtliste-10750826-virginia-dodson-stephens-v-metropolitan-gove",
+  "case_name": "Virginia Dodson-Stephens v. Metropolitan Government of Nashville and Davidson County",
+  "neutral_citation": null,
+  "clinical_domain": "OBSTETRICS_GYNAECOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Virginia Dodson-Stephens v. Metropolitan Government of Nashville and Davidson County. Medical malpractice case involving obstetrics gynaecology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "The child at issue, Courtlynn, was born in 2001. In 2003, Courtlynn\u2019s biological mother was hospitalized for domestic abuse and left two-year-old Courtlynn in the physical care of a teenage co-worker.",
+      "paragraph_ref": "12",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Mother later learned that Courtlynn\u2019s biological mother was addicted to drugs and alcohol, and Courtlynn had been born premature and hospitalized for three weeks due to neonatal abstinence syndrome.",
+      "paragraph_ref": "12",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "She was diagnosed with post-traumatic stress disorder and reactive attachment disorder and placed on medication.",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "The trial court found that both defendants were negligent and that each was fifty percent at fault for the child\u2019s injuries.",
+      "paragraph_ref": "5",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "LEGAL_FINDING",
+      "text": "The trial court found that the plaintiffs should be awarded total compensatory damages of $10,902,348.02, but it reduced the judgment to $600,000 ($300,000 against each defendant) in accordance with the applicable statutory caps.",
+      "paragraph_ref": "5",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "Mother testified regarding Courtlynn\u2019s self-harm over the years and Courtlynn\u2019s efforts to harm or kill Mother.",
+      "paragraph_ref": "51",
+      "speaker": "Mother's testimony"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "WITNESS_STATEMENT",
+      "text": "The trial judge found that Mr. Ballentine 'lied in his statement at the time of the incident,' lied approximately eight times during his deposition, and denied leaving his classroom unsupervised for ten minutes at trial under oath despite video evidence confirming that he did.",
+      "paragraph_ref": "64",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "LEGAL_FINDING",
+      "text": "The evidence does not preponderate against the trial court\u2019s finding of foreseeability as an element of proximate cause.",
+      "paragraph_ref": "178",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "COURT_REASONING",
+      "text": "The trial court\u2019s findings regarding foreseeability are, therefore, entitled to a presumption of correctness.",
+      "paragraph_ref": "175",
+      "speaker": "Court reasoning"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "LEGAL_FINDING",
+      "text": "For the aforementioned reasons, we affirm the decision of the circuit court.",
+      "paragraph_ref": "180",
+      "speaker": "Court conclusion"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "16 years",
+        "sex": "female",
+        "relevant_social_history": "History of severe mental health issues and institutional care"
+      },
+      "chief_complaint": "Paralyzing injuries sustained from jumping out of a school window",
+      "history_of_present_illness": "Courtlynn, a child with a history of severe mental health disorders, was left unsupervised in a classroom and jumped out of a window after reportedly hearing voices.",
+      "past_medical_history": [
+        "Post-traumatic stress disorder",
+        "Reactive attachment disorder",
+        "Dissociative identity disorder",
+        "Complex psychotic disorder",
+        "Mood disorder",
+        "Major depressive disorder with psychotic features",
+        "ADHD",
+        "Bipolar disorder",
+        "Conduct disorder",
+        "Sexual disorder",
+        "Neonatal abstinence syndrome"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": null,
+        "general_appearance": null,
+        "focused_exam": {
+          "neurological": "Paralysis due to spinal injury"
+        }
+      },
+      "initial_working_problem": "Severe mental health issues with risk of self-harm",
+      "known_constraints": null,
+      "initial_differential": [
+        "Suicidal ideation",
+        "Psychotic episode"
+      ],
+      "critical_findings": [
+        "History of auditory hallucinations",
+        "Self-harm behaviors"
+      ],
+      "urgency_level": "EMERGENCY",
+      "evidence_ids": [
+        "E001",
+        "E003",
+        "E006"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSULT_NOTE",
+        "name": "Behavioral Intervention Assessment",
+        "description": "Assessment to address behavioral needs and concerns",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not conducted prior to injury",
+          "detailed_findings": null,
+          "clinical_significance": "Would have identified need for safety plan",
+          "decision_impact": "Could have prompted implementation of safety measures",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": [
+          "E004",
+          "E010"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "CONSULT_NOTE",
+        "name": "IEP Meeting",
+        "description": "Meeting to establish Individualized Education Program",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not conducted prior to injury",
+          "detailed_findings": null,
+          "clinical_significance": "Would have addressed educational and safety needs",
+          "decision_impact": "Could have ensured appropriate supervision and support",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": [
+          "E004",
+          "E010"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Enrollment at W.A. Bass",
+        "description": "Courtlynn enrolled in Transition Program",
+        "duration": "6 weeks",
+        "key_events": [
+          {
+            "event": "Enrollment without behavioral assessment or IEP meeting",
+            "timestamp": "11 January 2018",
+            "evidence_ids": [
+              "E004",
+              "E010"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "decision",
+        "name": "Incident Leading to Injury",
+        "description": "Courtlynn jumped out of a second-story window",
+        "duration": "Momentary",
+        "key_events": [
+          {
+            "event": "Courtlynn left unsupervised, jumped out window",
+            "timestamp": "23 February 2018",
+            "evidence_ids": [
+              "E004",
+              "E010"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Courtlynn enrolled in Transition Program without behavioral assessment",
+        "prompt": "Should a behavioral intervention assessment be conducted?",
+        "action_type": "ORDER_TEST",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Conduct behavioral intervention assessment immediately",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Necessary to identify and address behavioral risks"
+          },
+          {
+            "option_id": "B",
+            "description": "Delay behavioral intervention assessment",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Assessment was not prioritized"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Assessment was delayed and not conducted before injury",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E004",
+            "E010"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Assessment should have been conducted immediately",
+          "standard_of_care_basis": "Expert testimony and standard protocol",
+          "evidence_ids": [
+            "E004",
+            "E010"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to conduct assessment increased risk of harm",
+          "what_should_have_happened": "Assessment would have identified need for safety measures",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E004",
+            "E010"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      },
+      {
+        "decision_id": "D002",
+        "phase_id": "workup",
+        "clinical_context": "Courtlynn enrolled without an IEP meeting",
+        "prompt": "Should an IEP meeting be scheduled immediately?",
+        "action_type": "ORDER_TEST",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Schedule IEP meeting within 10 days of enrollment",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Critical for addressing educational and safety needs"
+          },
+          {
+            "option_id": "B",
+            "description": "Delay scheduling of IEP meeting",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Meeting was not prioritized"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "IEP meeting was delayed and not conducted before injury",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E004",
+            "E010"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "IEP meeting should have been scheduled immediately",
+          "standard_of_care_basis": "Expert testimony and standard protocol",
+          "evidence_ids": [
+            "E004",
+            "E010"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Delay in IEP meeting left educational and safety needs unmet",
+          "what_should_have_happened": "IEP meeting would have ensured appropriate support",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E004",
+            "E010"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Courtlynn is paralyzed from the waist down, with loss of bladder and bowel control",
+        "severity": "PERMANENT_SEVERE_DISABILITY",
+        "long_term_effects": "Requires lifelong care and support",
+        "evidence_ids": [
+          "E004",
+          "E010"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "600000",
+        "key_findings": [
+          "Failure to conduct behavioral assessment and IEP meeting",
+          "Negligence by both Metro and DCS contributed to injury"
+        ],
+        "evidence_ids": [
+          "E004",
+          "E010"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to conduct necessary assessments and meetings",
+        "counterfactual": "Proper assessments and meetings could have prevented injury",
+        "evidence_ids": [
+          "E004",
+          "E010"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "11 January 2018",
+        "event": "Courtlynn enrolled at W.A. Bass",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "timestamp": "23 February 2018",
+        "event": "Courtlynn jumped out of a second-story window",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [
+      {
+        "diagnosis": "Paralysis from waist down",
+        "when_made": "Post-injury",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "treatments": [],
+    "complications": [
+      {
+        "complication": "Paralysis",
+        "when_occurred": "23 February 2018",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to conduct behavioral assessment and IEP meeting",
+        "against": "Metro and DCS",
+        "found_proven": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendants breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "MONITORING_FOLLOWUP",
+      "SYSTEM_COMMUNICATION"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.054945054945054944,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 15:35:23.009453",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

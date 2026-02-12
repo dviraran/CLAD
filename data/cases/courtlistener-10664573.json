@@ -1,0 +1,435 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10664573",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2026-01-18",
+  "url": "https://example.com/courtlistener-10664573",
+  "case_name": "Sobin v. Orthopaedic Sports Specialists, P.C.",
+  "neutral_citation": null,
+  "clinical_domain": "SURGERY_ORTHOPAEDIC",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Sobin v. Orthopaedic Sports Specialists, P.C.. Medical malpractice case involving surgery orthopaedic.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Peter, who was sixty-one years old, underwent surgery to replace his left knee. The surgery was performed by Michael E. Joyce, an orthopedic surgeon employed by the defendant.",
+      "paragraph_ref": "15",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "The discharge instructions provided to Peter following the surgery advised him that he had the highest chance of developing deep vein thrombosis (DVT), a type of blood clot, in the days and weeks after surgery.",
+      "paragraph_ref": "15",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "Beginning on September 23, 2015, Peter began to experience pain and swelling in his calf.",
+      "paragraph_ref": "15",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "On October 1, 2015, Peter began to struggle to breathe. He was taken to a hospital, where he died shortly after arrival.",
+      "paragraph_ref": "17",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Santore testified that Libby had breached the applicable standard of care by failing to send Peter for an ultrasound of his calf when Peter presented with symptoms consistent with a possible DVT.",
+      "paragraph_ref": "19",
+      "speaker": "Expert witness"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "LEGAL_FINDING",
+      "text": "The jury returned a verdict against the defendant on both counts of the complaint and awarded damages of $5.5 million on the wrongful death count and $3 million on the loss of consortium count.",
+      "paragraph_ref": "19",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "COURT_REASONING",
+      "text": "The court unequivocally rejected the defendant\u2019s argument that the offer of compromise contained conditional language that rendered the offer of compromise facially invalid.",
+      "paragraph_ref": "85",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "LEGAL_FINDING",
+      "text": "The judgments are affirmed.",
+      "paragraph_ref": "93",
+      "speaker": "Court conclusion"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "61 years",
+        "sex": "male",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Pain and swelling in calf",
+      "history_of_present_illness": "Beginning on September 23, 2015, Peter began to experience pain and swelling in his calf. On September 25, 2015, he reported his calf felt 'hard' and he 'would kind of wince' if he touched it.",
+      "past_medical_history": [
+        "Knee replacement surgery on September 15, 2015"
+      ],
+      "medications": [
+        "Hydrocodone (new prescription ordered on September 28, 2015)"
+      ],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "calf": "Painful and swollen, described as 'knotty' by physical therapist"
+        }
+      },
+      "initial_working_problem": "Possible deep vein thrombosis (DVT)",
+      "known_constraints": null,
+      "initial_differential": [
+        "DVT",
+        "Post-surgical bruising"
+      ],
+      "critical_findings": [
+        "Calf pain and swelling"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E003",
+        "E004"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "Venous Doppler Ultrasound",
+        "description": "Ultrasound to assess for DVT in the left leg",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not performed",
+          "detailed_findings": null,
+          "clinical_significance": "Would have identified DVT if present",
+          "decision_impact": "Could have prompted early intervention to prevent embolism",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with calf pain and swelling",
+        "duration": "September 23-28, 2015",
+        "key_events": [
+          {
+            "event": "Patient reports calf pain and swelling",
+            "timestamp": "September 23, 2015",
+            "evidence_ids": [
+              "E003"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Follow-up and Monitoring",
+        "description": "Patient follows up with physical therapist and PA",
+        "duration": "September 25-28, 2015",
+        "key_events": [
+          {
+            "event": "Physical therapist notes 'knotty' calf",
+            "timestamp": "September 28, 2015",
+            "evidence_ids": [
+              "E003"
+            ]
+          },
+          {
+            "event": "PA advises monitoring, no ultrasound ordered",
+            "timestamp": "September 28, 2015",
+            "evidence_ids": [
+              "E005"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "decision",
+        "name": "Outcome",
+        "description": "Patient develops severe complications",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Patient struggles to breathe and dies",
+            "timestamp": "October 1, 2015",
+            "evidence_ids": [
+              "E004"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient presents with symptoms consistent with DVT",
+        "prompt": "What diagnostic test should be ordered to confirm DVT?",
+        "action_type": "ORDER_TEST",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Order venous Doppler ultrasound",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard of care for suspected DVT"
+          },
+          {
+            "option_id": "B",
+            "description": "Advise patient to monitor symptoms and use cold therapy",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Inadequate for ruling out DVT"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant advised monitoring and cold therapy",
+          "reasoning_stated": "Defendant did not perceive symptoms as abnormal",
+          "evidence_ids": [
+            "E005"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Venous Doppler ultrasound should have been ordered",
+          "standard_of_care_basis": "Expert testimony indicated ultrasound was necessary",
+          "evidence_ids": [
+            "E005"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to order ultrasound despite symptoms",
+          "what_should_have_happened": "Ultrasound would have confirmed DVT",
+          "legal_standard_applied": "Breach of standard of care",
+          "evidence_ids": [
+            "E005"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient developed a fatal pulmonary embolism",
+        "severity": "DEATH",
+        "long_term_effects": "Not applicable",
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Breach of duty in failing to investigate DVT",
+          "Causation established - earlier intervention could have prevented embolism"
+        ],
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to investigate suspected DVT",
+        "counterfactual": "Ultrasound could have identified DVT",
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "September 15, 2015",
+        "event": "Patient underwent knee replacement surgery",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "September 23, 2015",
+        "event": "Patient began experiencing calf pain and swelling",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "timestamp": "October 1, 2015",
+        "event": "Patient struggled to breathe and died shortly after hospital arrival",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "timestamp": "September 23, 2015",
+        "event": "Patient experiences calf pain and swelling",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "timestamp": "October 1, 2015",
+        "event": "Patient struggles to breathe and dies",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [
+      {
+        "diagnosis": "Acute pulmonary thromboembolism",
+        "when_made": "Post-mortem",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "diagnosis": "Pulmonary embolism",
+        "when_made": "Post-mortem",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "treatments": [],
+    "complications": [
+      {
+        "complication": "Pulmonary embolism",
+        "when_occurred": "October 1, 2015",
+        "severity": "Fatal",
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "complication": "Pulmonary embolism",
+        "when_occurred": "October 1, 2015",
+        "severity": "Fatal",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to order ultrasound",
+        "against": "Defendant PA",
+        "found_proven": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "allegation": "Failure to investigate DVT",
+        "against": "Defendant",
+        "found_proven": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Failure to diagnose DVT led to fatal embolism",
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.08421052631578947,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 10:01:55.007189",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

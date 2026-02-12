@@ -1,0 +1,353 @@
+{
+  "case_id": "courtlistener-9459366",
+  "source": "courtlistener",
+  "source_url": "local://courtlistener-9459366.html",
+  "jurisdiction": "US",
+  "extraction_metadata": {
+    "version": "batch_api_v1",
+    "model": "gpt-4o",
+    "extracted_at": "2026-01-21T17:56:57.940104",
+    "simulation_extracted_at": "2026-01-21T18:25:07.029657",
+    "simulation_model": "gpt-4o"
+  },
+  "case_metadata": {
+    "case_name": "Candelario v. MJHS Hospice & Palliative Care, Inc.",
+    "citation": "2024 NY Slip Op 00125",
+    "court": "Appellate Division, First Department",
+    "date": "January 11, 2024"
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "Defendants failed to demonstrate, prima facie, either the absence of any departure for the accepted medical practice, or that any departure was not a proximate cause of the plaintiffs' injuries",
+      "paragraph_ref": "13",
+      "paragraph_starts_with": "[13] Order, Supreme Court,",
+      "summary": "Defendants did not show absence of departure from medical practice or lack of causation.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "EXPERT_TESTIMONY",
+      "verbatim_quote": "According to defendants' expert, the applicable standard of care required an emergency medicine physician to evaluate the patient, take a medical history, and determine an appropriate disposition.",
+      "paragraph_ref": "13",
+      "paragraph_starts_with": "[13] Order, Supreme Court,",
+      "summary": "Defendants' expert stated standard of care involves evaluation, history taking, and disposition.",
+      "speaker": "Defendants' expert"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "There is conflicting evidence as to whether defendant Steven Winograd, M.D., departed from accepted practice by improperly recording plaintiff's self-reported pancreatic cancer as stage IV, resulting in plaintiff's transfer to hospice.",
+      "paragraph_ref": "13",
+      "paragraph_starts_with": "[13] Order, Supreme Court,",
+      "summary": "Conflicting evidence on whether Dr. Winograd improperly recorded cancer stage.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "WITNESS_STATEMENT",
+      "verbatim_quote": "Nothing in the record supports defendants' contention that plaintiff informed Dr. Winograd that his pancreatic cancer was at stage IV, which plaintiff explicitly denied at his deposition, testifying that defendants staged his cancer.",
+      "paragraph_ref": "13",
+      "paragraph_starts_with": "[13] Order, Supreme Court,",
+      "summary": "Plaintiff denied informing Dr. Winograd of stage IV cancer; claims defendants staged it.",
+      "speaker": "Plaintiff"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "EXPERT_TESTIMONY",
+      "verbatim_quote": "Plaintiffs' expert opined that the standard of care required emergency room physicians to, among other things, order an oncology consult when a patient reported a history of pancreatic cancer, which defendants did not do.",
+      "paragraph_ref": "13",
+      "paragraph_starts_with": "[13] Order, Supreme Court,",
+      "summary": "Plaintiffs' expert stated standard of care required oncology consult, which was not done.",
+      "speaker": "Plaintiffs' expert"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "EXPERT_TESTIMONY",
+      "verbatim_quote": "Plaintiffs' expert further opined that it was a departure for Dr. Winograd not to confirm that plaintiff had stage IV pancreatic cancer before referring him to hospice.",
+      "paragraph_ref": "13",
+      "paragraph_starts_with": "[13] Order, Supreme Court,",
+      "summary": "Expert opined it was a departure not to confirm cancer stage before hospice referral.",
+      "speaker": "Plaintiffs' expert"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "Plaintiff remained for over 18 months under the false premise that he required end of life care.",
+      "paragraph_ref": "13",
+      "paragraph_starts_with": "[13] Order, Supreme Court,",
+      "summary": "Plaintiff stayed in hospice for over 18 months under false end-of-life care premise.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "LEGAL_FINDING",
+      "verbatim_quote": "Summary judgment dismissing the loss of consortium claim was properly denied.",
+      "paragraph_ref": "13",
+      "paragraph_starts_with": "[13] Order, Supreme Court,",
+      "summary": "Loss of consortium claim dismissal was denied.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "WITNESS_STATEMENT",
+      "verbatim_quote": "Mrs. Candelario testified that despite living apart plaintiffs continued to provide each other with practical and emotional support, affection, and companionship.",
+      "paragraph_ref": "13",
+      "paragraph_starts_with": "[13] Order, Supreme Court,",
+      "summary": "Mrs. Candelario testified about continued support and companionship despite living apart.",
+      "speaker": "Mrs. Candelario"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "LEGAL_FINDING",
+      "verbatim_quote": "Summary judgment dismissing plaintiff's cause of action for negligent infliction of emotional distress was also properly denied.",
+      "paragraph_ref": "13",
+      "paragraph_starts_with": "[13] Order, Supreme Court,",
+      "summary": "Dismissal of negligent infliction of emotional distress claim was denied.",
+      "speaker": "Court finding"
+    }
+  ],
+  "verdict_detected": {
+    "outcome": "NO_LIABILITY",
+    "key_phrase": "Defendants failed to demonstrate, prima facie, either the absence of any departure for the accepted medical practice, or that any departure was not a proximate cause of the plaintiffs' injuries",
+    "paragraph_ref": "13"
+  },
+  "extraction_notes": {
+    "total_paragraphs_analyzed": 14,
+    "key_sections_found": [
+      "Facts",
+      "Expert Evidence",
+      "Causation",
+      "Conclusion"
+    ],
+    "gaps_identified": [
+      "No specific lab values mentioned",
+      "Exact timeline of events unclear"
+    ]
+  },
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "Not documented in judgment",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Reported history of pancreatic cancer",
+      "history_of_present_illness": "Patient reported a history of pancreatic cancer, which was recorded as stage IV by Dr. Winograd.",
+      "past_medical_history": [
+        "Pancreatic cancer"
+      ],
+      "medications": "Not documented in judgment",
+      "allergies": "Not documented in judgment",
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment"
+        },
+        "focused_exam": {
+          "system": "Examination mentioned but findings not specified"
+        }
+      },
+      "initial_working_problem": "Pancreatic cancer - stage not confirmed",
+      "initial_differential": [
+        "Pancreatic cancer"
+      ],
+      "critical_findings": [
+        "Stage IV cancer recorded without confirmation"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E003",
+        "E004",
+        "E006"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSULT_NOTE",
+        "name": "Oncology Consult",
+        "description": "Consultation with oncology to confirm cancer stage",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not ordered",
+          "clinical_significance": "Would have confirmed or refuted stage IV diagnosis",
+          "decision_impact": "Critical for appropriate management and referral"
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient in ED with reported history of pancreatic cancer",
+        "prompt": "What should be the next step in managing this patient?",
+        "action_type": "ORDER_TEST",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Order oncology consult to confirm cancer stage",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard of care requires confirmation of cancer stage before making end-of-life care decisions"
+          },
+          {
+            "option_id": "B",
+            "description": "Record stage IV cancer and refer to hospice",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Assumed stage IV based on unverified information"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant recorded stage IV cancer and referred to hospice",
+          "reasoning_stated": "Assumed stage IV based on patient report",
+          "evidence_ids": [
+            "E003",
+            "E004"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Oncology consult should have been ordered",
+          "standard_of_care_basis": "Expert evidence established need for confirmation",
+          "evidence_ids": [
+            "E005",
+            "E006"
+          ]
+        },
+        "explanation": {
+          "why_defendant_wrong": "Based on evidence E005-E006",
+          "what_should_have_happened": "Oncology consult to confirm cancer stage",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E005",
+            "E006"
+          ]
+        },
+        "is_malpractice_point": true
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with a history of pancreatic cancer",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Patient reported history of pancreatic cancer",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E003",
+              "E004"
+            ]
+          }
+        ]
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient remained in hospice for over 18 months under false premise of end-of-life care",
+        "severity": "PERMANENT_MODERATE_DISABILITY",
+        "long_term_effects": "Unnecessary end-of-life care",
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Breach of duty in failing to confirm cancer stage",
+          "Causation established - incorrect hospice referral"
+        ],
+        "evidence_ids": [
+          "E001",
+          "E003",
+          "E006"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to confirm cancer stage before hospice referral",
+        "counterfactual": "Oncology consult would have clarified cancer stage",
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Patient reported history of pancreatic cancer",
+        "evidence_ids": [
+          "E003",
+          "E004"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [
+      {
+        "diagnosis": "Stage IV pancreatic cancer",
+        "when_made": "Date not specified in judgment",
+        "correct": false,
+        "evidence_ids": [
+          "E003",
+          "E004"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Hospice care",
+        "date": "Date not specified in judgment",
+        "outcome": "Unnecessary end-of-life care",
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "complications": [],
+    "allegations": [
+      {
+        "allegation": "Failure to confirm cancer stage",
+        "against": "Defendant physician",
+        "found_proven": true,
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ]
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR"
+    ],
+    "diagnosis_subtypes": [
+      "FAILURE_TO_INVESTIGATE"
+    ]
+  }
+}

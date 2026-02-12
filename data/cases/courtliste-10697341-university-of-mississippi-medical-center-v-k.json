@@ -1,0 +1,459 @@
+{
+  "case_id": "courtliste-10697341-university-of-mississippi-medical-center-v-k",
+  "source": "courtlistener",
+  "source_url": "local://courtliste-10697341-university-of-mississippi-medical-center-v-k.html",
+  "jurisdiction": "US",
+  "extraction_metadata": {
+    "version": "batch_api_v1",
+    "model": "gpt-4o",
+    "extracted_at": "2026-01-21T17:56:57.957188",
+    "simulation_extracted_at": "2026-01-21T18:19:59.319529",
+    "simulation_model": "gpt-4o"
+  },
+  "case_metadata": {
+    "case_name": "University of Mississippi Medical Center v. Kristy Giddens, Individually and On Behalf of All Wrongful Death Beneficiaries of Iscah Rumble, Deceased",
+    "citation": "NO. 2024-CA-00842-COA",
+    "court": "Court of Appeals of the State of Mississippi",
+    "date": "06/26/2024"
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "Kristy Giddens sued the University of Mississippi Medical Center (UMMC) after her daughter, Iscah Rumble, died following an atrial septostomy performed during a diagnostic heart catheterization.",
+      "paragraph_ref": "8",
+      "paragraph_starts_with": "[8] Kristy Giddens sued",
+      "summary": "Giddens sued UMMC after her daughter died following an atrial septostomy.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "LEGAL_FINDING",
+      "verbatim_quote": "The trial court found that Giddens had not given informed consent to the atrial septostomy and that the failure to secure Giddens’ informed consent was a breach of the standard of care.",
+      "paragraph_ref": "10",
+      "paragraph_starts_with": "[10] heart catheterization.",
+      "summary": "Court found lack of informed consent was a breach of standard of care.",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "Iscah went to UMMC for a consultation about her elevated blood pressure and died seventeen days later at Texas Children’s Hospital following complications from a procedure performed at UMMC.",
+      "paragraph_ref": "19",
+      "paragraph_starts_with": "[19] ¶3. Seventeen-year-old",
+      "summary": "Iscah died 17 days after a procedure at UMMC.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "EXPERT_TESTIMONY",
+      "verbatim_quote": "Dr. Batlivala testified that during the procedure, he performed pulmonary vasodilator testing using oxygen and gasometric oxide to test 'whether or not a patient will respond [to medical intervention] and how quickly they respond.'",
+      "paragraph_ref": "47",
+      "paragraph_starts_with": "[47] pulmonary vasodilator testing",
+      "summary": "Dr. Batlivala performed pulmonary vasodilator testing during the procedure.",
+      "speaker": "Dr. Batlivala"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "During the atrial septostomy, Iscah’s myocardium was perforated by a needle. Iscah’s blood pressure fell, and she began bleeding around her heart.",
+      "paragraph_ref": "61",
+      "paragraph_starts_with": "[61] ¶8. During the atrial",
+      "summary": "Iscah's myocardium was perforated during the atrial septostomy.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "LEGAL_FINDING",
+      "verbatim_quote": "The trial court found that UMMC 'through its doctors, breached its standard of care by not' securing Giddens’ informed consent to the atrial septostomy.",
+      "paragraph_ref": "239",
+      "paragraph_starts_with": "[239] breached its standard",
+      "summary": "Court found UMMC breached standard of care by not securing informed consent.",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "LEGAL_FINDING",
+      "verbatim_quote": "The trial court found that the decision to perform the atrial septostomy was also a breach of the standard of care.",
+      "paragraph_ref": "240",
+      "paragraph_starts_with": "[240] septostomy. The court",
+      "summary": "Decision to perform atrial septostomy was a breach of standard of care.",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "COURT_REASONING",
+      "verbatim_quote": "The trial court found that Giddens’ experts provided a 'substantial amount of evidence' that it was a breach of the standard of care to not secure informed consent.",
+      "paragraph_ref": "259",
+      "paragraph_starts_with": "[259] ¶36. The trial court",
+      "summary": "Court found substantial evidence from Giddens' experts on breach of standard of care.",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "The trial court found that the decision to perform the atrial septostomy before other medical interventions was a breach of the standard of care.",
+      "paragraph_ref": "436",
+      "paragraph_starts_with": "[436] ¶62. The trial court",
+      "summary": "Performing atrial septostomy before other interventions was a breach.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "LEGAL_FINDING",
+      "verbatim_quote": "We affirm the trial court’s findings as to UMMC’s liability and the award of damages, as they are both supported by substantial credible evidence.",
+      "paragraph_ref": "463",
+      "paragraph_starts_with": "[463] ¶66. We affirm",
+      "summary": "Court affirms UMMC's liability and damages award.",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "verdict_detected": {
+    "outcome": "LIABILITY_FOUND",
+    "key_phrase": "We affirm the trial court’s findings as to UMMC’s liability and the award of damages",
+    "paragraph_ref": "463"
+  },
+  "extraction_notes": {
+    "total_paragraphs_analyzed": 466,
+    "key_sections_found": [
+      "Facts",
+      "Expert Evidence",
+      "Consent",
+      "Causation",
+      "Conclusion"
+    ],
+    "gaps_identified": [
+      "No specific lab values mentioned",
+      "Timing of events unclear"
+    ]
+  },
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "17 years",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Consultation for elevated blood pressure",
+      "history_of_present_illness": "Not documented in judgment",
+      "past_medical_history": "Not documented in judgment",
+      "medications": "Not documented in judgment",
+      "allergies": "Not documented in judgment",
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Elevated, exact value not documented in judgment",
+          "heart_rate": "Not documented in judgment"
+        },
+        "focused_exam": {
+          "cardiovascular": "Not documented in judgment"
+        }
+      },
+      "initial_working_problem": "Elevated blood pressure requiring further investigation",
+      "initial_differential": [
+        "Hypertension",
+        "Cardiac anomaly"
+      ],
+      "critical_findings": [
+        "Elevated blood pressure"
+      ],
+      "urgency_level": "ROUTINE",
+      "evidence_ids": [
+        "E003"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "PROCEDURE_NOTE",
+        "name": "Atrial Septostomy",
+        "description": "Procedure note for atrial septostomy",
+        "available_phase": "procedure",
+        "reveal": {
+          "result_summary": "Myocardium perforated during procedure",
+          "clinical_significance": "Caused bleeding and drop in blood pressure",
+          "decision_impact": "Led to complications requiring further intervention"
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "procedure",
+        "clinical_context": "Decision to perform atrial septostomy",
+        "prompt": "Should the atrial septostomy be performed before other interventions?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Perform atrial septostomy immediately",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Performed without securing informed consent"
+          },
+          {
+            "option_id": "B",
+            "description": "Consider other medical interventions first",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard of care requires exploring less invasive options first"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "A",
+          "description": "Atrial septostomy performed immediately",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E007",
+            "E009"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "B",
+          "description": "Other interventions should have been considered first",
+          "standard_of_care_basis": "Expert testimony and court findings",
+          "evidence_ids": [
+            "E009"
+          ]
+        },
+        "explanation": {
+          "why_defendant_wrong": "Performed invasive procedure without considering alternatives",
+          "what_should_have_happened": "Less invasive interventions should have been prioritized",
+          "legal_standard_applied": "Breach of standard of care",
+          "evidence_ids": [
+            "E007",
+            "E009"
+          ]
+        },
+        "is_malpractice_point": true
+      },
+      {
+        "decision_id": "D002",
+        "phase_id": "procedure",
+        "clinical_context": "Informed consent for atrial septostomy",
+        "prompt": "Was informed consent obtained for the atrial septostomy?",
+        "action_type": "DISCLOSE_ALTERNATIVES",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Informed consent was obtained",
+            "is_defendant_choice": false,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Not supported by evidence"
+          },
+          {
+            "option_id": "B",
+            "description": "Informed consent was not obtained",
+            "is_defendant_choice": true,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Court found lack of informed consent"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Informed consent was not obtained",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E002",
+            "E006"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Informed consent should have been obtained",
+          "standard_of_care_basis": "Legal requirement for informed consent",
+          "evidence_ids": [
+            "E002",
+            "E006"
+          ]
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failed to secure informed consent",
+          "what_should_have_happened": "Informed consent should have been obtained",
+          "legal_standard_applied": "Breach of standard of care",
+          "evidence_ids": [
+            "E002",
+            "E006"
+          ]
+        },
+        "is_malpractice_point": true
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Consultation",
+        "description": "Patient presents for consultation regarding elevated blood pressure",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Consultation at UMMC",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E003"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "procedure",
+        "name": "Atrial Septostomy Procedure",
+        "description": "Procedure performed at UMMC",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Atrial septostomy performed",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E005"
+            ]
+          }
+        ]
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient died following complications from the procedure",
+        "severity": "FATAL",
+        "long_term_effects": "Not applicable",
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not specified in judgment",
+        "key_findings": [
+          "Breach of duty in failing to secure informed consent",
+          "Breach of duty in decision to perform atrial septostomy"
+        ],
+        "evidence_ids": [
+          "E010"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to secure informed consent and inappropriate procedure decision",
+        "counterfactual": "Informed consent and alternative interventions could have been considered",
+        "evidence_ids": [
+          "E002",
+          "E006",
+          "E007",
+          "E009"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Patient presents for consultation at UMMC",
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Atrial septostomy performed at UMMC",
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Pulmonary vasodilator testing",
+        "date": "Date not specified in judgment",
+        "result": "Performed during procedure",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Complications from atrial septostomy",
+        "when_made": "Date not specified in judgment",
+        "correct": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Atrial septostomy",
+        "date": "Date not specified in judgment",
+        "outcome": "Myocardium perforated, leading to complications",
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Myocardium perforation and bleeding",
+        "when_occurred": "During procedure",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to secure informed consent",
+        "against": "UMMC",
+        "found_proven": true,
+        "evidence_ids": [
+          "E002",
+          "E006"
+        ]
+      },
+      {
+        "allegation": "Inappropriate decision to perform atrial septostomy",
+        "against": "UMMC",
+        "found_proven": true,
+        "evidence_ids": [
+          "E007",
+          "E009"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "UMMC breached standard of care by not securing informed consent",
+        "legal_significance": "Breach of standard of care",
+        "evidence_ids": [
+          "E002",
+          "E006"
+        ]
+      },
+      {
+        "finding": "Decision to perform atrial septostomy was a breach of standard of care",
+        "legal_significance": "Breach of standard of care",
+        "evidence_ids": [
+          "E007",
+          "E009"
+        ]
+      }
+    ]
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "INFORMED_CONSENT",
+      "TREATMENT_PROCEDURE_ERROR"
+    ],
+    "diagnosis_subtypes": [
+      "FAILURE_TO_OBTAIN_CONSENT",
+      "INAPPROPRIATE_PROCEDURE"
+    ]
+  }
+}

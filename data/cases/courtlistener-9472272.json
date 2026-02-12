@@ -1,0 +1,506 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-9472272",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2024-02-06",
+  "url": "https://example.com/courtlistener-9472272",
+  "case_name": "Land v. Whitley",
+  "neutral_citation": null,
+  "clinical_domain": "OBSTETRICS_GYNAECOLOGY",
+  "outcome_severity": "TEMPORARY_HARM",
+  "summary": {
+    "brief": "Land v. Whitley. Medical malpractice case involving obstetrics gynaecology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Mrs. Land was diagnosed with a high-grade squamous intraepithelial lesion in early 2020, which was at high risk of turning into cervical cancer.",
+      "paragraph_ref": "45",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "On 29 June 2020, Defendant Dr. Whitley, assisted by resident-in-training Dr. Faiz, performed a TVH on Mrs. Land at Vidant SurgiCenter.",
+      "paragraph_ref": "50",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. Whitley noted in the operative notes that due to Mrs. Land\u2019s anatomy she had difficulty during the procedure.",
+      "paragraph_ref": "52",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "Despite these complications, Dr. Whitley did not convert the vaginal hysterectomy to an abdominal or laparoscopic procedure.",
+      "paragraph_ref": "55",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "Consequently, a three-inch piece of uterine tissue remained undetected in her abdominal cavity following the TVH surgery.",
+      "paragraph_ref": "57",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "On 14 July 2020, Mrs. Land attended a routine post-operative visit with Dr. Whitley during which she reported experiencing abdominal pain.",
+      "paragraph_ref": "59",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. Whitley noted in her medical record that Mrs. Land had no complaints other than 'struggling with constipation'.",
+      "paragraph_ref": "62",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "FACTUAL_FINDING",
+      "text": "On 25 July 2020, Mrs. Land presented with severe abdominal pain to Vidant Emergency Department in Greenville where she was diagnosed with sepsis, stage 4 kidney failure, and an abdominal infection.",
+      "paragraph_ref": "68",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. McDonald removed approximately twelve inches of Mrs. Land\u2019s bowel and left the wound open in order to drain the infection.",
+      "paragraph_ref": "79",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "FACTUAL_FINDING",
+      "text": "Mrs. Land was finally discharged from Vidant Hospital on 7 August 2020.",
+      "paragraph_ref": "84",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E011",
+      "type": "FACTUAL_FINDING",
+      "text": "During recovery, Mrs. Land developed pulmonary emboli in both of her lungs, and she was hospitalized again because of complications from the infected uterine remnant.",
+      "paragraph_ref": "85",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E012",
+      "type": "FACTUAL_FINDING",
+      "text": "On 16 February 2022, Plaintiffs, Mrs. Land and her husband, filed a complaint against Defendants Dr. Whitley, Greenville OB/GYN, Vidant Medical Center, and Vidant SurgiCenter.",
+      "paragraph_ref": "92",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E013",
+      "type": "LEGAL_FINDING",
+      "text": "Because Plaintiffs\u2019 complaint, liberally construed, sufficiently alleges claims not barred by N.C. Gen. Stat. \u00a7 90-21.133(a), Defendants are not entitled to dismissal of Plaintiffs\u2019 gross negligence claims at this stage of litigation.",
+      "paragraph_ref": "399",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E014",
+      "type": "LEGAL_FINDING",
+      "text": "We affirm the trial court\u2019s order denying Defendants\u2019 motions to dismiss pursuant to Rule 12(b)(2), Rule 12(b)(6), and Rule 9(j).",
+      "paragraph_ref": "402",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Severe abdominal pain",
+      "history_of_present_illness": "Mrs. Land presented with severe abdominal pain to Vidant Emergency Department in Greenville on 25 July 2020.",
+      "past_medical_history": [
+        "High-grade squamous intraepithelial lesion"
+      ],
+      "medications": [
+        "Oxycodone"
+      ],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "abdomen": "Severe abdominal pain, findings not detailed in judgment"
+        }
+      },
+      "initial_working_problem": "Severe abdominal pain with suspected infection",
+      "known_constraints": null,
+      "initial_differential": [
+        "Sepsis",
+        "Abdominal infection"
+      ],
+      "critical_findings": [
+        "Severe abdominal pain",
+        "Infection"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E008"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "Laparoscopic exploration",
+        "description": "Initial laparoscopic exploration of abdomen",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Abscess detected in pelvic cavity",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates infection and need for further surgical intervention",
+          "decision_impact": "Prompted conversion to laparotomy",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E073"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Emergency Presentation",
+        "description": "Patient presents to ED with severe abdominal pain",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Presentation to Vidant Emergency Department",
+            "timestamp": "25 July 2020",
+            "evidence_ids": [
+              "E008"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "procedure",
+        "name": "Initial Surgery",
+        "description": "Total vaginal hysterectomy performed",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "TVH performed by Dr. Whitley",
+            "timestamp": "29 June 2020",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "followup",
+        "name": "Post-operative Follow-up",
+        "description": "Routine post-operative visit with Dr. Whitley",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Post-operative visit with reported abdominal pain",
+            "timestamp": "14 July 2020",
+            "evidence_ids": [
+              "E006"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "procedure",
+        "clinical_context": "During TVH, difficulty encountered due to anatomy",
+        "prompt": "What should be done when encountering difficulty during TVH?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Convert to abdominal or laparoscopic procedure",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Allows better visualization and complete removal of uterine tissue"
+          },
+          {
+            "option_id": "B",
+            "description": "Continue with vaginal hysterectomy despite difficulty",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Limited visualization, risk of incomplete procedure"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant continued with vaginal hysterectomy",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E004"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Conversion to abdominal or laparoscopic procedure should have been done",
+          "standard_of_care_basis": "Expert evidence established conversion is standard when visualization is inadequate",
+          "evidence_ids": [
+            "E004"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to convert led to retained uterine tissue",
+          "what_should_have_happened": "Conversion to ensure complete removal",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E004",
+            "E005"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      },
+      {
+        "decision_id": "D002",
+        "phase_id": "followup",
+        "clinical_context": "Post-operative visit with reported abdominal pain",
+        "prompt": "What should be done during post-operative visit when patient reports abdominal pain?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Conduct thorough physical examination and consider imaging",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Necessary to identify potential complications or infections"
+          },
+          {
+            "option_id": "B",
+            "description": "Renew pain medication without further examination",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Neglects potential underlying issues"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant renewed pain medication without further examination",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E006",
+            "E007"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Thorough examination and imaging should have been conducted",
+          "standard_of_care_basis": "Standard practice to investigate reported pain post-surgery",
+          "evidence_ids": [
+            "E006",
+            "E007"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to examine led to missed diagnosis of infection",
+          "what_should_have_happened": "Examination and imaging to identify infection",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E006",
+            "E007"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient developed severe complications including sepsis and pulmonary emboli",
+        "severity": "PERMANENT_MODERATE_DISABILITY",
+        "long_term_effects": "Chronic pain, inability to lift, memory loss, mood disturbances",
+        "evidence_ids": [
+          "E009",
+          "E011"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Breach of duty in failing to convert procedure and inadequate post-operative care",
+          "Causation established - retained uterine tissue led to severe infection"
+        ],
+        "evidence_ids": [
+          "E012",
+          "E098"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to convert procedure and inadequate follow-up",
+        "counterfactual": "Conversion and proper follow-up would have prevented complications",
+        "evidence_ids": [
+          "E004",
+          "E006",
+          "E007"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "29 June 2020",
+        "event": "TVH performed by Dr. Whitley",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "14 July 2020",
+        "event": "Post-operative visit with Dr. Whitley",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "timestamp": "25 July 2020",
+        "event": "Presentation to Vidant Emergency Department",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E008"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Laparoscopic exploration",
+        "date": "26 July 2020",
+        "result": "Abscess detected",
+        "interpretation": null,
+        "evidence_ids": [
+          "E073"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Sepsis, stage 4 kidney failure, abdominal infection",
+        "when_made": "25 July 2020",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E008"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Emergency laparotomy",
+        "date": "26 July 2020",
+        "provider": null,
+        "outcome": "Infected tissue removed",
+        "evidence_ids": [
+          "E009"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Pulmonary emboli",
+        "when_occurred": "During recovery",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E011"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to convert procedure and inadequate follow-up",
+        "against": "Dr. Whitley",
+        "found_proven": true,
+        "evidence_ids": [
+          "E012"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E098"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.0345679012345679,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 13:56:05.934587",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

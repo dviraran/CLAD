@@ -1,0 +1,346 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "bailii-qb-2021-2989-html",
+  "source": "BAILII",
+  "jurisdiction": "UK",
+  "court": "Unknown",
+  "decision_date": "2021-11-08",
+  "url": "https://example.com/bailii-qb-2021-2989-html",
+  "case_name": "EXN v Alder Hey Children's NHS Foundation Trust [2021] EWHC 2989 (QB) (08 November 2021)",
+  "neutral_citation": "[2021] EWHC 2989",
+  "clinical_domain": "PAEDIATRICS",
+  "outcome_severity": "PERMANENT_SEVERE_DISABILITY",
+  "summary": {
+    "brief": "Medical malpractice case involving paediatrics.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "On 19 September 2009, the Claimant (who was just 17 months old) suffered a focal seizure which affected the right side of his face.",
+      "paragraph_ref": "12",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "He was sent home and, despite re-attendance, was not diagnosed with the virus HSV until 24 September 2009.",
+      "paragraph_ref": "12",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "LEGAL_FINDING",
+      "text": "Subsequently, the Defendant admitted breach of duty. Subject to one contested point, the Defendant also admitted causation of loss and damage.",
+      "paragraph_ref": "12",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "The Claimant suffers from severe learning difficulties, mild right hemiplegia, severe drug-resistant multifocal epilepsy, autism and severe behavioural problems with violent outbursts.",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "LEGAL_FINDING",
+      "text": "I am satisfied that the proposed settlement is a sensible settlement from the Claimant's point of view.",
+      "paragraph_ref": "15",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "WITNESS_STATEMENT",
+      "text": "Mr Gimlette has also informed the Court that a letter of apology was sent to the Claimant's parents in this case in September and that an apology has been given on behalf the Defendant by its Leading Counsel.",
+      "paragraph_ref": "17",
+      "speaker": "Defendant's counsel"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "17 months",
+        "sex": "unknown",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Focal seizure affecting the right side of the face",
+      "history_of_present_illness": "Patient suffered a focal seizure affecting the right side of the face and was taken to Alder Hey Children's Hospital. While in the A&E department, he suffered a second focal seizure.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "neurological": "Seizure activity observed"
+        }
+      },
+      "initial_working_problem": "Seizure disorder - differential includes viral infection",
+      "known_constraints": null,
+      "initial_differential": [
+        "viral infection",
+        "epilepsy"
+      ],
+      "critical_findings": [
+        "Focal seizure",
+        "Recurrent seizures"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "LAB",
+        "name": "HSV PCR",
+        "description": "Test for Herpes Simplex Virus",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not documented in judgment",
+          "detailed_findings": null,
+          "clinical_significance": "Not documented in judgment",
+          "decision_impact": "Not documented in judgment",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents to A&E with seizure activity",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "First focal seizure observed",
+            "timestamp": "19 September 2009",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Diagnostic Workup",
+        "description": "Patient observed in A&E, second seizure occurs",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Second focal seizure observed",
+            "timestamp": "Not documented in judgment",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient in A&E with recurrent seizures",
+        "prompt": "What diagnostic test should be ordered to identify the cause of seizures?",
+        "action_type": "ORDER_TEST",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Order HSV PCR test",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Early identification of HSV can prevent severe complications"
+          },
+          {
+            "option_id": "B",
+            "description": "Discharge without further testing",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Failed to identify underlying viral cause"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant discharged patient without further testing",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E002"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "HSV PCR test should have been ordered",
+          "standard_of_care_basis": "Early testing for HSV in seizure cases is standard",
+          "evidence_ids": [
+            "E003"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to test for HSV led to delayed diagnosis and treatment",
+          "what_should_have_happened": "HSV PCR test should have been conducted to confirm diagnosis",
+          "legal_standard_applied": "Breach of duty admitted by Defendant",
+          "evidence_ids": [
+            "E003"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient sustained catastrophic brain injuries, leading to profound impairments and intractable epilepsy",
+        "severity": "PERMANENT_SEVERE_DISABILITY",
+        "long_term_effects": "Severe learning difficulties, mild right hemiplegia, severe drug-resistant multifocal epilepsy, autism, and severe behavioral problems",
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "27,300,000",
+        "key_findings": [
+          "Breach of duty in failing to diagnose HSV",
+          "Causation established - earlier diagnosis would have prevented severe outcomes"
+        ],
+        "evidence_ids": [
+          "E003",
+          "E005"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to diagnose HSV",
+        "counterfactual": "Early diagnosis and treatment of HSV would have prevented severe brain injury",
+        "evidence_ids": [
+          "E003",
+          "E004"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "19 September 2009",
+        "event": "Patient suffered a focal seizure and was taken to Alder Hey Children's Hospital",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "HSV PCR",
+        "date": "Not documented in judgment",
+        "result": "Not documented in judgment",
+        "interpretation": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "HSV infection",
+        "when_made": "24 September 2009",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Not documented in judgment",
+        "date": "Not documented in judgment",
+        "provider": null,
+        "outcome": "Not documented in judgment",
+        "evidence_ids": []
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Catastrophic brain injuries",
+        "when_occurred": "Not documented in judgment",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to diagnose HSV",
+        "against": "Defendant",
+        "found_proven": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant admitted breach of duty",
+        "legal_significance": "Breach of duty and causation admitted",
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.3157894736842105,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 07:25:57.838370",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

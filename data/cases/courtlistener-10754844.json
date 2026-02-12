@@ -1,0 +1,392 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10754844",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2025-12-12",
+  "url": "https://example.com/courtlistener-10754844",
+  "case_name": "People of Michigan v. Brooklynne Rae Davis",
+  "neutral_citation": null,
+  "clinical_domain": "PAEDIATRICS",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "People of Michigan v. Brooklynne Rae Davis. Medical malpractice case involving paediatrics.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "This case arises from allegations that defendant failed to care for her 19-month-old twins, SS and AS, thereby causing the death of SS and threatening the life of AS.",
+      "paragraph_ref": "11",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Cory Schmidt, a medical doctor who was qualified as an expert in pediatrics, testified.",
+      "paragraph_ref": "15",
+      "speaker": "Dr. Cory Schmidt"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "On August 22, 2024, police officers and medical personnel responded to defendant\u2019s home after defendant called the police and reported a deceased child.",
+      "paragraph_ref": "15",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "EXPERT_TESTIMONY",
+      "text": "AS was so malnourished and dehydrated that he had encephalopathy, which meant AS exhibited 'an altered level of consciousness where he was not as awake,' and it was 'hard to keep him awake.'",
+      "paragraph_ref": "19",
+      "speaker": "Dr. Cory Schmidt"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Schmidt further explained that the 'dangerously high' sodium level in AS\u2019s blood was evidence of AS\u2019s dehydration, as was the child\u2019s kidney injury, weight loss, and encephalopathy.",
+      "paragraph_ref": "19",
+      "speaker": "Dr. Cory Schmidt"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "LEGAL_FINDING",
+      "text": "The district court concluded that first-degree child abuse did not require an affirmative act and that there was probable cause to bind over defendant to the circuit court on that charge.",
+      "paragraph_ref": "28",
+      "speaker": "District court"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "COURT_REASONING",
+      "text": "The purpose of a preliminary examination is to determine whether a crime has been committed, and, if so, whether probable cause exists to believe that the defendant committed it.",
+      "paragraph_ref": "36",
+      "speaker": "Court analysis"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Schmidt testified that if left untreated, AS\u2019s 'fluid balance' was so off that he would have suffered permanent brain damage and would not have developed normally.",
+      "paragraph_ref": "22",
+      "speaker": "Dr. Cory Schmidt"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "FACTUAL_FINDING",
+      "text": "AS weighed approximately 16 or 17 pounds, which was 'very, very low' for his age (19 months) and height.",
+      "paragraph_ref": "21",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "LEGAL_FINDING",
+      "text": "The district court could appropriately draw inferences from the evidence presented in this case to determine that the prosecution presented sufficient evidence that defendant intentionally or knowingly caused serious physical harm to her child.",
+      "paragraph_ref": "56",
+      "speaker": "Court conclusion"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "19 months",
+        "sex": "male",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Altered level of consciousness and severe malnutrition",
+      "history_of_present_illness": "AS was found to be severely malnourished and dehydrated, with a dangerously high sodium level and encephalopathy.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "general": "Altered level of consciousness, difficult to keep awake",
+          "skin": "Uncontrolled eczema with excoriated areas on legs"
+        }
+      },
+      "initial_working_problem": "Severe malnutrition and dehydration",
+      "known_constraints": null,
+      "initial_differential": [
+        "Malnutrition",
+        "Dehydration",
+        "Encephalopathy"
+      ],
+      "critical_findings": [
+        "Dangerously high sodium level",
+        "Severe malnutrition",
+        "Encephalopathy"
+      ],
+      "urgency_level": "CRITICAL",
+      "evidence_ids": [
+        "E004",
+        "E005",
+        "E019"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "LAB",
+        "name": "Serum Sodium Level",
+        "description": "Measurement of sodium concentration in blood",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Dangerously high sodium level",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates severe dehydration",
+          "decision_impact": "Requires immediate fluid management",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "CONSULT_NOTE",
+        "name": "Pediatric Consultation",
+        "description": "Assessment by pediatric specialist",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Severe malnutrition, dehydration, encephalopathy",
+          "detailed_findings": null,
+          "clinical_significance": "Life-threatening condition requiring ICU care",
+          "decision_impact": "Immediate intervention needed to prevent permanent damage",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E002",
+          "E008"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "AS presented with severe symptoms requiring urgent care",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "AS admitted to hospital",
+            "timestamp": "August 23, 2024",
+            "evidence_ids": [
+              "E003"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "AS presented with severe malnutrition and dehydration",
+        "prompt": "What immediate management should be initiated?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Initiate IV fluid resuscitation and nutritional support",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard care for severe dehydration and malnutrition"
+          },
+          {
+            "option_id": "B",
+            "description": "Delay treatment and observe",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Inappropriate given the critical condition"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant delayed seeking medical attention",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E004",
+            "E022"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Immediate medical intervention required",
+          "standard_of_care_basis": "Expert testimony on life-threatening condition",
+          "evidence_ids": [
+            "E008",
+            "E022"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to provide timely medical care led to life-threatening condition",
+          "what_should_have_happened": "Immediate intervention to prevent further harm",
+          "legal_standard_applied": "Negligence in providing necessary care",
+          "evidence_ids": [
+            "E008",
+            "E022"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "AS suffered severe malnutrition and dehydration, requiring ICU care",
+        "severity": "LIFE_THREATENING",
+        "long_term_effects": "Potential for permanent brain damage if untreated",
+        "evidence_ids": [
+          "E008",
+          "E022"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not applicable",
+        "key_findings": [
+          "Defendant failed to provide necessary care",
+          "Causation established - lack of care led to life-threatening condition"
+        ],
+        "evidence_ids": [
+          "E028",
+          "E056"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to provide timely medical care",
+        "counterfactual": "Timely intervention could have prevented severe condition",
+        "evidence_ids": [
+          "E008",
+          "E022",
+          "E056"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "August 22, 2024",
+        "event": "Police and medical personnel responded to defendant's home",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Serum Sodium Level",
+        "date": "August 23, 2024",
+        "result": "Dangerously high",
+        "interpretation": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Severe malnutrition and dehydration",
+        "when_made": "August 23, 2024",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E004",
+          "E019"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "ICU care for dehydration and malnutrition",
+        "date": "August 23, 2024",
+        "provider": null,
+        "outcome": "Stabilization of condition",
+        "evidence_ids": [
+          "E008"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Encephalopathy due to dehydration",
+        "when_occurred": "August 23, 2024",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to provide necessary care",
+        "against": "Defendant",
+        "found_proven": true,
+        "evidence_ids": [
+          "E028"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Negligence led to life-threatening condition",
+        "evidence_ids": [
+          "E056"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.1694915254237288,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 10:05:59.587430",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

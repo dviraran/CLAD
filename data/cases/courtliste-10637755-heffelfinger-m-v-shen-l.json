@@ -1,0 +1,467 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtliste-10637755-heffelfinger-m-v-shen-l",
+  "source": "BAILII",
+  "jurisdiction": "UK",
+  "court": "Unknown",
+  "decision_date": "2026-01-18",
+  "url": "https://example.com/courtliste-10637755-heffelfinger-m-v-shen-l",
+  "case_name": "Heffelfinger, M. v. Shen, L.",
+  "neutral_citation": null,
+  "clinical_domain": "ONCOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Heffelfinger, M. v. Shen, L.. Medical malpractice case involving oncology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Appellee is a 68 year-old woman who resides in Chester County, Pennsylvania.",
+      "paragraph_ref": "12",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. Shen is licensed to practice dentistry in the Commonwealth of Pennsylvania and is the sole owner of her professional corporation, Shen Smiles, PC.",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "Appellee went to Dr. Shen for dental care with a lesion present on the left side of her tongue.",
+      "paragraph_ref": "19",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "Throughout more than six visits in 2018, each initiated by Appellee, the lesion continued to grow and worsen.",
+      "paragraph_ref": "20",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. Shen prescribed palliative treatment but failed to refer Appellee for specialist care, perform an oral cancer screening or biopsy for diagnosis of the lesion.",
+      "paragraph_ref": "22",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "Appellee visited an oral surgeon, Niral Parikh, DDS, on December 28, 2018, who immediately recognized the lesion as possible squamous cell carcinoma.",
+      "paragraph_ref": "30",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "Appellee underwent treatment for squamous cell carcinoma from January thru June of 2019.",
+      "paragraph_ref": "33",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "FACTUAL_FINDING",
+      "text": "The resulting extensive, invasive treatment caused permanent injury including speech deficits, lymphedema, scarring, and a continued risk of recurrence.",
+      "paragraph_ref": "41",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Expert testimony presented at trial showed that the care provided by Dr. Shen fell well below the standard of care that requires referring an oral lesion within two weeks of observation without improvement.",
+      "paragraph_ref": "137",
+      "speaker": "Expert testimony"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Koch testified extensively about what could have been, and what actually resulted, regarding the treatment of [Appellee].",
+      "paragraph_ref": "328",
+      "speaker": "Expert testimony"
+    },
+    {
+      "evidence_id": "E011",
+      "type": "LEGAL_FINDING",
+      "text": "The jury found Dr. Shen negligent and awarded Appellee $3 million in compensatory damages; the jury also found Dr. Shen\u2019s reckless conduct warranted $8 million in punitive damages.",
+      "paragraph_ref": "71",
+      "speaker": "Jury finding"
+    },
+    {
+      "evidence_id": "E012",
+      "type": "LEGAL_FINDING",
+      "text": "Judgment was subsequently entered in favor of Appellee, and jointly against Appellants, in the total amount of $11,459,513.69.",
+      "paragraph_ref": "80",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E013",
+      "type": "COURT_REASONING",
+      "text": "The jury\u2019s verdict bears a reasonable resemblance to the proven damages, and we are precluded from reweighing the evidence and substituting our judgment for that of the factfinder.",
+      "paragraph_ref": "365",
+      "speaker": "Court reasoning"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "68 years",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Lesion on the left side of the tongue",
+      "history_of_present_illness": "Patient reports a lesion on the left side of her tongue that has been present and worsening over multiple visits in 2018.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "oral": "Lesion present on the left side of the tongue"
+        }
+      },
+      "initial_working_problem": "Oral lesion - potential malignancy",
+      "known_constraints": null,
+      "initial_differential": [
+        "squamous cell carcinoma",
+        "benign lesion"
+      ],
+      "critical_findings": [
+        "Lesion on the tongue"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E003",
+        "E004"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSULT_NOTE",
+        "name": "Oral Surgeon Consultation",
+        "description": "Consultation with an oral surgeon for evaluation of the tongue lesion",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Lesion recognized as possible squamous cell carcinoma",
+          "detailed_findings": null,
+          "clinical_significance": "Immediate referral for biopsy",
+          "decision_impact": "Confirmed cancer diagnosis",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "PATHOLOGY",
+        "name": "Biopsy of Tongue Lesion",
+        "description": "Biopsy to confirm the nature of the tongue lesion",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Confirmed squamous cell carcinoma",
+          "detailed_findings": null,
+          "clinical_significance": "Definitive diagnosis of cancer",
+          "decision_impact": "Guided treatment plan",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with a tongue lesion",
+        "duration": "May 2018",
+        "key_events": [
+          {
+            "event": "First visit to Dr. Shen with tongue lesion",
+            "timestamp": "May 13, 2018",
+            "evidence_ids": [
+              "E003"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Follow-up Visits",
+        "description": "Multiple visits with worsening lesion",
+        "duration": "May 2018 - December 2018",
+        "key_events": [
+          {
+            "event": "Lesion continues to grow over six visits",
+            "timestamp": "Throughout 2018",
+            "evidence_ids": [
+              "E004"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "decision",
+        "name": "Critical Decision Point",
+        "description": "Decision not to refer for biopsy",
+        "duration": "Throughout 2018",
+        "key_events": [
+          {
+            "event": "Dr. Shen prescribes palliative treatment",
+            "timestamp": "Throughout 2018",
+            "evidence_ids": [
+              "E005"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "procedure",
+        "name": "Diagnosis and Treatment",
+        "description": "Diagnosis and treatment of squamous cell carcinoma",
+        "duration": "December 2018 - June 2019",
+        "key_events": [
+          {
+            "event": "Biopsy confirms squamous cell carcinoma",
+            "timestamp": "December 28, 2018",
+            "evidence_ids": [
+              "E006"
+            ]
+          },
+          {
+            "event": "Patient undergoes extensive treatment",
+            "timestamp": "January - June 2019",
+            "evidence_ids": [
+              "E007"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient presents with a persistent oral lesion",
+        "prompt": "What should be the next step in managing this oral lesion?",
+        "action_type": "ORDER_TEST",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Refer to an oral surgeon for biopsy",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard of care for persistent oral lesions"
+          },
+          {
+            "option_id": "B",
+            "description": "Prescribe palliative treatment and monitor",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Inadequate for a potentially malignant lesion"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant prescribed palliative treatment",
+          "reasoning_stated": "Defendant did not refer for specialist care",
+          "evidence_ids": [
+            "E005"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Referral to an oral surgeon should have been made",
+          "standard_of_care_basis": "Expert testimony established referral as standard",
+          "evidence_ids": [
+            "E009"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to refer for biopsy led to delayed diagnosis",
+          "what_should_have_happened": "Referral and biopsy should have been performed",
+          "legal_standard_applied": "Bolam test not satisfied",
+          "evidence_ids": [
+            "E009",
+            "E010"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient developed permanent injuries including speech deficits and lymphedema",
+        "severity": "PERMANENT_SEVERE_DISABILITY",
+        "long_term_effects": "Speech deficits, lymphedema, scarring, risk of recurrence",
+        "evidence_ids": [
+          "E008"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "11459513.69",
+        "key_findings": [
+          "Breach of duty in failing to refer for biopsy",
+          "Causation established - earlier diagnosis would have prevented extensive treatment"
+        ],
+        "evidence_ids": [
+          "E011",
+          "E012"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to refer for biopsy",
+        "counterfactual": "Referral would have led to early diagnosis and less invasive treatment",
+        "evidence_ids": [
+          "E009",
+          "E010"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "May 13, 2018",
+        "event": "Patient presents with tongue lesion",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "timestamp": "December 28, 2018",
+        "event": "Biopsy confirms squamous cell carcinoma",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Biopsy",
+        "date": "December 28, 2018",
+        "result": "Confirmed squamous cell carcinoma",
+        "interpretation": null,
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Squamous cell carcinoma",
+        "when_made": "December 28, 2018",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Radiation and chemotherapy, neck dissection",
+        "date": "January - June 2019",
+        "provider": null,
+        "outcome": "Permanent injury including speech deficits",
+        "evidence_ids": [
+          "E007",
+          "E008"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Permanent speech deficits, lymphedema",
+        "when_occurred": "Post-treatment",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E008"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to refer for biopsy",
+        "against": "Dr. Shen",
+        "found_proven": true,
+        "evidence_ids": [
+          "E009"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Dr. Shen breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E009"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.03485254691689008,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 15:41:16.379893",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

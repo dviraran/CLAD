@@ -1,0 +1,491 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "bailii-qb-2019-2294-html",
+  "source": "BAILII",
+  "jurisdiction": "UK",
+  "court": "Unknown",
+  "decision_date": "2019-08-27",
+  "url": "https://example.com/bailii-qb-2019-2294-html",
+  "case_name": "Douse v Western Sussex Hospitals NHS Foundation Trust [2019] EWHC 2294 (QB) (27 August 2019)",
+  "neutral_citation": "[2019] EWHC 2294",
+  "clinical_domain": "OBSTETRICS_GYNAECOLOGY",
+  "outcome_severity": "PERMANENT_SEVERE_DISABILITY",
+  "summary": {
+    "brief": "Medical malpractice case involving obstetrics gynaecology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "The Claimant, Hollie Douse, suffered a serious hypoxic ischaemic injury during the course of her birth by caesarean section on 28 th October 2012 which has led to severe and profound disability in relation to all aspects of functioning.",
+      "paragraph_ref": "12",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "The issue for this court in the liability only trial has been whether or not the obstetric registrar, Dr Raykova, was negligent in failing to deliver Hollie within a significantly shorter period of time, and in particular within five minutes.",
+      "paragraph_ref": "12",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "EXPERT_TESTIMONY",
+      "text": "The expert evidence came from two consultant obstetricians, Mr Andrew Farkas on behalf of the Claimant, and Mr Derek Tuffnell for the Defendant.",
+      "paragraph_ref": "63",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Mr Farkas believes that a vaginal examination immediately before the caesarean procedure might have identified whether there had been further dilatation, which would have supported a further attempt at vaginal delivery.",
+      "paragraph_ref": "67",
+      "speaker": "Mr. Farkas"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Mr Tuffnell believed that it was unreasonable to assume that birth of a baby by caesarean section can always be achieved within four minutes.",
+      "paragraph_ref": "72",
+      "speaker": "Mr. Tuffnell"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "LEGAL_FINDING",
+      "text": "It must follow that the Claimant succeeds on the issue of liability and causation, and is entitled to damages to be assessed at a future date.",
+      "paragraph_ref": "127",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "COURT_REASONING",
+      "text": "In my judgment, having concluded on a balance of probabilities that there was no material change in presentation between that faced by Dr Raykova and Dr Stone, the most likely explanation for the relative promptness of delivery for Dr Stone, which I accept was far more difficult than had been anticipated prior to the surgery, is that Dr Raykova was not possessed of the necessary skill and expertise to cope with such difficulties.",
+      "paragraph_ref": "123",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "WITNESS_STATEMENT",
+      "text": "Mr Douse had been present throughout the labour and attended at theatre scrubbed up for the caesarean section. He was standing near to his partner's head.",
+      "paragraph_ref": "39",
+      "speaker": "Mr. Douse"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "MEDICAL_RECORD",
+      "text": "The penultimate vaginal examination at 2300, before the foetal blood sample was taken, which I have referred to briefly above, is relevant, insofar as it informed the process that followed thereafter and has been the subject of some discussion in the trial.",
+      "paragraph_ref": "21",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "FACTUAL_FINDING",
+      "text": "The notes reveal that Dr Raykova was unable to deliver the baby despite trying a number of different methods including using the midwife to apply pressure through the vagina, tilting the bed to allow some gravitational pull, administration of terbutaline to relax the uterus and to reduce contractions.",
+      "paragraph_ref": "25",
+      "speaker": "Court finding"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Labour with foetal distress",
+      "history_of_present_illness": "The patient, Vanya Jackson, was admitted due to recurring high blood pressure and was induced for labour due to hypertension concerns. She had gestational diabetes and a high BMI. Labour was induced with a propess pessary, and syntocinon was commenced after the application of an epidural.",
+      "past_medical_history": [
+        "Gestational diabetes",
+        "Hypertension"
+      ],
+      "medications": [
+        "Labetalol",
+        "Nifedipine"
+      ],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "abdomen": "Not documented in judgment"
+        }
+      },
+      "initial_working_problem": "Foetal distress during labour",
+      "known_constraints": null,
+      "initial_differential": [
+        "Foetal distress",
+        "Failure to progress"
+      ],
+      "critical_findings": [
+        "Abnormal CTG trace",
+        "Foetal blood pH of 7.19"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E017",
+        "E020"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "LAB",
+        "name": "Foetal Blood Sample",
+        "description": "Measurement of acid levels in foetal blood",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "pH 7.19 (abnormal)",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates foetal distress",
+          "decision_impact": "Prompted decision for caesarean section",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E020"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "CONSULT_NOTE",
+        "name": "Consultant Obstetrician Note",
+        "description": "Consultation with Dr Stone regarding delivery method",
+        "available_phase": "decision",
+        "reveal": {
+          "result_summary": "Decision to proceed with caesarean section",
+          "detailed_findings": null,
+          "clinical_significance": "Consultant agreed with caesarean due to foetal distress",
+          "decision_impact": "Confirmed delivery method",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E020"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Labour Induction",
+        "description": "Patient admitted for induction due to hypertension",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Induction with propess pessary",
+            "timestamp": "26 October 2012",
+            "evidence_ids": [
+              "E018"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "procedure",
+        "name": "Caesarean Section",
+        "description": "Attempted delivery via caesarean section",
+        "duration": "16 minutes",
+        "key_events": [
+          {
+            "event": "Uterus incised",
+            "timestamp": "23:57",
+            "evidence_ids": [
+              "E025"
+            ]
+          },
+          {
+            "event": "Consultant arrived and delivered baby",
+            "timestamp": "00:11",
+            "evidence_ids": [
+              "E025"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "procedure",
+        "clinical_context": "Caesarean section for foetal distress",
+        "prompt": "What should be the approach to deliver the baby?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Proceed with caesarean section using standard techniques",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Standard techniques were insufficient due to impaction"
+          },
+          {
+            "option_id": "B",
+            "description": "Call for consultant assistance immediately",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Consultant assistance could have expedited delivery"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "A",
+          "description": "Defendant attempted delivery using standard techniques",
+          "reasoning_stated": "Believed standard techniques would suffice",
+          "evidence_ids": [
+            "E010",
+            "E042"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "B",
+          "description": "Consultant should have been called immediately",
+          "standard_of_care_basis": "Expert evidence suggested earlier intervention",
+          "evidence_ids": [
+            "E003",
+            "E006"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Delay in calling consultant led to prolonged delivery",
+          "what_should_have_happened": "Consultant should have been involved sooner",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E006",
+            "E007"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient suffered hypoxic ischaemic injury",
+        "severity": "PERMANENT_MODERATE_DISABILITY",
+        "long_term_effects": "Not documented in judgment",
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "To be assessed",
+        "key_findings": [
+          "Breach of duty in failing to use appropriate techniques",
+          "Causation established - earlier intervention could have prevented injury"
+        ],
+        "evidence_ids": [
+          "E006",
+          "E127"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to use varied techniques during delivery",
+        "counterfactual": "Alternative techniques could have facilitated delivery",
+        "evidence_ids": [
+          "E123",
+          "E124",
+          "E127"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "26 October 2012",
+        "event": "Patient admitted for induction due to hypertension",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E018"
+        ]
+      },
+      {
+        "timestamp": "27 October 2012 23:57",
+        "event": "Uterus incised for caesarean section",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E025"
+        ]
+      },
+      {
+        "timestamp": "28 October 2012 00:11",
+        "event": "Consultant delivered baby",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E025"
+        ]
+      },
+      {
+        "timestamp": "Not documented in judgment",
+        "event": "Initial delivery attempts by Dr Raykova",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E010"
+        ]
+      },
+      {
+        "timestamp": "Not documented in judgment",
+        "event": "Successful delivery by Dr Stone",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E120"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Foetal Blood Sample",
+        "date": "27 October 2012",
+        "result": "pH 7.19",
+        "interpretation": null,
+        "evidence_ids": [
+          "E020"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Severe hypoxic ischaemic injury",
+        "when_made": "Post-delivery",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "diagnosis": "Hypoxic ischaemic injury",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Caesarean section",
+        "date": "27 October 2012",
+        "provider": null,
+        "outcome": "Delayed delivery",
+        "evidence_ids": [
+          "E025"
+        ]
+      },
+      {
+        "treatment": "Caesarean section",
+        "date": "Not documented in judgment",
+        "provider": null,
+        "outcome": "Successful delivery by Dr Stone",
+        "evidence_ids": [
+          "E120"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Severe hypoxic ischaemic injury",
+        "when_occurred": "During delivery",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "complication": "Hypoxic ischaemic injury",
+        "when_occurred": "Not documented in judgment",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to deliver within five minutes",
+        "against": "Dr Raykova",
+        "found_proven": true,
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "allegation": "Failure to use appropriate delivery techniques",
+        "against": "Dr Raykova",
+        "found_proven": true,
+        "evidence_ids": [
+          "E123"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E127"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "TREATMENT_PROCEDURE_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.07246376811594203,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 07:12:00.746936",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

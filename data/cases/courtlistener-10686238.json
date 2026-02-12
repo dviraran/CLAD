@@ -1,0 +1,406 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10686238",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2025-10-01",
+  "url": "https://example.com/courtlistener-10686238",
+  "case_name": "GEORGIA MOTON v. EMORY HEALTHCARE, INC.",
+  "neutral_citation": null,
+  "clinical_domain": "PAEDIATRICS",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "GEORGIA MOTON v. EMORY HEALTHCARE, INC.. Medical malpractice case involving paediatrics.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Moton was admitted to Emory Hillandale Hospital for an altered mental state following an accidental overdose of prescribed Keppra.",
+      "paragraph_ref": "20",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Medical personnel established four IV lines for the administration of medication, including three 20-gauge lines (left wrist, left antecubital area, and left side of neck) and one 22-gauge line (left hand).",
+      "paragraph_ref": "22",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "On October 31, defendant White intravenously administered to Moton an initial loading dose of Dilantin, and on November 1, defendant Stokes intravenously administered a second dose of Dilantin.",
+      "paragraph_ref": "25",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "Medical staff did not document through which IV the medication was administered.",
+      "paragraph_ref": "28",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Smith testified that the standard of care for administering Dilantin is through a large vein rather than a smaller vein such as the hand.",
+      "paragraph_ref": "78",
+      "speaker": "Dr. Smith"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Liu testified that it is 'more likely than not, [the] Dilantin was infiltrated through the peripheral IV that was inserted in the left hand of Ms. Moton, resulting in the injuries that she sustained.'",
+      "paragraph_ref": "84",
+      "speaker": "Dr. Liu"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "MEDICAL_RECORD",
+      "text": "The 'Discharge Documentation' prepared by hospitalist physician Nivedea Basu, noted the following: 'Appears she had IV infiltration [with] resulting left and/left digits tissue necrosis'; 'IV Infiltration/L Hand Tissue Necrosis [and] L Hand Cellulitis . . . appears to be attributed to IV infiltration of AED (IV Dilantin)'; and that Moton 'will need outpatient F/U for elective amputation[.]'",
+      "paragraph_ref": "51",
+      "speaker": "Dr. Basu"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "LEGAL_FINDING",
+      "text": "The trial court found that res ipsa loquitor does not apply in a malpractice suit and that Moton\u2019s experts\u2019 failure to point to any specific act of negligence rendered the experts\u2019 opinions unreliable and inadmissible.",
+      "paragraph_ref": "109",
+      "speaker": "Trial court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "COURT_REASONING",
+      "text": "Georgia law requires only that an expert state an opinion regarding proximate causation in terms stronger than that of medical possibility, i.e., reasonable medical probability or reasonable medical certainty.",
+      "paragraph_ref": "230",
+      "speaker": "Court reasoning"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "LEGAL_FINDING",
+      "text": "We reverse the order of the trial court granting summary judgment in favor of defendants.",
+      "paragraph_ref": "261",
+      "speaker": "Court conclusion"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "74 years",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Altered mental state following accidental overdose",
+      "history_of_present_illness": "Patient admitted for altered mental state after accidental overdose of prescribed Keppra.",
+      "past_medical_history": [
+        "End-stage renal disease on hemodialysis"
+      ],
+      "medications": [
+        "Keppra"
+      ],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "neurological": "Patient sedated and on ventilator, unable to communicate"
+        }
+      },
+      "initial_working_problem": "Altered mental state due to medication overdose",
+      "known_constraints": null,
+      "initial_differential": [
+        "Medication overdose",
+        "Metabolic encephalopathy"
+      ],
+      "critical_findings": [
+        "Sedation",
+        "Ventilator support"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002",
+        "E003"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSULT_NOTE",
+        "name": "Plastic Surgery Consult",
+        "description": "Assessment of left hand tissue damage",
+        "available_phase": "postop",
+        "reveal": {
+          "result_summary": "Presence of large bullae and evolving necrosis on left hand",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates severe tissue damage likely due to extravasation",
+          "decision_impact": "Supports need for surgical intervention",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E043",
+          "E044"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Hospital Admission",
+        "description": "Patient admitted for altered mental state",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Admission to Emory Hillandale Hospital",
+            "timestamp": "October 29, 2019",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "procedure",
+        "name": "Dilantin Administration",
+        "description": "Administration of Dilantin through IV",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "First dose of Dilantin administered",
+            "timestamp": "October 31, 2019",
+            "evidence_ids": [
+              "E003"
+            ]
+          },
+          {
+            "event": "Second dose of Dilantin administered",
+            "timestamp": "November 1, 2019",
+            "evidence_ids": [
+              "E003"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "procedure",
+        "clinical_context": "Administration of Dilantin to patient with multiple IV lines",
+        "prompt": "Through which IV line should Dilantin be administered?",
+        "action_type": "ORDER_TEST",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Administer through large vein in neck",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard of care requires administration through a large vein to prevent extravasation"
+          },
+          {
+            "option_id": "B",
+            "description": "Administer through small vein in hand",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Increased risk of extravasation and tissue damage"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant administered through small vein in hand",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E006",
+            "E007"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Dilantin should have been administered through a large vein",
+          "standard_of_care_basis": "Expert testimony established this as standard",
+          "evidence_ids": [
+            "E005",
+            "E006"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Based on evidence E005-E006",
+          "what_should_have_happened": "Dilantin should have been administered through a large vein",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E005",
+            "E006",
+            "E007"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient developed severe tissue necrosis leading to amputation",
+        "severity": "PERMANENT_SEVERE_DISABILITY",
+        "long_term_effects": "Loss of left hand",
+        "evidence_ids": [
+          "E070",
+          "E071"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Breach of duty in administering Dilantin through small vein",
+          "Causation established - extravasation led to tissue necrosis"
+        ],
+        "evidence_ids": [
+          "E010",
+          "E011"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to administer Dilantin through appropriate IV line",
+        "counterfactual": "Administration through a large vein would have prevented injury",
+        "evidence_ids": [
+          "E005",
+          "E006",
+          "E007"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "October 29, 2019",
+        "event": "Patient admitted to Emory Hillandale Hospital",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "October 31, 2019",
+        "event": "First dose of Dilantin administered",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "timestamp": "November 1, 2019",
+        "event": "Second dose of Dilantin administered",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [
+      {
+        "diagnosis": "Tissue necrosis due to IV infiltration",
+        "when_made": "November 3, 2019",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E043",
+          "E044"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Amputation of left hand",
+        "date": "Approximately eight weeks after discharge",
+        "provider": null,
+        "outcome": "Loss of left hand",
+        "evidence_ids": [
+          "E070"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Tissue necrosis",
+        "when_occurred": "November 3, 2019",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E043",
+          "E044"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Improper administration of Dilantin",
+        "against": "Defendant nurses",
+        "found_proven": true,
+        "evidence_ids": [
+          "E010"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E010"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "TREATMENT_PROCEDURE_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.03717472118959108,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 10:02:21.482233",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

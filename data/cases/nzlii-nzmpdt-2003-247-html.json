@@ -1,0 +1,449 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "nzlii-nzmpdt-2003-247-html",
+  "source": "BAILII",
+  "jurisdiction": "UK",
+  "court": "Unknown",
+  "decision_date": "2003-09-22",
+  "url": "https://example.com/nzlii-nzmpdt-2003-247-html",
+  "case_name": "106.    The requisite standard of proof in medical disciplinary cases was\nconsidered by Jeffries J inOngley v Medical Council of New\nZealand39where the High Court adopted the\nfollowing passage from the judgment inRe Evatt: ex parte New South Wales Bar\nAssociation40",
+  "neutral_citation": "[1965] HCA 46",
+  "clinical_domain": "PAEDIATRICS",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "106.    The requisite standard of proof in medical disciplinary cases was\nconsidered by Jeffries J inOngley v Medical Council of New\nZealand39where the High Court adopted the\nfollowing passage from the judgment inRe Evatt: ex parte New South Wales Bar\nAssociation40. Medical malpractice case involving paediatrics.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "The charge was heard in Tauranga on 25, 26 and 27 August. After the conclusion of the evidence and submissions from counsel for the parties the Tribunal retired to consider its decision.",
+      "paragraph_ref": "2",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "The charge identified five alleged shortcomings on the part of Dr Breeze relating to the pre and post operative periods of the case.",
+      "paragraph_ref": "1999",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "EXPERT_TESTIMONY",
+      "text": "It is my opinion that Mr Breeze has failed in his duty of care to his patient, the late Mr Crowley.",
+      "paragraph_ref": "201",
+      "speaker": "Expert witness"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "WITNESS_STATEMENT",
+      "text": "Dr Breeze remembers that at some time between 1100 and 1150 hrs he was telephoned by a nurse at Southern Cross Hospital and told about Mr Crowley\u2019s latest blood test results.",
+      "paragraph_ref": "71",
+      "speaker": "Dr Breeze"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Professor Frizelle\u2019s testimony in relation to Dr Breeze\u2019s failure to transfer the care of Mr Crowley to an appropriately qualified specialist surgeon was that the decision to transfer or not is a matter of clinical judgment.",
+      "paragraph_ref": "86",
+      "speaker": "Professor Frizelle"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "LEGAL_FINDING",
+      "text": "The Tribunal has found Dr Breeze guilty of professional misconduct in relation to the second, fourth and fifth particulars of the notice of charge.",
+      "paragraph_ref": "187",
+      "speaker": "Tribunal"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "COURT_REASONING",
+      "text": "In this case where the Tribunal has made findings adverse to Dr Breeze it has done so because the evidence satisfies the test as to the onus of proof set out in paragraphs 106 and 107 of this decision.",
+      "paragraph_ref": "108",
+      "speaker": "Tribunal"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "FACTUAL_FINDING",
+      "text": "Mr Crowley was referred to Dr Breeze with a history of passing blood with his faeces.",
+      "paragraph_ref": "50",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "MEDICAL_RECORD",
+      "text": "The Tribunal also accepts the autopsy report is a faithful record of the pathologist\u2019s findings.",
+      "paragraph_ref": "90",
+      "speaker": "Tribunal"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "LEGAL_FINDING",
+      "text": "The Tribunal orders Dr Breeze pay $12,500 by way of a fine pursuant to s110(1)(e) of the Act.",
+      "paragraph_ref": "188",
+      "speaker": "Tribunal"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "65 years",
+        "sex": "male",
+        "relevant_social_history": "Diet controlled diabetes"
+      },
+      "chief_complaint": "Passing blood with faeces",
+      "history_of_present_illness": "Referred to Dr Breeze with a history of passing blood with faeces. Diagnosed with polypoidal cancer of the rectum, 9cm from the anal verge.",
+      "past_medical_history": [
+        "Diet controlled diabetes"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "abdomen": "Not documented in judgment"
+        }
+      },
+      "initial_working_problem": "Rectal cancer requiring surgical intervention",
+      "known_constraints": null,
+      "initial_differential": [
+        "Rectal cancer"
+      ],
+      "critical_findings": [
+        "Polypoidal cancer of the rectum"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E008",
+        "E054"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "LAB",
+        "name": "Blood Test",
+        "description": "Blood test showing toxic picture",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "WBC 2.4 with marked left shift and neutrophil toxic changes",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates severe infection",
+          "decision_impact": "Should prompt immediate surgical intervention",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E027"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "IMAGING",
+        "name": "Colonoscopy",
+        "description": "Colonoscopy to exclude other growths",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": null,
+          "detailed_findings": "No other tumour found",
+          "clinical_significance": "Confirms isolated rectal cancer",
+          "decision_impact": "Proceed with planned surgery",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E011"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with rectal bleeding",
+        "duration": "Not specified",
+        "key_events": [
+          {
+            "event": "Referral to Dr Breeze",
+            "timestamp": "Date not specified",
+            "evidence_ids": [
+              "E008"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Pre-operative Workup",
+        "description": "Colonoscopy and preparation for surgery",
+        "duration": "9 days",
+        "key_events": [
+          {
+            "event": "Colonoscopy performed",
+            "timestamp": "15 December 1999",
+            "evidence_ids": [
+              "E011"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "postop",
+        "name": "Post-operative Care",
+        "description": "Post-surgery monitoring and management",
+        "duration": "2 days",
+        "key_events": [
+          {
+            "event": "Surgery performed",
+            "timestamp": "16 December 1999",
+            "evidence_ids": [
+              "E017"
+            ]
+          },
+          {
+            "event": "Patient's condition deteriorates",
+            "timestamp": "17 December 1999",
+            "evidence_ids": [
+              "E023",
+              "E024"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "postop",
+        "clinical_context": "Post-operative care after rectal cancer surgery",
+        "prompt": "What should be the next step in management given the patient's deteriorating condition?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Re-operate to address potential anastomotic leak",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard care for suspected anastomotic leak"
+          },
+          {
+            "option_id": "B",
+            "description": "Continue conservative management with antibiotics",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Defendant believed conservative management was sufficient"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant continued conservative management",
+          "reasoning_stated": "Believed conservative management was sufficient",
+          "evidence_ids": [
+            "E073",
+            "E074"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Re-operation should have been performed",
+          "standard_of_care_basis": "Expert evidence established re-operation was necessary",
+          "evidence_ids": [
+            "E049",
+            "E060"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Based on evidence E049-E060",
+          "what_should_have_happened": "Re-operation to address anastomotic leak",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E049",
+            "E060",
+            "E061"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient developed multi-organ failure and died",
+        "severity": "FATAL",
+        "long_term_effects": "Not applicable",
+        "evidence_ids": [
+          "E040",
+          "E041"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "12500",
+        "key_findings": [
+          "Breach of duty in failing to re-operate",
+          "Causation established - earlier intervention could have prevented death"
+        ],
+        "evidence_ids": [
+          "E006",
+          "E010"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to re-operate",
+        "counterfactual": "Re-operation could have addressed the anastomotic leak",
+        "evidence_ids": [
+          "E049",
+          "E060",
+          "E061"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "15 December 1999",
+        "event": "Colonoscopy performed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E011"
+        ]
+      },
+      {
+        "timestamp": "16 December 1999",
+        "event": "Surgery performed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E017"
+        ]
+      },
+      {
+        "timestamp": "17 December 1999",
+        "event": "Patient's condition deteriorates",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E023",
+          "E024"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Blood Test",
+        "date": "17 December 1999",
+        "result": "WBC 2.4 with marked left shift and neutrophil toxic changes",
+        "interpretation": null,
+        "evidence_ids": [
+          "E027"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Anastomotic leak",
+        "when_made": "17 December 1999",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E105",
+          "E106"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Conservative management with antibiotics",
+        "date": "17 December 1999",
+        "provider": null,
+        "outcome": "Ineffective, patient deteriorated",
+        "evidence_ids": [
+          "E073",
+          "E074"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Multi-organ failure",
+        "when_occurred": "17 December 1999",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E100",
+          "E101"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to re-operate",
+        "against": "Dr Breeze",
+        "found_proven": true,
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.01841620626151013,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 15:33:36.017500",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

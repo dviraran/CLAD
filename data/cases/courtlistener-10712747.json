@@ -1,0 +1,457 @@
+{
+  "case_id": "courtlistener-10712747",
+  "source": "courtlistener",
+  "source_url": "local://courtlistener-10712747.html",
+  "jurisdiction": "US",
+  "extraction_metadata": {
+    "version": "batch_api_v1",
+    "model": "gpt-4o",
+    "extracted_at": "2026-01-21T17:56:57.932748",
+    "simulation_extracted_at": "2026-01-21T18:25:07.005784",
+    "simulation_model": "gpt-4o"
+  },
+  "case_metadata": {
+    "case_name": "Cullins v. Ihemaguba",
+    "citation": "2025 NY Slip Op 05878",
+    "court": "Appellate Division, First Department",
+    "date": "October 23, 2025"
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "Plaintiff mother (plaintiff), who was 28 weeks pregnant, presented to the Hospital's emergency department with medical complications at 9:05 a.m.",
+      "paragraph_ref": "13",
+      "paragraph_starts_with": "[13] Order, Supreme Court, Bronx",
+      "summary": "Plaintiff presented to ED at 28 weeks pregnant with complications.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "The attending obstetrician, defendant Dr. Ihemaguba, determined that an emergency Caesarian section was necessary, and the infant plaintiff was delivered at 9:58 a.m.",
+      "paragraph_ref": "13",
+      "paragraph_starts_with": "[13] Order, Supreme Court, Bronx",
+      "summary": "Emergency C-section performed by Dr. Ihemaguba, infant delivered at 9:58 a.m.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "Defendant Lazaro Lezcano, M.D., the attending neonatologist, testified that at around 1:00 P.M., he ordered a transfusion for packed red blood cells (RBCs) to be administered 'over three hours' to the infant.",
+      "paragraph_ref": "13",
+      "paragraph_starts_with": "[13] Order, Supreme Court, Bronx",
+      "summary": "Dr. Lezcano ordered RBC transfusion for infant at 1:00 P.M.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "The blood bank told the neonatal intensive care unit (NICU) at approximately 6:37 PM that the blood pack was ready, and the transfusion commenced at approximately 7:00 P.M., almost six hours after the initial order.",
+      "paragraph_ref": "13",
+      "paragraph_starts_with": "[13] Order, Supreme Court, Bronx",
+      "summary": "Blood transfusion delayed, started at 7:00 P.M., six hours after order.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "EXPERT_TESTIMONY",
+      "verbatim_quote": "Moreover, in determining the motion, Supreme Court should have considered the opinion of plaintiff's expert registered nurse, as the appropriate standard of care governing compliance with transfusion orders and the issue of whether the Hospital deviated from that standard fall squarely within the scope of a nurse's duties and expertise.",
+      "paragraph_ref": "13",
+      "paragraph_starts_with": "[13] Order, Supreme Court, Bronx",
+      "summary": "Expert nurse's opinion on standard of care for transfusion orders.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "LEGAL_FINDING",
+      "verbatim_quote": "Supreme Court should not have dismissed the claims for direct liability against the Hospital.",
+      "paragraph_ref": "13",
+      "paragraph_starts_with": "[13] Order, Supreme Court, Bronx",
+      "summary": "Claims for direct liability against Hospital should not have been dismissed.",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "LEGAL_FINDING",
+      "verbatim_quote": "The Hospital does not cross-appeal from the portion of the order denying its motion for summary judgment with respect to its vicarious liability for Dr. Lezcano's alleged malpractice.",
+      "paragraph_ref": "13",
+      "paragraph_starts_with": "[13] Order, Supreme Court, Bronx",
+      "summary": "Hospital did not cross-appeal on vicarious liability for Dr. Lezcano.",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "verdict_detected": {
+    "outcome": "PARTIAL_LIABILITY",
+    "key_phrase": "Supreme Court should not have dismissed the claims for direct liability against the Hospital.",
+    "paragraph_ref": "13"
+  },
+  "extraction_notes": {
+    "total_paragraphs_analyzed": 40,
+    "key_sections_found": [
+      "Facts",
+      "Expert Evidence",
+      "Conclusion"
+    ],
+    "gaps_identified": [
+      "No specific lab values mentioned",
+      "Exact timing of some events unclear"
+    ]
+  },
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Medical complications at 28 weeks pregnant",
+      "history_of_present_illness": "Not documented in judgment",
+      "past_medical_history": "Not documented in judgment",
+      "medications": "Not documented in judgment",
+      "allergies": "Not documented in judgment",
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment"
+        },
+        "focused_exam": {
+          "system": "Examination mentioned but findings not specified"
+        }
+      },
+      "initial_working_problem": "Pregnancy with complications",
+      "initial_differential": [
+        "Pregnancy complications"
+      ],
+      "critical_findings": [
+        "Emergency C-section required"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "PROCEDURE_NOTE",
+        "name": "Emergency Caesarian Section",
+        "description": "Details of the emergency C-section performed",
+        "available_phase": "procedure",
+        "reveal": {
+          "result_summary": "Infant delivered at 9:58 a.m.",
+          "clinical_significance": "Immediate delivery due to complications",
+          "decision_impact": "Resolved immediate risk to mother and infant"
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "LAB",
+        "name": "Blood Transfusion Order",
+        "description": "Order for packed red blood cells transfusion",
+        "available_phase": "postop",
+        "reveal": {
+          "result_summary": "Transfusion ordered at 1:00 P.M.",
+          "clinical_significance": "Necessary to address infant's condition",
+          "decision_impact": "Delay in transfusion could worsen condition"
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "procedure",
+        "clinical_context": "Pregnant patient with complications requiring immediate intervention",
+        "prompt": "What immediate action should be taken for the patient?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Perform emergency Caesarian section",
+            "is_defendant_choice": true,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Necessary to address complications and ensure safety of mother and infant"
+          },
+          {
+            "option_id": "B",
+            "description": "Monitor and delay intervention",
+            "is_defendant_choice": false,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Delay could increase risk to mother and infant"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "A",
+          "description": "Emergency C-section performed",
+          "reasoning_stated": "Immediate delivery required due to complications",
+          "evidence_ids": [
+            "E002"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Emergency C-section was appropriate",
+          "standard_of_care_basis": "Immediate intervention required",
+          "evidence_ids": [
+            "E002"
+          ]
+        },
+        "explanation": {
+          "why_defendant_wrong": "Not applicable as action was correct",
+          "what_should_have_happened": "Emergency C-section was correctly performed",
+          "legal_standard_applied": "Standard of care met",
+          "evidence_ids": [
+            "E002"
+          ]
+        },
+        "is_malpractice_point": false
+      },
+      {
+        "decision_id": "D002",
+        "phase_id": "postop",
+        "clinical_context": "Infant requiring blood transfusion post-delivery",
+        "prompt": "How should the blood transfusion be managed?",
+        "action_type": "ORDER_TEST",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Ensure immediate availability and administration of transfusion",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Timely transfusion critical for infant's condition"
+          },
+          {
+            "option_id": "B",
+            "description": "Delay transfusion until blood is available",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Delay could worsen infant's condition"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Transfusion delayed, started six hours after order",
+          "reasoning_stated": "Blood bank delay",
+          "evidence_ids": [
+            "E004"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Transfusion should have been expedited",
+          "standard_of_care_basis": "Expert testimony on standard of care",
+          "evidence_ids": [
+            "E005"
+          ]
+        },
+        "explanation": {
+          "why_defendant_wrong": "Delay in transfusion not justified",
+          "what_should_have_happened": "Transfusion should have been administered promptly",
+          "legal_standard_applied": "Standard of care for transfusion orders",
+          "evidence_ids": [
+            "E005"
+          ]
+        },
+        "is_malpractice_point": true
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Emergency Presentation",
+        "description": "Patient presents to ED with pregnancy complications",
+        "duration": "53 minutes",
+        "key_events": [
+          {
+            "event": "Patient arrives at ED",
+            "timestamp": "9:05 a.m.",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "procedure",
+        "name": "Emergency Caesarian Section",
+        "description": "C-section performed due to complications",
+        "duration": "53 minutes",
+        "key_events": [
+          {
+            "event": "Infant delivered",
+            "timestamp": "9:58 a.m.",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "postop",
+        "name": "Postoperative Care",
+        "description": "Infant requires blood transfusion",
+        "duration": "6 hours",
+        "key_events": [
+          {
+            "event": "Transfusion ordered",
+            "timestamp": "1:00 p.m.",
+            "evidence_ids": [
+              "E003"
+            ]
+          },
+          {
+            "event": "Transfusion commenced",
+            "timestamp": "7:00 p.m.",
+            "evidence_ids": [
+              "E004"
+            ]
+          }
+        ]
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Infant experienced delay in receiving necessary transfusion",
+        "severity": "Not documented in judgment",
+        "long_term_effects": "Not documented in judgment",
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Breach of duty in delaying transfusion",
+          "Hospital's direct liability not dismissed"
+        ],
+        "evidence_ids": [
+          "E006",
+          "E007"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": "Not documented in judgment",
+        "point_of_failure": "Delay in blood transfusion",
+        "counterfactual": "Timely transfusion could have improved outcome",
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "9:05 a.m.",
+        "event": "Patient arrives at ED",
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "9:58 a.m.",
+        "event": "Infant delivered via C-section",
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "1:00 p.m.",
+        "event": "Transfusion ordered",
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "timestamp": "7:00 p.m.",
+        "event": "Transfusion commenced",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Blood Transfusion",
+        "date": "Date not specified in judgment",
+        "result": "Delayed start",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Pregnancy complications",
+        "when_made": "9:05 a.m.",
+        "correct": true,
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Emergency Caesarian Section",
+        "date": "9:58 a.m.",
+        "outcome": "Infant delivered",
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Delay in blood transfusion",
+        "when_occurred": "7:00 p.m.",
+        "severity": "Not documented in judgment",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Delay in blood transfusion",
+        "against": "Hospital",
+        "found_proven": true,
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Hospital breached duty of care",
+        "legal_significance": "Standard of care not met",
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      }
+    ]
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "MONITORING_FOLLOWUP"
+    ],
+    "diagnosis_subtypes": [
+      "FAILURE_TO_ACT"
+    ]
+  }
+}

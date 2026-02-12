@@ -1,0 +1,486 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10629343",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2023-04-19",
+  "url": "https://example.com/courtlistener-10629343",
+  "case_name": "Hunter William Foote, Jr. v. Memorial Hospital at Gulfport",
+  "neutral_citation": null,
+  "clinical_domain": "PAEDIATRICS",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Hunter William Foote, Jr. v. Memorial Hospital at Gulfport. Medical malpractice case involving paediatrics.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Burwell pierced Foote\u2019s iliac vein during hip replacement surgery.",
+      "paragraph_ref": "12",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Foote was given blood and medication to stabilize his blood pressure.",
+      "paragraph_ref": "53",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "Graham suspected a potential retroperitoneal hematoma but determined that Foot was stable.",
+      "paragraph_ref": "48",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Banks. He said there was a deviation from the standard of care.",
+      "paragraph_ref": "206",
+      "speaker": "Expert testimony"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "LEGAL_FINDING",
+      "text": "The court eventually issued findings of fact and conclusions of law dismissing Foote\u2019s claim against the Hospital.",
+      "paragraph_ref": "23",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "COURT_REASONING",
+      "text": "The circuit court\u2019s primary reason for dismissing Foote\u2019s claim against the Hospital was the lack of expert testimony on causation.",
+      "paragraph_ref": "337",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "Foote\u2019s blood pressure dropped at 9:03 a.m., and nurse anesthetist Meghan Fisackerly told Burwell she was having a problem with Foote\u2019s blood pressure.",
+      "paragraph_ref": "37",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "FACTUAL_FINDING",
+      "text": "Graham was notified of the request around 9:51 a.m. He advised that he was unavailable.",
+      "paragraph_ref": "42",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "FACTUAL_FINDING",
+      "text": "Graham came to the PACU, and diagnosed Foote with a large retroperitoneal hematoma.",
+      "paragraph_ref": "61",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "LEGAL_FINDING",
+      "text": "The jury found proximate cause and returned a verdict against Dr. Graham and the Hospital.",
+      "paragraph_ref": "642",
+      "speaker": "Jury verdict"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "55 years",
+        "sex": "male",
+        "relevant_social_history": "Security guard"
+      },
+      "chief_complaint": "Undergoing hip replacement surgery",
+      "history_of_present_illness": "Patient with degenerative arthritis undergoing hip replacement surgery.",
+      "past_medical_history": [
+        "Degenerative arthritis"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "abdomen": "Not documented in judgment"
+        }
+      },
+      "initial_working_problem": "Hip replacement surgery",
+      "known_constraints": null,
+      "initial_differential": [
+        "Not applicable"
+      ],
+      "critical_findings": [
+        "Penetration of iliac vein during surgery"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E007"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "Ultrasound",
+        "description": "Ultrasound to assess for internal bleeding",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not performed",
+          "detailed_findings": null,
+          "clinical_significance": "Could have identified bleeding",
+          "decision_impact": "Might have prompted earlier intervention",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": [
+          "E050"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "CONSULT_NOTE",
+        "name": "Vascular Surgery Consult",
+        "description": "Consultation with vascular surgeon Dr. Graham",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Suspected retroperitoneal hematoma, decided on non-surgical management initially",
+          "detailed_findings": null,
+          "clinical_significance": "Delayed surgical intervention",
+          "decision_impact": "Contributed to delayed diagnosis and treatment",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E003",
+          "E009"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Surgical Presentation",
+        "description": "Patient presents for hip replacement surgery",
+        "duration": "Not specified",
+        "key_events": [
+          {
+            "event": "Surgery begins",
+            "timestamp": "8:09 a.m.",
+            "evidence_ids": [
+              "E032"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Intraoperative Complications",
+        "description": "Complications arise during surgery",
+        "duration": "Not specified",
+        "key_events": [
+          {
+            "event": "Iliac vein pierced",
+            "timestamp": "Not specified",
+            "evidence_ids": [
+              "E001"
+            ]
+          },
+          {
+            "event": "Blood pressure drop noted",
+            "timestamp": "9:03 a.m.",
+            "evidence_ids": [
+              "E007"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient with suspected internal bleeding during surgery",
+        "prompt": "What should be the immediate next step in management?",
+        "action_type": "ORDER_TEST",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Perform an ultrasound to assess for internal bleeding",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Would provide immediate information on bleeding status"
+          },
+          {
+            "option_id": "B",
+            "description": "Continue with non-surgical management and monitor",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Delayed identification of bleeding source"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant chose non-surgical management initially",
+          "reasoning_stated": "Believed patient was stable",
+          "evidence_ids": [
+            "E003",
+            "E009"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Ultrasound should have been performed",
+          "standard_of_care_basis": "Expert testimony indicated it was necessary",
+          "evidence_ids": [
+            "E050"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to perform ultrasound delayed diagnosis",
+          "what_should_have_happened": "Immediate ultrasound to confirm bleeding",
+          "legal_standard_applied": "Standard of care not met",
+          "evidence_ids": [
+            "E050"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient suffered significant blood loss and kidney failure.",
+        "severity": "PERMANENT_MODERATE_DISABILITY",
+        "long_term_effects": "Kidney failure due to prolonged low blood flow",
+        "evidence_ids": [
+          "E602",
+          "E603",
+          "E604"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "None",
+        "key_findings": [
+          "Failure to prove causation against the Hospital",
+          "Expert testimony did not establish proximate cause"
+        ],
+        "evidence_ids": [
+          "E005",
+          "E006",
+          "E491"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Failure to perform ultrasound",
+        "counterfactual": "Ultrasound could have identified bleeding earlier",
+        "evidence_ids": [
+          "E004",
+          "E599"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "June 5, 2015 8:09 a.m.",
+        "event": "Surgery begins",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E032"
+        ]
+      },
+      {
+        "timestamp": "June 5, 2015 9:03 a.m.",
+        "event": "Blood pressure drop noted",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      {
+        "timestamp": "9:03 a.m.",
+        "event": "Iliac vein pierced during surgery",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001",
+          "E007"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Vascular Surgery Consult",
+        "date": "June 5, 2015",
+        "result": "Non-surgical management decided",
+        "interpretation": null,
+        "evidence_ids": [
+          "E003",
+          "E009"
+        ]
+      },
+      {
+        "test_name": "Ultrasound",
+        "date": "Not performed initially",
+        "result": "Not documented in judgment",
+        "interpretation": null,
+        "evidence_ids": [
+          "E004",
+          "E599"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Retroperitoneal hematoma",
+        "when_made": "Post-surgery",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E009"
+        ]
+      },
+      {
+        "diagnosis": "Retroperitoneal hematoma",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E003",
+          "E009"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Thrombectomy and bypass graft",
+        "date": "June 5, 2015",
+        "provider": null,
+        "outcome": "Iliac vein repaired",
+        "evidence_ids": [
+          "E063"
+        ]
+      },
+      {
+        "treatment": "Blood transfusion and medication to stabilize blood pressure",
+        "date": "Not documented in judgment",
+        "provider": null,
+        "outcome": "Temporary stabilization",
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Kidney failure",
+        "when_occurred": "Post-surgery",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E172"
+        ]
+      },
+      {
+        "complication": "Kidney failure",
+        "when_occurred": "Not documented in judgment",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E602",
+          "E603",
+          "E604"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to perform timely vascular repair",
+        "against": "Dr. Graham",
+        "found_proven": false,
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      },
+      {
+        "allegation": "Failure to perform ultrasound",
+        "against": "Dr. Graham",
+        "found_proven": false,
+        "evidence_ids": [
+          "E004",
+          "E599"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "No causation established against Dr. Graham",
+        "legal_significance": "No liability found",
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      },
+      {
+        "finding": "No causation proven against the Hospital",
+        "legal_significance": "No liability found",
+        "evidence_ids": [
+          "E005",
+          "E006",
+          "E491"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.015197568389057751,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 08:08:23.694365",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

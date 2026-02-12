@@ -1,0 +1,357 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-2393878",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2010-09-15",
+  "url": "https://example.com/courtlistener-2393878",
+  "case_name": "Walterboro Community Hosp. v. Meacher",
+  "neutral_citation": null,
+  "clinical_domain": "SURGERY_ORTHOPAEDIC",
+  "outcome_severity": "TEMPORARY_HARM",
+  "summary": {
+    "brief": "Walterboro Community Hosp. v. Meacher. Medical malpractice case involving surgery orthopaedic.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "On March 10, 2000, Grant arrived at the emergency department at Colleton, complaining of pain and swelling in his left testicle.",
+      "paragraph_ref": "27",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Grant was examined and treated by Dr. Meacher, who, according to Grant's amended complaint, diagnosed Grant with epididymitis and released him.",
+      "paragraph_ref": "27",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "He thereafter sought treatment at the Medical University of South Carolina (\"MUSC\"), where he was diagnosed with testicular torsion.",
+      "paragraph_ref": "27",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "The MUSC physicians determined that Grant's testicle could not be repaired, and it was surgically removed.",
+      "paragraph_ref": "27",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "Grant subsequently sued Colleton, Dr. Meacher, Meacher P.A., and CareFirst for medical malpractice.",
+      "paragraph_ref": "27",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "Grant's case proceeded to trial. On the second day of trial, Grant reached a settlement with Colleton, Dr. Meacher, and Meacher P.A. for $100,000.",
+      "paragraph_ref": "28",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "LEGAL_FINDING",
+      "text": "The circuit court subsequently found that Colleton was not entitled to equitable indemnification and that it was not entitled to recovery under the Agreement.",
+      "paragraph_ref": "28",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "COURT_REASONING",
+      "text": "We believe the preponderance of the evidence supports the conclusion that Colleton failed to meet the Vermeer requirements.",
+      "paragraph_ref": "31",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "EXPERT_TESTIMONY",
+      "text": "At the Grant trial, Dr. Mazo testified that Dr. Meacher's failure to order an ultrasound was a departure from [the] standard of care.",
+      "paragraph_ref": "32",
+      "speaker": "Expert witness"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "LEGAL_FINDING",
+      "text": "There was insufficient evidence of fault on Dr. Meacher's part and lack of fault on Colleton's part presented at the medical malpractice trial prior to settlement.",
+      "paragraph_ref": "34",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "male",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Pain and swelling in left testicle",
+      "history_of_present_illness": "Patient reports pain and swelling in left testicle upon arrival at the emergency department.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "genitourinary": "Examination mentioned but findings not specified"
+        }
+      },
+      "initial_working_problem": "Epididymitis",
+      "known_constraints": null,
+      "initial_differential": [
+        "epididymitis",
+        "testicular torsion"
+      ],
+      "critical_findings": [
+        "Pain and swelling in left testicle"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "Ultrasound of the scrotum",
+        "description": "Ultrasound to evaluate testicular blood flow and structure",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not performed",
+          "detailed_findings": null,
+          "clinical_significance": "Could have identified testicular torsion",
+          "decision_impact": "Failure to perform led to misdiagnosis",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": [
+          "E009"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Emergency Presentation",
+        "description": "Patient presents to ED with acute symptoms",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Patient arrives at ED",
+            "timestamp": "March 10, 2000",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Initial Workup",
+        "description": "Diagnostic process in the ED",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Diagnosis of epididymitis made",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient in ED with testicular pain and swelling",
+        "prompt": "What diagnostic test should be ordered?",
+        "action_type": "ORDER_TEST",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Order ultrasound of the scrotum",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard investigation to rule out testicular torsion"
+          },
+          {
+            "option_id": "B",
+            "description": "Diagnose epididymitis without further imaging",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Assumed diagnosis without ruling out torsion"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant diagnosed epididymitis without imaging",
+          "reasoning_stated": "Defendant assumed epididymitis based on symptoms",
+          "evidence_ids": [
+            "E002"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Ultrasound should have been ordered",
+          "standard_of_care_basis": "Expert testimony indicated ultrasound was necessary",
+          "evidence_ids": [
+            "E009"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to order ultrasound led to misdiagnosis",
+          "what_should_have_happened": "Ultrasound would have identified torsion",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E009"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient's testicle was surgically removed due to testicular torsion",
+        "severity": "PERMANENT_MODERATE_DISABILITY",
+        "long_term_effects": "Loss of testicle",
+        "evidence_ids": [
+          "E003",
+          "E004"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "100000",
+        "key_findings": [
+          "Breach of duty in failing to order ultrasound",
+          "Causation established - earlier diagnosis would have prevented loss of testicle"
+        ],
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to order ultrasound imaging",
+        "counterfactual": "Ultrasound would have shown testicular torsion",
+        "evidence_ids": [
+          "E009",
+          "E010"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "March 10, 2000",
+        "event": "Patient arrives at ED",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [
+      {
+        "diagnosis": "Testicular torsion",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Surgical removal of testicle",
+        "date": "Not documented in judgment",
+        "provider": null,
+        "outcome": "Testicle removed",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "complications": [],
+    "allegations": [
+      {
+        "allegation": "Failure to order ultrasound",
+        "against": "Dr. Meacher",
+        "found_proven": true,
+        "evidence_ids": [
+          "E009"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E009"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.4166666666666667,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 08:44:57.970199",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

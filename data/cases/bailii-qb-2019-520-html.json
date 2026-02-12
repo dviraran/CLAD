@@ -1,0 +1,476 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "bailii-qb-2019-520-html",
+  "source": "BAILII",
+  "jurisdiction": "UK",
+  "court": "Unknown",
+  "decision_date": "2019-03-01",
+  "url": "https://example.com/bailii-qb-2019-520-html",
+  "case_name": "Shaw v Stead [2019] EWHC 520 (QB) (1 March 2019)",
+  "neutral_citation": "[2019] EWHC 520",
+  "clinical_domain": "NEUROLOGY",
+  "outcome_severity": "PERMANENT_SEVERE_DISABILITY",
+  "summary": {
+    "brief": "Medical malpractice case involving paediatrics.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "This is a claim for clinical negligence arising out of a consultation on Saturday 25 May 2013 when the claimant, Mrs Kerry Shaw, saw the defendant, Dr Andrew Stead, a general practitioner, at the Grimsby Area Primary Care Emergency Centre, an out of hours surgery.",
+      "paragraph_ref": "12",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "It is alleged that the defendant failed to identify the warning signs of cauda equina syndrome and to refer the claimant for appropriate investigation.",
+      "paragraph_ref": "12",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "EXPERT_TESTIMONY",
+      "text": "The position here is very straightforward as the GP experts and Dr Stead agree about the standard of care required.",
+      "paragraph_ref": "16",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "If a patient consults a general practitioner with acute low back pain, the doctor must take a history and conduct an adequate examination so as to determine whether there are any 'red flags'.",
+      "paragraph_ref": "16",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "If there are any red flags the patient must be referred to hospital for further investigation.",
+      "paragraph_ref": "16",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "The claimant told me that on the Saturday morning she had felt like she needed to pass urine and went to the toilet but found that she could not do so.",
+      "paragraph_ref": "69",
+      "speaker": "Claimant testimony"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "On her way back to bed, she had wet herself causing a wet patch on the floor, partly on the tiled floor of her en-suite and partly on the carpet of her bedroom.",
+      "paragraph_ref": "69",
+      "speaker": "Claimant testimony"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "LEGAL_FINDING",
+      "text": "I find that the claimant did have red flag symptoms at the time of the consultation.",
+      "paragraph_ref": "80",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "LEGAL_FINDING",
+      "text": "Accordingly I find that the claimant has established that he was in breach of duty in failing to refer her to hospital.",
+      "paragraph_ref": "81",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "FACTUAL_FINDING",
+      "text": "Mrs Shaw was taken to the surgery by her husband. They had to wait some time to be seen, they estimate between an hour and two hours.",
+      "paragraph_ref": "31",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E011",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr Stead's note does not record the use of a wheelchair, although the letter of response to the letter of claim suggests that Dr Stead's usual practice was to record if a patient was in a wheelchair.",
+      "paragraph_ref": "60",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E012",
+      "type": "FACTUAL_FINDING",
+      "text": "The claimant's evidence was that she did not lie flat on the examination couch.",
+      "paragraph_ref": "85",
+      "speaker": "Claimant testimony"
+    },
+    {
+      "evidence_id": "E013",
+      "type": "FACTUAL_FINDING",
+      "text": "The claimant next sought medical advice on Monday 27 May.",
+      "paragraph_ref": "45",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E014",
+      "type": "FACTUAL_FINDING",
+      "text": "The A&E department was next door and the claimant was taken there on a trolley, arriving around 15.30.",
+      "paragraph_ref": "48",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E015",
+      "type": "FACTUAL_FINDING",
+      "text": "Later that afternoon she underwent an MRI scan of the lumbar and sacral spine which found a large central disc prolapse at the L3/4 level.",
+      "paragraph_ref": "48",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E016",
+      "type": "FACTUAL_FINDING",
+      "text": "Incomplete cauda equina syndrome was diagnosed and the claimant was taken to Hull Royal Infirmary as an emergency where she underwent surgery.",
+      "paragraph_ref": "48",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E017",
+      "type": "EXPERT_TESTIMONY",
+      "text": "The neurosurgeons did not agree about this.",
+      "paragraph_ref": "81",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E018",
+      "type": "FACTUAL_FINDING",
+      "text": "Mrs Shaw had told Miss Thompson that afternoon that her legs had gone numb.",
+      "paragraph_ref": "82",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E019",
+      "type": "FACTUAL_FINDING",
+      "text": "The claimant bears the burden of proving her case and must do so on a balance of probabilities.",
+      "paragraph_ref": "25",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E020",
+      "type": "FACTUAL_FINDING",
+      "text": "The evidence of Mr and Mrs Shaw was not perfect. There are aspects on which they were vague, or where inconsistencies could be identified.",
+      "paragraph_ref": "54",
+      "speaker": "Court finding"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "35 years",
+        "sex": "female",
+        "relevant_social_history": "Works as a teaching assistant"
+      },
+      "chief_complaint": "Severe low back pain with radiation down left leg",
+      "history_of_present_illness": "Patient reports being kicked in the back by a child on 23 May 2013, followed by immediate back pain. Pain persisted and worsened, with numbness and tingling in legs, dizziness, and nausea.",
+      "past_medical_history": [],
+      "medications": [
+        "Tramadol",
+        "Paracetamol"
+      ],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Normal",
+          "heart_rate": "Normal",
+          "respiratory_rate": null,
+          "temperature": "Normal",
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "back": "Tender lower back especially left sacroiliac area",
+          "neurological": "Unable to perform straight leg raise either leg, reflexes equal and normal, sensation normal"
+        }
+      },
+      "initial_working_problem": "Sciatica",
+      "known_constraints": null,
+      "initial_differential": [
+        "Sciatica",
+        "Cauda equina syndrome"
+      ],
+      "critical_findings": [
+        "Unable to perform straight leg raise",
+        "Bilateral leg numbness and tingling"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002",
+        "E006",
+        "E007",
+        "E010",
+        "E011",
+        "E012"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "MRI Lumbar Spine",
+        "description": "MRI scan of the lumbar and sacral spine",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Large central disc prolapse at L3/4 level",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates cauda equina syndrome",
+          "decision_impact": "Requires urgent surgical intervention",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E015"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents to out of hours GP with severe back pain and neurological symptoms",
+        "duration": "3 hours",
+        "key_events": [
+          {
+            "event": "Consultation with Dr. Stead",
+            "timestamp": "25 May 2013 18:50",
+            "evidence_ids": [
+              "E010",
+              "E011"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Subsequent Medical Advice",
+        "description": "Patient seeks further medical advice due to worsening symptoms",
+        "duration": "2 days",
+        "key_events": [
+          {
+            "event": "Consultation with Dr. Al-Hamarneh",
+            "timestamp": "27 May 2013 14:54",
+            "evidence_ids": [
+              "E013",
+              "E014"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient in out of hours GP surgery with severe back pain and neurological symptoms",
+        "prompt": "What should be the next step in management?",
+        "action_type": "REFER",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Refer to hospital for urgent MRI and neurosurgical evaluation",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Presence of red flag symptoms indicating possible cauda equina syndrome"
+          },
+          {
+            "option_id": "B",
+            "description": "Prescribe painkillers and advise gentle mobilisation",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Assumed symptoms were due to sciatica without red flags"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant prescribed painkillers and advised gentle mobilisation",
+          "reasoning_stated": "Defendant noted 'no red flags' in the consultation",
+          "evidence_ids": [
+            "E009",
+            "E010",
+            "E011"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Referral to hospital should have been made",
+          "standard_of_care_basis": "Red flag symptoms required urgent referral",
+          "evidence_ids": [
+            "E005",
+            "E008",
+            "E009"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Red flag symptoms were present and should have prompted referral",
+          "what_should_have_happened": "Referral to hospital for further investigation",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E003",
+            "E005",
+            "E008"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient developed incomplete cauda equina syndrome requiring emergency surgery",
+        "severity": "PERMANENT_MODERATE_DISABILITY",
+        "long_term_effects": "Chronic pain and neurological deficits",
+        "evidence_ids": [
+          "E016",
+          "E018"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Breach of duty in failing to refer for further investigation",
+          "Causation established - earlier referral would have prevented significant disability"
+        ],
+        "evidence_ids": [
+          "E009",
+          "E080"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to refer for further investigation",
+        "counterfactual": "Referral would have led to earlier diagnosis and treatment",
+        "evidence_ids": [
+          "E009",
+          "E080"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "25 May 2013 18:50",
+        "event": "Consultation with Dr. Stead",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E010",
+          "E011"
+        ]
+      },
+      {
+        "timestamp": "27 May 2013 14:54",
+        "event": "Consultation with Dr. Al-Hamarneh",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E013",
+          "E014"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "MRI Lumbar Spine",
+        "date": "27 May 2013",
+        "result": "Large central disc prolapse at L3/4 level",
+        "interpretation": null,
+        "evidence_ids": [
+          "E015"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Incomplete cauda equina syndrome",
+        "when_made": "27 May 2013",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E016"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Emergency surgery",
+        "date": "27 May 2013",
+        "provider": null,
+        "outcome": "Surgical intervention for cauda equina syndrome",
+        "evidence_ids": [
+          "E016"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Chronic pain and neurological deficits",
+        "when_occurred": "Post-surgery",
+        "severity": "Moderate",
+        "evidence_ids": [
+          "E018"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to refer for further investigation",
+        "against": "Dr. Stead",
+        "found_proven": true,
+        "evidence_ids": [
+          "E009"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E009"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.21978021978021978,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 08:43:47.400732",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

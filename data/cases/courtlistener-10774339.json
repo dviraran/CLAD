@@ -1,0 +1,362 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10774339",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2026-01-18",
+  "url": "https://example.com/courtlistener-10774339",
+  "case_name": "Walgreens Co. v. Maria Victoria Chaux",
+  "neutral_citation": null,
+  "clinical_domain": "PAEDIATRICS",
+  "outcome_severity": "TEMPORARY_HARM",
+  "summary": {
+    "brief": "Walgreens Co. v. Maria Victoria Chaux. Medical malpractice case involving paediatrics.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Walgreens Co. (\u201cWalgreens\u201d) appeals a final judgment resulting from a jury verdict in favor of Maria Victoria Chaux (\u201cChaux\u201d) and the denial of its motion for a new trial.",
+      "paragraph_ref": "12",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "After a five-day trial, the jury returned a verdict in Chaux\u2019s favor and awarded damages of $5,547,733.",
+      "paragraph_ref": "25",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "While in the checkout lane of her neighborhood Walgreens, Chaux fell on her back and unconscious.",
+      "paragraph_ref": "19",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "As a result of the fall, Chaux suffered a brain injury and was in the hospital for over three months.",
+      "paragraph_ref": "23",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "LEGAL_FINDING",
+      "text": "The trial court erred in imposing a burden-shifting spoliation sanction without proper notice.",
+      "paragraph_ref": "276",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "LEGAL_FINDING",
+      "text": "We conclude that together, these errors denied Walgreens a fair trial, and therefore the trial court abused its discretion in denying Walgreens\u2019 motion for a new trial.",
+      "paragraph_ref": "282",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "COURT_REASONING",
+      "text": "This error was compounded by the trial court\u2019s improper exclusion of Walgreens\u2019 expert, Dr. Goldstein, under Daubert.",
+      "paragraph_ref": "281",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Goldstein ultimately concluded that Chaux \u201cwas having likely [an alcohol] withdrawal seizure.",
+      "paragraph_ref": "101",
+      "speaker": "Dr. Goldstein"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "FACTUAL_FINDING",
+      "text": "Chaux alleged that Walgreens knew or should have known of the dangerous condition, failed to timely maintain the floor, and failed to warn of the dangerous condition.",
+      "paragraph_ref": "50",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "LEGAL_FINDING",
+      "text": "Reversed and remanded for a new trial.",
+      "paragraph_ref": "287",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Unconscious after fall",
+      "history_of_present_illness": "Patient fell in the checkout lane of Walgreens and was found unconscious.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "neurological": "Unconscious at the scene"
+        }
+      },
+      "initial_working_problem": "Fall with loss of consciousness",
+      "known_constraints": null,
+      "initial_differential": [
+        "Seizure",
+        "Syncope",
+        "Head injury"
+      ],
+      "critical_findings": [
+        "Unconsciousness",
+        "Fall"
+      ],
+      "urgency_level": "EMERGENCY",
+      "evidence_ids": [
+        "E003",
+        "E004"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "CCTV Footage",
+        "description": "Surveillance video from the store",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not available; not preserved",
+          "detailed_findings": null,
+          "clinical_significance": "Could have shown the cause of fall",
+          "decision_impact": "Absence led to legal presumption against Walgreens",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E009",
+          "E053"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Incident at Walgreens",
+        "description": "Patient falls and is found unconscious",
+        "duration": "Immediate",
+        "key_events": [
+          {
+            "event": "Fall and unconsciousness",
+            "timestamp": "Not documented in judgment",
+            "evidence_ids": [
+              "E003"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "decision",
+        "name": "Post-fall Investigation",
+        "description": "Investigation into the cause of fall",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Request for CCTV footage",
+            "timestamp": "Not documented in judgment",
+            "evidence_ids": [
+              "E009"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "decision",
+        "clinical_context": "Post-fall investigation at Walgreens",
+        "prompt": "What should have been done regarding the CCTV footage?",
+        "action_type": "DOCUMENT_CONSENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Preserve and review CCTV footage",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard procedure to determine cause of fall"
+          },
+          {
+            "option_id": "B",
+            "description": "Do not preserve CCTV footage",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Led to adverse legal inference"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "CCTV footage was not preserved",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E009",
+            "E053"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "CCTV footage should have been preserved",
+          "standard_of_care_basis": "Legal requirement for evidence preservation",
+          "evidence_ids": [
+            "E009",
+            "E053"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to preserve evidence led to legal presumption",
+          "what_should_have_happened": "CCTV should have been preserved and reviewed",
+          "legal_standard_applied": "Spoliation of evidence",
+          "evidence_ids": [
+            "E009",
+            "E053"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient suffered a brain injury and was hospitalized for over three months",
+        "severity": "SEVERE",
+        "long_term_effects": "Not documented in judgment",
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "5547733",
+        "key_findings": [
+          "Failure to preserve CCTV footage led to adverse inference",
+          "Jury awarded damages based on presumption of negligence"
+        ],
+        "evidence_ids": [
+          "E002",
+          "E009"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to preserve CCTV footage",
+        "counterfactual": "CCTV footage could have clarified the cause of fall",
+        "evidence_ids": [
+          "E009",
+          "E053"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "Not documented in judgment",
+        "event": "Patient falls at Walgreens",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [
+      {
+        "diagnosis": "Brain injury",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "treatments": [],
+    "complications": [
+      {
+        "complication": "Hospitalization for over three months",
+        "when_occurred": "Not documented in judgment",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to preserve CCTV footage",
+        "against": "Walgreens",
+        "found_proven": true,
+        "evidence_ids": [
+          "E009"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Failure to preserve evidence led to adverse inference",
+        "legal_significance": "Presumption of negligence",
+        "evidence_ids": [
+          "E009"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "SYSTEM_COMMUNICATION",
+      "DOCUMENTATION"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.034722222222222224,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 08:06:28.067941",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

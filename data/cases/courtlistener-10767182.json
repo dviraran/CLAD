@@ -1,0 +1,348 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10767182",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2025-09-24",
+  "url": "https://example.com/courtlistener-10767182",
+  "case_name": "Medstar Georgetown Medical Center, Inc. v. Kaplan",
+  "neutral_citation": null,
+  "clinical_domain": "NEUROLOGY",
+  "outcome_severity": "PERMANENT_SEVERE_DISABILITY",
+  "summary": {
+    "brief": "Medstar Georgetown Medical Center, Inc. v. Kaplan. Medical malpractice case involving neurology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "A jury found MedStar Georgetown Medical Center, Inc. and MMG-GI at Lafayette Center d/b/a MedStar Medical Group II, LLC liable for breaching the national standard of care when treating David Kaplan",
+      "paragraph_ref": "15",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "awarded him an aggregate of $4 million in damages",
+      "paragraph_ref": "17",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "LEGAL_FINDING",
+      "text": "We affirm the judgment of the Superior Court.",
+      "paragraph_ref": "232",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "Mr. Kaplan presented evidence at trial that he had suffered two distinct kinds of harm. He experienced physical injury: the continuation of his severe Crohn\u2019s disease that did not respond to the steroids MedStar prescribed, the complete deterioration of his hip bones, and the eventual replacement of both hips, which involved three hip surgeries with lengthy and painful recoveries.",
+      "paragraph_ref": "77",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "And he experienced emotional distress. Previously an \u201cintense runn[er],\u201d as a result of his hip replacements he suffered the loss of participating in an activity that he loved and dating as a result of his hip replacements, particularly since \u201cintimate activities\u201d were \u201cimpacted.\u201d",
+      "paragraph_ref": "82",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "COURT_REASONING",
+      "text": "The trial court correctly noted that \u201c[t]he jury is afforded great weight in determining the appropriate measure of damages\u201d and explained that a jury\u2019s verdict should only be overturned by the court if it \u201cresulted from passion, prejudice, mistake, oversight, or consideration of improper elements or [is] beyond all reason or . . . so great as to shock the conscience.\u201d",
+      "paragraph_ref": "220",
+      "speaker": "Judge's analysis"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "male",
+        "relevant_social_history": "Previously an intense runner"
+      },
+      "chief_complaint": "Severe Crohn's disease symptoms and hip pain",
+      "history_of_present_illness": "Continuation of severe Crohn's disease not responding to steroids, deterioration of hip bones",
+      "past_medical_history": [
+        "Crohn's disease"
+      ],
+      "medications": [
+        "Steroids (specific type and dosage not documented in judgment)"
+      ],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "musculoskeletal": "Complete deterioration of hip bones"
+        }
+      },
+      "initial_working_problem": "Severe Crohn's disease with hip deterioration",
+      "known_constraints": null,
+      "initial_differential": [
+        "Crohn's disease exacerbation",
+        "Hip joint deterioration"
+      ],
+      "critical_findings": [
+        "Deterioration of hip bones"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E004",
+        "E005"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSULT_NOTE",
+        "name": "Gastroenterology consult",
+        "description": "Consultation for management of Crohn's disease",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Continuation of severe Crohn's disease not responding to steroids",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates need for alternative treatment",
+          "decision_impact": "Should prompt consideration of biologics",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with severe Crohn's disease symptoms",
+        "duration": "Not specified in judgment",
+        "key_events": [
+          {
+            "event": "Patient reports severe symptoms and hip pain",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E004"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Workup and Management",
+        "description": "Assessment and management of Crohn's disease",
+        "duration": "Not specified in judgment",
+        "key_events": [
+          {
+            "event": "Continuation of steroid therapy",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E004"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient with severe Crohn's disease on prolonged steroid therapy",
+        "prompt": "What is the appropriate management for steroid-refractory Crohn's disease?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Initiate biologic therapy",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Biologics are indicated for steroid-refractory Crohn's disease"
+          },
+          {
+            "option_id": "B",
+            "description": "Continue steroid therapy beyond recommended duration",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Prolonged steroid use is not recommended due to side effects"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant continued steroid therapy",
+          "reasoning_stated": "Defendant did not transition to biologics",
+          "evidence_ids": [
+            "E004"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Biologic therapy should have been initiated",
+          "standard_of_care_basis": "National guidelines recommend biologics for steroid-refractory cases",
+          "evidence_ids": [
+            "E004"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Prolonged steroid use exceeded safe duration",
+          "what_should_have_happened": "Biologics should have been initiated within three months",
+          "legal_standard_applied": "Breach of national standard of care",
+          "evidence_ids": [
+            "E004"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient underwent three hip surgeries with lengthy and painful recoveries",
+        "severity": "PERMANENT_MODERATE_DISABILITY",
+        "long_term_effects": "Loss of ability to run and participate in physical activities",
+        "evidence_ids": [
+          "E004",
+          "E005"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "4000000",
+        "key_findings": [
+          "Breach of duty in failing to transition to biologics",
+          "Causation established - prolonged steroid use led to hip deterioration"
+        ],
+        "evidence_ids": [
+          "E001",
+          "E002",
+          "E003"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to initiate biologic therapy",
+        "counterfactual": "Biologics would have controlled Crohn's disease without prolonged steroid use",
+        "evidence_ids": [
+          "E004",
+          "E005"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Patient presents with severe Crohn's disease symptoms",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [
+      {
+        "diagnosis": "Severe Crohn's disease",
+        "when_made": "Not specified in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Steroid therapy",
+        "date": "Not specified in judgment",
+        "provider": null,
+        "outcome": "Ineffective, led to hip deterioration",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Hip deterioration",
+        "when_occurred": "Not specified in judgment",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to initiate biologic therapy",
+        "against": "MedStar Georgetown Medical Center",
+        "found_proven": true,
+        "evidence_ids": [
+          "E001",
+          "E004"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Breach of national standard of care",
+        "evidence_ids": [
+          "E001",
+          "E003"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "TREATMENT_PROCEDURE_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.02564102564102564,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 15:50:58.815344",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

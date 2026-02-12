@@ -1,0 +1,422 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10729126",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2024-10-25",
+  "url": "https://example.com/courtlistener-10729126",
+  "case_name": "BRIAN T. GEARY v. ESTATE OF JAMES S. TAPLEY, BY ITS LAROSE TAPLEY",
+  "neutral_citation": null,
+  "clinical_domain": "CARDIOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "BRIAN T. GEARY v. ESTATE OF JAMES S. TAPLEY, BY ITS LAROSE TAPLEY. Medical malpractice case involving cardiology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "James Tapley died after undergoing prostate surgery performed by Brian Geary.",
+      "paragraph_ref": "6",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "The plaintiff, Larose Tapley, individually and as the executor of her husband\u2019s estate, filed a medical malpractice action against Geary.",
+      "paragraph_ref": "7",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "The case was tried before a jury, which returned a verdict in favor of the plaintiff for $15 million.",
+      "paragraph_ref": "10",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "Tapley\u2019s bladder was perforated, causing fluid to leak and his abdomen to swell.",
+      "paragraph_ref": "19",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "Tapley was moved to the intensive care unit, and he died about 30 hours later.",
+      "paragraph_ref": "21",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "Geary chose to try to drain the fluid instead of taking steps to repair the perforation.",
+      "paragraph_ref": "20",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "LEGAL_FINDING",
+      "text": "The trial court entered judgment on the verdict, and denied Geary\u2019s motions for judgment notwithstanding the verdict, new trial, and remittitur.",
+      "paragraph_ref": "28",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "LEGAL_FINDING",
+      "text": "We hold that Geary has not shown that the trial court erred in instructing the jury.",
+      "paragraph_ref": "12",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "LEGAL_FINDING",
+      "text": "We affirm.",
+      "paragraph_ref": "13",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "COURT_REASONING",
+      "text": "The trial court\u2019s charge in the case sub judice substantially tracked the pattern charge on pain and suffering, and was a correct statement of the law.",
+      "paragraph_ref": "81",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E011",
+      "type": "COURT_REASONING",
+      "text": "The court did not err by failing to give the requested charge for another reason: pain and suffering includes mental suffering, but mental suffering is not a legal item of damage unless there is a physical \u2014 physical suffering also.",
+      "paragraph_ref": "79",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E012",
+      "type": "FACTUAL_FINDING",
+      "text": "Geary argues that the verdict was excessive. Specifically, he argues that the negligence and Tapley\u2019s death, and that the jury\u2019s $12.5 million award for wrongful death was excessive.",
+      "paragraph_ref": "141",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E013",
+      "type": "LEGAL_FINDING",
+      "text": "Thus we hold that the trial court did not abuse her discretion in denying Geary\u2019s motions challenging the amount of the verdict.",
+      "paragraph_ref": "192",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "80 years",
+        "sex": "male",
+        "relevant_social_history": "Long-time smoker"
+      },
+      "chief_complaint": "Scheduled for prostate surgery",
+      "history_of_present_illness": "Patient with known comorbidities including congestive heart failure, severe emphysema, severe heart disease, and chronic obstructive pulmonary disease.",
+      "past_medical_history": [
+        "Congestive heart failure",
+        "Severe emphysema",
+        "Severe heart disease",
+        "Chronic obstructive pulmonary disease"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "abdomen": "Not documented in judgment"
+        }
+      },
+      "initial_working_problem": "Prostate surgery scheduled",
+      "known_constraints": null,
+      "initial_differential": [
+        "Prostate condition requiring surgery"
+      ],
+      "critical_findings": [
+        "Bladder perforation during surgery"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E004",
+        "E005"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "Cystogram",
+        "description": "Imaging procedure to assess bladder perforation",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not performed",
+          "detailed_findings": null,
+          "clinical_significance": "Would have revealed size and nature of bladder perforation",
+          "decision_impact": "Failure to perform contributed to inadequate management",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": [
+          "E023",
+          "E024"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Surgical Presentation",
+        "description": "Patient presents for scheduled prostate surgery",
+        "duration": "Not specified in judgment",
+        "key_events": [
+          {
+            "event": "Patient admitted for prostate surgery",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "decision",
+        "name": "Postoperative Management",
+        "description": "Management of complications following surgery",
+        "duration": "30 hours",
+        "key_events": [
+          {
+            "event": "Bladder perforation identified",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E004"
+            ]
+          },
+          {
+            "event": "Patient moved to ICU",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E005"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "decision",
+        "clinical_context": "Post-surgery management of bladder perforation",
+        "prompt": "What should be the next step in managing the bladder perforation?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Perform a cystogram and repair the perforation",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard care to assess and repair bladder perforation"
+          },
+          {
+            "option_id": "B",
+            "description": "Attempt to drain the fluid without repair",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Chosen due to patient's comorbidities but inadequate"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant chose to drain fluid instead of repairing",
+          "reasoning_stated": "Due to patient's comorbidities",
+          "evidence_ids": [
+            "E006"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Cystogram and repair should have been performed",
+          "standard_of_care_basis": "Expert testimony and standard practice",
+          "evidence_ids": [
+            "E023",
+            "E024"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to perform cystogram and repair led to inadequate management",
+          "what_should_have_happened": "Cystogram and surgical repair",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E023",
+            "E024"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient died approximately 30 hours post-surgery",
+        "severity": "FATAL",
+        "long_term_effects": "Not applicable",
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "15000000",
+        "key_findings": [
+          "Breach of duty in failing to perform cystogram and repair",
+          "Causation established - inadequate management led to death"
+        ],
+        "evidence_ids": [
+          "E003",
+          "E007"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to perform cystogram and repair",
+        "counterfactual": "Cystogram and repair could have prevented death",
+        "evidence_ids": [
+          "E023",
+          "E024"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "November 16, 2016",
+        "event": "Patient underwent prostate surgery",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Bladder perforation occurred during surgery",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Patient moved to ICU",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [
+      {
+        "diagnosis": "Bladder perforation",
+        "when_made": "During surgery",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Attempted fluid drainage",
+        "date": "Date not specified in judgment",
+        "provider": null,
+        "outcome": "Inadequate management",
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Death",
+        "when_occurred": "30 hours post-surgery",
+        "severity": "Fatal",
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to perform cystogram and repair",
+        "against": "Brian Geary",
+        "found_proven": true,
+        "evidence_ids": [
+          "E023",
+          "E024"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E023",
+          "E024"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "TREATMENT_PROCEDURE_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.06666666666666667,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 10:02:25.601186",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

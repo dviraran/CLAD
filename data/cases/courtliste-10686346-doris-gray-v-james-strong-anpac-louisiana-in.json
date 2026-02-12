@@ -1,0 +1,465 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtliste-10686346-doris-gray-v-james-strong-anpac-louisiana-in",
+  "source": "BAILII",
+  "jurisdiction": "UK",
+  "court": "Unknown",
+  "decision_date": "2025-10-01",
+  "url": "https://example.com/courtliste-10686346-doris-gray-v-james-strong-anpac-louisiana-in",
+  "case_name": "Doris Gray v. James Strong, ANPAC Louisiana Insurance Company and State Farm Mutual Automobile Insurance Company",
+  "neutral_citation": null,
+  "clinical_domain": "PAEDIATRICS",
+  "outcome_severity": "TEMPORARY_HARM",
+  "summary": {
+    "brief": "Doris Gray v. James Strong, ANPAC Louisiana Insurance Company and State Farm Mutual Automobile Insurance Company. Medical malpractice case involving paediatrics.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Gray, age 70, and James Strong (\u201cStrong\u201d), age 77, were both driving north on Broadway Street, a four-lane highway in Delhi.",
+      "paragraph_ref": "18",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Strong was passing Gray, she began making a left-hand turn, and the front left corner of her 2015 Chrysler 200 struck the rear passenger door of Strong\u2019s 2020 Ford F-150.",
+      "paragraph_ref": "23",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "Gray testified that on the day of the accident, she was going from her home to the bank to make a deposit.",
+      "paragraph_ref": "81",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "Gray said she felt fine for three or four days, but then started experiencing back and neck pain, along with headaches.",
+      "paragraph_ref": "96",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Bayonne opined Gray\u2019s injuries were a result of the collision with Strong, diagnosing her with lumbar spondylosis and some disc bulge.",
+      "paragraph_ref": "120",
+      "speaker": "Dr. Bayonne"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "EXPERT_TESTIMONY",
+      "text": "While Dr. Domangue claimed it was possible Gray was injured as a result of the collision, he never said it was probable.",
+      "paragraph_ref": "716",
+      "speaker": "Dr. Domangue"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "LEGAL_FINDING",
+      "text": "The jury verdict is affirmed. All costs are to be paid by the plaintiff, Doris Gray.",
+      "paragraph_ref": "723",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "COURT_REASONING",
+      "text": "The jury had significant evidence to conclude Gray was not injured as a result of this minor motor vehicle collision.",
+      "paragraph_ref": "717",
+      "speaker": "Judge's analysis"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "70 years",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Back and neck pain, along with headaches",
+      "history_of_present_illness": "Patient reports feeling fine for three or four days after a motor vehicle accident, then started experiencing back and neck pain, along with headaches.",
+      "past_medical_history": [
+        "High blood pressure",
+        "Diabetes",
+        "Chronic kidney disease",
+        "Arthritis",
+        "Enlarged heart"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "musculoskeletal": "Muscle spasms throughout the entire spine",
+          "neurological": "Normal neurological examination"
+        }
+      },
+      "initial_working_problem": "Back and neck pain post motor vehicle accident",
+      "known_constraints": null,
+      "initial_differential": [
+        "Lumbar spondylosis",
+        "Lumbar strain",
+        "Sacroiliac joint pain"
+      ],
+      "critical_findings": [
+        "Muscle spasms",
+        "Normal neurological examination"
+      ],
+      "urgency_level": "ROUTINE",
+      "evidence_ids": [
+        "E004",
+        "E005",
+        "E006"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "MRI of the spine",
+        "description": "MRI to assess spinal condition post-accident",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "MRI showed mostly facet hypertrophy, consistent with age and work history",
+          "detailed_findings": null,
+          "clinical_significance": "No impingement of neurological structures",
+          "decision_impact": "Supports conservative management",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E117",
+          "E202"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "CONSULT_NOTE",
+        "name": "Consult with Dr. Bayonne",
+        "description": "Pain management consultation",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Diagnosed with lumbar spondylosis and some disc bulge",
+          "detailed_findings": null,
+          "clinical_significance": "Recommended steroid injections",
+          "decision_impact": "Led to referral for surgical evaluation",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E005",
+          "E120"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with back and neck pain post-accident",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Patient reports pain onset",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E004"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Diagnostic Workup",
+        "description": "Imaging and consultations to assess injury",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "MRI performed",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E117"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient presenting with back pain post-accident",
+        "prompt": "What is the appropriate initial management for the patient's back pain?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Initiate physical therapy",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard conservative management for musculoskeletal pain"
+          },
+          {
+            "option_id": "B",
+            "description": "Proceed with steroid injections",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Invasive procedure without clear indication"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant proceeded with steroid injections",
+          "reasoning_stated": "Believed injections would provide relief",
+          "evidence_ids": [
+            "E005",
+            "E120"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Physical therapy should have been initiated",
+          "standard_of_care_basis": "Conservative management recommended",
+          "evidence_ids": [
+            "E202",
+            "E203"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Invasive treatment without exhausting conservative options",
+          "what_should_have_happened": "Physical therapy should have been tried first",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E202",
+            "E203"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient continued to experience pain but was able to work without restrictions",
+        "severity": "MILD",
+        "long_term_effects": "Chronic pain management required",
+        "evidence_ids": [
+          "E689",
+          "E690"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "None",
+        "key_findings": [
+          "Jury concluded Gray was not injured as a result of the collision",
+          "Evidence supported defense's position"
+        ],
+        "evidence_ids": [
+          "E007",
+          "E008"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Not applicable",
+        "counterfactual": "Not applicable",
+        "evidence_ids": [
+          "E007",
+          "E008"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "March 28, 2022",
+        "event": "Motor vehicle accident occurred",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001",
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Patient involved in minor motor vehicle collision",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001",
+          "E002"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "MRI of the spine",
+        "date": "Not documented in judgment",
+        "result": "Facet hypertrophy, no impingement",
+        "interpretation": null,
+        "evidence_ids": [
+          "E117"
+        ]
+      },
+      {
+        "test_name": "MRI Spine",
+        "date": "Not specified in judgment",
+        "result": "Spine in good shape, consistent with age",
+        "interpretation": null,
+        "evidence_ids": [
+          "E705",
+          "E706"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Lumbar spondylosis",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "diagnosis": "Musculoskeletal pain",
+        "when_made": "Not specified in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E705",
+          "E706"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Steroid injections",
+        "date": "Not documented in judgment",
+        "provider": null,
+        "outcome": "Limited relief",
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "treatment": "Chiropractic care",
+        "date": "Not specified in judgment",
+        "provider": null,
+        "outcome": "Continued pain management",
+        "evidence_ids": [
+          "E688",
+          "E699"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Chronic pain",
+        "when_occurred": "Not documented in judgment",
+        "severity": "Moderate",
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "complication": "Chronic pain",
+        "when_occurred": "Not specified in judgment",
+        "severity": "Mild",
+        "evidence_ids": [
+          "E689",
+          "E690"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Inappropriate management with injections",
+        "against": "Defendant physician",
+        "found_proven": false,
+        "evidence_ids": [
+          "E007",
+          "E008"
+        ]
+      },
+      {
+        "allegation": "Inappropriate management with chiropractic care",
+        "against": "Defendant",
+        "found_proven": false,
+        "evidence_ids": [
+          "E007",
+          "E008"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "No injury as a result of the accident",
+        "legal_significance": "No damages awarded",
+        "evidence_ids": [
+          "E007",
+          "E008"
+        ]
+      },
+      {
+        "finding": "No liability found",
+        "legal_significance": "Jury concluded no injury from collision",
+        "evidence_ids": [
+          "E007",
+          "E008"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.011034482758620689,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 09:42:44.320969",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

@@ -1,0 +1,388 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-4307360",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2011-07-14",
+  "url": "https://example.com/courtlistener-4307360",
+  "case_name": "WILK, JOANNE v. JAMES, M.D., DAVID M.",
+  "neutral_citation": null,
+  "clinical_domain": "CARDIOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "WILK, JOANNE v. JAMES, M.D., DAVID M.. Medical malpractice case involving cardiology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Plaintiff commenced this medical malpractice and wrongful death action seeking damages for the conscious pain and suffering, and death of Steven R. Wilk (decedent) as a result of the alleged failure by defendants to diagnose and treat decedent\u2019s aortic dissection in a timely manner.",
+      "paragraph_ref": "15",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Plaintiff submitted the affidavit of a physician who is board certified in emergency medicine, in which the physician opined that aortic dissection is a 'life-threatening' condition and should be promptly ruled out through further testing where, as here, the patient presents with a constellation of symptoms that are typical of that condition.",
+      "paragraph_ref": "23",
+      "speaker": "Plaintiff's expert"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "MEDICAL_RECORD",
+      "text": "The death certificate revealed that the immediate cause of death was a 'cerebral infarct with herniation[,] . . . due to or as a consequence of . . . shock with intestinal ischemia[,] . . . due to or as a consequence of . . . aortic dissection.'",
+      "paragraph_ref": "15",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "WITNESS_STATEMENT",
+      "text": "The nurse practitioner who initially assessed decedent upon his arrival at the emergency room testified at her deposition that she reviewed the triage note to obtain information about the history of decedent\u2019s onset of pain and that it did not indicate that the pain had started suddenly at 9:30 a.m. that morning.",
+      "paragraph_ref": "17",
+      "speaker": "Nurse practitioner"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "LEGAL_FINDING",
+      "text": "The order denied the motions of defendants David M. James, M.D., Kaleida Health, doing business as Millard Fillmore Health System-Three Gates Circle Hospital, Sadir Alrawi, M.D., Mercy Ambulatory Care Center, Catholic Health System, Inc., and Buffalo Emergency Associates, LLP for summary judgment dismissing the amended complaint and all cross claims against them.",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "COURT_REASONING",
+      "text": "We conclude that, although defendants met their initial burden on their respective motions, plaintiff raised triable issues of fact whether defendants deviated from the accepted standards of medical care and whether those deviations caused decedent\u2019s injuries and ultimate death.",
+      "paragraph_ref": "23",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Plaintiff\u2019s expert further opined that, on February 13 and 15, 2004, James departed from good and acceptable medical practice by, inter alia, failing to elicit a proper medical history from decedent and failing to include and pursue aortic dissection as a differential diagnosis for decedent.",
+      "paragraph_ref": "23",
+      "speaker": "Plaintiff's expert"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "FACTUAL_FINDING",
+      "text": "On February 13, 2004, decedent was transported by ambulance to the emergency room operated by defendant Kaleida Health, doing business as Millard Fillmore Health System-Three Gates Circle Hospital (Kaleida), and was treated by defendant David M. James, M.D. and Kaleida\u2019s staff.",
+      "paragraph_ref": "16",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "MEDICAL_RECORD",
+      "text": "The ambulance record indicated that decedent\u2019s 'chief complaint' was 'severe back pain' that, according to the 'subjective assessment' entry on that record, started at 9:30 a.m. and felt like someone 'hit [him with a] baseball bat.'",
+      "paragraph_ref": "16",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Plaintiff\u2019s expert further stated that James\u2019s departures from the accepted standards of medical care were a substantial factor in causing decedent\u2019s injuries and his eventual death, and thereby raised triable issues of fact with respect to causation.",
+      "paragraph_ref": "23",
+      "speaker": "Plaintiff's expert"
+    },
+    {
+      "evidence_id": "E011",
+      "type": "FACTUAL_FINDING",
+      "text": "Decedent was discharged by James 30 minutes later with a 'diagnosis' of 'sciatica.' Forty-four minutes later, while waiting for his wife to pick him up from the emergency room, decedent experienced 'excruciating sudden [right] flank and [left] abdominal pain[]' and returned to the emergency room.",
+      "paragraph_ref": "19",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E012",
+      "type": "LEGAL_FINDING",
+      "text": "In sum, we conclude that plaintiff raised issues of fact sufficient to defeat the motions for summary judgment dismissing the amended complaint and all cross claims against defendants.",
+      "paragraph_ref": "33",
+      "speaker": "Court finding"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "male",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Severe back pain",
+      "history_of_present_illness": "Patient reports severe back pain that started suddenly at 9:30 a.m., feeling like being hit with a baseball bat. However, there is a conflicting report that the pain started 2 days ago.",
+      "past_medical_history": [
+        "Coronary artery disease",
+        "Coronary artery bypass graft",
+        "Aortic valve replacement",
+        "Hypertension"
+      ],
+      "medications": [
+        "Coumadin",
+        "Lisinopril"
+      ],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "back": "Sharp, constant pain in lower back, increased with movement, radiating down both legs"
+        }
+      },
+      "initial_working_problem": "Back pain - differential includes thoracic spine strain",
+      "known_constraints": null,
+      "initial_differential": [
+        "thoracic spine strain",
+        "aortic dissection"
+      ],
+      "critical_findings": [
+        "Sudden onset of severe back pain"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E008",
+        "E009",
+        "E011"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "CT scan with contrast",
+        "description": "CT scan to rule out aortic dissection",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not performed",
+          "detailed_findings": null,
+          "clinical_significance": "Would have identified aortic dissection",
+          "decision_impact": "Critical for accurate diagnosis and timely intervention",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": [
+          "E017"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Emergency Presentation",
+        "description": "Patient presents to ED with acute symptoms",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Ambulance transport to ED",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E008"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient in ED with severe back pain",
+        "prompt": "What diagnostic test should be ordered to rule out aortic dissection?",
+        "action_type": "ORDER_TEST",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Order CT scan with contrast",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard test to rule out aortic dissection"
+          },
+          {
+            "option_id": "B",
+            "description": "Order thoracic spine X-ray",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Less effective for ruling out aortic dissection"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant ordered thoracic spine X-ray",
+          "reasoning_stated": "Believed pain was due to thoracic spine strain",
+          "evidence_ids": [
+            "E011"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "CT scan with contrast should have been ordered",
+          "standard_of_care_basis": "Expert evidence established CT is standard",
+          "evidence_ids": [
+            "E007",
+            "E010"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to order CT scan with contrast led to missed diagnosis of aortic dissection",
+          "what_should_have_happened": "CT scan with contrast should have been performed to confirm or rule out aortic dissection",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E007",
+            "E010"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient developed cerebral infarct with herniation due to aortic dissection",
+        "severity": "DEATH",
+        "long_term_effects": "Not applicable",
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Failure to diagnose and treat aortic dissection in a timely manner",
+          "Causation established - earlier diagnosis would have prevented death"
+        ],
+        "evidence_ids": [
+          "E001",
+          "E007",
+          "E010"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to order CT imaging",
+        "counterfactual": "CT would have shown aortic dissection",
+        "evidence_ids": [
+          "E007",
+          "E010"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "February 13, 2004",
+        "event": "Patient arrives at ED with severe back pain",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E008"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Thoracic spine X-ray",
+        "date": "February 13, 2004",
+        "result": "Moderate degenerative changes, osteopenia, anterior wedging",
+        "interpretation": null,
+        "evidence_ids": [
+          "E011"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Thoracic spine strain",
+        "when_made": "February 13, 2004",
+        "made_by": null,
+        "correct": false,
+        "evidence_ids": [
+          "E011"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Pain medication",
+        "date": "February 13, 2004",
+        "provider": null,
+        "outcome": "Temporary relief",
+        "evidence_ids": [
+          "E011"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Cerebral infarct with herniation",
+        "when_occurred": "March 3, 2004",
+        "severity": "Fatal",
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to diagnose aortic dissection",
+        "against": "Defendant physician",
+        "found_proven": true,
+        "evidence_ids": [
+          "E007",
+          "E010"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E007",
+          "E010"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.16216216216216217,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 09:46:56.786433",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

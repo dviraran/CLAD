@@ -1,0 +1,351 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "bailii-qb-2021-611-html",
+  "source": "BAILII",
+  "jurisdiction": "UK",
+  "court": "Unknown",
+  "decision_date": "2021-02-11",
+  "url": "https://example.com/bailii-qb-2021-611-html",
+  "case_name": "Calderdale & Huddersfield NHS Foundation Trust vMetcalf [2021] EWHC 611 (QB) (11 February 2021)",
+  "neutral_citation": "[2021] EWHC 611",
+  "clinical_domain": "PAEDIATRICS",
+  "outcome_severity": "PERMANENT_SEVERE_DISABILITY",
+  "summary": {
+    "brief": "Medical malpractice case involving paediatrics.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Ms Metcalf pursued a clinical negligence claim against the Trust, as a result of a delay in diagnosing her cauda equina syndrome in 2012.",
+      "paragraph_ref": "17",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "She attended the Accident and Emergency department of the Hospital on 30 June, 2 July and 4 July 2012 but she was not correctly diagnosed until she went again on 5 July and was given an MRI scan.",
+      "paragraph_ref": "17",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "The Trust admitted liability at the pre-action stage, based on a failure of care on 4 July only.",
+      "paragraph_ref": "18",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "An early interim payment of \u00a375,000 was agreed.",
+      "paragraph_ref": "18",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "LEGAL_FINDING",
+      "text": "The Trust amended its Defence to allege that Ms Metcalf's claims fell to be dismissed because they were rooted in fundamental dishonesty.",
+      "paragraph_ref": "28",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "LEGAL_FINDING",
+      "text": "Her claims should be dismissed because of fundamental dishonesty and to repay the interim payment of \u00a375,000.",
+      "paragraph_ref": "30",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "COURT_REASONING",
+      "text": "Appropriate punishment for faking evidence in support a claim inflated by some \u00a35 million can only be achieved by immediate custody.",
+      "paragraph_ref": "45",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "LEGAL_FINDING",
+      "text": "I sentence you to 6 months imprisonment. You must serve 3 months immediately and you will then be entitled to release for the remainder of the term.",
+      "paragraph_ref": "47",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "28 years",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Severe lower back pain and neurological symptoms",
+      "history_of_present_illness": "Patient reports worsening lower back pain with associated neurological symptoms over several days.",
+      "past_medical_history": [
+        "Not documented in judgment"
+      ],
+      "medications": [
+        "Not documented in judgment"
+      ],
+      "allergies": [
+        "Not documented in judgment"
+      ],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "neurological": "Examination mentioned but findings not specified"
+        }
+      },
+      "initial_working_problem": "Possible cauda equina syndrome",
+      "known_constraints": null,
+      "initial_differential": [
+        "Cauda equina syndrome",
+        "Lumbar disc herniation"
+      ],
+      "critical_findings": [
+        "Neurological symptoms suggestive of nerve compression"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "MRI Spine",
+        "description": "MRI scan to assess for cauda equina syndrome",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Imaging performed but findings not detailed in judgment",
+          "detailed_findings": null,
+          "clinical_significance": "Necessary to confirm diagnosis of cauda equina syndrome",
+          "decision_impact": "Should prompt urgent surgical intervention",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Emergency Presentation",
+        "description": "Patient presents to ED with acute symptoms",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Patient attended ED on 30 June, 2 July, and 4 July 2012",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient in ED with severe lower back pain and neurological symptoms",
+        "prompt": "What imaging investigation should be ordered?",
+        "action_type": "ORDER_TEST",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Order MRI spine immediately",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "MRI is the standard investigation for suspected cauda equina syndrome"
+          },
+          {
+            "option_id": "B",
+            "description": "Delay imaging and observe",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Delay in imaging can worsen outcomes in cauda equina syndrome"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant delayed imaging",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E003"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "MRI spine should have been ordered immediately",
+          "standard_of_care_basis": "Prompt imaging is critical in suspected cauda equina syndrome",
+          "evidence_ids": [
+            "E003"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Delay in imaging led to worsened outcomes",
+          "what_should_have_happened": "Immediate MRI should have been performed",
+          "legal_standard_applied": "Breach of duty due to delay in diagnosis",
+          "evidence_ids": [
+            "E003"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient developed worsened neurological symptoms due to delay",
+        "severity": "PERMANENT_MODERATE_DISABILITY",
+        "long_term_effects": "Chronic pain and mobility issues",
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "75000",
+        "key_findings": [
+          "Breach of duty in failing to diagnose promptly",
+          "Causation established - delay led to worsened condition"
+        ],
+        "evidence_ids": [
+          "E003",
+          "E004"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to order MRI imaging promptly",
+        "counterfactual": "Immediate MRI would have led to earlier intervention",
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "30 June 2012",
+        "event": "Patient attended ED",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "MRI Spine",
+        "date": "5 July 2012",
+        "result": "Not documented in judgment",
+        "interpretation": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Cauda equina syndrome",
+        "when_made": "5 July 2012",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Surgical intervention",
+        "date": "Not documented in judgment",
+        "provider": null,
+        "outcome": "Not documented in judgment",
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Worsened neurological symptoms",
+        "when_occurred": "Not documented in judgment",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to diagnose promptly",
+        "against": "Defendant Trust",
+        "found_proven": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Delay in diagnosis led to worsened outcomes",
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.1702127659574468,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 07:27:06.769472",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

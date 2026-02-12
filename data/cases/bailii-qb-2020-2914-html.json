@@ -1,0 +1,386 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "bailii-qb-2020-2914-html",
+  "source": "BAILII",
+  "jurisdiction": "UK",
+  "court": "Unknown",
+  "decision_date": "2020-10-30",
+  "url": "https://example.com/bailii-qb-2020-2914-html",
+  "case_name": "Leach   v North East Ambulance Service NHS Foundation Trust [2020] EWHC 2914 (QB) (30 October 2020)",
+  "neutral_citation": "[2020] EWHC 2914",
+  "clinical_domain": "CARDIOLOGY",
+  "outcome_severity": "TEMPORARY_HARM",
+  "summary": {
+    "brief": "Medical malpractice case involving cardiology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "On 18 September 2016 the claimant, at the age of 41 years, (born 15.02.75) had the misfortune to suffer a subarachnoid haemorrhage ('SAH') as a result of a ruptured aneurysm.",
+      "paragraph_ref": "12",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Breach of duty in this case is admitted insofar as it is accepted that there was a 31-minute negligent period of delay in the ambulance arriving at the claimant's house.",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "EXPERT_TESTIMONY",
+      "text": "The evidence as to causation is essentially a matter for expert psychiatrists and, to that end, I have received evidence from Dr Smith, instructed on behalf of the claimant and Dr Bowers, instructed on behalf of the defendant.",
+      "paragraph_ref": "15",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "When the claimant suffered the SAH, she was on her own, at her home in Ingleby Barwick, Stockton-on-Tees.",
+      "paragraph_ref": "17",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "She describes feeling 'a pop and gush in [her] head and an immense pain'. She recalls losing consciousness and vomiting.",
+      "paragraph_ref": "17",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "The ambulance eventually arrived at 16.11. The claimant was initially taken to University Hospital of North Tees but, thereafter, she was transferred to the James Cook University Hospital.",
+      "paragraph_ref": "20",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "LEGAL_FINDING",
+      "text": "I find that the period of the 31-minute delay made a material contribution to the claimant's PTSD and that an apportionment exercise is not permissible in these circumstances.",
+      "paragraph_ref": "68",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr Smith maintained that it was simply not possible to pinpoint a moment when the PTSD was triggered during the time between the happening of the SAH and the arrival of the ambulance.",
+      "paragraph_ref": "46",
+      "speaker": "Dr Smith"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr Bowers answered my question which was directed at establishing when he thought she was going to develop PTSD, in any event. His (wholly unexpected) response was that she was destined to suffer 'full blown' PTSD as from the moment when she suffered the SAH.",
+      "paragraph_ref": "39",
+      "speaker": "Dr Bowers"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "COURT_REASONING",
+      "text": "It is, to my mind, in the realms of speculation to attempt to identify a fixed time when the claimant had suffered sufficient trauma such that she was likely to go on to suffer PTSD.",
+      "paragraph_ref": "61",
+      "speaker": "Judge's analysis"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "41 years",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Severe headache and loss of consciousness",
+      "history_of_present_illness": "Patient experienced a 'pop and gush' in her head followed by immense pain, loss of consciousness, and vomiting. She managed to call 999 after regaining consciousness.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "neurological": "Patient was in and out of consciousness, severe headache reported"
+        }
+      },
+      "initial_working_problem": "Suspected subarachnoid hemorrhage",
+      "known_constraints": null,
+      "initial_differential": [
+        "subarachnoid hemorrhage",
+        "migraine",
+        "other intracranial event"
+      ],
+      "critical_findings": [
+        "Severe headache",
+        "Loss of consciousness",
+        "Vomiting"
+      ],
+      "urgency_level": "EMERGENCY",
+      "evidence_ids": [
+        "E001",
+        "E005",
+        "E017"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "CT Head",
+        "description": "CT scan of the head to assess for hemorrhage",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Imaging performed but findings not detailed in judgment",
+          "detailed_findings": null,
+          "clinical_significance": "Not documented in judgment",
+          "decision_impact": "Not documented in judgment",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E020"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient experiences severe headache and calls for emergency services",
+        "duration": "1 hour 49 minutes",
+        "key_events": [
+          {
+            "event": "First call to ambulance service",
+            "timestamp": "14:22",
+            "evidence_ids": [
+              "E017"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Emergency Response",
+        "description": "Delay in ambulance arrival and subsequent hospital transfer",
+        "duration": "31 minutes",
+        "key_events": [
+          {
+            "event": "Ambulance arrives",
+            "timestamp": "16:11",
+            "evidence_ids": [
+              "E006"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient with suspected subarachnoid hemorrhage",
+        "prompt": "What should be the priority in managing this patient?",
+        "action_type": "ESCALATE_CARE",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Immediate transfer to hospital with neurosurgical capabilities",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Urgent neurosurgical intervention required for SAH"
+          },
+          {
+            "option_id": "B",
+            "description": "Monitor at home until ambulance arrives",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Delay in care could worsen outcomes"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Patient was left waiting for ambulance",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E002",
+            "E021"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Immediate hospital transfer should have been prioritized",
+          "standard_of_care_basis": "Expert evidence supports urgent care for SAH",
+          "evidence_ids": [
+            "E045",
+            "E046"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Delay in ambulance arrival contributed to PTSD",
+          "what_should_have_happened": "Immediate transfer to hospital",
+          "legal_standard_applied": "Material contribution to injury",
+          "evidence_ids": [
+            "E045",
+            "E046",
+            "E047"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient developed PTSD following the traumatic event",
+        "severity": "Significant anxiety and panic attacks",
+        "long_term_effects": "Fear of being alone, anxiety about ambulances",
+        "evidence_ids": [
+          "E035",
+          "E042"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "40000",
+        "key_findings": [
+          "31-minute delay in ambulance arrival contributed to PTSD",
+          "Breach of duty admitted by defendant"
+        ],
+        "evidence_ids": [
+          "E002",
+          "E068"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Delay in emergency response",
+        "counterfactual": "Timely ambulance arrival could have mitigated PTSD",
+        "evidence_ids": [
+          "E068",
+          "E069",
+          "E070"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "18 September 2016 14:22",
+        "event": "First call to ambulance service",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "CT Head",
+        "date": "Not documented in judgment",
+        "result": "Not documented in judgment",
+        "interpretation": null,
+        "evidence_ids": [
+          "E020"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Subarachnoid hemorrhage",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Surgery for SAH",
+        "date": "Not documented in judgment",
+        "provider": null,
+        "outcome": "Successful",
+        "evidence_ids": [
+          "E020"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "PTSD",
+        "when_occurred": "Following hospital admission",
+        "severity": "Significant",
+        "evidence_ids": [
+          "E035"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Delay in ambulance arrival",
+        "against": "North East Ambulance Service",
+        "found_proven": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "31-minute delay contributed to PTSD",
+        "legal_significance": "Material contribution to injury",
+        "evidence_ids": [
+          "E068"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.14705882352941177,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 07:02:59.741281",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

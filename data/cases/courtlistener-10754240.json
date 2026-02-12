@@ -1,0 +1,456 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10754240",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2025-11-18",
+  "url": "https://example.com/courtlistener-10754240",
+  "case_name": "FLORETTA FRANKLIN, as mother and next of kin to LATOYA PERRY v. OU MEDICINE",
+  "neutral_citation": null,
+  "clinical_domain": "PAEDIATRICS",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "FLORETTA FRANKLIN, as mother and next of kin to LATOYA PERRY v. OU MEDICINE. Medical malpractice case involving paediatrics.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Perry presented for treatment at OU Medical Center. According to the Petition, Bergdall was cleaning Perry when 'Bergdall dislodged the tracheotomy [sic] to the point that it fell out.'",
+      "paragraph_ref": "18",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Due to the length of time the tracheotomy [sic] was out, [Perry] suffered an anoxic brain injury and coded.",
+      "paragraph_ref": "18",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "LEGAL_FINDING",
+      "text": "The trial court's judgment affirmed. Since the PREP Act confers both immunity from liability and immunity from suit, Oklahoma courts lack subject matter jurisdiction to adjudicate the claims in Plaintiff's petition.",
+      "paragraph_ref": "16",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "Perry was admitted to OU Medical Center with severe 'SARS cov2 infection' and 'COVID pneumonia' on September 4, 2021.",
+      "paragraph_ref": "20",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "On September 5, 2021, an ENT exchanged Perry's uncuffed tracheostomy for a cuffed tracheostomy secondary to the anticipated need for mechanical ventilation.",
+      "paragraph_ref": "21",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "Perry 'was unable to be bagged initially due to pediatric sized trach getting dislodged and no [sic] allowing for a secure airway.'",
+      "paragraph_ref": "28",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "LEGAL_FINDING",
+      "text": "The PREP Act provides a 'covered person' with immunity from federal and state tort claims if the United States Secretary of Health and Human Services has declared a public health emergency.",
+      "paragraph_ref": "175",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "LEGAL_FINDING",
+      "text": "The trial court granted Defendants' motion to dismiss, finding PREP Act immunity applied because (1) Defendants were covered persons, (2) the cuffed tracheostomy tube was a covered countermeasure, and (3) Perry's injuries were related to the dislodgement of the cuffed tracheostomy tube.",
+      "paragraph_ref": "176",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "COURT_REASONING",
+      "text": "We conclude that the cuffed tracheostomy provided to Perry is a 'covered countermeasure' pursuant to the PREP Act.",
+      "paragraph_ref": "43",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "COURT_REASONING",
+      "text": "Defendants conduct falls within the scope of administering a covered countermeasure.",
+      "paragraph_ref": "53",
+      "speaker": "Judge's analysis"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "37 years",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "COVID-19 and COVID-related pneumonia",
+      "history_of_present_illness": "Perry was admitted with severe SARS-CoV-2 infection and COVID pneumonia. She had been dependent on an uncuffed tracheostomy tube since she was two years old.",
+      "past_medical_history": [
+        "Uncuffed tracheostomy dependency since age 2"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "respiratory": "Patient was on a ventilator with a cuffed tracheostomy tube"
+        }
+      },
+      "initial_working_problem": "Severe COVID-19 pneumonia requiring ventilatory support",
+      "known_constraints": null,
+      "initial_differential": [
+        "COVID-19 pneumonia",
+        "Respiratory failure"
+      ],
+      "critical_findings": [
+        "Cuffed tracheostomy tube in place"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E004",
+        "E005"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "Swallow evaluation",
+        "description": "Radiological assessment for swallowing function",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": null,
+          "detailed_findings": "Imaging performed but findings not detailed in judgment",
+          "clinical_significance": null,
+          "decision_impact": null,
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E026"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with COVID-19 pneumonia",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Admission to OU Medical Center",
+            "timestamp": "September 4, 2021",
+            "evidence_ids": [
+              "E004"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "procedure",
+        "name": "Tracheostomy Management",
+        "description": "Management of tracheostomy tube during care",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Tracheostomy dislodged during patient turning",
+            "timestamp": "September 19, 2021",
+            "evidence_ids": [
+              "E018"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "procedure",
+        "clinical_context": "Patient with cuffed tracheostomy tube requiring care",
+        "prompt": "How should the patient be turned for cleaning?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Ensure tracheostomy tube is secure before turning",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Prevents dislodgement and maintains airway"
+          },
+          {
+            "option_id": "B",
+            "description": "Turn patient without securing tracheostomy tube",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Risk of tracheostomy dislodgement"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant turned patient without securing tracheostomy tube",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E018"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Tracheostomy tube should have been secured",
+          "standard_of_care_basis": "Standard practice to prevent airway compromise",
+          "evidence_ids": [
+            "E018"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to secure tracheostomy led to dislodgement and hypoxia",
+          "what_should_have_happened": "Tracheostomy should have been secured before turning",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E018"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient suffered acute anoxic encephalopathy",
+        "severity": "PERMANENT_SEVERE_DISABILITY",
+        "long_term_effects": "Ventilator dependency",
+        "evidence_ids": [
+          "E002",
+          "E123"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "None",
+        "key_findings": [
+          "PREP Act immunity applied",
+          "Causal relationship with covered countermeasure established"
+        ],
+        "evidence_ids": [
+          "E003",
+          "E164"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": true,
+        "point_of_failure": "Tracheostomy management",
+        "counterfactual": "Securing tracheostomy could have prevented injury",
+        "evidence_ids": [
+          "E121",
+          "E122"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "September 4, 2021",
+        "event": "Perry admitted to OU Medical Center with COVID-19 pneumonia",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "timestamp": "September 19, 2021",
+        "event": "Tracheostomy dislodged during patient turning",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E018"
+        ]
+      },
+      {
+        "timestamp": "September 4, 2021",
+        "event": "Patient admitted with COVID-19 pneumonia",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "timestamp": "September 5, 2021",
+        "event": "Cuffed tracheostomy placed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "timestamp": "September 19, 2021",
+        "event": "Tracheostomy dislodged during cleaning",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E121"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Swallow evaluation",
+        "date": "September 19, 2021",
+        "result": "Not documented in judgment",
+        "interpretation": null,
+        "evidence_ids": [
+          "E026"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Acute anoxic encephalopathy",
+        "when_made": "Post-event",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "diagnosis": "Acute anoxic encephalopathy",
+        "when_made": "September 19, 2021",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Ventilator support",
+        "date": "Post-event",
+        "provider": null,
+        "outcome": "Ventilator dependency",
+        "evidence_ids": [
+          "E029"
+        ]
+      },
+      {
+        "treatment": "Ventilator support",
+        "date": "September 19, 2021",
+        "provider": null,
+        "outcome": "Ventilator dependency",
+        "evidence_ids": [
+          "E123"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Anoxic brain injury",
+        "when_occurred": "September 19, 2021",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "complication": "Anoxic brain injury",
+        "when_occurred": "September 19, 2021",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Negligent tracheostomy management",
+        "against": "Teena Bergdall, R.N.",
+        "found_proven": false,
+        "evidence_ids": [
+          "E018"
+        ]
+      },
+      {
+        "allegation": "Negligent tracheostomy management",
+        "against": "Defendant nurse",
+        "found_proven": false,
+        "evidence_ids": [
+          "E164"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "PREP Act immunity applied",
+        "legal_significance": "No liability due to covered countermeasure",
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "finding": "PREP Act immunity applied",
+        "legal_significance": "No liability due to covered countermeasure",
+        "evidence_ids": [
+          "E164"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "TREATMENT_PROCEDURE_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.05154639175257732,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 08:52:07.312814",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

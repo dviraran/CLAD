@@ -1,0 +1,373 @@
+{
+  "case_id": "courtliste-10622125-courtney-v-durrani",
+  "source": "courtlistener",
+  "source_url": "local://courtliste-10622125-courtney-v-durrani.html",
+  "jurisdiction": "US",
+  "extraction_metadata": {
+    "version": "batch_api_v1",
+    "model": "gpt-4o",
+    "extracted_at": "2026-01-21T17:56:57.962834",
+    "simulation_extracted_at": "2026-01-21T18:25:06.990054",
+    "simulation_model": "gpt-4o"
+  },
+  "case_metadata": {
+    "case_name": "Courtney v. Durrani",
+    "citation": "2025-Ohio-2335",
+    "court": "Ohio First District Court of Appeals",
+    "date": "7/2/2025"
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "Courtney, who had experienced back and leg pain since 2009, testified first. He sought treatment for these conditions from Durrani beginning on October 1, 2012.",
+      "paragraph_ref": "98",
+      "paragraph_starts_with": "{¶10} Courtney, who had",
+      "summary": "Courtney experienced back and leg pain since 2009 and sought treatment from Durrani in 2012.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "On December 9, 2012, Durrani conducted a lumbar hemilaminectomy, foraminotomy, and L5-S1 decompression on Courtney.",
+      "paragraph_ref": "106",
+      "paragraph_starts_with": "{¶11} On December 9, 2012,",
+      "summary": "Durrani performed lumbar surgery on Courtney on December 9, 2012.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "The day after his discharge from the hospital, he awoke in excruciating pain and visited the emergency room (“ER”).",
+      "paragraph_ref": "110",
+      "paragraph_starts_with": "not read the post-surgical",
+      "summary": "Courtney experienced severe pain post-surgery and visited the ER.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "Courtney admitted that he did not complete the recommended course of physical therapy, stopping after two visits because he perceived it to be ineffective.",
+      "paragraph_ref": "117",
+      "paragraph_starts_with": "Courtney saw the physical",
+      "summary": "Courtney did not complete physical therapy post-surgery.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "LEGAL_FINDING",
+      "verbatim_quote": "The judgments of the trial court are affirmed for the reasons set forth in the Opinion filed this date.",
+      "paragraph_ref": "13",
+      "paragraph_starts_with": "This cause was heard",
+      "summary": "Trial court judgments affirmed.",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "LEGAL_FINDING",
+      "verbatim_quote": "The jury found in Koelblin’s favor as to all of his claims against Durrani.",
+      "paragraph_ref": "277",
+      "paragraph_starts_with": "{¶38} On September 17,",
+      "summary": "Jury found in favor of Koelblin on all claims.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "LEGAL_FINDING",
+      "verbatim_quote": "As to Courtney, the jury found that (1) Durrani was negligent in his care and treatment because he failed to meet the required standard of care;",
+      "paragraph_ref": "282",
+      "paragraph_starts_with": "{¶39} As to Courtney,",
+      "summary": "Jury found Durrani negligent in Courtney's care.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "LEGAL_FINDING",
+      "verbatim_quote": "Courtney was awarded $337,804.88 in compensatory damages:",
+      "paragraph_ref": "290",
+      "paragraph_starts_with": "{¶40} Courtney was awarded",
+      "summary": "Courtney awarded $337,804.88 in compensatory damages.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "LEGAL_FINDING",
+      "verbatim_quote": "The jury also awarded each plaintiff $750,000 in punitive damages plus",
+      "paragraph_ref": "294",
+      "paragraph_starts_with": "{¶41} The jury also",
+      "summary": "Each plaintiff awarded $750,000 in punitive damages.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "COURT_REASONING",
+      "verbatim_quote": "We accordingly overrule Durrani’s assignments of error and affirm the judgments of the trial court.",
+      "paragraph_ref": "753",
+      "paragraph_starts_with": "Durrani’s assignments of",
+      "summary": "Court overruled Durrani's errors and affirmed trial court judgments.",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "verdict_detected": {
+    "outcome": "LIABILITY_FOUND",
+    "key_phrase": "The jury found in Koelblin’s favor as to all of his claims against Durrani.",
+    "paragraph_ref": "277"
+  },
+  "extraction_notes": {
+    "total_paragraphs_analyzed": 150,
+    "key_sections_found": [
+      "Facts",
+      "Legal Findings",
+      "Conclusion"
+    ],
+    "gaps_identified": [
+      "No specific lab values mentioned",
+      "Timing of events unclear"
+    ]
+  },
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "Not documented in judgment",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Back and leg pain",
+      "history_of_present_illness": "Courtney experienced back and leg pain since 2009 and sought treatment from Durrani in 2012.",
+      "past_medical_history": [
+        "Back and leg pain since 2009"
+      ],
+      "medications": "Not documented in judgment",
+      "allergies": "Not documented in judgment",
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment"
+        },
+        "focused_exam": {
+          "system": "Examination mentioned but findings not specified"
+        }
+      },
+      "initial_working_problem": "Chronic back and leg pain",
+      "initial_differential": [
+        "Lumbar disc herniation",
+        "Spinal stenosis"
+      ],
+      "critical_findings": [
+        "Not documented in judgment"
+      ],
+      "urgency_level": "Not documented in judgment",
+      "evidence_ids": [
+        "E001"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "PROCEDURE_NOTE",
+        "name": "Lumbar Surgery Note",
+        "description": "Details of the lumbar hemilaminectomy, foraminotomy, and L5-S1 decompression",
+        "available_phase": "procedure",
+        "reveal": {
+          "result_summary": "Surgery performed on December 9, 2012",
+          "clinical_significance": "Surgical intervention for back and leg pain",
+          "decision_impact": "Post-operative care and monitoring required"
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "procedure",
+        "clinical_context": "Patient undergoing lumbar surgery",
+        "prompt": "What post-operative care should be provided?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Provide comprehensive post-operative care including pain management and physical therapy",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard post-operative care to ensure recovery and prevent complications"
+          },
+          {
+            "option_id": "B",
+            "description": "Minimal post-operative care with limited follow-up",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Inadequate care leading to potential complications"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant provided minimal post-operative care",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E003",
+            "E004"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Comprehensive post-operative care should have been provided",
+          "standard_of_care_basis": "Expert evidence established comprehensive care is standard",
+          "evidence_ids": [
+            "E007"
+          ]
+        },
+        "explanation": {
+          "why_defendant_wrong": "Based on evidence E007",
+          "what_should_have_happened": "Comprehensive post-operative care",
+          "legal_standard_applied": "Bolam test",
+          "evidence_ids": [
+            "E007"
+          ]
+        },
+        "is_malpractice_point": true
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with chronic back and leg pain",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Patient seeks treatment from Durrani",
+            "timestamp": "October 1, 2012",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "procedure",
+        "name": "Surgical Intervention",
+        "description": "Lumbar surgery performed",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Lumbar hemilaminectomy, foraminotomy, and L5-S1 decompression",
+            "timestamp": "December 9, 2012",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient experienced severe pain post-surgery and visited the ER",
+        "severity": "Not documented in judgment",
+        "long_term_effects": "Not documented in judgment",
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "337804.88",
+        "key_findings": [
+          "Durrani was negligent in his care and treatment",
+          "Failure to meet the required standard of care"
+        ],
+        "evidence_ids": [
+          "E007",
+          "E008"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Inadequate post-operative care",
+        "counterfactual": "Comprehensive care would have prevented complications",
+        "evidence_ids": [
+          "E007",
+          "E008"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "October 1, 2012",
+        "event": "Courtney seeks treatment from Durrani",
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "December 9, 2012",
+        "event": "Lumbar surgery performed",
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Patient visits ER post-surgery",
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [],
+    "treatments": [
+      {
+        "treatment": "Lumbar hemilaminectomy, foraminotomy, and L5-S1 decompression",
+        "date": "December 9, 2012",
+        "outcome": "Not documented in judgment",
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Severe pain post-surgery",
+        "when_occurred": "Date not specified in judgment",
+        "severity": "Not documented in judgment",
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Negligence in care and treatment",
+        "against": "Durrani",
+        "found_proven": true,
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Durrani was negligent in his care and treatment",
+        "legal_significance": "Failure to meet the required standard of care",
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ]
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "TREATMENT_PROCEDURE_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "diagnosis_subtypes": []
+  }
+}

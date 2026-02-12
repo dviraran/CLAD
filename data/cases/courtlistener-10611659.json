@@ -1,0 +1,407 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10611659",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2022-07-26",
+  "url": "https://example.com/courtlistener-10611659",
+  "case_name": "Arthur Edmond Johnson v. Ochsner Clinic Foundation",
+  "neutral_citation": null,
+  "clinical_domain": "PAEDIATRICS",
+  "outcome_severity": "TEMPORARY_HARM",
+  "summary": {
+    "brief": "Arthur Edmond Johnson v. Ochsner Clinic Foundation. Medical malpractice case involving paediatrics.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Mr. Johnson was diagnosed with diabetes in 1996.",
+      "paragraph_ref": "19",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "In April 2003, he sought treatment within the Ochsner Health System for 'blistering' on his left foot and saw Dr. Coleman.",
+      "paragraph_ref": "20",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. Coleman referred Mr. Johnson to a surgeon, Dr. Farrell Johnson, who successfully treated the wound with antibiotics, topical medication, dry wraps, and glucose monitoring.",
+      "paragraph_ref": "22",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "Mr. Johnson ultimately required a partial amputation below the knee of his left leg.",
+      "paragraph_ref": "28",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "On June 19, 2006, one week later, removal of the Unna boot revealed the development of a three-centimeter ulcer.",
+      "paragraph_ref": "49",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Vagnoni planned to testify that Dr. Coleman\u2019s application of the Unna boot caused the ulcer.",
+      "paragraph_ref": "134",
+      "speaker": "Expert witness"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "LEGAL_FINDING",
+      "text": "The trial court abused its discretion in determining that Ms. Vagnoni was qualified to provide expert testimony outside of her expertise.",
+      "paragraph_ref": "237",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "COURT_REASONING",
+      "text": "We grant the writ in part and reverse the portion of the trial court\u2019s April 19, 2022 judgment that denied Relators\u2019 Motion to Exclude Ms. Vagnoni as an expert witness.",
+      "paragraph_ref": "239",
+      "speaker": "Judge's analysis"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "male",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Blistering on left foot",
+      "history_of_present_illness": "Mr. Johnson sought treatment for blistering on his left foot and was referred to a surgeon for treatment.",
+      "past_medical_history": [
+        "Diabetes diagnosed in 1996"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "foot": "Blistering on left foot"
+        }
+      },
+      "initial_working_problem": "Foot blister in diabetic patient",
+      "known_constraints": null,
+      "initial_differential": [
+        "Diabetic foot ulcer",
+        "Infection"
+      ],
+      "critical_findings": [
+        "Blistering on left foot"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E002",
+        "E003"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "X-ray of left foot",
+        "description": "X-ray to assess for underlying bone involvement",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Atherosclerotic calcifications in hind foot",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates poor circulation",
+          "decision_impact": "Supports need for vascular evaluation",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E029"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "CONSULT_NOTE",
+        "name": "Vascular consultation",
+        "description": "Consultation to assess peripheral circulation",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Atherosclerosis, essential hypertension, uncontrolled peripheral circulation, hyperlipidemia",
+          "detailed_findings": null,
+          "clinical_significance": "Confirms poor circulation contributing to wound healing issues",
+          "decision_impact": "Indicates need for aggressive vascular management",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E072",
+          "E073"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with blistering on left foot",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Initial consultation with Dr. Coleman",
+            "timestamp": "April 2003",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Workup and Management",
+        "description": "Management of foot ulcer with Unna boot",
+        "duration": "April 2003 - November 2006",
+        "key_events": [
+          {
+            "event": "Application of Unna boot",
+            "timestamp": "May 2005",
+            "evidence_ids": [
+              "E040",
+              "E041"
+            ]
+          },
+          {
+            "event": "Development of ulcer under Unna boot",
+            "timestamp": "June 19, 2006",
+            "evidence_ids": [
+              "E005"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient with diabetic foot ulcer",
+        "prompt": "What is the appropriate management for the foot ulcer?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Apply Unna boot and monitor",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Unna boot was applied but led to complications"
+          },
+          {
+            "option_id": "B",
+            "description": "Refer for vascular evaluation and consider alternative offloading techniques",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Vascular issues need addressing to improve healing"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "A",
+          "description": "Defendant applied Unna boot",
+          "reasoning_stated": "Believed to be appropriate for offloading",
+          "evidence_ids": [
+            "E047",
+            "E048"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "B",
+          "description": "Referral for vascular evaluation should have been made",
+          "standard_of_care_basis": "Expert testimony indicated need for vascular management",
+          "evidence_ids": [
+            "E072",
+            "E073"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to address underlying vascular issues",
+          "what_should_have_happened": "Referral for vascular evaluation and alternative offloading",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E072",
+            "E073",
+            "E074"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient required below-knee amputation",
+        "severity": "PERMANENT_SEVERE_DISABILITY",
+        "long_term_effects": "Loss of limb, mobility issues",
+        "evidence_ids": [
+          "E004",
+          "E082"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Breach of duty in failing to provide appropriate diabetic foot care",
+          "Causation established - inappropriate use of Unna boot contributed to amputation"
+        ],
+        "evidence_ids": [
+          "E086",
+          "E087"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Inappropriate use of Unna boot without addressing vascular issues",
+        "counterfactual": "Proper vascular management could have prevented amputation",
+        "evidence_ids": [
+          "E086",
+          "E087",
+          "E088"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "April 2003",
+        "event": "Mr. Johnson sought treatment for blistering on left foot",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "June 19, 2006",
+        "event": "Unna boot removal revealed ulcer",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "X-ray",
+        "date": "November 13, 2003",
+        "result": "Atherosclerotic calcifications",
+        "interpretation": null,
+        "evidence_ids": [
+          "E029"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Foot ulcer with gangrene",
+        "when_made": "August 1, 2006",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E063"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Below-knee amputation",
+        "date": "November 2006",
+        "provider": null,
+        "outcome": "Amputation performed",
+        "evidence_ids": [
+          "E082"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Gangrene",
+        "when_occurred": "August 1, 2006",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E063"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Inappropriate use of Unna boot",
+        "against": "Dr. Coleman",
+        "found_proven": true,
+        "evidence_ids": [
+          "E086"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Breach of duty in diabetic foot care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E086"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "TREATMENT_PROCEDURE_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.03278688524590164,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 07:54:57.303383",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

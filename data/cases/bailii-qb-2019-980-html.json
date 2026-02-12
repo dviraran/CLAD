@@ -1,0 +1,390 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "bailii-qb-2019-980-html",
+  "source": "BAILII",
+  "jurisdiction": "UK",
+  "court": "Unknown",
+  "decision_date": "2019-04-16",
+  "url": "https://example.com/bailii-qb-2019-980-html",
+  "case_name": "Zeromska-Smith v United Lincolnshire Hospitals NHS Trust [2019] EWHC 980 (QB) (16 April 2019)",
+  "neutral_citation": "[2019] EWHC 980",
+  "clinical_domain": "PSYCHIATRY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Medical malpractice case involving obstetrics gynaecology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "The Claimant seeks damages for psychiatric injury arising out of the stillbirth of her daughter on 27 May 2013.",
+      "paragraph_ref": "12",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Breach of duty is admitted, as is some damage arising out of the breach of duty.",
+      "paragraph_ref": "12",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "WITNESS_STATEMENT",
+      "text": "Celina Zubel, the Claimant's older half-sister, described Justyna as always being the leader and organiser in every situation.",
+      "paragraph_ref": "22",
+      "speaker": "Celina Zubel"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "WITNESS_STATEMENT",
+      "text": "She describes the change in the Claimant's personality: she says that the Claimant now loses her temper very quickly and has a short fuse.",
+      "paragraph_ref": "24",
+      "speaker": "Celina Zubel"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr Baggaley considered that the pathological grief/depression was caused by the stillbirth of her daughter and the belief that it had been caused by clinical negligence.",
+      "paragraph_ref": "64",
+      "speaker": "Dr Martin Baggaley"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "The Claimant continued to suffer from her depressive illness for the rest of 2016 and remained under the care of Dr Dickinson.",
+      "paragraph_ref": "78",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr Loumidis reported to Dr Friedman that he suspected it was the supportive rather than the cognitive behavioural aspects of therapy which the Claimant was looking for.",
+      "paragraph_ref": "84",
+      "speaker": "Dr Loumidis"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "FACTUAL_FINDING",
+      "text": "On 11 July 2017 the Claimant was dismissed from her employment on the grounds of incapacity, namely her unfitness to work on grounds of ill health consequent upon psychiatric illness.",
+      "paragraph_ref": "81",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "LEGAL_FINDING",
+      "text": "For the reasons stated in paragraph 104 above, this claim is disallowed in its entirety.",
+      "paragraph_ref": "249",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "COURT_REASONING",
+      "text": "I consider that the couple's counselling should be sufficient at \u00a31,680 as Mark and Justyna's relationship will improve in any event as the therapy and recovery takes effect.",
+      "paragraph_ref": "260",
+      "speaker": "Judge's analysis"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "32 years",
+        "sex": "female",
+        "relevant_social_history": "Polish, highly educated, works as Data Manager"
+      },
+      "chief_complaint": "Psychiatric injury following stillbirth",
+      "history_of_present_illness": "The Claimant experienced a stillbirth on 27 May 2013. She was admitted for induction of labor at term + 10 days, and a CTG trace revealed no fetal heartbeat. The baby was delivered stillborn by forceps after an 18-hour labor.",
+      "past_medical_history": [
+        "Not documented in judgment"
+      ],
+      "medications": [
+        "Citalopram",
+        "Zopiclone"
+      ],
+      "allergies": [
+        "Not documented in judgment"
+      ],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "psychiatric": "Patient exhibits symptoms of depression and pathological grief"
+        }
+      },
+      "initial_working_problem": "Psychiatric injury following stillbirth",
+      "known_constraints": null,
+      "initial_differential": [
+        "Pathological grief disorder",
+        "Major depressive disorder"
+      ],
+      "critical_findings": [
+        "Stillbirth",
+        "Depression",
+        "Suicidal ideation"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002",
+        "E005"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSULT_NOTE",
+        "name": "Psychiatric Evaluation",
+        "description": "Evaluation by Dr. Baggaley for psychiatric assessment",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Pathological grief/depression diagnosed",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates need for psychiatric intervention",
+          "decision_impact": "Should prompt consideration of therapy and medication",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with psychiatric symptoms following stillbirth",
+        "duration": "Not specified in judgment",
+        "key_events": [
+          {
+            "event": "Stillbirth occurred",
+            "timestamp": "27 May 2013",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Psychiatric Assessment",
+        "description": "Evaluation and management of psychiatric symptoms",
+        "duration": "2013-2016",
+        "key_events": [
+          {
+            "event": "Psychiatric evaluation by Dr. Baggaley",
+            "timestamp": "18 July 2015",
+            "evidence_ids": [
+              "E005"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient with psychiatric symptoms post-stillbirth",
+        "prompt": "What therapeutic intervention should be considered?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Initiate cognitive behavioral therapy (CBT)",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "CBT is recommended for managing depression and grief"
+          },
+          {
+            "option_id": "B",
+            "description": "No immediate therapy, monitor symptoms",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Delays necessary intervention for psychiatric symptoms"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant delayed initiating therapy",
+          "reasoning_stated": "Defendant did not prioritize immediate therapy",
+          "evidence_ids": [
+            "E005",
+            "E006"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "CBT should have been initiated",
+          "standard_of_care_basis": "Expert evidence supports early intervention",
+          "evidence_ids": [
+            "E005",
+            "E007"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Delay in therapy exacerbated psychiatric symptoms",
+          "what_should_have_happened": "CBT should have been started to manage symptoms",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E005",
+            "E007"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient continued to suffer from depression and anxiety",
+        "severity": "PERMANENT_MODERATE_DISABILITY",
+        "long_term_effects": "Chronic depression, anxiety, and impaired daily functioning",
+        "evidence_ids": [
+          "E006",
+          "E008"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not specified in judgment",
+        "key_findings": [
+          "Breach of duty admitted",
+          "Causation established - psychiatric injury linked to stillbirth"
+        ],
+        "evidence_ids": [
+          "E002",
+          "E005"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to initiate timely psychiatric therapy",
+        "counterfactual": "Early therapy could have mitigated psychiatric symptoms",
+        "evidence_ids": [
+          "E005",
+          "E007"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "27 May 2013",
+        "event": "Stillbirth occurred",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Psychiatric Evaluation",
+        "date": "18 July 2015",
+        "result": "Pathological grief/depression diagnosed",
+        "interpretation": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Pathological grief disorder",
+        "when_made": "18 July 2015",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Antidepressant medication",
+        "date": "11 October 2013",
+        "provider": null,
+        "outcome": "Partial symptom management",
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Chronic depression",
+        "when_occurred": "2016",
+        "severity": "Moderate",
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to initiate timely psychiatric therapy",
+        "against": "Defendant hospital",
+        "found_proven": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Breach of duty admitted",
+        "legal_significance": "Causation established for psychiatric injury",
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.03802281368821293,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 09:12:46.001959",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

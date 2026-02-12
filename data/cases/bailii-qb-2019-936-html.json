@@ -1,0 +1,569 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "bailii-qb-2019-936-html",
+  "source": "BAILII",
+  "jurisdiction": "UK",
+  "court": "Unknown",
+  "decision_date": "2019-04-12",
+  "url": "https://example.com/bailii-qb-2019-936-html",
+  "case_name": "Mills  v Oxford University Hospitals NHS Trust [2019] EWHC 936 (QB) (12 April 2019)",
+  "neutral_citation": "[2019] EWHC 936",
+  "clinical_domain": "ONCOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Medical malpractice case involving oncology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "On 4 December 2012, Mr Mills underwent brain surgery at the John Radcliffe Hospital, specifically, a resection (otherwise known as de-bulking) of a left frontal glioma (i.e. a tumour).",
+      "paragraph_ref": "121",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "He suffered a haemorrhage during the course of the operation which caused him to suffer a stroke in the left anterior cerebral artery territory.",
+      "paragraph_ref": "121",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "LEGAL_FINDING",
+      "text": "My overall conclusion is that the claim against the Trust (which accepts vicarious liability) based on lack of informed consent succeeds, whereas the claim based on clinical negligence fails.",
+      "paragraph_ref": "127",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Mr Kirkpatrick was dismissive of the cosmetic advantage of having a smaller craniotomy. His view was that 'for operations involving the cranium, the vast majority of patients declare little regard for the size of the incision.'",
+      "paragraph_ref": "263",
+      "speaker": "Mr Peter Kirkpatrick"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Mr Grundy, while acknowledging that the most important consideration for patients would be the outcome, said that he was regularly asked about cosmesis and that it was often a concern for patients.",
+      "paragraph_ref": "263",
+      "speaker": "Mr Paul Grundy"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "LEGAL_FINDING",
+      "text": "The use of a minimally invasive endoscopically-assisted open craniotomy technique to resect Mr Mills' glioma was not negligent.",
+      "paragraph_ref": "158",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "Mr Mills has not proved, on the balance of probabilities, that Mr Plaha performed the surgery negligently by migrating into the midline structures (or otherwise).",
+      "paragraph_ref": "159",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "FACTUAL_FINDING",
+      "text": "Mr Plaha discussed three treatment options (surveillance, biopsy and resection), and the risks and benefits of each of them, with Mr Mills during the consultation in his clinic on 8 November 2012.",
+      "paragraph_ref": "160",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "LEGAL_FINDING",
+      "text": "Mr Plaha breached his duty of care by (a) not offering a microscopically-assisted resection procedure as an alternative to a minimally invasive endoscopically-assisted resection and (b) not explaining the comparative risks and benefits of these alternative surgical techniques.",
+      "paragraph_ref": "161",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "EXPERT_TESTIMONY",
+      "text": "In their joint report, Mr Kirkpatrick and Mr Grundy agreed that had the torrential bleeding occurred with a conventional technique the source of the bleeding would have been detectable and/or the bleeding could have been successfully controlled earlier.",
+      "paragraph_ref": "412",
+      "speaker": "Mr Kirkpatrick and Mr Grundy"
+    },
+    {
+      "evidence_id": "E011",
+      "type": "COURT_REASONING",
+      "text": "I accept the joint view expressed by Mr Kirkpatrick and Mr Grundy that if such torrential bleeding had occurred using the conventional technique, it is probable that it would have been controlled successfully much earlier and Mr Mills probably would not have suffered a stroke.",
+      "paragraph_ref": "417",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E012",
+      "type": "LEGAL_FINDING",
+      "text": "Accordingly, I find that the breach of duty was causative of the stroke that Mr Mills suffered.",
+      "paragraph_ref": "421",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E013",
+      "type": "COURT_REASONING",
+      "text": "The increased risk that it would be difficulty to control bleeding if it occurred, of which Mr Mills should have been warned, was one which eventuated.",
+      "paragraph_ref": "423",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E014",
+      "type": "LEGAL_FINDING",
+      "text": "For all the above reasons the claim based on alleged clinical negligence in the performance of the surgery fails; the claim succeeds on the basis of informed consent.",
+      "paragraph_ref": "427",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "45 years",
+        "sex": "male",
+        "relevant_social_history": "Firefighter, employed by the London Fire Brigade"
+      },
+      "chief_complaint": "Headaches and chest pain",
+      "history_of_present_illness": "Mr Mills began experiencing headaches in early 2012, which worsened with bright lights and lying down. He was found to have high blood pressure during a routine health check and was admitted to Wexham Park Hospital with chest pains on 31 October 2012.",
+      "past_medical_history": [
+        "High blood pressure"
+      ],
+      "medications": [
+        "Not documented in judgment"
+      ],
+      "allergies": [
+        "Not documented in judgment"
+      ],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "High blood pressure noted during routine health check",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "neurological": "No deficits noted, Glasgow Coma Scale 15"
+        }
+      },
+      "initial_working_problem": "Left frontal lobe lesion, possible low-grade glioma",
+      "known_constraints": null,
+      "initial_differential": [
+        "Low-grade glioma",
+        "DNET"
+      ],
+      "critical_findings": [
+        "Lesion in left frontal lobe identified on MRI"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002",
+        "E177"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "MRI Brain",
+        "description": "Magnetic resonance imaging of the brain",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Identified a lesion in the left frontal lobe",
+          "detailed_findings": null,
+          "clinical_significance": "Suggests possible low-grade glioma",
+          "decision_impact": "Prompted referral to neurosurgery",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E177"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "IMAGING",
+        "name": "CT Head",
+        "description": "Computerised tomography of the head",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Normal",
+          "detailed_findings": null,
+          "clinical_significance": "No acute intracranial pathology",
+          "decision_impact": "Did not alter management plan",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E177"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Mr Mills presents with headaches and chest pain, leading to hospital admission and imaging",
+        "duration": "2 days",
+        "key_events": [
+          {
+            "event": "Admission to Wexham Park Hospital",
+            "timestamp": "31 October 2012",
+            "evidence_ids": [
+              "E174"
+            ]
+          },
+          {
+            "event": "MRI and CT scans performed",
+            "timestamp": "31 October 2012",
+            "evidence_ids": [
+              "E177"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Neurosurgical Assessment",
+        "description": "Referral to MDT and consultation with neurosurgeon",
+        "duration": "1 month",
+        "key_events": [
+          {
+            "event": "MDT meeting and referral to Mr Plaha",
+            "timestamp": "6 November 2012",
+            "evidence_ids": [
+              "E180"
+            ]
+          },
+          {
+            "event": "Consultation with Mr Plaha",
+            "timestamp": "8 November 2012",
+            "evidence_ids": [
+              "E187"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "procedure",
+        "name": "Surgical Procedure",
+        "description": "Endoscopically-assisted resection of glioma",
+        "duration": "1 day",
+        "key_events": [
+          {
+            "event": "Surgery begins",
+            "timestamp": "4 December 2012 14:15",
+            "evidence_ids": [
+              "E200"
+            ]
+          },
+          {
+            "event": "Torrential bleed occurs",
+            "timestamp": "4 December 2012 16:15",
+            "evidence_ids": [
+              "E204"
+            ]
+          },
+          {
+            "event": "Surgery concludes",
+            "timestamp": "4 December 2012 21:00",
+            "evidence_ids": [
+              "E206"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "decision",
+        "name": "Surgical Decision",
+        "description": "Decision-making process regarding surgical technique",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Discussion of surgical options",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E008"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "decision",
+        "clinical_context": "Pre-operative consultation with Mr Plaha",
+        "prompt": "What surgical technique should be offered to Mr Mills?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Offer microscopically-assisted resection",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard technique with better control over bleeding"
+          },
+          {
+            "option_id": "B",
+            "description": "Offer endoscopically-assisted resection",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Novel technique with limited direct visualization"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant offered endoscopically-assisted resection",
+          "reasoning_stated": "Believed to be a reasonable approach",
+          "evidence_ids": [
+            "E006",
+            "E009"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Microscopically-assisted resection should have been offered",
+          "standard_of_care_basis": "Expert evidence established it as the safer option",
+          "evidence_ids": [
+            "E009",
+            "E010"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Endoscopic technique posed greater risk to vessels not in direct line of sight",
+          "what_should_have_happened": "Microscopically-assisted technique should have been used",
+          "legal_standard_applied": "Montgomery v Lanarkshire Health Board",
+          "evidence_ids": [
+            "E009",
+            "E010",
+            "E011"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient suffered a stroke due to torrential bleeding during surgery",
+        "severity": "PERMANENT_MODERATE_DISABILITY",
+        "long_term_effects": "Stroke-related disabilities",
+        "evidence_ids": [
+          "E002",
+          "E012"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Breach of duty in failing to provide informed consent",
+          "Causation established - choice of technique contributed to stroke"
+        ],
+        "evidence_ids": [
+          "E012",
+          "E421"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to provide informed consent",
+        "counterfactual": "Patient would have chosen a different technique if fully informed",
+        "evidence_ids": [
+          "E009",
+          "E013",
+          "E421"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "31 October 2012",
+        "event": "Mr Mills admitted to Wexham Park Hospital",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E174"
+        ]
+      },
+      {
+        "timestamp": "4 December 2012",
+        "event": "Surgery performed at John Radcliffe Hospital",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "4 December 2012",
+        "event": "Mr Mills underwent brain surgery",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "MRI Brain",
+        "date": "31 October 2012",
+        "result": "Lesion in left frontal lobe",
+        "interpretation": null,
+        "evidence_ids": [
+          "E177"
+        ]
+      },
+      {
+        "test_name": "CT Head",
+        "date": "31 October 2012",
+        "result": "Normal",
+        "interpretation": null,
+        "evidence_ids": [
+          "E177"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Low-grade glioma",
+        "when_made": "31 October 2012",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E177"
+        ]
+      },
+      {
+        "diagnosis": "Brain tumor",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Endoscopically-assisted resection",
+        "date": "4 December 2012",
+        "provider": null,
+        "outcome": "Complicated by torrential bleeding",
+        "evidence_ids": [
+          "E200",
+          "E204"
+        ]
+      },
+      {
+        "treatment": "Endoscopically-assisted craniotomy",
+        "date": "4 December 2012",
+        "provider": null,
+        "outcome": "Torrential bleeding occurred",
+        "evidence_ids": [
+          "E001",
+          "E002"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Stroke",
+        "when_occurred": "4 December 2012",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "complication": "Stroke",
+        "when_occurred": "During surgery",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to offer standard surgical technique",
+        "against": "Mr Plaha",
+        "found_proven": true,
+        "evidence_ids": [
+          "E009"
+        ]
+      },
+      {
+        "allegation": "Failure to provide informed consent",
+        "against": "Defendant surgeon",
+        "found_proven": true,
+        "evidence_ids": [
+          "E009",
+          "E013"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Breach of duty in failing to offer microscopically-assisted resection",
+        "legal_significance": "Montgomery standard not met",
+        "evidence_ids": [
+          "E161"
+        ]
+      },
+      {
+        "finding": "Defendant breached duty of care by not providing informed consent",
+        "legal_significance": "Informed consent principles not satisfied",
+        "evidence_ids": [
+          "E009",
+          "E013",
+          "E421"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "INFORMED_CONSENT"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.03278688524590164,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 13:23:52.673968",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

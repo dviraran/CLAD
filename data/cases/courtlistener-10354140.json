@@ -1,0 +1,313 @@
+{
+  "case_id": "courtlistener-10354140",
+  "source": "courtlistener",
+  "source_url": "local://courtlistener-10354140.html",
+  "jurisdiction": "US",
+  "extraction_metadata": {
+    "version": "batch_api_v1",
+    "model": "gpt-4o",
+    "extracted_at": "2026-01-21T17:56:57.931792",
+    "simulation_extracted_at": "2026-01-21T18:29:59.559129",
+    "simulation_model": "gpt-4o"
+  },
+  "case_metadata": {
+    "case_name": "Acosta v. Didonato",
+    "citation": "2025 NY Slip Op 01310",
+    "court": "Appellate Division, First Department",
+    "date": "March 11, 2025"
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "Plaintiff Mirna Acosta, on behalf of the infant plaintiff, commenced this medical malpractice action against defendant NYPH alleging that it failed to timely perform a caesarean section delivery.",
+      "paragraph_ref": "13",
+      "paragraph_starts_with": "[13] Judgment, Supreme Court,",
+      "summary": "Plaintiff alleged NYPH failed to timely perform a caesarean section.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "EXPERT_TESTIMONY",
+      "verbatim_quote": "Plaintiff's experts, a retired physician board certified in obstetrics and gynecology, and a physician board certified in pediatrics and child neurology, created an issue of fact by opining that a caesarean section should have been performed within 30 minutes of plaintiff actively bleeding from the previously identified placenta previa.",
+      "paragraph_ref": "13",
+      "paragraph_starts_with": "[13] Judgment, Supreme Court,",
+      "summary": "Plaintiff's experts opined C-section should have been within 30 minutes of bleeding.",
+      "speaker": "Plaintiff's experts"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "LEGAL_FINDING",
+      "verbatim_quote": "Judgment, Supreme Court, Bronx County (Alicia Gerez, J.), entered August 22, 2023, dismissing the complaint as against defendant New York Presbyterian Hospital (NYPH), and bringing up for review an order, same court and Justice, entered August 16, 2023, which granted NYPH's motion for summary judgment dismissing the medical malpractice cause of action against it, unanimously reversed, on the law, without costs, the judgment vacated, the motion denied, and the complaint reinstated as against NYPH.",
+      "paragraph_ref": "13",
+      "paragraph_starts_with": "[13] Judgment, Supreme Court,",
+      "summary": "Judgment dismissing complaint against NYPH reversed; complaint reinstated.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "EXPERT_TESTIMONY",
+      "verbatim_quote": "NYPH established, through the medical records and opinion testimony of its experts in maternal-fetal medicine and in neonatal-perinatal medicine, its prima facie case that it did not depart from good and accepted medical practice in its treatment of plaintiff or proximately cause the injuries suffered by the infant plaintiff.",
+      "paragraph_ref": "13",
+      "paragraph_starts_with": "[13] Judgment, Supreme Court,",
+      "summary": "NYPH's experts testified no departure from standard care or causation of injuries.",
+      "speaker": "NYPH's experts"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "COURT_REASONING",
+      "verbatim_quote": "The expert's opinion — that the delay in doing so caused the infant's injuries because the blood loss, whether from fetal or maternal bleeding from placenta previa, reduced the blood supply to the placenta, which resulted in less oxygen to the infant during that delay — falls within this allegation.",
+      "paragraph_ref": "13",
+      "paragraph_starts_with": "[13] Judgment, Supreme Court,",
+      "summary": "Court reasoned delay in C-section caused reduced oxygen to infant.",
+      "speaker": "Court reasoning"
+    }
+  ],
+  "verdict_detected": {
+    "outcome": "NO_LIABILITY",
+    "key_phrase": "Judgment, Supreme Court, Bronx County (Alicia Gerez, J.), entered August 22, 2023, dismissing the complaint",
+    "paragraph_ref": "13"
+  },
+  "extraction_notes": {
+    "total_paragraphs_analyzed": 14,
+    "key_sections_found": [
+      "Facts",
+      "Expert Evidence",
+      "Conclusion"
+    ],
+    "gaps_identified": [
+      "No specific lab values mentioned",
+      "Timing of events unclear"
+    ]
+  },
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Active bleeding from placenta previa",
+      "history_of_present_illness": "Patient presented with active bleeding from a previously identified placenta previa.",
+      "past_medical_history": [
+        "Placenta previa"
+      ],
+      "medications": "Not documented in judgment",
+      "allergies": "Not documented in judgment",
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment"
+        },
+        "focused_exam": {
+          "abdomen": "Not documented in judgment"
+        }
+      },
+      "initial_working_problem": "Active bleeding from placenta previa",
+      "initial_differential": [
+        "Placenta previa bleeding"
+      ],
+      "critical_findings": [
+        "Active bleeding from placenta previa"
+      ],
+      "urgency_level": "EMERGENCY",
+      "evidence_ids": [
+        "E001",
+        "E002"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSULT_NOTE",
+        "name": "Obstetrics Consult",
+        "description": "Consultation with obstetrics regarding management of placenta previa",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Recommendation for immediate caesarean section",
+          "clinical_significance": "Urgent intervention required to prevent fetal hypoxia",
+          "decision_impact": "Should prompt immediate surgical intervention"
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient with active bleeding from placenta previa",
+        "prompt": "What is the appropriate management for active bleeding from placenta previa?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Perform immediate caesarean section",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Immediate C-section is standard to prevent fetal hypoxia"
+          },
+          {
+            "option_id": "B",
+            "description": "Monitor and delay caesarean section",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Delay increases risk of fetal hypoxia due to reduced oxygen supply"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant delayed caesarean section",
+          "reasoning_stated": "Defendant believed monitoring was sufficient",
+          "evidence_ids": [
+            "E004"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Immediate caesarean section should have been performed",
+          "standard_of_care_basis": "Expert testimony and court reasoning",
+          "evidence_ids": [
+            "E002",
+            "E005"
+          ]
+        },
+        "explanation": {
+          "why_defendant_wrong": "Delay caused reduced oxygen to infant, leading to injuries",
+          "what_should_have_happened": "Immediate C-section to prevent hypoxia",
+          "legal_standard_applied": "Bolam test",
+          "evidence_ids": [
+            "E005"
+          ]
+        },
+        "is_malpractice_point": true
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Presentation with Bleeding",
+        "description": "Patient presents with active bleeding from placenta previa",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Active bleeding identified",
+            "timestamp": "Not documented in judgment",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Infant suffered injuries due to reduced oxygen supply",
+        "severity": "PERMANENT_MODERATE_DISABILITY",
+        "long_term_effects": "Potential developmental delays",
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Breach of duty in delaying caesarean section",
+          "Causation established - delay led to reduced oxygen supply to infant"
+        ],
+        "evidence_ids": [
+          "E003",
+          "E005"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to perform timely caesarean section",
+        "counterfactual": "Immediate C-section would have prevented hypoxia",
+        "evidence_ids": [
+          "E002",
+          "E005"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "Not documented in judgment",
+        "event": "Patient presents with active bleeding from placenta previa",
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [
+      {
+        "diagnosis": "Reduced oxygen supply to infant",
+        "when_made": "Not documented in judgment",
+        "correct": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Caesarean section",
+        "date": "Not documented in judgment",
+        "outcome": "Infant delivered",
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Infant injuries due to hypoxia",
+        "when_occurred": "Not documented in judgment",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to perform timely caesarean section",
+        "against": "Defendant NYPH",
+        "found_proven": true,
+        "evidence_ids": [
+          "E001",
+          "E003"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E003",
+          "E005"
+        ]
+      }
+    ]
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "diagnosis_subtypes": [
+      "DELAYED_DIAGNOSIS",
+      "FAILURE_TO_INVESTIGATE"
+    ]
+  }
+}

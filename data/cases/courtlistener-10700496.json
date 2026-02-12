@@ -1,0 +1,448 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10700496",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2026-01-18",
+  "url": "https://example.com/courtlistener-10700496",
+  "case_name": "Lutzenkirchen v. OSF Saint Anthony Medical Center",
+  "neutral_citation": null,
+  "clinical_domain": "PAEDIATRICS",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Lutzenkirchen v. OSF Saint Anthony Medical Center. Medical malpractice case involving paediatrics.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "William was admitted to OSF on June 27, 2023, for a nonhealing wound on his left toe.",
+      "paragraph_ref": "24",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "During a surgical procedure on July 3, 2023, defendants were allegedly negligent in lacerating William\u2019s palate and uvula while providing anesthesia services.",
+      "paragraph_ref": "27",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "William died following a code blue on July 5, 2023.",
+      "paragraph_ref": "28",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "LEGAL_FINDING",
+      "text": "The judgment of the circuit court is reversed.",
+      "paragraph_ref": "578",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "COURT_REASONING",
+      "text": "The substantial majority of the private and public interest factors here strongly weigh in favor of transfer.",
+      "paragraph_ref": "13",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "OSF provided all medical care and treatment to William in Winnebago County between June 27, 2023, and July 5, 2023.",
+      "paragraph_ref": "29",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "WITNESS_STATEMENT",
+      "text": "In her affidavit, Dr. Cheng averred that she resides in Kane County and works full time at OSF in Winnebago County.",
+      "paragraph_ref": "46",
+      "speaker": "Dr. Cheng"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "WITNESS_STATEMENT",
+      "text": "In her affidavit, Balucating averred that she resides in McHenry County and works full time in Winnebago County.",
+      "paragraph_ref": "51",
+      "speaker": "Balucating"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "WITNESS_STATEMENT",
+      "text": "In her affidavit, Dr. Lane averred that she is currently a Minnesota resident.",
+      "paragraph_ref": "54",
+      "speaker": "Dr. Lane"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "COURT_REASONING",
+      "text": "The circuit court found that plaintiff\u2019s choice of forum was entitled to little deference.",
+      "paragraph_ref": "113812",
+      "speaker": "Judge's analysis"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "male",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Nonhealing wound on left toe",
+      "history_of_present_illness": "William was admitted to OSF on June 27, 2023, for a nonhealing wound on his left toe.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "system": "Examination mentioned but findings not specified"
+        }
+      },
+      "initial_working_problem": "Nonhealing wound",
+      "known_constraints": null,
+      "initial_differential": [
+        "Infection",
+        "Vascular insufficiency"
+      ],
+      "critical_findings": [
+        "Nonhealing wound"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "PROCEDURE_NOTE",
+        "name": "Surgical Procedure Note",
+        "description": "Details of the surgical procedure performed on July 3, 2023",
+        "available_phase": "procedure",
+        "reveal": {
+          "result_summary": "Laceration of palate and uvula during anesthesia",
+          "detailed_findings": null,
+          "clinical_significance": "Potential airway compromise",
+          "decision_impact": "Requires immediate management to prevent complications",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "IMAGING",
+        "name": "X-ray of the foot",
+        "description": "Imaging to assess for underlying bone involvement",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": null,
+          "detailed_findings": "Imaging performed but findings not detailed in judgment",
+          "clinical_significance": "Not documented in judgment",
+          "decision_impact": "Not documented in judgment",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": []
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with a nonhealing wound on left toe",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Admission to OSF",
+            "timestamp": "June 27, 2023",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "procedure",
+        "name": "Surgical Procedure",
+        "description": "Surgical intervention for wound management",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Surgical procedure with anesthesia",
+            "timestamp": "July 3, 2023",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "procedure",
+        "clinical_context": "During surgical procedure on July 3, 2023",
+        "prompt": "How should the anesthesia be managed to prevent complications?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Ensure careful intubation and monitor airway closely",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard care to prevent airway injury"
+          },
+          {
+            "option_id": "B",
+            "description": "Proceed without additional airway precautions",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Negligence in airway management"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant proceeded without additional airway precautions",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E002"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Careful airway management should have been ensured",
+          "standard_of_care_basis": "Expert evidence established airway management is critical",
+          "evidence_ids": [
+            "E002"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Based on evidence E002",
+          "what_should_have_happened": "Based on court's findings",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E002"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient died following a code blue",
+        "severity": "FATAL",
+        "long_term_effects": "Not applicable",
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Breach of duty in surgical procedure",
+          "Causation established - surgical negligence contributed to outcome"
+        ],
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Surgical negligence",
+        "counterfactual": "Proper surgical technique could have prevented complications",
+        "evidence_ids": [
+          "E002",
+          "E003"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "June 27, 2023",
+        "event": "Patient admitted to OSF for nonhealing wound",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "July 3, 2023",
+        "event": "Surgical procedure with anesthesia",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "July 5, 2023",
+        "event": "Patient died following a code blue",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "timestamp": "June 27, 2023",
+        "event": "Patient admitted to OSF for nonhealing wound",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "July 3, 2023",
+        "event": "Surgical procedure performed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "July 5, 2023",
+        "event": "Patient died following a code blue",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [],
+    "treatments": [
+      {
+        "treatment": "Surgical procedure",
+        "date": "July 3, 2023",
+        "provider": null,
+        "outcome": "Laceration of palate and uvula",
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "treatment": "Surgical intervention",
+        "date": "July 3, 2023",
+        "provider": null,
+        "outcome": "Complications occurred",
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Death following code blue",
+        "when_occurred": "July 5, 2023",
+        "severity": "Fatal",
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "complication": "Death following code blue",
+        "when_occurred": "July 5, 2023",
+        "severity": "Fatal",
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Negligence in airway management during anesthesia",
+        "against": "Defendant anesthesiologists",
+        "found_proven": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "allegation": "Negligence during surgical procedure",
+        "against": "Defendant surgeons",
+        "found_proven": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Negligence in surgical technique",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "TREATMENT_PROCEDURE_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.016366612111292964,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 09:47:58.703017",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

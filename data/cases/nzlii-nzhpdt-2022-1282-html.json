@@ -1,0 +1,483 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "nzlii-nzhpdt-2022-1282-html",
+  "source": "BAILII",
+  "jurisdiction": "UK",
+  "court": "Unknown",
+  "decision_date": "2022-12-16",
+  "url": "https://example.com/nzlii-nzhpdt-2022-1282-html",
+  "case_name": "Professional Conduct Committee appointed by the Dental Council of New Zealand v Subramani [2022] NZHPDT 1282 (16 December 2022)",
+  "neutral_citation": "[2005] EWHC 2143",
+  "clinical_domain": "ONCOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Professional Conduct Committee appointed by the Dental Council of New Zealand v Subramani [2022] NZHPDT 1282 (16 December 2022). Medical malpractice case involving oncology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "The clinical records do not record the requirement information contained in the NZDC guidelines on sedation which are: (i) Initial assessment findings (ii) The patient\u2019s written informed consent",
+      "paragraph_ref": "116",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "There is a note about a root filling, but no tooth nomenclature, but it is assumed it is tooth 43. These notes are exactly the same notes as another patient ([G] discussed below).",
+      "paragraph_ref": "166",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "There was a preoperative x-ray of tooth 26 but Dr Subramani had not recorded any detail in his notes as to why this was taken, or any findings of the x-ray;",
+      "paragraph_ref": "170",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "WITNESS_STATEMENT",
+      "text": "If he had told her she had an option as to when she had the treatment, she would not have had it done before she saw the periodontist.",
+      "paragraph_ref": "204",
+      "speaker": "Patient Ms [J]"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "LEGAL_FINDING",
+      "text": "The practitioner has been guilty of professional misconduct because of any act or omission that, in the judgment of the Tribunal, amounts to malpractice or negligence in relation to the scope of practice.",
+      "paragraph_ref": "234",
+      "speaker": "Tribunal"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "LEGAL_FINDING",
+      "text": "The Tribunal must assess whether the departure from acceptable standards has been significant enough to warrant a finding of professional misconduct against the practitioner.",
+      "paragraph_ref": "246",
+      "speaker": "Tribunal"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr Subramani significantly breached the trust of his patients who sought dental treatment for an array of reasons, some requiring urgent treatment following an accident.",
+      "paragraph_ref": "506",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "LEGAL_FINDING",
+      "text": "The conduct alleged above either separately or cumulatively amounts to professional misconduct pursuant to section 100(1)(a) and/or section 100(1)(b) of the Act.",
+      "paragraph_ref": "891",
+      "speaker": "Tribunal"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "unknown",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Dental issues requiring treatment",
+      "history_of_present_illness": "Patient presented for dental treatment including root canal and fillings.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "dental": "Examination mentioned but findings not specified"
+        }
+      },
+      "initial_working_problem": "Dental issues requiring intervention",
+      "known_constraints": null,
+      "initial_differential": [
+        "Infected tooth",
+        "Tooth decay"
+      ],
+      "critical_findings": [
+        "Inadequate documentation of dental procedures"
+      ],
+      "urgency_level": "ROUTINE",
+      "evidence_ids": [
+        "E001",
+        "E002",
+        "E003"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "Preoperative X-ray",
+        "description": "X-ray of tooth 26",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": null,
+          "detailed_findings": "Imaging performed but findings not detailed in judgment",
+          "clinical_significance": null,
+          "decision_impact": null,
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Dental Consultation",
+        "description": "Patient presents for dental treatment",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Initial examination and treatment planning",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient requires dental treatment including fillings",
+        "prompt": "What should be documented in the patient's dental records?",
+        "action_type": "DOCUMENT_CONSENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Document detailed treatment plan and obtain informed consent",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Ensures patient is informed and consents to treatment"
+          },
+          {
+            "option_id": "B",
+            "description": "Proceed with treatment without detailed documentation",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Lack of documentation can lead to misunderstandings and legal issues"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant did not adequately document treatment plan or obtain informed consent",
+          "reasoning_stated": "Defendant failed to meet documentation standards",
+          "evidence_ids": [
+            "E001",
+            "E005"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Detailed documentation and informed consent should have been obtained",
+          "standard_of_care_basis": "Professional guidelines require thorough documentation",
+          "evidence_ids": [
+            "E001",
+            "E005"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to document adequately is a breach of professional standards",
+          "what_should_have_happened": "Detailed records and informed consent should have been obtained",
+          "legal_standard_applied": "Professional misconduct due to inadequate documentation",
+          "evidence_ids": [
+            "E001",
+            "E005",
+            "E006"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient received inadequate dental treatment documentation",
+        "severity": "Not documented in judgment",
+        "long_term_effects": "Potential for future dental complications due to inadequate documentation",
+        "evidence_ids": [
+          "E007",
+          "E008"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Breach of duty in failing to document treatment adequately",
+          "Professional misconduct established"
+        ],
+        "evidence_ids": [
+          "E005",
+          "E006",
+          "E008"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to document dental treatment adequately",
+        "counterfactual": "Proper documentation would have ensured informed consent and appropriate treatment",
+        "evidence_ids": [
+          "E005",
+          "E006",
+          "E007"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Patient presented for dental treatment",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Patient presented for dental treatment",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "1 September 2018",
+        "event": "Dental treatment provided to Mr [A]",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Preoperative X-ray of tooth 26",
+        "date": "Not documented in judgment",
+        "result": "Not documented in judgment",
+        "interpretation": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "test_name": "Preoperative X-ray",
+        "date": "Date not specified in judgment",
+        "result": "Not documented in judgment",
+        "interpretation": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "test_name": "Preoperative X-ray",
+        "date": "Not documented in judgment",
+        "result": "Not documented in judgment",
+        "interpretation": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Inadequate dental treatment",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": false,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "diagnosis": "Inadequate documentation and informed consent",
+        "when_made": "Date not specified in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E001",
+          "E005"
+        ]
+      },
+      {
+        "diagnosis": "Bruxism",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Dental procedures including root canal and fillings",
+        "date": "Not documented in judgment",
+        "provider": null,
+        "outcome": "Inadequate treatment",
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "treatment": "Dental fillings and other procedures",
+        "date": "Date not specified in judgment",
+        "provider": null,
+        "outcome": "Inadequate documentation led to legal issues",
+        "evidence_ids": [
+          "E001",
+          "E005"
+        ]
+      },
+      {
+        "treatment": "Dental fillings",
+        "date": "Not documented in judgment",
+        "provider": null,
+        "outcome": "Inadequate documentation",
+        "evidence_ids": [
+          "E001",
+          "E002"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Potential for ongoing dental issues",
+        "when_occurred": "Not documented in judgment",
+        "severity": "Moderate",
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      {
+        "complication": "Need for extensive remedial dental work",
+        "when_occurred": "Date not specified in judgment",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E511",
+          "E512"
+        ]
+      },
+      {
+        "complication": "Inadequate documentation",
+        "when_occurred": "Not documented in judgment",
+        "severity": "Not documented in judgment",
+        "evidence_ids": [
+          "E001",
+          "E002"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to document informed consent",
+        "against": "Dr Subramani",
+        "found_proven": true,
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "allegation": "Failure to document treatment and obtain informed consent",
+        "against": "Dr Subramani",
+        "found_proven": true,
+        "evidence_ids": [
+          "E001",
+          "E005"
+        ]
+      },
+      {
+        "allegation": "Failure to document treatment adequately",
+        "against": "Dr Subramani",
+        "found_proven": true,
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care by not documenting informed consent",
+        "legal_significance": "Informed Consent Practice Standard not satisfied",
+        "evidence_ids": [
+          "E008"
+        ]
+      },
+      {
+        "finding": "Professional misconduct due to inadequate documentation",
+        "legal_significance": "Breach of professional standards",
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      },
+      {
+        "finding": "Professional misconduct due to inadequate documentation",
+        "legal_significance": "Breach of professional standards",
+        "evidence_ids": [
+          "E005",
+          "E006",
+          "E008"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DOCUMENTATION",
+      "INFORMED_CONSENT"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.008968609865470852,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 08:17:58.996927",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

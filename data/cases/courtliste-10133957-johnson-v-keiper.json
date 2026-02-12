@@ -1,0 +1,344 @@
+{
+  "case_id": "courtliste-10133957-johnson-v-keiper",
+  "source": "courtlistener",
+  "source_url": "local://courtliste-10133957-johnson-v-keiper.html",
+  "jurisdiction": "US",
+  "extraction_metadata": {
+    "version": "batch_api_v1",
+    "model": "gpt-4o",
+    "extracted_at": "2026-01-21T17:56:57.950641",
+    "simulation_extracted_at": "2026-01-21T18:25:07.020556",
+    "simulation_model": "gpt-4o"
+  },
+  "case_metadata": {
+    "case_name": "Johnson v. Keiper",
+    "citation": "308 Or App 672 (2021)",
+    "court": "Oregon Court of Appeals",
+    "date": "November 8, 2019"
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "On May 27, 2015, Keiper performed on plaintiff L4-5 microlaminotomies and medial facetectomies, resection of bilateral synovial cysts, and, particularly relevant to this appeal, an operation that fused two of plaintiff’s vertebrae with a titanium cage and bilateral pedicle screws.",
+      "paragraph_ref": "6",
+      "paragraph_starts_with": "[6] PC and Spine Surgery",
+      "summary": "Keiper performed spinal surgery on May 27, 2015, including vertebrae fusion.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "When plaintiff awoke from surgery, he did not have the strength to raise his left foot. Plaintiff was told that he had 'foot drop,' and Peterson, Keiper’s physician assistant, reassured plaintiff that the foot drop would soon get better.",
+      "paragraph_ref": "6",
+      "paragraph_starts_with": "[6] PC and Spine Surgery",
+      "summary": "Post-surgery, plaintiff experienced foot drop and was reassured by physician assistant.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "EXPERT_TESTIMONY",
+      "verbatim_quote": "Dietrich testified that the pedicle screw was responsible for damaging the L4 and L5 nerve roots. He further testified that, the sooner that the source of an injury to a nerve root is removed, the more likely that the injury will abate.",
+      "paragraph_ref": "9",
+      "paragraph_starts_with": "[9] surgery skillfully by",
+      "summary": "Expert Dietrich testified that the pedicle screw damaged nerve roots and early removal could have improved the condition.",
+      "speaker": "Expert witness"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "LEGAL_FINDING",
+      "verbatim_quote": "The trial court erred in granting a directed verdict on the ground that plaintiff had not proven causation.",
+      "paragraph_ref": "32",
+      "paragraph_starts_with": "[32] In sum, the trial",
+      "summary": "Trial court's directed verdict on causation was erroneous.",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "COURT_REASONING",
+      "verbatim_quote": "A jury could have found that a pedicle screw left in a position to impinge a nerve root is likely to cause lasting injury, and, given Dietrich’s testimony and the record, plaintiff provided proof of the injury caused by defendants’ negligence with sufficient certainty for plaintiff’s claim to reach the jury.",
+      "paragraph_ref": "21",
+      "paragraph_starts_with": "[21] circumstances permitted.",
+      "summary": "Court reasoned that evidence was sufficient for jury consideration.",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "EXPERT_TESTIMONY",
+      "verbatim_quote": "Dietrich concluded his testimony by stating that defendants’ failure to obtain appropriate imaging studies at the time of plaintiff’s surgery to ascertain whether a pedicle screw was misplaced and was damaging the nerve root fell below the standard of care.",
+      "paragraph_ref": "11",
+      "paragraph_starts_with": "[11] drop was due to",
+      "summary": "Dietrich testified that failure to obtain imaging studies fell below standard of care.",
+      "speaker": "Expert witness"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "LEGAL_FINDING",
+      "verbatim_quote": "Reversed and remanded.",
+      "paragraph_ref": "33",
+      "paragraph_starts_with": "[33] the placement of",
+      "summary": "Case reversed and remanded.",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "verdict_detected": {
+    "outcome": "NO_LIABILITY",
+    "key_phrase": "Reversed and remanded.",
+    "paragraph_ref": "33"
+  },
+  "extraction_notes": {
+    "total_paragraphs_analyzed": 34,
+    "key_sections_found": [
+      "Background",
+      "Analysis",
+      "Conclusion"
+    ],
+    "gaps_identified": [
+      "No specific lab values mentioned",
+      "Timing of events unclear"
+    ]
+  },
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "Not documented in judgment",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Foot drop post spinal surgery",
+      "history_of_present_illness": "Patient underwent spinal surgery including vertebrae fusion with a titanium cage and bilateral pedicle screws.",
+      "past_medical_history": "Not documented in judgment",
+      "medications": "Not documented in judgment",
+      "allergies": "Not documented in judgment",
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment"
+        },
+        "focused_exam": {
+          "neurological": "Foot drop observed post-surgery"
+        }
+      },
+      "initial_working_problem": "Post-operative complication - foot drop",
+      "initial_differential": [
+        "nerve root impingement",
+        "post-surgical inflammation"
+      ],
+      "critical_findings": [
+        "Foot drop post-surgery"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "Post-operative imaging",
+        "description": "Imaging to check placement of pedicle screws",
+        "available_phase": "postop",
+        "reveal": {
+          "result_summary": "Not performed",
+          "clinical_significance": "Could have identified misplaced pedicle screw",
+          "decision_impact": "Failure to perform imaging delayed identification of nerve root impingement"
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "postop",
+        "clinical_context": "Patient with foot drop post spinal surgery",
+        "prompt": "What should be the next step in management?",
+        "action_type": "ORDER_TEST",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Order post-operative imaging to check screw placement",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Imaging would confirm or rule out screw impingement on nerve root"
+          },
+          {
+            "option_id": "B",
+            "description": "Reassure patient and monitor",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Assumed foot drop would resolve without further investigation"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant reassured patient and did not order imaging",
+          "reasoning_stated": "Believed foot drop would resolve",
+          "evidence_ids": [
+            "E002",
+            "E006"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Post-operative imaging should have been ordered",
+          "standard_of_care_basis": "Expert testimony indicated imaging was necessary",
+          "evidence_ids": [
+            "E006"
+          ]
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to order imaging fell below standard of care",
+          "what_should_have_happened": "Imaging should have been performed to assess screw placement",
+          "legal_standard_applied": "Bolam test",
+          "evidence_ids": [
+            "E006"
+          ]
+        },
+        "is_malpractice_point": true
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Surgical Presentation",
+        "description": "Patient presents for spinal surgery",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Spinal surgery performed",
+            "timestamp": "May 27, 2015",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "postop",
+        "name": "Post-operative Phase",
+        "description": "Patient experiences complications post-surgery",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Patient develops foot drop",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient experienced lasting foot drop due to nerve root impingement",
+        "severity": "PERMANENT_MODERATE_DISABILITY",
+        "long_term_effects": "Chronic foot drop",
+        "evidence_ids": [
+          "E003",
+          "E005"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Breach of duty in failing to order imaging",
+          "Causation established - earlier imaging could have prevented lasting injury"
+        ],
+        "evidence_ids": [
+          "E004",
+          "E005"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to order post-operative imaging",
+        "counterfactual": "Imaging would have identified screw impingement",
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "May 27, 2015",
+        "event": "Spinal surgery performed",
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [
+      {
+        "diagnosis": "Foot drop due to nerve root impingement",
+        "when_made": "Post-surgery",
+        "correct": true,
+        "evidence_ids": [
+          "E002",
+          "E003"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Reassurance and monitoring",
+        "date": "Post-surgery",
+        "outcome": "Foot drop persisted",
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Foot drop",
+        "when_occurred": "Post-surgery",
+        "severity": "Moderate",
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to order post-operative imaging",
+        "against": "Defendant surgeon",
+        "found_proven": true,
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ]
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "diagnosis_subtypes": [
+      "DELAYED_DIAGNOSIS",
+      "FAILURE_TO_INVESTIGATE"
+    ]
+  }
+}

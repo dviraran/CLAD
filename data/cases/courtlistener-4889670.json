@@ -1,0 +1,358 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-4889670",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "0048-03-19",
+  "url": "https://example.com/courtlistener-4889670",
+  "case_name": "Dr. Lawrence Broder, M.D. and Round Rock Medical Aesthetics & Urgent Care PLLC D/B/A Beleza Medspa v. Nexstar Broadcast Group, Inc. KXAN-TV And Jody Barr",
+  "neutral_citation": null,
+  "clinical_domain": "SURGERY_ORTHOPAEDIC",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Dr. Lawrence Broder, M.D. and Round Rock Medical Aesthetics & Urgent Care PLLC D/B/A Beleza Medspa v. Nexstar Broadcast Group, Inc. KXAN-TV And Jody Barr. Medical malpractice case involving surgery orthopaedic.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Appellants Dr. Lawrence Broder, M.D. and Round Rock Medical Aesthetics & Urgent Care PLLC d/b/a Beleza Medspa sued appellees Nexstar Broadcast Group, Inc., KXAN-TV, and KXAN investigative reporter Jody Barr for defamation per se, defamation per quod, business disparagement, tortious interference with business relations, and tortious interference with prospective economic advantage.",
+      "paragraph_ref": "8",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "The lawsuit arose out of reporting about complaints filed against Broder with the Texas Medical Board (TMB) and the death of one of appellants\u2019 patients.",
+      "paragraph_ref": "11",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "LEGAL_FINDING",
+      "text": "The trial court signed an order dismissing appellants\u2019 claims and sustaining most of appellees\u2019 objections.",
+      "paragraph_ref": "17",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "This proceeding arises out of the July 2017 death of Caitlin Duvall-Hammer following plastic surgery performed by Broder at Beleza Medspa and TMB investigations that eventually led to two complaints filed in the State Office of Administrative Hearings (SOAH).",
+      "paragraph_ref": "60",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "Barr\u2019s news story, aired on KXAN in mid-February 2018 and posted online, opened with a summary of Caitlin\u2019s decision to use Broder for her cosmetic surgery and her death four days later.",
+      "paragraph_ref": "67",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "The news report stated that Caitlin\u2019s autopsy report, which took four months to complete, determined that she 'developed a toxic shock like-syndrome for which she was hospitalized,' that she died four days after her procedure '[d]espite aggressive therapy,' and that she died 'as a result of complications of a cosmetic surgical procedure,' but that the autopsy report did not 'indicate how the infection happened or where it could have come from.'",
+      "paragraph_ref": "70",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "LEGAL_FINDING",
+      "text": "We therefore affirm the trial court\u2019s orders dismissing appellants\u2019 claims under the TCPA and awarding attorney\u2019s fees to appellees.",
+      "paragraph_ref": "700",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Not documented in judgment",
+      "history_of_present_illness": "Caitlin Duvall-Hammer underwent cosmetic surgery and developed complications post-operatively.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "system": "Examination mentioned but findings not specified"
+        }
+      },
+      "initial_working_problem": "Post-operative complications following cosmetic surgery",
+      "known_constraints": null,
+      "initial_differential": [
+        "Infection",
+        "Fat necrosis"
+      ],
+      "critical_findings": [
+        "Toxic shock-like syndrome",
+        "Sepsis"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E004",
+        "E006",
+        "E070"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "LAB",
+        "name": "Blood Culture",
+        "description": "To check for post-operative infection",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not documented in judgment",
+          "detailed_findings": null,
+          "clinical_significance": "Not documented in judgment",
+          "decision_impact": "Not documented in judgment",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": []
+      },
+      {
+        "request_id": "R002",
+        "type": "IMAGING",
+        "name": "CT Scan",
+        "description": "To assess for surgical complications",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": null,
+          "detailed_findings": "Imaging performed but findings not detailed in judgment",
+          "clinical_significance": null,
+          "decision_impact": null,
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": []
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with severe post-operative pain",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Patient complains of severe pain",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E424"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient presented with severe post-operative pain",
+        "prompt": "What should be the next step in management?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Admit to hospital for observation and further testing",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Ensures close monitoring and timely intervention"
+          },
+          {
+            "option_id": "B",
+            "description": "Send home with additional pain medication",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Inadequate for potential complications"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Patient was sent home with additional pain medication",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E423",
+            "E424"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Patient should have been admitted for observation",
+          "standard_of_care_basis": "Expert evidence suggested hospital admission",
+          "evidence_ids": [
+            "E004",
+            "E423"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to admit patient led to delayed intervention",
+          "what_should_have_happened": "Patient should have been monitored in a hospital setting",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E004",
+            "E423"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient developed complications post-surgery",
+        "severity": "PERMANENT_MODERATE_DISABILITY",
+        "long_term_effects": "Not documented in judgment",
+        "evidence_ids": [
+          "E004",
+          "E473"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "None",
+        "key_findings": [
+          "Report was substantially true",
+          "No defamatory intent found"
+        ],
+        "evidence_ids": [
+          "E485",
+          "E486"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Not applicable",
+        "counterfactual": "Not applicable",
+        "evidence_ids": [
+          "E485",
+          "E486"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Patient complains of severe pain post-surgery",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E424"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Not documented in judgment",
+        "date": "Not documented in judgment",
+        "result": "Not documented in judgment",
+        "interpretation": null,
+        "evidence_ids": []
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Complications post-surgery",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E473"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Not documented in judgment",
+        "date": "Not documented in judgment",
+        "provider": null,
+        "outcome": "Not documented in judgment",
+        "evidence_ids": []
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Severe pain post-surgery",
+        "when_occurred": "Not documented in judgment",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E424"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Deficient care leading to patient's death",
+        "against": "Dr. Broder",
+        "found_proven": false,
+        "evidence_ids": [
+          "E485",
+          "E486"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "No defamatory intent in report",
+        "legal_significance": "Report was substantially true",
+        "evidence_ids": [
+          "E485",
+          "E486"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.009929078014184398,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 07:41:49.086952",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

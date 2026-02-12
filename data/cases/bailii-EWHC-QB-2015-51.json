@@ -1,0 +1,558 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "bailii-EWHC-QB-2015-51",
+  "source": "BAILII",
+  "jurisdiction": "UK",
+  "court": "Unknown",
+  "decision_date": "2015-01-16",
+  "url": "https://example.com/bailii-EWHC-QB-2015-51",
+  "case_name": "ST v Maidstone and Tunbridge Wells NHS Trust [2015] EWHC 51 (QB) (16 January 2015)",
+  "neutral_citation": "[2015] EWHC 51",
+  "clinical_domain": "OBSTETRICS_GYNAECOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Medical malpractice case involving obstetrics gynaecology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "The Claimant suffers from at least one, and probably two, congenital haematological conditions.",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "On the evening of 24 November 2004, the Claimant was unwell and was taken to hospital where blood samples were taken.",
+      "paragraph_ref": "14",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "The Defendant has admitted that, by failing to admit the Claimant to hospital on the evening of 24 November and by delaying performance of the blood transfusion until mid-morning the following day, it was negligent.",
+      "paragraph_ref": "15",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "On 27 November 2004, the Claimant suffered seizures. He was found to have had a series of strokes, as a result of which he suffered brain damage and has been left with severe and permanent disability.",
+      "paragraph_ref": "16",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr 'Kling' Chong gave evidence for the Claimant. He is a Consultant in Paediatric Neuroradiology at Great Ormond Street Hospital for Children, London.",
+      "paragraph_ref": "27",
+      "speaker": "Expert witness"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr Wellesley St. Clair Forbes who, until his retirement from NHS practice in May 2009, worked as a Consultant Neuroradiologist at Salford Royal Hospitals NHS Foundation Trust.",
+      "paragraph_ref": "27",
+      "speaker": "Expert witness"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "COURT_REASONING",
+      "text": "I found the Claimant's Neuroradiologist, Dr Chong, to be a fair, balanced and impressive witness.",
+      "paragraph_ref": "32",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "COURT_REASONING",
+      "text": "Dr Becker was plainly a very experienced clinician. However, he relied on the 1992 edition (rather than the most recent 2011 edition) of an authoritative Textbook.",
+      "paragraph_ref": "33",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "COURT_REASONING",
+      "text": "Dr Telfer's evidence was in some respects unsatisfactory.",
+      "paragraph_ref": "34",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "COURT_REASONING",
+      "text": "Dr O'Callaghan's evidence was that there are few proven risk factors for stroke in children.",
+      "paragraph_ref": "320",
+      "speaker": "Expert witness"
+    },
+    {
+      "evidence_id": "E011",
+      "type": "LEGAL_FINDING",
+      "text": "I am satisfied, on a balance of probabilities, that the primary cause of the Claimant's strokes was a focal cerebral arteriopathy which was in turn caused by the URTI from which he was suffering.",
+      "paragraph_ref": "316",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E012",
+      "type": "LEGAL_FINDING",
+      "text": "The Claimant has not succeeded in establishing his primary case.",
+      "paragraph_ref": "309",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E013",
+      "type": "LEGAL_FINDING",
+      "text": "The Claimant's secondary case must fail.",
+      "paragraph_ref": "324",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "2.5 years",
+        "sex": "male",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Unwell with noticeable jaundice, tiredness, and complaints of pain",
+      "history_of_present_illness": "The patient was unwell with a cough and cold, became tired, lost appetite, and started to become noticeably jaundiced a few days before 24 November 2004.",
+      "past_medical_history": [
+        "Congenital hereditary spherocytosis",
+        "Congenital pyruvate kinase deficiency"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "160/min on 24 November 2004",
+          "respiratory_rate": null,
+          "temperature": "36\u00ba on 25 November 2004",
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "general": "Pale, jaundiced, lethargic",
+          "abdomen": "Tummy ache",
+          "neurological": "Drowsy, irritable"
+        }
+      },
+      "initial_working_problem": "Severe anaemia with possible dehydration",
+      "known_constraints": null,
+      "initial_differential": [
+        "Severe anaemia",
+        "Dehydration"
+      ],
+      "critical_findings": [
+        "Very low Hb level",
+        "High bilirubin level"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002",
+        "E004"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "LAB",
+        "name": "Full Blood Count",
+        "description": "Complete blood count with differential",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Hb level 3.3, very low",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates severe anaemia",
+          "decision_impact": "Should prompt immediate transfusion",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "LAB",
+        "name": "Bilirubin Level",
+        "description": "Measurement of bilirubin in the blood",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Bilirubin level 337 micromol/l, very high",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates significant jaundice",
+          "decision_impact": "Supports need for urgent intervention",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "request_id": "R003",
+        "type": "IMAGING",
+        "name": "CT Scan of Brain",
+        "description": "CT scan to assess for neurological complications",
+        "available_phase": "decision",
+        "reveal": {
+          "result_summary": null,
+          "detailed_findings": "Imaging performed but findings not detailed in judgment",
+          "clinical_significance": "Necessary to assess for stroke",
+          "decision_impact": "Should guide further neurological management",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents to hospital with severe symptoms",
+        "duration": "Evening of 24 November 2004",
+        "key_events": [
+          {
+            "event": "Blood samples taken, very low Hb level noted",
+            "timestamp": "24 November 2004",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Hospital Workup",
+        "description": "Patient assessed and managed in hospital",
+        "duration": "25-26 November 2004",
+        "key_events": [
+          {
+            "event": "Delayed blood transfusion started",
+            "timestamp": "25 November 2004 11:20",
+            "evidence_ids": [
+              "E002"
+            ]
+          },
+          {
+            "event": "Second transfusion with Frusemide administered",
+            "timestamp": "26 November 2004",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "decision",
+        "name": "Critical Decision Phase",
+        "description": "Decisions regarding transfusion and fluid management",
+        "duration": "24-25 November 2004",
+        "key_events": [
+          {
+            "event": "Decision to delay transfusion",
+            "timestamp": "24 November 2004",
+            "evidence_ids": [
+              "E003"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient in hospital with severe anaemia and dehydration",
+        "prompt": "What should be the immediate management for severe anaemia?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Immediate blood transfusion",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Urgent transfusion needed due to very low Hb level"
+          },
+          {
+            "option_id": "B",
+            "description": "Delay transfusion until the next day",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Delay not justified given the severity of anaemia"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Transfusion delayed until the next day",
+          "reasoning_stated": "Hospital practice not to transfuse after 22.00hrs",
+          "evidence_ids": [
+            "E003"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Immediate transfusion should have been performed",
+          "standard_of_care_basis": "Expert evidence indicated urgency due to low Hb",
+          "evidence_ids": [
+            "E003"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Delay in transfusion led to worsening condition",
+          "what_should_have_happened": "Immediate transfusion to prevent complications",
+          "legal_standard_applied": "Bolam test",
+          "evidence_ids": [
+            "E003"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      },
+      {
+        "decision_id": "D002",
+        "phase_id": "workup",
+        "clinical_context": "Patient with severe anaemia and dehydration",
+        "prompt": "Should IV fluids be administered?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Administer IV fluids immediately",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Necessary to address dehydration"
+          },
+          {
+            "option_id": "B",
+            "description": "Do not administer IV fluids",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Failure to address dehydration"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "IV fluids were not administered",
+          "reasoning_stated": "Decision not documented",
+          "evidence_ids": [
+            "E003"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "IV fluids should have been administered",
+          "standard_of_care_basis": "Expert evidence indicated dehydration",
+          "evidence_ids": [
+            "E003"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to administer IV fluids contributed to dehydration",
+          "what_should_have_happened": "IV fluids should have been given to manage dehydration",
+          "legal_standard_applied": "Bolam test",
+          "evidence_ids": [
+            "E003"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient suffered seizures and strokes, resulting in severe and permanent disability",
+        "severity": "PERMANENT_SEVERE_DISABILITY",
+        "long_term_effects": "Severe brain damage, permanent disability",
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Breach of duty in delaying transfusion and failing to administer IV fluids",
+          "Causation established between delay and strokes"
+        ],
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to promptly transfuse and manage dehydration",
+        "counterfactual": "Immediate transfusion and fluid management could have prevented strokes",
+        "evidence_ids": [
+          "E003",
+          "E004"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "24 November 2004",
+        "event": "Patient presents to hospital with severe anaemia",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "25 November 2004 11:20",
+        "event": "Delayed blood transfusion started",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "27 November 2004",
+        "event": "Patient suffered seizures and strokes",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Full Blood Count",
+        "date": "24 November 2004",
+        "result": "Hb level 3.3",
+        "interpretation": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "test_name": "Bilirubin Level",
+        "date": "25 November 2004",
+        "result": "Bilirubin level 337 micromol/l",
+        "interpretation": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Severe anaemia",
+        "when_made": "24 November 2004",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "diagnosis": "Strokes",
+        "when_made": "27 November 2004",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Blood transfusion",
+        "date": "25 November 2004",
+        "provider": null,
+        "outcome": "Delayed, contributing to complications",
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Seizures and strokes",
+        "when_occurred": "27 November 2004",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to promptly transfuse and manage dehydration",
+        "against": "Defendant hospital",
+        "found_proven": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.04,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-21 19:25:42.574690",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

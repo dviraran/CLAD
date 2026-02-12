@@ -1,0 +1,404 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtliste-9389435-gary-l-marder-do-v-roberta-mueller",
+  "source": "BAILII",
+  "jurisdiction": "UK",
+  "court": "Unknown",
+  "decision_date": "2023-04-05",
+  "url": "https://example.com/courtliste-9389435-gary-l-marder-do-v-roberta-mueller",
+  "case_name": "GARY L. MARDER, D.O. v. ROBERTA MUELLER",
+  "neutral_citation": null,
+  "clinical_domain": "ONCOLOGY",
+  "outcome_severity": "TEMPORARY_HARM",
+  "summary": {
+    "brief": "GARY L. MARDER, D.O. v. ROBERTA MUELLER. Medical malpractice case involving oncology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Patient filed the underlying action in connection with Doctor\u2019s treatment of a lesion on her hand.",
+      "paragraph_ref": "11",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Another physician diagnosed this lesion as squamous cell carcinoma following a biopsy, then made a referral to Doctor for treatment.",
+      "paragraph_ref": "11",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "Patient opted for radiation. As part of obtaining Patient\u2019s informed consent, Doctor told her that while surgery was an option it would likely impact Patient\u2019s ability to maintain her current lifestyle as an avid golfer.",
+      "paragraph_ref": "11",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "Doctor allegedly prescribed this protocol to all patients undergoing radiation therapy.",
+      "paragraph_ref": "11",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "EXPERT_TESTIMONY",
+      "text": "an attestation by her expert stating Doctor\u2019s treatment fell \u201cway outside\u201d the standard of care",
+      "paragraph_ref": "12",
+      "speaker": "Patient's expert"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "LEGAL_FINDING",
+      "text": "We reverse because Patient failed to satisfy the requirements of section 768.72(1), Florida Statutes (2018).",
+      "paragraph_ref": "10",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "COURT_REASONING",
+      "text": "Patient did not proffer sufficient evidence to demonstrate that Doctor\u2019s conduct amounted to intentional misconduct or gross negligence",
+      "paragraph_ref": "20",
+      "speaker": "Court reasoning"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "LEGAL_FINDING",
+      "text": "Patient\u2019s proffered evidence provided no reasonable basis for recovery of punitive damages",
+      "paragraph_ref": "20",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "EXPERT_TESTIMONY",
+      "text": "The expert opined that radiation should be done over an extended time period to not expose a patient to excessive radiation",
+      "paragraph_ref": "22",
+      "speaker": "Patient's expert"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Doctor\u2019s radiation protocol fell \u201cway outside\u201d the standard of care, and he was not aware of any medical professional or peer-reviewed medical journal that condoned Doctor\u2019s treatment plan.",
+      "paragraph_ref": "22",
+      "speaker": "Patient's expert"
+    },
+    {
+      "evidence_id": "E011",
+      "type": "WITNESS_STATEMENT",
+      "text": "Doctor\u2019s deposition testimony indicated he had personally lectured on his radiation treatment protocol to other dermatologists",
+      "paragraph_ref": "23",
+      "speaker": "Doctor"
+    },
+    {
+      "evidence_id": "E012",
+      "type": "LEGAL_FINDING",
+      "text": "Patient did not proffer anything to suggest that Doctor knew his treatment plan for Patient was unnecessary or likely to cause serious injury",
+      "paragraph_ref": "26",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E013",
+      "type": "LEGAL_FINDING",
+      "text": "Patient did not provide a link between either Doctor\u2019s billing practices with other patients or his interference in an unrelated criminal healthcare investigation with any improper motivation for prescribing radiation treatment for Patient.",
+      "paragraph_ref": "29",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E014",
+      "type": "LEGAL_FINDING",
+      "text": "Based on the foregoing, we find Patient\u2019s request to amend to state a claim for punitive damages regarding Patient\u2019s alleged improper radiation treatment falls short of satisfying the standard required to assert such a claim.",
+      "paragraph_ref": "31",
+      "speaker": "Court finding"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Avid golfer"
+      },
+      "chief_complaint": "Lesion on hand",
+      "history_of_present_illness": "Patient presented with a lesion on her hand, which was diagnosed as squamous cell carcinoma by another physician following a biopsy.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "hand": "Lesion present, diagnosed as squamous cell carcinoma"
+        }
+      },
+      "initial_working_problem": "Lesion on hand diagnosed as squamous cell carcinoma",
+      "known_constraints": null,
+      "initial_differential": [
+        "squamous cell carcinoma"
+      ],
+      "critical_findings": [
+        "Lesion on hand"
+      ],
+      "urgency_level": "Not documented in judgment",
+      "evidence_ids": [
+        "E001",
+        "E002"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSULT_NOTE",
+        "name": "Oncology Consultation",
+        "description": "Consultation with oncologist regarding treatment options for squamous cell carcinoma",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Patient opted for radiation therapy after discussion of treatment options",
+          "detailed_findings": null,
+          "clinical_significance": "Informed consent obtained for radiation therapy",
+          "decision_impact": "Patient chose radiation over surgery to maintain lifestyle",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with a lesion on her hand",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Lesion diagnosed as squamous cell carcinoma",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "decision",
+        "name": "Radiation Treatment",
+        "description": "Patient undergoes radiation therapy",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Radiation therapy initiated",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E003",
+              "E004"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "decision",
+        "clinical_context": "Patient with squamous cell carcinoma on hand",
+        "prompt": "What treatment protocol should be followed for radiation therapy?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Standard radiation protocol over an extended period",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Reduces risk of excessive radiation exposure"
+          },
+          {
+            "option_id": "B",
+            "description": "Radiation twice daily with treatments as little as forty-five minutes apart",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Protocol not recognized as acceptable in the medical community"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant used a non-standard radiation protocol",
+          "reasoning_stated": "Defendant believed it was appropriate despite lack of medical community support",
+          "evidence_ids": [
+            "E004",
+            "E010"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Standard radiation protocol should have been used",
+          "standard_of_care_basis": "Expert evidence established standard protocol",
+          "evidence_ids": [
+            "E009",
+            "E010"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Protocol fell 'way outside' the standard of care",
+          "what_should_have_happened": "Standard protocol should have been followed",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E005",
+            "E009",
+            "E010"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Increased risk of cancer due to radiation protocol",
+        "severity": "Potential long-term risk",
+        "long_term_effects": "Increased lifetime cancer risk",
+        "evidence_ids": [
+          "E012",
+          "E026"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "None",
+        "key_findings": [
+          "Patient failed to satisfy requirements for punitive damages",
+          "Doctor's conduct did not amount to intentional misconduct or gross negligence"
+        ],
+        "evidence_ids": [
+          "E006",
+          "E007",
+          "E008"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Use of non-standard radiation protocol",
+        "counterfactual": "Standard protocol would have reduced risk",
+        "evidence_ids": [
+          "E005",
+          "E009",
+          "E010"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Lesion diagnosed as squamous cell carcinoma",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [
+      {
+        "diagnosis": "Squamous cell carcinoma",
+        "when_made": "Date not specified in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Radiation therapy",
+        "date": "Date not specified in judgment",
+        "provider": null,
+        "outcome": "Increased risk of cancer",
+        "evidence_ids": [
+          "E003",
+          "E004"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Increased lifetime cancer risk",
+        "when_occurred": "Not documented in judgment",
+        "severity": "Potential long-term risk",
+        "evidence_ids": [
+          "E012"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Improper radiation protocol",
+        "against": "Defendant doctor",
+        "found_proven": false,
+        "evidence_ids": [
+          "E006",
+          "E007"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Patient failed to satisfy requirements for punitive damages",
+        "legal_significance": "No liability found",
+        "evidence_ids": [
+          "E006",
+          "E007",
+          "E008"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "TREATMENT_PROCEDURE_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.3888888888888889,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 10:09:01.734946",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

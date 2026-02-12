@@ -1,0 +1,390 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "bailii-qb-2021-425-html",
+  "source": "BAILII",
+  "jurisdiction": "UK",
+  "court": "Unknown",
+  "decision_date": "2021-02-25",
+  "url": "https://example.com/bailii-qb-2021-425-html",
+  "case_name": "Grimshaw v Hudson [2021] EWHC 425 (QB) (25 February 2021)",
+  "neutral_citation": "[2021] EWHC 425",
+  "clinical_domain": "PAEDIATRICS",
+  "outcome_severity": "TEMPORARY_HARM",
+  "summary": {
+    "brief": "Medical malpractice case involving paediatrics.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "The Claimant was admitted to hospital on an emergency basis on 15 July 2014 with what transpired to be an Addison's crisis.",
+      "paragraph_ref": "26",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "She was in the intensive care unit for some 3 weeks. She needed a left ventricular assist device.",
+      "paragraph_ref": "26",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "She then subsequently suffered a stroke in February 2015.",
+      "paragraph_ref": "26",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "One of several visits that she had made to her GP's surgery had been on Friday 4 July 2014 when she was seen by the Defendant.",
+      "paragraph_ref": "26",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "The upshot of that visit was this: certain drugs were prescribed; repeat tests were arranged to take place the following Monday; she was advised by the Defendant that if her condition worsened she should call the out of hours telephone line or attend hospital A&E.",
+      "paragraph_ref": "26",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "LEGAL_FINDING",
+      "text": "The proposed settlement subject to that approval involved the payment of \u00a3700,000, without any admission of liability, in full and final settlement.",
+      "paragraph_ref": "29",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "COURT_REASONING",
+      "text": "I am satisfied that this settlement is in the Claimant's best interests.",
+      "paragraph_ref": "30",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "LEGAL_FINDING",
+      "text": "I approve this settlement in the exercise of my inherent jurisdiction.",
+      "paragraph_ref": "30",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "FACTUAL_FINDING",
+      "text": "The Defendant's case is that there was no negligence and no breach of any duty, that the response at the appointment on 4 July 2014 was a proper discharge of the clinical duties.",
+      "paragraph_ref": "28",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "FACTUAL_FINDING",
+      "text": "The Claimant's case was that there was a negligent breach of duty by the Defendant on 4 July 2014.",
+      "paragraph_ref": "27",
+      "speaker": "Court finding"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "19 years",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Not documented in judgment",
+      "history_of_present_illness": "Patient presented with symptoms related to Addison's disease.",
+      "past_medical_history": [
+        "Addison's disease"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "general": "Not documented in judgment"
+        }
+      },
+      "initial_working_problem": "Potential Addison's crisis",
+      "known_constraints": null,
+      "initial_differential": [
+        "Addison's crisis"
+      ],
+      "critical_findings": [
+        "Not documented in judgment"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E004",
+        "E005"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "LAB",
+        "name": "Cortisol Level",
+        "description": "Serum cortisol level to assess adrenal function",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not documented in judgment",
+          "detailed_findings": null,
+          "clinical_significance": "Would help confirm Addison's crisis",
+          "decision_impact": "Should prompt urgent treatment if low",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": [
+          "E004",
+          "E005"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial GP Visit",
+        "description": "Patient visits GP with symptoms suggestive of Addison's disease",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "GP consultation",
+            "timestamp": "4 July 2014",
+            "evidence_ids": [
+              "E004"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Follow-up and Crisis",
+        "description": "Patient's condition worsens leading to emergency admission",
+        "duration": "11 days",
+        "key_events": [
+          {
+            "event": "Emergency admission to hospital",
+            "timestamp": "15 July 2014",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient presented with symptoms suggestive of Addison's disease",
+        "prompt": "What should have been the immediate management step?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Urgently admit to hospital for further evaluation and management",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Urgent admission would allow for immediate treatment and monitoring"
+          },
+          {
+            "option_id": "B",
+            "description": "Prescribe medication and arrange follow-up tests",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Delayed appropriate care leading to crisis"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant prescribed medication and arranged follow-up tests",
+          "reasoning_stated": "Defendant believed outpatient management was sufficient",
+          "evidence_ids": [
+            "E004",
+            "E005"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Urgent hospital admission should have been arranged",
+          "standard_of_care_basis": "Expert evidence suggested immediate care was necessary",
+          "evidence_ids": [
+            "E010"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to admit led to Addison's crisis",
+          "what_should_have_happened": "Immediate hospital admission",
+          "legal_standard_applied": "Breach of duty in failing to provide urgent care",
+          "evidence_ids": [
+            "E010"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient developed Addison's crisis requiring intensive care",
+        "severity": "PERMANENT_MODERATE_DISABILITY",
+        "long_term_effects": "Stroke and multiple organ failure",
+        "evidence_ids": [
+          "E001",
+          "E002",
+          "E003"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "SETTLED",
+        "damages_awarded": "700000",
+        "key_findings": [
+          "Breach of duty in failing to admit patient urgently",
+          "Causation established - earlier intervention would have prevented crisis"
+        ],
+        "evidence_ids": [
+          "E006",
+          "E007",
+          "E010"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to admit patient urgently",
+        "counterfactual": "Urgent admission would have prevented Addison's crisis",
+        "evidence_ids": [
+          "E010"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "4 July 2014",
+        "event": "Patient visits GP",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "timestamp": "15 July 2014",
+        "event": "Emergency admission to hospital",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Not documented in judgment",
+        "date": "Not documented in judgment",
+        "result": "Not documented in judgment",
+        "interpretation": null,
+        "evidence_ids": []
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Addison's crisis",
+        "when_made": "15 July 2014",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Intensive care management",
+        "date": "15 July 2014",
+        "provider": null,
+        "outcome": "Stabilization with complications",
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Stroke",
+        "when_occurred": "February 2015",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to urgently admit patient",
+        "against": "Defendant GP",
+        "found_proven": true,
+        "evidence_ids": [
+          "E010"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Settlement approved without admission of liability",
+        "legal_significance": "Settlement in best interest of Claimant",
+        "evidence_ids": [
+          "E006",
+          "E007"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.24390243902439024,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 06:54:31.316872",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

@@ -1,0 +1,475 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "bailii-qb-2021-3378-html",
+  "source": "BAILII",
+  "jurisdiction": "UK",
+  "court": "Unknown",
+  "decision_date": "2021-12-17",
+  "url": "https://example.com/bailii-qb-2021-3378-html",
+  "case_name": "Similar views have been expressed during the Pandemic, including by Johnson J inSC v Southampton NHS[2020] EWHC 1445 (QB), a clinical negligence case (although that was the height of the first lockdown when the issue was attendance at court generally, which he found could be arranged).SCwas cited very recently in allowing a witness with an underlying health condition not to travel to the UK to give evidence on an allegation of forgery:Rahbarpour v Said[2021] 11 WLUK 159.DHCJ Ambrose there rightly observed that whether to permit evidence remotely was a matter for the court's discretion in the light of the overriding objective, fairness and efficiency, and the need for equality of arms between the parties under ECHR art.6.",
+  "neutral_citation": "[2021] EWHC 3378",
+  "clinical_domain": "OBSTETRICS_GYNAECOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Similar views have been expressed during the Pandemic, including by Johnson J inSC v Southampton NHS[2020] EWHC 1445 (QB), a clinical negligence case (although that was the height of the first lockdown when the issue was attendance at court generally, which he found could be arranged).SCwas cited very recently in allowing a witness with an underlying health condition not to travel to the UK to give evidence on an allegation of forgery:Rahbarpour v Said[2021] 11 WLUK 159.DHCJ Ambrose there rightl",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Callum Best was born on 27 June 2002. Just before his birth he suffered a severe brain injury from being deprived of oxygen because his placenta became detached from the wall of the uterus of his mum, the Claimant (a 'placental abruption').",
+      "paragraph_ref": "12",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Their pleaded case is that on the morning of his birth, having had an ante-natal appointment at 36 weeks' pregnancy which went well, at about 10.30am when they were out shopping the Claimant suddenly experienced sudden intense abdominal pain.",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "EXPERT_TESTIMONY",
+      "text": "The parties' Midwifery Experts Angela Cook for the Claimant and Lynn Smith for the Defendant agree that it would have been negligent for a midwife, if told the Claimant was in sudden intense abdominal pain, to fail to instruct her to come in immediately.",
+      "paragraph_ref": "14",
+      "speaker": "Midwifery Experts"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "EXPERT_TESTIMONY",
+      "text": "The parties' obstetric experts Mr Duthie for the Claimant and Mr Tuffnell for the Defendant also agree that if there was such a phone call and the Claimant had been told to come in immediately, Callum would probably have been delivered within an hour of attendance: around 11.40 or so.",
+      "paragraph_ref": "14",
+      "speaker": "Obstetric Experts"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "LEGAL_FINDING",
+      "text": "I therefore uphold that claim and award the Claimant the agreed sum of \u00a3500,000 but perhaps more importantly for them, vindication of what they said happened to Callum.",
+      "paragraph_ref": "149",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "COURT_REASONING",
+      "text": "The Bolitho question then arises about what would have happened had that question been asked as I find it should have been.",
+      "paragraph_ref": "144",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "WITNESS_STATEMENT",
+      "text": "The Claimant's evidence over CVP in Court was manageable but there were issues with echo etc which required patience from Mr Feeny, for which I am grateful.",
+      "paragraph_ref": "27",
+      "speaker": "Court observation"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "FACTUAL_FINDING",
+      "text": "By the time they got to the car, the Claimant's pain was worse still.",
+      "paragraph_ref": "138",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "FACTUAL_FINDING",
+      "text": "As the Claimant sat in the car in increasing pain, doubled over again as Mr Orton recalled, he was understandably panicking about what the Claimant was telling him about fearing losing the baby, called the number in the Midwifery Notes.",
+      "paragraph_ref": "139",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "LEGAL_FINDING",
+      "text": "I simply find that if that call had been recorded, then the identity of the midwife I find took it would be known and could be called to give evidence about it.",
+      "paragraph_ref": "141",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "30 years",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Sudden intense abdominal pain",
+      "history_of_present_illness": "The patient, 36 weeks pregnant, experienced sudden intense abdominal pain while shopping. Her partner called the maternity unit and was allegedly advised to take her home and give her paracetamol.",
+      "past_medical_history": [
+        "Previous placental abruption in 1993"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "abdomen": "Not documented in judgment"
+        }
+      },
+      "initial_working_problem": "Possible placental abruption",
+      "known_constraints": null,
+      "initial_differential": [
+        "placental abruption"
+      ],
+      "critical_findings": [
+        "Sudden intense abdominal pain"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E002",
+        "E013"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "Ultrasound",
+        "description": "Ultrasound to assess fetal well-being and placental status",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not documented in judgment",
+          "detailed_findings": null,
+          "clinical_significance": "Would help confirm placental abruption",
+          "decision_impact": "Should prompt immediate delivery if abruption confirmed",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": [
+          "E013",
+          "E014"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient experiences sudden intense abdominal pain while shopping.",
+        "duration": "2 hours",
+        "key_events": [
+          {
+            "event": "Patient experiences pain and partner calls maternity unit",
+            "timestamp": "10:30",
+            "evidence_ids": [
+              "E013"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Hospital Admission",
+        "description": "Patient admitted to hospital after worsening symptoms.",
+        "duration": "2 hours",
+        "key_events": [
+          {
+            "event": "Patient arrives at A&E and is transferred to Maternity Unit",
+            "timestamp": "12:00",
+            "evidence_ids": [
+              "E013",
+              "E014"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "decision",
+        "name": "Decision Making",
+        "description": "Midwife receives call about patient's severe abdominal pain.",
+        "duration": "30 minutes",
+        "key_events": [
+          {
+            "event": "Midwife advises patient to go home and take paracetamol",
+            "timestamp": "27 June 2002 11:00",
+            "evidence_ids": [
+              "E139"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "presentation",
+        "clinical_context": "Patient reports sudden intense abdominal pain at 36 weeks gestation",
+        "prompt": "What should be the immediate advice given to the patient?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Advise immediate hospital admission for assessment",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Intense abdominal pain in late pregnancy is a red flag for placental abruption."
+          },
+          {
+            "option_id": "B",
+            "description": "Advise rest at home and take paracetamol",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Inappropriate given the severity of symptoms and gestational age."
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant allegedly advised rest at home and paracetamol",
+          "reasoning_stated": "Defendant denies call was made, but if it was, advice was inappropriate.",
+          "evidence_ids": [
+            "E013",
+            "E014"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Immediate hospital admission should have been advised",
+          "standard_of_care_basis": "Expert consensus that intense pain requires urgent assessment",
+          "evidence_ids": [
+            "E003",
+            "E004"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to advise immediate admission for suspected placental abruption.",
+          "what_should_have_happened": "Patient should have been advised to come to the hospital immediately.",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E003",
+            "E004"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient's condition worsened, leading to severe brain injury in the newborn.",
+        "severity": "PERMANENT_SEVERE_DISABILITY",
+        "long_term_effects": "Severe disabilities in the child, leading to significant care needs",
+        "evidence_ids": [
+          "E001",
+          "E005"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "500000",
+        "key_findings": [
+          "Midwife failed to adequately assess the severity of the patient's pain.",
+          "Causation established - earlier intervention could have prevented the newborn's brain injury."
+        ],
+        "evidence_ids": [
+          "E005",
+          "E149"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to escalate care upon report of severe pain",
+        "counterfactual": "Immediate hospital visit could have prevented the adverse outcome",
+        "evidence_ids": [
+          "E144",
+          "E145",
+          "E146"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "27 June 2002 10:30",
+        "event": "Patient experiences sudden intense abdominal pain",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E013"
+        ]
+      },
+      {
+        "timestamp": "27 June 2002 12:00",
+        "event": "Patient arrives at A&E and is transferred to Maternity Unit",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E013",
+          "E014"
+        ]
+      },
+      {
+        "timestamp": "27 June 2002 09:00",
+        "event": "Uneventful ante-natal appointment",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E136"
+        ]
+      },
+      {
+        "timestamp": "27 June 2002 10:30",
+        "event": "Patient experiences severe abdominal pain",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E137"
+        ]
+      },
+      {
+        "timestamp": "27 June 2002 11:00",
+        "event": "Midwife advises patient to go home and take paracetamol",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E139"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Ultrasound",
+        "date": "27 June 2002",
+        "result": "Not documented in judgment",
+        "interpretation": null,
+        "evidence_ids": [
+          "E013",
+          "E014"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Placental abruption",
+        "when_made": "27 June 2002",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E013",
+          "E014"
+        ]
+      },
+      {
+        "diagnosis": "Severe brain injury in newborn",
+        "when_made": "Post-birth",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Emergency Caesarean Section",
+        "date": "27 June 2002",
+        "provider": null,
+        "outcome": "Callum born with severe brain injury",
+        "evidence_ids": [
+          "E013",
+          "E014"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Severe brain injury",
+        "when_occurred": "27 June 2002",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E001",
+          "E012"
+        ]
+      },
+      {
+        "complication": "Severe brain injury",
+        "when_occurred": "Post-birth",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to advise immediate hospital admission",
+        "against": "Defendant hospital",
+        "found_proven": true,
+        "evidence_ids": [
+          "E003",
+          "E004"
+        ]
+      },
+      {
+        "allegation": "Failure to adequately assess and escalate care for severe abdominal pain",
+        "against": "Midwife",
+        "found_proven": true,
+        "evidence_ids": [
+          "E144"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "finding": "Midwife breached duty of care by not assessing pain severity",
+        "legal_significance": "Bolitho test not satisfied",
+        "evidence_ids": [
+          "E144"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.06622516556291391,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 15:36:02.606778",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

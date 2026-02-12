@@ -1,0 +1,431 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtliste-9395650-chase-michael-richard-v-chase-langston-wiatt",
+  "source": "BAILII",
+  "jurisdiction": "UK",
+  "court": "Unknown",
+  "decision_date": "2026-01-18",
+  "url": "https://example.com/courtliste-9395650-chase-michael-richard-v-chase-langston-wiatt",
+  "case_name": "Chase Michael Richard v. Chase Langston Wiatt",
+  "neutral_citation": null,
+  "clinical_domain": "SURGERY_ORTHOPAEDIC",
+  "outcome_severity": "TEMPORARY_HARM",
+  "summary": {
+    "brief": "Chase Michael Richard v. Chase Langston Wiatt. Medical malpractice case involving surgery orthopaedic.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "On a Saturday afternoon in September 2016, appellant Chase Richard was stopped in traffic when his vehicle was struck from behind by a car driven by appellee Chase Wiatt.",
+      "paragraph_ref": "9",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "WITNESS_STATEMENT",
+      "text": "Witness Dalton Hernandez stated that about a minute before the accident, he had been driving next to Wiatt when Wiatt, who was looking down at his phone, had begun to drift into Hernandez\u2019s lane.",
+      "paragraph_ref": "9",
+      "speaker": "Witness Dalton Hernandez"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "MEDICAL_RECORD",
+      "text": "The evidence at trial included billing records from Memorial Hermann Northeast Hospital, AD Hospital East, Beyer Chiropractic, Advanced Diagnostics, and Progressive Medicine Associates, but no other medical records.",
+      "paragraph_ref": "11",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "Richard testified, however, that the x-rays and CT scan were normal, and that records from AD Hospital East reported that the accident had no effect on his activities of daily living, his emotions, or his mental status, and that the records further stated his range of motion was painless and within normal limits.",
+      "paragraph_ref": "11",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "Beyer Chiropractic referred Richard to Elite Health Services for magnetic resonance imaging of Richard\u2019s cervical and lumbar spine. The MRIs revealed five mild disc herniations: two to Richard\u2019s cervical spine and three to his lumbar spine.",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "LEGAL_FINDING",
+      "text": "The trial court granted Wiatt\u2019s motion for directed verdict on Richard\u2019s gross-negligence claim.",
+      "paragraph_ref": "14",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "LEGAL_FINDING",
+      "text": "The jury found that Richard\u2019s reasonable expenses for necessary medical care in the past was only $15,584.45\u2014exactly half of the amount requested.",
+      "paragraph_ref": "14",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "COURT_REASONING",
+      "text": "Because the evidence is insufficient to support a firm belief or conviction that Wiatt had actual subjective awareness that his conduct made serious injury likely, we conclude that the trial court did not err in granting a directed verdict on Richard\u2019s gross-negligence claim.",
+      "paragraph_ref": "44",
+      "speaker": "Court reasoning"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "LEGAL_FINDING",
+      "text": "We overrule Richard\u2019s second issue.",
+      "paragraph_ref": "52",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "LEGAL_FINDING",
+      "text": "Having overruled both of Richard\u2019s appellate issues, we affirm the trial court\u2019s judgment.",
+      "paragraph_ref": "54",
+      "speaker": "Court conclusion"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "unknown",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Leg and cervical spine pain after motor vehicle accident",
+      "history_of_present_illness": "Patient was involved in a rear-end collision while stopped in traffic. Declined ambulance transport and self-presented to the hospital.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "system": "Examination mentioned but findings not specified"
+        }
+      },
+      "initial_working_problem": "Post-traumatic pain following motor vehicle accident",
+      "known_constraints": null,
+      "initial_differential": [
+        "Soft tissue injury",
+        "Cervical strain"
+      ],
+      "critical_findings": [
+        "No abnormal findings on initial imaging"
+      ],
+      "urgency_level": "ROUTINE",
+      "evidence_ids": [
+        "E001",
+        "E010"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "X-ray Leg and Cervical Spine",
+        "description": "Initial imaging performed at Memorial Hermann Northeast Hospital",
+        "available_phase": "presentation",
+        "reveal": {
+          "result_summary": "No abnormal findings",
+          "detailed_findings": null,
+          "clinical_significance": "No acute fractures or dislocations",
+          "decision_impact": "Follow-up with primary care recommended",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "IMAGING",
+        "name": "CT Cervical Spine",
+        "description": "Performed at AD Hospital East",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Normal",
+          "detailed_findings": null,
+          "clinical_significance": "No acute injury detected",
+          "decision_impact": "No further immediate intervention required",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "request_id": "R003",
+        "type": "IMAGING",
+        "name": "MRI Cervical and Lumbar Spine",
+        "description": "Referred by Beyer Chiropractic to Elite Health Services",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Five mild disc herniations: two cervical, three lumbar",
+          "detailed_findings": null,
+          "clinical_significance": "Mild disc herniations noted, no immediate surgical indication",
+          "decision_impact": "No further treatment recommended",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient self-presents to hospital post-accident",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "X-ray and CT performed",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E004"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Follow-up and Additional Imaging",
+        "description": "Patient undergoes further imaging and chiropractic care",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "MRI performed",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E005"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient with post-accident pain and normal initial imaging",
+        "prompt": "What should be the next step in management?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Refer to physical therapy for conservative management",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard care for soft tissue injuries post-accident"
+          },
+          {
+            "option_id": "B",
+            "description": "Order additional imaging and chiropractic care",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Additional imaging not indicated given normal initial findings"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant pursued additional imaging and chiropractic care",
+          "reasoning_stated": "Defendant believed further imaging was necessary",
+          "evidence_ids": [
+            "E005",
+            "E013"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Referral to physical therapy should have been considered",
+          "standard_of_care_basis": "Expert testimony suggested conservative management",
+          "evidence_ids": [
+            "E010"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Additional imaging was not supported by initial findings",
+          "what_should_have_happened": "Conservative management should have been prioritized",
+          "legal_standard_applied": "Standard of care for post-accident management",
+          "evidence_ids": [
+            "E010"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient experienced ongoing pain but no acute injury identified",
+        "severity": "MILD",
+        "long_term_effects": "Chronic pain management required",
+        "evidence_ids": [
+          "E013"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "0",
+        "key_findings": [
+          "Directed verdict on gross negligence",
+          "Jury awarded partial medical expenses"
+        ],
+        "evidence_ids": [
+          "E006",
+          "E007"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Not applicable",
+        "counterfactual": "Not applicable",
+        "evidence_ids": [
+          "E010"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "September 2016",
+        "event": "Motor vehicle accident occurred",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "X-ray Leg and Cervical Spine",
+        "date": "Not documented in judgment",
+        "result": "Normal",
+        "interpretation": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "test_name": "CT Cervical Spine",
+        "date": "Not documented in judgment",
+        "result": "Normal",
+        "interpretation": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "test_name": "MRI Cervical and Lumbar Spine",
+        "date": "Not documented in judgment",
+        "result": "Five mild disc herniations",
+        "interpretation": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Mild disc herniations",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Chiropractic care",
+        "date": "Not documented in judgment",
+        "provider": null,
+        "outcome": "No further treatment recommended",
+        "evidence_ids": [
+          "E013"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Chronic pain",
+        "when_occurred": "Not documented in judgment",
+        "severity": "Mild",
+        "evidence_ids": [
+          "E013"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Gross negligence",
+        "against": "Defendant",
+        "found_proven": false,
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Directed verdict on gross negligence",
+        "legal_significance": "Insufficient evidence for gross negligence",
+        "evidence_ids": [
+          "E010"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.17543859649122806,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 09:35:10.414103",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

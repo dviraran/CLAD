@@ -1,0 +1,234 @@
+# Keyword configuration for medical malpractice case discovery
+# Updated to reduce false positives (non-medical cases)
+
+# Primary legal terms for medical malpractice - high specificity
+legal_terms:
+  # Core medical malpractice terminology
+  - "clinical negligence"
+  - "medical negligence"
+  - "medical malpractice"
+  - "surgical negligence"
+  - "hospital negligence"
+  - "doctor negligence"
+  - "physician negligence"
+  - "nursing negligence"
+
+  # UK-specific doctrines
+  - "Bolam"
+  - "Bolitho"
+  - "Montgomery"
+  - "NHS trust"
+  - "NHS negligence"
+
+  # Specific medical malpractice types
+  - "failure to diagnose"
+  - "delayed diagnosis"
+  - "misdiagnosis"
+  - "diagnostic error"
+  - "failure to treat"
+  - "negligent treatment"
+  - "birth injury"
+  - "obstetric negligence"
+  - "surgical error"
+  - "anaesthetic negligence"
+  - "anesthetic malpractice"
+
+  # Informed consent in medical context
+  - "informed consent surgery"
+  - "informed consent treatment"
+  - "failure to warn patient"
+
+  # Medical standard of care
+  - "medical standard of care"
+  - "clinical standard of care"
+  - "reasonable medical practitioner"
+  - "competent medical practitioner"
+
+clinical_signal_terms:
+  # Surgical procedures
+  - "surgery"
+  - "operation"
+  - "surgical"
+  - "post-operative"
+  - "appendectomy"
+  - "cholecystectomy"
+  - "hysterectomy"
+  - "mastectomy"
+  - "knee replacement"
+  - "hip replacement"
+  - "spinal surgery"
+  - "cardiac surgery"
+  - "laparoscopic"
+  - "cesarean"
+  - "caesarean"
+
+  # Diagnostic procedures
+  - "colonoscopy"
+  - "endoscopy"
+  - "biopsy"
+  - "cardiac catheterization"
+  - "angiography"
+  - "lumbar puncture"
+
+  # Imaging
+  - "CT scan"
+  - "MRI"
+  - "X-ray"
+  - "ultrasound"
+  - "mammogram"
+
+  # Critical conditions (common in malpractice)
+  - "cauda equina"
+  - "pulmonary embolism"
+  - "deep vein thrombosis"
+  - "stroke"
+  - "myocardial infarction"
+  - "heart attack"
+  - "sepsis"
+  - "meningitis"
+  - "appendicitis"
+  - "ectopic pregnancy"
+  - "aortic dissection"
+  - "bowel obstruction"
+  - "compartment syndrome"
+  - "necrotizing fasciitis"
+  - "testicular torsion"
+
+  # Obstetric/birth
+  - "pregnancy"
+  - "labour"
+  - "labor"
+  - "childbirth"
+  - "delivery"
+  - "fetal distress"
+  - "shoulder dystocia"
+  - "cerebral palsy"
+  - "hypoxic ischemic encephalopathy"
+  - "stillbirth"
+
+  # Complications/outcomes
+  - "haemorrhage"
+  - "hemorrhage"
+  - "bleeding"
+  - "infection"
+  - "septicaemia"
+  - "perforation"
+  - "retained surgical instrument"
+  - "wrong site surgery"
+  - "medication error"
+  - "drug overdose"
+  - "anaphylaxis"
+  - "pressure ulcer"
+  - "bedsore"
+
+  # Cancer/oncology
+  - "cancer"
+  - "tumour"
+  - "tumor"
+  - "malignancy"
+  - "metastasis"
+  - "breast cancer"
+  - "lung cancer"
+  - "colon cancer"
+
+  # Emergency medicine
+  - "emergency department"
+  - "emergency room"
+  - "A&E"
+  - "resuscitation"
+  - "cardiac arrest"
+
+  # Clinical settings
+  - "hospital"
+  - "intensive care"
+  - "ICU"
+  - "operating theatre"
+  - "ward"
+
+# Terms that must be present (enforced at filter level)
+required_terms: []
+
+# Terms that EXCLUDE a case - these indicate non-medical malpractice
+excluded_terms:
+  # Legal malpractice (not medical)
+  - "legal malpractice"
+  - "attorney malpractice"
+  - "solicitor negligence"
+  - "barrister negligence"
+  - "lawyer negligence"
+  - "legal profession"
+
+  # Employment law
+  - "employment tribunal"
+  - "unfair dismissal"
+  - "wrongful termination"
+  - "workplace discrimination"
+  - "harassment claim"
+  - "whistleblower"
+
+  # Criminal law
+  - "criminal conviction"
+  - "guilty verdict"
+  - "sentencing"
+  - "prosecution"
+  - "manslaughter"
+  - "assault charge"
+
+  # Administrative/regulatory (not civil malpractice)
+  - "immigration"
+  - "tax tribunal"
+  - "planning permission"
+  - "licensing board"
+  - "disciplinary tribunal"
+  - "professional misconduct"
+  - "struck off register"
+  - "fitness to practise"
+
+  # Constitutional/regulatory cases (US)
+  - "v. FDA"
+  - "constitutional challenge"
+  - "certiorari"
+  - "abortion rights"
+  - "reproductive rights"
+
+  # Family/child law
+  - "child custody"
+  - "child protection"
+  - "social services"
+  - "family court"
+  - "care proceedings"
+
+  # Property/contract
+  - "condominium"
+  - "real estate"
+  - "mortgage"
+  - "landlord tenant"
+  - "breach of contract"
+  - "commercial dispute"
+
+  # Insurance disputes (not underlying malpractice)
+  - "insurance coverage"
+  - "bad faith insurance"
+  - "policy exclusion"
+
+  # Other non-medical torts
+  - "motor vehicle accident"
+  - "car accident"
+  - "slip and fall"
+  - "premises liability"
+  - "product liability"
+  - "defamation"
+  - "libel"
+  - "slander"
+
+  # Police/government
+  - "police misconduct"
+  - "false arrest"
+  - "excessive force"
+  - "prison"
+  - "detention"
+
+  # Veterinary (not human medicine)
+  - "veterinary"
+  - "veterinarian"
+  - "animal hospital"

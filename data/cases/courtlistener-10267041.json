@@ -1,0 +1,370 @@
+{
+  "case_id": "courtlistener-10267041",
+  "source": "courtlistener",
+  "source_url": "local://courtlistener-10267041.html",
+  "jurisdiction": "US",
+  "extraction_metadata": {
+    "version": "batch_api_v1",
+    "model": "gpt-4o",
+    "extracted_at": "2026-01-21T17:56:57.931108",
+    "simulation_extracted_at": "2026-01-21T18:29:59.556962",
+    "simulation_model": "gpt-4o"
+  },
+  "case_metadata": {
+    "case_name": "S.K., a legally incapacitated Minor by and through his Conservator, Thomas T. Tarbox v. Obstetric & Gynecologic Associates of Iowa City and Coralville, P.C., and Mercy Hospital Iowa City and Jill Christine Goodman",
+    "citation": "No. 22–1317",
+    "court": "Iowa Supreme Court",
+    "date": "September 11, 2024"
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "On August 11, 2018, mom was admitted to Mercy Hospital, Iowa City with painful contractions.",
+      "paragraph_ref": "48",
+      "paragraph_starts_with": "[48] On August 11, 2018, mom was",
+      "summary": "Mother admitted to Mercy Hospital with contractions on August 11, 2018.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "Dr. Goodman made two attempts to deliver S.K. using forceps. Neither attempt was successful. Dr. Goodman then used a vacuum.",
+      "paragraph_ref": "56",
+      "paragraph_starts_with": "[56] At 3:50 p.m., mom’s nurse",
+      "summary": "Dr. Goodman attempted forceps delivery twice, then used a vacuum.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "During the process of labor and delivery, S.K.’s skull was fractured and S.K. suffered brain injury.",
+      "paragraph_ref": "59",
+      "paragraph_starts_with": "[59] During the process of labor",
+      "summary": "S.K. suffered a skull fracture and brain injury during delivery.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "EXPERT_TESTIMONY",
+      "verbatim_quote": "The plaintiff’s experts testified that S.K. suffered hypoxic ischemic encephalopathy (HIE) prior to delivery.",
+      "paragraph_ref": "72",
+      "paragraph_starts_with": "[72] damage. First, they opined,",
+      "summary": "Plaintiff's experts testified S.K. suffered HIE before delivery.",
+      "speaker": "Plaintiff's expert"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "EXPERT_TESTIMONY",
+      "verbatim_quote": "The defendants’ experts testified that S.K. suffered no HIE during labor or delivery.",
+      "paragraph_ref": "88",
+      "paragraph_starts_with": "[88] starters, the defendants’ experts",
+      "summary": "Defendant's experts testified S.K. did not suffer HIE during delivery.",
+      "speaker": "Defendant's expert"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "LEGAL_FINDING",
+      "verbatim_quote": "The jury found in the plaintiff’s favor. The jury concluded that the clinic and Mercy were both negligent.",
+      "paragraph_ref": "99",
+      "paragraph_starts_with": "[99] C. The Verdict. The jury",
+      "summary": "Jury found clinic and Mercy negligent.",
+      "speaker": "Jury verdict"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "LEGAL_FINDING",
+      "verbatim_quote": "The district court entered judgment accordingly. The clinic filed motions for new trial or remittitur, but the court denied them.",
+      "paragraph_ref": "113",
+      "paragraph_starts_with": "[113] for new trial or remittitur,",
+      "summary": "District court denied clinic's motions for new trial.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "COURT_REASONING",
+      "verbatim_quote": "We agree. The insert contains hearsay, and it does not fit one of our recognized exceptions.",
+      "paragraph_ref": "36",
+      "paragraph_starts_with": "[36] We agree. The insert contains",
+      "summary": "Court found vacuum insert contained hearsay not fitting exceptions.",
+      "speaker": "Court reasoning"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "S.K. continues to experience repercussions of his birth injuries—although, as will be explained, both the nature and cause of those injuries are hotly contested.",
+      "paragraph_ref": "62",
+      "paragraph_starts_with": "[62] S.K. continues to experience",
+      "summary": "S.K. continues to suffer from birth injuries.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "EXPERT_TESTIMONY",
+      "verbatim_quote": "The plaintiff’s experts calculated that S.K. would incur over $42 million in medical and custodial care expenses.",
+      "paragraph_ref": "84",
+      "paragraph_starts_with": "[84] would incur over $42 million",
+      "summary": "Plaintiff's experts estimated over $42 million in future care costs.",
+      "speaker": "Plaintiff's expert"
+    }
+  ],
+  "verdict_detected": {
+    "outcome": "LIABILITY_FOUND",
+    "key_phrase": "The jury found in the plaintiff’s favor.",
+    "paragraph_ref": "99"
+  },
+  "extraction_notes": {
+    "total_paragraphs_analyzed": 150,
+    "key_sections_found": [
+      "Facts",
+      "Expert Evidence",
+      "Causation",
+      "Conclusion"
+    ],
+    "gaps_identified": [
+      "No specific lab values mentioned",
+      "Timing of events unclear"
+    ]
+  },
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Newborn",
+        "sex": "Not documented in judgment",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Painful contractions leading to delivery",
+      "history_of_present_illness": "Mother admitted with painful contractions, delivery attempted with forceps and vacuum.",
+      "past_medical_history": "Not documented in judgment",
+      "medications": "Not documented in judgment",
+      "allergies": "Not documented in judgment",
+      "physical_examination": {
+        "vital_signs": "Not documented in judgment",
+        "focused_exam": {
+          "system": "Examination mentioned but findings not specified"
+        }
+      },
+      "initial_working_problem": "Labor and delivery complications",
+      "initial_differential": [
+        "Complicated delivery",
+        "Potential fetal distress"
+      ],
+      "critical_findings": [
+        "Failed forceps delivery",
+        "Vacuum delivery used"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSULT_NOTE",
+        "name": "Obstetrician's delivery note",
+        "description": "Detailed account of delivery attempts and methods used",
+        "available_phase": "procedure",
+        "reveal": {
+          "result_summary": "Forceps delivery attempted twice, followed by vacuum use",
+          "clinical_significance": "Indicates difficulty in delivery process",
+          "decision_impact": "Highlights need for careful monitoring and potential intervention"
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "procedure",
+        "clinical_context": "Mother in labor with complications during delivery",
+        "prompt": "What delivery method should be used after failed forceps attempt?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Proceed with vacuum delivery",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Vacuum delivery chosen after failed forceps attempts"
+          },
+          {
+            "option_id": "B",
+            "description": "Consider emergency C-section",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "C-section may reduce risk of trauma to the infant"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "A",
+          "description": "Defendant proceeded with vacuum delivery",
+          "reasoning_stated": "Vacuum used after forceps failed",
+          "evidence_ids": [
+            "E002"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "B",
+          "description": "Emergency C-section should have been considered",
+          "standard_of_care_basis": "Expert testimony suggested alternative approach",
+          "evidence_ids": [
+            "E004",
+            "E006"
+          ]
+        },
+        "explanation": {
+          "why_defendant_wrong": "Vacuum delivery led to skull fracture and brain injury",
+          "what_should_have_happened": "C-section could have minimized risk",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E003",
+            "E006"
+          ]
+        },
+        "is_malpractice_point": true
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Labor Presentation",
+        "description": "Mother admitted to hospital with contractions",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Mother admitted to Mercy Hospital",
+            "timestamp": "August 11, 2018",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "procedure",
+        "name": "Delivery Procedure",
+        "description": "Attempts to deliver S.K. using forceps and vacuum",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Forceps delivery attempted twice, then vacuum used",
+            "timestamp": "Not documented in judgment",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "S.K. suffered skull fracture and brain injury",
+        "severity": "PERMANENT_SEVERE_DISABILITY",
+        "long_term_effects": "Continues to experience repercussions of birth injuries",
+        "evidence_ids": [
+          "E003",
+          "E009"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Clinic and Mercy found negligent",
+          "Failure to consider alternative delivery method"
+        ],
+        "evidence_ids": [
+          "E006",
+          "E007"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to consider C-section after failed forceps",
+        "counterfactual": "C-section could have prevented injury",
+        "evidence_ids": [
+          "E006",
+          "E003"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "August 11, 2018",
+        "event": "Mother admitted to Mercy Hospital with contractions",
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [
+      {
+        "diagnosis": "Skull fracture and brain injury",
+        "when_made": "During delivery",
+        "correct": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Vacuum delivery",
+        "date": "Not documented in judgment",
+        "outcome": "Resulted in skull fracture and brain injury",
+        "evidence_ids": [
+          "E002",
+          "E003"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Skull fracture and brain injury",
+        "when_occurred": "During delivery",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Negligence in delivery method choice",
+        "against": "Clinic and Mercy",
+        "found_proven": true,
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Clinic and Mercy found negligent",
+        "legal_significance": "Breach of duty of care",
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ]
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "TREATMENT_PROCEDURE_ERROR"
+    ],
+    "diagnosis_subtypes": [
+      "FAILURE_TO_INVESTIGATE"
+    ]
+  }
+}

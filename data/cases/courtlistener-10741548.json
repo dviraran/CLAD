@@ -1,0 +1,275 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10741548",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2026-01-18",
+  "url": "https://example.com/courtlistener-10741548",
+  "case_name": "Calabrese v. Judy",
+  "neutral_citation": null,
+  "clinical_domain": "PAEDIATRICS",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Calabrese v. Judy. Medical malpractice case involving paediatrics.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "In 2014, husband and wife executed estate plans, including trusts, pour-over wills, and durable powers of attorney.",
+      "paragraph_ref": "18",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "In 2021, Rainsberger retained Judy, an attorney licensed in the State of Ohio, to review documents pertaining to husband.",
+      "paragraph_ref": "28",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "After meeting with husband, Cocca-Fulton prepared a trust amendment, removing wife as a beneficiary of the trust.",
+      "paragraph_ref": "31",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "LEGAL_FINDING",
+      "text": "The judgment is affirmed.",
+      "paragraph_ref": "552",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Mathews\u2019 summary opinion concluded: It is my opinion to a reasonable degree of legal and/or professional probability and certainty that, by facilitating the preparation of and preparing an Amended Trust Agreement for [husband] during and/or at a period in time in which [husband]\u2019s testamentary capacity was questionable, at best, Mr. Judy and Ms. Cocca-Fulton committed third-party legal malpractice.",
+      "paragraph_ref": "414",
+      "speaker": "Expert witness"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "COURT_REASONING",
+      "text": "The Court finds that the report is inadmissible because it is speculative and renders a conclusion that is within the province of the finder of fact.",
+      "paragraph_ref": "460",
+      "speaker": "Judge's analysis"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "unknown",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Not documented in judgment",
+      "history_of_present_illness": "Not documented in judgment",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "system": "Examination mentioned but findings not specified"
+        }
+      },
+      "initial_working_problem": "Not documented in judgment",
+      "known_constraints": null,
+      "initial_differential": [],
+      "critical_findings": [],
+      "urgency_level": "Not documented in judgment",
+      "evidence_ids": []
+    },
+    "requestables": [],
+    "timeline_phases": [
+      {
+        "phase_id": "decision",
+        "name": "Trust Amendment Decision",
+        "description": "Decision to amend trust without confirming testamentary capacity",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Trust amendment executed",
+            "timestamp": "November 4, 2021",
+            "evidence_ids": [
+              "E003"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "decision",
+        "clinical_context": "Legal decision regarding trust amendment",
+        "prompt": "Was the trust amendment executed with proper testamentary capacity?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Confirm testamentary capacity before amending trust",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Ensures legal and ethical compliance"
+          },
+          {
+            "option_id": "B",
+            "description": "Proceed with trust amendment without confirming capacity",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Risk of invalid amendment due to lack of capacity"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant proceeded with trust amendment without confirming capacity",
+          "reasoning_stated": "Believed amendment aligned with client's wishes",
+          "evidence_ids": [
+            "E003",
+            "E005"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Testamentary capacity should have been confirmed",
+          "standard_of_care_basis": "Legal and ethical standards require capacity confirmation",
+          "evidence_ids": [
+            "E003",
+            "E005"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to confirm capacity could invalidate the amendment",
+          "what_should_have_happened": "Capacity should have been assessed by a qualified professional",
+          "legal_standard_applied": "Standard legal practice for trust amendments",
+          "evidence_ids": [
+            "E003",
+            "E005"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Not documented in judgment",
+        "severity": "Not documented in judgment",
+        "long_term_effects": "Not documented in judgment",
+        "evidence_ids": []
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "The trial court did not err in granting summary judgment to appellees",
+          "Wife's assigned errors lack merit"
+        ],
+        "evidence_ids": [
+          "E004",
+          "E552",
+          "E558"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Not documented in judgment",
+        "counterfactual": "Not documented in judgment",
+        "evidence_ids": []
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "November 4, 2021",
+        "event": "Trust amendment executed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [],
+    "treatments": [],
+    "complications": [],
+    "allegations": [
+      {
+        "allegation": "Failure to confirm testamentary capacity",
+        "against": "Defendant attorney",
+        "found_proven": true,
+        "evidence_ids": [
+          "E003",
+          "E005"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Failure to confirm capacity",
+        "evidence_ids": [
+          "E003",
+          "E005"
+        ]
+      },
+      {
+        "finding": "The trial court did not err in granting summary judgment to appellees",
+        "legal_significance": "Wife's assigned errors lack merit",
+        "evidence_ids": [
+          "E004",
+          "E552",
+          "E558"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.01056338028169014,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 09:41:54.052623",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

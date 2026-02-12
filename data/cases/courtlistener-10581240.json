@@ -1,0 +1,373 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10581240",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2023-11-15",
+  "url": "https://example.com/courtlistener-10581240",
+  "case_name": "Faizan Farooqui and Farhat Farooqui, Individually and on Behalf of the Estate of Azra Farhat (D) v. BRFHH Shreveport, LLC, Brijesh M. Patel, M.D., Edwin W. Herron, M.D., and the State of Louisiana",
+  "neutral_citation": null,
+  "clinical_domain": "PAEDIATRICS",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Faizan Farooqui and Farhat Farooqui, Individually and on Behalf of the Estate of Azra Farhat (D) v. BRFHH Shreveport, LLC, Brijesh M. Patel, M.D., Edwin W. Herron, M.D., and the State of Louisiana. Medical malpractice case involving paediatrics.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Ms. Azra Farhat presented at the hospital complaining of chest pain; she was admitted to the hospital, and approximately 6 days later underwent coronary bypass surgery.",
+      "paragraph_ref": "16",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Her heart stopped beating and could not be revived, and thus she died.",
+      "paragraph_ref": "18",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Brown testified affirmatively to the existence of a chance of a better outcome, i.e., a 'possible better outcome.'",
+      "paragraph_ref": "97",
+      "speaker": "Dr. Brown"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Brown\u2019s testimony also indicates that the recommendation of the American College of Surgeons for Ms. Farhat\u2019s situation, regardless of the Plavix in her system, would have been to perform surgery without delay.",
+      "paragraph_ref": "104",
+      "speaker": "Dr. Brown"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "LEGAL_FINDING",
+      "text": "This writ application is DENIED and the judgment of the trial court denying the defense\u2019s MSJ is AFFIRMED.",
+      "paragraph_ref": "126",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "COURT_REASONING",
+      "text": "While any chance of a better outcome is compensable, such a chance still must be proved by a preponderance of the evidence.",
+      "paragraph_ref": "182",
+      "speaker": "Judge's analysis"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Chest pain",
+      "history_of_present_illness": "Ms. Azra Farhat presented at the hospital complaining of chest pain and was admitted. Approximately 6 days later, she underwent coronary bypass surgery.",
+      "past_medical_history": [
+        "Known triple-vessel coronary disease",
+        "Post-myocardial-infarction"
+      ],
+      "medications": [
+        "Plavix"
+      ],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "cardiovascular": "Recurrent angina post-MI, normal LV pump"
+        }
+      },
+      "initial_working_problem": "Coronary artery disease with recurrent angina post-MI",
+      "known_constraints": null,
+      "initial_differential": [
+        "Coronary artery disease",
+        "Angina"
+      ],
+      "critical_findings": [
+        "Recurrent angina post-MI",
+        "Known triple-vessel coronary disease"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E036"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSULT_NOTE",
+        "name": "Cardiology Consultation",
+        "description": "Consultation to assess the need for urgent coronary bypass surgery",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Recurrent angina post-MI, known triple-vessel coronary disease, normal LV pump",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates urgent need for coronary bypass surgery",
+          "decision_impact": "Should prompt urgent surgical intervention",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E036"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents to hospital with chest pain",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Patient admitted to hospital",
+            "timestamp": "Not documented in judgment",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Pre-Surgical Workup",
+        "description": "Assessment and decision-making regarding timing of surgery",
+        "duration": "6 days",
+        "key_events": [
+          {
+            "event": "Decision to delay surgery due to Plavix",
+            "timestamp": "Not documented in judgment",
+            "evidence_ids": [
+              "E104",
+              "E105"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient admitted with recurrent angina post-MI",
+        "prompt": "When should the coronary bypass surgery be performed?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Perform coronary bypass surgery urgently",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Urgent surgery recommended due to recurrent angina and known triple-vessel disease"
+          },
+          {
+            "option_id": "B",
+            "description": "Delay surgery to allow Plavix to clear",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Delayed due to Plavix, despite urgent indications"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Surgery delayed to allow Plavix to clear",
+          "reasoning_stated": "Defendant delayed surgery due to Plavix",
+          "evidence_ids": [
+            "E104",
+            "E105"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Surgery should have been performed urgently",
+          "standard_of_care_basis": "American College of Surgeons recommendation for urgent surgery",
+          "evidence_ids": [
+            "E104",
+            "E105"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Delay in surgery despite urgent indications",
+          "what_should_have_happened": "Urgent surgery should have been performed",
+          "legal_standard_applied": "Lost chance of a better outcome",
+          "evidence_ids": [
+            "E104",
+            "E105"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient's heart stopped during surgery and could not be revived",
+        "severity": "DEATH",
+        "long_term_effects": "Not applicable",
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Breach of duty in delaying surgery",
+          "Causation established - delay cost a chance of a better outcome"
+        ],
+        "evidence_ids": [
+          "E003",
+          "E104",
+          "E105"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Delay in performing urgent surgery",
+        "counterfactual": "Urgent surgery could have improved outcome",
+        "evidence_ids": [
+          "E003",
+          "E104",
+          "E105"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "Not documented in judgment",
+        "event": "Patient presents with chest pain and is admitted",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "Not documented in judgment",
+        "event": "Coronary bypass surgery performed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Cardiology Consultation",
+        "date": "Not documented in judgment",
+        "result": "Recurrent angina post-MI, known triple-vessel coronary disease",
+        "interpretation": null,
+        "evidence_ids": [
+          "E036"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Coronary artery disease with recurrent angina",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E036"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Coronary bypass surgery",
+        "date": "Not documented in judgment",
+        "provider": null,
+        "outcome": "Patient's heart stopped during surgery",
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Death",
+        "when_occurred": "During surgery",
+        "severity": "Fatal",
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Delay in performing urgent surgery",
+        "against": "Defendant physicians",
+        "found_proven": true,
+        "evidence_ids": [
+          "E003",
+          "E104",
+          "E105"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care by delaying surgery",
+        "legal_significance": "Lost chance of a better outcome",
+        "evidence_ids": [
+          "E003",
+          "E104",
+          "E105"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.031914893617021274,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 09:51:23.087435",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

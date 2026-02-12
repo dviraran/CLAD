@@ -1,0 +1,409 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "bailii-qb-2021-2332-html",
+  "source": "BAILII",
+  "jurisdiction": "UK",
+  "court": "Unknown",
+  "decision_date": "2021-07-19",
+  "url": "https://example.com/bailii-qb-2021-2332-html",
+  "case_name": "Weller v Royal Cornwall Hospitals NHS Trust [2021] EWHC 2332 (QB) (19 July 2021)",
+  "neutral_citation": "[2021] EWHC 2332",
+  "clinical_domain": "PAEDIATRICS",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Medical malpractice case involving paediatrics.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "The claimant was born on 3 August 1947 and, when on holiday in Truro, on 26 March 2016, when he would have been aged 69, he suffered an episode suggestive of a stroke.",
+      "paragraph_ref": "12",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "He was sent home from Truro Hospital and, two days later, on 28 March, when he was unrousable, he was taken back to hospital and seen in the Accident & Emergency Department.",
+      "paragraph_ref": "12",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "The following day, 29 March, he was much worse, unable to communicate or walk or use his right arm, and he was diagnosed with a new stroke and was hospitalised for about six to seven weeks.",
+      "paragraph_ref": "12",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr Patel's report, purportedly addressing condition and prognosis but also in fact addressing breach and causation, is dated 12 June 2020.",
+      "paragraph_ref": "15",
+      "speaker": "Dr Patel"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Mr Weller has been diagnosed with vascular dementia and it would appear that this is a principal cause of his ongoing difficulties and cognitive deficits.",
+      "paragraph_ref": "18",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "LEGAL_FINDING",
+      "text": "The issue in this appeal is whether the Deputy Master was correct in refusing the defendant the facility of having expert evidence from a neuropsychologist.",
+      "paragraph_ref": "20",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Professor Wills, dated 12 July 2021. He informs the court that a neuropsychology opinion will be valuable with respect to causation because the cause and extent of the claimant's cognitive difficulties are, he says, within the particular province of a neuropsychologist.",
+      "paragraph_ref": "28",
+      "speaker": "Professor Wills"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr Ian Baker confirms that, in his view, neuropsychological evidence will provide the court with the most detailed information and assessment of the claimant's cognitive status.",
+      "paragraph_ref": "29",
+      "speaker": "Dr Ian Baker"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "COURT_REASONING",
+      "text": "In my judgment, where experts as reputable and with such expertise as Professor Wills and Dr Baker tell the court that a neuropsychological opinion is required in order for the court properly to assess causation in this case, a court would with some reluctance reject such evidence as a case management decision.",
+      "paragraph_ref": "34",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "LEGAL_FINDING",
+      "text": "I allow the appeal and there shall be directions made accordingly.",
+      "paragraph_ref": "38",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "69 years",
+        "sex": "male",
+        "relevant_social_history": "Engineer, regular cricket player"
+      },
+      "chief_complaint": "Episode suggestive of a stroke",
+      "history_of_present_illness": "Patient experienced an episode suggestive of a stroke while on holiday in Truro.",
+      "past_medical_history": [
+        "Not documented in judgment"
+      ],
+      "medications": [
+        "Not documented in judgment"
+      ],
+      "allergies": [
+        "Not documented in judgment"
+      ],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "neurological": "Mild speech disturbance and slight difficulty walking on 28 March"
+        }
+      },
+      "initial_working_problem": "Possible stroke",
+      "known_constraints": null,
+      "initial_differential": [
+        "Stroke",
+        "Transient ischemic attack"
+      ],
+      "critical_findings": [
+        "Mild speech disturbance",
+        "Slight difficulty walking"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "CT Scan of the Head",
+        "description": "CT scan performed to assess for acute vascular event",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Extensive hyperdensity involving the left parietal, occipital and temporal lobes",
+          "detailed_findings": null,
+          "clinical_significance": "Diagnosis of an acute vascular event, presumed to be ischemic",
+          "decision_impact": "Supports diagnosis of stroke",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E013"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents to Truro Hospital with stroke-like symptoms",
+        "duration": "1 day",
+        "key_events": [
+          {
+            "event": "Initial assessment and discharge",
+            "timestamp": "26 March 2016",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Subsequent Presentation",
+        "description": "Patient returns to hospital with worsened symptoms",
+        "duration": "2 days",
+        "key_events": [
+          {
+            "event": "Re-assessment and discharge",
+            "timestamp": "28 March 2016",
+            "evidence_ids": [
+              "E002"
+            ]
+          },
+          {
+            "event": "Severe deterioration and hospitalisation",
+            "timestamp": "29 March 2016",
+            "evidence_ids": [
+              "E003"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient in ED with symptoms suggestive of stroke",
+        "prompt": "What should be the next step in management?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Admit for observation and further evaluation",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard care for suspected stroke to monitor and prevent complications"
+          },
+          {
+            "option_id": "B",
+            "description": "Discharge home with outpatient follow-up",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Inadequate monitoring for potential stroke complications"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant discharged patient home",
+          "reasoning_stated": "Defendant believed symptoms were mild and manageable",
+          "evidence_ids": [
+            "E002"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Patient should have been admitted for observation",
+          "standard_of_care_basis": "Expert evidence supports admission for suspected stroke",
+          "evidence_ids": [
+            "E017"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to admit led to deterioration",
+          "what_should_have_happened": "Patient should have been monitored in hospital",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E017",
+            "E018"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient developed severe stroke with significant disability",
+        "severity": "PERMANENT_SEVERE_DISABILITY",
+        "long_term_effects": "Vascular dementia, cognitive deficits",
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Breach of duty in failing to admit for observation",
+          "Causation established - earlier intervention could have mitigated severity"
+        ],
+        "evidence_ids": [
+          "E018",
+          "E019"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to admit for observation",
+        "counterfactual": "Admission could have prevented severe deterioration",
+        "evidence_ids": [
+          "E018",
+          "E019"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "26 March 2016",
+        "event": "Initial presentation with stroke-like symptoms",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "28 March 2016",
+        "event": "Re-presentation with worsened symptoms",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "29 March 2016",
+        "event": "Severe deterioration and hospitalisation",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "CT Scan of the Head",
+        "date": "1 April 2016",
+        "result": "Extensive hyperdensity involving the left parietal, occipital and temporal lobes",
+        "interpretation": null,
+        "evidence_ids": [
+          "E013"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Acute vascular event, presumed ischemic",
+        "when_made": "1 April 2016",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E013"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Hospitalisation for stroke management",
+        "date": "29 March 2016",
+        "provider": null,
+        "outcome": "Significant disability",
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Vascular dementia",
+        "when_occurred": "Post-stroke",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to admit for observation",
+        "against": "Defendant hospital",
+        "found_proven": true,
+        "evidence_ids": [
+          "E018"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E018"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.2564102564102564,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 06:49:15.657418",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

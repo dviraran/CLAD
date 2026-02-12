@@ -1,0 +1,448 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "bailii-EWHC-KB-2025-2445",
+  "source": "BAILII",
+  "jurisdiction": "UK",
+  "court": "Unknown",
+  "decision_date": "2025-09-26",
+  "url": "https://example.com/bailii-EWHC-KB-2025-2445",
+  "case_name": "Varela   v Buckswood School Ltd [2025] EWHC 2445 (KB) (26 September 2025)",
+  "neutral_citation": "[2025] EWHC 2445",
+  "clinical_domain": "PAEDIATRICS",
+  "outcome_severity": "PERMANENT_SEVERE_DISABILITY",
+  "summary": {
+    "brief": "Medical malpractice case involving paediatrics.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "The Claimant, Ms Irune Pedrayes Varela, brings a claim against Buckswood School Limited in relation to matters occurring in the autumn term of 2019, when the Claimant was 14 years of age and attending the school as a 'full-time boarder'",
+      "paragraph_ref": "11",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Irune Pedrayes alleges that over the weekend of 27 to 29 September 2019, and whilst on the school's premises, she was supplied by an older pupil with a drug which she was told was called 'magic' and which she took in a vape.",
+      "paragraph_ref": "12",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "The nurse recorded that the Claimant told her that that she had taken 'some drugs yesterday in a vape at about 11am', that she 'has a headache', that 'she has black in her vision, feels that things are repeating themselves'; the nurse noted 'paranoid and manic symptoms obvious'.",
+      "paragraph_ref": "12",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "The school arranged for the Claimant to be taken to the local hospital where she was seen by a doctor and assessed as suffering the effects of recreational drug use; she returned to school that afternoon.",
+      "paragraph_ref": "12",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "The Claimant alleges that the school informed her parents that she had been vaping and that she had had to go to hospital, but did not inform her parents that she had admitted to taking 'magic' or any drug",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "EXPERT_TESTIMONY",
+      "text": "It is common ground between the psychiatrists that the Claimant's consumption of illicit drugs, starting with 'magic' whilst at the school, precipitated an episode of psychosis and mania",
+      "paragraph_ref": "15",
+      "speaker": "Expert testimony"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "LEGAL_FINDING",
+      "text": "The Defendant, Buckswood School Limited, accepts that it owed a duty of care to the Claimant, but denies that it breached that duty",
+      "paragraph_ref": "17",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "FACTUAL_FINDING",
+      "text": "Quantum was agreed in the sum of \u00a3145,000 (\u00a360,000 for general damages and \u00a385,000 for special damages), inclusive of interest.",
+      "paragraph_ref": "19",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "LEGAL_FINDING",
+      "text": "In my judgment, the totality of the evidence does not support the conclusion that there was any systemic failure on the part of the school to take reasonable care to prevent access to drugs",
+      "paragraph_ref": "157",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "LEGAL_FINDING",
+      "text": "The Claimant's case on Issue 1 succeeds. In my judgment, the Defendant school acted negligently, in breach of its duty of care to the Claimant, in failing to inform the Claimant's parents timeously",
+      "paragraph_ref": "172",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E011",
+      "type": "LEGAL_FINDING",
+      "text": "The Claimant's case on Issue 2 is dismissed for the reasons set out at [103] to [118] above",
+      "paragraph_ref": "173",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E012",
+      "type": "LEGAL_FINDING",
+      "text": "The Claimant's case on Issue 3 is dismissed for the reasons set out at [120] to [146] above",
+      "paragraph_ref": "174",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E013",
+      "type": "LEGAL_FINDING",
+      "text": "Accordingly, there will be judgment for the Claimant on Issue 1 with damages agreed in the sum of \u00a360,000 for general damages and \u00a385,000 for special damages, inclusive of interest.",
+      "paragraph_ref": "175",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "14 years",
+        "sex": "female",
+        "relevant_social_history": "Boarding student at Buckswood School, parents living in Spain"
+      },
+      "chief_complaint": "Feeling unwell with headache and visual disturbances",
+      "history_of_present_illness": "Patient reports taking 'some drugs' in a vape the previous day, experiencing headache, blackness in vision, and feelings of repetition.",
+      "past_medical_history": [
+        "Behavioral issues",
+        "Psychological vulnerabilities"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "neurological": "Paranoid and manic symptoms obvious"
+        }
+      },
+      "initial_working_problem": "Acute symptoms following suspected drug use",
+      "known_constraints": null,
+      "initial_differential": [
+        "Drug-induced psychosis",
+        "Substance misuse"
+      ],
+      "critical_findings": [
+        "Paranoid and manic symptoms",
+        "Visual disturbances"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E003",
+        "E004",
+        "E005"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "LAB",
+        "name": "Urine Test",
+        "description": "Urine test performed to check for drug use",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Ketones +++, no specific drug identified",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates dehydration and possible substance use",
+          "decision_impact": "Should prompt further investigation and parental notification",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E055"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "CONSULT_NOTE",
+        "name": "Hospital Assessment",
+        "description": "Assessment by doctor at local hospital",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Symptoms of distress, disorientation, visual disturbance, and paranoid thoughts",
+          "detailed_findings": null,
+          "clinical_significance": "Attributed to effects of recreational drug use",
+          "decision_impact": "Should have led to informing parents about drug use",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E004",
+          "E056"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents to school nurse with symptoms",
+        "duration": "Morning of 30 September 2019",
+        "key_events": [
+          {
+            "event": "Patient reports drug use and symptoms to nurse",
+            "timestamp": "08:32",
+            "evidence_ids": [
+              "E003",
+              "E055"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Hospital Assessment",
+        "description": "Patient taken to hospital for further assessment",
+        "duration": "Same day",
+        "key_events": [
+          {
+            "event": "Assessment at hospital, symptoms attributed to drug use",
+            "timestamp": "10:30",
+            "evidence_ids": [
+              "E004",
+              "E056"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient presented with symptoms after drug use",
+        "prompt": "What information should be communicated to the patient's parents?",
+        "action_type": "DISCLOSE_ALTERNATIVES",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Inform parents about the drug use and symptoms",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Parents need to be aware to make informed decisions about care"
+          },
+          {
+            "option_id": "B",
+            "description": "Inform parents only about general unwellness",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Failed to provide full disclosure of drug use and symptoms"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant informed parents only about general unwellness",
+          "reasoning_stated": "School did not appreciate the severity of the situation",
+          "evidence_ids": [
+            "E005",
+            "E065"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Parents should have been informed about drug use and symptoms",
+          "standard_of_care_basis": "Duty to inform parents of significant health issues",
+          "evidence_ids": [
+            "E010",
+            "E114"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to inform parents prevented them from taking necessary actions",
+          "what_should_have_happened": "Parents should have been informed to ensure proper care",
+          "legal_standard_applied": "Standard of care for boarding schools",
+          "evidence_ids": [
+            "E010",
+            "E114",
+            "E115"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient developed psychiatric injuries requiring treatment",
+        "severity": "PERMANENT_MODERATE_DISABILITY",
+        "long_term_effects": "Psychotic episode, PTSD, hallucinogen perception disorder",
+        "evidence_ids": [
+          "E006",
+          "E015"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "145000",
+        "key_findings": [
+          "Breach of duty in failing to inform parents about drug use",
+          "Causation established - lack of information delayed appropriate intervention"
+        ],
+        "evidence_ids": [
+          "E010",
+          "E013"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to inform parents about drug use and symptoms",
+        "counterfactual": "Timely information could have led to earlier intervention",
+        "evidence_ids": [
+          "E010",
+          "E114",
+          "E115"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "30 September 2019 08:32",
+        "event": "Patient reports drug use and symptoms to school nurse",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003",
+          "E055"
+        ]
+      },
+      {
+        "timestamp": "30 September 2019 10:30",
+        "event": "Patient assessed at hospital for drug-related symptoms",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004",
+          "E056"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Urine Test",
+        "date": "30 September 2019",
+        "result": "Ketones +++, no specific drug identified",
+        "interpretation": null,
+        "evidence_ids": [
+          "E055"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Drug-induced psychosis",
+        "when_made": "30 September 2019",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E004",
+          "E056"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Hospital assessment and advice to drink fluids",
+        "date": "30 September 2019",
+        "provider": null,
+        "outcome": "Patient returned to school",
+        "evidence_ids": [
+          "E004",
+          "E056"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Psychiatric injuries",
+        "when_occurred": "Following drug use",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E006",
+          "E015"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to inform parents about drug use",
+        "against": "Buckswood School",
+        "found_proven": true,
+        "evidence_ids": [
+          "E010",
+          "E114"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Failure to inform parents of significant health issues",
+        "evidence_ids": [
+          "E010",
+          "E114"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "MONITORING_FOLLOWUP",
+      "SYSTEM_COMMUNICATION"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.07386363636363637,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-21 19:24:20.983081",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

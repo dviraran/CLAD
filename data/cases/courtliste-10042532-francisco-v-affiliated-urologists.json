@@ -1,0 +1,407 @@
+{
+  "case_id": "courtliste-10042532-francisco-v-affiliated-urologists",
+  "source": "courtlistener",
+  "source_url": "local://courtliste-10042532-francisco-v-affiliated-urologists.html",
+  "jurisdiction": "US",
+  "extraction_metadata": {
+    "version": "batch_api_v1",
+    "model": "gpt-4o",
+    "extracted_at": "2026-01-21T17:56:57.954751",
+    "simulation_extracted_at": "2026-01-21T18:29:59.568973",
+    "simulation_model": "gpt-4o"
+  },
+  "case_metadata": {
+    "case_name": "Francisco v. Affiliated Urologists",
+    "citation": "No. CV-23-0152-PR",
+    "court": "Supreme Court of the State of Arizona",
+    "date": "August 16, 2024"
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "Following his retirement as an endodontist in 2016, David Francisco moved to Sedona with his wife. In the summer of 2018, he sought treatment from Kevin Art, M.D.",
+      "paragraph_ref": "15",
+      "paragraph_starts_with": "[15] ¶2 Following his retirement",
+      "summary": "David Francisco sought treatment from Dr. Art in summer 2018.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "Francisco was a very fit and physically active sixty-six-year-old. His medical history included approximately forty years of taking corticosteroids, an allergy to the antibiotic doxycycline, and hypothyroidism.",
+      "paragraph_ref": "19",
+      "paragraph_starts_with": "[19] treatment, Francisco was a",
+      "summary": "Francisco's medical history included corticosteroid use, doxycycline allergy, and hypothyroidism.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "In August, Dr. Art performed a urological procedure on Francisco and prescribed the antibiotic Ciproflaxin (“Cipro”) to prevent post-surgery infection.",
+      "paragraph_ref": "19",
+      "paragraph_starts_with": "[19] treatment, Francisco was a",
+      "summary": "Dr. Art performed a procedure and prescribed Cipro in August.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "The packaging for Cipro contained an insert providing information about the drug and its use, which included an FDA “black box” warning.",
+      "paragraph_ref": "20",
+      "paragraph_starts_with": "[20] ¶3 The packaging for Cipro",
+      "summary": "Cipro packaging included an FDA black box warning.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "Two days after beginning to take Cipro, Francisco reported symptoms consistent with an allergic reaction to the drug, including tingling and itching sensations and mild joint pain.",
+      "paragraph_ref": "21",
+      "paragraph_starts_with": "[21] ¶4 Two days after beginning",
+      "summary": "Francisco reported allergic reaction symptoms two days after taking Cipro.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "Eventually, Francisco suffered numerous ruptured tendons throughout his body, and he suffered significant pain in his ankles, knees, hips, elbows, and right shoulder.",
+      "paragraph_ref": "21",
+      "paragraph_starts_with": "[21] ¶4 Two days after beginning",
+      "summary": "Francisco suffered ruptured tendons and significant pain.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "EXPERT_TESTIMONY",
+      "verbatim_quote": "Two expert witnesses retained by Francisco determined that his condition was consistent with Cipro toxicity.",
+      "paragraph_ref": "21",
+      "paragraph_starts_with": "[21] ¶4 Two days after beginning",
+      "summary": "Experts determined Francisco's condition was consistent with Cipro toxicity.",
+      "speaker": "Expert witnesses"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "LEGAL_FINDING",
+      "verbatim_quote": "The superior court granted the Practice’s motion to compel. The Franciscos filed a motion for reconsideration, which the court denied.",
+      "paragraph_ref": "30",
+      "paragraph_starts_with": "[30] ¶10 The superior court granted",
+      "summary": "Superior court granted Practice's motion to compel; reconsideration denied.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "LEGAL_FINDING",
+      "verbatim_quote": "The court of appeals reversed the superior court’s judgment and remanded for further proceedings.",
+      "paragraph_ref": "31",
+      "paragraph_starts_with": "[31] ¶11 The court of appeals",
+      "summary": "Court of appeals reversed superior court's judgment.",
+      "speaker": "Court of appeals"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "COURT_REASONING",
+      "verbatim_quote": "We conclude that the Franciscos’ claim is a medical malpractice claim and, therefore, the provisions of §§ 12-2603 and -2604 apply.",
+      "paragraph_ref": "50",
+      "paragraph_starts_with": "[50] ¶22 The Franciscos allege",
+      "summary": "Court concluded Franciscos' claim is a medical malpractice claim.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E011",
+      "type": "COURT_REASONING",
+      "verbatim_quote": "A layperson reading the black box warning could readily conclude that a failure to warn a patient in the circumstances presented would amount to a departure from standard medical practice.",
+      "paragraph_ref": "107",
+      "paragraph_starts_with": "[107] ¶57 Both Revels and this",
+      "summary": "Court reasoned a layperson could conclude failure to warn was a departure from standard practice.",
+      "speaker": "Justice Bolick"
+    }
+  ],
+  "verdict_detected": {
+    "outcome": "NO_LIABILITY",
+    "key_phrase": "The superior court granted the Practice’s motion to compel.",
+    "paragraph_ref": "30"
+  },
+  "extraction_notes": {
+    "total_paragraphs_analyzed": 113,
+    "key_sections_found": [
+      "Facts",
+      "Expert Evidence",
+      "Legal Findings",
+      "Court Reasoning",
+      "Conclusion"
+    ],
+    "gaps_identified": [
+      "No specific lab values mentioned",
+      "Timing of events unclear"
+    ]
+  },
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "66 years",
+        "sex": "male",
+        "relevant_social_history": "Retired endodontist, physically active"
+      },
+      "chief_complaint": "Post-procedure care following urological surgery",
+      "history_of_present_illness": "Patient underwent a urological procedure and was prescribed Cipro to prevent infection.",
+      "past_medical_history": [
+        "Long-term corticosteroid use",
+        "Hypothyroidism"
+      ],
+      "medications": [
+        "Cipro prescribed post-procedure"
+      ],
+      "allergies": [
+        "Doxycycline"
+      ],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment"
+        },
+        "focused_exam": {
+          "system": "Examination findings not specified in judgment"
+        }
+      },
+      "initial_working_problem": "Post-surgical infection prevention",
+      "initial_differential": [
+        "Infection prevention",
+        "Allergic reaction monitoring"
+      ],
+      "critical_findings": [
+        "FDA black box warning on Cipro"
+      ],
+      "urgency_level": "ROUTINE",
+      "evidence_ids": [
+        "E001",
+        "E002",
+        "E003",
+        "E004"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSULT_NOTE",
+        "name": "Post-procedure follow-up",
+        "description": "Follow-up consultation after urological procedure",
+        "available_phase": "followup",
+        "reveal": {
+          "result_summary": "Patient reported tingling, itching, and joint pain",
+          "clinical_significance": "Symptoms consistent with allergic reaction",
+          "decision_impact": "Should prompt review of medication and potential discontinuation"
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "followup",
+        "clinical_context": "Patient reports symptoms after starting Cipro",
+        "prompt": "What should be done in response to the patient's symptoms?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Continue Cipro and monitor symptoms",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Defendant did not act on symptoms immediately"
+          },
+          {
+            "option_id": "B",
+            "description": "Discontinue Cipro and provide alternative treatment",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Symptoms suggest possible Cipro toxicity"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "A",
+          "description": "Defendant continued Cipro despite symptoms",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E005",
+            "E006"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "B",
+          "description": "Cipro should have been discontinued",
+          "standard_of_care_basis": "Symptoms consistent with Cipro toxicity",
+          "evidence_ids": [
+            "E007",
+            "E011"
+          ]
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to act on black box warning and symptoms",
+          "what_should_have_happened": "Cipro should have been discontinued",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E004",
+            "E007",
+            "E011"
+          ]
+        },
+        "is_malpractice_point": true
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents for urological procedure",
+        "duration": "Not specified in judgment",
+        "key_events": [
+          {
+            "event": "Urological procedure performed",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E003"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "followup",
+        "name": "Post-procedure Follow-up",
+        "description": "Patient follow-up after starting Cipro",
+        "duration": "Two days after starting Cipro",
+        "key_events": [
+          {
+            "event": "Patient reports symptoms",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E005"
+            ]
+          }
+        ]
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient suffered ruptured tendons and significant joint pain",
+        "severity": "PERMANENT_MODERATE_DISABILITY",
+        "long_term_effects": "Chronic pain in multiple joints",
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not specified in judgment",
+        "key_findings": [
+          "Failure to discontinue Cipro despite symptoms",
+          "Cipro toxicity led to tendon ruptures"
+        ],
+        "evidence_ids": [
+          "E010",
+          "E011"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to discontinue Cipro",
+        "counterfactual": "Discontinuation could have prevented tendon damage",
+        "evidence_ids": [
+          "E007",
+          "E011"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "Summer 2018",
+        "event": "Patient sought treatment from Dr. Art",
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "August 2018",
+        "event": "Urological procedure performed and Cipro prescribed",
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "timestamp": "Two days after starting Cipro",
+        "event": "Patient reported symptoms of allergic reaction",
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [
+      {
+        "diagnosis": "Cipro toxicity",
+        "when_made": "Not specified in judgment",
+        "correct": true,
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Cipro prescribed",
+        "date": "August 2018",
+        "outcome": "Led to tendon ruptures",
+        "evidence_ids": [
+          "E003",
+          "E006"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Ruptured tendons",
+        "when_occurred": "Not specified in judgment",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to discontinue Cipro",
+        "against": "Dr. Art",
+        "found_proven": true,
+        "evidence_ids": [
+          "E011"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Failure to act on black box warning",
+        "evidence_ids": [
+          "E011"
+        ]
+      }
+    ]
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "TREATMENT_PROCEDURE_ERROR",
+      "MEDICATION_ERROR"
+    ],
+    "diagnosis_subtypes": [
+      "FAILURE_TO_INVESTIGATE"
+    ]
+  }
+}

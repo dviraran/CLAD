@@ -1,0 +1,373 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-4615883",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "0083-05-18",
+  "url": "https://example.com/courtlistener-4615883",
+  "case_name": "Sujeet Acharya M.D., Texas Oncology P.A., and Texas Urology Specialists v. Bernice Marie Gomez",
+  "neutral_citation": null,
+  "clinical_domain": "PAEDIATRICS",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Sujeet Acharya M.D., Texas Oncology P.A., and Texas Urology Specialists v. Bernice Marie Gomez. Medical malpractice case involving paediatrics.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Gomez was diagnosed with a malignant tumor in her left adrenal gland that was causing her abdominal pain.",
+      "paragraph_ref": "12",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. Acharya performed surgery on Gomez on November 14, 2016, to remove the cancerous adrenal gland.",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "A post-surgical pathology report revealed that only benign tissue from Gomez\u2019s pancreas had been removed, not the cancerous adrenal tissue.",
+      "paragraph_ref": "14",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "EXPERT_TESTIMONY",
+      "text": "The standard of care in treating an adrenal malignancy with adrenalectomy is absolutely clear: the adrenal gland containing the tumor should be removed.",
+      "paragraph_ref": "164",
+      "speaker": "Dr. Link"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Link explained that Dr. Acharya breached the standard of care by failing to remove the adrenal gland.",
+      "paragraph_ref": "199",
+      "speaker": "Dr. Link"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "LEGAL_FINDING",
+      "text": "We affirm the trial court\u2019s order denying appellants\u2019 motion to dismiss.",
+      "paragraph_ref": "236",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "COURT_REASONING",
+      "text": "Dr. Link\u2019s report provides a fair summary of his opinions regarding the causal relationship between the breaches of the standard of care he identifies and the injuries to Gomez.",
+      "paragraph_ref": "220",
+      "speaker": "Court analysis"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Abdominal pain",
+      "history_of_present_illness": "Gomez was diagnosed with a malignant tumor in her left adrenal gland that was causing her abdominal pain.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "abdomen": "Examination mentioned but findings not specified"
+        }
+      },
+      "initial_working_problem": "Malignant adrenal tumor",
+      "known_constraints": null,
+      "initial_differential": [
+        "Adrenal malignancy"
+      ],
+      "critical_findings": [
+        "Malignant tumor in left adrenal gland"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "PATHOLOGY",
+        "name": "Post-surgical pathology report",
+        "description": "Pathology report of the tissue removed during surgery",
+        "available_phase": "postop",
+        "reveal": {
+          "result_summary": "Only benign tissue from Gomez\u2019s pancreas had been removed",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates failure to remove the cancerous adrenal tissue",
+          "decision_impact": "Should prompt re-evaluation of surgical approach",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with symptoms related to adrenal tumor",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Diagnosis of malignant adrenal tumor",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "procedure",
+        "name": "Surgical Procedure",
+        "description": "Surgery to remove the cancerous adrenal gland",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Surgery performed by Dr. Acharya",
+            "timestamp": "November 14, 2016",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "postop",
+        "name": "Postoperative Phase",
+        "description": "Post-surgical recovery and complications",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Pathology report reveals removal of benign pancreatic tissue",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E003"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "procedure",
+        "clinical_context": "During surgery to remove the cancerous adrenal gland",
+        "prompt": "What should the surgeon ensure during the adrenalectomy?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Ensure correct identification and removal of the adrenal gland",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard of care requires removal of the adrenal gland containing the tumor"
+          },
+          {
+            "option_id": "B",
+            "description": "Proceed with removal of tissue without confirming organ identity",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Leads to potential removal of incorrect tissue"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant removed benign pancreatic tissue instead of the adrenal gland",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E003",
+            "E005"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Correct identification and removal of the adrenal gland should have been ensured",
+          "standard_of_care_basis": "Expert evidence established the standard of care",
+          "evidence_ids": [
+            "E004",
+            "E005"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to remove the correct organ breached the standard of care",
+          "what_should_have_happened": "The adrenal gland containing the tumor should have been removed",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E004",
+            "E005"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient suffered from worsening abdominal pain and required treatment for injured pancreas",
+        "severity": "PERMANENT_MODERATE_DISABILITY",
+        "long_term_effects": "Continued suffering from malignant adrenal tumor",
+        "evidence_ids": [
+          "E003",
+          "E005"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Breach of duty in failing to remove the adrenal gland",
+          "Causation established - failure to remove tumor led to continued malignancy"
+        ],
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to remove the adrenal gland containing the tumor",
+        "counterfactual": "Correct removal of the adrenal gland would have addressed the malignancy",
+        "evidence_ids": [
+          "E005",
+          "E007"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "November 14, 2016",
+        "event": "Surgery performed by Dr. Acharya",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Post-surgical pathology report",
+        "date": "Date not specified in judgment",
+        "result": "Only benign pancreatic tissue removed",
+        "interpretation": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Malignant adrenal tumor",
+        "when_made": "Date not specified in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Surgery to remove adrenal gland",
+        "date": "November 14, 2016",
+        "provider": null,
+        "outcome": "Incorrect tissue removed",
+        "evidence_ids": [
+          "E002",
+          "E003"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Injury to pancreas",
+        "when_occurred": "Post-surgery",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to remove adrenal gland",
+        "against": "Dr. Acharya",
+        "found_proven": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "TREATMENT_PROCEDURE_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.02857142857142857,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 09:41:20.524307",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

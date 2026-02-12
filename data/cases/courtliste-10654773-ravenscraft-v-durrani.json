@@ -1,0 +1,369 @@
+{
+  "case_id": "courtliste-10654773-ravenscraft-v-durrani",
+  "source": "courtlistener",
+  "source_url": "local://courtliste-10654773-ravenscraft-v-durrani.html",
+  "jurisdiction": "US",
+  "extraction_metadata": {
+    "version": "batch_api_v1",
+    "model": "gpt-4o",
+    "extracted_at": "2026-01-21T17:56:57.963007",
+    "simulation_extracted_at": "2026-01-21T18:29:59.588276",
+    "simulation_model": "gpt-4o"
+  },
+  "case_metadata": {
+    "case_name": "Ravenscraft v. Durrani",
+    "citation": "2025-Ohio-2900",
+    "court": "Court of Appeals, First Appellate District of Ohio, Hamilton County",
+    "date": "August 15, 2025"
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "In 2015, Ravenscraft sued the Durrani parties for damages related to an allegedly unnecessary spinal-fusion surgery performed on her by Dr. Durrani.",
+      "paragraph_ref": "80",
+      "paragraph_starts_with": "{¶10} In 2015, Ravenscraft",
+      "summary": "Ravenscraft sued for damages from an unnecessary spinal-fusion surgery.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "Bowling sued Dr. Durrani, CAST, West Chester Hospital, LLC, and UC Health for damages related to an allegedly unnecessary spinal-fusion surgery performed on her by Dr. Durrani.",
+      "paragraph_ref": "85",
+      "paragraph_starts_with": "{¶11} In 2016, Bowling sued",
+      "summary": "Bowling sued for damages from an unnecessary spinal-fusion surgery.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "EXPERT_TESTIMONY",
+      "verbatim_quote": "Dr. Bloomfield explained that Dr. Durrani breached the standard of care for both, not having her undergo conservative therapy first before surgery and not medically indicated.",
+      "paragraph_ref": "203",
+      "paragraph_starts_with": "“the standard of care for both,",
+      "summary": "Dr. Bloomfield testified that Dr. Durrani breached the standard of care.",
+      "speaker": "Dr. Bloomfield"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "EXPERT_TESTIMONY",
+      "verbatim_quote": "Dr. Wilkey found the consent form fell below the standard of care. And he found no evidence that Dr. Durrani explained the procedure that was not needed and caused harm.",
+      "paragraph_ref": "402",
+      "paragraph_starts_with": "consent form fell below the",
+      "summary": "Dr. Wilkey testified that the consent form was inadequate.",
+      "speaker": "Dr. Wilkey"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "LEGAL_FINDING",
+      "verbatim_quote": "The jury found the defendants liable for both patients’ injuries and awarded compensatory and punitive damages.",
+      "paragraph_ref": "505",
+      "paragraph_starts_with": "The jury found the defendants",
+      "summary": "Jury found defendants liable and awarded damages.",
+      "speaker": "Jury verdict"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "LEGAL_FINDING",
+      "verbatim_quote": "We overrule the assignments of error and affirm the trial court’s judgments.",
+      "paragraph_ref": "1101",
+      "paragraph_starts_with": "{¶152} We overrule the assignments",
+      "summary": "Court of Appeals affirms trial court's judgments.",
+      "speaker": "Court of Appeals"
+    }
+  ],
+  "verdict_detected": {
+    "outcome": "LIABILITY_FOUND",
+    "key_phrase": "The jury found the defendants liable for both patients’ injuries and awarded compensatory and punitive damages",
+    "paragraph_ref": "505"
+  },
+  "extraction_notes": {
+    "total_paragraphs_analyzed": 1105,
+    "key_sections_found": [
+      "Facts",
+      "Expert Evidence",
+      "Conclusion"
+    ],
+    "gaps_identified": [
+      "No specific lab values mentioned",
+      "Timing of events unclear"
+    ]
+  },
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "Not documented in judgment",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Not documented in judgment",
+      "history_of_present_illness": "Patient underwent spinal-fusion surgery allegedly without prior conservative therapy.",
+      "past_medical_history": "Not documented in judgment",
+      "medications": "Not documented in judgment",
+      "allergies": "Not documented in judgment",
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment"
+        },
+        "focused_exam": {
+          "system": "Examination mentioned but findings not specified"
+        }
+      },
+      "initial_working_problem": "Spinal condition requiring evaluation for surgery",
+      "initial_differential": [
+        "Spinal condition requiring conservative therapy"
+      ],
+      "critical_findings": [
+        "Surgery performed without conservative therapy"
+      ],
+      "urgency_level": "Not documented in judgment",
+      "evidence_ids": [
+        "E001",
+        "E003"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSENT_DISCUSSION",
+        "name": "Consent Form Review",
+        "description": "Review of the consent form for spinal-fusion surgery",
+        "available_phase": "decision",
+        "reveal": {
+          "result_summary": "Consent form inadequate",
+          "clinical_significance": "Patient not fully informed of procedure necessity",
+          "decision_impact": "Informed consent not properly obtained"
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "decision",
+        "clinical_context": "Patient evaluated for spinal surgery",
+        "prompt": "Should conservative therapy be attempted before surgery?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Attempt conservative therapy first",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard of care requires conservative measures before surgery"
+          },
+          {
+            "option_id": "B",
+            "description": "Proceed directly to spinal-fusion surgery",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Surgery not medically indicated without prior therapy"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant proceeded with surgery without conservative therapy",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E003"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Conservative therapy should have been attempted",
+          "standard_of_care_basis": "Expert testimony established this as standard",
+          "evidence_ids": [
+            "E003"
+          ]
+        },
+        "explanation": {
+          "why_defendant_wrong": "Based on expert testimony E003",
+          "what_should_have_happened": "Conservative therapy should have been attempted",
+          "legal_standard_applied": "Bolam test",
+          "evidence_ids": [
+            "E003"
+          ]
+        },
+        "is_malpractice_point": true
+      },
+      {
+        "decision_id": "D002",
+        "phase_id": "decision",
+        "clinical_context": "Patient consent for spinal surgery",
+        "prompt": "Was the consent form adequate?",
+        "action_type": "DISCLOSE_ALTERNATIVES",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Ensure comprehensive consent form",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Patient must be fully informed of risks and alternatives"
+          },
+          {
+            "option_id": "B",
+            "description": "Use inadequate consent form",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Patient not fully informed"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant used inadequate consent form",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E004"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Comprehensive consent should have been obtained",
+          "standard_of_care_basis": "Expert testimony established this as standard",
+          "evidence_ids": [
+            "E004"
+          ]
+        },
+        "explanation": {
+          "why_defendant_wrong": "Based on expert testimony E004",
+          "what_should_have_happened": "Comprehensive consent should have been obtained",
+          "legal_standard_applied": "Bolam test",
+          "evidence_ids": [
+            "E004"
+          ]
+        },
+        "is_malpractice_point": true
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with spinal condition",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Evaluation for spinal surgery",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "decision",
+        "name": "Decision for Surgery",
+        "description": "Decision-making process for spinal surgery",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Consent form review",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E004"
+            ]
+          }
+        ]
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient underwent unnecessary spinal-fusion surgery",
+        "severity": "Not documented in judgment",
+        "long_term_effects": "Not documented in judgment",
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Breach of duty in performing unnecessary surgery",
+          "Inadequate consent form"
+        ],
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to attempt conservative therapy and inadequate consent",
+        "counterfactual": "Conservative therapy could have been attempted",
+        "evidence_ids": [
+          "E003",
+          "E004",
+          "E005"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Patient evaluated for spinal surgery",
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [],
+    "treatments": [
+      {
+        "treatment": "Spinal-fusion surgery",
+        "date": "Not documented in judgment",
+        "outcome": "Performed without conservative therapy",
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "complications": [],
+    "allegations": [
+      {
+        "allegation": "Unnecessary spinal-fusion surgery",
+        "against": "Dr. Durrani",
+        "found_proven": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "allegation": "Inadequate consent form",
+        "against": "Dr. Durrani",
+        "found_proven": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ]
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "INFORMED_CONSENT"
+    ],
+    "diagnosis_subtypes": [
+      "FAILURE_TO_INVESTIGATE"
+    ]
+  }
+}

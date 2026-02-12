@@ -1,0 +1,442 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtliste-10627968-leslie-smith-as-personal-representative-of-t",
+  "source": "BAILII",
+  "jurisdiction": "UK",
+  "court": "Unknown",
+  "decision_date": "2021-10-21",
+  "url": "https://example.com/courtliste-10627968-leslie-smith-as-personal-representative-of-t",
+  "case_name": "Leslie Smith, as Personal Representative of the Estate of Marcus D. Smith v. Rosalinde Minier, as Personal Representative of The Estate of Ingeborg Steiner, and Werner Enterprises, Inc.",
+  "neutral_citation": null,
+  "clinical_domain": "NEUROLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Leslie Smith, as Personal Representative of the Estate of Marcus D. Smith v. Rosalinde Minier, as Personal Representative of The Estate of Ingeborg Steiner, and Werner Enterprises, Inc.. Medical malpractice case involving neurology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "On April 2, 2013, a multi-vehicle accident occurred on Interstate 10 in Jackson County.",
+      "paragraph_ref": "15",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "As a result of the car accident, Marcus suffered a cervical fracture and multiple rib fractures.",
+      "paragraph_ref": "18",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "Upon his release, Marcus was prescribed Lortab, a pain medication that contains hydrocodone and acetaminophen.",
+      "paragraph_ref": "20",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "On April 8, 2013, emergency medical services (EMS) responded to the Smith home after Leslie called 911 due to Marcus\u2019s impaired mental condition and combativeness.",
+      "paragraph_ref": "25",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "Marcus ultimately died on September 24, 2013, from liver failure as a result of acetaminophen ingestion.",
+      "paragraph_ref": "30",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Julie attached Federal Drug Administration regulations to his sworn affidavit, which explained that liver failure resulting from pain medication has been known and addressed by the government for a very long time.",
+      "paragraph_ref": "57",
+      "speaker": "Dr. Julie"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Kesterson testified that in his thirty years of medical experience, he had never known a patient to die from liver failure as a result of the ingestion of pain medication.",
+      "paragraph_ref": "56",
+      "speaker": "Dr. Kesterson"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "LEGAL_FINDING",
+      "text": "The judgment of the Court of Appeals is affirmed. The judgment of the Jackson County Circuit Court is reversed and remanded.",
+      "paragraph_ref": "199",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "COURT_REASONING",
+      "text": "Foreseeability comes into play in two of the four elements of negligence. As part of the causation element, whether a consequence of an alleged negligent act or omission is foreseeable is a question of fact.",
+      "paragraph_ref": "202",
+      "speaker": "Court reasoning"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "male",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Impaired mental condition and combativeness",
+      "history_of_present_illness": "Marcus was involved in a multi-vehicle accident and suffered a cervical fracture and multiple rib fractures. He was prescribed Lortab for pain management.",
+      "past_medical_history": [
+        "Cervical fracture",
+        "Multiple rib fractures"
+      ],
+      "medications": [
+        "Lortab (hydrocodone and acetaminophen)"
+      ],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "neurological": "Impaired mental condition and combativeness"
+        }
+      },
+      "initial_working_problem": "Acute liver failure due to acetaminophen toxicity",
+      "known_constraints": null,
+      "initial_differential": [
+        "Acetaminophen toxicity",
+        "Other drug overdose"
+      ],
+      "critical_findings": [
+        "All 56 Lortab pills were gone"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E002",
+        "E004"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "LAB",
+        "name": "Liver Function Tests",
+        "description": "Assessment of liver enzymes and function",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not documented in judgment",
+          "detailed_findings": null,
+          "clinical_significance": "Not documented in judgment",
+          "decision_impact": "Not documented in judgment",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": []
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Emergency Presentation",
+        "description": "Patient presents with impaired mental condition and combativeness",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "EMS response to Smith home",
+            "timestamp": "April 8, 2013",
+            "evidence_ids": [
+              "E004"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Post-Accident Management",
+        "description": "Management of pain and injuries post-accident",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Prescription of Lortab for pain management",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E003"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient presented with impaired mental condition after taking Lortab",
+        "prompt": "What should be the next step in management?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Administer N-acetylcysteine for suspected acetaminophen overdose",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard treatment for acetaminophen toxicity"
+          },
+          {
+            "option_id": "B",
+            "description": "Continue observation without specific treatment",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Inadequate response to suspected overdose"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant continued observation without specific treatment",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": []
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "N-acetylcysteine should have been administered",
+          "standard_of_care_basis": "Expert evidence supports early intervention",
+          "evidence_ids": []
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to treat acetaminophen toxicity promptly",
+          "what_should_have_happened": "N-acetylcysteine administration",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": []
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient developed liver failure due to acetaminophen overdose",
+        "severity": "FATAL",
+        "long_term_effects": "Not applicable",
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "None",
+        "key_findings": [
+          "Acetaminophen-induced liver failure not deemed foreseeable from car accident",
+          "No breach of duty in prescribing medication"
+        ],
+        "evidence_ids": [
+          "E008",
+          "E009"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Not applicable",
+        "counterfactual": "Not applicable",
+        "evidence_ids": [
+          "E008",
+          "E009"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "April 2, 2013",
+        "event": "Multi-vehicle accident on Interstate 10",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "April 8, 2013",
+        "event": "EMS responded to Smith home",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "timestamp": "April 2, 2013",
+        "event": "Multi-vehicle accident resulting in cervical and rib fractures",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001",
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "April 8, 2013",
+        "event": "EMS responded to Smith home",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "timestamp": "September 24, 2013",
+        "event": "Marcus died from liver failure",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Not documented in judgment",
+        "date": "Not documented in judgment",
+        "result": "Not documented in judgment",
+        "interpretation": null,
+        "evidence_ids": []
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Acute liver failure due to acetaminophen toxicity",
+        "when_made": "April 8, 2013",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "diagnosis": "Liver failure due to acetaminophen overdose",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Not documented in judgment",
+        "date": "Not documented in judgment",
+        "provider": null,
+        "outcome": "Not documented in judgment",
+        "evidence_ids": []
+      },
+      {
+        "treatment": "Prescription of Lortab",
+        "date": "Not documented in judgment",
+        "provider": null,
+        "outcome": "Contributed to liver failure",
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Liver failure",
+        "when_occurred": "April 8, 2013",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "complication": "Liver failure",
+        "when_occurred": "September 24, 2013",
+        "severity": "Fatal",
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to foresee acetaminophen-induced liver failure",
+        "against": "Defendants",
+        "found_proven": false,
+        "evidence_ids": [
+          "E008"
+        ]
+      },
+      {
+        "allegation": "Failure to foresee liver failure from acetaminophen",
+        "against": "Defendant",
+        "found_proven": false,
+        "evidence_ids": [
+          "E008",
+          "E009"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Death from acetaminophen-induced liver failure was not legally foreseeable",
+        "legal_significance": "No liability found",
+        "evidence_ids": [
+          "E008",
+          "E009"
+        ]
+      },
+      {
+        "finding": "No breach of duty in prescribing medication",
+        "legal_significance": "Foreseeability of harm not established",
+        "evidence_ids": [
+          "E008",
+          "E009"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.018518518518518517,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 08:43:15.968223",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

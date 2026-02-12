@@ -1,0 +1,379 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "bailii-qb-2019-1508-html",
+  "source": "BAILII",
+  "jurisdiction": "UK",
+  "court": "Unknown",
+  "decision_date": "2019-06-14",
+  "url": "https://example.com/bailii-qb-2019-1508-html",
+  "case_name": "EPX (A Child) v Milton Keynes University Hospital NHS Trust [2019] EWHC 1508 (QB) (14 June 2019)",
+  "neutral_citation": "[2019] EWHC 1508",
+  "clinical_domain": "OBSTETRICS_GYNAECOLOGY",
+  "outcome_severity": "TEMPORARY_HARM",
+  "summary": {
+    "brief": "Medical malpractice case involving obstetrics gynaecology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "The Claimant was born prematurely in a hospital in Great Yarmouth on 28 July 2015. She was transferred to the neonatal intensive care unit as a result of her prematurity and low gestational weight.",
+      "paragraph_ref": "16",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Her mother subsequently tested positive for Group B Streptococcus ('GBS'). The Claimant was given intravenous antibiotics because of her mother's GBS.",
+      "paragraph_ref": "16",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "She deteriorated at home on 21/22 August 2005 and was brought back to hospital on the morning of 22 August 2005. She was ill and getting worse.",
+      "paragraph_ref": "16",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "Despite intravenous antibiotics being commenced, she deteriorated further and was transferred to the Oxford Radcliffe hospital.",
+      "paragraph_ref": "16",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "There it was later confirmed that she suffered very extensive brain injury as a result of GBS meningitis.",
+      "paragraph_ref": "16",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "LEGAL_FINDING",
+      "text": "The appeal must be dismissed.",
+      "paragraph_ref": "108",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "The claim was eventually settled for \u00a31.837 million and annual periodical payments for care and case management in the sum of \u00a3204,000 per annum from December 2016 until December 2023, increasing to \u00a3230,504 per annum from December 2024 onwards.",
+      "paragraph_ref": "17",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "FACTUAL_FINDING",
+      "text": "Life expectancy was agreed by the parties to the age of 24 years.",
+      "paragraph_ref": "17",
+      "speaker": "Court finding"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Deterioration at home, brought to hospital",
+      "history_of_present_illness": "The Claimant was born prematurely and was initially doing well after discharge but deteriorated at home on 21/22 August 2005.",
+      "past_medical_history": [
+        "Prematurity",
+        "Exposure to Group B Streptococcus"
+      ],
+      "medications": [
+        "Intravenous antibiotics given initially due to mother's GBS status"
+      ],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "general": "Patient appeared ill and was getting worse"
+        }
+      },
+      "initial_working_problem": "Suspected infection due to deterioration",
+      "known_constraints": null,
+      "initial_differential": [
+        "GBS infection",
+        "Other neonatal infections"
+      ],
+      "critical_findings": [
+        "Deterioration despite initial treatment"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002",
+        "E003"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "LAB",
+        "name": "Blood Cultures",
+        "description": "Blood cultures to identify bacterial infection",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "GBS identified after 13 hours incubation",
+          "detailed_findings": null,
+          "clinical_significance": "Confirms GBS infection",
+          "decision_impact": "Should prompt immediate recall and treatment",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents to hospital with deterioration",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Patient brought to hospital",
+            "timestamp": "22 August 2005",
+            "evidence_ids": [
+              "E003"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Diagnostic Workup",
+        "description": "Blood cultures taken and results received",
+        "duration": "13 hours",
+        "key_events": [
+          {
+            "event": "Blood cultures reveal GBS",
+            "timestamp": "21 August 2005",
+            "evidence_ids": [
+              "E003"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient in ED with signs of infection",
+        "prompt": "What should be done after receiving positive blood culture results?",
+        "action_type": "ESCALATE_CARE",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Recall patient to hospital for immediate treatment",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Immediate treatment required for confirmed GBS infection"
+          },
+          {
+            "option_id": "B",
+            "description": "No action taken",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Failure to act on critical lab result"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "No action was taken after positive blood culture result",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E003"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Patient should have been recalled for treatment",
+          "standard_of_care_basis": "Immediate intervention required for GBS",
+          "evidence_ids": [
+            "E003",
+            "E005"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to act on positive blood culture led to deterioration",
+          "what_should_have_happened": "Patient should have been recalled for immediate treatment",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E003",
+            "E005"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient suffered extensive brain injury due to GBS meningitis",
+        "severity": "PERMANENT_SEVERE_DISABILITY",
+        "long_term_effects": "Very extensive brain injury",
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "1.837 million",
+        "key_findings": [
+          "Failure to act on positive blood culture",
+          "Causation established - earlier intervention could have prevented brain injury"
+        ],
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to recall patient after positive blood culture",
+        "counterfactual": "Immediate treatment could have prevented brain injury",
+        "evidence_ids": [
+          "E003",
+          "E005",
+          "E007"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "28 July 2015",
+        "event": "Claimant born prematurely",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "22 August 2005",
+        "event": "Patient brought back to hospital",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Blood Cultures",
+        "date": "21 August 2005",
+        "result": "GBS identified",
+        "interpretation": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "GBS meningitis",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Intravenous antibiotics",
+        "date": "Not documented in judgment",
+        "provider": null,
+        "outcome": "Not effective in preventing deterioration",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Extensive brain injury",
+        "when_occurred": "Not documented in judgment",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to act on positive blood culture",
+        "against": "Defendant hospital",
+        "found_proven": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.064,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 07:45:20.434719",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

@@ -1,0 +1,418 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10749116",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2025-12-05",
+  "url": "https://example.com/courtlistener-10749116",
+  "case_name": "In Re: Medical Review Panel Proceeding of the Family of Hai Nguyen .",
+  "neutral_citation": null,
+  "clinical_domain": "OBSTETRICS_GYNAECOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Medical malpractice case involving obstetrics gynaecology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Ms. Nguyen visited the emergency room at Tulane Medical Center accompanied by her daughter, Nga Nguyen (\u201cNga\u201d). She had fallen at her home.",
+      "paragraph_ref": "14",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Ms. Nguyen returned to Tulane Medical Center on May 15, 2019, complaining of shortness of breath and lower extremity swelling.",
+      "paragraph_ref": "19",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. Zamir ordered continuing dialysis and noted \u201cnon-gangrene\u201d on her lower extremities after a normal inspection.",
+      "paragraph_ref": "25",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "On June 3, 2019, Ms. Nguyen sought further treatment with Dr. Vu Mai at Westbank Medical and Walk-In Clinic.",
+      "paragraph_ref": "28",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "Ms. Nguyen was \u201cpresent for a [follow up] for gangrene in the toes and heel.\u201d",
+      "paragraph_ref": "35",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "Ms. Nguyen\u2019s leg was amputated below the knee on July 1, 2019.",
+      "paragraph_ref": "42",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "Ms. Nguyen died from a heart attack on March 27, 2020.",
+      "paragraph_ref": "43",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "LEGAL_FINDING",
+      "text": "The judgment dismissing Appellants\u2019 petition filed more than one year later on June 15, 2021 is affirmed.",
+      "paragraph_ref": "146",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "COURT_REASONING",
+      "text": "Based on the record before us, we find that Ms. Nguyen had the necessary constructive knowledge to begin tolling the one-year prescriptive period on June 3, 2019.",
+      "paragraph_ref": "143",
+      "speaker": "Judge's analysis"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "59 years",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Fall at home resulting in bruising and subarachnoid hemorrhage",
+      "history_of_present_illness": "Patient presented to the emergency room after a fall at home, accompanied by her daughter.",
+      "past_medical_history": [
+        "Diabetes",
+        "End-stage renal disease",
+        "Hypertension",
+        "Lung ailments",
+        "Peripheral vascular disease"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "neurological": "Subarachnoid hemorrhage noted",
+          "extremities": "Bruising noted, gangrene not documented at this visit"
+        }
+      },
+      "initial_working_problem": "Fall with head injury and potential complications",
+      "known_constraints": null,
+      "initial_differential": [
+        "Subarachnoid hemorrhage",
+        "Bruising"
+      ],
+      "critical_findings": [
+        "Subarachnoid hemorrhage"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002",
+        "E003"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "CT Head",
+        "description": "CT scan of the head to assess for hemorrhage",
+        "available_phase": "presentation",
+        "reveal": {
+          "result_summary": "Subarachnoid hemorrhage confirmed",
+          "detailed_findings": null,
+          "clinical_significance": "Confirms head injury from fall",
+          "decision_impact": "Requires monitoring and potential intervention",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "CONSULT_NOTE",
+        "name": "Nephrology Consult",
+        "description": "Consultation with nephrology for dialysis management",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Continuing dialysis ordered, non-gangrene noted",
+          "detailed_findings": null,
+          "clinical_significance": "No immediate vascular concerns noted",
+          "decision_impact": "Continued dialysis without further vascular investigation",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "First ER Visit",
+        "description": "Initial presentation to the emergency room after a fall",
+        "duration": "1 day",
+        "key_events": [
+          {
+            "event": "ER assessment and discharge",
+            "timestamp": "April 20, 2019",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Second ER Visit",
+        "description": "Return to ER with new symptoms",
+        "duration": "2 days",
+        "key_events": [
+          {
+            "event": "Admitted for shortness of breath and swelling",
+            "timestamp": "May 15, 2019",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient with diabetes and peripheral vascular disease presenting with lower extremity issues",
+        "prompt": "What should be the next step in evaluating the patient's lower extremity condition?",
+        "action_type": "ORDER_TEST",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Order vascular imaging to assess for gangrene",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Necessary to rule out vascular compromise given patient's history"
+          },
+          {
+            "option_id": "B",
+            "description": "Continue with dialysis and monitor",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Assumed non-gangrene without further investigation"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant continued dialysis without further vascular imaging",
+          "reasoning_stated": "Non-gangrene noted on inspection",
+          "evidence_ids": [
+            "E003"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Vascular imaging should have been ordered",
+          "standard_of_care_basis": "Patient's history and symptoms warranted further investigation",
+          "evidence_ids": [
+            "E005",
+            "E006"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to investigate potential gangrene led to delayed diagnosis",
+          "what_should_have_happened": "Vascular imaging would have identified gangrene earlier",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E005",
+            "E006",
+            "E007"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient's condition worsened, leading to leg amputation and eventual death",
+        "severity": "PERMANENT_SEVERE_DISABILITY",
+        "long_term_effects": "Amputation, death from heart attack",
+        "evidence_ids": [
+          "E006",
+          "E007"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "None",
+        "key_findings": [
+          "Claim prescribed due to constructive knowledge on June 3, 2019",
+          "No breach of duty found within prescriptive period"
+        ],
+        "evidence_ids": [
+          "E008",
+          "E009"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Failure to order vascular imaging",
+        "counterfactual": "Earlier imaging could have prevented amputation",
+        "evidence_ids": [
+          "E005",
+          "E006",
+          "E007"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "April 20, 2019",
+        "event": "Patient visited ER after fall",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "May 15, 2019",
+        "event": "Patient returned to ER with new symptoms",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "June 3, 2019",
+        "event": "Patient visited Dr. Mai for worsening symptoms",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "CT Head",
+        "date": "April 20, 2019",
+        "result": "Subarachnoid hemorrhage",
+        "interpretation": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Gangrene",
+        "when_made": "June 3, 2019",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Amputation",
+        "date": "July 1, 2019",
+        "provider": null,
+        "outcome": "Leg amputated below knee",
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Heart attack",
+        "when_occurred": "March 27, 2020",
+        "severity": "Fatal",
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to diagnose gangrene",
+        "against": "Dr. Simon and Dr. Zamir",
+        "found_proven": false,
+        "evidence_ids": [
+          "E008"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Claim prescribed due to constructive knowledge",
+        "legal_significance": "No liability found",
+        "evidence_ids": [
+          "E009"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.06040268456375839,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 08:00:15.648353",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

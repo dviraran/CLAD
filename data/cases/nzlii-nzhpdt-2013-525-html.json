@@ -1,0 +1,433 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "nzlii-nzhpdt-2013-525-html",
+  "source": "BAILII",
+  "jurisdiction": "UK",
+  "court": "Unknown",
+  "decision_date": "2013-04-08",
+  "url": "https://example.com/nzlii-nzhpdt-2013-525-html",
+  "case_name": "9.\tAs Justice Elias said inB v The Medical\nCouncil1:",
+  "neutral_citation": "[1960] HCA 40",
+  "clinical_domain": "PAEDIATRICS",
+  "outcome_severity": "PERMANENT_SEVERE_DISABILITY",
+  "summary": {
+    "brief": "9.\tAs Justice Elias said inB v The Medical\nCouncil1:. Medical malpractice case involving paediatrics.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Mr White\u2019s primary diagnosis was amblyopia. This is the unilateral or rarely bilateral decrease in best corrected visual acuity",
+      "paragraph_ref": "53",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Mr White has admitted that as at 16 December 2010 he had a 16 year old patient with poorish right eye pin hole vision, an abnormal macula",
+      "paragraph_ref": "176",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "LEGAL_FINDING",
+      "text": "The Tribunal considered that the charge had been established and warranted disciplinary sanction and amounted to professional misconduct",
+      "paragraph_ref": "19",
+      "speaker": "Tribunal conclusion"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "COURT_REASONING",
+      "text": "The Tribunal considers that the failure to make a diagnosis of retinal detachment and then not to refer that urgently for an ophthalmologist\u2019s opinion are significant departures",
+      "paragraph_ref": "29",
+      "speaker": "Tribunal analysis"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "Mr White did not refer Mr McGiven to an ophthalmologist until 7 February 2011.",
+      "paragraph_ref": "27",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "LEGAL_FINDING",
+      "text": "The Tribunal suspends Mr White from practice for a period of six months.",
+      "paragraph_ref": "225",
+      "speaker": "Tribunal conclusion"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "Mr White told Mrs McGiven and her son that in view of the abnormality he had detected he wanted to take some more and better photographs.",
+      "paragraph_ref": "11",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Mr Grimmer\u2019s expert opinion",
+      "paragraph_ref": "176",
+      "speaker": "Expert witness"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "WITNESS_STATEMENT",
+      "text": "Mr Swanepoel for Mr White did not contest the conclusion that the conduct was professional misconduct",
+      "paragraph_ref": "17",
+      "speaker": "Mr Swanepoel"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "COURT_REASONING",
+      "text": "The Tribunal does not impose any fine against Mr White in recognition of the fact that it has suspended him from practice",
+      "paragraph_ref": "32",
+      "speaker": "Tribunal analysis"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "16 years",
+        "sex": "male",
+        "relevant_social_history": "Student at Pompallier College"
+      },
+      "chief_complaint": "Failed eyesight test for learner's driver's license",
+      "history_of_present_illness": "Patient reports surprise at failing eyesight test, previously boasted 20/20 vision.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "eyes": "Right superior field defect, black pigmented spot inferior to macula"
+        }
+      },
+      "initial_working_problem": "Abnormality in right eye",
+      "known_constraints": null,
+      "initial_differential": [
+        "amblyopia",
+        "posterior vitreous detachment"
+      ],
+      "critical_findings": [
+        "Right superior field defect",
+        "Black pigmented spot inferior to macula"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E002",
+        "E004",
+        "E007"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "Retinal Photography",
+        "description": "Photograph of the right eye showing retinal abnormality",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": null,
+          "detailed_findings": "Photograph showed a pigment line running through the macula, indicating retinal detachment",
+          "clinical_significance": "Suggests retinal detachment",
+          "decision_impact": "Should prompt immediate referral to ophthalmologist",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E007",
+          "E010"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with failed eyesight test",
+        "duration": "1 day",
+        "key_events": [
+          {
+            "event": "Initial consultation with optometrist",
+            "timestamp": "9 December 2010",
+            "evidence_ids": [
+              "E002",
+              "E007"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Follow-up and Workup",
+        "description": "Further examination and photography",
+        "duration": "7 days",
+        "key_events": [
+          {
+            "event": "Second consultation with dilated fundus examination",
+            "timestamp": "16 December 2010",
+            "evidence_ids": [
+              "E007",
+              "E010"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient with abnormal retinal findings",
+        "prompt": "What should be the next step in management?",
+        "action_type": "REFER",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Refer to ophthalmologist immediately",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Urgent referral needed for suspected retinal detachment"
+          },
+          {
+            "option_id": "B",
+            "description": "Schedule follow-up in three months",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Delay in referral could worsen condition"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant delayed referral, suggesting follow-up in three months",
+          "reasoning_stated": "Defendant believed it was probably nothing to worry about",
+          "evidence_ids": [
+            "E005",
+            "E007"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Immediate referral to ophthalmologist was necessary",
+          "standard_of_care_basis": "Expert evidence established urgency of referral",
+          "evidence_ids": [
+            "E004",
+            "E008"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Delay in referral led to worsening of condition",
+          "what_should_have_happened": "Immediate referral to prevent further damage",
+          "legal_standard_applied": "Professional misconduct due to negligence",
+          "evidence_ids": [
+            "E004",
+            "E008",
+            "E009"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Delayed diagnosis of retinal detachment",
+        "severity": "Not documented in judgment",
+        "long_term_effects": "Not documented in judgment",
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Failure to refer promptly to an ophthalmologist",
+          "Causation established - delay in referral led to delayed diagnosis"
+        ],
+        "evidence_ids": [
+          "E003",
+          "E004"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to refer to ophthalmologist",
+        "counterfactual": "Immediate referral could have led to earlier diagnosis",
+        "evidence_ids": [
+          "E004",
+          "E005"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "9 December 2010",
+        "event": "Initial consultation with optometrist",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002",
+          "E007"
+        ]
+      },
+      {
+        "timestamp": "16 December 2010",
+        "event": "Second consultation with dilated fundus examination",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E007",
+          "E010"
+        ]
+      },
+      {
+        "timestamp": "16 December 2010",
+        "event": "Patient presented with poorish right eye vision",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Retinal Photography",
+        "date": "9 December 2010",
+        "result": "Pigment line through macula indicating retinal detachment",
+        "interpretation": null,
+        "evidence_ids": [
+          "E007",
+          "E010"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Retinal detachment",
+        "when_made": "16 February 2011",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E004",
+          "E046"
+        ]
+      },
+      {
+        "diagnosis": "Retinal detachment",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Vitrectomy and scleral buckle surgery",
+        "date": "22 February 2011",
+        "provider": null,
+        "outcome": "Retina reattached, but vision not restored",
+        "evidence_ids": [
+          "E046"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Permanent blindness in right eye",
+        "when_occurred": "Post-surgery",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E046"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to refer to ophthalmologist",
+        "against": "Desmond John White",
+        "found_proven": true,
+        "evidence_ids": [
+          "E003",
+          "E004"
+        ]
+      },
+      {
+        "allegation": "Failure to refer to ophthalmologist",
+        "against": "Mr White",
+        "found_proven": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Professional misconduct due to negligence",
+        "evidence_ids": [
+          "E003",
+          "E004"
+        ]
+      },
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.040983606557377046,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 07:55:46.150888",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

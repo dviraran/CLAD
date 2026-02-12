@@ -1,0 +1,495 @@
+{
+  "case_id": "courtlistener-9494410",
+  "source": "courtlistener",
+  "source_url": "local://courtlistener-9494410.html",
+  "jurisdiction": "US",
+  "extraction_metadata": {
+    "version": "batch_api_v1",
+    "model": "gpt-4o",
+    "extracted_at": "2026-01-21T17:56:57.927213",
+    "simulation_extracted_at": "2026-01-21T18:29:59.577516",
+    "simulation_model": "gpt-4o"
+  },
+  "case_metadata": {
+    "case_name": "Wilson v. Finkelstein",
+    "citation": "[2024] NY Slip Op 02080",
+    "court": "Appellate Division, Second Department",
+    "date": "April 17, 2024"
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "On November 22, 2013, the plaintiff went to the emergency department of Kingsbrook Jewish Medical Center with complaints of stomach pain and bilateral flank pain.",
+      "paragraph_ref": "13",
+      "paragraph_starts_with": "In an action to recover",
+      "summary": "Plaintiff presented to ED with stomach and flank pain on November 22, 2013.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "The plaintiff underwent a beta human chorionic gonadotropin (hCG) test, which measures the level of hCG, a hormone produced during pregnancy, in the patient's blood.",
+      "paragraph_ref": "13",
+      "paragraph_starts_with": "In an action to recover",
+      "summary": "Plaintiff had a beta hCG test to measure pregnancy hormone levels.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "The sonogram showed a '[s]ac like structure within the endometrial cavity without evidence of yolk sac or fetal pole.'",
+      "paragraph_ref": "13",
+      "paragraph_starts_with": "In an action to recover",
+      "summary": "Sonogram showed sac-like structure without yolk sac or fetal pole.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "The defendant recommended that the plaintiff be treated with methotrexate, a drug used to terminate ectopic pregnancies.",
+      "paragraph_ref": "13",
+      "paragraph_starts_with": "In an action to recover",
+      "summary": "Defendant recommended methotrexate for suspected ectopic pregnancy.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "On November 26, 2013, the plaintiff returned to Kingsbrook with complaints of abdominal pain and cramping.",
+      "paragraph_ref": "13",
+      "paragraph_starts_with": "In an action to recover",
+      "summary": "Plaintiff returned with abdominal pain and cramping on November 26, 2013.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "An ultrasound showed the presence of an intrauterine gestational sac.",
+      "paragraph_ref": "13",
+      "paragraph_starts_with": "In an action to recover",
+      "summary": "Ultrasound showed intrauterine gestational sac.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "The plaintiff was advised to terminate the pregnancy due to the serious birth defects that methotrexate can cause.",
+      "paragraph_ref": "13",
+      "paragraph_starts_with": "In an action to recover",
+      "summary": "Plaintiff advised to terminate pregnancy due to methotrexate risks.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "On December 3, 2013, the plaintiff terminated the pregnancy.",
+      "paragraph_ref": "13",
+      "paragraph_starts_with": "In an action to recover",
+      "summary": "Plaintiff terminated pregnancy on December 3, 2013.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "LEGAL_FINDING",
+      "verbatim_quote": "The jury found that the defendant departed from good and accepted standards of medical practice by not obtaining a follow-up beta hCG test and a follow-up ultrasound, and by ordering that methotrexate be administered to the plaintiff.",
+      "paragraph_ref": "13",
+      "paragraph_starts_with": "In an action to recover",
+      "summary": "Jury found defendant departed from standard of care by not obtaining follow-up tests.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "LEGAL_FINDING",
+      "verbatim_quote": "The judgment is modified, on the facts and in the exercise of discretion, by deleting the provision thereof awarding the plaintiff damages for emotional distress.",
+      "paragraph_ref": "13",
+      "paragraph_starts_with": "In an action to recover",
+      "summary": "Judgment modified to delete damages for emotional distress.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E011",
+      "type": "COURT_REASONING",
+      "verbatim_quote": "Viewing the evidence in the light most favorable to the plaintiff, there was a valid line of reasoning and permissible inferences by which the jury could have rationally reached the verdict.",
+      "paragraph_ref": "13",
+      "paragraph_starts_with": "In an action to recover",
+      "summary": "Court found jury's verdict was rational based on evidence.",
+      "speaker": "Judge's analysis"
+    }
+  ],
+  "verdict_detected": {
+    "outcome": "PARTIAL_LIABILITY",
+    "key_phrase": "The judgment is modified, on the facts and in the exercise of discretion, by deleting the provision thereof awarding the plaintiff damages for emotional distress.",
+    "paragraph_ref": "13"
+  },
+  "extraction_notes": {
+    "total_paragraphs_analyzed": 14,
+    "key_sections_found": [
+      "Facts",
+      "Conclusion",
+      "Verdict"
+    ],
+    "gaps_identified": [
+      "No specific lab values mentioned",
+      "Timing of events unclear"
+    ]
+  },
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Stomach pain and bilateral flank pain",
+      "history_of_present_illness": "Patient presented with stomach pain and bilateral flank pain.",
+      "past_medical_history": "Not documented in judgment",
+      "medications": "Not documented in judgment",
+      "allergies": "Not documented in judgment",
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment"
+        },
+        "focused_exam": {
+          "abdomen": "Examination findings not specified"
+        }
+      },
+      "initial_working_problem": "Suspected ectopic pregnancy",
+      "initial_differential": [
+        "Ectopic pregnancy",
+        "Intrauterine pregnancy"
+      ],
+      "critical_findings": [
+        "Sac-like structure without yolk sac or fetal pole"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002",
+        "E003"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "LAB",
+        "name": "Beta hCG Test",
+        "description": "Measures the level of hCG hormone in blood",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Performed, result not detailed in judgment",
+          "clinical_significance": "Used to assess pregnancy status",
+          "decision_impact": "Informs pregnancy diagnosis"
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "IMAGING",
+        "name": "Sonogram",
+        "description": "Ultrasound imaging of the uterus",
+        "available_phase": "workup",
+        "reveal": {
+          "detailed_findings": "Sac-like structure without yolk sac or fetal pole",
+          "clinical_significance": "Suggests possible early pregnancy or abnormal pregnancy",
+          "decision_impact": "Informs decision on pregnancy management"
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient with suspected ectopic pregnancy",
+        "prompt": "What follow-up tests should be ordered?",
+        "action_type": "ORDER_TEST",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Order follow-up beta hCG test and ultrasound",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard practice to confirm diagnosis and monitor pregnancy"
+          },
+          {
+            "option_id": "B",
+            "description": "Proceed with methotrexate without follow-up tests",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Assumed ectopic pregnancy without confirmation"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant recommended methotrexate without follow-up tests",
+          "reasoning_stated": "Defendant assumed ectopic pregnancy",
+          "evidence_ids": [
+            "E004",
+            "E009"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Follow-up beta hCG test and ultrasound should have been ordered",
+          "standard_of_care_basis": "Expert evidence and standard practice",
+          "evidence_ids": [
+            "E009"
+          ]
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to confirm diagnosis with follow-up tests",
+          "what_should_have_happened": "Follow-up tests to confirm pregnancy status",
+          "legal_standard_applied": "Bolam test not satisfied",
+          "evidence_ids": [
+            "E009"
+          ]
+        },
+        "is_malpractice_point": true
+      },
+      {
+        "decision_id": "D002",
+        "phase_id": "decision",
+        "clinical_context": "Patient advised to terminate pregnancy due to methotrexate risks",
+        "prompt": "What should be the management plan after methotrexate administration?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Advise termination of pregnancy due to methotrexate risks",
+            "is_defendant_choice": true,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Methotrexate can cause serious birth defects"
+          },
+          {
+            "option_id": "B",
+            "description": "Monitor pregnancy without advising termination",
+            "is_defendant_choice": false,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Risk of birth defects too high to continue pregnancy"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "A",
+          "description": "Advised termination of pregnancy",
+          "reasoning_stated": "Due to serious birth defects risk",
+          "evidence_ids": [
+            "E007"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Advising termination was appropriate given methotrexate risks",
+          "standard_of_care_basis": "Standard practice to prevent birth defects",
+          "evidence_ids": [
+            "E007"
+          ]
+        },
+        "explanation": {
+          "why_defendant_wrong": "Not applicable for this decision point",
+          "what_should_have_happened": "Termination was appropriate",
+          "legal_standard_applied": "Standard practice",
+          "evidence_ids": [
+            "E007"
+          ]
+        },
+        "is_malpractice_point": false
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents to ED with stomach and flank pain",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Patient arrives at ED",
+            "timestamp": "November 22, 2013",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Diagnostic Workup",
+        "description": "Initial tests and imaging performed",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Beta hCG test performed",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E002"
+            ]
+          },
+          {
+            "event": "Sonogram performed",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E003"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "decision",
+        "name": "Treatment Decision",
+        "description": "Decision to administer methotrexate",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Methotrexate recommended",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E004"
+            ]
+          }
+        ]
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Pregnancy terminated due to methotrexate risks",
+        "severity": "Not documented in judgment",
+        "long_term_effects": "Not documented in judgment",
+        "evidence_ids": [
+          "E008"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not specified in judgment",
+        "key_findings": [
+          "Breach of duty in not obtaining follow-up tests",
+          "Causation established by inappropriate methotrexate administration"
+        ],
+        "evidence_ids": [
+          "E009"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to order follow-up beta hCG test and ultrasound",
+        "counterfactual": "Follow-up tests would have confirmed intrauterine pregnancy",
+        "evidence_ids": [
+          "E009"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "November 22, 2013",
+        "event": "Patient arrives at ED with stomach and flank pain",
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "November 26, 2013",
+        "event": "Patient returns with abdominal pain and cramping",
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "timestamp": "December 3, 2013",
+        "event": "Pregnancy terminated",
+        "evidence_ids": [
+          "E008"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Beta hCG Test",
+        "date": "Not specified in judgment",
+        "result": "Performed, result not detailed",
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "test_name": "Sonogram",
+        "date": "Not specified in judgment",
+        "result": "Sac-like structure without yolk sac or fetal pole",
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Suspected ectopic pregnancy",
+        "when_made": "Not specified in judgment",
+        "correct": false,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Methotrexate administration",
+        "date": "Not specified in judgment",
+        "outcome": "Advised termination due to risks",
+        "evidence_ids": [
+          "E004",
+          "E007"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Termination of pregnancy",
+        "when_occurred": "December 3, 2013",
+        "severity": "Not documented in judgment",
+        "evidence_ids": [
+          "E008"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to order follow-up beta hCG test and ultrasound",
+        "against": "Defendant",
+        "found_proven": true,
+        "evidence_ids": [
+          "E009"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant departed from standard of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E009"
+        ]
+      }
+    ]
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "TREATMENT_PROCEDURE_ERROR"
+    ],
+    "diagnosis_subtypes": [
+      "FAILURE_TO_INVESTIGATE"
+    ]
+  }
+}

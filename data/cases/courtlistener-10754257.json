@@ -1,0 +1,324 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10754257",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "0033-09-24",
+  "url": "https://example.com/courtlistener-10754257",
+  "case_name": "Tina Louise Louis v. the State of Texas",
+  "neutral_citation": null,
+  "clinical_domain": "PAEDIATRICS",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Tina Louise Louis v. the State of Texas. Medical malpractice case involving paediatrics.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "When Kirsten found Kevin unresponsive one morning, she first called Tina and then called 9-1-1 for assistance.",
+      "paragraph_ref": "24",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Kevin was deceased, and described his condition as 'very malnourished[,] skin and bones[,] and very underweight and emaciated.'",
+      "paragraph_ref": "26",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "Tina was charged with injury to a child for failing to provide Kevin with adequate food and medical care.",
+      "paragraph_ref": "28",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "WITNESS_STATEMENT",
+      "text": "White testified that Kevin could open the refrigerator and, unlike some Down Syndrome children, 'was a good eater.'",
+      "paragraph_ref": "48",
+      "speaker": "Colleen White"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "WITNESS_STATEMENT",
+      "text": "Kirsten testified that Tina visited them sometimes, 'but she would mostly stay in Houston with her boyfriend.'",
+      "paragraph_ref": "63",
+      "speaker": "Kirsten"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "WITNESS_STATEMENT",
+      "text": "Kirsten testified that it was Jaylin who put Kevin in the closet.",
+      "paragraph_ref": "75",
+      "speaker": "Kirsten"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "LEGAL_FINDING",
+      "text": "We affirm the trial court\u2019s judgments in trial court cause numbers F22-40200 and F22-40201.",
+      "paragraph_ref": "574",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "4 years",
+        "sex": "male",
+        "relevant_social_history": "Living with sister and her boyfriend"
+      },
+      "chief_complaint": "Unresponsive child",
+      "history_of_present_illness": "Child found unresponsive by sister, known to have Down Syndrome, recent history of not eating well and having seizures.",
+      "past_medical_history": [
+        "Down Syndrome"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "general": "Very malnourished, skin and bones, emaciated",
+          "neurological": "Unresponsive, no pulse, not breathing"
+        }
+      },
+      "initial_working_problem": "Unresponsive child with severe malnutrition",
+      "known_constraints": null,
+      "initial_differential": [
+        "Severe malnutrition",
+        "Bronchopneumonia"
+      ],
+      "critical_findings": [
+        "Severe malnutrition",
+        "Unresponsive",
+        "No pulse"
+      ],
+      "urgency_level": "EMERGENCY",
+      "evidence_ids": [
+        "E002",
+        "E025",
+        "E142"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSULT_NOTE",
+        "name": "Social Services Evaluation",
+        "description": "Assessment of home environment and care",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Kevin was not provided adequate food and medical care",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates neglect",
+          "decision_impact": "Should prompt immediate intervention and reporting",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Kevin found unresponsive and malnourished",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Kirsten finds Kevin unresponsive",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Kevin found unresponsive and malnourished",
+        "prompt": "What immediate action should be taken?",
+        "action_type": "ESCALATE_CARE",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Initiate emergency medical intervention and notify authorities",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Immediate medical care and investigation of neglect are necessary"
+          },
+          {
+            "option_id": "B",
+            "description": "Delay intervention and further assessment",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Delay could worsen condition and miss critical intervention"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant delayed intervention",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E003"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Immediate intervention and notification should have occurred",
+          "standard_of_care_basis": "Standard care for unresponsive and malnourished child",
+          "evidence_ids": [
+            "E003"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Delay in care led to worsening of condition",
+          "what_should_have_happened": "Immediate medical and social intervention",
+          "legal_standard_applied": "Neglect and failure to provide care",
+          "evidence_ids": [
+            "E003"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Kevin was deceased due to severe malnutrition and neglect",
+        "severity": "FATAL",
+        "long_term_effects": "Not applicable",
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Failure to provide adequate food and medical care",
+          "Neglect led to fatal outcome"
+        ],
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to provide adequate care",
+        "counterfactual": "Immediate intervention could have prevented death",
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Kevin found unresponsive",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [
+      {
+        "diagnosis": "Severe malnutrition",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "treatments": [],
+    "complications": [
+      {
+        "complication": "Death due to malnutrition",
+        "when_occurred": "Not documented in judgment",
+        "severity": "Fatal",
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to provide adequate care",
+        "against": "Tina",
+        "found_proven": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Tina failed to provide adequate care",
+        "legal_significance": "Neglect and failure to provide care",
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.012089810017271158,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 08:48:22.944431",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

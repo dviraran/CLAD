@@ -1,0 +1,348 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "nzlii-nzhpdt-2025-1465-html",
+  "source": "BAILII",
+  "jurisdiction": "UK",
+  "court": "Unknown",
+  "decision_date": "2025-03-21",
+  "url": "https://example.com/nzlii-nzhpdt-2025-1465-html",
+  "case_name": "Professional Conduct Committee appointed by the Physiotherapy Board of New Zealand v McLauchlan [2025] NZHPDT 1465 (21 March 2025)",
+  "neutral_citation": null,
+  "clinical_domain": "OBSTETRICS_GYNAECOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Professional Conduct Committee appointed by the Physiotherapy Board of New Zealand v McLauchlan [2025] NZHPDT 1465 (21 March 2025). Medical malpractice case involving obstetrics gynaecology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Between on or about 1 November 2021 and 3 November 2021, Ms McLauchlan did not make a sound professional judgement within her scope of practice and/or level of expertise",
+      "paragraph_ref": "261",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Ms McLauchlan agreed to undertake a telehealth assessment for [Mr H] solely for the purpose of and/or in response to a request for a COVID-19 vaccine exemption",
+      "paragraph_ref": "262",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "LEGAL_FINDING",
+      "text": "The alleged conduct amounts to professional misconduct in that, either separately or cumulatively, it amounts to malpractice or negligence in relation to Ms McLauchlan\u2019s scope of practice",
+      "paragraph_ref": "276",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "COURT_REASONING",
+      "text": "Negligence or malpractice may or may not be sufficient to constitute professional misconduct and the guide must be standards applicable by competent, ethical and responsible practitioners",
+      "paragraph_ref": "113",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "failed to seek and/or arrange for any diagnostic blood tests and/or to refer [Mr H] for any such tests or further examination relating to the potential undiagnosed rheumatoid arthritis",
+      "paragraph_ref": "268",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "failed to have regard to (i.e. refer to and/or consider) the Comirnaty datasheet which set out the potential risks and/or contraindications for the COVID-19 vaccine",
+      "paragraph_ref": "269",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "LEGAL_FINDING",
+      "text": "By acting in the manner alleged above Ms McLauchlan was in breach of her professional and/or ethical obligations as a physiotherapist",
+      "paragraph_ref": "275",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "COURT_REASONING",
+      "text": "The Tribunal finds that she relied heavily on the RMP and her misunderstanding of the significance of the 'missing information'.",
+      "paragraph_ref": "145",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "FACTUAL_FINDING",
+      "text": "failed to ensure that she had appropriate and current training, knowledge, and competencies: (i) to practise in a field of practice which was new to her",
+      "paragraph_ref": "272",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "LEGAL_FINDING",
+      "text": "The conduct and her response raise concerns about her ability to operate as an independent practitioner, without her personal views clouding her professional judgment.",
+      "paragraph_ref": "201",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "unknown",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Request for COVID-19 vaccine exemption",
+      "history_of_present_illness": "Patient requested a telehealth consultation for a COVID-19 vaccine exemption due to potential undiagnosed rheumatoid arthritis.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "musculoskeletal": "Mild swelling in distal MCP joints and knuckles, reduced lumbar spine ROM"
+        }
+      },
+      "initial_working_problem": "Potential undiagnosed rheumatoid arthritis",
+      "known_constraints": null,
+      "initial_differential": [
+        "Rheumatoid arthritis",
+        "Other inflammatory arthritic conditions"
+      ],
+      "critical_findings": [
+        "Mild swelling in joints",
+        "Reduced lumbar spine ROM"
+      ],
+      "urgency_level": "ROUTINE",
+      "evidence_ids": [
+        "E001",
+        "E086",
+        "E087"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "LAB",
+        "name": "Diagnostic Blood Tests",
+        "description": "Blood tests to investigate potential rheumatoid arthritis",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not documented in judgment",
+          "detailed_findings": null,
+          "clinical_significance": "Would help confirm or rule out rheumatoid arthritis",
+          "decision_impact": "Should have been ordered to support diagnosis",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Telehealth Consultation",
+        "description": "Initial telehealth consultation for vaccine exemption",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Telehealth assessment conducted",
+            "timestamp": "2 November 2021",
+            "evidence_ids": [
+              "E002",
+              "E023"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Telehealth consultation for vaccine exemption",
+        "prompt": "Should diagnostic tests be ordered to confirm rheumatoid arthritis?",
+        "action_type": "ORDER_TEST",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Order diagnostic blood tests",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Necessary to confirm diagnosis before issuing exemption"
+          },
+          {
+            "option_id": "B",
+            "description": "Do not order any tests",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Issued exemption based on potential diagnosis without tests"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant did not order any tests",
+          "reasoning_stated": "Believed exemption was justified without tests",
+          "evidence_ids": [
+            "E005",
+            "E099"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Diagnostic tests should have been ordered",
+          "standard_of_care_basis": "Tests are necessary to confirm diagnosis",
+          "evidence_ids": [
+            "E005",
+            "E099"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failed to confirm diagnosis with tests",
+          "what_should_have_happened": "Tests should have been ordered to confirm rheumatoid arthritis",
+          "legal_standard_applied": "Professional misconduct due to lack of evidence-based practice",
+          "evidence_ids": [
+            "E005",
+            "E099"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient received a vaccine exemption without confirmed diagnosis",
+        "severity": "Not documented in judgment",
+        "long_term_effects": "Potential delay in appropriate diagnosis and treatment",
+        "evidence_ids": [
+          "E005",
+          "E099"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not applicable",
+        "key_findings": [
+          "Breach of duty in failing to order diagnostic tests",
+          "Professional misconduct established"
+        ],
+        "evidence_ids": [
+          "E003",
+          "E007"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": false,
+        "point_of_failure": "Failure to order diagnostic tests",
+        "counterfactual": "Tests would have confirmed or ruled out rheumatoid arthritis",
+        "evidence_ids": [
+          "E005",
+          "E099"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "1 November 2021",
+        "event": "Agreed to telehealth assessment for vaccine exemption",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "2 November 2021",
+        "event": "Conducted telehealth consultation",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [
+      {
+        "diagnosis": "Potential undiagnosed rheumatoid arthritis",
+        "when_made": "2 November 2021",
+        "made_by": null,
+        "correct": false,
+        "evidence_ids": [
+          "E024"
+        ]
+      }
+    ],
+    "treatments": [],
+    "complications": [],
+    "allegations": [
+      {
+        "allegation": "Failure to order diagnostic tests",
+        "against": "Ms McLauchlan",
+        "found_proven": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Professional misconduct due to lack of evidence-based practice",
+        "legal_significance": "Breach of professional duty",
+        "evidence_ids": [
+          "E003",
+          "E007"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.036101083032490974,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 08:14:01.200573",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

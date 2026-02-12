@@ -1,0 +1,369 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtliste-10771791-barbero-v-csx-transp",
+  "source": "BAILII",
+  "jurisdiction": "UK",
+  "court": "Unknown",
+  "decision_date": "2026-01-18",
+  "url": "https://example.com/courtliste-10771791-barbero-v-csx-transp",
+  "case_name": "Barbero v. CSX Transp.",
+  "neutral_citation": null,
+  "clinical_domain": "SURGERY_ORTHOPAEDIC",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Barbero v. CSX Transp.. Medical malpractice case involving surgery orthopaedic.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "According to plaintiff, on July 20, 2018, he was working at defendant's Selkirk diesel shop in an area known as drop pit 2, when he slipped and fell on grease or moisture on the floor.",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Plaintiff claims he immediately informed his supervisor that he may have sprained his ankle, but the supervisor advised him to 'walk it off' and strongly discouraged him from formally reporting his injury.",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "He was thereafter diagnosed with a repetitive stress impact fracture and underwent fusion surgery on his right ankle.",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "LEGAL_FINDING",
+      "text": "Supreme Court granted defendant's motion, and plaintiff appeals.",
+      "paragraph_ref": "13",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "LEGAL_FINDING",
+      "text": "We disagree. Part 225 is an accident, injury and illness reporting regulation.",
+      "paragraph_ref": "13",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "COURT_REASONING",
+      "text": "Even assuming arguendo that the regulations could be considered safety regulations, plaintiff has failed to demonstrate any correlation between defendant's conduct in allegedly failing to report an accident/incident to the FRA and any purported exacerbation of plaintiff's injury.",
+      "paragraph_ref": "13",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "Finally, since the regulation provides that the accident report must be submitted within 30 days after the expiration of the month in which the accident happened and, here, the accident occurred, according to plaintiff, on July 20, 2018, and the report is dated August 9, 2018, well before the September 1st deadline, there is no evidence in the record that defendant violated the regulations.",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "WITNESS_STATEMENT",
+      "text": "Defendant denies that plaintiff immediately reported his accident and injury, and instead worked 14 days before reporting it.",
+      "paragraph_ref": "14",
+      "speaker": "Defendant's statement"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "unknown",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Right ankle pain after slipping and falling",
+      "history_of_present_illness": "Patient reports slipping and falling on grease or moisture on the floor at work, resulting in ankle pain. Initially suspected a sprain.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "ankle": "Pain and possible swelling, specific findings not detailed in judgment"
+        }
+      },
+      "initial_working_problem": "Ankle injury - differential includes sprain or fracture",
+      "known_constraints": null,
+      "initial_differential": [
+        "ankle sprain",
+        "ankle fracture"
+      ],
+      "critical_findings": [
+        "Pain in the right ankle"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "X-ray of the right ankle",
+        "description": "Radiographic imaging to assess for fracture",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not documented in judgment",
+          "detailed_findings": null,
+          "clinical_significance": "Not documented in judgment",
+          "decision_impact": "Not documented in judgment",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": []
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with ankle pain after workplace incident",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Patient reports injury to supervisor",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Delayed Diagnosis",
+        "description": "Patient continues to work despite injury, eventually seeks medical treatment",
+        "duration": "14 days",
+        "key_events": [
+          {
+            "event": "Formal report of injury and medical evaluation",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E003"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient with suspected ankle injury at work",
+        "prompt": "What should be the next step in managing the patient's ankle injury?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Advise rest and monitor symptoms",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Initial advice was to 'walk it off', which may have delayed proper diagnosis and treatment"
+          },
+          {
+            "option_id": "B",
+            "description": "Order imaging to confirm diagnosis",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Imaging would confirm the presence of a fracture and guide appropriate treatment"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "A",
+          "description": "Defendant advised to 'walk it off'",
+          "reasoning_stated": "Supervisor discouraged formal reporting and advised to continue working",
+          "evidence_ids": [
+            "E002"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "B",
+          "description": "Imaging should have been ordered to confirm diagnosis",
+          "standard_of_care_basis": "Proper diagnostic workup required to rule out fracture",
+          "evidence_ids": []
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to properly assess and diagnose the injury led to delayed treatment",
+          "what_should_have_happened": "Imaging should have been performed to confirm the diagnosis",
+          "legal_standard_applied": "Negligence in failing to provide appropriate care",
+          "evidence_ids": [
+            "E001",
+            "E002"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient diagnosed with repetitive stress impact fracture and underwent fusion surgery",
+        "severity": "PERMANENT_MODERATE_DISABILITY",
+        "long_term_effects": "Not documented in judgment",
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "None",
+        "key_findings": [
+          "No violation of safety regulations found",
+          "No causation between reporting delay and injury exacerbation"
+        ],
+        "evidence_ids": [
+          "E004",
+          "E005",
+          "E006"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Failure to order imaging and properly assess injury",
+        "counterfactual": "Earlier imaging could have prevented further injury",
+        "evidence_ids": [
+          "E001",
+          "E002",
+          "E003"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "July 20, 2018",
+        "event": "Patient slips and falls at work",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "August 9, 2018",
+        "event": "Accident report submitted",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Not documented in judgment",
+        "date": "Not documented in judgment",
+        "result": "Not documented in judgment",
+        "interpretation": null,
+        "evidence_ids": []
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Repetitive stress impact fracture",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Fusion surgery on right ankle",
+        "date": "Not documented in judgment",
+        "provider": null,
+        "outcome": "Not documented in judgment",
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Not documented in judgment",
+        "when_occurred": "Not documented in judgment",
+        "severity": "Not documented in judgment",
+        "evidence_ids": []
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to report accident and injury",
+        "against": "Defendant",
+        "found_proven": false,
+        "evidence_ids": [
+          "E004",
+          "E005",
+          "E006"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "No violation of safety regulations",
+        "legal_significance": "No negligence per se",
+        "evidence_ids": [
+          "E004",
+          "E005",
+          "E006"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.27586206896551724,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 09:43:38.874487",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

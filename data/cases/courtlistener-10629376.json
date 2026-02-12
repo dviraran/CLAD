@@ -1,0 +1,545 @@
+{
+  "case_id": "courtlistener-10629376",
+  "source": "courtlistener",
+  "source_url": "local://courtlistener-10629376.html",
+  "jurisdiction": "US",
+  "extraction_metadata": {
+    "version": "batch_api_v1",
+    "model": "gpt-4o",
+    "extracted_at": "2026-01-21T17:56:57.923949",
+    "simulation_extracted_at": "2026-01-21T18:29:59.582053",
+    "simulation_model": "gpt-4o"
+  },
+  "case_metadata": {
+    "case_name": "The University of Mississippi Medical Center v. Sonja L. Redd, Mother and Next Friend of Johvontaye T. Jefferson, a Minor",
+    "citation": "NO. 2023-CA-00711-COA",
+    "court": "Court of Appeals of the State of Mississippi",
+    "date": "05/25/2023"
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "On November 4, 2018, following a vehicle accident, Johvontaye Jefferson had a closed and open reduction performed on his left ankle at the University of Mississippi Medical Center",
+      "paragraph_ref": "8",
+      "paragraph_starts_with": "[8] On November 4, 2018, following",
+      "summary": "Jefferson had ankle surgery at UMMC after a vehicle accident.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "On November 14, 2018, Jefferson went to a scheduled ophthalmologist appointment and complained about worsening pain in his ankle.",
+      "paragraph_ref": "10",
+      "paragraph_starts_with": "[10] Medical Center (UMMC) in",
+      "summary": "Jefferson complained of worsening ankle pain at an ophthalmologist appointment.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "Jefferson continued to complain of malodor and severe swelling of his left ankle.",
+      "paragraph_ref": "13",
+      "paragraph_starts_with": "[13] UMMC emergency room. At",
+      "summary": "Jefferson had severe swelling and malodor in his ankle.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "The swelling worsened, and ultimately, after many months of continuous medical treatment, the left leg had to be amputated.",
+      "paragraph_ref": "15",
+      "paragraph_starts_with": "[15] Jefferson’s cast was removed,",
+      "summary": "Jefferson's left leg was amputated after worsening condition.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "LEGAL_FINDING",
+      "verbatim_quote": "After a bench trial, the trial court found that the proof supported Jefferson’s claim and entered a judgment against UMMC for the maximum amount allowed under the law, $500,000.00.",
+      "paragraph_ref": "17",
+      "paragraph_starts_with": "[17] and entered a judgment against",
+      "summary": "Trial court found in favor of Jefferson, awarding $500,000.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "EXPERT_TESTIMONY",
+      "verbatim_quote": "The standard of care is what a reasonable orthopedic surgeon would do in -- in a situation given the known variables of -- given the patient's history, their diagnostics, their previous surgery, what would a reasonable orthopedic surgeon do in the majority of the cases.",
+      "paragraph_ref": "122",
+      "paragraph_starts_with": "[121] orthopedic standard of care.",
+      "summary": "Expert defined standard of care for orthopedic surgeons.",
+      "speaker": "Dr. Bosita"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "EXPERT_TESTIMONY",
+      "verbatim_quote": "Dr. Bosita testified explicitly that UMMC breached the standard of care, while Dr. Hosemann testified that UMMC did not breach the standard of care.",
+      "paragraph_ref": "451",
+      "paragraph_starts_with": "[451] findings were not “speculative”",
+      "summary": "Conflicting expert testimonies on breach of standard of care.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "LEGAL_FINDING",
+      "verbatim_quote": "The trial court found Dr. Hosemann and Dr. Bosita were qualified in the field of orthopedic surgery.",
+      "paragraph_ref": "233",
+      "paragraph_starts_with": "[233] standard of care. The trial",
+      "summary": "Court found both experts qualified in orthopedic surgery.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "COURT_REASONING",
+      "verbatim_quote": "We find there was substantial evidence to support the trial court’s findings of facts and conclusions of law.",
+      "paragraph_ref": "518",
+      "paragraph_starts_with": "[518] and conclusions of law. The",
+      "summary": "Court found substantial evidence supporting trial court's findings.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "Jefferson testified that on November 6, 2018, he was discharged from UMMC with instructions to return in three weeks.",
+      "paragraph_ref": "45",
+      "paragraph_starts_with": "[45] Jefferson testified that on",
+      "summary": "Jefferson was discharged with instructions to return in three weeks.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E011",
+      "type": "WITNESS_STATEMENT",
+      "verbatim_quote": "Jefferson testified that on November 14, 2018, he went to a scheduled ophthalmology appointment for the orbital floor fracture he received from the automobile accident.",
+      "paragraph_ref": "49",
+      "paragraph_starts_with": "[49] ophthalmology appointment for",
+      "summary": "Jefferson attended an ophthalmology appointment for orbital fracture.",
+      "speaker": "Johvontaye Jefferson"
+    },
+    {
+      "evidence_id": "E012",
+      "type": "WITNESS_STATEMENT",
+      "verbatim_quote": "Redd testified that she “asked [Dr. Badon] why [were] they recasting it and sending us home” because she did not “feel comfortable going back home like this.”",
+      "paragraph_ref": "96",
+      "paragraph_starts_with": "[96] when Dr. Badon removed",
+      "summary": "Redd questioned the decision to recast and discharge Jefferson.",
+      "speaker": "Sonja Redd"
+    },
+    {
+      "evidence_id": "E013",
+      "type": "LEGAL_FINDING",
+      "verbatim_quote": "The trial court found Dr. Bosita’s testimony was more credible.",
+      "paragraph_ref": "234",
+      "paragraph_starts_with": "[234] field of orthopedic surgery.",
+      "summary": "Court found Dr. Bosita's testimony more credible.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E014",
+      "type": "COURT_REASONING",
+      "verbatim_quote": "The trial judge listened to both parties’ expert testimony and resolved the factual issues after weighing the evidence and credibility of the experts.",
+      "paragraph_ref": "519",
+      "paragraph_starts_with": "[519] resolved the factual issues",
+      "summary": "Judge resolved issues by weighing expert evidence and credibility.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E015",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "Jefferson had a displaced fracture of the tibia, an angulation fracture of the fibula, and an orbital floor fracture.",
+      "paragraph_ref": "38",
+      "paragraph_starts_with": "[38] November 4, 2018. It was",
+      "summary": "Jefferson had multiple fractures from the accident.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E016",
+      "type": "EXPERT_TESTIMONY",
+      "verbatim_quote": "Dr. Bosita testified he was qualified to see a patient in the ER and make an assessment whether “we should be suspicious that an infection is present, especially if surgery has been done.”",
+      "paragraph_ref": "513",
+      "paragraph_starts_with": "[513] testified he was qualified",
+      "summary": "Dr. Bosita testified about his qualifications to assess infections post-surgery.",
+      "speaker": "Dr. Bosita"
+    },
+    {
+      "evidence_id": "E017",
+      "type": "LEGAL_FINDING",
+      "verbatim_quote": "The trial court’s finding that “ordering lab work and/or further testing would have revealed the infection and likely prevented the amputation” is speculative and not supported by substantial evidence.",
+      "paragraph_ref": "368",
+      "paragraph_starts_with": "[368] II. Whether the trial",
+      "summary": "Court found the claim about lab work preventing amputation speculative.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E018",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "Jefferson developed Methicillin-resistant Staphylococcus aureus (MRSA) and e-coli, another bacterial infection that eventually led to Jefferson’s below-the-knee amputation.",
+      "paragraph_ref": "75",
+      "paragraph_starts_with": "[75] Staphylococcus aureus (MRSA)",
+      "summary": "Jefferson developed MRSA and e-coli leading to amputation.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E019",
+      "type": "WITNESS_STATEMENT",
+      "verbatim_quote": "Jefferson testified that once he arrived to the ER, he was treated by Dr. Justin Badon, a first-year resident at UMMC.",
+      "paragraph_ref": "56",
+      "paragraph_starts_with": "[56] Jefferson testified that once",
+      "summary": "Jefferson was treated by Dr. Badon at the ER.",
+      "speaker": "Johvontaye Jefferson"
+    },
+    {
+      "evidence_id": "E020",
+      "type": "LEGAL_FINDING",
+      "verbatim_quote": "The trial court found that the proof supported Jefferson’s claim and entered a judgment against UMMC for the maximum amount allowed under the law, $500,000.00.",
+      "paragraph_ref": "17",
+      "paragraph_starts_with": "[17] and entered a judgment against",
+      "summary": "Court found in favor of Jefferson, awarding $500,000.",
+      "speaker": "Court finding"
+    }
+  ],
+  "verdict_detected": {
+    "outcome": "LIABILITY_FOUND",
+    "key_phrase": "The trial court found that the proof supported Jefferson’s claim and entered a judgment against UMMC for the maximum amount allowed under the law, $500,000.00.",
+    "paragraph_ref": "17"
+  },
+  "extraction_notes": {
+    "total_paragraphs_analyzed": 523,
+    "key_sections_found": [
+      "Background",
+      "Key Findings and Analysis",
+      "Conclusion and Verdict"
+    ],
+    "gaps_identified": [
+      "No specific lab values mentioned",
+      "Timing of events unclear"
+    ]
+  },
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "male",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Worsening pain in left ankle",
+      "history_of_present_illness": "Following a vehicle accident, Johvontaye Jefferson had a closed and open reduction performed on his left ankle. He later complained of worsening pain, malodor, and severe swelling.",
+      "past_medical_history": [
+        "Displaced fracture of the tibia",
+        "Angulation fracture of the fibula",
+        "Orbital floor fracture"
+      ],
+      "medications": "Not documented in judgment",
+      "allergies": "Not documented in judgment",
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment"
+        },
+        "focused_exam": {
+          "ankle": "Severe swelling and malodor in left ankle"
+        }
+      },
+      "initial_working_problem": "Post-surgical complication - possible infection",
+      "initial_differential": [
+        "Infection",
+        "Post-surgical inflammation"
+      ],
+      "critical_findings": [
+        "Severe swelling",
+        "Malodor"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002",
+        "E003",
+        "E015"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "LAB",
+        "name": "Blood Culture",
+        "description": "To identify any bacterial infection",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not documented in judgment",
+          "clinical_significance": "Could identify bacterial infection",
+          "decision_impact": "Would guide antibiotic therapy"
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": [
+          "E017"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "IMAGING",
+        "name": "X-ray of left ankle",
+        "description": "To assess the condition of the ankle post-surgery",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not documented in judgment",
+          "clinical_significance": "Could show post-surgical changes or complications",
+          "decision_impact": "Would help in assessing the need for further intervention"
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": [
+          "E017"
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient presents with severe swelling and malodor in left ankle post-surgery",
+        "prompt": "What should be the next step in management?",
+        "action_type": "ORDER_TEST",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Order blood cultures and imaging",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "To identify infection and assess surgical site"
+          },
+          {
+            "option_id": "B",
+            "description": "Recast the ankle and discharge",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Assumed post-surgical inflammation without further investigation"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant recast the ankle and discharged the patient",
+          "reasoning_stated": "Assumed post-surgical inflammation",
+          "evidence_ids": [
+            "E012",
+            "E019"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Blood cultures and imaging should have been ordered",
+          "standard_of_care_basis": "Expert testimony indicated suspicion of infection should prompt further testing",
+          "evidence_ids": [
+            "E006",
+            "E016"
+          ]
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to investigate potential infection led to worsening condition",
+          "what_should_have_happened": "Further testing could have identified infection early",
+          "legal_standard_applied": "Bolam test",
+          "evidence_ids": [
+            "E006",
+            "E013"
+          ]
+        },
+        "is_malpractice_point": true
+      },
+      {
+        "decision_id": "D002",
+        "phase_id": "followup",
+        "clinical_context": "Patient returns with worsening symptoms",
+        "prompt": "What should be the follow-up action?",
+        "action_type": "ESCALATE_CARE",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Admit for IV antibiotics and surgical consultation",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "To manage suspected infection aggressively"
+          },
+          {
+            "option_id": "B",
+            "description": "Continue outpatient follow-up",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Assumed condition would improve with time"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant continued outpatient follow-up",
+          "reasoning_stated": "Assumed condition would improve",
+          "evidence_ids": [
+            "E010"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Patient should have been admitted for aggressive management",
+          "standard_of_care_basis": "Expert testimony indicated need for aggressive management",
+          "evidence_ids": [
+            "E006",
+            "E016"
+          ]
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to escalate care led to severe complications",
+          "what_should_have_happened": "Aggressive management could have prevented amputation",
+          "legal_standard_applied": "Bolam test",
+          "evidence_ids": [
+            "E006",
+            "E013"
+          ]
+        },
+        "is_malpractice_point": true
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with post-surgical complications",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Patient complains of worsening pain and malodor",
+            "timestamp": "November 14, 2018",
+            "evidence_ids": [
+              "E002",
+              "E003"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "followup",
+        "name": "Follow-up and Deterioration",
+        "description": "Patient's condition worsens leading to amputation",
+        "duration": "Several months",
+        "key_events": [
+          {
+            "event": "Patient's left leg amputated",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E004"
+            ]
+          }
+        ]
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient's left leg was amputated due to infection",
+        "severity": "PERMANENT_SEVERE_DISABILITY",
+        "long_term_effects": "Loss of limb, potential for prosthetic use",
+        "evidence_ids": [
+          "E004",
+          "E018"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "500000",
+        "key_findings": [
+          "Breach of duty in failing to investigate potential infection",
+          "Causation established - earlier intervention could have prevented amputation"
+        ],
+        "evidence_ids": [
+          "E005",
+          "E020"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to order appropriate tests and escalate care",
+        "counterfactual": "Early detection and treatment of infection could have prevented amputation",
+        "evidence_ids": [
+          "E005",
+          "E013",
+          "E017"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "November 4, 2018",
+        "event": "Patient had ankle surgery at UMMC",
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "November 14, 2018",
+        "event": "Patient complained of worsening ankle pain at ophthalmologist appointment",
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [
+      {
+        "diagnosis": "MRSA and e-coli infection",
+        "when_made": "Not documented in judgment",
+        "correct": true,
+        "evidence_ids": [
+          "E018"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Amputation of left leg",
+        "date": "Not documented in judgment",
+        "outcome": "Loss of limb",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Severe infection leading to amputation",
+        "when_occurred": "Not documented in judgment",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E018"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to investigate potential infection",
+        "against": "UMMC",
+        "found_proven": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "UMMC breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E005",
+          "E013"
+        ]
+      }
+    ]
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "diagnosis_subtypes": [
+      "FAILURE_TO_INVESTIGATE"
+    ]
+  }
+}

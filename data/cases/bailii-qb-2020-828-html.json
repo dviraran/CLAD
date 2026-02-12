@@ -1,0 +1,517 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "bailii-qb-2020-828-html",
+  "source": "BAILII",
+  "jurisdiction": "UK",
+  "court": "Unknown",
+  "decision_date": "2020-04-08",
+  "url": "https://example.com/bailii-qb-2020-828-html",
+  "case_name": "NKX v Barts Health NHS Trust [2020] EWHC 828 (QB) (08 April 2020)",
+  "neutral_citation": "[2020] EWHC 828",
+  "clinical_domain": "OBSTETRICS_GYNAECOLOGY",
+  "outcome_severity": "PERMANENT_SEVERE_DISABILITY",
+  "summary": {
+    "brief": "Medical malpractice case involving obstetrics gynaecology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "The Claimant's case that his mother was given no or no sufficient warning that she should have continuous fetal monitoring (CFM) when she was in labour",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Central to the case on breach of duty is whether the Defendant's midwifery staff took reasonable steps to inform the Claimant's mother",
+      "paragraph_ref": "16",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "EXPERT_TESTIMONY",
+      "text": "I accept the expert evidence of Ms Cro, reporting on behalf of the Claimant, that midwifery staff ought to have confirmed as much by carrying out a vaginal examination",
+      "paragraph_ref": "117",
+      "speaker": "Expert testimony"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "LEGAL_FINDING",
+      "text": "I consider that there was a breach of duty on the part of the Defendant during the night of the 23rd and 24th May.",
+      "paragraph_ref": "108",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "COURT_REASONING",
+      "text": "I consider that Consultant Midwife Falvey-Browne appropriately balanced the need to make it clear that IA was not recommended",
+      "paragraph_ref": "105",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "I have concluded that I have confidence in all of the auscultations performed until 01.00 hours.",
+      "paragraph_ref": "97",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "MEDICAL_RECORD",
+      "text": "It is recorded in the notes that there were IAs carried out by Midwife Amoako at 23.20, 23.40 and 24.00 hours and that they were all normal.",
+      "paragraph_ref": "75",
+      "speaker": "Medical record"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr Thomas, Paediatric Neurologist, confirms that the Claimant is 'permanently handicapped by the effects of an evolving, but predominantly dystonic, four-limb cerebral palsy.'",
+      "paragraph_ref": "102",
+      "speaker": "Expert testimony"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "LEGAL_FINDING",
+      "text": "It follows that there must be judgment for the Claimant on the basis that but for the breaches of duty that occurred at the maternity unit",
+      "paragraph_ref": "170",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "COURT_REASONING",
+      "text": "I prefer to adopt the extended Myers model. I do so because I consider that although there was a persistent bradycardia after 01.14 hours there was some oxygenation",
+      "paragraph_ref": "166",
+      "speaker": "Judge's analysis"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "In labor at 41 weeks gestation",
+      "history_of_present_illness": "Patient is a candidate for VBAC, previously had a caesarean section. Expressed desire for a water birth and was interested in birthing center options.",
+      "past_medical_history": [
+        "Previous caesarean section"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "abdomen": "Not documented in judgment"
+        }
+      },
+      "initial_working_problem": "Labor management in VBAC candidate",
+      "known_constraints": null,
+      "initial_differential": [
+        "Uterine rupture",
+        "Normal labor progression"
+      ],
+      "critical_findings": [
+        "Desire for water birth",
+        "Preference for intermittent auscultation"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002",
+        "E004"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSULT_NOTE",
+        "name": "Midwifery Consultation",
+        "description": "Discussion of birth plan and monitoring options",
+        "available_phase": "presentation",
+        "reveal": {
+          "result_summary": "Patient informed of VBAC risks, monitoring options discussed",
+          "detailed_findings": null,
+          "clinical_significance": "Informs decision on monitoring method",
+          "decision_impact": "Should guide choice of continuous fetal monitoring",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E003",
+          "E004"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents in labor at 41 weeks gestation",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Patient expresses desire for water birth and IA",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E001",
+              "E002"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Labor Monitoring",
+        "description": "Monitoring during labor with IA",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Intermittent auscultation performed",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E007"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "presentation",
+        "clinical_context": "Patient in labor, considering monitoring options",
+        "prompt": "What monitoring method should be recommended for a VBAC candidate?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Recommend continuous fetal monitoring (CFM)",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "CFM provides early detection of fetal distress and uterine rupture"
+          },
+          {
+            "option_id": "B",
+            "description": "Proceed with intermittent auscultation (IA)",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "IA is less effective in detecting early signs of uterine rupture"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant proceeded with intermittent auscultation",
+          "reasoning_stated": "Patient's preference for water birth and IA",
+          "evidence_ids": [
+            "E002",
+            "E004"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Continuous fetal monitoring should have been recommended",
+          "standard_of_care_basis": "Expert evidence supports CFM as standard for VBAC",
+          "evidence_ids": [
+            "E003",
+            "E004"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "IA does not provide adequate monitoring for VBAC risks",
+          "what_should_have_happened": "CFM should have been used to detect potential complications",
+          "legal_standard_applied": "Montgomery v Lanarkshire Health Board",
+          "evidence_ids": [
+            "E003",
+            "E004"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      },
+      {
+        "decision_id": "D002",
+        "phase_id": "workup",
+        "clinical_context": "Patient in labour with continuous pain",
+        "prompt": "What should be done in response to continuous pain during labour?",
+        "action_type": "ESCALATE_CARE",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Call for obstetric assistance immediately",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Continuous pain is a sign of possible uterine rupture"
+          },
+          {
+            "option_id": "B",
+            "description": "Continue with current monitoring",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Pain was not recognized as a sign of rupture"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant did not escalate care",
+          "reasoning_stated": "Pain was not identified as a critical sign",
+          "evidence_ids": [
+            "E004",
+            "E118"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Obstetric assistance should have been called",
+          "standard_of_care_basis": "Expert evidence indicated need for immediate intervention",
+          "evidence_ids": [
+            "E003",
+            "E004"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to recognize continuous pain as a sign of uterine rupture",
+          "what_should_have_happened": "Immediate obstetric intervention was necessary",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E003",
+            "E004"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Claimant sustained severe brain damage due to hypoxic-ischaemic insult",
+        "severity": "PERMANENT_SEVERE_DISABILITY",
+        "long_term_effects": "Dystonic cerebral palsy, severe cognitive impairment",
+        "evidence_ids": [
+          "E008",
+          "E102"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not specified in judgment",
+        "key_findings": [
+          "Breach of duty in failing to provide continuous monitoring",
+          "Causation established - earlier intervention could have prevented severe damage"
+        ],
+        "evidence_ids": [
+          "E009",
+          "E170"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to provide continuous fetal monitoring",
+        "counterfactual": "Continuous monitoring would have detected fetal distress earlier",
+        "evidence_ids": [
+          "E004",
+          "E009",
+          "E170"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "23 May 2015",
+        "event": "Patient arrives at hospital in labor",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "23 May 2015",
+        "event": "Patient admitted to birthing center",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "24 May 2015 01:15",
+        "event": "Bradycardia detected",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Intermittent Auscultation",
+        "date": "23 May 2015",
+        "result": "Normal until late in labor",
+        "interpretation": null,
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      {
+        "test_name": "Intermittent Auscultation",
+        "date": "23 May 2015",
+        "result": "Normal until 01:00",
+        "interpretation": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Uterine rupture",
+        "when_made": "During labor",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "diagnosis": "Uterine rupture",
+        "when_made": "Post-delivery",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Emergency caesarean section",
+        "date": "24 May 2015",
+        "provider": null,
+        "outcome": "Delivery of baby",
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "treatment": "Emergency delivery",
+        "date": "24 May 2015",
+        "provider": null,
+        "outcome": "Severe brain damage",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Acute profound hypoxia",
+        "when_occurred": "During labor",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E008"
+        ]
+      },
+      {
+        "complication": "Severe hypoxic-ischaemic encephalopathy",
+        "when_occurred": "24 May 2015",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E008"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to recommend continuous fetal monitoring",
+        "against": "Defendant midwifery staff",
+        "found_proven": true,
+        "evidence_ids": [
+          "E009"
+        ]
+      },
+      {
+        "allegation": "Failure to provide continuous fetal monitoring",
+        "against": "Defendant midwives",
+        "found_proven": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Montgomery standard not met",
+        "evidence_ids": [
+          "E009"
+        ]
+      },
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.05747126436781609,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 13:44:36.321686",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

@@ -1,0 +1,368 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "nzlii-nzhpdt-2024-1402-html",
+  "source": "BAILII",
+  "jurisdiction": "UK",
+  "court": "Unknown",
+  "decision_date": "2024-06-13",
+  "url": "https://example.com/nzlii-nzhpdt-2024-1402-html",
+  "case_name": "Professional Conduct Committee appointed by the Medical Council of New Zealand v O [2024] NZHPDT 1402 (13 June 2024)",
+  "neutral_citation": null,
+  "clinical_domain": "PSYCHIATRY",
+  "outcome_severity": "PERMANENT_SEVERE_DISABILITY",
+  "summary": {
+    "brief": "Professional Conduct Committee appointed by the Medical Council of New Zealand v O [2024] NZHPDT 1402 (13 June 2024). Medical malpractice case involving psychiatry.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "In or around early January [year], Dr [O] used a portable security camera hidden in a speaker in a bathroom at his home to film Mr [D] masturbating in the shower, without Mr [D]\u2019s knowledge.",
+      "paragraph_ref": "297",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "On or around 5 September [year] he prescribed Mr [D] medication with a risk of addiction or misuse and/or a controlled drug as specified under the Misuse of Drugs Act 1975 , namely triazolam 250mcg (x 60) and tramadol hydrochloride 50mg (x 60);",
+      "paragraph_ref": "20",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr [O] admits that the conduct alleged in particulars 3(a), 3(c) and 5 of the Amended Charge cumulatively amount to professional misconduct (in that it is malpractice, negligence and conduct which brings discredit to the profession) and that it is conduct which is deserving of a disciplinary sanction.",
+      "paragraph_ref": "321",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "LEGAL_FINDING",
+      "text": "The conduct alleged above amounts to professional misconduct in that, either separately or cumulatively, it amounts to malpractice or negligence in relation to Dr [O]\u2019s scope of practice pursuant to section 100(1)(a) of the Act and/or has brought or is likely to bring discredit to the profession, pursuant to section 100(1)(b) of the Act.",
+      "paragraph_ref": "226",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "WITNESS_STATEMENT",
+      "text": "the complainant, Mr [D] : the complainant\u2019s brief of evidence detailed his first interactions with the practitioner, their trips together and the events leading up to the [year] police complaint.",
+      "paragraph_ref": "43",
+      "speaker": "Complainant"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "WITNESS_STATEMENT",
+      "text": "Mr [MN] : Mr [MN] is a friend of the complainant who was in contact with him during January [year]. The complainant disclosed his interactions and relationship with the practitioner to Mr [MN] and the impact it was having on him.",
+      "paragraph_ref": "44",
+      "speaker": "Witness"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "COURT_REASONING",
+      "text": "Negligence or malpractice may or may not be sufficient to constitute professional misconduct and the guide must be standards applicable by competent, ethical and responsible practitioners and there must be behaviour which falls seriously short of that which is to be considered acceptable and not mere inadvertent error, oversight or for that matter carelessness.",
+      "paragraph_ref": "58",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr [O] accepts and admits that on or about April [year] he gave Mr [D] tadalafil (Cialis) and misrepresented it as sleep medication for the purpose of engaging or attempting to engage in sexual activity with Mr [D] ( Particular 5 ).",
+      "paragraph_ref": "320",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr [O] admits that the conduct alleged in particular 7 and particular 8 of the Amended Charge separately amount to professional misconduct (in that it is malpractice, negligence and conduct which brings discredit to the profession) and that it is conduct which is deserving of a disciplinary sanction.",
+      "paragraph_ref": "325",
+      "speaker": "Court finding"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "20 years",
+        "sex": "male",
+        "relevant_social_history": "Medical student, history of sexual abuse"
+      },
+      "chief_complaint": "Request for medication to manage knee pain and sleep issues",
+      "history_of_present_illness": "Patient reports chronic knee pain due to previous surgeries for rugby injuries and difficulty sleeping.",
+      "past_medical_history": [
+        "History of sexual abuse",
+        "PTSD",
+        "Anxiety"
+      ],
+      "medications": [
+        "Not documented in judgment"
+      ],
+      "allergies": [
+        "Not documented in judgment"
+      ],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "musculoskeletal": "Chronic knee pain reported, examination details not specified"
+        }
+      },
+      "initial_working_problem": "Chronic knee pain and sleep disturbance",
+      "known_constraints": null,
+      "initial_differential": [
+        "Chronic pain syndrome",
+        "Sleep disorder"
+      ],
+      "critical_findings": [
+        "History of substance abuse risk"
+      ],
+      "urgency_level": "ROUTINE",
+      "evidence_ids": [
+        "E005",
+        "E128",
+        "E130"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "LAB",
+        "name": "Toxicology Screen",
+        "description": "Screen for presence of controlled substances",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not documented in judgment",
+          "detailed_findings": null,
+          "clinical_significance": "Not documented in judgment",
+          "decision_impact": "Not documented in judgment",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": []
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Consultation",
+        "description": "Patient presents with chronic knee pain and sleep issues",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Patient discusses pain and sleep issues with Dr O",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E005"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient requests medication for knee pain and sleep issues",
+        "prompt": "What is the appropriate management for this patient's chronic pain and sleep issues?",
+        "action_type": "PRESCRIBE",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Prescribe non-addictive pain management and refer to pain specialist",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Avoids risk of addiction and provides specialist input"
+          },
+          {
+            "option_id": "B",
+            "description": "Prescribe triazolam and tramadol",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Inappropriate due to addiction risk and lack of specialist consultation"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant prescribed triazolam and tramadol",
+          "reasoning_stated": "Defendant believed it was appropriate for the patient's needs",
+          "evidence_ids": [
+            "E002",
+            "E047"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Non-addictive management and specialist referral should have been pursued",
+          "standard_of_care_basis": "Expert evidence and guidelines on prescribing controlled substances",
+          "evidence_ids": [
+            "E082",
+            "E083"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Prescribing controlled substances without proper oversight and consideration of addiction risk",
+          "what_should_have_happened": "Referral to a pain specialist and use of non-addictive medications",
+          "legal_standard_applied": "Professional standards and guidelines for prescribing",
+          "evidence_ids": [
+            "E082",
+            "E083",
+            "E084"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Potential risk of addiction due to prescribed medications",
+        "severity": "Not documented in judgment",
+        "long_term_effects": "Not documented in judgment",
+        "evidence_ids": []
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Breach of duty in prescribing medications with risk of misuse",
+          "Professional misconduct established"
+        ],
+        "evidence_ids": [
+          "E004",
+          "E007"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": false,
+        "point_of_failure": "Failure to monitor prescription of controlled substances",
+        "counterfactual": "Monitoring could have mitigated misuse risk",
+        "evidence_ids": [
+          "E004",
+          "E007"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "5 September [year]",
+        "event": "Dr O prescribed triazolam and tramadol to Mr D",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "5 September [year]",
+        "event": "Prescription of triazolam and tramadol",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [],
+    "treatments": [
+      {
+        "treatment": "Prescription of triazolam and tramadol",
+        "date": "5 September [year]",
+        "provider": null,
+        "outcome": "Patient received medications",
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Potential for addiction",
+        "when_occurred": "Following prescription",
+        "severity": "Moderate",
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Inappropriate prescribing of controlled substances",
+        "against": "Dr O",
+        "found_proven": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "allegation": "Failure to monitor prescription of controlled substances",
+        "against": "Dr [O]",
+        "found_proven": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Dr O breached duty of care by prescribing controlled substances",
+        "legal_significance": "Professional misconduct established",
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "finding": "Professional misconduct due to inappropriate prescription practices",
+        "legal_significance": "Breach of professional standards",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "TREATMENT_PROCEDURE_ERROR",
+      "MEDICATION_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.027607361963190184,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 09:52:07.335800",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

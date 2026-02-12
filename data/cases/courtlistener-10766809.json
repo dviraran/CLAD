@@ -1,0 +1,430 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10766809",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2025-12-30",
+  "url": "https://example.com/courtlistener-10766809",
+  "case_name": "State of Louisiana v. Navarri R. Henderson",
+  "neutral_citation": null,
+  "clinical_domain": "OBSTETRICS_GYNAECOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "State of Louisiana v. Navarri R. Henderson. Medical malpractice case involving obstetrics gynaecology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Defendant, Navarri Henderson, was charged by grand jury indictment with committing first degree rape of a female victim, J.F.",
+      "paragraph_ref": "17",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "J.F. told Ms. Hamilton that she had been running on the levee when she was attacked by a man who had been sitting on a bench.",
+      "paragraph_ref": "77",
+      "speaker": "Witness statement"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "J.F. suffered a broken nose, arm, and hip, and was left to suffer, unable to pull herself up the levee, in the dark and cold and scream for help.",
+      "paragraph_ref": "641",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "LEGAL_FINDING",
+      "text": "We affirm Defendant\u2019s convictions. We affirm Defendant\u2019s sentences for his first degree rape and aggravated kidnapping convictions.",
+      "paragraph_ref": "648",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "J.F. told Ms. Hamilton that she bit the attacker\u2019s penis and that he retaliated by beating her.",
+      "paragraph_ref": "80",
+      "speaker": "Witness statement"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "J.F. testified that as she ran on the levee, she noticed 'the shape of a person on a bench\u2026who looked like they were just sitting there staring out at the river.'",
+      "paragraph_ref": "100",
+      "speaker": "Witness statement"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "Officer Marian Mickey testified that at about 9:00 p.m. on December 28, 2016, she responded to a call for service involving a rape in the 700 block of Patterson Drive in Algiers.",
+      "paragraph_ref": "54",
+      "speaker": "Witness statement"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "FACTUAL_FINDING",
+      "text": "Ms. Acosta testified that J.F.\u2019s pelvis was 'papoosed' and her right arm was splinted.",
+      "paragraph_ref": "88",
+      "speaker": "Witness statement"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "FACTUAL_FINDING",
+      "text": "J.F. reported that the assailant forced his penis into her mouth and that she bit his penis.",
+      "paragraph_ref": "92",
+      "speaker": "Witness statement"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "LEGAL_FINDING",
+      "text": "The record in this case does not reflect that the trial court abused its broad discretion when it sentenced Defendant to the mandatory life sentences for first degree rape and aggravated kidnapping.",
+      "paragraph_ref": "645",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Severe injuries following an assault",
+      "history_of_present_illness": "J.F. was attacked while running on the levee, resulting in multiple injuries.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "general": "Patient in obvious pain with multiple injuries",
+          "head": "Nasal bone fracture",
+          "musculoskeletal": "Dislocated left hip, fracture of left radius",
+          "neurological": "Neck pain, back pain, gait problems"
+        }
+      },
+      "initial_working_problem": "Multiple traumatic injuries following assault",
+      "known_constraints": null,
+      "initial_differential": [
+        "Traumatic injuries",
+        "Sexual assault"
+      ],
+      "critical_findings": [
+        "Nasal bone fracture",
+        "Dislocated hip",
+        "Fractured radius"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E003",
+        "E008",
+        "E159"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "X-ray",
+        "description": "X-ray to assess fractures",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Fractures confirmed",
+          "detailed_findings": null,
+          "clinical_significance": "Confirms physical trauma",
+          "decision_impact": "Guides orthopedic management",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E008"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Emergency Presentation",
+        "description": "Patient presents to ED with severe injuries from assault",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Initial assessment and stabilization",
+            "timestamp": "Not documented in judgment",
+            "evidence_ids": [
+              "E003"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient with multiple fractures and potential internal injuries",
+        "prompt": "What imaging should be ordered to assess internal injuries?",
+        "action_type": "ORDER_TEST",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Order CT scan of the abdomen and pelvis",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "CT scan is standard for assessing internal injuries in trauma cases"
+          },
+          {
+            "option_id": "B",
+            "description": "Order only X-rays",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "X-rays are insufficient for internal injury assessment"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant ordered only X-rays",
+          "reasoning_stated": "Defendant believed X-rays were sufficient",
+          "evidence_ids": [
+            "E008"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "CT scan should have been ordered",
+          "standard_of_care_basis": "Expert evidence established CT is standard",
+          "evidence_ids": [
+            "E008"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Based on evidence E008",
+          "what_should_have_happened": "CT scan should have been ordered to assess internal injuries",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E008"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "J.F. suffered from chronic hip pain, mobility issues, neck pain, and headaches.",
+        "severity": "PERMANENT_MODERATE_DISABILITY",
+        "long_term_effects": "Chronic pain and PTSD",
+        "evidence_ids": [
+          "E643",
+          "E627"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Breach of duty in failing to order appropriate imaging",
+          "Causation established - earlier intervention could have mitigated long-term effects"
+        ],
+        "evidence_ids": [
+          "E648",
+          "E649"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to order CT imaging",
+        "counterfactual": "CT would have identified internal injuries",
+        "evidence_ids": [
+          "E648",
+          "E649"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "December 28, 2016",
+        "event": "J.F. attacked while running on the levee",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002",
+          "E003"
+        ]
+      },
+      {
+        "timestamp": "Not documented in judgment",
+        "event": "Patient presents to ED with severe injuries",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Forensic Examination",
+        "date": "Not documented in judgment",
+        "result": "DNA evidence collected",
+        "interpretation": null,
+        "evidence_ids": [
+          "E136"
+        ]
+      },
+      {
+        "test_name": "X-ray",
+        "date": "Not documented in judgment",
+        "result": "Fractures confirmed",
+        "interpretation": null,
+        "evidence_ids": [
+          "E008"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Multiple traumatic injuries",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E159"
+        ]
+      },
+      {
+        "diagnosis": "Multiple fractures due to assault",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Orthopedic intervention",
+        "date": "Not documented in judgment",
+        "provider": null,
+        "outcome": "Fractures and dislocation addressed",
+        "evidence_ids": [
+          "E159"
+        ]
+      },
+      {
+        "treatment": "Orthopedic management",
+        "date": "Not documented in judgment",
+        "provider": null,
+        "outcome": "Stabilization of fractures",
+        "evidence_ids": [
+          "E008"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Chronic pain and mobility issues",
+        "when_occurred": "Not documented in judgment",
+        "severity": "Moderate",
+        "evidence_ids": [
+          "E127",
+          "E128",
+          "E129"
+        ]
+      },
+      {
+        "complication": "Chronic pain and PTSD",
+        "when_occurred": "Post-assault",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E627"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "First degree rape and aggravated kidnapping",
+        "against": "Navarri Henderson",
+        "found_proven": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "allegation": "Failure to order CT scan",
+        "against": "Defendant",
+        "found_proven": true,
+        "evidence_ids": [
+          "E648"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Convictions affirmed",
+        "legal_significance": "Defendant's appeal denied",
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E648"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.015220700152207,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 10:08:24.964472",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

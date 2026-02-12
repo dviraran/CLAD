@@ -1,0 +1,337 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "bailii-qb-2022-133-html",
+  "source": "BAILII",
+  "jurisdiction": "UK",
+  "court": "Unknown",
+  "decision_date": "2022-01-24",
+  "url": "https://example.com/bailii-qb-2022-133-html",
+  "case_name": "RXP v East Lancashire Hospitals NHS Trust (Clinical Negligence) [2022] EWHC 133 (QB) (24 January 2022)",
+  "neutral_citation": "[2022] EWHC 133",
+  "clinical_domain": "OBSTETRICS_GYNAECOLOGY",
+  "outcome_severity": "PERMANENT_SEVERE_DISABILITY",
+  "summary": {
+    "brief": "Medical malpractice case involving obstetrics gynaecology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "The claim arises out of the neurological injuries suffered by the Claimant at the time of his birth, at the Royal Blackburn Hospital, on 3 November 2008.",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "The Claimant suffered a hypoxic ischaemic injury at birth which has caused him both physical and cognitive disability.",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "He is independently mobile, but he has an abnormal gait and balance difficulties.",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "The issues of breach of duty and causation were compromised on terms, approved by Lambert J on 31 July 2019, that the Defendant pay 95% of damages to be assessed.",
+      "paragraph_ref": "14",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "The Defendant will pay a retained sum of \u00a37,125,000, and will also pay periodical payments in respect of care and case management.",
+      "paragraph_ref": "15",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "A Deputy has been appointed in this case, and in accordance with the form of Order that the Court is asked to approve, those sums will be paid into a bank account of the Deputy.",
+      "paragraph_ref": "15",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "It is further proposed that part of the damages, in the sum of \u00a3223,274, should be paid out to the Claimant's parents in repayment of expenses incurred by them.",
+      "paragraph_ref": "15",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "COURT_REASONING",
+      "text": "I have given careful consideration to that advice, together with the other papers in the case to which I have been referred and the assistance with which I have been provided by Counsel this morning.",
+      "paragraph_ref": "17",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "LEGAL_FINDING",
+      "text": "I am therefore happy to give my approval to the settlement and an Order in the form proposed can be made.",
+      "paragraph_ref": "18",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "WITNESS_STATEMENT",
+      "text": "The extent to which the family has kept the Claimant so well and looked after him with such care and devotion is apparent not only from their witness statements.",
+      "paragraph_ref": "19",
+      "speaker": "Court finding"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Newborn",
+        "sex": "unknown",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Neurological injuries at birth",
+      "history_of_present_illness": "The Claimant suffered a hypoxic ischaemic injury at birth.",
+      "past_medical_history": [
+        "Hypoxic ischaemic injury"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "neurological": "Abnormal gait and balance difficulties"
+        }
+      },
+      "initial_working_problem": "Neurological injury at birth",
+      "known_constraints": null,
+      "initial_differential": [
+        "Hypoxic ischaemic encephalopathy"
+      ],
+      "critical_findings": [
+        "Abnormal gait",
+        "Balance difficulties"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002",
+        "E003"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSULT_NOTE",
+        "name": "Neurology Consultation",
+        "description": "Assessment of neurological status and management plan",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not documented in judgment",
+          "detailed_findings": null,
+          "clinical_significance": "Not documented in judgment",
+          "decision_impact": "Not documented in judgment",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": []
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Birth and Initial Assessment",
+        "description": "Newborn presents with neurological injury at birth",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Birth at Royal Blackburn Hospital",
+            "timestamp": "3 November 2008",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Newborn with suspected hypoxic ischaemic injury",
+        "prompt": "What immediate management should be initiated?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Initiate therapeutic hypothermia",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard care for hypoxic ischaemic encephalopathy"
+          },
+          {
+            "option_id": "B",
+            "description": "Provide supportive care only",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Supportive care alone may not address the underlying injury"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant provided supportive care only",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": []
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Therapeutic hypothermia should have been initiated",
+          "standard_of_care_basis": "Expert evidence supports therapeutic hypothermia",
+          "evidence_ids": []
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Based on standard care guidelines",
+          "what_should_have_happened": "Therapeutic hypothermia should have been initiated",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": []
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Claimant suffers from physical and cognitive disabilities",
+        "severity": "PERMANENT_SEVERE_DISABILITY",
+        "long_term_effects": "Abnormal gait, balance difficulties, neurocognitive impairments",
+        "evidence_ids": [
+          "E002",
+          "E003"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "7,125,000",
+        "key_findings": [
+          "Breach of duty and causation were compromised",
+          "Settlement approved by the court"
+        ],
+        "evidence_ids": [
+          "E004",
+          "E005"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to initiate appropriate management",
+        "counterfactual": "Appropriate management could have mitigated injury",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "3 November 2008",
+        "event": "Claimant born at Royal Blackburn Hospital",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [
+      {
+        "diagnosis": "Hypoxic ischaemic injury",
+        "when_made": "At birth",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "treatments": [],
+    "complications": [
+      {
+        "complication": "Physical and cognitive disabilities",
+        "when_occurred": "Post-birth",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E002",
+          "E003"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to provide appropriate management",
+        "against": "Defendant hospital",
+        "found_proven": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Settlement approved by the court",
+        "legal_significance": "Compromise on breach of duty and causation",
+        "evidence_ids": [
+          "E004",
+          "E005"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.5263157894736842,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 07:27:23.663019",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

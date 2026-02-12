@@ -1,0 +1,359 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-9328093",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "0091-05-20",
+  "url": "https://example.com/courtlistener-9328093",
+  "case_name": "James R. Snell v. Behavioral Health Connections, Inc. UHS of Timberlawn, Inc., Universal Health Services, Inc., and Heather Cawthon",
+  "neutral_citation": null,
+  "clinical_domain": "CARDIOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "James R. Snell v. Behavioral Health Connections, Inc. UHS of Timberlawn, Inc., Universal Health Services, Inc., and Heather Cawthon. Medical malpractice case involving cardiology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Snell claims during the seventeen-day period between those two dates, he was illegally held and effectively 'imprisoned' at the facility.",
+      "paragraph_ref": "21",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Snell was humiliated and ridiculed, particularly for protesting that he was being falsely imprisoned.",
+      "paragraph_ref": "35",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "LEGAL_FINDING",
+      "text": "We affirm the trial court\u2019s take-nothing judgment in this case.",
+      "paragraph_ref": "13",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "LEGAL_FINDING",
+      "text": "The trial court did not err in dismissing Snell\u2019s claims against appellees for his failure to serve an expert report under the TMLA.",
+      "paragraph_ref": "285",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "COURT_REASONING",
+      "text": "Whether a pleading asserts a health care liability claim presents a question of law courts review de novo.",
+      "paragraph_ref": "164",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "Snell first met Cawthon, a licensed professional counselor.",
+      "paragraph_ref": "17",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "Snell\u2019s amended petition identified Cawthon as a licensed professional counselor and BHC employee.",
+      "paragraph_ref": "47",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "LEGAL_FINDING",
+      "text": "The trial court granted Timberlawn\u2019s motion to dismiss.",
+      "paragraph_ref": "83",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "FACTUAL_FINDING",
+      "text": "Snell was physically restrained and forcibly medicated on two of those dates.",
+      "paragraph_ref": "23",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "COURT_REASONING",
+      "text": "We are mindful of the serious and important liberty interests at stake in this and similar cases.",
+      "paragraph_ref": "283",
+      "speaker": "Judge's analysis"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "male",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Disorientation and confusion",
+      "history_of_present_illness": "Early on the morning of December 9, 2018, the patient became verbally active, seeming disoriented and confused while a pedestrian on a residential street in his neighborhood, possibly due to side effects from a prescription anti-inflammatory medication. Someone contacted police who called paramedics, and who, in turn, gave him a drug that put him to sleep and took him to the emergency room at Baylor Hospital in Dallas.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "general": "Disoriented and confused"
+        }
+      },
+      "initial_working_problem": "Acute confusion and disorientation",
+      "known_constraints": null,
+      "initial_differential": [
+        "Medication side effects",
+        "Acute mental health episode"
+      ],
+      "critical_findings": [
+        "Disorientation",
+        "Confusion"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E016"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSULT_NOTE",
+        "name": "Mental Health Evaluation",
+        "description": "Evaluation by licensed professional counselor",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Patient evaluated by Heather Cawthon, LPC, Ph.D.",
+          "detailed_findings": null,
+          "clinical_significance": "Initial mental health assessment",
+          "decision_impact": "Led to involuntary commitment",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E006",
+          "E017"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Emergency Presentation",
+        "description": "Patient presents to ED with acute symptoms",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Patient brought to ED by paramedics",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E016"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Initial Assessment and Commitment",
+        "description": "Patient evaluated and involuntarily committed",
+        "duration": "17 days",
+        "key_events": [
+          {
+            "event": "Initial mental health evaluation by Cawthon",
+            "timestamp": "December 9, 2018",
+            "evidence_ids": [
+              "E017"
+            ]
+          },
+          {
+            "event": "Involuntary commitment",
+            "timestamp": "December 10, 2018",
+            "evidence_ids": [
+              "E021"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient in emergency room with confusion and disorientation",
+        "prompt": "What should be the next step in management?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Conduct a thorough medical evaluation to rule out non-psychiatric causes",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard practice to rule out medical causes before psychiatric commitment"
+          },
+          {
+            "option_id": "B",
+            "description": "Proceed with involuntary psychiatric commitment",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Premature without ruling out medical causes"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant proceeded with involuntary psychiatric commitment",
+          "reasoning_stated": "Believed patient was a danger to himself or others",
+          "evidence_ids": [
+            "E021",
+            "E022"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Conduct a thorough medical evaluation",
+          "standard_of_care_basis": "Expert evidence established need for medical evaluation",
+          "evidence_ids": [
+            "E045",
+            "E046"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Based on evidence E045-E048",
+          "what_should_have_happened": "Based on court's findings",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E045",
+            "E046",
+            "E047"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient was involuntarily committed for 17 days, physically restrained and forcibly medicated on two occasions.",
+        "severity": "TEMPORARY_MODERATE_DISABILITY",
+        "long_term_effects": "Patient reported lasting psychological impact and reduced quality of life.",
+        "evidence_ids": [
+          "E009",
+          "E035"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "None",
+        "key_findings": [
+          "Court found no breach of duty as claims were dismissed for failure to serve expert report",
+          "Court affirmed take-nothing judgment"
+        ],
+        "evidence_ids": [
+          "E003",
+          "E013"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Failure to conduct thorough medical evaluation before psychiatric commitment",
+        "counterfactual": "A thorough medical evaluation could have identified non-psychiatric causes",
+        "evidence_ids": [
+          "E045",
+          "E046"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "December 9, 2018",
+        "event": "Patient became disoriented and confused, taken to ED",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E016"
+        ]
+      },
+      {
+        "timestamp": "December 10, 2018",
+        "event": "Patient involuntarily committed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E021"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [],
+    "treatments": [],
+    "complications": [],
+    "allegations": [
+      {
+        "allegation": "False imprisonment and assault",
+        "against": "Behavioral Health Connections, Inc., UHS of Timberlawn, Inc., Universal Health Services, Inc., and Heather Cawthon",
+        "found_proven": false,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "No breach of duty as claims were dismissed for failure to serve expert report",
+        "legal_significance": "Court affirmed take-nothing judgment",
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.034013605442176874,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 09:32:09.140792",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

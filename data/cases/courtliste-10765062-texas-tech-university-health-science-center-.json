@@ -1,0 +1,334 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtliste-10765062-texas-tech-university-health-science-center-",
+  "source": "BAILII",
+  "jurisdiction": "UK",
+  "court": "Unknown",
+  "decision_date": "0008-08-25",
+  "url": "https://example.com/courtliste-10765062-texas-tech-university-health-science-center-",
+  "case_name": "Texas Tech University Health Science Center - El Paso v. Philip E. Mohrman Individually and as Representative of the Estate of Robert K. Borst",
+  "neutral_citation": null,
+  "clinical_domain": "ONCOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Texas Tech University Health Science Center - El Paso v. Philip E. Mohrman Individually and as Representative of the Estate of Robert K. Borst. Medical malpractice case involving oncology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Mohrman\u2019s husband, Robert K. Borst, was treated by TTUHSC physicians while hospitalized at University Medical Center (UMC) in November and December 2017.",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "after Borst suffered an adverse reaction to Bactrim, he was given more of it, resulting in complications that led to his death.",
+      "paragraph_ref": "14",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "MEDICAL_RECORD",
+      "text": "Attached to this declaration are true and correct copies of the notice letters dated April 5, 2018, addressed to Dean Richard Lange of Paul Foster School of Medicine, Texas Tech University Health Sciences Center\u2013El Paso, and the Administrator of University Medical Center (UMC) of El Paso.",
+      "paragraph_ref": "2",
+      "speaker": "Plaintiff's counsel"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "LEGAL_FINDING",
+      "text": "TTUHSC did not conclusively show that Mohrman failed to comply with the written notice requirement under \u00a7 101.101(a) of the Texas Tort Claims Act (TTCA), we affirm.",
+      "paragraph_ref": "12",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "COURT_REASONING",
+      "text": "Mundie\u2019s sworn statement that notice of Mohrman\u2019s claim was properly mailed to TTUHSC gave rise to a presumption that TTUHSC received the notice in due course.",
+      "paragraph_ref": "186",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "COURT_REASONING",
+      "text": "Webster\u2019s sworn statement that TTUHSC did not receive the notice rebutted this presumption.",
+      "paragraph_ref": "187",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "LEGAL_FINDING",
+      "text": "a fact issue remains as to whether TTUHSC actually received timely notice of Mohrman\u2019s claim under \u00a7 101.101(a).",
+      "paragraph_ref": "188",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "LEGAL_FINDING",
+      "text": "TTUHSC was not entitled to relief under its \u00a7 101.101 affirmative defense and the trial court thus correctly denied its plea to the jurisdiction and motion to dismiss.",
+      "paragraph_ref": "192",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "male",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Adverse reaction to Bactrim",
+      "history_of_present_illness": "Patient suffered an adverse reaction to Bactrim, which was administered again, leading to complications.",
+      "past_medical_history": [],
+      "medications": [
+        "Bactrim"
+      ],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "system": "Examination mentioned but findings not specified"
+        }
+      },
+      "initial_working_problem": "Adverse drug reaction",
+      "known_constraints": null,
+      "initial_differential": [
+        "Adverse drug reaction",
+        "Kidney failure"
+      ],
+      "critical_findings": [
+        "Adverse reaction to Bactrim"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "LAB",
+        "name": "Renal Function Test",
+        "description": "Assessment of kidney function",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not documented in judgment",
+          "detailed_findings": null,
+          "clinical_significance": "Not documented in judgment",
+          "decision_impact": "Not documented in judgment",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": []
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Hospital Presentation",
+        "description": "Patient presented with adverse reaction to medication",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Initial adverse reaction to Bactrim",
+            "timestamp": "Not documented in judgment",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient with known adverse reaction to Bactrim",
+        "prompt": "Should Bactrim be administered again?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Do not administer Bactrim",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Avoidance of known allergen or adverse drug"
+          },
+          {
+            "option_id": "B",
+            "description": "Administer Bactrim again",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Inappropriate given known adverse reaction"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant administered Bactrim again",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E002"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Bactrim should not have been administered",
+          "standard_of_care_basis": "Avoidance of known adverse drug reactions",
+          "evidence_ids": [
+            "E002"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Administering Bactrim despite known adverse reaction",
+          "what_should_have_happened": "Bactrim should have been avoided",
+          "legal_standard_applied": "Standard of care for drug administration",
+          "evidence_ids": [
+            "E002"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient suffered complications leading to death",
+        "severity": "FATAL",
+        "long_term_effects": "Not applicable",
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Breach of duty in administering Bactrim despite known adverse reaction",
+          "Causation established - administration led to complications and death"
+        ],
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Administration of Bactrim despite known adverse reaction",
+        "counterfactual": "Avoidance of Bactrim would have prevented complications",
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "November 2017",
+        "event": "Patient treated at UMC",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [
+      {
+        "diagnosis": "Adverse reaction to Bactrim",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Administration of Bactrim",
+        "date": "Not documented in judgment",
+        "provider": null,
+        "outcome": "Complications leading to death",
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Complications from Bactrim",
+        "when_occurred": "Not documented in judgment",
+        "severity": "Fatal",
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Inappropriate administration of Bactrim",
+        "against": "TTUHSC physicians",
+        "found_proven": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Standard of care not met",
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "TREATMENT_PROCEDURE_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.03980099502487562,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 09:51:05.300722",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

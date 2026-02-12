@@ -1,0 +1,448 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-4911758",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2021-08-11",
+  "url": "https://example.com/courtlistener-4911758",
+  "case_name": "Spikes v. McVea",
+  "neutral_citation": null,
+  "clinical_domain": "CARDIOLOGY",
+  "outcome_severity": "TEMPORARY_HARM",
+  "summary": {
+    "brief": "Spikes v. McVea. Medical malpractice case involving cardiology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Spikes, a former inmate, suffered an injury to his right hip while incarcerated at the Rayburn Correctional Center in Angie, Louisiana.",
+      "paragraph_ref": "11",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "He presented to the infirmary in a wheelchair, complaining of extreme pain and inability to walk.",
+      "paragraph_ref": "11",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "Medical staff ordered ibuprofen and a muscle rub to treat what they perceived to be a muscle strain.",
+      "paragraph_ref": "11",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "Spikes returned to the infirmary five more times over the next six weeks, each time complaining of intense pain and inability to walk, stand on, or bend his right leg.",
+      "paragraph_ref": "11",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "Medical staff continued their cursory treatment for six weeks, without ordering any imaging, even though x-ray equipment was immediately at hand.",
+      "paragraph_ref": "11",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "When finally ordered, it disclosed a serious fracture requiring immediate transfer to University Medical Center New Orleans for surgery.",
+      "paragraph_ref": "11",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "LEGAL_FINDING",
+      "text": "The district court determined that there was enough evidence to conclude that Defendants\u2019 conduct went beyond malpractice, rising to the level of an Eighth Amendment violation.",
+      "paragraph_ref": "9",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "LEGAL_FINDING",
+      "text": "The district court denied the defendants\u2019 motion for summary judgment, finding that, at that juncture, they were not entitled to qualified immunity.",
+      "paragraph_ref": "11",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "COURT_REASONING",
+      "text": "We conclude that a jury might find that Spikes\u2019s prolonged inability to walk and complete lack of response to treatment show that Defendants were deliberately indifferent to his obvious symptoms and unchanged condition.",
+      "paragraph_ref": "44",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "FACTUAL_FINDING",
+      "text": "On August 11, 2016, Spikes was seen at a routine doctor call out by Dr. McVea. Spikes again reported that he could not stand on or bend his leg.",
+      "paragraph_ref": "25",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E011",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. McVea ordered an x-ray for the same day and ordered Spikes placed on limited-duty status, with assignment to a bottom bunk, limited lifting, and crutches.",
+      "paragraph_ref": "25",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E012",
+      "type": "FACTUAL_FINDING",
+      "text": "When Spikes\u2019s x-ray found a fractured right hip, he was ordered transferred to University Medical Center New Orleans (UMC).",
+      "paragraph_ref": "25",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E013",
+      "type": "LEGAL_FINDING",
+      "text": "The district court granted summary judgment as to Spikes\u2019s postoperative claims but denied summary judgment as to his preoperative claims.",
+      "paragraph_ref": "32",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E014",
+      "type": "COURT_REASONING",
+      "text": "Qualified immunity provides government officials performing discretionary functions with a shield against civil damages liability \u201cas long as their actions could reasonably have been thought consistent with the rights they are alleged to have violated.\u201d",
+      "paragraph_ref": "36",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E015",
+      "type": "COURT_REASONING",
+      "text": "Spikes must show that officials \u201crefused to treat him, ignored his complaints, intentionally treated him incorrectly, or engaged in any similar conduct that would clearly evince a wanton disregard for any serious medical needs.\u201d",
+      "paragraph_ref": "40",
+      "speaker": "Judge's analysis"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "male",
+        "relevant_social_history": "Incarcerated at Rayburn Correctional Center"
+      },
+      "chief_complaint": "Extreme pain and inability to walk",
+      "history_of_present_illness": "Patient presented in a wheelchair after lifting weights, complaining of sharp pain in the right hip and groin area, unable to move the right leg or walk.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "musculoskeletal": "Patient unable to walk or stand on right leg, severe pain in right hip and groin area"
+        }
+      },
+      "initial_working_problem": "Muscle strain",
+      "known_constraints": null,
+      "initial_differential": [
+        "muscle strain",
+        "hip fracture"
+      ],
+      "critical_findings": [
+        "Inability to walk",
+        "Severe pain in right hip"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002",
+        "E003"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "X-ray of the right hip",
+        "description": "Radiographic imaging to assess for fractures or other bony abnormalities",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Fractured right hip",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates need for surgical intervention",
+          "decision_impact": "Should prompt immediate transfer for surgical management",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E006",
+          "E012"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents to infirmary with severe hip pain",
+        "duration": "Initial visit",
+        "key_events": [
+          {
+            "event": "Patient seen by Nurse Stringer",
+            "timestamp": "June 30, 2016",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Subsequent Visits",
+        "description": "Patient returns multiple times with unchanged symptoms",
+        "duration": "Six weeks",
+        "key_events": [
+          {
+            "event": "Patient seen multiple times, treatment unchanged",
+            "timestamp": "July 2016",
+            "evidence_ids": [
+              "E004",
+              "E005"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "decision",
+        "name": "Final Diagnosis",
+        "description": "X-ray ordered and fracture diagnosed",
+        "duration": "Single day",
+        "key_events": [
+          {
+            "event": "X-ray ordered by Dr. McVea",
+            "timestamp": "August 11, 2016",
+            "evidence_ids": [
+              "E010",
+              "E011"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient in infirmary with severe hip pain and inability to walk",
+        "prompt": "What diagnostic test should be ordered?",
+        "action_type": "ORDER_TEST",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Order X-ray of the right hip",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "X-ray is necessary to rule out fracture given the symptoms"
+          },
+          {
+            "option_id": "B",
+            "description": "Continue treatment with ibuprofen and muscle rub",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Assumed muscle strain despite lack of improvement"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant continued ibuprofen and muscle rub",
+          "reasoning_stated": "Assumed muscle strain",
+          "evidence_ids": [
+            "E003",
+            "E005"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "X-ray should have been ordered",
+          "standard_of_care_basis": "Symptoms consistent with fracture required imaging",
+          "evidence_ids": [
+            "E006",
+            "E007"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to order imaging despite persistent symptoms",
+          "what_should_have_happened": "X-ray should have been ordered to confirm diagnosis",
+          "legal_standard_applied": "Deliberate indifference to medical needs",
+          "evidence_ids": [
+            "E007",
+            "E009"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient required surgery for fractured hip",
+        "severity": "PERMANENT_MODERATE_DISABILITY",
+        "long_term_effects": "Potential for chronic pain and mobility issues",
+        "evidence_ids": [
+          "E012",
+          "E015"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Deliberate indifference to medical needs",
+          "Failure to order appropriate diagnostic imaging"
+        ],
+        "evidence_ids": [
+          "E007",
+          "E009"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to order X-ray",
+        "counterfactual": "X-ray would have shown fracture earlier",
+        "evidence_ids": [
+          "E006",
+          "E007",
+          "E009"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "June 30, 2016",
+        "event": "Patient presents to infirmary with severe hip pain",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "August 11, 2016",
+        "event": "X-ray ordered and fracture diagnosed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E010",
+          "E011"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "X-ray of the right hip",
+        "date": "August 11, 2016",
+        "result": "Fractured right hip",
+        "interpretation": null,
+        "evidence_ids": [
+          "E012"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Fractured right hip",
+        "when_made": "August 11, 2016",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E012"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Open reduction surgery",
+        "date": "August 15, 2016",
+        "provider": null,
+        "outcome": "Surgical repair of hip fracture",
+        "evidence_ids": [
+          "E012"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Delayed diagnosis leading to prolonged pain",
+        "when_occurred": "June 30, 2016 - August 11, 2016",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E009"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Deliberate indifference to medical needs",
+        "against": "Medical staff at Rayburn Correctional Center",
+        "found_proven": true,
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendants were deliberately indifferent to Spikes's medical needs",
+        "legal_significance": "Eighth Amendment violation",
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.14705882352941177,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 15:34:03.674873",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

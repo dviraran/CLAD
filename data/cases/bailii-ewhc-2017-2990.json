@@ -1,0 +1,394 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "bailii-ewhc-2017-2990",
+  "source": "BAILII",
+  "jurisdiction": "UK",
+  "court": "Unknown",
+  "decision_date": "2017-11-23",
+  "url": "https://example.com/bailii-ewhc-2017-2990",
+  "case_name": "MNX  v  Khan [2017] EWHC 2990 (QB) (23 November 2017)",
+  "neutral_citation": "[2017] EWHC 2990",
+  "clinical_domain": "OBSTETRICS_GYNAECOLOGY",
+  "outcome_severity": "PERMANENT_SEVERE_DISABILITY",
+  "summary": {
+    "brief": "Medical malpractice case involving obstetrics gynaecology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "The claimant's nephew was born and was subsequently diagnosed as having haemophilia.",
+      "paragraph_ref": "21",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "The claimant wished to avoid having a child with that condition and so consulted a general practitioner, Dr Athukorala, in August 2006.",
+      "paragraph_ref": "22",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "Blood tests were arranged. However, such tests were those to establish whether a patient had haemophilia and could not confirm whether or not the claimant was a carrier.",
+      "paragraph_ref": "23",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "The claimant was told that the results were normal. As a result of the advice she received at that consultation and the previous consultation, she was led to believe that any child she had would not have haemophilia.",
+      "paragraph_ref": "25",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "In December 2010, the claimant became pregnant with FGN. Shortly after his birth in September 2011 he was diagnosed as having haemophilia.",
+      "paragraph_ref": "26",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "FGN's haemophilia is severe. He has been unresponsive to conventional factor VIII replacement therapy.",
+      "paragraph_ref": "30",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "In December 2015, FGN was diagnosed as also suffering from autism.",
+      "paragraph_ref": "31",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "LEGAL_FINDING",
+      "text": "The Court of Appeal has decided in Parkinson and Groom that recovery for the costs associated with a disability not directly linked to the negligence is fair where the disabled child would not have been born but for the negligence.",
+      "paragraph_ref": "114",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "LEGAL_FINDING",
+      "text": "It follows that I consider that the costs related to FGN's autism may properly be recovered by the claimant from the defendant.",
+      "paragraph_ref": "115",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Consultation to determine carrier status for haemophilia",
+      "history_of_present_illness": "The claimant wished to avoid having a child with haemophilia and consulted a general practitioner to establish if she was a carrier.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "system": "Examination mentioned but findings not specified"
+        }
+      },
+      "initial_working_problem": "Determine carrier status for haemophilia",
+      "known_constraints": null,
+      "initial_differential": [
+        "Carrier of haemophilia gene",
+        "Not a carrier"
+      ],
+      "critical_findings": [
+        "Blood tests arranged were not suitable for determining carrier status"
+      ],
+      "urgency_level": "ROUTINE",
+      "evidence_ids": [
+        "E002",
+        "E003"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "LAB",
+        "name": "Genetic Testing for Haemophilia Carrier Status",
+        "description": "Referral to a haematologist for genetic testing to determine carrier status",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not performed",
+          "detailed_findings": null,
+          "clinical_significance": "Would have confirmed carrier status",
+          "decision_impact": "Would have led to informed decision-making regarding pregnancy",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": [
+          "E003",
+          "E028"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Consultation",
+        "description": "Patient consults GP to determine haemophilia carrier status",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Consultation with GP",
+            "timestamp": "August 2006",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Blood Test Results",
+        "description": "Patient receives results of blood tests",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Patient informed results were normal",
+            "timestamp": "25 August 2006",
+            "evidence_ids": [
+              "E004"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient consulting to determine haemophilia carrier status",
+        "prompt": "What test should be ordered to determine if the patient is a carrier of the haemophilia gene?",
+        "action_type": "ORDER_TEST",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Order genetic testing for haemophilia carrier status",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Genetic testing is required to determine carrier status accurately"
+          },
+          {
+            "option_id": "B",
+            "description": "Order blood tests to check for haemophilia",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Blood tests for haemophilia do not determine carrier status"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant ordered blood tests for haemophilia",
+          "reasoning_stated": "Defendant believed these tests were appropriate",
+          "evidence_ids": [
+            "E003",
+            "E024"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Genetic testing should have been ordered",
+          "standard_of_care_basis": "Expert evidence established genetic testing is required",
+          "evidence_ids": [
+            "E028",
+            "E029"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Blood tests ordered could not determine carrier status",
+          "what_should_have_happened": "Referral for genetic testing should have been made",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E028",
+            "E029",
+            "E030"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Child born with haemophilia and later diagnosed with autism",
+        "severity": "SEVERE_DISABILITY",
+        "long_term_effects": "Requires ongoing management for haemophilia and autism",
+        "evidence_ids": [
+          "E005",
+          "E006",
+          "E007"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "9000000",
+        "key_findings": [
+          "Breach of duty in failing to refer for genetic testing",
+          "Causation established - child would not have been born but for negligence"
+        ],
+        "evidence_ids": [
+          "E114",
+          "E115"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to order appropriate genetic testing",
+        "counterfactual": "Genetic testing would have shown carrier status, leading to different pregnancy decisions",
+        "evidence_ids": [
+          "E028",
+          "E029",
+          "E030"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "August 2006",
+        "event": "Patient consults GP to determine haemophilia carrier status",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "25 August 2006",
+        "event": "Patient informed results were normal",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Blood tests for haemophilia",
+        "date": "August 2006",
+        "result": "Normal",
+        "interpretation": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Haemophilia",
+        "when_made": "September 2011",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "diagnosis": "Autism",
+        "when_made": "December 2015",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Conventional factor VIII replacement therapy",
+        "date": "Not documented in judgment",
+        "provider": null,
+        "outcome": "Unresponsive",
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Severe haemophilia",
+        "when_occurred": "Shortly after birth",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to refer for genetic testing",
+        "against": "Defendant GP",
+        "found_proven": true,
+        "evidence_ids": [
+          "E100"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E120"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.0782608695652174,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 09:41:21.276639",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

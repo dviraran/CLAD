@@ -1,0 +1,423 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtliste-10312571-mallet-v-nys-dept-of-corrections",
+  "source": "BAILII",
+  "jurisdiction": "UK",
+  "court": "Unknown",
+  "decision_date": "2023-09-20",
+  "url": "https://example.com/courtliste-10312571-mallet-v-nys-dept-of-corrections",
+  "case_name": "Mallet v. NYS Dep't of Corrections",
+  "neutral_citation": null,
+  "clinical_domain": "ONCOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Mallet v. NYS Dep't of Corrections. Medical malpractice case involving oncology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "While he was incarcerated at Woodborne Correctional Facility, Plaintiff-Appellant Antonio Mallet repeatedly sought medical care for urinary obstruction and painful urination.",
+      "paragraph_ref": "2",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Mallet was released on parole in January 2019. With the opportunity to consult outside medical providers, he was eventually diagnosed with late-stage prostate cancer in May 2021.",
+      "paragraph_ref": "10",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "LEGAL_FINDING",
+      "text": "We find that, based on the facts alleged in the complaint, it is plausible that Mallet\u2019s deliberate indifference claim had not accrued by February 25, 2019, and thus it is also plausible that his complaint was filed within the three-year limitations period.",
+      "paragraph_ref": "27",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "On April 21, 2017, while incarcerated at Woodborne Correctional Facility, Mallet asked his primary care provider Dr. Mervat Makram for a referral to a specialist who could treat symptoms of urinary obstruction.",
+      "paragraph_ref": "6",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "On September 7, 2017, Mallet was examined by Dr. Thomas Stellato, a urologist at Kingston Urological Associates.",
+      "paragraph_ref": "9",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. Stellato performed a cystoscopy, 'which confirmed urinary retention, urinary obstructive symptoms and mild congestion of the prostatic lobe, posterior urethra and bladder neck' and also revealed 'evidence of bladder trabeculation +1.'",
+      "paragraph_ref": "10",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "On November 22, 2017, Mallet was examined by Anthony Ritaccio, a Professor of Medicine at Albany College who is unlicensed to practice medicine in the State of New York.",
+      "paragraph_ref": "3",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "FACTUAL_FINDING",
+      "text": "On April 6, 2021, the urologist performed a biopsy of Mallet\u2019s prostate, which ultimately revealed 'a large tumorous carcinoma.'",
+      "paragraph_ref": "8",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "LEGAL_FINDING",
+      "text": "The court concludes that Mallet\u2019s lawsuit was timely filed because even though he knew that he suffered from a serious medical condition while incarcerated, he did not know that the specific condition was prostate cancer.",
+      "paragraph_ref": "470",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "COURT_REASONING",
+      "text": "The Supreme Court has emphasized repeatedly that mere negligence or malpractice does not amount to deliberate indifference.",
+      "paragraph_ref": "16",
+      "speaker": "Judge's analysis"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "male",
+        "relevant_social_history": "Incarcerated at Woodborne Correctional Facility"
+      },
+      "chief_complaint": "Urinary obstruction and painful urination",
+      "history_of_present_illness": "Patient repeatedly sought medical care for urinary obstruction and painful urination, symptoms suggestive of prostate cancer.",
+      "past_medical_history": [
+        "Not documented in judgment"
+      ],
+      "medications": [
+        "Flomax"
+      ],
+      "allergies": [
+        "Not documented in judgment"
+      ],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "genitourinary": "Urinary retention and obstructive symptoms noted"
+        }
+      },
+      "initial_working_problem": "Urinary obstruction",
+      "known_constraints": null,
+      "initial_differential": [
+        "Benign prostatic hyperplasia",
+        "Prostate cancer"
+      ],
+      "critical_findings": [
+        "Urinary retention",
+        "Obstructive symptoms"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E004",
+        "E005"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "Cystoscopy",
+        "description": "Endoscopic examination of the bladder and urethra",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Confirmed urinary retention, urinary obstructive symptoms, mild congestion of the prostatic lobe, posterior urethra, and bladder neck",
+          "detailed_findings": null,
+          "clinical_significance": "Suggestive of possible prostate pathology",
+          "decision_impact": "Should prompt further testing to rule out prostate cancer",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "LAB",
+        "name": "Prostate-Specific Antigen (PSA)",
+        "description": "Blood test to measure PSA levels",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not ordered during incarceration",
+          "detailed_findings": null,
+          "clinical_significance": "Elevated PSA could indicate prostate cancer",
+          "decision_impact": "Would have prompted further investigation for prostate cancer",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with urinary symptoms",
+        "duration": "April 2017 - September 2017",
+        "key_events": [
+          {
+            "event": "Patient requests referral for urinary symptoms",
+            "timestamp": "April 21, 2017",
+            "evidence_ids": [
+              "E004"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Specialist Consultation and Initial Workup",
+        "description": "Consultation with urologist and initial workup",
+        "duration": "September 2017",
+        "key_events": [
+          {
+            "event": "Cystoscopy performed by Dr. Stellato",
+            "timestamp": "September 7, 2017",
+            "evidence_ids": [
+              "E005",
+              "E006"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient with urinary obstruction and abnormal cystoscopy findings",
+        "prompt": "What further investigation should be conducted to rule out prostate cancer?",
+        "action_type": "ORDER_TEST",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Order PSA test and follow-up imaging",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard practice to rule out prostate cancer given symptoms and cystoscopy findings"
+          },
+          {
+            "option_id": "B",
+            "description": "Prescribe Flomax and refer to neurologist",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Inadequate to address potential prostate cancer"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant prescribed Flomax and referred to neurologist",
+          "reasoning_stated": "Believed symptoms were due to benign prostatic hyperplasia",
+          "evidence_ids": [
+            "E005",
+            "E006"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "PSA test and further imaging should have been ordered",
+          "standard_of_care_basis": "Expert testimony indicated these were necessary to rule out cancer",
+          "evidence_ids": [
+            "E005",
+            "E006"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to order appropriate tests to rule out prostate cancer",
+          "what_should_have_happened": "PSA test and imaging should have been conducted",
+          "legal_standard_applied": "Deliberate indifference to medical needs",
+          "evidence_ids": [
+            "E005",
+            "E006"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient diagnosed with late-stage prostate cancer after release",
+        "severity": "PERMANENT_SEVERE_DISABILITY",
+        "long_term_effects": "Requires urinary bag, severe pain, reduced life expectancy",
+        "evidence_ids": [
+          "E008",
+          "E009"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Failure to conduct appropriate tests to rule out prostate cancer",
+          "Deliberate indifference to serious medical needs"
+        ],
+        "evidence_ids": [
+          "E003",
+          "E005"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to order PSA test and further imaging",
+        "counterfactual": "Earlier diagnosis could have prevented progression to late-stage cancer",
+        "evidence_ids": [
+          "E005",
+          "E006",
+          "E008"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "April 21, 2017",
+        "event": "Patient requests referral for urinary symptoms",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "timestamp": "September 7, 2017",
+        "event": "Cystoscopy performed by Dr. Stellato",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Cystoscopy",
+        "date": "September 7, 2017",
+        "result": "Confirmed urinary retention and obstructive symptoms",
+        "interpretation": null,
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Late-stage prostate cancer",
+        "when_made": "May 2021",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E008"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Robotic assisted radical prostatectomy",
+        "date": "June 10, 2021",
+        "provider": null,
+        "outcome": "Advanced prostate cancer treatment",
+        "evidence_ids": [
+          "E008"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Metastatic prostate cancer",
+        "when_occurred": "Post-release",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E008"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to order PSA test and further imaging",
+        "against": "Dr. Makram and Dr. Stellato",
+        "found_proven": true,
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendants acted with deliberate indifference",
+        "legal_significance": "Eighth Amendment violation",
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.021141649048625793,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 15:49:50.183627",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

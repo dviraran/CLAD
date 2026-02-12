@@ -1,0 +1,335 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-5287759",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2020-06-23",
+  "url": "https://example.com/courtlistener-5287759",
+  "case_name": "Flowers v. Giep MD",
+  "neutral_citation": null,
+  "clinical_domain": "OBSTETRICS_GYNAECOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Flowers v. Giep MD. Medical malpractice case involving obstetrics gynaecology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Appellants brought this medical malpractice action against Respondents, alleging Doctor breached the standard of care during Treva's delivery on October 8, 2008.",
+      "paragraph_ref": "17",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "During delivery, a complication known as shoulder dystocia occurred.",
+      "paragraph_ref": "17",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "Appellants alleged that Doctor failed to properly manage the shoulder dystocia, which caused Ashley to suffer an injury to her brachial plexus nerves.",
+      "paragraph_ref": "17",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "LEGAL_FINDING",
+      "text": "The trial court held the statute describes 'two separate and distinct situations' in which a physician cannot be liable for simple negligence and denied Appellants' motion to strike the affirmative defense.",
+      "paragraph_ref": "18",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "LEGAL_FINDING",
+      "text": "After deliberating, the jury returned a verdict in favor of Respondents.",
+      "paragraph_ref": "19",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "LEGAL_FINDING",
+      "text": "The jury found that although Respondents negligently harmed Ashley, the negligence occurred while Doctor rendered care in a genuine emergency situation.",
+      "paragraph_ref": "19",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "COURT_REASONING",
+      "text": "We find subsection (A) describes a physician that encounters an emergency while providing care whereas subsection (B) describes a physician treating a patient previously unassociated with the physician.",
+      "paragraph_ref": "29",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "COURT_REASONING",
+      "text": "To adopt Appellants' interpretation and read subsection (B) as a limitation to subsection (A) would be a 'forced construction' of the text's plain language.",
+      "paragraph_ref": "29",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "LEGAL_FINDING",
+      "text": "Thus, we hold the trial court did not err in its interpretation of section 15-32-230 and in denying Appellants' motion to strike the defense.",
+      "paragraph_ref": "30",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Complication during delivery",
+      "history_of_present_illness": "During delivery, a complication known as shoulder dystocia occurred.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "obstetrics": "Shoulder dystocia during delivery"
+        }
+      },
+      "initial_working_problem": "Shoulder dystocia during delivery",
+      "known_constraints": null,
+      "initial_differential": [
+        "Shoulder dystocia"
+      ],
+      "critical_findings": [
+        "Shoulder dystocia"
+      ],
+      "urgency_level": "EMERGENCY",
+      "evidence_ids": [
+        "E002",
+        "E003"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSULT_NOTE",
+        "name": "Obstetrician consult",
+        "description": "Consultation with obstetrician during delivery",
+        "available_phase": "presentation",
+        "reveal": {
+          "result_summary": "Shoulder dystocia identified",
+          "detailed_findings": null,
+          "clinical_significance": "Requires immediate management to prevent injury",
+          "decision_impact": "Prompt management needed to prevent brachial plexus injury",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E002",
+          "E003"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Delivery Complication",
+        "description": "Complication during delivery with shoulder dystocia",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Shoulder dystocia occurs",
+            "timestamp": "Not documented in judgment",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "presentation",
+        "clinical_context": "Management of shoulder dystocia during delivery",
+        "prompt": "How should the shoulder dystocia be managed?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Perform McRoberts maneuver and apply suprapubic pressure",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard management for shoulder dystocia"
+          },
+          {
+            "option_id": "B",
+            "description": "Attempt to deliver without specific maneuvers",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Failed to properly manage shoulder dystocia"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant failed to properly manage shoulder dystocia",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E003"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Perform McRoberts maneuver and apply suprapubic pressure",
+          "standard_of_care_basis": "Standard obstetric practice for shoulder dystocia",
+          "evidence_ids": [
+            "E003"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to perform standard maneuvers for shoulder dystocia",
+          "what_should_have_happened": "Standard maneuvers should have been performed",
+          "legal_standard_applied": "Breach of standard care",
+          "evidence_ids": [
+            "E003"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Ashley suffered an injury to her brachial plexus nerves",
+        "severity": "PERMANENT_MODERATE_DISABILITY",
+        "long_term_effects": "Not documented in judgment",
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "None",
+        "key_findings": [
+          "Jury found negligence occurred during a genuine emergency situation",
+          "Doctor was not liable due to emergency medical care defense"
+        ],
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Not applicable due to emergency defense",
+        "counterfactual": "Not applicable due to emergency defense",
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "Not documented in judgment",
+        "event": "Shoulder dystocia occurs during delivery",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [
+      {
+        "diagnosis": "Brachial plexus injury",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "treatments": [],
+    "complications": [
+      {
+        "complication": "Brachial plexus injury",
+        "when_occurred": "Not documented in judgment",
+        "severity": "Permanent moderate disability",
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to properly manage shoulder dystocia",
+        "against": "Doctor",
+        "found_proven": false,
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Doctor was not liable due to emergency medical care defense",
+        "legal_significance": "Emergency medical care defense applied",
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.2647058823529412,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 09:29:36.156284",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

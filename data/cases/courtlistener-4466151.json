@@ -1,0 +1,507 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-4466151",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2018-02-08",
+  "url": "https://example.com/courtlistener-4466151",
+  "case_name": "Tomlinson v. Metropolitan Pediatrics, LLC",
+  "neutral_citation": null,
+  "clinical_domain": "OBSTETRICS_GYNAECOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Tomlinson v. Metropolitan Pediatrics, LLC. Medical malpractice case involving obstetrics gynaecology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "The parents took M to defendants for patient care in November 2004 after he began exhibiting developmental abnormalities.",
+      "paragraph_ref": "8",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "In October 2010, the cause of M\u2019s developmental abnormalities was diagnosed as Duchenne muscular dystrophy (DMD).",
+      "paragraph_ref": "8",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "The parents and T alleged that defendants negligently failed to perform appropriate diagnostic testing for the symptoms that M was presenting.",
+      "paragraph_ref": "9",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "LEGAL_FINDING",
+      "text": "The Court of Appeals reversed that judgment as to the parents but affirmed as to T.",
+      "paragraph_ref": "7",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "COURT_REASONING",
+      "text": "The primary dispute on review is about whether the parents and T had identifiable interests that defendants were legally obligated to protect under the facts alleged in their respective claims.",
+      "paragraph_ref": "16",
+      "speaker": "Court reasoning"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "LEGAL_FINDING",
+      "text": "The decision of the Court of Appeals is affirmed, and the judgment of the circuit court is affirmed in part and reversed in part.",
+      "paragraph_ref": "5",
+      "speaker": "Court conclusion"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "The parents and T each alleged that defendants\u2019 negligence caused them to suffer economic and noneconomic damages.",
+      "paragraph_ref": "7",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "COURT_REASONING",
+      "text": "The parents allege that their injuries resulted from defendants\u2019 failure to take affirmative steps to protect them.",
+      "paragraph_ref": "19",
+      "speaker": "Court reasoning"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "1 year",
+        "sex": "male",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Developmental abnormalities",
+      "history_of_present_illness": "Parents report developmental abnormalities in their son, M, since birth.",
+      "past_medical_history": [
+        "Not documented in judgment"
+      ],
+      "medications": [
+        "Not documented in judgment"
+      ],
+      "allergies": [
+        "Not documented in judgment"
+      ],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "neurological": "Developmental abnormalities noted, specifics not documented in judgment"
+        }
+      },
+      "initial_working_problem": "Developmental delay - differential includes genetic disorder",
+      "known_constraints": null,
+      "initial_differential": [
+        "genetic disorder",
+        "developmental delay of unknown etiology"
+      ],
+      "critical_findings": [
+        "Developmental abnormalities"
+      ],
+      "urgency_level": "ROUTINE",
+      "evidence_ids": [
+        "E001",
+        "E003"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "LAB",
+        "name": "Genetic Testing",
+        "description": "Testing for genetic disorders such as Duchenne muscular dystrophy",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not performed",
+          "detailed_findings": null,
+          "clinical_significance": "Could have identified Duchenne muscular dystrophy",
+          "decision_impact": "Would have informed parents of genetic risks",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with developmental abnormalities",
+        "duration": "Not specified in judgment",
+        "key_events": [
+          {
+            "event": "Initial assessment by pediatrician",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Diagnostic Workup",
+        "description": "Period during which diagnostic testing should have been performed",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Failure to perform genetic testing",
+            "timestamp": "Not documented in judgment",
+            "evidence_ids": [
+              "E003"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient with developmental abnormalities",
+        "prompt": "What diagnostic test should be ordered?",
+        "action_type": "ORDER_TEST",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Order genetic testing for Duchenne muscular dystrophy",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Genetic testing is indicated for unexplained developmental abnormalities"
+          },
+          {
+            "option_id": "B",
+            "description": "Monitor and follow up without genetic testing",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Failed to investigate potential genetic cause"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant did not order genetic testing",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E003"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Genetic testing should have been ordered",
+          "standard_of_care_basis": "Expert evidence established genetic testing is standard",
+          "evidence_ids": [
+            "E003"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Based on evidence E003",
+          "what_should_have_happened": "Genetic testing should have been performed",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E003"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient diagnosed with Duchenne muscular dystrophy",
+        "severity": "PERMANENT_SEVERE_DISABILITY",
+        "long_term_effects": "Progressive muscle weakness and disability",
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Breach of duty in failing to perform genetic testing",
+          "Causation established - earlier diagnosis would have allowed for better management"
+        ],
+        "evidence_ids": [
+          "E003",
+          "E006"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to order genetic testing",
+        "counterfactual": "Genetic testing would have confirmed diagnosis earlier",
+        "evidence_ids": [
+          "E003",
+          "E006"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "November 2004",
+        "event": "Parents took M to defendants for patient care",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "October 2010",
+        "event": "Diagnosis of Duchenne muscular dystrophy made",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "November 2004",
+        "event": "Patient presents with developmental abnormalities",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "October 2010",
+        "event": "Diagnosis of Duchenne muscular dystrophy",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "November 2004",
+        "event": "Parents took M to defendants for patient care",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "October 2010",
+        "event": "Diagnosis of Duchenne muscular dystrophy made",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Genetic Testing",
+        "date": "Not performed until October 2010",
+        "result": "Duchenne muscular dystrophy diagnosed",
+        "interpretation": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "test_name": "Genetic Testing",
+        "date": "Not performed",
+        "result": "Not documented in judgment",
+        "interpretation": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "test_name": "Genetic Testing",
+        "date": "Not performed",
+        "result": "Not applicable",
+        "interpretation": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Duchenne muscular dystrophy",
+        "when_made": "October 2010",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "diagnosis": "Duchenne muscular dystrophy",
+        "when_made": "October 2010",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "diagnosis": "Duchenne muscular dystrophy",
+        "when_made": "October 2010",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Not documented in judgment",
+        "date": "Not documented in judgment",
+        "provider": null,
+        "outcome": "Not documented in judgment",
+        "evidence_ids": []
+      },
+      {
+        "treatment": "Not documented in judgment",
+        "date": "Not documented in judgment",
+        "provider": null,
+        "outcome": "Not documented in judgment",
+        "evidence_ids": []
+      },
+      {
+        "treatment": "Not documented in judgment",
+        "date": "Not documented in judgment",
+        "provider": null,
+        "outcome": "Not documented in judgment",
+        "evidence_ids": []
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Progressive muscle weakness",
+        "when_occurred": "Not documented in judgment",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "complication": "Progressive muscular degeneration",
+        "when_occurred": "Not documented in judgment",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "complication": "Progressive muscle weakness",
+        "when_occurred": "Not documented in judgment",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to perform genetic testing",
+        "against": "Defendant physicians",
+        "found_proven": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "allegation": "Failure to perform genetic testing",
+        "against": "Defendant healthcare provider",
+        "found_proven": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "allegation": "Failure to perform appropriate diagnostic testing",
+        "against": "Defendant",
+        "found_proven": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Standard of care not met",
+        "evidence_ids": [
+          "E003",
+          "E006"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.1038961038961039,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 09:25:20.958650",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

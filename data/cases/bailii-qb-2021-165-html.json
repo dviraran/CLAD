@@ -1,0 +1,365 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "bailii-qb-2021-165-html",
+  "source": "BAILII",
+  "jurisdiction": "UK",
+  "court": "Unknown",
+  "decision_date": "2021-02-01",
+  "url": "https://example.com/bailii-qb-2021-165-html",
+  "case_name": "OP  v Lancashire Teaching Hospitals NHS Foundation Trust [2021] EWHC 165 (QB) (01 February 2021)",
+  "neutral_citation": "[2021] EWHC 165",
+  "clinical_domain": "OBSTETRICS_GYNAECOLOGY",
+  "outcome_severity": "PERMANENT_SEVERE_DISABILITY",
+  "summary": {
+    "brief": "Medical malpractice case involving obstetrics gynaecology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "The claimant is aged 15. Acting by his father and litigation friend he brought these clinical negligence proceedings against the NHS Foundation Trust arising from his neonatal management at the Royal Preston Hospital.",
+      "paragraph_ref": "12",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "He was born by way of emergency caesarean section on the morning of what I will call 'Day 1' in 2005 upon the detection of signs of fetal distress.",
+      "paragraph_ref": "12",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "Over the course of the night of 'Day 2' to 'Day 3' it is now clear that the claimant was becoming hypoglycaemic as a result of insufficient nutrition.",
+      "paragraph_ref": "12",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "He was found on the morning of 'Day 3' cold and dangerously ill. Steps to feed him were implemented but were tragically too late to avoid severe brain injury as a result of hypoglycaemia.",
+      "paragraph_ref": "12",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "The claimant's mother had almost no command of English. Allegations in negligence were raised against the Trust for failing to ensure that she understood the requirements of a breastfed newborn.",
+      "paragraph_ref": "12",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "LEGAL_FINDING",
+      "text": "The defendant NHS Trust denied liability. However, shortly before the liability trial fixed for October 2018 the parties were able to reach a compromise agreement whereby, without admission of liability, the defendant would pay to the claimant damages representing 80% of the value of the claim.",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "The claimant has complex needs. He has, accurately, been described as 'grievously injured'. He has 4 limbed cerebral palsy, with global developmental delay, visual impairment and epilepsy.",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "LEGAL_FINDING",
+      "text": "I am satisfied that the figures and the way in which they are structured and the balance between lump-sum and periodical payments is suitable, fair and appropriate.",
+      "paragraph_ref": "14",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "COURT_REASONING",
+      "text": "I have considered that advice carefully together with the other papers in the case to which I have been referred including a report prepared by an independent financial adviser.",
+      "paragraph_ref": "14",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "WITNESS_STATEMENT",
+      "text": "Mr Whitting QC on behalf of the NHS Foundation Trust has today in open court recognised the severity of the claimant's injuries and condition and the challenges that he and his family have faced.",
+      "paragraph_ref": "15",
+      "speaker": "Defendant's counsel"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Newborn",
+        "sex": "unknown",
+        "relevant_social_history": "Mother had almost no command of English"
+      },
+      "chief_complaint": "Cold and dangerously ill newborn",
+      "history_of_present_illness": "Born by emergency caesarean section due to fetal distress. Over the course of the night of 'Day 2' to 'Day 3', the newborn became hypoglycaemic due to insufficient nutrition.",
+      "past_medical_history": [
+        "Born by emergency caesarean section"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "general": "Cold and dangerously ill"
+        }
+      },
+      "initial_working_problem": "Neonatal hypoglycaemia",
+      "known_constraints": null,
+      "initial_differential": [
+        "Hypoglycaemia due to insufficient nutrition"
+      ],
+      "critical_findings": [
+        "Cold and dangerously ill",
+        "Hypoglycaemia"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002",
+        "E003",
+        "E004"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSULT_NOTE",
+        "name": "Midwifery notes",
+        "description": "Contemporaneous notes regarding breastfeeding and newborn care",
+        "available_phase": "presentation",
+        "reveal": {
+          "result_summary": "Baby put to breast with no apparent problems",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates initial breastfeeding attempt was recorded",
+          "decision_impact": "Highlights need for monitoring and education on breastfeeding",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Neonatal Presentation",
+        "description": "Newborn presents with signs of hypoglycaemia",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Emergency caesarean section due to fetal distress",
+            "timestamp": "Day 1",
+            "evidence_ids": [
+              "E002"
+            ]
+          },
+          {
+            "event": "Newborn found cold and dangerously ill",
+            "timestamp": "Morning of Day 3",
+            "evidence_ids": [
+              "E004"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "presentation",
+        "clinical_context": "Newborn with signs of hypoglycaemia",
+        "prompt": "What should have been done to prevent hypoglycaemia?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Ensure adequate feeding and monitor blood glucose levels",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard care to prevent neonatal hypoglycaemia"
+          },
+          {
+            "option_id": "B",
+            "description": "Rely on initial breastfeeding attempt without further monitoring",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Failed to ensure adequate nutrition and monitoring"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant relied on initial breastfeeding attempt",
+          "reasoning_stated": "Assumed initial breastfeeding was sufficient",
+          "evidence_ids": [
+            "E003",
+            "E004"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Ensure adequate feeding and monitor blood glucose levels",
+          "standard_of_care_basis": "Expert evidence on neonatal care standards",
+          "evidence_ids": [
+            "E003",
+            "E004"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failed to monitor and ensure adequate nutrition",
+          "what_should_have_happened": "Regular monitoring and feeding should have been ensured",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E003",
+            "E004"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Severe brain injury due to hypoglycaemia",
+        "severity": "PERMANENT_SEVERE_DISABILITY",
+        "long_term_effects": "4 limbed cerebral palsy, global developmental delay, visual impairment, epilepsy",
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Settlement of \u00a34.5 million lump sum and periodical payments",
+        "key_findings": [
+          "Breach of duty in failing to ensure adequate feeding and monitoring",
+          "Causation established - earlier intervention would have prevented injury"
+        ],
+        "evidence_ids": [
+          "E006",
+          "E013"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to ensure adequate feeding and monitoring",
+        "counterfactual": "Adequate feeding and monitoring would have prevented hypoglycaemia",
+        "evidence_ids": [
+          "E003",
+          "E004",
+          "E006"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "Day 1",
+        "event": "Emergency caesarean section due to fetal distress",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "Morning of Day 3",
+        "event": "Newborn found cold and dangerously ill",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [
+      {
+        "diagnosis": "Severe brain injury due to hypoglycaemia",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "treatments": [],
+    "complications": [
+      {
+        "complication": "Severe brain injury",
+        "when_occurred": "Not documented in judgment",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to ensure adequate feeding and monitoring",
+        "against": "Defendant NHS Trust",
+        "found_proven": true,
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.625,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 08:26:07.767172",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

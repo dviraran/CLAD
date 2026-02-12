@@ -1,0 +1,410 @@
+{
+  "case_id": "courtliste-10310567-buzeska-v-crystal-run-healthcare-physicians-",
+  "source": "courtlistener",
+  "source_url": "local://courtliste-10310567-buzeska-v-crystal-run-healthcare-physicians-.html",
+  "jurisdiction": "US",
+  "extraction_metadata": {
+    "version": "batch_api_v1",
+    "model": "gpt-4o",
+    "extracted_at": "2026-01-21T17:56:57.958547",
+    "simulation_extracted_at": "2026-01-21T18:19:59.322771",
+    "simulation_model": "gpt-4o"
+  },
+  "case_metadata": {
+    "case_name": "Buzeska v. Crystal Run Healthcare Physicians, LLP",
+    "citation": "2025 NY Slip Op 00078",
+    "court": "Appellate Division, Second Department",
+    "date": "January 8, 2025"
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "On November 13, 2019, the plaintiff Nafije Buzeska (hereinafter the injured plaintiff) went to Orange Regional Medical Center (hereinafter ORMC) to undergo a surgery",
+      "paragraph_ref": "13",
+      "paragraph_starts_with": "In an action, inter alia, to",
+      "summary": "Plaintiff underwent surgery at ORMC on November 13, 2019.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "Upon awakening from the surgery, the injured plaintiff experienced upper abdominal pain, blood in her urine, inability to ambulate, and inability to have a bowel movement or pass gas.",
+      "paragraph_ref": "13",
+      "paragraph_starts_with": "In an action, inter alia, to",
+      "summary": "Post-surgery, plaintiff had abdominal pain, blood in urine, and other symptoms.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "Despite the foregoing and a note from Cruz that the injured plaintiff should not be discharged without having passed gas, the injured plaintiff was discharged the next day.",
+      "paragraph_ref": "13",
+      "paragraph_starts_with": "In an action, inter alia, to",
+      "summary": "Plaintiff was discharged despite not passing gas.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "On November 18, 2019, the injured plaintiff returned to ORMC, where physician Seth Judd took her back into surgery and, upon discovering that her sigmoid colon was perforated, performed a bowel resection and colostomy.",
+      "paragraph_ref": "13",
+      "paragraph_starts_with": "In an action, inter alia, to",
+      "summary": "Plaintiff had a perforated colon discovered on November 18, 2019.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "EXPERT_TESTIMONY",
+      "verbatim_quote": "Cruz testified that the injured plaintiff could only be discharged if there was a 'return of bowel function,' indicated by passing gas, and that doing so would be 'standard medical practice.'",
+      "paragraph_ref": "13",
+      "paragraph_starts_with": "In an action, inter alia, to",
+      "summary": "Cruz stated discharge required return of bowel function.",
+      "speaker": "Cruz"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "LEGAL_FINDING",
+      "verbatim_quote": "The Supreme Court should have denied that branch of the defendants' motion which was for summary judgment dismissing the cause of action alleging medical malpractice.",
+      "paragraph_ref": "13",
+      "paragraph_starts_with": "In an action, inter alia, to",
+      "summary": "Court found summary judgment for medical malpractice should be denied.",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "LEGAL_FINDING",
+      "verbatim_quote": "The cause of action alleging loss of consortium is derivative in nature... the court also should have denied that branch of their motion which was for summary judgment dismissing the cause of action alleging loss of consortium.",
+      "paragraph_ref": "13",
+      "paragraph_starts_with": "In an action, inter alia, to",
+      "summary": "Loss of consortium claim should not be dismissed.",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "verdict_detected": {
+    "outcome": "NO_LIABILITY",
+    "key_phrase": "The Supreme Court should have denied that branch of the defendants' motion which was for summary judgment dismissing the cause of action alleging medical malpractice.",
+    "paragraph_ref": "13"
+  },
+  "extraction_notes": {
+    "total_paragraphs_analyzed": 14,
+    "key_sections_found": [
+      "Facts",
+      "Conclusion"
+    ],
+    "gaps_identified": [
+      "No specific lab values mentioned",
+      "No detailed expert analysis on causation"
+    ]
+  },
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Post-surgical complications",
+      "history_of_present_illness": "Patient underwent surgery and experienced complications post-operatively.",
+      "past_medical_history": "Not documented in judgment",
+      "medications": "Not documented in judgment",
+      "allergies": "Not documented in judgment",
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment"
+        },
+        "focused_exam": {
+          "abdomen": "Upper abdominal pain noted post-surgery"
+        }
+      },
+      "initial_working_problem": "Post-operative complications",
+      "initial_differential": [
+        "Post-operative ileus",
+        "Bowel perforation"
+      ],
+      "critical_findings": [
+        "Upper abdominal pain",
+        "Blood in urine",
+        "Inability to pass gas"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSULT_NOTE",
+        "name": "Surgical Consult",
+        "description": "Consultation with surgeon post-operatively",
+        "available_phase": "postop",
+        "reveal": {
+          "result_summary": "Patient should not be discharged without passing gas",
+          "clinical_significance": "Indicates need for monitoring bowel function",
+          "decision_impact": "Should delay discharge until bowel function returns"
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "postop",
+        "clinical_context": "Patient post-surgery with complications",
+        "prompt": "Should the patient be discharged?",
+        "action_type": "DISCHARGE_DECISION",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Discharge patient after confirming return of bowel function",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard practice requires confirmation of bowel function before discharge"
+          },
+          {
+            "option_id": "B",
+            "description": "Discharge patient without confirming return of bowel function",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Patient was discharged despite not passing gas"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant discharged patient without confirming return of bowel function",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E003"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Patient should not have been discharged without passing gas",
+          "standard_of_care_basis": "Expert testimony and standard medical practice",
+          "evidence_ids": [
+            "E005"
+          ]
+        },
+        "explanation": {
+          "why_defendant_wrong": "Discharge without confirming bowel function led to complications",
+          "what_should_have_happened": "Patient should have been monitored until bowel function returned",
+          "legal_standard_applied": "Standard medical practice as testified by expert",
+          "evidence_ids": [
+            "E005"
+          ]
+        },
+        "is_malpractice_point": true
+      },
+      {
+        "decision_id": "D002",
+        "phase_id": "postop",
+        "clinical_context": "Patient returned with severe complications",
+        "prompt": "What should be the immediate management upon return?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Immediate surgical intervention to address suspected perforation",
+            "is_defendant_choice": true,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Perforation suspected, requires urgent surgical management"
+          },
+          {
+            "option_id": "B",
+            "description": "Conservative management with observation",
+            "is_defendant_choice": false,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Conservative management inappropriate for suspected perforation"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "A",
+          "description": "Defendant performed immediate surgery upon return",
+          "reasoning_stated": "Perforation was suspected and confirmed",
+          "evidence_ids": [
+            "E004"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Immediate surgical intervention was appropriate",
+          "standard_of_care_basis": "Urgent intervention required for perforation",
+          "evidence_ids": [
+            "E004"
+          ]
+        },
+        "explanation": {
+          "why_defendant_correct": "Immediate surgery was necessary to address perforation",
+          "what_should_have_happened": "Surgery was correctly performed upon return",
+          "legal_standard_applied": "Standard of care for perforation",
+          "evidence_ids": [
+            "E004"
+          ]
+        },
+        "is_malpractice_point": false
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Surgery",
+        "description": "Patient undergoes initial surgery at ORMC",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Surgery performed",
+            "timestamp": "November 13, 2019",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "postop",
+        "name": "Post-operative Period",
+        "description": "Patient experiences complications post-surgery",
+        "duration": "5 days",
+        "key_events": [
+          {
+            "event": "Patient discharged without passing gas",
+            "timestamp": "November 14, 2019",
+            "evidence_ids": [
+              "E003"
+            ]
+          },
+          {
+            "event": "Patient returns with severe complications",
+            "timestamp": "November 18, 2019",
+            "evidence_ids": [
+              "E004"
+            ]
+          }
+        ]
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient developed a perforated colon requiring emergency surgery",
+        "severity": "PERMANENT_MODERATE_DISABILITY",
+        "long_term_effects": "Colostomy and potential bowel dysfunction",
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Breach of duty in discharging patient without confirming bowel function",
+          "Causation established - earlier intervention could have prevented perforation"
+        ],
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to confirm bowel function before discharge",
+        "counterfactual": "Monitoring could have prevented perforation",
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "November 13, 2019",
+        "event": "Patient undergoes surgery at ORMC",
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "November 14, 2019",
+        "event": "Patient discharged without passing gas",
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "timestamp": "November 18, 2019",
+        "event": "Patient returns to ORMC with complications",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [
+      {
+        "diagnosis": "Perforated colon",
+        "when_made": "November 18, 2019",
+        "correct": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Bowel resection and colostomy",
+        "date": "November 18, 2019",
+        "outcome": "Perforation addressed",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Perforated colon",
+        "when_occurred": "November 18, 2019",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to confirm bowel function before discharge",
+        "against": "Defendant healthcare providers",
+        "found_proven": true,
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care by discharging patient prematurely",
+        "legal_significance": "Standard of care not met",
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ]
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "MONITORING_FOLLOWUP"
+    ],
+    "diagnosis_subtypes": [
+      "FAILURE_TO_MONITOR"
+    ]
+  }
+}

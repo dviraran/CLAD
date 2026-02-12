@@ -1,0 +1,506 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "bailii-qb-2019-2591-html",
+  "source": "BAILII",
+  "jurisdiction": "UK",
+  "court": "Unknown",
+  "decision_date": "2019-10-08",
+  "url": "https://example.com/bailii-qb-2019-2591-html",
+  "case_name": "Mordel  v Royal Berkshire NHS Foundation Trust [2019] EWHC 2591 (QB) (08 October 2019)",
+  "neutral_citation": "[2019] EWHC 2591",
+  "clinical_domain": "OBSTETRICS_GYNAECOLOGY",
+  "outcome_severity": "TEMPORARY_HARM",
+  "summary": {
+    "brief": "Medical malpractice case involving obstetrics gynaecology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Aleksander Mordel was born to the claimant on 25 th January 2015 with Trisomy 21 or Down's syndrome.",
+      "paragraph_ref": "12",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "On 23 rd June 2014 the claimant attended the community midwife at her GP's surgery for her booking appointment and 'accepted' all six of the standard screening tests, including combined screening.",
+      "paragraph_ref": "16",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "On 22 nd July 2014 a maternal ultrasound report was completed by Ms Lorraine Bracher, the reporting sonographer. This provided, insofar as is material: 'Down's screening declined'.",
+      "paragraph_ref": "27",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr Chudleigh said that this was insufficient follow-up because she would want to explore the patient's reasons, as she put it, including any possible misunderstanding as to the purpose of the test.",
+      "paragraph_ref": "93",
+      "speaker": "Expert witness"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "LEGAL_FINDING",
+      "text": "I am constrained to hold that Midwife Foley failed to discharge her duty to the claimant on 11 th August 2014 in not exploring why the combined test had not been carried out.",
+      "paragraph_ref": "194",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "LEGAL_FINDING",
+      "text": "There must be judgment for the claimant.",
+      "paragraph_ref": "211",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "First pregnancy, Polish as first language"
+      },
+      "chief_complaint": "Routine antenatal care",
+      "history_of_present_illness": "Patient attended for routine antenatal screening and was booked for Down's syndrome screening.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "abdomen": "Not documented in judgment"
+        }
+      },
+      "initial_working_problem": "Routine antenatal screening",
+      "known_constraints": null,
+      "initial_differential": [
+        "Routine antenatal care"
+      ],
+      "critical_findings": [
+        "Down's syndrome screening not performed"
+      ],
+      "urgency_level": "ROUTINE",
+      "evidence_ids": [
+        "E002",
+        "E003"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "Nuchal Translucency Ultrasound",
+        "description": "Ultrasound to measure nuchal translucency for Down's syndrome screening",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not performed, marked as 'Down's screening declined'",
+          "detailed_findings": null,
+          "clinical_significance": "Missed opportunity for early Down's syndrome detection",
+          "decision_impact": "Should have prompted further discussion and informed consent",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "LAB",
+        "name": "Combined Screening Blood Test",
+        "description": "Blood test for Beta hCG and PAPP-P as part of Down's syndrome screening",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not performed",
+          "detailed_findings": null,
+          "clinical_significance": "Part of combined screening for Down's syndrome",
+          "decision_impact": "Should have been performed if screening was accepted",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Antenatal Booking",
+        "description": "Patient attends initial antenatal booking appointment",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Booking appointment with midwife",
+            "timestamp": "23 June 2014",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Scheduled Down's Syndrome Screening",
+        "description": "Patient scheduled for Down's syndrome screening",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Ultrasound appointment for Down's syndrome screening",
+            "timestamp": "22 July 2014",
+            "evidence_ids": [
+              "E003"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "followup",
+        "name": "16-week Follow-up",
+        "description": "Follow-up appointment with midwife",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Midwife did not explore screening decision",
+            "timestamp": "11 August 2014",
+            "evidence_ids": [
+              "E005",
+              "E194"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient attending for Down's syndrome screening",
+        "prompt": "How should the sonographer confirm the patient's consent for Down's syndrome screening?",
+        "action_type": "DISCLOSE_ALTERNATIVES",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Confirm understanding and consent for screening with detailed explanation",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Ensures informed consent and understanding of the procedure"
+          },
+          {
+            "option_id": "B",
+            "description": "Proceed with ultrasound without confirming consent",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Assumes consent without verification, leading to potential misunderstanding"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Sonographer marked 'Down's screening declined' without confirming consent",
+          "reasoning_stated": "Assumed patient declined screening based on brief interaction",
+          "evidence_ids": [
+            "E003",
+            "E004"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Sonographer should have confirmed consent with detailed explanation",
+          "standard_of_care_basis": "Informed consent requires clear communication and understanding",
+          "evidence_ids": [
+            "E004",
+            "E005"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failed to ensure informed consent, leading to missed screening opportunity",
+          "what_should_have_happened": "Detailed discussion to confirm patient's understanding and consent",
+          "legal_standard_applied": "Montgomery v Lanarkshire Health Board principles on informed consent",
+          "evidence_ids": [
+            "E004",
+            "E005"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      },
+      {
+        "decision_id": "D002",
+        "phase_id": "followup",
+        "clinical_context": "16-week follow-up appointment with midwife",
+        "prompt": "What should the midwife have done regarding the Down's screening?",
+        "action_type": "ESCALATE_CARE",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Discuss and confirm patient's wishes regarding Down's screening",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Ensures patient's wishes are respected and documented"
+          },
+          {
+            "option_id": "B",
+            "description": "Assume patient's decision from ultrasound report",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Relies on previous documentation without confirmation"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Midwife did not explore the reason for declined screening",
+          "reasoning_stated": "Assumed decision was final",
+          "evidence_ids": [
+            "E005",
+            "E194"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Midwife should have confirmed patient's wishes",
+          "standard_of_care_basis": "NICE Clinical Guidelines",
+          "evidence_ids": [
+            "E164",
+            "E189"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failed to confirm patient's wishes at follow-up",
+          "what_should_have_happened": "Midwife should have discussed screening options",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E164",
+            "E189",
+            "E194"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Child born with Down's syndrome",
+        "severity": "PERMANENT_MODERATE_DISABILITY",
+        "long_term_effects": "Not documented in judgment",
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Failure to confirm informed consent for Down's screening",
+          "Failure to explore patient's wishes at follow-up"
+        ],
+        "evidence_ids": [
+          "E006",
+          "E194"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to confirm consent and explore wishes",
+        "counterfactual": "Proper consent and follow-up would have led to different outcome",
+        "evidence_ids": [
+          "E006",
+          "E194"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "23 June 2014",
+        "event": "Patient attended booking appointment with midwife",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "22 July 2014",
+        "event": "Patient attended ultrasound appointment, screening marked as declined",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "timestamp": "23 June 2014",
+        "event": "Patient attended booking appointment",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "22 July 2014",
+        "event": "Ultrasound appointment for Down's screening",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "timestamp": "11 August 2014",
+        "event": "16-week follow-up appointment",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Ultrasound",
+        "date": "22 July 2014",
+        "result": "Down's screening declined",
+        "interpretation": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "test_name": "Ultrasound",
+        "date": "22 July 2014",
+        "result": "Down's screening declined",
+        "interpretation": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Down's syndrome",
+        "when_made": "Post-birth",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "diagnosis": "Down's syndrome",
+        "when_made": "25 January 2015",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "treatments": [],
+    "complications": [],
+    "allegations": [
+      {
+        "allegation": "Failure to obtain informed consent for Down's syndrome screening",
+        "against": "Sonographer",
+        "found_proven": true,
+        "evidence_ids": [
+          "E004",
+          "E005"
+        ]
+      },
+      {
+        "allegation": "Failure to confirm informed consent",
+        "against": "Sonographer",
+        "found_proven": true,
+        "evidence_ids": [
+          "E137"
+        ]
+      },
+      {
+        "allegation": "Failure to explore patient's wishes",
+        "against": "Midwife",
+        "found_proven": true,
+        "evidence_ids": [
+          "E194"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant failed to obtain informed consent",
+        "legal_significance": "Breach of duty under Montgomery principles",
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "INFORMED_CONSENT",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.02843601895734597,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 07:09:04.083331",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

@@ -1,0 +1,594 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10709858",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2025-10-23",
+  "url": "https://example.com/courtlistener-10709858",
+  "case_name": "State of Tennessee v. Gavin Allen Clark",
+  "neutral_citation": null,
+  "clinical_domain": "OBSTETRICS_GYNAECOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "State of Tennessee v. Gavin Allen Clark. Medical malpractice case involving obstetrics gynaecology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "The facts giving rise to the instant case stem from the death of the Defendant\u2019s five-week-old son, who suffered from severe brain injury as a result of five separate skull fractures while in the exclusive care, custody, and control of the Defendant.",
+      "paragraph_ref": "10",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "The cause of the victim\u2019s death was determined to be blunt force trauma to the victim\u2019s skull associated with child abuse, and the manner of the victim\u2019s death was described as 'beaten by [an] assailant.'",
+      "paragraph_ref": "10",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "WITNESS_STATEMENT",
+      "text": "Mother, the victim\u2019s mother and the Defendant\u2019s wife, testified that the victim was born on November 25, 2019, and passed away when he was 'just shy of six weeks old.'",
+      "paragraph_ref": "12",
+      "speaker": "Mother"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Betters explained that if a child fell from their parents\u2019 arms onto carpeted stairs, if the child was going to have a fracture, she would expect it to happen on that first impact, and then rolling down carpeted stairs, she would not expect subsequent fractures based on impact.",
+      "paragraph_ref": "45",
+      "speaker": "Dr. Betters"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "LEGAL_FINDING",
+      "text": "Upon review, we conclude that the verdicts returned by the jury in this case were ambiguous because they purport to simultaneously convict and acquit the Defendant.",
+      "paragraph_ref": "279",
+      "speaker": "Court conclusion"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "COURT_REASONING",
+      "text": "We also reverse and vacate the Defendant\u2019s convictions because the trial court failed to fulfill its duty as the thirteenth juror.",
+      "paragraph_ref": "279",
+      "speaker": "Court conclusion"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "MEDICAL_RECORD",
+      "text": "Before testimony, two exhibits were stipulated to and admitted into evidence: (1) a video showing the victim\u2019s parents entering Walmart to get their taxes done on the morning of the offense; and (2) the victim\u2019s medical records from Vanderbilt University Medical Center ('VUMC') and Tennova Medical Center.",
+      "paragraph_ref": "11",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Betters\u2019 diagnosis of the victim was 'inflicted trauma.' Based on her training and medical history, her diagnosis of the victim\u2019s inflicted trauma was child abuse.",
+      "paragraph_ref": "55",
+      "speaker": "Dr. Betters"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "FACTUAL_FINDING",
+      "text": "The Defendant alleged that while holding the victim in his right arm, he tripped on a toy, fell down a set of stairs, and dropped the victim.",
+      "paragraph_ref": "10",
+      "speaker": "Defendant's statement"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "WITNESS_STATEMENT",
+      "text": "Mother testified that the Defendant told her that they fell down the stairs 'on the way to come get [her]' from work.",
+      "paragraph_ref": "18",
+      "speaker": "Mother"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "5 weeks",
+        "sex": "male",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Unresponsive infant with suspected head trauma",
+      "history_of_present_illness": "Infant reportedly fell down carpeted stairs while in father's arms. Delay in seeking medical care for approximately 5 hours post-incident.",
+      "past_medical_history": [
+        "Not documented in judgment"
+      ],
+      "medications": [
+        "Not documented in judgment"
+      ],
+      "allergies": [
+        "Not documented in judgment"
+      ],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Within normal range per judgment",
+          "respiratory_rate": null,
+          "temperature": "Low per judgment",
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "head": "Bruising and skull deformation noted",
+          "neurological": "Unresponsive to stimuli, pupils non-reactive",
+          "general": "Lifeless, no crying"
+        }
+      },
+      "initial_working_problem": "Severe head trauma with suspected abuse",
+      "known_constraints": null,
+      "initial_differential": [
+        "Accidental fall",
+        "Non-accidental trauma"
+      ],
+      "critical_findings": [
+        "Multiple skull fractures",
+        "Subdural hemorrhages",
+        "Severe brain swelling"
+      ],
+      "urgency_level": "CRITICAL",
+      "evidence_ids": [
+        "E002",
+        "E008",
+        "E019",
+        "E041"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "CT Head",
+        "description": "CT scan of the head to assess for fractures and intracranial injury",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Multiple skull fractures, subdural hemorrhages, severe brain swelling",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates severe traumatic brain injury",
+          "decision_impact": "Confirms need for urgent neurosurgical intervention",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E050",
+          "E051"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "CONSULT_NOTE",
+        "name": "Pediatric Critical Care Consultation",
+        "description": "Consultation with pediatric critical care specialist",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Diagnosis of inflicted trauma, suspected child abuse",
+          "detailed_findings": null,
+          "clinical_significance": "Supports non-accidental trauma hypothesis",
+          "decision_impact": "Triggers mandatory reporting and legal investigation",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E008",
+          "E050"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Infant presented to emergency department with severe head trauma",
+        "duration": "5 hours post-incident",
+        "key_events": [
+          {
+            "event": "Arrival at emergency department",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E019"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Diagnostic Workup",
+        "description": "CT scan and critical care consultation performed",
+        "duration": "Immediate upon presentation",
+        "key_events": [
+          {
+            "event": "CT scan performed",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E050"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "presentation",
+        "clinical_context": "Infant presented with severe head trauma and delayed care",
+        "prompt": "What should have been the immediate action upon suspecting severe head trauma?",
+        "action_type": "ESCALATE_CARE",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Immediate transfer to a trauma center",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Urgent care needed for severe head injury"
+          },
+          {
+            "option_id": "B",
+            "description": "Delay in seeking medical care",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Delay contributed to worsening condition"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant delayed seeking medical care",
+          "reasoning_stated": "Hoped the infant would get better",
+          "evidence_ids": [
+            "E010",
+            "E033"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Immediate medical attention should have been sought",
+          "standard_of_care_basis": "Expert testimony on standard care for head trauma",
+          "evidence_ids": [
+            "E041",
+            "E050"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Delay in care led to irreversible brain damage",
+          "what_should_have_happened": "Immediate transfer to trauma center",
+          "legal_standard_applied": "Standard of care for suspected child abuse and head trauma",
+          "evidence_ids": [
+            "E041",
+            "E050"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Infant died from blunt force trauma to the skull",
+        "severity": "FATAL",
+        "long_term_effects": "Not applicable",
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Breach of duty in failing to provide appropriate care",
+          "Causation established - failure to diagnose and treat head trauma"
+        ],
+        "evidence_ids": [
+          "E247"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to order appropriate imaging",
+        "counterfactual": "CT would have shown the extent of injury",
+        "evidence_ids": [
+          "E247"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "January 4, 2020",
+        "event": "Infant reportedly fell down stairs",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E010"
+        ]
+      },
+      {
+        "timestamp": "January 4, 2020",
+        "event": "Infant presented to emergency department",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E019"
+        ]
+      },
+      {
+        "timestamp": "Not documented in judgment",
+        "event": "Reported fall down stairs",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E009"
+        ]
+      },
+      {
+        "timestamp": "8:30 AM",
+        "event": "Infant reportedly fell down stairs",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E207"
+        ]
+      },
+      {
+        "timestamp": "1:24 PM",
+        "event": "Infant taken to hospital",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E208"
+        ]
+      },
+      {
+        "timestamp": "Not documented in judgment",
+        "event": "Infant reportedly fell down stairs",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E009"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "CT Head",
+        "date": "January 4, 2020",
+        "result": "Multiple skull fractures, subdural hemorrhages",
+        "interpretation": null,
+        "evidence_ids": [
+          "E050"
+        ]
+      },
+      {
+        "test_name": "Not documented in judgment",
+        "date": "Not documented in judgment",
+        "result": "Not documented in judgment",
+        "interpretation": null,
+        "evidence_ids": []
+      },
+      {
+        "test_name": "Not documented in judgment",
+        "date": "Not documented in judgment",
+        "result": "Not documented in judgment",
+        "interpretation": null,
+        "evidence_ids": []
+      },
+      {
+        "test_name": "Not documented in judgment",
+        "date": "Not documented in judgment",
+        "result": "Not documented in judgment",
+        "interpretation": null,
+        "evidence_ids": []
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Inflicted trauma",
+        "when_made": "January 4, 2020",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E008"
+        ]
+      },
+      {
+        "diagnosis": "Blunt force trauma to the skull",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "diagnosis": "Blunt force trauma with suspected non-accidental injury",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E002",
+          "E240"
+        ]
+      },
+      {
+        "diagnosis": "Blunt force trauma to the skull",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Transfer to trauma center",
+        "date": "January 4, 2020",
+        "provider": null,
+        "outcome": "No surgical intervention possible",
+        "evidence_ids": [
+          "E050"
+        ]
+      },
+      {
+        "treatment": "Not documented in judgment",
+        "date": "Not documented in judgment",
+        "provider": null,
+        "outcome": "Not documented in judgment",
+        "evidence_ids": []
+      },
+      {
+        "treatment": "Not documented in judgment",
+        "date": "Not documented in judgment",
+        "provider": null,
+        "outcome": "Not documented in judgment",
+        "evidence_ids": []
+      },
+      {
+        "treatment": "Not documented in judgment",
+        "date": "Not documented in judgment",
+        "provider": null,
+        "outcome": "Not documented in judgment",
+        "evidence_ids": []
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Severe brain swelling",
+        "when_occurred": "January 4, 2020",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E050"
+        ]
+      },
+      {
+        "complication": "Death due to blunt force trauma",
+        "when_occurred": "Not documented in judgment",
+        "severity": "Fatal",
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "complication": "Severe brain injury",
+        "when_occurred": "Not documented in judgment",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E209"
+        ]
+      },
+      {
+        "complication": "Death",
+        "when_occurred": "Not documented in judgment",
+        "severity": "Fatal",
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Delay in seeking medical care",
+        "against": "Defendant",
+        "found_proven": true,
+        "evidence_ids": [
+          "E041"
+        ]
+      },
+      {
+        "allegation": "Failure to seek immediate medical attention",
+        "against": "Defendant",
+        "found_proven": true,
+        "evidence_ids": [
+          "E121"
+        ]
+      },
+      {
+        "allegation": "Failure to seek immediate medical treatment",
+        "against": "Defendant",
+        "found_proven": true,
+        "evidence_ids": [
+          "E210"
+        ]
+      },
+      {
+        "allegation": "Failure to provide appropriate care",
+        "against": "Defendant",
+        "found_proven": true,
+        "evidence_ids": [
+          "E247"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Standard of care not met",
+        "evidence_ids": [
+          "E041"
+        ]
+      },
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Failure to act on potential head trauma",
+        "evidence_ids": [
+          "E121"
+        ]
+      },
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Standard of care not met",
+        "evidence_ids": [
+          "E210"
+        ]
+      },
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Failure to diagnose and treat",
+        "evidence_ids": [
+          "E247"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.03558718861209965,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 09:46:04.699947",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

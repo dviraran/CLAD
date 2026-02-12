@@ -1,0 +1,449 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "bailii-qb-2019-1276-html",
+  "source": "BAILII",
+  "jurisdiction": "UK",
+  "court": "Unknown",
+  "decision_date": "2019-03-21",
+  "url": "https://example.com/bailii-qb-2019-1276-html",
+  "case_name": "Arksey v Cambridge University Hospitals NHS Foundation Trust [2019] EWHC 1276 (QB) (21 March 2019)",
+  "neutral_citation": "[2019] EWHC 1276",
+  "clinical_domain": "PAEDIATRICS",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Medical malpractice case involving paediatrics.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "The claimant, Mrs Margaret Arksey, seeks damages for alleged negligence arising out of the failure of the defendant hospital, Addenbrooke's in Cambridge, to admit her on 3 November 2012 after she had suffered a sentinel bleed from a cerebral aneurysm.",
+      "paragraph_ref": "14",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "The defendant's case is that, although they were admittedly negligent in failing to admit Mrs Arksey to hospital and carry out a CT scan, this in fact made no difference because nothing that would or could have been done would have avoided the re-bleed the following day.",
+      "paragraph_ref": "15",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "The claimant developed hydrocephalus and in May 2014 a ventricular peritoneal (VP) shunt was inserted to relieve intracranial pressure.",
+      "paragraph_ref": "16",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "On 3 November 2012, an ambulance was called to the address of the Arksey family at 38 Cage Hill, Swaffham, Cambridgeshire, it being Mr and Mrs Arksey's son who summoned the ambulance.",
+      "paragraph_ref": "21",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "MEDICAL_RECORD",
+      "text": "The patient record form, or PRF, for that attendance by the East of England Ambulance Service is at pages 276-277 of the medical records bundle.",
+      "paragraph_ref": "21",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "WITNESS_STATEMENT",
+      "text": "'My wife went upstairs to bed in the late afternoon/early evening and was in bed with her head on two pillows and she was not laid flat.'",
+      "paragraph_ref": "30",
+      "speaker": "Mr. Arksey"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "On Sunday 4 November, Mr Arksey recalls that their son, Joseph, found the claimant collapsed on the floor in the bathroom and had rung the emergency services, this being at about 7.30am.",
+      "paragraph_ref": "32",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "MEDICAL_RECORD",
+      "text": "The ambulance was on the scene at 10.04 and they found Mrs Arksey sat in her chair, complaining of a strange sensation in her left side.",
+      "paragraph_ref": "33",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "FACTUAL_FINDING",
+      "text": "It appears to be agreed that this deterioration represented a significant re-bleed from the cerebral aneurysm in the form a major subarachnoid haemorrhage.",
+      "paragraph_ref": "36",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Mr Trivedi provided his statement, to which I have already referred, in July 2018, to deal with the allegations of negligence effectively aimed at him or his team alleging a wider or longer delay than that which had been admitted by the defendant.",
+      "paragraph_ref": "114",
+      "speaker": "Mr. Trivedi"
+    },
+    {
+      "evidence_id": "E011",
+      "type": "LEGAL_FINDING",
+      "text": "The consequence is that there will be judgment for the claimant only for the admitted breach of duty in relation to the failure to carry out the VP shunt for a period from 31 January 2014 to 14 May 2014, a period of three and a half months, but otherwise the claim fails.",
+      "paragraph_ref": "159",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "59 years",
+        "sex": "female",
+        "relevant_social_history": "Smoker"
+      },
+      "chief_complaint": "Neck ache and confusion",
+      "history_of_present_illness": "Patient was found by her son in the bathroom, 'staring through him', complaining of neck ache. She had slurred speech, was confused as to her age and time, and appeared agitated.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "216/131 initially, 209/125 later",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "neurological": "Confused, slurred speech, Glasgow Coma Score of 14"
+        }
+      },
+      "initial_working_problem": "Possible subarachnoid hemorrhage",
+      "known_constraints": null,
+      "initial_differential": [
+        "subarachnoid hemorrhage",
+        "other neurological event"
+      ],
+      "critical_findings": [
+        "Elevated blood pressure",
+        "Confusion",
+        "Slurred speech"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E004",
+        "E005",
+        "E022"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "CT Brain",
+        "description": "CT scan of the brain to check for hemorrhage",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not performed initially; later showed extensive subarachnoid hemorrhage",
+          "detailed_findings": null,
+          "clinical_significance": "Would have identified the aneurysm and bleeding",
+          "decision_impact": "Should have prompted immediate neurosurgical intervention",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": [
+          "E084"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "LAB",
+        "name": "Blood Tests",
+        "description": "Routine blood tests",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Bloods were normal",
+          "detailed_findings": null,
+          "clinical_significance": "No immediate abnormalities detected",
+          "decision_impact": "Did not alter management",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E025"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Emergency Presentation",
+        "description": "Patient presents to ED with acute symptoms",
+        "duration": "4 hours",
+        "key_events": [
+          {
+            "event": "Ambulance called and patient assessed",
+            "timestamp": "3 November 2012 09:25",
+            "evidence_ids": [
+              "E004",
+              "E005"
+            ]
+          },
+          {
+            "event": "Patient discharged from ED",
+            "timestamp": "3 November 2012 13:40",
+            "evidence_ids": [
+              "E025",
+              "E026"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Initial Workup",
+        "description": "Initial assessment and decision-making in ED",
+        "duration": "2 hours",
+        "key_events": [
+          {
+            "event": "Initial assessment and vital signs recorded",
+            "timestamp": "3 November 2012 10:00",
+            "evidence_ids": [
+              "E005"
+            ]
+          },
+          {
+            "event": "Specialist registrar review",
+            "timestamp": "3 November 2012 11:45",
+            "evidence_ids": [
+              "E025"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient in ED with symptoms suggestive of subarachnoid hemorrhage",
+        "prompt": "What imaging investigation should be ordered?",
+        "action_type": "ORDER_TEST",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Order CT brain",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard investigation for suspected subarachnoid hemorrhage"
+          },
+          {
+            "option_id": "B",
+            "description": "Discharge without imaging",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Misjudged as non-pathological presentation"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant discharged patient without imaging",
+          "reasoning_stated": "Presentation was misjudged as non-pathological",
+          "evidence_ids": [
+            "E025",
+            "E026"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "CT brain should have been ordered",
+          "standard_of_care_basis": "Expert evidence established CT is standard for suspected subarachnoid hemorrhage",
+          "evidence_ids": [
+            "E084",
+            "E085"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to order CT scan led to missed diagnosis of aneurysm",
+          "what_should_have_happened": "CT scan would have identified the aneurysm and allowed for timely intervention",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E084",
+            "E085",
+            "E086"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient suffered a major re-bleed leading to significant disability",
+        "severity": "PERMANENT_SEVERE_DISABILITY",
+        "long_term_effects": "Wheelchair-bound, cognitive impairment, unable to return to work",
+        "evidence_ids": [
+          "E067",
+          "E068"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not specified in judgment",
+        "key_findings": [
+          "Breach of duty in failing to order CT scan",
+          "Causation established - earlier diagnosis would have prevented re-bleed"
+        ],
+        "evidence_ids": [
+          "E011",
+          "E084"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to order CT imaging",
+        "counterfactual": "CT would have shown aneurysm, allowing for intervention",
+        "evidence_ids": [
+          "E084",
+          "E085",
+          "E086"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "3 November 2012 09:25",
+        "event": "Ambulance arrives at patient's home",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004",
+          "E005"
+        ]
+      },
+      {
+        "timestamp": "3 November 2012 13:40",
+        "event": "Patient discharged from ED",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E025",
+          "E026"
+        ]
+      },
+      {
+        "timestamp": "4 November 2012 10:04",
+        "event": "Patient suffers major re-bleed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E033",
+          "E034"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "CT Brain",
+        "date": "4 November 2012",
+        "result": "Extensive subarachnoid hemorrhage",
+        "interpretation": null,
+        "evidence_ids": [
+          "E040"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Ruptured cerebral aneurysm",
+        "when_made": "4 November 2012",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E040"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Coiling of aneurysm",
+        "date": "5 November 2012",
+        "provider": null,
+        "outcome": "Aneurysm secured",
+        "evidence_ids": [
+          "E041"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Hydrocephalus",
+        "when_occurred": "Post-hemorrhage",
+        "severity": "Moderate",
+        "evidence_ids": [
+          "E046"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to order CT scan",
+        "against": "Defendant hospital",
+        "found_proven": true,
+        "evidence_ids": [
+          "E011"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E011"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.06918238993710692,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 13:48:05.363350",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

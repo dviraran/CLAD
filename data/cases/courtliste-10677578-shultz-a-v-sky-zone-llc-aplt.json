@@ -1,0 +1,364 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtliste-10677578-shultz-a-v-sky-zone-llc-aplt",
+  "source": "BAILII",
+  "jurisdiction": "UK",
+  "court": "Unknown",
+  "decision_date": "2026-01-18",
+  "url": "https://example.com/courtliste-10677578-shultz-a-v-sky-zone-llc-aplt",
+  "case_name": "Shultz, A. v. Sky Zone, LLC, Aplt.",
+  "neutral_citation": null,
+  "clinical_domain": "PAEDIATRICS",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Shultz, A. v. Sky Zone, LLC, Aplt.. Medical malpractice case involving paediatrics.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "In February 2019, Jennifer Santiago took her two children to a Sky Zone located in Philadelphia.",
+      "paragraph_ref": "14",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "That day, three-year-old Isabella Santiago was injured when an adult entered an area designated for toddlers and jumped on Isabella\u2019s trampoline, throwing her off the trampoline and causing a fracture of her knee.",
+      "paragraph_ref": "27",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "LEGAL_FINDING",
+      "text": "The orders of the Superior Court are affirmed.",
+      "paragraph_ref": "580",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "COURT_REASONING",
+      "text": "Parents, as natural guardians, do not have an inherent authority to 'intermeddle' with the property of their minor children, which includes legal causes of action.",
+      "paragraph_ref": "574",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "In August 2018, Ryan Shultz took his five-year-old son, Rocco, to a Sky Zone location in Philadelphia.",
+      "paragraph_ref": "47",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "Rocco was injured when, contrary to Sky Zone\u2019s rules, another patron jumped on the trampoline that Rocco was using.",
+      "paragraph_ref": "48",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "LEGAL_FINDING",
+      "text": "Our conclusion that parents cannot bind their minor children to an agreement to arbitrate their claims obviates the need to address the other terms of the arbitration provision.",
+      "paragraph_ref": "584",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "3 years",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Injury sustained at trampoline park",
+      "history_of_present_illness": "Isabella Santiago was injured when an adult entered an area designated for toddlers and jumped on her trampoline, causing her to be thrown off and sustain a knee fracture.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "musculoskeletal": "Fracture of the knee"
+        }
+      },
+      "initial_working_problem": "Knee fracture due to trampoline accident",
+      "known_constraints": null,
+      "initial_differential": [
+        "Knee fracture",
+        "Soft tissue injury"
+      ],
+      "critical_findings": [
+        "Knee fracture"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E002",
+        "E027"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "X-ray of affected area",
+        "description": "To assess for fractures or dislocations",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Imaging performed but findings not detailed in judgment",
+          "detailed_findings": null,
+          "clinical_significance": "Not documented in judgment",
+          "decision_impact": "Not documented in judgment",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": []
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Rocco presents with injury from trampoline park",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Injury occurred at trampoline park",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E005",
+              "E006"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Injury at trampoline park",
+        "prompt": "What legal action should be taken regarding the arbitration agreement?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Challenge the enforceability of the arbitration agreement",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Minors cannot be bound to arbitration agreements without court approval"
+          },
+          {
+            "option_id": "B",
+            "description": "Accept the arbitration agreement as binding",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Parents do not have authority to bind minors to arbitration"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant accepted arbitration agreement as binding",
+          "reasoning_stated": "Believed it was a valid forum selection",
+          "evidence_ids": [
+            "E005",
+            "E006"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Challenge the enforceability of the arbitration agreement",
+          "standard_of_care_basis": "Minors require court protection for legal claims",
+          "evidence_ids": [
+            "E004",
+            "E007"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Parents cannot bind minors to arbitration without court approval",
+          "what_should_have_happened": "Court should have been involved to protect minor's interests",
+          "legal_standard_applied": "Minors' legal disability requires court oversight",
+          "evidence_ids": [
+            "E004",
+            "E007"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Injury sustained at trampoline park",
+        "severity": "Not documented in judgment",
+        "long_term_effects": "Not documented in judgment",
+        "evidence_ids": []
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Parents cannot bind minors to arbitration agreements",
+          "Court oversight required for minor's legal claims"
+        ],
+        "evidence_ids": [
+          "E004",
+          "E007"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": false,
+        "point_of_failure": "Acceptance of arbitration agreement without court approval",
+        "counterfactual": "Court involvement would have protected minor's interests",
+        "evidence_ids": [
+          "E004",
+          "E007"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "February 2019",
+        "event": "Isabella injured at Sky Zone",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Rocco injured at trampoline park",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "X-ray",
+        "date": "Not documented in judgment",
+        "result": "Fracture confirmed",
+        "interpretation": null,
+        "evidence_ids": [
+          "E027"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Knee fracture",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E027"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Not documented in judgment",
+        "date": "Not documented in judgment",
+        "provider": null,
+        "outcome": "Not documented in judgment",
+        "evidence_ids": []
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Not documented in judgment",
+        "when_occurred": "Not documented in judgment",
+        "severity": "Not documented in judgment",
+        "evidence_ids": []
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Injury due to negligence at trampoline park",
+        "against": "Sky Zone",
+        "found_proven": false,
+        "evidence_ids": [
+          "E029",
+          "E030"
+        ]
+      },
+      {
+        "allegation": "Parents cannot bind minors to arbitration agreements",
+        "against": "Sky Zone",
+        "found_proven": true,
+        "evidence_ids": [
+          "E004",
+          "E007"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Arbitration agreement not enforceable against minors",
+        "legal_significance": "Parents cannot bind minors to arbitration agreements",
+        "evidence_ids": [
+          "E029",
+          "E030"
+        ]
+      },
+      {
+        "finding": "Parents lack authority to bind minors to arbitration",
+        "legal_significance": "Minors require court protection for legal claims",
+        "evidence_ids": [
+          "E004",
+          "E007"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "SYSTEM_COMMUNICATION"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.011945392491467578,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 09:48:52.048485",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

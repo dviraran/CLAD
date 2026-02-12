@@ -1,0 +1,609 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "bailii-qb-2019-106-html",
+  "source": "BAILII",
+  "jurisdiction": "UK",
+  "court": "Unknown",
+  "decision_date": "2019-01-25",
+  "url": "https://example.com/bailii-qb-2019-106-html",
+  "case_name": "Kennedy v Frankel [2019] EWHC 106 (QB) (25 January 2019)",
+  "neutral_citation": "[2019] EWHC 106",
+  "clinical_domain": "NEUROLOGY",
+  "outcome_severity": "TEMPORARY_HARM",
+  "summary": {
+    "brief": "Neurologist failed to warn patient about impulse control disorder (ICD) risk associated with dopamine agonist medication for Parkinson's disease.",
+    "clinical_synopsis": "Patient on ropinirole (dopamine agonist) for Parkinson's disease since 2008. By April 2010, warning about ICD risk became mandatory. Neurologist failed to warn, and patient subsequently developed ICD and psychosis.",
+    "legal_synopsis": "Court found neurologist breached duty by failing to warn about ICD risk from April 2010 onwards. Patient would have stopped medication earlier if properly warned."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Mrs Hazel Kennedy is a retired primary school teacher, now aged 56. She is married to Dr Philip Kennedy, who was a consultant neurologist until his retirement in 2006.",
+      "paragraph_ref": "11",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "In 2006, when aged 44, Mrs Kennedy developed a tremor in her left upper limb.",
+      "paragraph_ref": "11",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr Frankel saw Mrs Kennedy privately, but without charge. He diagnosed Parkinson's disease and advised on her treatment.",
+      "paragraph_ref": "11",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "Dopamine agonist medication, which the Claimant took on his advice, caused her psychiatric side effects, including an impulse control disorder (ICD) and eventually psychosis.",
+      "paragraph_ref": "11",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "LEGAL_FINDING",
+      "text": "The Defendant denies liability. He maintains that his treatment of the Claimant was reasonable at all times, based upon the information available to him at the time.",
+      "paragraph_ref": "14",
+      "speaker": "Defendant's position"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr Sawle was very clear that he was not critical of Dr Frankel's advice prior to 2010.",
+      "paragraph_ref": "56",
+      "speaker": "Expert witness"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "LEGAL_FINDING",
+      "text": "I find therefore that the Defendant was in breach of duty in failing to give a warning at this time.",
+      "paragraph_ref": "68",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "FACTUAL_FINDING",
+      "text": "The Claimant first noticed a tremor in her left upper limb sometime in 2006.",
+      "paragraph_ref": "49",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "FACTUAL_FINDING",
+      "text": "By August 2007, Mrs Kennedy felt that her symptoms had worsened.",
+      "paragraph_ref": "50",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "LEGAL_FINDING",
+      "text": "I find a material breach of duty in relation to the advice given in October 2011.",
+      "paragraph_ref": "142",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E011",
+      "type": "COURT_REASONING",
+      "text": "I consider that the involvement of Dr Kennedy did play its part and perhaps explains, although does not excuse, Dr Frankel's breach.",
+      "paragraph_ref": "143",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E012",
+      "type": "FACTUAL_FINDING",
+      "text": "The Claimant and Dr Kennedy recall worsening problems from the end of 2011.",
+      "paragraph_ref": "131",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E013",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr Sawle acknowledged that there is a balance to be struck between the control of motor symptoms and unwanted side effects.",
+      "paragraph_ref": "101",
+      "speaker": "Expert witness"
+    },
+    {
+      "evidence_id": "E014",
+      "type": "LEGAL_FINDING",
+      "text": "I therefore find that the Defendant should have warned the Claimant of the risk of developing ICD on ropinirole from April 2010.",
+      "paragraph_ref": "141",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E015",
+      "type": "FACTUAL_FINDING",
+      "text": "The Claimant had an unpleasant time coming off the drug but went on to make a good recovery.",
+      "paragraph_ref": "138",
+      "speaker": "Court finding"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "48 years",
+        "sex": "female",
+        "relevant_social_history": "Retired primary school teacher, married to a neurologist"
+      },
+      "chief_complaint": "Follow-up for Parkinson's disease management",
+      "history_of_present_illness": "Patient has been diagnosed with Parkinson's disease since 2007 and has been taking ropinirole (a dopamine agonist) since February 2008. She is here for a routine follow-up to review her medication and symptom control. Her motor symptoms have been reasonably well controlled on the current medication regimen. Recently, her husband has noticed some changes in her behavior, including increased spending and some impulsive decisions, though the patient herself does not think these are problematic.",
+      "past_medical_history": [
+        "Parkinson's disease diagnosed 2007"
+      ],
+      "medications": [
+        "Ropinirole (dopamine agonist) - current dose"
+      ],
+      "allergies": [
+        "None known"
+      ],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Normal",
+          "heart_rate": "Normal",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": "Well-appearing",
+        "focused_exam": {
+          "neurological": "Mild left upper limb resting tremor, improved compared to prior visits. Some bradykinesia. Gait stable."
+        }
+      },
+      "initial_working_problem": "Parkinson's disease on dopamine agonist therapy - routine follow-up with possible emerging behavioral changes",
+      "known_constraints": null,
+      "initial_differential": [
+        "Parkinson's disease - stable on treatment",
+        "Possible impulse control disorder secondary to dopamine agonist"
+      ],
+      "critical_findings": [
+        "Patient on dopamine agonist (ropinirole) for 2+ years",
+        "Behavioral changes noted by spouse (increased spending, impulsive decisions)"
+      ],
+      "urgency_level": "ROUTINE",
+      "evidence_ids": [
+        "E001",
+        "E002",
+        "E003",
+        "E004"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSULT_NOTE",
+        "name": "Neurology Consultation",
+        "description": "Consultation with Dr. Frankel regarding Parkinson's disease diagnosis",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Diagnosis of Parkinson's disease, advised dopamine agonist medication",
+          "detailed_findings": null,
+          "clinical_significance": "Initiated treatment plan for Parkinson's disease",
+          "decision_impact": "Led to prescription of dopamine agonist",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with tremor in left upper limb",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "First appointment with Dr. Frankel",
+            "timestamp": "30 January 2007",
+            "evidence_ids": [
+              "E049"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Diagnosis and Initial Treatment",
+        "description": "Diagnosis of Parkinson's disease and initiation of treatment",
+        "duration": "2007-2010",
+        "key_events": [
+          {
+            "event": "Diagnosis of Parkinson's disease",
+            "timestamp": "2007",
+            "evidence_ids": [
+              "E003"
+            ]
+          },
+          {
+            "event": "Introduction of dopamine agonist",
+            "timestamp": "February 2008",
+            "evidence_ids": [
+              "E054"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "decision",
+        "name": "Management of ICD Symptoms",
+        "description": "Management decisions regarding ICD symptoms",
+        "duration": "2010-2011",
+        "key_events": [
+          {
+            "event": "ICD symptoms identified",
+            "timestamp": "January 2011",
+            "evidence_ids": [
+              "E084"
+            ]
+          },
+          {
+            "event": "Consultation with Dr. Frankel",
+            "timestamp": "25 October 2011",
+            "evidence_ids": [
+              "E116"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient diagnosed with Parkinson's disease and prescribed dopamine agonist",
+        "prompt": "What should be discussed with the patient regarding medication risks?",
+        "action_type": "COUNSEL_RISKS",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Warn about risk of impulse control disorder (ICD) with dopamine agonists",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "ICD is a known risk with dopamine agonists and should be disclosed"
+          },
+          {
+            "option_id": "B",
+            "description": "Do not discuss specific risks of ICD",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Defendant did not routinely warn about ICD until 2013"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant did not warn about ICD",
+          "reasoning_stated": "Defendant did not routinely warn about ICD until 2013",
+          "evidence_ids": [
+            "E014",
+            "E064"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Should have warned about ICD risk",
+          "standard_of_care_basis": "Mandatory to warn about ICD by April 2010",
+          "evidence_ids": [
+            "E014",
+            "E065"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to warn about ICD risk was a breach of duty",
+          "what_should_have_happened": "Patient should have been informed about ICD risk",
+          "legal_standard_applied": "Montgomery test for informed consent",
+          "evidence_ids": [
+            "E014",
+            "E065"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      },
+      {
+        "decision_id": "D002",
+        "phase_id": "decision",
+        "clinical_context": "Patient developed ICD symptoms while on dopamine agonist",
+        "prompt": "What should be the management plan for ICD symptoms?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Switch to levodopa to manage ICD symptoms",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Levodopa likely to abolish ICD symptoms while controlling Parkinson's"
+          },
+          {
+            "option_id": "B",
+            "description": "Increase dose of dopamine agonist",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Defendant increased dose despite ICD symptoms"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant increased dopamine agonist dose",
+          "reasoning_stated": "Defendant did not consider ICD symptoms significant",
+          "evidence_ids": [
+            "E126",
+            "E127"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Should have switched to levodopa",
+          "standard_of_care_basis": "Switching would have controlled ICD symptoms",
+          "evidence_ids": [
+            "E126",
+            "E127"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Increasing dose exacerbated ICD symptoms",
+          "what_should_have_happened": "Switch to levodopa should have been recommended",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E126",
+            "E127"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient developed impulse control disorder and psychosis",
+        "severity": "PERMANENT_MODERATE_DISABILITY",
+        "long_term_effects": "Psychiatric side effects, recovery after medication change",
+        "evidence_ids": [
+          "E015"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not specified in judgment",
+        "key_findings": [
+          "Breach of duty in failing to warn about ICD risks",
+          "Breach of duty in medication management advice"
+        ],
+        "evidence_ids": [
+          "E010",
+          "E014"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to warn about ICD and inappropriate medication management",
+        "counterfactual": "Proper advice would have prevented psychosis",
+        "evidence_ids": [
+          "E010",
+          "E014"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "30 January 2007",
+        "event": "First appointment with Dr. Frankel",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E049"
+        ]
+      },
+      {
+        "timestamp": "February 2008",
+        "event": "Introduction of dopamine agonist",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E054"
+        ]
+      },
+      {
+        "timestamp": "25 October 2011",
+        "event": "Consultation with Dr. Frankel",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E116"
+        ]
+      },
+      {
+        "timestamp": "2006",
+        "event": "Patient develops tremor in left upper limb",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "April 2010",
+        "event": "Failure to warn about ICD risks",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E014"
+        ]
+      },
+      {
+        "timestamp": "October 2011",
+        "event": "Inappropriate increase of ropinirole",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E010"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Neurology Consultation",
+        "date": "30 January 2007",
+        "result": "Diagnosis of Parkinson's disease",
+        "interpretation": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Impulse Control Disorder (ICD)",
+        "when_made": "January 2011",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E084"
+        ]
+      },
+      {
+        "diagnosis": "Parkinson's disease",
+        "when_made": "2006",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Dopamine agonist medication",
+        "date": "February 2008",
+        "provider": null,
+        "outcome": "Development of ICD and psychosis",
+        "evidence_ids": [
+          "E054"
+        ]
+      },
+      {
+        "treatment": "Dopamine agonist (ropinirole)",
+        "date": "Not documented in judgment",
+        "provider": null,
+        "outcome": "Development of ICD and psychosis",
+        "evidence_ids": [
+          "E004",
+          "E014"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Psychosis",
+        "when_occurred": "2012",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E133"
+        ]
+      },
+      {
+        "complication": "Impulse control disorder and psychosis",
+        "when_occurred": "Not documented in judgment",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E015"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to warn about ICD risk",
+        "against": "Dr. Frankel",
+        "found_proven": true,
+        "evidence_ids": [
+          "E141"
+        ]
+      },
+      {
+        "allegation": "Failure to warn about ICD risks",
+        "against": "Dr Frankel",
+        "found_proven": true,
+        "evidence_ids": [
+          "E014"
+        ]
+      },
+      {
+        "allegation": "Inappropriate medication management",
+        "against": "Dr Frankel",
+        "found_proven": true,
+        "evidence_ids": [
+          "E010"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Montgomery test not satisfied",
+        "evidence_ids": [
+          "E141"
+        ]
+      },
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E010",
+          "E014"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP",
+      "TREATMENT_PROCEDURE_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.10416666666666667,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 07:08:22.325930",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

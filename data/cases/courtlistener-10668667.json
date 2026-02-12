@@ -1,0 +1,367 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10668667",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2025-09-04",
+  "url": "https://example.com/courtlistener-10668667",
+  "case_name": "State v. Coleman",
+  "neutral_citation": null,
+  "clinical_domain": "PAEDIATRICS",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "State v. Coleman. Medical malpractice case involving paediatrics.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Defendant and J lived together in Hillsboro. In September 2022, police were dispatched to their residence when J called 9-1-1.",
+      "paragraph_ref": "5",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "J told the 9-1-1 operator that defendant had taken her phone and that he had attached three belts around her neck and had tried to lift her up and kill her.",
+      "paragraph_ref": "5",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "At trial, J did not want to testify against defendant. She testified that she called the police because she was angry and that she sustained injuries when she tripped and fell.",
+      "paragraph_ref": "5",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "J told a paramedic that defendant had strangled her with a belt and shoved a remote control into her mouth.",
+      "paragraph_ref": "5",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Muncy testified about the physiology of the neck and throat and about how it takes very little pressure or time to strangle a person to death.",
+      "paragraph_ref": "9",
+      "speaker": "Theresa Muncy"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "LEGAL_FINDING",
+      "text": "We therefore affirm.",
+      "paragraph_ref": "5",
+      "speaker": "Judge Tookey"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "COURT_REASONING",
+      "text": "The trial court expressed some skepticism about the necessity for the expert testimony, observing that 'they used to kill people by hanging them,' and that it was common knowledge 'that if you lose blood to the brain and airflow to the lungs, you\u2019re going to drop dead.'",
+      "paragraph_ref": "9",
+      "speaker": "Trial court"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Muncy explained that it takes very little pressure to compress the jugular vein and the carotid artery.",
+      "paragraph_ref": "14",
+      "speaker": "Theresa Muncy"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "LEGAL_FINDING",
+      "text": "The trial court did not abuse its discretion in its OEC 403 balancing of the probative value of the evidence against the danger of unfair prejudice.",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "COURT_REASONING",
+      "text": "Here, the testimony had probative value because it provided the jury with information about how easily and quickly a person can sustain injury or death from strangulation.",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Strangulation with a belt",
+      "history_of_present_illness": "Patient reports being strangled with a belt by the defendant.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "neck": "Signs of strangulation reported but not detailed in judgment"
+        }
+      },
+      "initial_working_problem": "Strangulation injury",
+      "known_constraints": null,
+      "initial_differential": [
+        "Strangulation",
+        "Neck trauma"
+      ],
+      "critical_findings": [
+        "Belt marks on neck",
+        "Difficulty breathing"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E002",
+        "E004",
+        "E006"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSULT_NOTE",
+        "name": "Paramedic Report",
+        "description": "Paramedic's assessment of the patient at the scene",
+        "available_phase": "presentation",
+        "reveal": {
+          "result_summary": "Patient reported strangulation with a belt and insertion of a remote control into the mouth.",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates potential airway compromise and need for immediate medical evaluation.",
+          "decision_impact": "Should prompt immediate medical evaluation and possible imaging.",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Emergency Presentation",
+        "description": "Patient presents with signs of strangulation",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Paramedic assessment",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E004"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient with reported strangulation",
+        "prompt": "What immediate action should be taken?",
+        "action_type": "ESCALATE_CARE",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Immediate airway assessment and stabilization",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Strangulation can lead to airway compromise; immediate assessment is critical."
+          },
+          {
+            "option_id": "B",
+            "description": "Delay assessment and focus on gathering more history",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Delaying assessment can lead to worsening of potential airway compromise."
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant delayed immediate assessment",
+          "reasoning_stated": "Defendant focused on gathering more history instead of immediate care",
+          "evidence_ids": [
+            "E004"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Immediate airway assessment should have been performed",
+          "standard_of_care_basis": "Expert evidence established immediate assessment is standard",
+          "evidence_ids": [
+            "E005",
+            "E008"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Based on evidence E005-E008",
+          "what_should_have_happened": "Immediate airway assessment and stabilization",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E005",
+            "E008"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient survived the incident but with potential long-term psychological effects",
+        "severity": "MODERATE",
+        "long_term_effects": "Potential PTSD and anxiety",
+        "evidence_ids": [
+          "E004",
+          "E006"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Breach of duty in failing to provide immediate care",
+          "Causation established - delay in care could have worsened condition"
+        ],
+        "evidence_ids": [
+          "E006",
+          "E010"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to provide immediate airway assessment",
+        "counterfactual": "Immediate assessment could have prevented potential complications",
+        "evidence_ids": [
+          "E005",
+          "E008",
+          "E010"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "September 2022",
+        "event": "Police dispatched to residence",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Paramedic assessment",
+        "date": "Not documented in judgment",
+        "result": "Reported strangulation",
+        "interpretation": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Strangulation",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Immediate medical evaluation",
+        "date": "Not documented in judgment",
+        "provider": null,
+        "outcome": "Patient stabilized",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Potential airway compromise",
+        "when_occurred": "Not documented in judgment",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to provide immediate care",
+        "against": "Defendant",
+        "found_proven": true,
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.43478260869565216,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 08:27:47.006553",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

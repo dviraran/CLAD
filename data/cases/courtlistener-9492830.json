@@ -1,0 +1,362 @@
+{
+  "case_id": "courtlistener-9492830",
+  "source": "courtlistener",
+  "source_url": "local://courtlistener-9492830.html",
+  "jurisdiction": "US",
+  "extraction_metadata": {
+    "version": "batch_api_v1",
+    "model": "gpt-4o",
+    "extracted_at": "2026-01-21T17:56:57.889281",
+    "simulation_extracted_at": "2026-01-21T18:25:07.023063",
+    "simulation_model": "gpt-4o"
+  },
+  "case_metadata": {
+    "case_name": "Est. of Essex v. Grant County Pub. Hosp. Dist. No. 1",
+    "citation": "No. 101745-6",
+    "court": "Supreme Court of the State of Washington",
+    "date": "April 11, 2024"
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "Cindy Essex went to Samaritan Hospital’s emergency room complaining of unbearable pain in her left shoulder and chest that radiated to her abdomen.",
+      "paragraph_ref": "24",
+      "paragraph_starts_with": "[24] Cindy Essex went to",
+      "summary": "Cindy Essex presented to the emergency room with severe pain.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "Doctors working at, but not as employees of, Samaritan failed to diagnose Cindy’s necrotizing fasciitis, an aggressive soft-tissue infection.",
+      "paragraph_ref": "13",
+      "paragraph_starts_with": "[13] as employees of, Samaritan",
+      "summary": "Doctors failed to diagnose necrotizing fasciitis.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "Cindy died less than 24 hours later.",
+      "paragraph_ref": "14",
+      "paragraph_starts_with": "[14] aggressive soft-tissue infection.",
+      "summary": "Cindy Essex died within 24 hours.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "EXPERT_TESTIMONY",
+      "verbatim_quote": "Dr. Cumbo concluded that had Cindy’s symptoms been “caught sooner... the outcome might have been different.",
+      "paragraph_ref": "980",
+      "paragraph_starts_with": "[980] Dr. Cumbo concluded that",
+      "summary": "Dr. Cumbo testified that earlier detection could have changed the outcome.",
+      "speaker": "Dr. Thomas Cumbo"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "LEGAL_FINDING",
+      "verbatim_quote": "We conclude that a hospital cannot escape liability for the negligent provision of emergency services by delegating that duty to its nonemployee doctors.",
+      "paragraph_ref": "337",
+      "paragraph_starts_with": "[337] Thus, we conclude that a",
+      "summary": "Hospital cannot avoid liability by delegating duties to nonemployee doctors.",
+      "speaker": "Court conclusion"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "COURT_REASONING",
+      "verbatim_quote": "Our statutes and regulations create a nondelegable duty concerning the provision of those services.",
+      "paragraph_ref": "335",
+      "paragraph_starts_with": "[335] Where a hospital elects",
+      "summary": "Statutes impose nondelegable duty on hospitals for emergency services.",
+      "speaker": "Court reasoning"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "Dr. Davis ordered x-rays and a CT (computerized tomography) scan to keep his “diagnostic net fairly wide.”",
+      "paragraph_ref": "35",
+      "paragraph_starts_with": "[35] Dr. Davis ordered x-rays",
+      "summary": "Dr. Davis ordered diagnostic imaging.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "Dr. Wiest reviewed Cindy’s CT scans from Samaritan and identified “some soft-tissue skin changes” that Dr. Cruite previously failed to recognize and report.",
+      "paragraph_ref": "60",
+      "paragraph_starts_with": "[60] changes” that Dr. Cruite",
+      "summary": "Dr. Wiest identified changes missed by Dr. Cruite.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "LEGAL_FINDING",
+      "verbatim_quote": "We reverse the Court of Appeals and remand to the trial court for further proceedings consistent with this opinion.",
+      "paragraph_ref": "341",
+      "paragraph_starts_with": "[341] Accordingly, we reverse",
+      "summary": "Court of Appeals decision reversed and remanded.",
+      "speaker": "Court conclusion"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "EXPERT_TESTIMONY",
+      "verbatim_quote": "Dr. Cumbo took the position that “the hospital was negligent with respect to its oversight and training of its nursing staff.",
+      "paragraph_ref": "314",
+      "paragraph_starts_with": "[314] its nursing staff. Dr. Cumbo",
+      "summary": "Dr. Cumbo testified on hospital's negligence in staff oversight.",
+      "speaker": "Dr. Thomas Cumbo"
+    }
+  ],
+  "verdict_detected": {
+    "outcome": "NO_LIABILITY",
+    "key_phrase": "We reverse the Court of Appeals and remand to the trial court for further proceedings consistent with this opinion.",
+    "paragraph_ref": "341"
+  },
+  "extraction_notes": {
+    "total_paragraphs_analyzed": 350,
+    "key_sections_found": [
+      "Background",
+      "Key Findings and Analysis",
+      "Conclusion and Verdict"
+    ],
+    "gaps_identified": [
+      "No specific lab values mentioned",
+      "Timing of events unclear"
+    ]
+  },
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Unbearable pain in left shoulder and chest radiating to abdomen",
+      "history_of_present_illness": "Cindy Essex presented to the emergency room with severe pain.",
+      "past_medical_history": "Not documented in judgment",
+      "medications": "Not documented in judgment",
+      "allergies": "Not documented in judgment",
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment"
+        },
+        "focused_exam": {
+          "system": "Examination mentioned but findings not specified"
+        }
+      },
+      "initial_working_problem": "Severe pain with unclear etiology",
+      "initial_differential": [
+        "necrotizing fasciitis",
+        "other soft-tissue infections"
+      ],
+      "critical_findings": [
+        "Severe pain in left shoulder and chest radiating to abdomen"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "CT Scan",
+        "description": "CT scan to evaluate soft tissue and other potential causes of pain",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Some soft-tissue skin changes",
+          "clinical_significance": "Potential indication of necrotizing fasciitis",
+          "decision_impact": "Should prompt further investigation and treatment"
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E007",
+          "E008"
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient in ED with severe pain and imaging findings",
+        "prompt": "What should be the next step in management?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Initiate broad-spectrum antibiotics and surgical consultation",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard care for suspected necrotizing fasciitis"
+          },
+          {
+            "option_id": "B",
+            "description": "Continue observation and pain management",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Failed to address potential life-threatening infection"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant continued observation and pain management",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E002"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Initiate broad-spectrum antibiotics and surgical consultation",
+          "standard_of_care_basis": "Expert evidence established need for immediate intervention",
+          "evidence_ids": [
+            "E004"
+          ]
+        },
+        "explanation": {
+          "why_defendant_wrong": "Based on evidence E002 and E004",
+          "what_should_have_happened": "Immediate intervention with antibiotics and surgical consultation",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E002",
+            "E004"
+          ]
+        },
+        "is_malpractice_point": true
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Emergency Presentation",
+        "description": "Patient presents to ED with acute symptoms",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Patient arrives at ED with severe pain",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient died less than 24 hours later due to necrotizing fasciitis",
+        "severity": "FATAL",
+        "long_term_effects": "Not applicable",
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Breach of duty in failing to diagnose and treat necrotizing fasciitis",
+          "Causation established - earlier intervention could have changed the outcome"
+        ],
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to diagnose and treat necrotizing fasciitis",
+        "counterfactual": "Earlier intervention could have changed the outcome",
+        "evidence_ids": [
+          "E002",
+          "E004"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Patient arrives at ED with severe pain",
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "CT Scan",
+        "date": "Date not specified in judgment",
+        "result": "Some soft-tissue skin changes",
+        "evidence_ids": [
+          "E007",
+          "E008"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Necrotizing fasciitis",
+        "when_made": "Not documented in judgment",
+        "correct": false,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Not documented in judgment",
+        "date": "Not documented in judgment",
+        "outcome": "Not documented in judgment",
+        "evidence_ids": []
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Death",
+        "when_occurred": "Less than 24 hours after presentation",
+        "severity": "Fatal",
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to diagnose and treat necrotizing fasciitis",
+        "against": "Defendant doctors",
+        "found_proven": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      }
+    ]
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR"
+    ],
+    "diagnosis_subtypes": [
+      "FAILURE_TO_DIAGNOSE"
+    ]
+  }
+}

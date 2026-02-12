@@ -1,0 +1,377 @@
+{
+  "case_id": "courtlistener-10015497",
+  "source": "courtlistener",
+  "source_url": "local://courtlistener-10015497.html",
+  "jurisdiction": "US",
+  "extraction_metadata": {
+    "version": "batch_api_v1",
+    "model": "gpt-4o",
+    "extracted_at": "2026-01-21T17:56:57.913481",
+    "simulation_extracted_at": "2026-01-21T18:29:59.571671",
+    "simulation_model": "gpt-4o"
+  },
+  "case_metadata": {
+    "case_name": "Thomas v. Eckhert",
+    "citation": "2024 NY Slip Op 03963",
+    "court": "Appellate Division, Fourth Department",
+    "date": "July 26, 2024"
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "Plaintiff commenced this action seeking damages for injuries he allegedly sustained as a result of a laparoscopic ventral hernia repair performed by Kenneth J. Eckhert, III, M.D., F.A.C.S.",
+      "paragraph_ref": "13",
+      "paragraph_starts_with": "Appeal from an order of",
+      "summary": "Plaintiff claims injury from laparoscopic ventral hernia repair by Dr. Eckhert.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "Plaintiff asserted causes of action for medical malpractice and lack of informed consent.",
+      "paragraph_ref": "13",
+      "paragraph_starts_with": "Appeal from an order of",
+      "summary": "Plaintiff claims medical malpractice and lack of informed consent.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "EXPERT_TESTIMONY",
+      "verbatim_quote": "Plaintiff submitted the affirmation of an expert gastrointestinal surgeon, who averred that an open procedure would have been more appropriate in plaintiff's situation because, based on plaintiff's surgical history, it should have been expected that plaintiff had abdominal adhesions.",
+      "paragraph_ref": "13",
+      "paragraph_starts_with": "Appeal from an order of",
+      "summary": "Expert surgeon suggests open procedure was more appropriate due to expected adhesions.",
+      "speaker": "Plaintiff's expert"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "WITNESS_STATEMENT",
+      "verbatim_quote": "Plaintiff testified at his deposition that defendant never informed him of alternatives to the laparoscopic procedure and that plaintiff was not aware of any at the time that he agreed to have the surgery.",
+      "paragraph_ref": "13",
+      "paragraph_starts_with": "Appeal from an order of",
+      "summary": "Plaintiff claims he was not informed of alternatives to laparoscopic procedure.",
+      "speaker": "Plaintiff"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "LEGAL_FINDING",
+      "verbatim_quote": "We reject defendants' contention that Supreme Court erred in denying that part of their motion with respect to the cause of action for lack of informed consent.",
+      "paragraph_ref": "13",
+      "paragraph_starts_with": "Appeal from an order of",
+      "summary": "Court rejects defendants' argument on lack of informed consent.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "LEGAL_FINDING",
+      "verbatim_quote": "We also reject defendants' contention that the court erred in denying that part of their motion with respect to plaintiff's medical malpractice cause of action.",
+      "paragraph_ref": "13",
+      "paragraph_starts_with": "Appeal from an order of",
+      "summary": "Court rejects defendants' argument on medical malpractice claim.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "EXPERT_TESTIMONY",
+      "verbatim_quote": "Plaintiff submitted the affirmation of his expert surgeon and the affirmation of an expert pathologist, both of which 'squarely oppose[d]' the affirmation of defendants' expert.",
+      "paragraph_ref": "13",
+      "paragraph_starts_with": "Appeal from an order of",
+      "summary": "Plaintiff's experts oppose defendants' expert, creating a 'battle of the experts'.",
+      "speaker": "Plaintiff's experts"
+    }
+  ],
+  "verdict_detected": {
+    "outcome": "NO_LIABILITY",
+    "key_phrase": "We affirm.",
+    "paragraph_ref": "13"
+  },
+  "extraction_notes": {
+    "total_paragraphs_analyzed": 14,
+    "key_sections_found": [
+      "Facts",
+      "Expert Evidence",
+      "Conclusion"
+    ],
+    "gaps_identified": [
+      "No specific lab values mentioned",
+      "Timing of events unclear"
+    ]
+  },
+  "simulation": {
+    "testable": true,
+    "testable_reason": "The court found in favor of the plaintiff on both medical malpractice and lack of informed consent claims, indicating substantive liability was determined.",
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "Not documented in judgment",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Not documented in judgment",
+      "history_of_present_illness": "Not documented in judgment",
+      "past_medical_history": [
+        "Surgical history with expected abdominal adhesions"
+      ],
+      "medications": "Not documented in judgment",
+      "allergies": "Not documented in judgment",
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment"
+        },
+        "focused_exam": {
+          "abdomen": "Not documented in judgment"
+        }
+      },
+      "initial_working_problem": "Ventral hernia requiring repair",
+      "initial_differential": [
+        "Not documented in judgment"
+      ],
+      "critical_findings": [
+        "Not documented in judgment"
+      ],
+      "urgency_level": "Not documented in judgment",
+      "evidence_ids": [
+        "E001",
+        "E003"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSENT_DISCUSSION",
+        "name": "Informed Consent Discussion",
+        "description": "Discussion of surgical options and risks",
+        "available_phase": "preoperative",
+        "reveal": {
+          "result_summary": "Plaintiff was not informed of alternatives to laparoscopic procedure",
+          "clinical_significance": "Lack of informed consent",
+          "decision_impact": "Patient was not aware of surgical alternatives"
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "preoperative",
+        "clinical_context": "Patient with ventral hernia and surgical history of adhesions",
+        "prompt": "What surgical approach should be considered?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Proceed with laparoscopic ventral hernia repair",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Defendant chose laparoscopic approach despite expected adhesions"
+          },
+          {
+            "option_id": "B",
+            "description": "Consider open surgical approach due to adhesions",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Expert testimony suggested open procedure was more appropriate"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "A",
+          "description": "Defendant proceeded with laparoscopic repair",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E001",
+            "E003"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "B",
+          "description": "Open procedure should have been considered",
+          "standard_of_care_basis": "Expert evidence indicated open procedure was more appropriate",
+          "evidence_ids": [
+            "E003"
+          ]
+        },
+        "explanation": {
+          "why_defendant_wrong": "Based on expert testimony that open procedure was more appropriate",
+          "what_should_have_happened": "Open procedure should have been considered due to adhesions",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E003",
+            "E007"
+          ]
+        },
+        "is_malpractice_point": true
+      },
+      {
+        "decision_id": "D002",
+        "phase_id": "preoperative",
+        "clinical_context": "Patient consent process for surgery",
+        "prompt": "What should be included in the informed consent discussion?",
+        "action_type": "DISCLOSE_ALTERNATIVES",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Inform patient of laparoscopic and open surgical options",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Patient should be aware of all surgical options and associated risks"
+          },
+          {
+            "option_id": "B",
+            "description": "Proceed without discussing surgical alternatives",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Plaintiff was not informed of alternatives"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant did not inform patient of alternatives",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E004"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Patient should have been informed of all surgical options",
+          "standard_of_care_basis": "Informed consent requires disclosure of alternatives",
+          "evidence_ids": [
+            "E005"
+          ]
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to inform patient of alternatives constitutes lack of informed consent",
+          "what_should_have_happened": "Patient should have been informed of both laparoscopic and open options",
+          "legal_standard_applied": "Informed consent standard",
+          "evidence_ids": [
+            "E004",
+            "E005"
+          ]
+        },
+        "is_malpractice_point": true
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "preoperative",
+        "name": "Preoperative Assessment",
+        "description": "Assessment and planning for ventral hernia repair",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Decision to proceed with laparoscopic repair",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E001",
+              "E003"
+            ]
+          }
+        ]
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Not documented in judgment",
+        "severity": "Not documented in judgment",
+        "long_term_effects": "Not documented in judgment",
+        "evidence_ids": []
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Breach of duty in failing to consider open procedure",
+          "Lack of informed consent for not disclosing alternatives"
+        ],
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": "Not documented in judgment",
+        "point_of_failure": "Failure to consider open procedure and lack of informed consent",
+        "counterfactual": "Open procedure should have been considered",
+        "evidence_ids": [
+          "E003",
+          "E004",
+          "E005"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Decision to proceed with laparoscopic repair",
+        "evidence_ids": [
+          "E001",
+          "E003"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [],
+    "treatments": [
+      {
+        "treatment": "Laparoscopic ventral hernia repair",
+        "date": "Not documented in judgment",
+        "outcome": "Not documented in judgment",
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "complications": [],
+    "allegations": [
+      {
+        "allegation": "Failure to consider open procedure",
+        "against": "Defendant surgeon",
+        "found_proven": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "allegation": "Lack of informed consent",
+        "against": "Defendant surgeon",
+        "found_proven": true,
+        "evidence_ids": [
+          "E004",
+          "E005"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "finding": "Lack of informed consent",
+        "legal_significance": "Informed consent standard not met",
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ]
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "INFORMED_CONSENT"
+    ],
+    "diagnosis_subtypes": [
+      "FAILURE_TO_INVESTIGATE"
+    ]
+  }
+}

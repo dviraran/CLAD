@@ -1,0 +1,426 @@
+{
+  "case_id": "courtlistener-4765930",
+  "source": "courtlistener",
+  "source_url": "local://courtlistener-4765930.html",
+  "jurisdiction": "US",
+  "extraction_metadata": {
+    "version": "batch_api_v1",
+    "model": "gpt-4o",
+    "extracted_at": "2026-01-21T17:56:57.888496",
+    "simulation_extracted_at": "2026-01-21T18:25:07.019159",
+    "simulation_model": "gpt-4o"
+  },
+  "case_metadata": {
+    "case_name": "Roscoe v. Secretary of Health and Human Services",
+    "citation": "No. 11-206V",
+    "court": "United States Court of Federal Claims",
+    "date": "June 8, 2020"
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "Petitioner alleges that as a result of receiving hepatitis A (“Hep A”), tetanus-diphtheria-acellular pertussis (“Tdap”), meningococcal (“Menactra”), and human papillomavirus (“HPV”) vaccines on March 31, 2009, B.R. suffered fever, leg and bodily pain, emotional and mental confusion and anguish, and death.",
+      "paragraph_ref": "6",
+      "paragraph_starts_with": "On April 4, 2011, Stephanie",
+      "summary": "Petitioner claims vaccines caused B.R.'s symptoms and death.",
+      "speaker": "Petitioner"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "LEGAL_FINDING",
+      "verbatim_quote": "The undersigned finds that petitioner provided preponderant evidence that one or more of the vaccines B.R. received caused her to develop a Streptococcus pyogenes infection that caused her death, which satisfies her burden of proof under Althen v. Secretary of Health & Human Services.",
+      "paragraph_ref": "8",
+      "paragraph_starts_with": "After carefully analyzing",
+      "summary": "Court finds vaccines caused infection leading to death.",
+      "speaker": "Special Master"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "EXPERT_TESTIMONY",
+      "verbatim_quote": "Dr. Livingston conducted a physical examination, noting that B.R.’s oropharynx was “mildly injected.”",
+      "paragraph_ref": "42",
+      "paragraph_starts_with": "Dr. Livingston conducted",
+      "summary": "Dr. Livingston noted mild injection in B.R.'s oropharynx.",
+      "speaker": "Dr. Livingston"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "MEDICAL_RECORD",
+      "verbatim_quote": "B.R. was born on September 4, 1997. Pet. Ex. 14 at 1. Prior to the March 31, 2009 vaccinations, she had no prior significant illnesses, no previous surgeries, and no hospitalizations since birth.",
+      "paragraph_ref": "30",
+      "paragraph_starts_with": "B.R. was born on",
+      "summary": "B.R. had no significant medical history before vaccinations.",
+      "speaker": "Medical Record"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "WITNESS_STATEMENT",
+      "verbatim_quote": "After B.R. passed away, Ms. Roscoe and Mr. Parks wanted to know what caused B.R.’s death and decided to pay for a full autopsy to be performed.",
+      "paragraph_ref": "68",
+      "paragraph_starts_with": "After B.R. passed away",
+      "summary": "Family requested a full autopsy to determine cause of death.",
+      "speaker": "Family"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "EXPERT_TESTIMONY",
+      "verbatim_quote": "Dr. Mills submitted an expert affidavit, in which he testified that the nurses at Phoebe Putney violated the standard of care by failing to notify a physician on April 4, 2009 of B.R.’s vital signs at 12:00 midnight (BP 76/52, heart rate 140, and respiratory rate 36) and at 4:00 AM (BP 90/48, heart rate 140, and respiratory rate 32).",
+      "paragraph_ref": "106",
+      "paragraph_starts_with": "Unlike the other physicians",
+      "summary": "Dr. Mills testified nurses failed to notify physician of critical vitals.",
+      "speaker": "Dr. Mills"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "LEGAL_FINDING",
+      "verbatim_quote": "The undersigned finds petitioner has provided preponderant evidence of a proximate temporal relationship between B.R.’s vaccinations and the first manifestation of the infection which led to her death.",
+      "paragraph_ref": "264",
+      "paragraph_starts_with": "The undersigned finds",
+      "summary": "Court finds temporal relationship between vaccination and infection.",
+      "speaker": "Special Master"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "COURT_REASONING",
+      "verbatim_quote": "The undersigned cannot ignore the fact of B.R.’s vaccinations, and the resulting portal of entry that each injection created, so as to entertain a suggestion that they did not play a role, and thus conclude that the cause here was idiopathic.",
+      "paragraph_ref": "253",
+      "paragraph_starts_with": "In summary, there is",
+      "summary": "Court rejects idiopathic cause, acknowledges vaccine as entry point.",
+      "speaker": "Special Master"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "B.R. progressively worsened and despite lengthy resuscitative efforts, she died at 12:27 PM on April 4, 2009.",
+      "paragraph_ref": "47",
+      "paragraph_starts_with": "Throughout the early hours",
+      "summary": "B.R. died despite resuscitative efforts.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "EXPERT_TESTIMONY",
+      "verbatim_quote": "Dr. Latham also concluded that necrotizing fasciitis due to gram positive cocci of the left upper leg, hip, and inguinal/groin area with septic shock was the cause of death.",
+      "paragraph_ref": "57",
+      "paragraph_starts_with": "Dr. Latham also concluded",
+      "summary": "Dr. Latham concluded necrotizing fasciitis and septic shock caused death.",
+      "speaker": "Dr. Latham"
+    }
+  ],
+  "verdict_detected": {
+    "outcome": "LIABILITY_FOUND",
+    "key_phrase": "petitioner has established by preponderant evidence that she is entitled to compensation.",
+    "paragraph_ref": "268"
+  },
+  "extraction_notes": {
+    "total_paragraphs_analyzed": 271,
+    "key_sections_found": [
+      "Background",
+      "Key Findings and Analysis",
+      "Conclusion and Verdict"
+    ],
+    "gaps_identified": [
+      "No specific lab values mentioned",
+      "Timing of events unclear"
+    ]
+  },
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "11 years",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Fever, leg and bodily pain, emotional and mental confusion",
+      "history_of_present_illness": "Symptoms began after receiving multiple vaccines on March 31, 2009.",
+      "past_medical_history": "No significant medical history before vaccinations",
+      "medications": "Not documented in judgment",
+      "allergies": "Not documented in judgment",
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "BP 76/52 at midnight, BP 90/48 at 4:00 AM",
+          "heart_rate": "140 bpm",
+          "respiratory_rate": "36 at midnight, 32 at 4:00 AM"
+        },
+        "focused_exam": {
+          "oropharynx": "Mildly injected"
+        }
+      },
+      "initial_working_problem": "Post-vaccination symptoms with potential infection",
+      "initial_differential": [
+        "Vaccine-related adverse reaction",
+        "Infection"
+      ],
+      "critical_findings": [
+        "Severe hypotension",
+        "Tachycardia",
+        "Respiratory distress"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E003",
+        "E006"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "LAB",
+        "name": "Blood Culture",
+        "description": "To identify any bacterial infection",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not documented in judgment",
+          "clinical_significance": "Not documented in judgment",
+          "decision_impact": "Not documented in judgment"
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": []
+      },
+      {
+        "request_id": "R002",
+        "type": "CONSULT_NOTE",
+        "name": "Infectious Disease Consultation",
+        "description": "Consultation to evaluate potential infection",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not documented in judgment",
+          "clinical_significance": "Not documented in judgment",
+          "decision_impact": "Not documented in judgment"
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": []
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient with severe hypotension and tachycardia post-vaccination",
+        "prompt": "What should be the immediate management step?",
+        "action_type": "ESCALATE_CARE",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Notify physician immediately",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Critical vital signs require immediate physician intervention"
+          },
+          {
+            "option_id": "B",
+            "description": "Continue monitoring without notifying physician",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Failure to recognize severity of vital signs"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Nurses did not notify physician of critical vitals",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E006"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Physician should have been notified immediately",
+          "standard_of_care_basis": "Expert testimony indicated standard of care was breached",
+          "evidence_ids": [
+            "E006"
+          ]
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to notify physician of critical vitals",
+          "what_should_have_happened": "Immediate notification to physician",
+          "legal_standard_applied": "Standard of care not met",
+          "evidence_ids": [
+            "E006"
+          ]
+        },
+        "is_malpractice_point": true
+      },
+      {
+        "decision_id": "D002",
+        "phase_id": "workup",
+        "clinical_context": "Patient with suspected infection post-vaccination",
+        "prompt": "What diagnostic test should be ordered?",
+        "action_type": "ORDER_TEST",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Order blood cultures",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "To identify potential bacterial infection"
+          },
+          {
+            "option_id": "B",
+            "description": "No further testing",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Failure to investigate potential infection"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "No further testing was ordered",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": []
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Blood cultures should have been ordered",
+          "standard_of_care_basis": "Standard practice to identify infection",
+          "evidence_ids": []
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to order necessary diagnostic tests",
+          "what_should_have_happened": "Blood cultures should have been ordered",
+          "legal_standard_applied": "Standard of care not met",
+          "evidence_ids": []
+        },
+        "is_malpractice_point": true
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with symptoms post-vaccination",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Vaccination received",
+            "timestamp": "March 31, 2009",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Clinical Deterioration",
+        "description": "Patient's condition worsens with critical vital signs",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Critical vital signs recorded",
+            "timestamp": "April 4, 2009",
+            "evidence_ids": [
+              "E006"
+            ]
+          }
+        ]
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient developed necrotizing fasciitis and septic shock, leading to death",
+        "severity": "FATAL",
+        "long_term_effects": "Not applicable",
+        "evidence_ids": [
+          "E009",
+          "E010"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Breach of duty in failing to notify physician of critical vitals",
+          "Causation established between vaccination and infection"
+        ],
+        "evidence_ids": [
+          "E002",
+          "E007"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to notify physician and order necessary tests",
+        "counterfactual": "Timely intervention could have prevented deterioration",
+        "evidence_ids": [
+          "E006",
+          "E007"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "March 31, 2009",
+        "event": "B.R. received multiple vaccinations",
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "April 4, 2009",
+        "event": "B.R. died despite resuscitative efforts",
+        "evidence_ids": [
+          "E009"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [
+      {
+        "diagnosis": "Necrotizing fasciitis and septic shock",
+        "when_made": "Post-mortem",
+        "correct": true,
+        "evidence_ids": [
+          "E010"
+        ]
+      }
+    ],
+    "treatments": [],
+    "complications": [
+      {
+        "complication": "Septic shock",
+        "when_occurred": "April 4, 2009",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E010"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to notify physician of critical vitals",
+        "against": "Nurses at Phoebe Putney",
+        "found_proven": true,
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Vaccines caused infection leading to death",
+        "legal_significance": "Causation established under Althen test",
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ]
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "diagnosis_subtypes": [
+      "FAILURE_TO_INVESTIGATE",
+      "FAILURE_TO_MONITOR"
+    ]
+  }
+}

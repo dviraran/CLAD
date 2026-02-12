@@ -1,0 +1,386 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10292720",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2026-01-18",
+  "url": "https://example.com/courtlistener-10292720",
+  "case_name": "Kunkel, A. v. Abington Memorial Hospital",
+  "neutral_citation": null,
+  "clinical_domain": "PAEDIATRICS",
+  "outcome_severity": "PERMANENT_SEVERE_DISABILITY",
+  "summary": {
+    "brief": "Kunkel, A. v. Abington Memorial Hospital. Medical malpractice case involving paediatrics.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Kunkel received emergency medical care from Abington Memorial Hospital (AMH); Francesca Delach, M.D.; and Ryan Shadis, M.D. (collectively, Appellees) after being badly injured in an automobile accident.",
+      "paragraph_ref": "9",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "During the first two days of his hospital stay, the contact lenses Kunkel had been wearing remained on his eyes.",
+      "paragraph_ref": "12",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "A jury found Appellees\u2019 conduct to be negligent, but not the cause of Kunkel\u2019s asserted injuries.",
+      "paragraph_ref": "15",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "EXPERT_TESTIMONY",
+      "text": "It is my considered medical opinion that the failure to recognize the presence of Mr. Kunkel\u2019s contact lenses compounded by the failure to remove the contact lenses in a timely manner constituted medical malpractice.",
+      "paragraph_ref": "50",
+      "speaker": "Dr. James Aquavella"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "EXPERT_TESTIMONY",
+      "text": "In my opinion, the failure to timely identify and remove his contact lenses ultimately caused him to develop bilateral corneal scarring.",
+      "paragraph_ref": "63",
+      "speaker": "Dr. James Aquavella"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "Despite regular examinations of Kunkel\u2019s pupils in the first two days of his admission, the medical staff did not discover that Kunkel had been wearing contact lenses on both of his eyes.",
+      "paragraph_ref": "32",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Alexander never received an ophthalmology consult nor antibiotic eyedrops while at AMH based on my review of the medical records.",
+      "paragraph_ref": "63",
+      "speaker": "Dr. James Aquavella"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "LEGAL_FINDING",
+      "text": "The trial court acted within its discretion by precluding them from testifying on the cause of Kunkel\u2019s asserted eye injuries.",
+      "paragraph_ref": "270",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "COURT_REASONING",
+      "text": "The first time either of the physicians specifically linked Kunkel\u2019s corneal injuries to contact lenses came in their deposition testimony.",
+      "paragraph_ref": "264",
+      "speaker": "Court reasoning"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "FACTUAL_FINDING",
+      "text": "Kunkel was transported to AMH, where he was intubated and unconscious for about three days.",
+      "paragraph_ref": "26",
+      "speaker": "Court finding"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "16 years",
+        "sex": "male",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Unconscious after being ejected from a vehicle in a rollover accident",
+      "history_of_present_illness": "Patient was involved in a serious automobile accident, ejected from the vehicle, and sustained numerous catastrophic injuries.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "neurological": "Patient intubated and unconscious",
+          "eyes": "Contact lenses not initially identified"
+        }
+      },
+      "initial_working_problem": "Severe trauma with potential ocular involvement",
+      "known_constraints": null,
+      "initial_differential": [
+        "traumatic brain injury",
+        "ocular injury"
+      ],
+      "critical_findings": [
+        "Contact lenses remained in eyes for two days"
+      ],
+      "urgency_level": "CRITICAL",
+      "evidence_ids": [
+        "E001",
+        "E010"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSULT_NOTE",
+        "name": "Ophthalmology Consult",
+        "description": "Consultation to assess potential ocular injuries",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not performed during initial hospital stay",
+          "detailed_findings": null,
+          "clinical_significance": "Missed opportunity to identify and treat corneal issues",
+          "decision_impact": "Could have led to earlier intervention and prevention of complications",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "LAB",
+        "name": "Topical Antibiotic Administration",
+        "description": "Application of antibiotic eyedrops for corneal protection",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not administered",
+          "detailed_findings": null,
+          "clinical_significance": "Failure to prevent bacterial infection",
+          "decision_impact": "Contributed to development of corneal ulcers",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": [
+          "E007",
+          "E009"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Emergency Presentation",
+        "description": "Patient presents to AMH after a serious accident",
+        "duration": "3 days",
+        "key_events": [
+          {
+            "event": "Patient intubated and unconscious",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E010"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Initial Hospital Stay",
+        "description": "Patient remains at AMH with contact lenses in place",
+        "duration": "2 days",
+        "key_events": [
+          {
+            "event": "Contact lenses not removed",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E002",
+              "E006"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient admitted to AMH with contact lenses in place",
+        "prompt": "What should be done regarding the patient's contact lenses?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Remove contact lenses immediately and consult ophthalmology",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard care to prevent corneal damage and infection"
+          },
+          {
+            "option_id": "B",
+            "description": "Leave contact lenses in place and monitor",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Negligent as it increases risk of infection"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Contact lenses were left in place for two days",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E002",
+            "E006"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Immediate removal and ophthalmology consult",
+          "standard_of_care_basis": "Expert evidence on standard care for contact lens wearers",
+          "evidence_ids": [
+            "E004",
+            "E005"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to remove contact lenses led to corneal ulcers",
+          "what_should_have_happened": "Immediate removal and treatment with antibiotics",
+          "legal_standard_applied": "Standard of care for trauma patients with contact lenses",
+          "evidence_ids": [
+            "E004",
+            "E005",
+            "E007"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient developed bilateral corneal ulcers and permanent scarring",
+        "severity": "PERMANENT_SEVERE_DISABILITY",
+        "long_term_effects": "Permanent vision impairment",
+        "evidence_ids": [
+          "E005",
+          "E064"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "None",
+        "key_findings": [
+          "Negligence found but not causation",
+          "Jury did not find negligence to be the cause of eye injuries"
+        ],
+        "evidence_ids": [
+          "E003",
+          "E124"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": false,
+        "point_of_failure": "Failure to remove contact lenses and provide timely ophthalmology consult",
+        "counterfactual": "Timely removal and treatment could have prevented corneal damage",
+        "evidence_ids": [
+          "E004",
+          "E005",
+          "E007"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Patient admitted to AMH after accident",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [
+      {
+        "diagnosis": "Bilateral corneal ulcers",
+        "when_made": "After transfer to CHOP",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E005",
+          "E064"
+        ]
+      }
+    ],
+    "treatments": [],
+    "complications": [
+      {
+        "complication": "Permanent corneal scarring",
+        "when_occurred": "After delayed treatment",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E005",
+          "E064"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to remove contact lenses and provide timely treatment",
+        "against": "AMH and attending physicians",
+        "found_proven": false,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Negligence found but not causation",
+        "legal_significance": "Jury did not find negligence to be the cause of injuries",
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.03571428571428571,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 09:37:04.255216",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

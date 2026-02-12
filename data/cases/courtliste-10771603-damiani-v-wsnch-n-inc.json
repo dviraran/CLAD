@@ -1,0 +1,340 @@
+{
+  "case_id": "courtliste-10771603-damiani-v-wsnch-n-inc",
+  "source": "courtlistener",
+  "source_url": "local://courtliste-10771603-damiani-v-wsnch-n-inc.html",
+  "jurisdiction": "US",
+  "extraction_metadata": {
+    "version": "batch_api_v1",
+    "model": "gpt-4o",
+    "extracted_at": "2026-01-21T17:56:57.959510",
+    "simulation_extracted_at": "2026-01-21T18:25:07.003798",
+    "simulation_model": "gpt-4o"
+  },
+  "case_metadata": {
+    "case_name": "Damiani v. WSNCH N., Inc.",
+    "citation": "2025 NY Slip Op 07278",
+    "court": "Appellate Division, Second Department",
+    "date": "December 24, 2025"
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "In February 2021, Robert Damiani (hereinafter the decedent) was brought to the emergency department of St. Joseph Hospital (hereinafter the hospital) with complaints of dehydration and tachycardia after having tested positive for COVID-19.",
+      "paragraph_ref": "13",
+      "paragraph_starts_with": "In an action, inter alia, to",
+      "summary": "Decedent admitted to hospital with dehydration and tachycardia after COVID-19 positive test.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "Three days after his intubation, a nurse noted a sacral pressure ulcer, which was measured and treated with topical medication.",
+      "paragraph_ref": "13",
+      "paragraph_starts_with": "In an action, inter alia, to",
+      "summary": "Pressure ulcer noted and treated three days post-intubation.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "The note stated that the decedent was to be turned and repositioned every two hours, and a later note indicated that the 'Hyperbaric Wound Care Center' should be notified and a wound care evaluation performed.",
+      "paragraph_ref": "13",
+      "paragraph_starts_with": "In an action, inter alia, to",
+      "summary": "Decedent to be repositioned every two hours; wound care evaluation recommended.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "LEGAL_FINDING",
+      "verbatim_quote": "The defendants failed to conclusively demonstrate that, at a minimum, once the pressure ulcer developed, the alleged negligent acts and omissions relating to the treatment of that condition occurred in the course of providing treatment for COVID-19 or care to an individual with a confirmed case of COVID-19 'as it relates to COVID-19'.",
+      "paragraph_ref": "13",
+      "paragraph_starts_with": "In an action, inter alia, to",
+      "summary": "Defendants did not prove pressure ulcer care was related to COVID-19 treatment.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "LEGAL_FINDING",
+      "verbatim_quote": "The defendants' evidentiary submissions 'failed to establish that there is no significant dispute as to whether the [decedent's] pressure ulcer[ ] arose from the use of a ventilator,' such that the defendants failed to demonstrate their entitlement to dismissal of the complaint.",
+      "paragraph_ref": "13",
+      "paragraph_starts_with": "In an action, inter alia, to",
+      "summary": "Defendants failed to show pressure ulcer was ventilator-related.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "COURT_REASONING",
+      "verbatim_quote": "The defendants' position that since the decedent was being treated for COVID-19, all the care that he received in the hospital, including for a pressure ulcer, was related to COVID-19 would not give any effect to the amendment.",
+      "paragraph_ref": "13",
+      "paragraph_starts_with": "In an action, inter alia, to",
+      "summary": "Court rejects defendants' claim that all care was COVID-19 related.",
+      "speaker": "Court reasoning"
+    }
+  ],
+  "verdict_detected": {
+    "outcome": "NO_LIABILITY",
+    "key_phrase": "Accordingly, we affirm the order.",
+    "paragraph_ref": "13"
+  },
+  "extraction_notes": {
+    "total_paragraphs_analyzed": 27,
+    "key_sections_found": [
+      "Facts",
+      "Legal Analysis",
+      "Conclusion"
+    ],
+    "gaps_identified": [
+      "No specific lab values mentioned",
+      "No detailed expert testimony included"
+    ]
+  },
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "Not documented in judgment",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Dehydration and tachycardia after testing positive for COVID-19",
+      "history_of_present_illness": "Patient presented with dehydration and tachycardia following a positive COVID-19 test.",
+      "past_medical_history": [
+        "COVID-19"
+      ],
+      "medications": "Not documented in judgment",
+      "allergies": "Not documented in judgment",
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Tachycardic per judgment, exact rate not stated"
+        },
+        "focused_exam": {
+          "general": "Dehydrated appearance"
+        }
+      },
+      "initial_working_problem": "Dehydration and tachycardia in the context of COVID-19",
+      "initial_differential": [
+        "COVID-19 related complications"
+      ],
+      "critical_findings": [
+        "Dehydration",
+        "Tachycardia"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "NURSING_NOTES",
+        "name": "Pressure Ulcer Care",
+        "description": "Nursing notes on pressure ulcer care and repositioning",
+        "available_phase": "postop",
+        "reveal": {
+          "result_summary": "Pressure ulcer noted and treated with topical medication; repositioning every two hours recommended.",
+          "clinical_significance": "Indicates development of pressure ulcer and care plan",
+          "decision_impact": "Should prompt wound care evaluation"
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E002",
+          "E003"
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "postop",
+        "clinical_context": "Patient intubated and developing pressure ulcer",
+        "prompt": "What should be done to manage the pressure ulcer?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Initiate wound care evaluation and reposition every two hours",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard care for pressure ulcer management"
+          },
+          {
+            "option_id": "B",
+            "description": "Continue current care without additional wound care evaluation",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Assumed all care was related to COVID-19"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant continued current care without additional wound care evaluation",
+          "reasoning_stated": "Defendant assumed all care was related to COVID-19",
+          "evidence_ids": [
+            "E006"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Wound care evaluation should have been initiated",
+          "standard_of_care_basis": "Court found failure to address pressure ulcer appropriately",
+          "evidence_ids": [
+            "E004",
+            "E005"
+          ]
+        },
+        "explanation": {
+          "why_defendant_wrong": "Defendants failed to demonstrate pressure ulcer care was related to COVID-19 treatment",
+          "what_should_have_happened": "Wound care evaluation and repositioning should have been prioritized",
+          "legal_standard_applied": "Court rejected the claim that all care was COVID-19 related",
+          "evidence_ids": [
+            "E004",
+            "E005",
+            "E006"
+          ]
+        },
+        "is_malpractice_point": true
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Emergency Presentation",
+        "description": "Patient presents to ED with dehydration and tachycardia",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Patient admitted with dehydration and tachycardia",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "postop",
+        "name": "Post-Intubation Care",
+        "description": "Care following intubation, including pressure ulcer management",
+        "duration": "Three days post-intubation",
+        "key_events": [
+          {
+            "event": "Pressure ulcer noted and treated",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Development of sacral pressure ulcer requiring wound care",
+        "severity": "MODERATE",
+        "long_term_effects": "Not documented in judgment",
+        "evidence_ids": [
+          "E002",
+          "E003"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Defendants failed to demonstrate pressure ulcer care was related to COVID-19 treatment",
+          "Failure to initiate appropriate wound care evaluation"
+        ],
+        "evidence_ids": [
+          "E004",
+          "E005"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to initiate wound care evaluation",
+        "counterfactual": "Appropriate wound care could have mitigated ulcer progression",
+        "evidence_ids": [
+          "E004",
+          "E005",
+          "E006"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "February 2021",
+        "event": "Patient admitted to hospital with dehydration and tachycardia",
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [
+      {
+        "diagnosis": "Pressure ulcer",
+        "when_made": "Three days post-intubation",
+        "correct": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Topical medication for pressure ulcer",
+        "date": "Three days post-intubation",
+        "outcome": "Pressure ulcer treated",
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Pressure ulcer",
+        "when_occurred": "Three days post-intubation",
+        "severity": "Moderate",
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to initiate wound care evaluation",
+        "against": "Defendant hospital",
+        "found_proven": true,
+        "evidence_ids": [
+          "E004",
+          "E005"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendants failed to demonstrate pressure ulcer care was related to COVID-19 treatment",
+        "legal_significance": "Liability found for inadequate pressure ulcer management",
+        "evidence_ids": [
+          "E004",
+          "E005"
+        ]
+      }
+    ]
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "MONITORING_FOLLOWUP"
+    ],
+    "diagnosis_subtypes": [
+      "FAILURE_TO_MONITOR"
+    ]
+  }
+}

@@ -1,0 +1,431 @@
+{
+  "case_id": "courtlistener-10581569",
+  "source": "courtlistener",
+  "source_url": "local://courtlistener-10581569.html",
+  "jurisdiction": "US",
+  "extraction_metadata": {
+    "version": "batch_api_v1",
+    "model": "gpt-4o",
+    "extracted_at": "2026-01-21T17:56:57.904259",
+    "simulation_extracted_at": "2026-01-21T18:29:59.574413",
+    "simulation_model": "gpt-4o"
+  },
+  "case_metadata": {
+    "case_name": "Laralee Herron v. Professional Laser Center, LLC",
+    "citation": "No. 55,529-CA",
+    "court": "Court of Appeal, Second Circuit, State of Louisiana",
+    "date": "April 10, 2024"
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "Plaintiff, Laralee Herron, decided to have a tattoo removed from her left lateral torso.",
+      "paragraph_ref": "15",
+      "paragraph_starts_with": "[15] Plaintiff, Laralee Herron,",
+      "summary": "Plaintiff sought tattoo removal from her left lateral torso.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "Plaintiff met with Judy Wagoner, the sole owner of PLC, and Dr. Victor Zuckerman, the medical director of PLC.",
+      "paragraph_ref": "19",
+      "paragraph_starts_with": "[19] Plaintiff met with Judy",
+      "summary": "Plaintiff consulted with Judy Wagoner and Dr. Victor Zuckerman at PLC.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "Wagoner is non-physician technician, who completed two training sessions to learn the technique for Dermapen TattOff treatments.",
+      "paragraph_ref": "21",
+      "paragraph_starts_with": "[21] Wagoner is non-physician",
+      "summary": "Wagoner was a non-physician technician trained in Dermapen TattOff.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "Wagoner administered plaintiff’s first Dermapen TattOff treatment on December 6, 2017.",
+      "paragraph_ref": "36",
+      "paragraph_starts_with": "[36] Wagoner administered",
+      "summary": "First Dermapen TattOff treatment administered on December 6, 2017.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "On December 28, 2018, Wagoner performed a second Dermapen treatment on plaintiff.",
+      "paragraph_ref": "54",
+      "paragraph_starts_with": "[54] On December 28, 2018,",
+      "summary": "Second Dermapen treatment performed on December 28, 2018.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "LEGAL_FINDING",
+      "verbatim_quote": "Following bench trial, the trial court found defendants breached the applicable standard of care.",
+      "paragraph_ref": "111",
+      "paragraph_starts_with": "[111] applicable standard of",
+      "summary": "Court found defendants breached the standard of care.",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "LEGAL_FINDING",
+      "verbatim_quote": "The judgment of the trial court is affirmed.",
+      "paragraph_ref": "436",
+      "paragraph_starts_with": "[436] For the foregoing reasons,",
+      "summary": "Trial court's judgment affirmed.",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "EXPERT_TESTIMONY",
+      "verbatim_quote": "Dr. Hopkins further testified, 'The standard of care for treating...'",
+      "paragraph_ref": "329",
+      "paragraph_starts_with": "[329] Dr. Hopkins further",
+      "summary": "Dr. Hopkins testified standard of care was not met.",
+      "speaker": "Dr. Hopkins"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "WITNESS_STATEMENT",
+      "verbatim_quote": "Plaintiff testified she believed PLC offered laser tattoo removal because 'they’re called the Professional Laser Center.'",
+      "paragraph_ref": "27",
+      "paragraph_starts_with": "[27] Plaintiff testified she",
+      "summary": "Plaintiff believed PLC offered laser tattoo removal.",
+      "speaker": "Plaintiff"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "COURT_REASONING",
+      "verbatim_quote": "The overall assessment of what was offered in this case causes this Court to find that Defendants breached the applicable duty in, at least, three ways...",
+      "paragraph_ref": "112",
+      "paragraph_starts_with": "[112] [T]he overall assessment",
+      "summary": "Court found multiple breaches of duty by defendants.",
+      "speaker": "Judge's analysis"
+    }
+  ],
+  "verdict_detected": {
+    "outcome": "LIABILITY_FOUND",
+    "key_phrase": "The judgment of the trial court is affirmed.",
+    "paragraph_ref": "436"
+  },
+  "extraction_notes": {
+    "total_paragraphs_analyzed": 440,
+    "key_sections_found": [
+      "Background",
+      "Key Findings and Analysis",
+      "Conclusion and Verdict"
+    ],
+    "gaps_identified": [
+      "No specific lab values mentioned",
+      "Limited details on patient consent process"
+    ]
+  },
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Desire to remove tattoo from left lateral torso",
+      "history_of_present_illness": "Patient sought tattoo removal and consulted with PLC.",
+      "past_medical_history": "Not documented in judgment",
+      "medications": "Not documented in judgment",
+      "allergies": "Not documented in judgment",
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment"
+        },
+        "focused_exam": {
+          "skin": "Tattoo present on left lateral torso"
+        }
+      },
+      "initial_working_problem": "Tattoo removal",
+      "initial_differential": [
+        "Tattoo removal"
+      ],
+      "critical_findings": [
+        "Tattoo on left lateral torso"
+      ],
+      "urgency_level": "ELECTIVE",
+      "evidence_ids": [
+        "E001",
+        "E002"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSULT_NOTE",
+        "name": "Initial Consultation",
+        "description": "Consultation with Judy Wagoner and Dr. Victor Zuckerman",
+        "available_phase": "presentation",
+        "reveal": {
+          "result_summary": "Consultation for tattoo removal",
+          "clinical_significance": "Determines treatment plan",
+          "decision_impact": "Leads to decision on treatment modality"
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "presentation",
+        "clinical_context": "Patient seeking tattoo removal",
+        "prompt": "What treatment modality should be used for tattoo removal?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Use laser tattoo removal",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Laser is a standard method for tattoo removal"
+          },
+          {
+            "option_id": "B",
+            "description": "Use Dermapen TattOff treatment",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Non-standard method with insufficient training"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant used Dermapen TattOff treatment",
+          "reasoning_stated": "Believed to be appropriate by technician",
+          "evidence_ids": [
+            "E003",
+            "E004"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Laser tattoo removal should have been used",
+          "standard_of_care_basis": "Expert testimony indicated laser is standard",
+          "evidence_ids": [
+            "E008"
+          ]
+        },
+        "explanation": {
+          "why_defendant_wrong": "Based on expert testimony and court findings",
+          "what_should_have_happened": "Laser removal should have been offered",
+          "legal_standard_applied": "Bolam test",
+          "evidence_ids": [
+            "E006",
+            "E008"
+          ]
+        },
+        "is_malpractice_point": true
+      },
+      {
+        "decision_id": "D002",
+        "phase_id": "procedure",
+        "clinical_context": "Administering tattoo removal treatment",
+        "prompt": "Who should perform the tattoo removal procedure?",
+        "action_type": "SELECT_TECHNIQUE",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Procedure performed by a qualified physician",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Ensures adherence to medical standards"
+          },
+          {
+            "option_id": "B",
+            "description": "Procedure performed by non-physician technician",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Technician lacks comprehensive medical training"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Procedure performed by non-physician technician",
+          "reasoning_stated": "Technician was trained in the procedure",
+          "evidence_ids": [
+            "E003",
+            "E004"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Procedure should have been performed by a physician",
+          "standard_of_care_basis": "Court found breach in standard of care",
+          "evidence_ids": [
+            "E006",
+            "E010"
+          ]
+        },
+        "explanation": {
+          "why_defendant_wrong": "Non-physician performed procedure without adequate supervision",
+          "what_should_have_happened": "Qualified physician should have performed or supervised",
+          "legal_standard_applied": "Bolam test",
+          "evidence_ids": [
+            "E006",
+            "E010"
+          ]
+        },
+        "is_malpractice_point": true
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Consultation",
+        "description": "Patient consults for tattoo removal",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Consultation with Judy Wagoner and Dr. Victor Zuckerman",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "procedure",
+        "name": "Tattoo Removal Procedure",
+        "description": "Dermapen TattOff treatment administered",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "First Dermapen TattOff treatment",
+            "timestamp": "December 6, 2017",
+            "evidence_ids": [
+              "E004"
+            ]
+          },
+          {
+            "event": "Second Dermapen TattOff treatment",
+            "timestamp": "December 28, 2018",
+            "evidence_ids": [
+              "E005"
+            ]
+          }
+        ]
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Not documented in judgment",
+        "severity": "Not documented in judgment",
+        "long_term_effects": "Not documented in judgment",
+        "evidence_ids": []
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Breach of duty in using non-standard treatment",
+          "Breach of duty in allowing non-physician to perform procedure"
+        ],
+        "evidence_ids": [
+          "E006",
+          "E007",
+          "E010"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": "Not documented in judgment",
+        "point_of_failure": "Use of non-standard treatment and non-physician technician",
+        "counterfactual": "Standard laser treatment by qualified physician",
+        "evidence_ids": [
+          "E006",
+          "E010"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "December 6, 2017",
+        "event": "First Dermapen TattOff treatment",
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "timestamp": "December 28, 2018",
+        "event": "Second Dermapen TattOff treatment",
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [],
+    "treatments": [
+      {
+        "treatment": "Dermapen TattOff treatment",
+        "date": "December 6, 2017",
+        "outcome": "Not documented in judgment",
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "treatment": "Dermapen TattOff treatment",
+        "date": "December 28, 2018",
+        "outcome": "Not documented in judgment",
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "complications": [],
+    "allegations": [
+      {
+        "allegation": "Use of non-standard treatment",
+        "against": "Professional Laser Center, LLC",
+        "found_proven": true,
+        "evidence_ids": [
+          "E006",
+          "E010"
+        ]
+      },
+      {
+        "allegation": "Procedure performed by non-physician",
+        "against": "Professional Laser Center, LLC",
+        "found_proven": true,
+        "evidence_ids": [
+          "E006",
+          "E010"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendants breached the standard of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E006",
+          "E010"
+        ]
+      }
+    ]
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "TREATMENT_PROCEDURE_ERROR"
+    ],
+    "diagnosis_subtypes": []
+  }
+}

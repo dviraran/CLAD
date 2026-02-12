@@ -1,0 +1,445 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-8243575",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2022-08-29",
+  "url": "https://example.com/courtlistener-8243575",
+  "case_name": "Nguyen v. Secretary of Health and Human Services",
+  "neutral_citation": null,
+  "clinical_domain": "PAEDIATRICS",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Nguyen v. Secretary of Health and Human Services. Medical malpractice case involving paediatrics.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Petitioner alleges that Ms. Mai suffered Toxic Epidermal Necrolysis (\u201cTEN\u201d), serum sickness-like illness, toxic shock syndrome, Stevens-Johnson Syndrome (\u201cSJS\u201d), allergic exfoliative dermatitis, and subsequently died as a result of a tetanus-diphtheria-acellular pertussis (\u201cTdap\u201d) vaccine she received on August 11, 2015.",
+      "paragraph_ref": "6",
+      "speaker": "Petitioner"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "LEGAL_FINDING",
+      "text": "Petitioner has failed to provide preponderant evidence that Ms. Mai\u2019s Tdap vaccine caused her to suffer SJS/TEN, or any other severe cutaneous adverse reaction (\u201cSCAR\u201d), or caused her death.",
+      "paragraph_ref": "8",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Petitioner\u2019s expert, Dr. M. Eric Gershwin, opines that Ms. Mai\u2019s appropriate diagnosis was SJS/TEN, while Respondent\u2019s expert, Dr. Markus Boos, opines that the correct diagnosis was drug reaction with eosinophilia and systemic symptoms (\u201cDRESS\u201d) syndrome.",
+      "paragraph_ref": "10",
+      "speaker": "Expert witnesses"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "Ms. Mai filled her prescription for allopurinol on June 18, 2015. Assuming that she began taking the medication that day, and that her rash began on August 15, 2015, onset was 58 days, or eight weeks and two days.",
+      "paragraph_ref": "30",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Gershwin explained that SJS/TEN \u201cis a specific immune response to a foreign agent, which leads to a severe delayed-type hypersensitivity reaction.\u201d",
+      "paragraph_ref": "149",
+      "speaker": "Dr. Gershwin"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "LEGAL_FINDING",
+      "text": "Petitioner has failed to prove by preponderant evidence that the Tdap vaccine caused Ms. Mai\u2019s illness. Thus, Petitioner has failed to prove Althen Prong Two.",
+      "paragraph_ref": "313",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "COURT_REASONING",
+      "text": "The undersigned finds that onset of Ms. Mai\u2019s hypersensitivity reaction occurred approximately August 15, 2015, which is a medically appropriate time frame given Petitioner\u2019s proposed theory of delayed hypersensitivity.",
+      "paragraph_ref": "47",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "LEGAL_FINDING",
+      "text": "Therefore, the petition shall be dismissed.",
+      "paragraph_ref": "321",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "75 years",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Rash and fever",
+      "history_of_present_illness": "Ms. Mai presented with a rash that developed approximately 9-10 days after receiving a Tdap vaccination. The rash started on her trunk and extended to her arms, legs, and face. She also reported fever and fatigue.",
+      "past_medical_history": [
+        "Type II diabetes",
+        "Hypertension",
+        "Elevated cholesterol",
+        "Dementia",
+        "Positional dizziness"
+      ],
+      "medications": [
+        "Metformin",
+        "Simvastatin",
+        "Lisinopril",
+        "Aspirin",
+        "Aricept",
+        "Januvia"
+      ],
+      "allergies": [
+        "Not documented in judgment"
+      ],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "skin": "Confluent blanching salmon colored rash over trunk, upper and lower extremities, sparing palms and soles. No mucosal involvement."
+        }
+      },
+      "initial_working_problem": "Rash with systemic symptoms",
+      "known_constraints": null,
+      "initial_differential": [
+        "Drug reaction",
+        "Serum sickness type reaction",
+        "DRESS syndrome"
+      ],
+      "critical_findings": [
+        "Rash with systemic symptoms",
+        "Elevated liver function tests",
+        "Acute kidney injury"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E053",
+        "E054",
+        "E055"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "LAB",
+        "name": "Complete Blood Count",
+        "description": "Includes white blood cell count",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Elevated white blood cell count (21,600)",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates possible infection or inflammatory response",
+          "decision_impact": "Supports further investigation into cause of rash and fever",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E126"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "CONSULT_NOTE",
+        "name": "Dermatology Consultation",
+        "description": "Consultation with dermatologist Dr. Luu",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Diagnosed with adverse drug reaction - TEN, possibly secondary to vaccination",
+          "detailed_findings": null,
+          "clinical_significance": "Suggests severe cutaneous adverse reaction",
+          "decision_impact": "Indicates need for urgent management and possible hospitalization",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E126",
+          "E127"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with rash and fever post-vaccination",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Patient receives Tdap vaccination",
+            "timestamp": "August 11, 2015",
+            "evidence_ids": [
+              "E125"
+            ]
+          },
+          {
+            "event": "Onset of rash and fever",
+            "timestamp": "August 15, 2015",
+            "evidence_ids": [
+              "E170"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Hospital Admission and Workup",
+        "description": "Patient admitted to hospital for further evaluation",
+        "duration": "September 3, 2015 to September 7, 2015",
+        "key_events": [
+          {
+            "event": "Admission to Regional Medical Center of San Jose",
+            "timestamp": "September 3, 2015",
+            "evidence_ids": [
+              "E126"
+            ]
+          },
+          {
+            "event": "Discharge with diagnosis of severe dermatitis",
+            "timestamp": "September 7, 2015",
+            "evidence_ids": [
+              "E126"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient with rash and fever post-vaccination",
+        "prompt": "What is the appropriate diagnosis for Ms. Mai's condition?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Diagnose as Stevens-Johnson Syndrome/Toxic Epidermal Necrolysis (SJS/TEN)",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Based on the presentation and expert opinion, SJS/TEN is more likely"
+          },
+          {
+            "option_id": "B",
+            "description": "Diagnose as Drug Reaction with Eosinophilia and Systemic Symptoms (DRESS)",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Defendant's expert suggested DRESS based on clinical features"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant diagnosed as DRESS",
+          "reasoning_stated": "Based on clinical presentation and expert opinion",
+          "evidence_ids": [
+            "E177",
+            "E178"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Diagnosis should have been SJS/TEN",
+          "standard_of_care_basis": "Expert evidence and clinical presentation",
+          "evidence_ids": [
+            "E003",
+            "E127"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Based on evidence E003 and E127",
+          "what_should_have_happened": "Diagnosis should have been SJS/TEN",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E003",
+            "E127"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient developed exfoliative dermatitis and complications including urinary tract infection and liver dysfunction. Ultimately died of cardiac arrest, circulatory shock, disseminated intravascular coagulation, and E. coli urinary tract infection.",
+        "severity": "FATAL",
+        "long_term_effects": "Not applicable",
+        "evidence_ids": [
+          "E127"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "None",
+        "key_findings": [
+          "Petitioner failed to provide preponderant evidence that Tdap vaccine caused Ms. Mai's illness"
+        ],
+        "evidence_ids": [
+          "E002",
+          "E008"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Failure to correctly diagnose SJS/TEN",
+        "counterfactual": "Correct diagnosis could have led to different management",
+        "evidence_ids": [
+          "E002",
+          "E008"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "August 11, 2015",
+        "event": "Patient receives Tdap vaccination",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E125"
+        ]
+      },
+      {
+        "timestamp": "August 15, 2015",
+        "event": "Onset of rash and fever",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E170"
+        ]
+      },
+      {
+        "timestamp": "September 3, 2015",
+        "event": "Admission to Regional Medical Center of San Jose",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E126"
+        ]
+      },
+      {
+        "timestamp": "September 7, 2015",
+        "event": "Discharge with diagnosis of severe dermatitis",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E126"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Complete Blood Count",
+        "date": "September 3, 2015",
+        "result": "Elevated white blood cell count (21,600)",
+        "interpretation": null,
+        "evidence_ids": [
+          "E126"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Severe dermatitis, most likely reaction to the vaccine",
+        "when_made": "September 7, 2015",
+        "made_by": null,
+        "correct": false,
+        "evidence_ids": [
+          "E126"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Hospital admission and supportive care",
+        "date": "September 3, 2015",
+        "provider": null,
+        "outcome": "Discharged with diagnosis of severe dermatitis",
+        "evidence_ids": [
+          "E126"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Exfoliative dermatitis, urinary tract infection, liver dysfunction",
+        "when_occurred": "December 19, 2015",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E127"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to correctly diagnose SJS/TEN",
+        "against": "Defendant",
+        "found_proven": false,
+        "evidence_ids": [
+          "E002",
+          "E008"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Petitioner failed to provide preponderant evidence that Tdap vaccine caused Ms. Mai's illness",
+        "legal_significance": "No liability found",
+        "evidence_ids": [
+          "E002",
+          "E008"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.024691358024691357,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 08:56:19.609647",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

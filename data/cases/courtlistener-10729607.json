@@ -1,0 +1,353 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10729607",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2025-11-03",
+  "url": "https://example.com/courtlistener-10729607",
+  "case_name": "Memorial Healthcare Group, Inc. v. Craig Vickers, as Administrator of the Estate of Geraldine Smith",
+  "neutral_citation": null,
+  "clinical_domain": "OTHER",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Memorial Healthcare Group, Inc. v. Craig Vickers, as Administrator of the Estate of Geraldine Smith. Medical malpractice case involving other.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Smith was traveling on a Georgia highway in Coffee County, and Burke was driving behind her. Smith slowed to turn right, and Burke failed to stop, hitting Smith\u2019s vehicle and causing severe injuries, including paraplegia.",
+      "paragraph_ref": "31",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Smith remained at Florida Memorial from April 8 to April 19, and Vickers alleged that hospital personnel negligently failed to turn or reposition Smith or keep her clean from soiling, which failures resulted in severe decubitus ulceration of the skin in the sacrum area of her lower back.",
+      "paragraph_ref": "45",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "WITNESS_STATEMENT",
+      "text": "Rachel Spivey (a registered nurse, family member of Smith\u2019s, and her healthcare power of attorney) visited her at Florida Memorial near the beginning and end of the April stay. Spivey oversaw Smith\u2019s care in person and via telephone conversations with hospital personnel.",
+      "paragraph_ref": "48",
+      "speaker": "Rachel Spivey"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "On April 19, Florida Memorial discharged Smith back to Brooks Rehabilitation, a hospital setting. As the wounds worsened, it became necessary for Smith to receive a colostomy, and she was transferred back to Florida Memorial on May 16, where she had surgery and remained until May 25.",
+      "paragraph_ref": "58",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "LEGAL_FINDING",
+      "text": "Accordingly, because the allegations of the complaint as admitted do not support a finding of default against Florida Memorial on the issue of personal jurisdiction \u2014 and absent default the record also does not support a finding of personal jurisdiction \u2014 we vacate the trial court order denying the motion to dismiss for personal jurisdiction and remand for entry of orders granting Florida Memorial\u2019s motion to open default and motion to dismiss.",
+      "paragraph_ref": "194",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Severe injuries from car accident, including paraplegia",
+      "history_of_present_illness": "Patient was involved in a car accident where another vehicle failed to stop and hit her car, causing severe injuries.",
+      "past_medical_history": [
+        "Paraplegia post-accident"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "skin": "No rashes or lesions noted upon initial assessment at Brooks Rehabilitation",
+          "neurological": "Paraplegia noted"
+        }
+      },
+      "initial_working_problem": "Risk of skin ulceration due to immobility",
+      "known_constraints": null,
+      "initial_differential": [
+        "Decubitus ulcers"
+      ],
+      "critical_findings": [
+        "Paraplegia",
+        "Risk for skin ulceration"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002",
+        "E003"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSULT_NOTE",
+        "name": "Initial Assessment at Brooks Rehabilitation",
+        "description": "Doctor's assessment upon arrival at Brooks Rehabilitation",
+        "available_phase": "presentation",
+        "reveal": {
+          "result_summary": "No rashes or lesions noted",
+          "detailed_findings": null,
+          "clinical_significance": "Initial skin condition documented",
+          "decision_impact": "Baseline for monitoring skin condition",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with severe injuries post-accident",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Initial assessment at Brooks Rehabilitation",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Hospital Stay at Florida Memorial",
+        "description": "Patient admitted for gastritis treatment and monitoring",
+        "duration": "April 8 to April 19",
+        "key_events": [
+          {
+            "event": "Development of severe decubitus ulceration",
+            "timestamp": "During hospital stay",
+            "evidence_ids": [
+              "E002",
+              "E003"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient at Florida Memorial with risk of skin ulceration",
+        "prompt": "What measures should be taken to prevent skin ulceration?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Implement regular turning and repositioning schedule",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard care to prevent pressure ulcers"
+          },
+          {
+            "option_id": "B",
+            "description": "No specific turning schedule implemented",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Negligence in care leading to ulceration"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant did not implement a turning schedule",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E002",
+            "E003"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Regular turning schedule should have been implemented",
+          "standard_of_care_basis": "Preventive care for immobile patients",
+          "evidence_ids": [
+            "E002",
+            "E003"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to prevent skin ulceration",
+          "what_should_have_happened": "Regular repositioning to prevent ulcers",
+          "legal_standard_applied": "Standard of care for immobile patients",
+          "evidence_ids": [
+            "E002",
+            "E003"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient developed severe decubitus ulcers leading to sepsis and death",
+        "severity": "FATAL",
+        "long_term_effects": "Not applicable",
+        "evidence_ids": [
+          "E002",
+          "E004"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Breach of duty in failing to prevent skin ulceration",
+          "Causation established - failure to prevent ulcers led to sepsis and death"
+        ],
+        "evidence_ids": [
+          "E002",
+          "E003",
+          "E004"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to implement preventive measures for skin ulceration",
+        "counterfactual": "Regular repositioning could have prevented ulceration",
+        "evidence_ids": [
+          "E002",
+          "E003"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "March 2022",
+        "event": "Car accident causing severe injuries",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "April 8 to April 19",
+        "event": "Stay at Florida Memorial",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [
+      {
+        "diagnosis": "Severe decubitus ulceration",
+        "when_made": "During hospital stay",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E002",
+          "E003"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Colostomy",
+        "date": "May 16",
+        "provider": null,
+        "outcome": "Not documented in judgment",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Sepsis",
+        "when_occurred": "Prior to death on June 22",
+        "severity": "Fatal",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to prevent skin ulceration",
+        "against": "Florida Memorial",
+        "found_proven": true,
+        "evidence_ids": [
+          "E002",
+          "E003"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Failure to prevent skin ulceration",
+        "evidence_ids": [
+          "E002",
+          "E003"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "TREATMENT_PROCEDURE_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.024875621890547265,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 09:07:26.789424",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

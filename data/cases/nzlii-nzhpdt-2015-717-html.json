@@ -1,0 +1,411 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "nzlii-nzhpdt-2015-717-html",
+  "source": "BAILII",
+  "jurisdiction": "UK",
+  "court": "Unknown",
+  "decision_date": "2015-08-19",
+  "url": "https://example.com/nzlii-nzhpdt-2015-717-html",
+  "case_name": "10.1  While  expert  evidence  may  guide  the  Committee,  the \nviews  of experts do not necessarily determine the ultimate outcome\n(B v Medical\nCouncil of New Zealand) [(noted at[2005] 3 NZLR 810)]although the Court of\nAppeal in F v Medical Practitioners Disciplinary Tribunal [[2005] 3 NZLR 774]\nstated that the evidence of accepted\npractice is \u201chighly\nrelevant.\u201d",
+  "neutral_citation": null,
+  "clinical_domain": "OBSTETRICS_GYNAECOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "10.1  While  expert  evidence  may  guide  the  Committee,  the \nviews  of experts do not necessarily determine the ultimate outcome\n(B v Medical\nCouncil of New Zealand) [(noted at[2005] 3 NZLR 810)]although the Court of\nAppeal in F v Medical Practitioners Disciplinary Tribunal [[2005] 3 NZLR 774]\nstated that the evidence of accepted\npractice is \u201chighly\nrelevant.\u201d. Medical malpractice case involving obstetrics gynaecology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "A Charge comprising 20 Particulars of misconduct has been brought against him by a Professional Conduct Committee (PCC) of the Medical Council of New Zealand (MCNZ).",
+      "paragraph_ref": "2",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Nineteen of the 20 Particulars of the Charge referred to various drugs and Dr Twentyman\u2019s inappropriate involvement with these; and the 20th Particular referred to retrospective making or alteration of notes concerning certain patients.",
+      "paragraph_ref": "3",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "LEGAL_FINDING",
+      "text": "The Tribunal finds that 15 of the 20 Particulars of the Charge are made out and cumulatively warrant disciplinary sanction and that many of them separately warrant such disciplinary sanction.",
+      "paragraph_ref": "5",
+      "speaker": "Tribunal finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "LEGAL_FINDING",
+      "text": "The registration of Dr Twentyman as a medical practitioner is suspended pursuant to section 100(1)(b) of the HPCA Act for a period of 9 months.",
+      "paragraph_ref": "339",
+      "speaker": "Tribunal order"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "LEGAL_FINDING",
+      "text": "Dr Twentyman is ordered in respect to Particular 20 to pay a fine of $7,000.00 pursuant to section 101(1)(e) of the HPCA Act.",
+      "paragraph_ref": "341",
+      "speaker": "Tribunal order"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "LEGAL_FINDING",
+      "text": "The Tribunal orders pursuant to section 101(1)(f) of the HPCA Act that Dr Twentyman pay the sum of $135,000.00 as a contribution to the costs of the PCC and the Tribunal, to be divided equally between them.",
+      "paragraph_ref": "342",
+      "speaker": "Tribunal order"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "COURT_REASONING",
+      "text": "The purpose of the disciplinary procedure is the protection of the public by the maintenance of professional standards.",
+      "paragraph_ref": "314",
+      "speaker": "Court reasoning"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "FACTUAL_FINDING",
+      "text": "The Charge was heard over four days in Auckland. The parties were represented by counsel.",
+      "paragraph_ref": "4",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "FACTUAL_FINDING",
+      "text": "Particular 20 relates to the making or alteration of notes of entries retrospectively in respect of six specific patients.",
+      "paragraph_ref": "50",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "LEGAL_FINDING",
+      "text": "The misconduct amounted, it was submitted, to such serious negligence as to portray indifference and was an abuse of the privileges which accompany registration as a medical practitioner.",
+      "paragraph_ref": "43",
+      "speaker": "PCC submission"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "unknown",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Not documented in judgment",
+      "history_of_present_illness": "Not documented in judgment",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": null,
+        "general_appearance": null,
+        "focused_exam": null
+      },
+      "initial_working_problem": "Not documented in judgment",
+      "known_constraints": null,
+      "initial_differential": [],
+      "critical_findings": [],
+      "urgency_level": "Not documented in judgment",
+      "evidence_ids": []
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "LAB",
+        "name": "Testosterone Level",
+        "description": "Serum testosterone level to assess for hypogonadism",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not tested",
+          "detailed_findings": null,
+          "clinical_significance": "Baseline testosterone level not measured",
+          "decision_impact": "Lack of testosterone measurement impacts diagnosis and treatment decisions",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": [
+          "E101",
+          "E102"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "LAB",
+        "name": "Full Blood Count",
+        "description": "To check for polycythaemia",
+        "available_phase": "followup",
+        "reveal": {
+          "result_summary": "Not documented in judgment",
+          "detailed_findings": null,
+          "clinical_significance": "Monitoring for polycythaemia is important in testosterone therapy",
+          "decision_impact": "Lack of monitoring could lead to undetected complications",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": [
+          "E101",
+          "E102"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient P presents with symptoms suggestive of testosterone deficiency",
+        "duration": "1 day",
+        "key_events": [
+          {
+            "event": "Patient P presents with erectile dysfunction and low libido",
+            "timestamp": "10 June 2010",
+            "evidence_ids": [
+              "E101"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Initial Workup",
+        "description": "Assessment and decision-making regarding testosterone therapy",
+        "duration": "1 week",
+        "key_events": [
+          {
+            "event": "Blood tests ordered but testosterone not measured",
+            "timestamp": "12 June 2010",
+            "evidence_ids": [
+              "E101"
+            ]
+          },
+          {
+            "event": "Testosterone prescribed without baseline measurement",
+            "timestamp": "18 June 2010",
+            "evidence_ids": [
+              "E101"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient P presented with symptoms suggestive of testosterone deficiency",
+        "prompt": "What initial investigations should be conducted before prescribing testosterone?",
+        "action_type": "ORDER_TEST",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Order serum testosterone level and consult endocrinologist",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard practice to confirm hypogonadism before treatment"
+          },
+          {
+            "option_id": "B",
+            "description": "Prescribe testosterone without baseline testing",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Inadequate assessment of clinical basis for testosterone therapy"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Prescribed testosterone without baseline testing",
+          "reasoning_stated": "Defendant did not conduct baseline testosterone measurement",
+          "evidence_ids": [
+            "E101",
+            "E102"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Baseline testosterone level should have been measured",
+          "standard_of_care_basis": "Expert evidence and guidelines require confirmation of hypogonadism",
+          "evidence_ids": [
+            "E101",
+            "E102"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to confirm hypogonadism before treatment",
+          "what_should_have_happened": "Baseline testosterone level should have been measured and endocrinologist consulted",
+          "legal_standard_applied": "Bolam test",
+          "evidence_ids": [
+            "E101",
+            "E102"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient P received testosterone therapy without confirmed hypogonadism",
+        "severity": "MODERATE",
+        "long_term_effects": "Potential risk of adverse effects due to inappropriate testosterone therapy",
+        "evidence_ids": [
+          "E101",
+          "E102"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not specified in judgment",
+        "key_findings": [
+          "Failure to confirm hypogonadism before prescribing testosterone",
+          "Inadequate follow-up and monitoring of testosterone therapy"
+        ],
+        "evidence_ids": [
+          "E101",
+          "E102"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to conduct baseline testosterone measurement",
+        "counterfactual": "Baseline measurement would have informed appropriate treatment",
+        "evidence_ids": [
+          "E101",
+          "E102"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "10 June 2010",
+        "event": "Patient P presents with erectile dysfunction and low libido",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E101"
+        ]
+      },
+      {
+        "timestamp": "12 June 2010",
+        "event": "Blood tests ordered but testosterone not measured",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E101"
+        ]
+      },
+      {
+        "timestamp": "18 June 2010",
+        "event": "Testosterone prescribed without baseline measurement",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E101"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Blood tests",
+        "date": "12 June 2010",
+        "result": "Testosterone not measured",
+        "interpretation": null,
+        "evidence_ids": [
+          "E101"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Testosterone deficiency",
+        "when_made": "Not confirmed",
+        "made_by": null,
+        "correct": false,
+        "evidence_ids": [
+          "E101"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Testosterone therapy",
+        "date": "18 June 2010",
+        "provider": null,
+        "outcome": "Inappropriate due to lack of confirmed hypogonadism",
+        "evidence_ids": [
+          "E101"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Potential adverse effects",
+        "when_occurred": "During therapy",
+        "severity": "Moderate",
+        "evidence_ids": [
+          "E101"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to confirm hypogonadism before prescribing testosterone",
+        "against": "Dr Twentyman",
+        "found_proven": true,
+        "evidence_ids": [
+          "E101"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E101"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.007331378299120235,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-21 18:19:33.251822",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

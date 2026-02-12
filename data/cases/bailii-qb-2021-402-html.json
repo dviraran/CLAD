@@ -1,0 +1,362 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "bailii-qb-2021-402-html",
+  "source": "BAILII",
+  "jurisdiction": "UK",
+  "court": "Unknown",
+  "decision_date": "2021-02-24",
+  "url": "https://example.com/bailii-qb-2021-402-html",
+  "case_name": "EEE v Liverpool Women's NHS Foundation Trust [2021] EWHC 402 (QB) (24 February 2021)",
+  "neutral_citation": "[2021] EWHC 402",
+  "clinical_domain": "PAEDIATRICS",
+  "outcome_severity": "TEMPORARY_HARM",
+  "summary": {
+    "brief": "Medical malpractice case involving paediatrics.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "The Claimant is 10 years old. She was born at the Liverpool Women's Hospital in 2010.",
+      "paragraph_ref": "14",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "injuries, including neurological damage, were caused or materially contributed to by negligent breaches of duty in the management of her mum's care",
+      "paragraph_ref": "14",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "LEGAL_FINDING",
+      "text": "There was an admission of liability on behalf of the hospital in 2015.",
+      "paragraph_ref": "14",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "The Claimant lacks capacity and is likely to remain a protected beneficiary into and throughout her adulthood.",
+      "paragraph_ref": "15",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "She has very severe cognitive disabilities. She has a full life expectancy to age 91.",
+      "paragraph_ref": "16",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "LEGAL_FINDING",
+      "text": "I am happy to give my approval to the settlement and an order in the form proposed can and will be made.",
+      "paragraph_ref": "17",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "WITNESS_STATEMENT",
+      "text": "I have seen their parental care provision described as being of an 'exceptionally high standard'.",
+      "paragraph_ref": "19",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "WITNESS_STATEMENT",
+      "text": "Ms Bowron QC described the Claimant \u0096 in a phrase that will stay with me long after this hearing \u0096 as 'a gutsy little girl'",
+      "paragraph_ref": "20",
+      "speaker": "Defendant's counsel"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "LEGAL_FINDING",
+      "text": "I approve the settlement.",
+      "paragraph_ref": "21",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Newborn",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Birth-related complications",
+      "history_of_present_illness": "Injuries, including neurological damage, were caused during the course of labor and birth.",
+      "past_medical_history": [
+        "Not documented in judgment"
+      ],
+      "medications": [
+        "Not documented in judgment"
+      ],
+      "allergies": [
+        "Not documented in judgment"
+      ],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "neurological": "Severe cognitive disabilities noted later in life"
+        }
+      },
+      "initial_working_problem": "Birth-related neurological injury",
+      "known_constraints": null,
+      "initial_differential": [
+        "Birth asphyxia",
+        "Traumatic birth injury"
+      ],
+      "critical_findings": [
+        "Neurological damage"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSULT_NOTE",
+        "name": "Neurology Consultation",
+        "description": "Assessment of neurological status post-birth",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Severe cognitive disabilities identified",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates significant neurological injury",
+          "decision_impact": "Requires long-term care planning",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Birth and Initial Assessment",
+        "description": "Patient born at Liverpool Women's Hospital",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Birth and initial assessment",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Management of labor and delivery",
+        "prompt": "What should have been done to prevent neurological damage?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Timely delivery to prevent hypoxia",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Timely intervention could have prevented brain damage"
+          },
+          {
+            "option_id": "B",
+            "description": "Continue with current management",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Resulted in delayed delivery and subsequent injury"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Delayed delivery",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E002",
+            "E003"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Timely delivery should have been performed",
+          "standard_of_care_basis": "Expert evidence on timely intervention",
+          "evidence_ids": [
+            "E002"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to deliver in a timely manner led to neurological damage",
+          "what_should_have_happened": "Timely delivery to prevent hypoxia",
+          "legal_standard_applied": "Breach of duty in management of labor",
+          "evidence_ids": [
+            "E002",
+            "E003"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Severe cognitive disabilities requiring lifelong care",
+        "severity": "PERMANENT_SEVERE_DISABILITY",
+        "long_term_effects": "Full life expectancy with severe cognitive impairment",
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "18,133,235",
+        "key_findings": [
+          "Breach of duty in failing to manage labor appropriately",
+          "Causation established - timely delivery would have prevented injury"
+        ],
+        "evidence_ids": [
+          "E002",
+          "E003",
+          "E006"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to deliver in a timely manner",
+        "counterfactual": "Timely delivery would have prevented neurological damage",
+        "evidence_ids": [
+          "E002",
+          "E003"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "2010",
+        "event": "Patient born at Liverpool Women's Hospital",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Neurological assessment",
+        "date": "Not documented in judgment",
+        "result": "Severe cognitive disabilities",
+        "interpretation": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Neurological damage",
+        "when_made": "Post-birth",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Not documented in judgment",
+        "date": "Not documented in judgment",
+        "provider": null,
+        "outcome": "Not documented in judgment",
+        "evidence_ids": []
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Severe cognitive disabilities",
+        "when_occurred": "Post-birth",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to manage labor appropriately",
+        "against": "Liverpool Women's NHS Foundation Trust",
+        "found_proven": true,
+        "evidence_ids": [
+          "E002",
+          "E003"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Breach of duty in management of labor",
+        "evidence_ids": [
+          "E002",
+          "E003"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.4090909090909091,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 07:01:59.562407",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

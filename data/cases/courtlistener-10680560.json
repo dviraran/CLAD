@@ -1,0 +1,593 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10680560",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2023-12-12",
+  "url": "https://example.com/courtlistener-10680560",
+  "case_name": "State v. Grad",
+  "neutral_citation": null,
+  "clinical_domain": "OBSTETRICS_GYNAECOLOGY",
+  "outcome_severity": "TEMPORARY_HARM",
+  "summary": {
+    "brief": "State v. Grad. Medical malpractice case involving obstetrics gynaecology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "When W.G. was 41 days old, his parents, Kenneth and Laura Grad, took him to a podiatrist because one of his feet appeared swollen.",
+      "paragraph_ref": "5",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "At Akron Children\u2019s Hospital, an x-ray revealed that the tibia in W.G.\u2019s left leg was fractured.",
+      "paragraph_ref": "7",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "Additional x-rays of W.G.\u2019s body revealed a total of 26 fractures, including fractures of W.G.\u2019s fingers, arms, legs, ribs, and skull.",
+      "paragraph_ref": "7",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Steiner testified that on June 18, 2008, he examined W.G. and discussed this examination with the Grads.",
+      "paragraph_ref": "21",
+      "speaker": "Dr. Steiner"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Steiner concluded that these events were not sufficient to cause the 26 bone fractures seen in W.G.\u2019s x-rays.",
+      "paragraph_ref": "21",
+      "speaker": "Dr. Steiner"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Steiner testified unequivocally that it could not.",
+      "paragraph_ref": "18",
+      "speaker": "Dr. Steiner"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "LEGAL_FINDING",
+      "text": "We reverse the judgment of the Ninth District Court of Appeals and remand the case to the trial court for it to hold a hearing on Grad\u2019s motion for leave.",
+      "paragraph_ref": "83",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "COURT_REASONING",
+      "text": "The appellate court erred by affirming the trial court\u2019s denial of Grad\u2019s motion for leave to file a motion for a new trial without holding a hearing on that motion.",
+      "paragraph_ref": "82",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Steiner confirmed that he used a process-of-elimination methodology called differential diagnosis.",
+      "paragraph_ref": "26",
+      "speaker": "Dr. Steiner"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "FACTUAL_FINDING",
+      "text": "Doctors sent W.G.\u2019s blood for genetic testing to determine whether he has osteogenesis imperfecta, but the results came back negative.",
+      "paragraph_ref": "7",
+      "speaker": "Court finding"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "41 days",
+        "sex": "male",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Swollen foot",
+      "history_of_present_illness": "Parents noticed swelling in one foot and took the infant to a podiatrist.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "musculoskeletal": "Swelling in one foot, multiple fractures noted on x-ray"
+        }
+      },
+      "initial_working_problem": "Suspected non-accidental injury",
+      "known_constraints": null,
+      "initial_differential": [
+        "Non-accidental trauma",
+        "Metabolic bone disease"
+      ],
+      "critical_findings": [
+        "Multiple fractures in various stages of healing"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002",
+        "E003"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "X-ray of left leg",
+        "description": "X-ray to assess swelling and potential fracture",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Fractured tibia in left leg",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates possible trauma or underlying bone condition",
+          "decision_impact": "Prompted further imaging to assess for additional fractures",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "IMAGING",
+        "name": "Full body X-ray",
+        "description": "Comprehensive imaging to assess for additional fractures",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "26 fractures in various stages of healing",
+          "detailed_findings": null,
+          "clinical_significance": "Suggests repeated trauma or severe underlying condition",
+          "decision_impact": "Raised suspicion of non-accidental trauma",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "request_id": "R003",
+        "type": "LAB",
+        "name": "Genetic testing for osteogenesis imperfecta",
+        "description": "Blood test to rule out genetic bone disorder",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Negative for osteogenesis imperfecta",
+          "detailed_findings": null,
+          "clinical_significance": "Reduced likelihood of genetic bone disorder",
+          "decision_impact": "Supported diagnosis of non-accidental trauma",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E010"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Infant presented with swollen foot",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Visit to podiatrist",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Diagnostic Workup",
+        "description": "Comprehensive imaging and limited genetic testing performed",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "X-ray reveals multiple fractures",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E002",
+              "E003"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Infant with multiple unexplained fractures",
+        "prompt": "What additional tests should be considered to rule out metabolic bone disease?",
+        "action_type": "ORDER_TEST",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Order comprehensive genetic testing including Ehlers-Danlos Syndrome",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Comprehensive testing could identify rare genetic conditions"
+          },
+          {
+            "option_id": "B",
+            "description": "Proceed with limited genetic testing for osteogenesis imperfecta only",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Focused testing may miss other potential genetic causes"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Limited genetic testing was performed",
+          "reasoning_stated": "Belief that osteogenesis imperfecta was the most likely genetic cause",
+          "evidence_ids": [
+            "E010"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Comprehensive genetic testing should have been performed",
+          "standard_of_care_basis": "Expert testimony suggested broader testing was necessary",
+          "evidence_ids": [
+            "E009"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to consider all potential genetic causes",
+          "what_should_have_happened": "Comprehensive testing could have identified other conditions",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E009",
+            "E010"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Multiple fractures identified, potential underlying condition not fully explored",
+        "severity": "Not documented in judgment",
+        "long_term_effects": "Not documented in judgment",
+        "evidence_ids": [
+          "E003",
+          "E010"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "Not applicable",
+        "key_findings": [
+          "Court found no new evidence to warrant a new trial",
+          "Affidavits and studies did not constitute new evidence"
+        ],
+        "evidence_ids": [
+          "E007",
+          "E008"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Failure to conduct comprehensive genetic testing",
+        "counterfactual": "Comprehensive testing could have identified underlying condition",
+        "evidence_ids": [
+          "E010"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Infant presented to podiatrist with swollen foot",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Infant presented to podiatrist and referred to hospital",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Infant presented with fracture",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Initial visit to podiatrist",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "X-ray",
+        "date": "Date not specified in judgment",
+        "result": "Multiple fractures",
+        "interpretation": null,
+        "evidence_ids": [
+          "E002",
+          "E003"
+        ]
+      },
+      {
+        "test_name": "Genetic testing for osteogenesis imperfecta",
+        "date": "Date not specified in judgment",
+        "result": "Negative",
+        "interpretation": null,
+        "evidence_ids": [
+          "E010"
+        ]
+      },
+      {
+        "test_name": "X-ray",
+        "date": "Date not specified in judgment",
+        "result": "26 fractures identified",
+        "interpretation": null,
+        "evidence_ids": [
+          "E002",
+          "E003"
+        ]
+      },
+      {
+        "test_name": "Genetic Testing",
+        "date": "Date not specified in judgment",
+        "result": "Negative for osteogenesis imperfecta",
+        "interpretation": null,
+        "evidence_ids": [
+          "E010"
+        ]
+      },
+      {
+        "test_name": "X-ray",
+        "date": "Date not specified in judgment",
+        "result": "Multiple fractures",
+        "interpretation": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "test_name": "X-ray of left leg",
+        "date": "Date not specified in judgment",
+        "result": "Fracture of tibia",
+        "interpretation": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "test_name": "Full body X-ray",
+        "date": "Date not specified in judgment",
+        "result": "26 fractures",
+        "interpretation": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "test_name": "Genetic testing",
+        "date": "Date not specified in judgment",
+        "result": "Tested for one type of osteogenesis imperfecta",
+        "interpretation": null,
+        "evidence_ids": [
+          "E010"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Non-accidental trauma",
+        "when_made": "Date not specified in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "diagnosis": "Non-accidental injury",
+        "when_made": "Date not specified in judgment",
+        "made_by": null,
+        "correct": false,
+        "evidence_ids": [
+          "E004",
+          "E005"
+        ]
+      },
+      {
+        "diagnosis": "Multiple fractures",
+        "when_made": "Date not specified in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "diagnosis": "Multiple fractures",
+        "when_made": "Date not specified in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Not documented in judgment",
+        "date": "Not documented in judgment",
+        "provider": null,
+        "outcome": "Not documented in judgment",
+        "evidence_ids": []
+      },
+      {
+        "treatment": "Not documented in judgment",
+        "date": "Not documented in judgment",
+        "provider": null,
+        "outcome": "Not documented in judgment",
+        "evidence_ids": []
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Not documented in judgment",
+        "when_occurred": "Not documented in judgment",
+        "severity": "Not documented in judgment",
+        "evidence_ids": []
+      },
+      {
+        "complication": "Not documented in judgment",
+        "when_occurred": "Not documented in judgment",
+        "severity": "Not documented in judgment",
+        "evidence_ids": []
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to conduct comprehensive genetic testing",
+        "against": "Defendant",
+        "found_proven": true,
+        "evidence_ids": [
+          "E009"
+        ]
+      },
+      {
+        "allegation": "Failure to consider new genetic evidence",
+        "against": "Defendant",
+        "found_proven": true,
+        "evidence_ids": [
+          "E073",
+          "E074"
+        ]
+      },
+      {
+        "allegation": "Failure to conduct comprehensive genetic testing",
+        "against": "Defendant",
+        "found_proven": true,
+        "evidence_ids": [
+          "E009"
+        ]
+      },
+      {
+        "allegation": "Failure to conduct comprehensive genetic testing",
+        "against": "Defendant",
+        "found_proven": false,
+        "evidence_ids": [
+          "E010"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E073",
+          "E074"
+        ]
+      },
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      {
+        "finding": "No new evidence to warrant a new trial",
+        "legal_significance": "Affidavits and studies not new evidence",
+        "evidence_ids": [
+          "E007",
+          "E008"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.04975124378109453,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 09:22:02.365418",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

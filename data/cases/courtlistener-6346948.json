@@ -1,0 +1,545 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-6346948",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2026-01-18",
+  "url": "https://example.com/courtlistener-6346948",
+  "case_name": "Cockayne v. Bristol Hospital, Inc.",
+  "neutral_citation": null,
+  "clinical_domain": "OBSTETRICS_GYNAECOLOGY",
+  "outcome_severity": "TEMPORARY_HARM",
+  "summary": {
+    "brief": "Cockayne v. Bristol Hospital, Inc.. Medical malpractice case involving obstetrics gynaecology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Bruce Cockayne was admitted to the defendant on February 11, 2014, and, during this admission, he received treatments of a medication administered rectally via enema.",
+      "paragraph_ref": "9",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "On February 11, 2014, Bruce Cockayne was readmitted to the defendant after fainting, likely due to continued diarrhea and the resulting loss of fluids.",
+      "paragraph_ref": "9",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "On the morning of February 14, 2014, Bruce Cockayne suffered a 'massive rectal bleed' and was transferred to the intensive care unit.",
+      "paragraph_ref": "9",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "EXPERT_TESTIMONY",
+      "text": "An expert testified regarding the average length of the anal canal and the length of the tip of the enema, stating that it could reach into the rectum and that it was possible for the tip to go through the rectum and cause the perforation.",
+      "paragraph_ref": "1",
+      "speaker": "Expert witness"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "LEGAL_FINDING",
+      "text": "The trial court properly denied the defendant\u2019s motion for judgment notwithstanding the verdict.",
+      "paragraph_ref": "1",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "LEGAL_FINDING",
+      "text": "The trial court properly denied the motion to set aside the verdict, as the defendant could not prevail on its claim that the jury improperly was permitted to consider a theory of negligence unsupported by the evidence.",
+      "paragraph_ref": "2",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "Bruce Cockayne developed a necrotizing infection and his health deteriorated precipitously due to sepsis.",
+      "paragraph_ref": "9",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "FACTUAL_FINDING",
+      "text": "The jury awarded Bruce Cockayne $382,732.21 in past economic damages and $2,105,027.16 in noneconomic damages.",
+      "paragraph_ref": "10",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "FACTUAL_FINDING",
+      "text": "The jury awarded Marion Cockayne $720,000 for loss of consortium.",
+      "paragraph_ref": "10",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "EXPERT_TESTIMONY",
+      "text": "An expert witness used differential diagnosis to eliminate three of the potential causes and opined that, to a reasonable degree of medical probability, an enema administered during B\u2019s hospitalization caused the perforation.",
+      "paragraph_ref": "1",
+      "speaker": "Expert witness"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "male",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Fainting likely due to continued diarrhea and loss of fluids",
+      "history_of_present_illness": "Bruce Cockayne was readmitted to the hospital after fainting, likely due to continued diarrhea and the resulting loss of fluids. He had previously been discharged on February 3, 2014, after treatment for diarrhea and vomiting.",
+      "past_medical_history": [
+        "Diarrhea",
+        "Vomiting"
+      ],
+      "medications": [
+        "Rowasa enemas prescribed for home use"
+      ],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "abdomen": "Not documented in judgment"
+        }
+      },
+      "initial_working_problem": "Dehydration due to diarrhea",
+      "known_constraints": null,
+      "initial_differential": [
+        "Dehydration",
+        "Electrolyte imbalance"
+      ],
+      "critical_findings": [
+        "Fainting",
+        "Diarrhea"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "CT Scan",
+        "description": "CT scan performed to assess internal bleeding",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "CT scan revealed a large, older appearing perforation in the posterior right rectum",
+          "detailed_findings": null,
+          "clinical_significance": "Identified the source of the perforation",
+          "decision_impact": "Prompted surgical intervention",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "PROCEDURE_NOTE",
+        "name": "Endoscopy",
+        "description": "Endoscopy performed to identify source of bleeding",
+        "available_phase": "procedure",
+        "reveal": {
+          "result_summary": "Endoscopy identified an internal hemorrhoid causing massive bleeding and a perforation in the rectum",
+          "detailed_findings": null,
+          "clinical_significance": "Confirmed the source of bleeding and perforation",
+          "decision_impact": "Guided surgical management",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient readmitted to hospital after fainting",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Patient readmitted to hospital",
+            "timestamp": "February 11, 2014",
+            "evidence_ids": [
+              "E001",
+              "E002"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Diagnostic Workup",
+        "description": "Patient undergoes diagnostic procedures to identify cause of symptoms",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "CT scan performed",
+            "timestamp": "February 14, 2014",
+            "evidence_ids": [
+              "E003"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "procedure",
+        "name": "Surgical Intervention",
+        "description": "Surgical procedures performed to address complications",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Endoscopy and ileostomy performed",
+            "timestamp": "February 14, 2014",
+            "evidence_ids": [
+              "E003"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient with fainting and diarrhea readmitted to hospital",
+        "prompt": "What is the appropriate method for administering the Rowasa enema?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Administer Rowasa enema with caution, ensuring proper technique",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Proper technique is necessary to avoid complications such as perforation"
+          },
+          {
+            "option_id": "B",
+            "description": "Administer Rowasa enema without specific caution",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Failure to use proper technique can lead to perforation"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant administered Rowasa enema without proper technique",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E004",
+            "E007"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Rowasa enema should have been administered with proper technique",
+          "standard_of_care_basis": "Expert testimony indicated proper technique was necessary",
+          "evidence_ids": [
+            "E004",
+            "E010"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to use proper technique led to perforation",
+          "what_should_have_happened": "Proper technique should have been used to prevent perforation",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E004",
+            "E010"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient developed necrotizing infection and health deteriorated",
+        "severity": "PERMANENT_SEVERE_DISABILITY",
+        "long_term_effects": "Not documented in judgment",
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "382732.21 in past economic damages and 2,105,027.16 in noneconomic damages",
+        "key_findings": [
+          "Breach of duty in enema administration",
+          "Causation established - rectal perforation led to severe complications"
+        ],
+        "evidence_ids": [
+          "E008",
+          "E009"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to properly administer enema",
+        "counterfactual": "Proper procedure would have prevented perforation",
+        "evidence_ids": [
+          "E032",
+          "E037"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "February 11, 2014",
+        "event": "Patient readmitted to hospital",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001",
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "February 14, 2014",
+        "event": "CT scan performed revealing perforation",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "timestamp": "February 11, 2014",
+        "event": "Patient readmitted to hospital",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001",
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "February 11, 2014",
+        "event": "Patient readmitted after fainting",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "CT Scan",
+        "date": "February 14, 2014",
+        "result": "Perforation in rectum",
+        "interpretation": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "test_name": "Colonoscopy",
+        "date": "Not documented in judgment",
+        "result": "Not documented in judgment",
+        "interpretation": null,
+        "evidence_ids": [
+          "E008"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Rectal perforation",
+        "when_made": "February 14, 2014",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "diagnosis": "Rectal perforation",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "diagnosis": "Rectal perforation",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E032"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Endoscopy and ileostomy",
+        "date": "February 14, 2014",
+        "provider": null,
+        "outcome": "Attempt to manage perforation and prevent further complications",
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "treatment": "Enema administration",
+        "date": "February 11-13, 2014",
+        "provider": null,
+        "outcome": "Caused rectal perforation",
+        "evidence_ids": [
+          "E012",
+          "E017"
+        ]
+      },
+      {
+        "treatment": "Enema administration",
+        "date": "Not documented in judgment",
+        "provider": null,
+        "outcome": "Led to rectal perforation",
+        "evidence_ids": [
+          "E032"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Necrotizing infection and sepsis",
+        "when_occurred": "Post-surgery",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      {
+        "complication": "Necrotizing infection",
+        "when_occurred": "Not documented in judgment",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      {
+        "complication": "Necrotizing infection",
+        "when_occurred": "Not documented in judgment",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Improper administration of Rowasa enema",
+        "against": "Defendant hospital",
+        "found_proven": true,
+        "evidence_ids": [
+          "E004",
+          "E010"
+        ]
+      },
+      {
+        "allegation": "Improper enema administration",
+        "against": "Defendant hospital",
+        "found_proven": true,
+        "evidence_ids": [
+          "E012",
+          "E017"
+        ]
+      },
+      {
+        "allegation": "Improper enema administration",
+        "against": "Defendant nurses",
+        "found_proven": true,
+        "evidence_ids": [
+          "E032"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      },
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E012",
+          "E017"
+        ]
+      },
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E032"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "TREATMENT_PROCEDURE_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.7142857142857143,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 09:31:44.423366",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

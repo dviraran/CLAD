@@ -1,0 +1,366 @@
+{
+  "case_id": "courtlistener-9546407",
+  "source": "courtlistener",
+  "source_url": "local://courtlistener-9546407.html",
+  "jurisdiction": "US",
+  "extraction_metadata": {
+    "version": "batch_api_v1",
+    "model": "gpt-4o",
+    "extracted_at": "2026-01-21T17:56:57.876931",
+    "simulation_extracted_at": "2026-01-21T18:29:59.564322",
+    "simulation_model": "gpt-4o"
+  },
+  "case_metadata": {
+    "case_name": "John R. Orphanos, M.D. v. Michael Rodgers",
+    "citation": "No. 23-ICA-58",
+    "court": "Intermediate Court of Appeals of West Virginia",
+    "date": "June 13, 2024"
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "On June 4, 2017, Michael Rodgers, then 49 years old, was injured in a motorcycle crash. He was life-flighted to CAMC General in Charleston, a Level 1 Trauma Center.",
+      "paragraph_ref": "28",
+      "paragraph_starts_with": "On June 4, 2017, Michael",
+      "summary": "Mr. Rodgers was injured in a motorcycle crash and taken to a trauma center.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "A nurse practitioner from Dr. Orphanos’ practice first saw Mr. Rodgers at 11:30 a.m. on June 5, 2017. That nurse practitioner performed an initial assessment, placed him on spinal precautions, and ordered a thoracic lumbar sacral orthosis brace to be worn for a period of 6-8 weeks.",
+      "paragraph_ref": "35",
+      "paragraph_starts_with": "A nurse practitioner from",
+      "summary": "Initial assessment and treatment plan for Mr. Rodgers by nurse practitioner.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "Dr. Orphanos saw Mr. Rodgers later that afternoon and recommended a spinal surgical procedure as an alternative to the conservative treatment approach of the back brace.",
+      "paragraph_ref": "38",
+      "paragraph_starts_with": "Dr. Orphanos saw Mr.",
+      "summary": "Dr. Orphanos recommended surgery over conservative treatment.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "Postoperatively, Mr. Rodgers had no motor function or sensation below his nipple line.",
+      "paragraph_ref": "43",
+      "paragraph_starts_with": "Postoperatively, Mr. Rodgers",
+      "summary": "Mr. Rodgers experienced paralysis post-surgery.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "EXPERT_TESTIMONY",
+      "verbatim_quote": "According to Dr. Orphanos’ experts, the paralysis was caused by a spinal cord infarct, which was neither predictable nor preventable.",
+      "paragraph_ref": "54",
+      "paragraph_starts_with": "According to Dr. Orphanos’",
+      "summary": "Paralysis attributed to spinal cord infarct by defense experts.",
+      "speaker": "Defense expert"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "LEGAL_FINDING",
+      "verbatim_quote": "The jury returned a verdict for Mr. Rodgers, finding that: (1) the first surgery was not an 'emergency surgery'; (2) Dr. Orphanos was negligent; (3) Dr. Orphanos’ breach of the standard of care caused or contributed to Mr. Rodgers’ paraplegia.",
+      "paragraph_ref": "156",
+      "paragraph_starts_with": "On March 24, 2022, after",
+      "summary": "Jury found Dr. Orphanos negligent and responsible for paraplegia.",
+      "speaker": "Jury verdict"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "COURT_REASONING",
+      "verbatim_quote": "This Court concludes that the circuit court abused its discretion in denying Dr. Orphanos’ supplemental expert disclosure of Jodi A. Gehrig’s, M.D., testimony on Mr. Rodgers’ life expectancy which is relevant to the overall damages.",
+      "paragraph_ref": "26",
+      "paragraph_starts_with": "This Court acknowledges",
+      "summary": "Court found error in excluding expert testimony on life expectancy.",
+      "speaker": "Court reasoning"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "LEGAL_FINDING",
+      "verbatim_quote": "Affirmed, in Part, and Reversed and Remanded, in Part.",
+      "paragraph_ref": "630",
+      "paragraph_starts_with": "Affirmed, in Part, and",
+      "summary": "Court affirmed in part and reversed and remanded in part.",
+      "speaker": "Court conclusion"
+    }
+  ],
+  "verdict_detected": {
+    "outcome": "PARTIAL_LIABILITY",
+    "key_phrase": "Affirmed, in Part, and Reversed and Remanded, in Part.",
+    "paragraph_ref": "630"
+  },
+  "extraction_notes": {
+    "total_paragraphs_analyzed": 42,
+    "key_sections_found": [
+      "Facts",
+      "Expert Evidence",
+      "Conclusion"
+    ],
+    "gaps_identified": [
+      "No specific lab values mentioned",
+      "Timing of events unclear"
+    ]
+  },
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "49 years",
+        "sex": "male",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Injuries from motorcycle crash",
+      "history_of_present_illness": "Patient was involved in a motorcycle crash and was life-flighted to a trauma center.",
+      "past_medical_history": "Not documented in judgment",
+      "medications": "Not documented in judgment",
+      "allergies": "Not documented in judgment",
+      "physical_examination": {
+        "vital_signs": "Not documented in judgment",
+        "focused_exam": {
+          "system": "Examination mentioned but findings not specified"
+        }
+      },
+      "initial_working_problem": "Spinal injury from trauma",
+      "initial_differential": [
+        "Spinal fracture",
+        "Spinal cord injury"
+      ],
+      "critical_findings": [
+        "Spinal injury requiring stabilization"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSULT_NOTE",
+        "name": "Orthopedic Consultation",
+        "description": "Consultation with Dr. Orphanos regarding spinal injury",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Recommendation for spinal surgery",
+          "clinical_significance": "Surgical intervention proposed as alternative to conservative management",
+          "decision_impact": "Influenced decision to proceed with surgery"
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient with spinal injury from motorcycle crash",
+        "prompt": "What treatment approach should be taken for the spinal injury?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Proceed with spinal surgery",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Surgery recommended by Dr. Orphanos as an alternative to conservative treatment"
+          },
+          {
+            "option_id": "B",
+            "description": "Continue with conservative management using a back brace",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Initial conservative treatment plan with brace was in place"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "A",
+          "description": "Defendant proceeded with spinal surgery",
+          "reasoning_stated": "Surgery was recommended as an alternative",
+          "evidence_ids": [
+            "E003"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "B",
+          "description": "Conservative management should have been continued",
+          "standard_of_care_basis": "Jury found surgery was not an emergency",
+          "evidence_ids": [
+            "E006"
+          ]
+        },
+        "explanation": {
+          "why_defendant_wrong": "Surgery was not deemed necessary as an emergency procedure",
+          "what_should_have_happened": "Conservative management should have been continued",
+          "legal_standard_applied": "Bolam test not satisfied",
+          "evidence_ids": [
+            "E006"
+          ]
+        },
+        "is_malpractice_point": true
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents to trauma center after motorcycle crash",
+        "duration": "Not specified in judgment",
+        "key_events": [
+          {
+            "event": "Patient life-flighted to trauma center",
+            "timestamp": "June 4, 2017",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Initial Assessment and Treatment Planning",
+        "description": "Assessment by nurse practitioner and consultation with Dr. Orphanos",
+        "duration": "Not specified in judgment",
+        "key_events": [
+          {
+            "event": "Initial assessment and brace ordered",
+            "timestamp": "June 5, 2017 11:30",
+            "evidence_ids": [
+              "E002"
+            ]
+          },
+          {
+            "event": "Consultation with Dr. Orphanos",
+            "timestamp": "June 5, 2017",
+            "evidence_ids": [
+              "E003"
+            ]
+          }
+        ]
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient developed paraplegia post-surgery",
+        "severity": "PERMANENT_SEVERE_DISABILITY",
+        "long_term_effects": "Paralysis below nipple line",
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not specified in judgment",
+        "key_findings": [
+          "Surgery was not an emergency",
+          "Negligence in proceeding with surgery",
+          "Causation established for paraplegia"
+        ],
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Decision to proceed with non-emergency surgery",
+        "counterfactual": "Conservative management could have avoided paraplegia",
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "June 4, 2017",
+        "event": "Patient life-flighted to trauma center",
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "June 5, 2017 11:30",
+        "event": "Initial assessment and brace ordered",
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "June 5, 2017",
+        "event": "Consultation with Dr. Orphanos",
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [
+      {
+        "diagnosis": "Spinal injury",
+        "when_made": "June 5, 2017",
+        "correct": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Spinal surgery",
+        "date": "Not specified in judgment",
+        "outcome": "Paraplegia",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Paraplegia",
+        "when_occurred": "Post-surgery",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Negligence in performing non-emergency surgery",
+        "against": "Dr. Orphanos",
+        "found_proven": true,
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Dr. Orphanos was negligent",
+        "legal_significance": "Breach of standard of care",
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ]
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "TREATMENT_PROCEDURE_ERROR"
+    ],
+    "diagnosis_subtypes": [
+      "FAILURE_TO_OBTAIN_CONSENT"
+    ]
+  }
+}

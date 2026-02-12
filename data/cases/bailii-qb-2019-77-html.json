@@ -1,0 +1,615 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "bailii-qb-2019-77-html",
+  "source": "BAILII",
+  "jurisdiction": "UK",
+  "court": "Unknown",
+  "decision_date": "2019-01-22",
+  "url": "https://example.com/bailii-qb-2019-77-html",
+  "case_name": "Esegbona v King's College Hospital NHS Foundation Trust (false imprisonment in hospital) [2019] EWHC 77 (QB) (22 January 2019)",
+  "neutral_citation": "[2019] EWHC 77",
+  "clinical_domain": "OBSTETRICS_GYNAECOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Medical malpractice case involving obstetrics gynaecology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Mrs Esegbona attended the accident and emergency department of King's College Hospital in the evening of 19th October 2010 with shortness of breath and was admitted in the early hours of 20th October.",
+      "paragraph_ref": "17",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "She was found to have pulmonary oedema caused by acute left-sided heart failure in the context of fast paroxysmal atrial fibrillation.",
+      "paragraph_ref": "17",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "She suffered a further severe hypoglycaemic episode on 28th October at around 3:45pm during which she had a seizure and aspirated.",
+      "paragraph_ref": "17",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "A psychiatric review on 7th April found that Mrs Esegbona did not have capacity to make the decision to have a CT angiogram.",
+      "paragraph_ref": "26",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "On 23rd June 2011 Mrs Esegbona sadly died. She had been found by staff at Wilsmere House unresponsive and with her tracheostomy tube removed.",
+      "paragraph_ref": "31",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Mr Olarinde and Dr Vletsi agree that if Wilsmere House was not informed that the deceased had previously been found with her tracheostomy tube out on 8th March, that would amount to breach of duty.",
+      "paragraph_ref": "38",
+      "speaker": "Expert testimony"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "LEGAL_FINDING",
+      "text": "I find that Mrs Esegbona was unlawfully imprisoned from the date of Dr Bhavsar's recommendation on 15 th February until her discharge to Wilsmere House on 14 th June, a total of 119 days.",
+      "paragraph_ref": "260",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "COURT_REASONING",
+      "text": "I accept Lynne Phair's evidence that she would not have remained on an acute hospital ward for as long as she did.",
+      "paragraph_ref": "253",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "COURT_REASONING",
+      "text": "I think that this is a straightforward 'but for' case in terms of causation.",
+      "paragraph_ref": "257",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "LEGAL_FINDING",
+      "text": "There will be judgement for the claimant in the sums identified above.",
+      "paragraph_ref": "272",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "67 years",
+        "sex": "female",
+        "relevant_social_history": "English not first language, lived independently"
+      },
+      "chief_complaint": "Shortness of breath",
+      "history_of_present_illness": "Presented with shortness of breath, found to have pulmonary oedema due to acute left-sided heart failure in the context of fast paroxysmal atrial fibrillation.",
+      "past_medical_history": [
+        "Insulin-dependent diabetes",
+        "Hypertension",
+        "Atrial fibrillation",
+        "Glaucoma",
+        "Depression",
+        "Arthritis",
+        "Schizophrenia"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "respiratory": "Pulmonary oedema noted"
+        }
+      },
+      "initial_working_problem": "Acute heart failure",
+      "known_constraints": null,
+      "initial_differential": [
+        "Heart failure",
+        "Pulmonary embolism"
+      ],
+      "critical_findings": [
+        "Pulmonary oedema",
+        "Atrial fibrillation"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "CT Brain",
+        "description": "CT scan of the brain",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Small left cerebellar and pons infarcts",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates cerebrovascular accident",
+          "decision_impact": "Requires monitoring and possible intervention",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E019"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "CONSULT_NOTE",
+        "name": "Psychiatric Review",
+        "description": "Assessment of mental capacity",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Patient lacked capacity to make decisions about tracheostomy and future residence",
+          "detailed_findings": null,
+          "clinical_significance": "Requires best interests meeting and possible Court of Protection referral",
+          "decision_impact": "Should have prompted legal and ethical considerations",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E004",
+          "E029"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents to ED with acute symptoms",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Admission to hospital",
+            "timestamp": "19 October 2010",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "followup",
+        "name": "Discharge Planning",
+        "description": "Planning for patient's discharge from hospital",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Discharge to nursing home",
+            "timestamp": "14 June 2011",
+            "evidence_ids": [
+              "E030"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "decision",
+        "name": "Care Management Decision",
+        "description": "Decisions regarding level of care and supervision",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Decision on supervision level",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E226"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "followup",
+        "clinical_context": "Patient ready for discharge from hospital",
+        "prompt": "What information should be provided to the nursing home?",
+        "action_type": "DOCUMENT_CONSENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Provide detailed tracheostomy care instructions and history of self-extubation",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Ensures nursing home is prepared for potential complications"
+          },
+          {
+            "option_id": "B",
+            "description": "Provide basic discharge summary without detailed tracheostomy history",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Fails to prepare nursing home for specific care needs"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant provided basic discharge summary",
+          "reasoning_stated": "Defendant believed it was sufficient",
+          "evidence_ids": [
+            "E036",
+            "E037"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Detailed tracheostomy care instructions should have been provided",
+          "standard_of_care_basis": "Expert evidence indicated necessity for detailed information",
+          "evidence_ids": [
+            "E038",
+            "E039"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to provide detailed care instructions increased risk of adverse events",
+          "what_should_have_happened": "Detailed instructions would have prepared nursing home staff",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E038",
+            "E039",
+            "E040"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      },
+      {
+        "decision_id": "D002",
+        "phase_id": "followup",
+        "clinical_context": "Patient's capacity to make decisions about discharge",
+        "prompt": "What should be done regarding the patient's expressed wish to go home?",
+        "action_type": "ESCALATE_CARE",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Refer to Court of Protection for decision on discharge",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Ensures legal and ethical compliance with patient's rights"
+          },
+          {
+            "option_id": "B",
+            "description": "Proceed with discharge to nursing home without Court of Protection referral",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Disregards patient's expressed wishes and legal requirements"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant discharged patient to nursing home",
+          "reasoning_stated": "Believed it was in patient's best interest",
+          "evidence_ids": [
+            "E028",
+            "E029"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Referral to Court of Protection should have been made",
+          "standard_of_care_basis": "Legal requirement under Mental Capacity Act",
+          "evidence_ids": [
+            "E040",
+            "E041"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to refer to Court of Protection violated patient's rights",
+          "what_should_have_happened": "Court of Protection would have assessed best interests",
+          "legal_standard_applied": "Mental Capacity Act compliance",
+          "evidence_ids": [
+            "E040",
+            "E041",
+            "E042"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient died due to cardiac arrest following tracheostomy tube removal",
+        "severity": "FATAL",
+        "long_term_effects": "Not applicable",
+        "evidence_ids": [
+          "E005",
+          "E257"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "15470",
+        "key_findings": [
+          "Failure to provide necessary supervision",
+          "Causation established - lack of supervision led to tube removal and cardiac arrest"
+        ],
+        "evidence_ids": [
+          "E257",
+          "E260"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to provide one-to-one nursing care",
+        "counterfactual": "Proper supervision would have prevented tube removal",
+        "evidence_ids": [
+          "E226",
+          "E232",
+          "E257"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "19 October 2010",
+        "event": "Patient admitted to hospital with shortness of breath",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "14 June 2011",
+        "event": "Patient discharged to nursing home",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E030"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Patient presented with pulmonary oedema and heart failure",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Patient admitted to hospital with heart failure",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "CT Brain",
+        "date": "12 December 2010",
+        "result": "Small left cerebellar and pons infarcts",
+        "interpretation": null,
+        "evidence_ids": [
+          "E019"
+        ]
+      },
+      {
+        "test_name": "Psychiatric Review",
+        "date": "7 April 2011",
+        "result": "Patient lacked capacity",
+        "interpretation": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "test_name": "Psychiatric Review",
+        "date": "7 April 2011",
+        "result": "Patient lacked capacity",
+        "interpretation": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Pulmonary oedema due to acute left-sided heart failure",
+        "when_made": "20 October 2010",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "diagnosis": "Acute left-sided heart failure",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "diagnosis": "Pulmonary oedema due to acute heart failure",
+        "when_made": "Date not specified in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Tracheostomy insertion",
+        "date": "3 November 2010",
+        "provider": null,
+        "outcome": "Required for airway management",
+        "evidence_ids": [
+          "E018"
+        ]
+      },
+      {
+        "treatment": "Discharge planning",
+        "date": "Not documented in judgment",
+        "provider": null,
+        "outcome": "Improper discharge without legal safeguards",
+        "evidence_ids": [
+          "E146"
+        ]
+      },
+      {
+        "treatment": "Hospital admission for heart failure management",
+        "date": "Date not specified in judgment",
+        "provider": null,
+        "outcome": "Patient remained in hospital",
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Cardiac arrest following self-extubation",
+        "when_occurred": "23 June 2011",
+        "severity": "Fatal",
+        "evidence_ids": [
+          "E031"
+        ]
+      },
+      {
+        "complication": "Significant distress and anxiety",
+        "when_occurred": "Not documented in judgment",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E148"
+        ]
+      },
+      {
+        "complication": "Cardiac arrest due to tracheostomy tube removal",
+        "when_occurred": "23 June 2011",
+        "severity": "Fatal",
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to provide adequate discharge information",
+        "against": "Defendant hospital",
+        "found_proven": true,
+        "evidence_ids": [
+          "E036"
+        ]
+      },
+      {
+        "allegation": "Failure to refer to Court of Protection",
+        "against": "Defendant hospital",
+        "found_proven": true,
+        "evidence_ids": [
+          "E146"
+        ]
+      },
+      {
+        "allegation": "Failure to provide adequate supervision",
+        "against": "Defendant hospital",
+        "found_proven": true,
+        "evidence_ids": [
+          "E226",
+          "E232"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E033"
+        ]
+      },
+      {
+        "finding": "Defendant breached duty of care by not involving Court of Protection",
+        "legal_significance": "Breach of Mental Capacity Act",
+        "evidence_ids": [
+          "E146"
+        ]
+      },
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Negligence established",
+        "evidence_ids": [
+          "E229"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.03676470588235294,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 07:25:41.160225",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

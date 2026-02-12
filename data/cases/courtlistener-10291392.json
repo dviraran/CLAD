@@ -1,0 +1,304 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10291392",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "0060-05-23",
+  "url": "https://example.com/courtlistener-10291392",
+  "case_name": "Baylor Scott & White Health, and Scott & White Healthcare v. Jerry Bostick",
+  "neutral_citation": null,
+  "clinical_domain": "OBSTETRICS_GYNAECOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Baylor Scott & White Health, and Scott & White Healthcare v. Jerry Bostick. Medical malpractice case involving obstetrics gynaecology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Bostick brought this suit to recover for injuries he sustained from a fall at a BSW hospital in Marble Falls, Texas.",
+      "paragraph_ref": "11",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Finding that Bostick was an invitee and BSW was ninety-four percent responsible for causing or contributing to his injuries, the jury returned a verdict in Bostick\u2019s favor for $2,470,000.",
+      "paragraph_ref": "54",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "Bostick, following the ambulance, drove Selman\u2019s wife to the hospital. They checked in at a reception booth, and a nurse led them to Selman in the treatment area through two sets of automatic doors.",
+      "paragraph_ref": "32",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "Bostick raised his hand to get the pastor\u2019s attention, and one door started to close against him. He pulled the door 'back a little tug,' but it continued to move toward him, hit him on his left side, and knocked him to the floor. Bostick suffered a broken hip.",
+      "paragraph_ref": "40",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "LEGAL_FINDING",
+      "text": "We reverse the trial court\u2019s judgment and remand for a new trial on Bostick\u2019s premises liability claim against BSW.",
+      "paragraph_ref": "9",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "COURT_REASONING",
+      "text": "Having concluded that the trial court erroneously charged the jury with an incorrect legal standard for determining liability and the error was harmful, we reverse the trial court\u2019s judgment and remand the case for a new trial on Bostick\u2019s premises liability claim against BSW.",
+      "paragraph_ref": "396",
+      "speaker": "Judge's analysis"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "male",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Fall resulting in injury",
+      "history_of_present_illness": "Patient was visiting a hospital and was injured when an automatic door closed on him, causing a fall.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "musculoskeletal": "Patient suffered a broken hip from the fall"
+        }
+      },
+      "initial_working_problem": "Injury due to fall",
+      "known_constraints": null,
+      "initial_differential": [
+        "Mechanical fall",
+        "Environmental hazard"
+      ],
+      "critical_findings": [
+        "Broken hip"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E004"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "X-ray of the hip",
+        "description": "Imaging to assess the extent of hip injury",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not documented in judgment",
+          "detailed_findings": null,
+          "clinical_significance": "Not documented in judgment",
+          "decision_impact": "Not documented in judgment",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": []
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Hospital Visit",
+        "description": "Patient visits hospital and sustains injury",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Patient arrives at hospital",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E003"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient in hospital after fall",
+        "prompt": "What should be done to ensure patient safety in the hospital environment?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Ensure all automatic doors have safety sensors",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Prevents similar incidents by ensuring doors do not close on individuals"
+          },
+          {
+            "option_id": "B",
+            "description": "Rely on manual operation of doors by staff",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Relies on human intervention, which can be inconsistent"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant relied on manual operation of doors",
+          "reasoning_stated": "Assumed manual operation was sufficient",
+          "evidence_ids": [
+            "E004"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Automatic doors should have safety sensors",
+          "standard_of_care_basis": "Ensures safety and prevents accidents",
+          "evidence_ids": [
+            "E002"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Manual operation is not reliable for ensuring safety",
+          "what_should_have_happened": "Automatic doors should have been equipped with safety sensors",
+          "legal_standard_applied": "Premises liability for ensuring safe environment",
+          "evidence_ids": [
+            "E002",
+            "E004"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient suffered a broken hip requiring medical intervention",
+        "severity": "PERMANENT_MODERATE_DISABILITY",
+        "long_term_effects": "Potential mobility issues",
+        "evidence_ids": [
+          "E001",
+          "E004"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "2,470,000",
+        "key_findings": [
+          "Breach of duty in ensuring safe premises",
+          "Causation established - failure to prevent door accident"
+        ],
+        "evidence_ids": [
+          "E002",
+          "E005"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to ensure automatic door safety",
+        "counterfactual": "Safety sensors would have prevented the accident",
+        "evidence_ids": [
+          "E002",
+          "E004"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Patient arrives at hospital",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [
+      {
+        "diagnosis": "Broken hip",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "treatments": [],
+    "complications": [],
+    "allegations": [
+      {
+        "allegation": "Failure to ensure safe premises",
+        "against": "BSW",
+        "found_proven": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Premises liability established",
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.014778325123152709,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 10:05:32.804479",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

@@ -1,0 +1,385 @@
+{
+  "case_id": "courtlistener-9376743",
+  "source": "courtlistener",
+  "source_url": "local://courtlistener-9376743.html",
+  "jurisdiction": "US",
+  "extraction_metadata": {
+    "version": "batch_api_v1",
+    "model": "gpt-4o",
+    "extracted_at": "2026-01-21T17:56:57.911939",
+    "simulation_extracted_at": "2026-01-21T18:25:06.993558",
+    "simulation_model": "gpt-4o"
+  },
+  "case_metadata": {
+    "case_name": "Jesus Virlar, M.D. and Gmg Health Systems Associates, P.A., A/K/A and D/B/A Gonzaba Medical Group v. Jo Ann Puente",
+    "citation": "No. 20-0923",
+    "court": "Supreme Court of Texas",
+    "date": "February 17, 2023"
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "In 2011, respondent Jo Ann Puente underwent 'Roux-en-Y' gastric-bypass surgery performed by Dr. Nilesh Patel.",
+      "paragraph_ref": "10",
+      "paragraph_starts_with": "[10] In 2011, respondent Jo Ann",
+      "summary": "Jo Ann Puente underwent gastric-bypass surgery in 2011.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "Puente was admitted to intensive care at Metropolitan Methodist Hospital and ordered to take nothing by mouth.",
+      "paragraph_ref": "10",
+      "paragraph_starts_with": "[10] In 2011, respondent Jo Ann",
+      "summary": "Puente was admitted to intensive care and ordered NPO.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "Dr. Jesus Virlar, who was employed by petitioner GMG Health Systems Associates, P.A. ('Gonzaba'), assumed care for Puente.",
+      "paragraph_ref": "10",
+      "paragraph_starts_with": "[10] In 2011, respondent Jo Ann",
+      "summary": "Dr. Virlar assumed care for Puente.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "Evidence at trial showed that, although nurses noted Puente’s difficulty walking, dizziness, continued vomiting, and 'fixed gaze,' Dr. Virlar did not read their notes and was unaware of the symptoms.",
+      "paragraph_ref": "10",
+      "paragraph_starts_with": "[10] In 2011, respondent Jo Ann",
+      "summary": "Dr. Virlar was unaware of Puente's symptoms noted by nurses.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "EXPERT_TESTIMONY",
+      "verbatim_quote": "Dr. Virlar failed to order thiamine supplements, which Puente’s expert witness testified led her to develop Wernicke’s disease, a brain dysfunction associated with thiamine deficiency.",
+      "paragraph_ref": "10",
+      "paragraph_starts_with": "[10] In 2011, respondent Jo Ann",
+      "summary": "Expert testified failure to order thiamine led to Wernicke’s disease.",
+      "speaker": "Puente's expert witness"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "Without the supplements, the disease progressed to a more debilitating brain disorder, Korsakoff’s syndrome.",
+      "paragraph_ref": "10",
+      "paragraph_starts_with": "[10] In 2011, respondent Jo Ann",
+      "summary": "Wernicke’s disease progressed to Korsakoff’s syndrome.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "Puente died while this appeal was pending.",
+      "paragraph_ref": "10",
+      "paragraph_starts_with": "[10] In 2011, respondent Jo Ann",
+      "summary": "Puente died during the appeal.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "The jury found Drs. Virlar and Patel negligent, and it found Dr. Virlar 60% responsible and Dr. Patel 40% responsible for Puente’s injuries.",
+      "paragraph_ref": "2",
+      "paragraph_starts_with": "[2] their notes and was unaware",
+      "summary": "Jury found Dr. Virlar 60% and Dr. Patel 40% responsible.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "The jury awarded Puente $133,202 for past earnings lost, $888,420 for future earning capacity lost, and $13,262,874.86 for future medical expenses.",
+      "paragraph_ref": "2",
+      "paragraph_starts_with": "[2] their notes and was unaware",
+      "summary": "Jury awarded Puente over $14 million in damages.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "LEGAL_FINDING",
+      "verbatim_quote": "We hold that Chapter 33 required a credit for the daughter’s settlement because her claims were for her mother’s injury and that this result does not violate the Open Courts provision of the Texas Constitution.",
+      "paragraph_ref": "8",
+      "paragraph_starts_with": "[8] This medical malpractice case",
+      "summary": "Chapter 33 requires credit for daughter's settlement; no Open Courts violation.",
+      "speaker": "Court conclusion"
+    },
+    {
+      "evidence_id": "E011",
+      "type": "LEGAL_FINDING",
+      "verbatim_quote": "On this record, the TMLA required the trial court to order that at least some of the future damages be paid periodically.",
+      "paragraph_ref": "8",
+      "paragraph_starts_with": "[8] This medical malpractice case",
+      "summary": "TMLA requires periodic payment of future damages.",
+      "speaker": "Court conclusion"
+    },
+    {
+      "evidence_id": "E012",
+      "type": "COURT_REASONING",
+      "verbatim_quote": "Because Puente has not lost a common-law remedy, we conclude that the Open Courts provision has not been violated and that C.P.’s settlement should be credited against the judgment.",
+      "paragraph_ref": "17",
+      "paragraph_starts_with": "[17] The court of appeals held",
+      "summary": "Open Courts provision not violated; C.P.'s settlement credited.",
+      "speaker": "Court reasoning"
+    },
+    {
+      "evidence_id": "E013",
+      "type": "LEGAL_FINDING",
+      "verbatim_quote": "We reverse the judgment in part and remand the case to the trial court for further proceedings to form a proper judgment on these issues of damages.",
+      "paragraph_ref": "8",
+      "paragraph_starts_with": "[8] This medical malpractice case",
+      "summary": "Judgment reversed in part; remanded for proper judgment on damages.",
+      "speaker": "Court conclusion"
+    },
+    {
+      "evidence_id": "E014",
+      "type": "COURT_REASONING",
+      "verbatim_quote": "The trial court’s failure to award any periodic payments was error, and we reverse the portion of the judgment awarding all of the damages for future medical expenses in a lump sum.",
+      "paragraph_ref": "17",
+      "paragraph_starts_with": "[17] each of the findings required",
+      "summary": "Error in not awarding periodic payments; judgment reversed in part.",
+      "speaker": "Court reasoning"
+    }
+  ],
+  "verdict_detected": {
+    "outcome": "PARTIAL_LIABILITY",
+    "key_phrase": "We reverse the judgment in part and remand the case to the trial court for further proceedings to form a proper judgment on these issues of damages.",
+    "paragraph_ref": "8"
+  },
+  "extraction_notes": {
+    "total_paragraphs_analyzed": 49,
+    "key_sections_found": [
+      "Background",
+      "Key Findings and Analysis",
+      "Conclusion and Verdict"
+    ],
+    "gaps_identified": [
+      "No specific lab values mentioned",
+      "Exact timing of symptom onset unclear"
+    ]
+  },
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Difficulty walking, dizziness, continued vomiting, and 'fixed gaze'",
+      "history_of_present_illness": "Patient had undergone Roux-en-Y gastric-bypass surgery and was admitted to intensive care.",
+      "past_medical_history": [
+        "Roux-en-Y gastric-bypass surgery"
+      ],
+      "medications": "Not documented in judgment",
+      "allergies": "Not documented in judgment",
+      "physical_examination": {
+        "vital_signs": "Not documented in judgment",
+        "focused_exam": {
+          "neurological": "Difficulty walking, dizziness, continued vomiting, and 'fixed gaze'"
+        }
+      },
+      "initial_working_problem": "Post-surgical complications with neurological symptoms",
+      "initial_differential": [
+        "Wernicke's disease",
+        "Other post-surgical complications"
+      ],
+      "critical_findings": [
+        "Difficulty walking",
+        "Dizziness",
+        "Continued vomiting",
+        "'Fixed gaze'"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002",
+        "E004"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "LAB",
+        "name": "Thiamine Level",
+        "description": "Measurement of thiamine levels to assess deficiency",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not documented in judgment",
+          "clinical_significance": "Would confirm thiamine deficiency",
+          "decision_impact": "Should prompt thiamine supplementation"
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient in ICU with neurological symptoms post-surgery",
+        "prompt": "What should be the next step in management?",
+        "action_type": "PRESCRIBE",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Prescribe thiamine supplements",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Thiamine deficiency suspected; supplementation is critical"
+          },
+          {
+            "option_id": "B",
+            "description": "Continue current management without thiamine",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Failed to address potential thiamine deficiency"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant did not prescribe thiamine",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E005"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Thiamine should have been prescribed",
+          "standard_of_care_basis": "Expert testimony indicated necessity",
+          "evidence_ids": [
+            "E005"
+          ]
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to prescribe thiamine led to progression of disease",
+          "what_should_have_happened": "Thiamine supplementation should have been initiated",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E005",
+            "E006"
+          ]
+        },
+        "is_malpractice_point": true
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with post-surgical complications",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Admission to ICU",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient developed Wernicke's disease progressing to Korsakoff's syndrome",
+        "severity": "PERMANENT_SEVERE_DISABILITY",
+        "long_term_effects": "Debilitating brain disorder",
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Over $14 million",
+        "key_findings": [
+          "Failure to prescribe thiamine supplements",
+          "Causation established - progression to Korsakoff's syndrome"
+        ],
+        "evidence_ids": [
+          "E008",
+          "E009"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to prescribe thiamine",
+        "counterfactual": "Thiamine supplementation would have prevented progression",
+        "evidence_ids": [
+          "E005",
+          "E006",
+          "E008"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "2011",
+        "event": "Patient underwent Roux-en-Y gastric-bypass surgery",
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [
+      {
+        "diagnosis": "Wernicke's disease progressing to Korsakoff's syndrome",
+        "when_made": "Not documented in judgment",
+        "correct": true,
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "treatments": [],
+    "complications": [
+      {
+        "complication": "Korsakoff's syndrome",
+        "when_occurred": "Not documented in judgment",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to prescribe thiamine supplements",
+        "against": "Dr. Virlar",
+        "found_proven": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Dr. Virlar breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E008"
+        ]
+      }
+    ]
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "diagnosis_subtypes": [
+      "FAILURE_TO_INVESTIGATE"
+    ]
+  }
+}

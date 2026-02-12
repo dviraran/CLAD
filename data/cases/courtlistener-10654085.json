@@ -1,0 +1,311 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10654085",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2025-08-13",
+  "url": "https://example.com/courtlistener-10654085",
+  "case_name": "Sulma Guandique-De Romero v. Pamela Bondi",
+  "neutral_citation": null,
+  "clinical_domain": "PAEDIATRICS",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Sulma Guandique-De Romero v. Pamela Bondi. Medical malpractice case involving paediatrics.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "In February 2012, a gang member in El Salvador told Guandique\u2019s husband, William Romero, that he would kill Romero unless Romero paid the gang $3,000.",
+      "paragraph_ref": "24",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Around March 2016, Guandique received a call from an unknown man whom she believed was a gang member 'because of the way he spoke.'",
+      "paragraph_ref": "31",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "The gang member told her that, unless she paid the gang $500, he would kill her and her children.",
+      "paragraph_ref": "33",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "The police told her to either cooperate with the gang or flee.",
+      "paragraph_ref": "41",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "By December 2016, Guandique 'could not stand living this way anymore' and fled to the United States.",
+      "paragraph_ref": "56",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "She told the attorney that she had been 'sexually extorted (not just financially extorted) and other details . . . but instead of including that information in the asylum application, he simply responded that he was the attorney, that he knew what he was doing, and that [Guandique] should let him do his job.'",
+      "paragraph_ref": "62",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "LEGAL_FINDING",
+      "text": "We therefore grant the petition for review, reverse the Board\u2019s order denying a new removal, and remand to the Board with instructions to remand for a new removal hearing.",
+      "paragraph_ref": "21",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "COURT_REASONING",
+      "text": "The Board denied Guandique\u2019s motion to reopen because it concluded that her previous attorney rendered ineffective assistance of counsel in her removal proceedings.",
+      "paragraph_ref": "16",
+      "speaker": "Court reasoning"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Not documented in judgment",
+      "history_of_present_illness": "Not documented in judgment",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "system": "Examination mentioned but findings not specified"
+        }
+      },
+      "initial_working_problem": "Not documented in judgment",
+      "known_constraints": null,
+      "initial_differential": [],
+      "critical_findings": [],
+      "urgency_level": "Not documented in judgment",
+      "evidence_ids": []
+    },
+    "requestables": [],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Legal Consultation",
+        "description": "Patient seeks legal advice for asylum application",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Consultation with attorney",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E061"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "decision",
+        "clinical_context": "Legal representation in asylum proceedings",
+        "prompt": "What legal strategy should be pursued for asylum application?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Propose a PSG based on 'immediate family members of William Alfredo Romero'",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Recognized as a cognizable PSG under precedent"
+          },
+          {
+            "option_id": "B",
+            "description": "Propose a PSG based on 'El Salvador citizens whose spouses are gainfully employed in the United States'",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Foreclosed by controlling precedent as wealth-based PSGs are not cognizable"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant proposed a non-cognizable PSG",
+          "reasoning_stated": "Defendant believed it would strengthen the causal link",
+          "evidence_ids": [
+            "E090",
+            "E091"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "A cognizable PSG should have been proposed",
+          "standard_of_care_basis": "Established legal precedent",
+          "evidence_ids": [
+            "E116",
+            "E117"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Based on evidence E090-E091",
+          "what_should_have_happened": "Based on court's findings",
+          "legal_standard_applied": "Reasonable competence standard",
+          "evidence_ids": [
+            "E090",
+            "E091",
+            "E116",
+            "E117"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Asylum application initially denied due to ineffective legal representation",
+        "severity": "Not applicable",
+        "long_term_effects": "Potential deportation risk",
+        "evidence_ids": [
+          "E121",
+          "E122"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not applicable",
+        "key_findings": [
+          "Breach of duty in failing to propose a cognizable PSG",
+          "Causation established - ineffective assistance led to denial of asylum"
+        ],
+        "evidence_ids": [
+          "E121",
+          "E122"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to propose a cognizable PSG",
+        "counterfactual": "A proper PSG could have led to a successful asylum claim",
+        "evidence_ids": [
+          "E121",
+          "E122"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "February 2012",
+        "event": "Gang member threatened Guandique's husband",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "Not documented in judgment",
+        "event": "Guandique receives threats from gang members",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [],
+    "treatments": [],
+    "complications": [],
+    "allegations": [
+      {
+        "allegation": "Ineffective assistance of counsel",
+        "against": "Defendant attorney",
+        "found_proven": true,
+        "evidence_ids": [
+          "E121"
+        ]
+      },
+      {
+        "allegation": "Failure to file for asylum",
+        "against": "Defendant attorney",
+        "found_proven": true,
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Reasonable competence standard not met",
+        "evidence_ids": [
+          "E121"
+        ]
+      },
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Reasonable probability of different outcome",
+        "evidence_ids": [
+          "E007",
+          "E008"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.01238390092879257,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 09:44:27.271673",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

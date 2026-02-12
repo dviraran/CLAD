@@ -1,0 +1,407 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-9400409",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2026-01-18",
+  "url": "https://example.com/courtlistener-9400409",
+  "case_name": "Swanigan v. Avenues Healthcare",
+  "neutral_citation": null,
+  "clinical_domain": "CARDIOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Swanigan v. Avenues Healthcare. Medical malpractice case involving cardiology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Swanigan resided in a long-term healthcare facility operated by Avenues Healthcare Inc. (Avenues) from 2009 through 2013.",
+      "paragraph_ref": "12",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "In early 2013, Swanigan \u201cdeveloped cuts or other injuries . . . to both of his feet.\u201d",
+      "paragraph_ref": "12",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "Around October 2013, Swanigan developed infections in both feet, which required his transfer to the University of Utah Medical Center for treatment.",
+      "paragraph_ref": "12",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "Physicians at the hospital determined that both of Swanigan\u2019s feet would have to be amputated.",
+      "paragraph_ref": "12",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "Swanigan died from a heart attack.",
+      "paragraph_ref": "12",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "Swanigan suffered from coronary disease and hypertension, smoked heavily, was obese, and led a sedentary lifestyle.",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Expert\u2019s testimony largely consisted of the assertion that Swanigan\u2019s infection resulted in inflammation, which in turn resulted in coronary problems.",
+      "paragraph_ref": "17",
+      "speaker": "Expert witness"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "LEGAL_FINDING",
+      "text": "The district court determined that the expert testimony Swanigan\u2019s family sought to introduce in this respect was unreliable and, on that basis, excluded that testimony from trial.",
+      "paragraph_ref": "9",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "LEGAL_FINDING",
+      "text": "The court then determined that, without the excluded testimony, Swanigan\u2019s estate could not prove its claim, and therefore it granted summary judgment in favor of the nursing home.",
+      "paragraph_ref": "10",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "COURT_REASONING",
+      "text": "The testimony of [Expert] fails to meet the requirements for admissible testimony under rules 702(b) or 702(c) of the Utah Rules of Evidence.",
+      "paragraph_ref": "20",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E011",
+      "type": "COURT_REASONING",
+      "text": "There is no dispute that [Expert\u2019s] opinion is not based on general acceptance in the relevant expert community.",
+      "paragraph_ref": "23",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E012",
+      "type": "LEGAL_FINDING",
+      "text": "The Estate had \u201cno expert testimony to support its claims for medical malpractice or wrongful death.\u201d",
+      "paragraph_ref": "24",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E013",
+      "type": "COURT_REASONING",
+      "text": "The district court did not abuse its discretion in striking Expert\u2019s opinion.",
+      "paragraph_ref": "66",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E014",
+      "type": "LEGAL_FINDING",
+      "text": "Affirmed.",
+      "paragraph_ref": "66",
+      "speaker": "Court finding"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "male",
+        "relevant_social_history": "Smoked heavily, obese, sedentary lifestyle"
+      },
+      "chief_complaint": "Infections in both feet",
+      "history_of_present_illness": "Developed cuts or other injuries to both feet in early 2013, refused medical care on numerous occasions",
+      "past_medical_history": [
+        "Coronary disease",
+        "Hypertension"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "feet": "Infections in both feet"
+        }
+      },
+      "initial_working_problem": "Infections in both feet requiring medical intervention",
+      "known_constraints": null,
+      "initial_differential": [
+        "Diabetic foot infection",
+        "Peripheral vascular disease"
+      ],
+      "critical_findings": [
+        "Infections in both feet"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E002",
+        "E003"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSULT_NOTE",
+        "name": "Hospital Consultation",
+        "description": "Consultation at University of Utah Medical Center",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Determined both feet would have to be amputated",
+          "detailed_findings": null,
+          "clinical_significance": "Severe infection requiring surgical intervention",
+          "decision_impact": "Prompted consideration for amputation",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with foot injuries and infections",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Development of foot injuries",
+            "timestamp": "Early 2013",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Hospital Workup",
+        "description": "Patient transferred to hospital for further evaluation",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Hospital determines need for amputation",
+            "timestamp": "October 2013",
+            "evidence_ids": [
+              "E003",
+              "E004"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient with severe foot infections",
+        "prompt": "What should be the next step in management?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Proceed with immediate surgical intervention",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "To prevent further complications from infection"
+          },
+          {
+            "option_id": "B",
+            "description": "Delay surgery and continue monitoring",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Patient refused care, leading to delay"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Surgery was delayed due to patient's refusal of care",
+          "reasoning_stated": "Patient's refusal of care",
+          "evidence_ids": [
+            "E002",
+            "E003"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Immediate surgical intervention should have been pursued",
+          "standard_of_care_basis": "To prevent progression of infection",
+          "evidence_ids": [
+            "E004"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Delay in surgical intervention led to worsening condition",
+          "what_should_have_happened": "Immediate intervention to prevent complications",
+          "legal_standard_applied": "Standard of care for severe infections",
+          "evidence_ids": [
+            "E004"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient died from a heart attack before surgery",
+        "severity": "FATAL",
+        "long_term_effects": "Not applicable",
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "None",
+        "key_findings": [
+          "Expert testimony excluded, no causation proven",
+          "Summary judgment in favor of nursing home"
+        ],
+        "evidence_ids": [
+          "E009",
+          "E012"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Lack of admissible expert testimony",
+        "counterfactual": "Not applicable",
+        "evidence_ids": [
+          "E009",
+          "E012"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "Early 2013",
+        "event": "Swanigan developed cuts or other injuries to both feet",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "October 2013",
+        "event": "Swanigan developed infections in both feet",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [
+      {
+        "diagnosis": "Infections in both feet",
+        "when_made": "October 2013",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Amputation planned",
+        "date": "October 2013",
+        "provider": null,
+        "outcome": "Not performed due to patient's death",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Heart attack",
+        "when_occurred": "October 2013",
+        "severity": "Fatal",
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to provide adequate care leading to infection",
+        "against": "Avenues Healthcare",
+        "found_proven": false,
+        "evidence_ids": [
+          "E009"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "No expert testimony to support causation",
+        "legal_significance": "Summary judgment granted",
+        "evidence_ids": [
+          "E012"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.20588235294117646,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 09:52:06.403847",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

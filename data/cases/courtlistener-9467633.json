@@ -1,0 +1,478 @@
+{
+  "case_id": "courtlistener-9467633",
+  "source": "courtlistener",
+  "source_url": "local://courtlistener-9467633.html",
+  "jurisdiction": "US",
+  "extraction_metadata": {
+    "version": "batch_api_v1",
+    "model": "gpt-4o",
+    "extracted_at": "2026-01-21T17:56:57.912481",
+    "simulation_extracted_at": "2026-01-21T18:25:07.031380",
+    "simulation_model": "gpt-4o"
+  },
+  "case_metadata": {
+    "case_name": "Rivera Rodriguez v. Hospital San Cristobal",
+    "citation": "No. 22-1776",
+    "court": "United States Court of Appeals For the First Circuit",
+    "date": "January 19, 2024"
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "Rodríguez visited HSC complaining of pelvic pain. Rodríguez -- who was then seventy-one years old and living with several chronic health conditions including hypertension, type 2 diabetes, and asthma",
+      "paragraph_ref": "27",
+      "paragraph_starts_with": "[27] On February 29, 2016, Rodríguez",
+      "summary": "Rodríguez presented with pelvic pain and had chronic conditions.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "Dr. Vélez performed Rodríguez's surgery on April 21, 2016, at HSC. During the surgery, Dr. Vélez discovered that Rodríguez had a 'frozen pelvis' with multiple 'intraabdominal adhesions,' and so she requested a surgical consultation from Dr. Mateo",
+      "paragraph_ref": "35",
+      "paragraph_starts_with": "[35] Dr. Vélez performed Rodríguez's",
+      "summary": "Surgery revealed a frozen pelvis; Dr. Mateo consulted.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "On April 25, 2016, Rodríguez was discharged from HSC after HSC staff observed 'positive bowel sounds' and Rodríguez reported 'positive stool passage.'",
+      "paragraph_ref": "41",
+      "paragraph_starts_with": "[41] was discharged from HSC after",
+      "summary": "Rodríguez discharged with positive bowel sounds and stool passage.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "Four days later, on April 29, during a scheduled postoperative appointment with Dr. Vélez at HSC, Rodríguez reported that she had been experiencing 'nausea, vomiting, and abdominal/pelvic pain since April 26.'",
+      "paragraph_ref": "43",
+      "paragraph_starts_with": "[43] Four days later, on April 29,",
+      "summary": "Post-op, Rodríguez reported nausea, vomiting, and pain.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "Rodríguez was then admitted to HSC's emergency department and was diagnosed with a presumed perforated sigmoid colon.",
+      "paragraph_ref": "47",
+      "paragraph_starts_with": "[47] to HSC's emergency department",
+      "summary": "Admitted with presumed perforated sigmoid colon.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "Rodríguez was subsequently admitted to HSC's intensive care unit ('ICU') in critical condition. She was intubated on a respirator with a nasogastric ('NG') tube, a colostomy bag, and a Foley catheter.",
+      "paragraph_ref": "53",
+      "paragraph_starts_with": "[53] subsequently admitted to HSC's",
+      "summary": "Admitted to ICU in critical condition with multiple supports.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "On May 12, nursing and infectious-disease staff noted 'the presence of worms and/or maggots in the right nostril of [Rodríguez], where the NG tube was located.'",
+      "paragraph_ref": "75",
+      "paragraph_starts_with": "[75] On May 12, nursing and",
+      "summary": "Worms/maggots found in nostril where NG tube was placed.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "Rodríguez died later that evening, at 8:48 P.M. on May 19, 2016.",
+      "paragraph_ref": "92",
+      "paragraph_starts_with": "[92] died later that evening, at",
+      "summary": "Rodríguez died on May 19, 2016.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "MEDICAL_RECORD",
+      "verbatim_quote": "An autopsy determined that Rodríguez's cause of death was 'peritonitis due to sigmoid colon perforation with associated sepsis and septic shock.'",
+      "paragraph_ref": "93",
+      "paragraph_starts_with": "[93] An autopsy determined that",
+      "summary": "Autopsy: death due to peritonitis from colon perforation.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "EXPERT_TESTIMONY",
+      "verbatim_quote": "Dr. James's expert report 'conclude[d] as a matter of fact that the defendants' negligence caused Rodríguez's premature death.'",
+      "paragraph_ref": "257",
+      "paragraph_starts_with": "[257] Dr. James's expert report",
+      "summary": "Dr. James concluded negligence caused premature death.",
+      "speaker": "Dr. James"
+    },
+    {
+      "evidence_id": "E011",
+      "type": "LEGAL_FINDING",
+      "verbatim_quote": "The judgment of the District Court is affirmed.",
+      "paragraph_ref": "676",
+      "paragraph_starts_with": "[676] For these reasons, the judgment",
+      "summary": "District Court's judgment affirmed.",
+      "speaker": "Court conclusion"
+    }
+  ],
+  "verdict_detected": {
+    "outcome": "NO_LIABILITY",
+    "key_phrase": "The judgment of the District Court is affirmed.",
+    "paragraph_ref": "676"
+  },
+  "extraction_notes": {
+    "total_paragraphs_analyzed": 677,
+    "key_sections_found": [
+      "Background",
+      "Key Findings and Analysis",
+      "Conclusion and Verdict"
+    ],
+    "gaps_identified": [
+      "No specific lab values mentioned",
+      "Timing of events unclear"
+    ]
+  },
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "71 years",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Pelvic pain",
+      "history_of_present_illness": "Rodríguez presented with pelvic pain and had chronic conditions including hypertension, type 2 diabetes, and asthma.",
+      "past_medical_history": [
+        "Hypertension",
+        "Type 2 diabetes",
+        "Asthma"
+      ],
+      "medications": "Not documented in judgment",
+      "allergies": "Not documented in judgment",
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment"
+        },
+        "focused_exam": {
+          "abdomen": "Not documented in judgment"
+        }
+      },
+      "initial_working_problem": "Pelvic pain with chronic conditions",
+      "initial_differential": "Not documented in judgment",
+      "critical_findings": "Not documented in judgment",
+      "urgency_level": "Not documented in judgment",
+      "evidence_ids": [
+        "E001"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSULT_NOTE",
+        "name": "Surgical Consultation",
+        "description": "Consultation with Dr. Mateo during surgery",
+        "available_phase": "procedure",
+        "reveal": {
+          "result_summary": "Frozen pelvis with multiple intraabdominal adhesions",
+          "clinical_significance": "Complicated surgical field",
+          "decision_impact": "Required surgical consultation"
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "postop",
+        "clinical_context": "Postoperative follow-up with symptoms of nausea, vomiting, and pain",
+        "prompt": "What should be the next step in management?",
+        "action_type": "ESCALATE_CARE",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Admit to hospital for further evaluation",
+            "is_defendant_choice": true,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Symptoms suggest possible complication requiring further evaluation"
+          },
+          {
+            "option_id": "B",
+            "description": "Prescribe antiemetics and discharge home",
+            "is_defendant_choice": false,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Inadequate response to potential serious complication"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "A",
+          "description": "Admitted to hospital for further evaluation",
+          "reasoning_stated": "Symptoms warranted further investigation",
+          "evidence_ids": [
+            "E004",
+            "E005"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Admit to hospital for further evaluation",
+          "standard_of_care_basis": "Symptoms indicated potential serious complication",
+          "evidence_ids": [
+            "E004",
+            "E005"
+          ]
+        },
+        "explanation": {
+          "why_defendant_wrong": "Not applicable as the correct action was taken",
+          "what_should_have_happened": "Correct action was taken",
+          "legal_standard_applied": "Not applicable",
+          "evidence_ids": [
+            "E004",
+            "E005"
+          ]
+        },
+        "is_malpractice_point": false
+      },
+      {
+        "decision_id": "D002",
+        "phase_id": "ICU",
+        "clinical_context": "Patient in ICU with critical condition",
+        "prompt": "What infection control measures should be implemented?",
+        "action_type": "MONITORING_FOLLOWUP",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Regular inspection and cleaning of NG tube site",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Prevent infection and complications"
+          },
+          {
+            "option_id": "B",
+            "description": "Routine care without specific inspection",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Neglects potential site for infection"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Routine care without specific inspection",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E007"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Regular inspection and cleaning of NG tube site",
+          "standard_of_care_basis": "Prevent infection and complications",
+          "evidence_ids": [
+            "E007"
+          ]
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to prevent infection at NG tube site",
+          "what_should_have_happened": "Regular inspection and cleaning",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E007"
+          ]
+        },
+        "is_malpractice_point": true
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with pelvic pain",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Presentation with pelvic pain",
+            "timestamp": "February 29, 2016",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "procedure",
+        "name": "Surgical Procedure",
+        "description": "Surgery performed revealing frozen pelvis",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Surgery performed by Dr. Vélez",
+            "timestamp": "April 21, 2016",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "postop",
+        "name": "Postoperative Follow-up",
+        "description": "Follow-up with symptoms of nausea, vomiting, and pain",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Post-op symptoms reported",
+            "timestamp": "April 29, 2016",
+            "evidence_ids": [
+              "E004"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "ICU",
+        "name": "ICU Admission",
+        "description": "Admitted to ICU in critical condition",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "ICU admission with critical condition",
+            "timestamp": "Not documented in judgment",
+            "evidence_ids": [
+              "E006"
+            ]
+          }
+        ]
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient died from peritonitis due to sigmoid colon perforation",
+        "severity": "FATAL",
+        "long_term_effects": "Not applicable",
+        "evidence_ids": [
+          "E009"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Negligence caused premature death",
+          "Failure to prevent infection at NG tube site"
+        ],
+        "evidence_ids": [
+          "E010",
+          "E011"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to prevent infection at NG tube site",
+        "counterfactual": "Proper care could have prevented infection",
+        "evidence_ids": [
+          "E007",
+          "E010"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "February 29, 2016",
+        "event": "Patient presents with pelvic pain",
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "April 21, 2016",
+        "event": "Surgery performed revealing frozen pelvis",
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "April 29, 2016",
+        "event": "Post-op symptoms reported",
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "timestamp": "May 19, 2016",
+        "event": "Patient died from peritonitis",
+        "evidence_ids": [
+          "E008",
+          "E009"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [
+      {
+        "diagnosis": "Perforated sigmoid colon",
+        "when_made": "April 29, 2016",
+        "correct": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Surgical intervention",
+        "date": "April 21, 2016",
+        "outcome": "Frozen pelvis discovered",
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Peritonitis",
+        "when_occurred": "Not documented in judgment",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E009"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to prevent infection at NG tube site",
+        "against": "HSC staff",
+        "found_proven": true,
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendants' negligence caused premature death",
+        "legal_significance": "Liability found",
+        "evidence_ids": [
+          "E010",
+          "E011"
+        ]
+      }
+    ]
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "MONITORING_FOLLOWUP"
+    ],
+    "diagnosis_subtypes": [
+      "FAILURE_TO_MONITOR"
+    ]
+  }
+}

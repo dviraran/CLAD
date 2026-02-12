@@ -1,0 +1,443 @@
+{
+  "case_id": "courtlistener-4418234",
+  "source": "courtlistener",
+  "source_url": "local://courtlistener-4418234.html",
+  "jurisdiction": "US",
+  "extraction_metadata": {
+    "version": "batch_api_v1",
+    "model": "gpt-4o",
+    "extracted_at": "2026-01-21T17:56:57.896696",
+    "simulation_extracted_at": "2026-01-21T18:25:06.999406",
+    "simulation_model": "gpt-4o"
+  },
+  "case_metadata": {
+    "case_name": "Arroyo v. University of Connecticut Health Center",
+    "citation": "AC 38701",
+    "court": "Connecticut Appellate Court",
+    "date": "August 15, 2017"
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "On April 1, 2013, Arroyo underwent a vasectomy performed by Dr. Albertsen at the health center.",
+      "paragraph_ref": "8",
+      "paragraph_starts_with": "[8] PRESCOTT, J. In this action",
+      "summary": "Arroyo underwent a vasectomy on April 1, 2013, performed by Dr. Albertsen.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "Immediately after the procedure, Arroyo suffered pain that continued, unabated, for several days.",
+      "paragraph_ref": "8",
+      "paragraph_starts_with": "[8] PRESCOTT, J. In this action",
+      "summary": "Arroyo experienced continuous pain immediately after the vasectomy.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "On April 4, 2013, he went to the emergency room at Saint Francis Hospital and Medical Center, where it was discovered that his left testicle was necrotic because of a lack of blood flow through the testicular artery.",
+      "paragraph_ref": "8",
+      "paragraph_starts_with": "[8] PRESCOTT, J. In this action",
+      "summary": "Arroyo's left testicle was found necrotic due to lack of blood flow on April 4, 2013.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "This required Arroyo to undergo an orchiectomy, or surgical removal of the testicle, that same day.",
+      "paragraph_ref": "8",
+      "paragraph_starts_with": "[8] PRESCOTT, J. In this action",
+      "summary": "Arroyo underwent an orchiectomy on April 4, 2013.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "EXPERT_TESTIMONY",
+      "verbatim_quote": "The testimony of the plaintiffs’ expert, B, on causation relied on substantial evidence that was largely unchallenged by the defendants.",
+      "paragraph_ref": "3",
+      "paragraph_starts_with": "[3] The defendants’ claim that",
+      "summary": "Plaintiffs' expert testimony on causation was largely unchallenged.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "LEGAL_FINDING",
+      "verbatim_quote": "The defendants could not prevail on their claim that because the trial court rendered judgment for the plaintiffs on a theory of liability materially different from that which was alleged in their notice of claim.",
+      "paragraph_ref": "1",
+      "paragraph_starts_with": "[1] The defendants could not",
+      "summary": "Defendants' claim of differing liability theory was rejected.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "LEGAL_FINDING",
+      "verbatim_quote": "The court, as the trier of fact, was free to credit B’s explanation for the cause of A’s injury over that of the defendants’ expert.",
+      "paragraph_ref": "3",
+      "paragraph_starts_with": "[3] The defendants’ claim that",
+      "summary": "Court credited plaintiffs' expert over defendants' expert.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "COURT_REASONING",
+      "verbatim_quote": "The plaintiffs properly filed a timely notice with the commissioner seeking permission to pursue a medical malpractice action against the defendants.",
+      "paragraph_ref": "1",
+      "paragraph_starts_with": "[1] The defendants could not",
+      "summary": "Plaintiffs filed a timely notice for malpractice action.",
+      "speaker": "Court reasoning"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "COURT_REASONING",
+      "verbatim_quote": "The defendants failed to demonstrate that the basis of the claim in the notice filed with the commissioner was materially different from the basis of the plaintiffs’ claim at trial.",
+      "paragraph_ref": "1",
+      "paragraph_starts_with": "[1] The defendants could not",
+      "summary": "Defendants failed to show material difference in claim basis.",
+      "speaker": "Court reasoning"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "LEGAL_FINDING",
+      "verbatim_quote": "The plaintiffs had satisfied their burden of proving that P injured A’s testicular artery during the vasectomy and caused necrosis of A’s testicle.",
+      "paragraph_ref": "3",
+      "paragraph_starts_with": "[3] The defendants’ claim that",
+      "summary": "Plaintiffs proved injury to testicular artery causing necrosis.",
+      "speaker": "Court finding"
+    }
+  ],
+  "verdict_detected": {
+    "outcome": "LIABILITY_FOUND",
+    "key_phrase": "judgment of the trial court rendered in favor of the plaintiffs",
+    "paragraph_ref": "8"
+  },
+  "extraction_notes": {
+    "total_paragraphs_analyzed": 11,
+    "key_sections_found": [
+      "Facts",
+      "Expert Evidence",
+      "Conclusion"
+    ],
+    "gaps_identified": [
+      "No specific lab values mentioned",
+      "Detailed timeline of post-operative events unclear"
+    ]
+  },
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "male",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Pain immediately after vasectomy",
+      "history_of_present_illness": "Patient experienced continuous pain immediately after the vasectomy performed on April 1, 2013.",
+      "past_medical_history": "Not documented in judgment",
+      "medications": "Not documented in judgment",
+      "allergies": "Not documented in judgment",
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment"
+        },
+        "focused_exam": {
+          "genitourinary": "Not documented in judgment"
+        }
+      },
+      "initial_working_problem": "Post-vasectomy pain",
+      "initial_differential": [
+        "Post-surgical pain",
+        "Vascular injury"
+      ],
+      "critical_findings": [
+        "Continuous pain post-vasectomy"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "Ultrasound of scrotum",
+        "description": "Ultrasound to assess blood flow and testicular integrity",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not documented in judgment",
+          "clinical_significance": "Not documented in judgment",
+          "decision_impact": "Not documented in judgment"
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": []
+      },
+      {
+        "request_id": "R002",
+        "type": "CONSULT_NOTE",
+        "name": "Urology consult",
+        "description": "Consultation with urology to assess post-vasectomy complications",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not documented in judgment",
+          "clinical_significance": "Not documented in judgment",
+          "decision_impact": "Not documented in judgment"
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": []
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient presents with continuous pain after vasectomy",
+        "prompt": "What should be the next step in management?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Order scrotal ultrasound to assess blood flow",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Ultrasound can help identify vascular complications."
+          },
+          {
+            "option_id": "B",
+            "description": "Prescribe pain medication and observe",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Does not address potential underlying vascular issue."
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant prescribed pain medication and observed",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E002"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Scrotal ultrasound should have been ordered",
+          "standard_of_care_basis": "Expert evidence suggested vascular assessment",
+          "evidence_ids": [
+            "E005",
+            "E010"
+          ]
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to assess vascular status led to necrosis",
+          "what_should_have_happened": "Ultrasound could have identified compromised blood flow",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E005",
+            "E010"
+          ]
+        },
+        "is_malpractice_point": true
+      },
+      {
+        "decision_id": "D002",
+        "phase_id": "workup",
+        "clinical_context": "Patient with necrotic testicle due to lack of blood flow",
+        "prompt": "What surgical intervention is required?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Perform orchiectomy to remove necrotic testicle",
+            "is_defendant_choice": true,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Necrotic tissue requires removal to prevent further complications."
+          },
+          {
+            "option_id": "B",
+            "description": "Attempt testicular salvage surgery",
+            "is_defendant_choice": false,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Not feasible due to extent of necrosis."
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "A",
+          "description": "Defendant performed orchiectomy",
+          "reasoning_stated": "Necrotic testicle required removal",
+          "evidence_ids": [
+            "E004"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Orchiectomy was appropriate",
+          "standard_of_care_basis": "Necrotic tissue management",
+          "evidence_ids": [
+            "E004"
+          ]
+        },
+        "explanation": {
+          "why_defendant_correct": "Orchiectomy was necessary due to necrosis",
+          "what_should_have_happened": "Orchiectomy was the correct intervention",
+          "legal_standard_applied": "Standard surgical practice",
+          "evidence_ids": [
+            "E004"
+          ]
+        },
+        "is_malpractice_point": false
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with pain post-vasectomy",
+        "duration": "3 days",
+        "key_events": [
+          {
+            "event": "Vasectomy performed",
+            "timestamp": "April 1, 2013",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Emergency Room Visit",
+        "description": "Patient visits ER due to severe pain",
+        "duration": "1 day",
+        "key_events": [
+          {
+            "event": "ER visit and diagnosis of necrotic testicle",
+            "timestamp": "April 4, 2013",
+            "evidence_ids": [
+              "E003"
+            ]
+          }
+        ]
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient required orchiectomy due to necrotic testicle",
+        "severity": "PERMANENT_MODERATE_DISABILITY",
+        "long_term_effects": "Loss of testicle",
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Breach of duty in failing to assess vascular status post-vasectomy",
+          "Causation established - earlier intervention could have prevented necrosis"
+        ],
+        "evidence_ids": [
+          "E005",
+          "E010"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to assess vascular status",
+        "counterfactual": "Ultrasound could have identified compromised blood flow",
+        "evidence_ids": [
+          "E005",
+          "E010"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "April 1, 2013",
+        "event": "Vasectomy performed by Dr. Albertsen",
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "April 4, 2013",
+        "event": "ER visit and diagnosis of necrotic testicle",
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "timestamp": "April 4, 2013",
+        "event": "Orchiectomy performed",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [
+      {
+        "diagnosis": "Necrotic testicle due to lack of blood flow",
+        "when_made": "April 4, 2013",
+        "correct": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Orchiectomy",
+        "date": "April 4, 2013",
+        "outcome": "Testicle removed",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Necrosis of testicle",
+        "when_occurred": "April 4, 2013",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to assess vascular status post-vasectomy",
+        "against": "Dr. Albertsen",
+        "found_proven": true,
+        "evidence_ids": [
+          "E010"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E010"
+        ]
+      }
+    ]
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR"
+    ],
+    "diagnosis_subtypes": [
+      "FAILURE_TO_INVESTIGATE"
+    ]
+  }
+}

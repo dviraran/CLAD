@@ -1,0 +1,331 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-9357978",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2023-01-11",
+  "url": "https://example.com/courtlistener-9357978",
+  "case_name": "Hackett v. Bybordi",
+  "neutral_citation": null,
+  "clinical_domain": "OBSTETRICS_GYNAECOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Hackett v. Bybordi. Medical malpractice case involving obstetrics gynaecology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "According to the plaintiffs, on November 1, 2010, the decedent was treated in the Hospital's emergency room by Ilbris Yarde.",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "On November 20, 2010, the decedent died from 'pulmonary thromboembolism due to pelvic and lower extremity deep vein thrombosis complicating obesity (one month status post induced vaginal delivery of 27 week stillborn).'",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "Yarde discharged the decedent from the Hospital with an upper respiratory infection diagnosis, and sent her home.",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "LEGAL_FINDING",
+      "text": "The requisite elements of proof in a medical malpractice action are a deviation or departure from accepted standards of medical practice, and evidence that such deviation was a proximate cause of injury.",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Yarde's expert did not address the plaintiffs' allegations that Yarde failed to adhere to the Hospital's own guidelines for the prevention of venous thromboembolism.",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "LEGAL_FINDING",
+      "text": "Accordingly, the Supreme Court properly denied the stated portions of Yarde's motion for summary judgment dismissing the third-party complaint.",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Not documented in judgment",
+      "history_of_present_illness": "Patient presented with symptoms consistent with an upper respiratory infection.",
+      "past_medical_history": [
+        "27-week pregnancy miscarriage"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "system": "Examination mentioned but findings not specified"
+        }
+      },
+      "initial_working_problem": "Upper respiratory infection",
+      "known_constraints": null,
+      "initial_differential": [
+        "Upper respiratory infection",
+        "Deep vein thrombosis (DVT)",
+        "Pulmonary embolism (PE)"
+      ],
+      "critical_findings": [
+        "Risk factors for DVT and PE"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E003"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSULT_NOTE",
+        "name": "Emergency Room Consultation",
+        "description": "Consultation note from the emergency room visit on November 1, 2010",
+        "available_phase": "presentation",
+        "reveal": {
+          "result_summary": "Diagnosis of upper respiratory infection",
+          "detailed_findings": null,
+          "clinical_significance": "Missed diagnosis of DVT/PE",
+          "decision_impact": "Incorrect discharge without addressing DVT/PE risk",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Emergency Presentation",
+        "description": "Patient presents to ED with symptoms",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Patient evaluated and discharged with upper respiratory infection diagnosis",
+            "timestamp": "November 1, 2010",
+            "evidence_ids": [
+              "E001",
+              "E003"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient in ED with symptoms and risk factors for DVT/PE",
+        "prompt": "What should be the next step in management?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Initiate workup for DVT/PE including imaging and anticoagulation",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Patient had risk factors for DVT/PE which required further investigation"
+          },
+          {
+            "option_id": "B",
+            "description": "Discharge with diagnosis of upper respiratory infection",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Failed to address risk factors for DVT/PE"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant discharged patient with upper respiratory infection diagnosis",
+          "reasoning_stated": "Defendant did not consider DVT/PE",
+          "evidence_ids": [
+            "E003"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Workup for DVT/PE should have been initiated",
+          "standard_of_care_basis": "Hospital guidelines for prevention of venous thromboembolism",
+          "evidence_ids": [
+            "E004",
+            "E005"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failed to adhere to hospital guidelines for DVT/PE prevention",
+          "what_should_have_happened": "DVT/PE workup and management",
+          "legal_standard_applied": "Deviation from accepted medical practice",
+          "evidence_ids": [
+            "E004",
+            "E005"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient died from pulmonary thromboembolism due to DVT",
+        "severity": "FATAL",
+        "long_term_effects": "Not applicable",
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Breach of duty in failing to diagnose and treat DVT/PE",
+          "Causation established - failure to diagnose led to death"
+        ],
+        "evidence_ids": [
+          "E004",
+          "E005",
+          "E006"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to diagnose and treat DVT/PE",
+        "counterfactual": "Timely diagnosis and treatment could have prevented death",
+        "evidence_ids": [
+          "E004",
+          "E005",
+          "E006"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "November 1, 2010",
+        "event": "Patient treated in Hospital's emergency room",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "November 20, 2010",
+        "event": "Patient died from pulmonary thromboembolism",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [
+      {
+        "diagnosis": "Upper respiratory infection",
+        "when_made": "November 1, 2010",
+        "made_by": null,
+        "correct": false,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "treatments": [],
+    "complications": [
+      {
+        "complication": "Pulmonary thromboembolism",
+        "when_occurred": "November 20, 2010",
+        "severity": "Fatal",
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to diagnose and treat DVT/PE",
+        "against": "Ilbris Yarde",
+        "found_proven": true,
+        "evidence_ids": [
+          "E004",
+          "E005"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Deviation from accepted medical practice",
+        "evidence_ids": [
+          "E004",
+          "E005"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.42857142857142855,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 10:07:14.222832",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

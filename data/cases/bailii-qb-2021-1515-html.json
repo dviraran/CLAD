@@ -1,0 +1,376 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "bailii-qb-2021-1515-html",
+  "source": "BAILII",
+  "jurisdiction": "UK",
+  "court": "Unknown",
+  "decision_date": "2021-06-08",
+  "url": "https://example.com/bailii-qb-2021-1515-html",
+  "case_name": "The Defendant says there were ten months to trial when the application was made and that there is little or no prejudice to the Claimant if the admission is withdrawn. Although the Claimant will have to provide a witness statement (as will his wife) as to the facts and go back to July 2015 to do so, a witness statement as to the facts must have been taken before proceedings were commenced and that can be used now. It is said the Claimant can give evidence about the consultation on the 20thJuly 2015 and what he said about the duration of the neck lump. Further the Claimant would have obtained expert evidence on breach of duty prior to issue of the claim given the principles expressed inPantelli Associates Limited v Corporate City Developments[2010] EWHC 3189 (TCC)and therefore an expert is available to give the necessary evidence. Therefore the issues can be resolved in court. The trial need not be vacated it is said and a strict timetable will permit the case to go ahead in October 2021.",
+  "neutral_citation": "[2021] EWHC 1515",
+  "clinical_domain": "ONCOLOGY",
+  "outcome_severity": "TEMPORARY_HARM",
+  "summary": {
+    "brief": "The Defendant says there were ten months to trial when the application was made and that there is little or no prejudice to the Claimant if the admission is withdrawn. Although the Claimant will have to provide a witness statement (as will his wife) as to the facts and go back to July 2015 to do so, a witness statement as to the facts must have been taken before proceedings were commenced and that can be used now. It is said the Claimant can give evidence about the consultation on the 20thJuly 2",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "The Claimant's claim arises out of consultations he underwent with the Defendant on four occasions, namely 20th July 2015, 17th August 2015, 8th September 2015 and 29th September 2015.",
+      "paragraph_ref": "15",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Throughout the period in question (July to September 2015) when the Defendant saw the Claimant the neck lump grew in size. The lump later transpired to be a squamous cell carcinoma requiring surgery.",
+      "paragraph_ref": "19",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "Ultimately the Claimant was first referred to a specialist on the 14th September 2015.",
+      "paragraph_ref": "20",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Mr Reece FRCS an ENT Consultant relied upon by the Defendant in his report of 15th January 2021 stated at Paragraph 4.03 'if the Claimant had been referred on the 20th July 2015 and thereafter progression to surgery at the same rate that actually occurred the Claimant would have been operated on 3rd September 2015'.",
+      "paragraph_ref": "20",
+      "speaker": "Mr Reece, ENT Consultant"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "LEGAL_FINDING",
+      "text": "Liability was admitted in the defence dated 26th March 2020 (served on 1st April 2020) in relation to the first appointment on the 20th July 2015 in that the Defendant failed to refer the Claimant in accordance with the NICE guidelines.",
+      "paragraph_ref": "24",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Nurse Wiltshire concluded that the Defendant was negligent on the 20th July 2015 in a number of respects including failing to refer the Claimant in accordance with the NICE guidelines.",
+      "paragraph_ref": "23",
+      "speaker": "Nurse Wiltshire"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "COURT_REASONING",
+      "text": "The greater prejudice in my judgement would fall upon the Claimant if I were to allow the application.",
+      "paragraph_ref": "89",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "LEGAL_FINDING",
+      "text": "I refuse to allow the Defendant to make the amendment sought.",
+      "paragraph_ref": "87",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "COURT_REASONING",
+      "text": "The court service is under significant stress and pressure at the current time and resources have been set aside for this case to proceed to trial this year.",
+      "paragraph_ref": "91",
+      "speaker": "Judge's analysis"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "64 years",
+        "sex": "male",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Sore throat, dry mouth, and neck lump",
+      "history_of_present_illness": "Patient reports a neck lump present since before his birthday on 9th July 2015, with a sore throat and dry mouth.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "neck": "4cm cyst-like lump under the right mandibular"
+        }
+      },
+      "initial_working_problem": "Suspected blocked saliva duct (Sialolithiasis)",
+      "known_constraints": null,
+      "initial_differential": [
+        "Sialolithiasis",
+        "Cancer"
+      ],
+      "critical_findings": [
+        "Neck lump",
+        "Sore throat"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002",
+        "E006"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSULT_NOTE",
+        "name": "ENT Specialist Consultation",
+        "description": "Consultation with an ENT specialist for further evaluation of the neck lump.",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Referral to ENT specialist delayed until 14th September 2015",
+          "detailed_findings": null,
+          "clinical_significance": "Delay in referral contributed to progression of the condition",
+          "decision_impact": "Earlier referral could have led to less invasive surgery",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents to the health center with symptoms",
+        "duration": "1 day",
+        "key_events": [
+          {
+            "event": "Consultation with Nurse Practitioner",
+            "timestamp": "20 July 2015",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Delayed Referral",
+        "description": "Period during which referral to specialist was delayed",
+        "duration": "56 days",
+        "key_events": [
+          {
+            "event": "Referral to ENT specialist",
+            "timestamp": "14 September 2015",
+            "evidence_ids": [
+              "E003"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "presentation",
+        "clinical_context": "Patient presents with a neck lump and sore throat",
+        "prompt": "What should be the next step in management?",
+        "action_type": "ORDER_TEST",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Refer for urgent ENT specialist evaluation",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "NICE guidelines recommend urgent referral for neck lumps with potential malignancy"
+          },
+          {
+            "option_id": "B",
+            "description": "Advise conservative management with lemon sucking",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Misdiagnosis of Sialolithiasis led to inappropriate management"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant advised lemon sucking for suspected Sialolithiasis",
+          "reasoning_stated": "Defendant diagnosed blocked saliva duct",
+          "evidence_ids": [
+            "E001",
+            "E002"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Referral to ENT specialist should have been made",
+          "standard_of_care_basis": "NICE guidelines for neck lumps",
+          "evidence_ids": [
+            "E005",
+            "E006"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to follow NICE guidelines for neck lumps",
+          "what_should_have_happened": "Referral to ENT for further evaluation",
+          "legal_standard_applied": "Bolam test",
+          "evidence_ids": [
+            "E005",
+            "E006"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient underwent more extensive surgery due to delayed diagnosis",
+        "severity": "PERMANENT_SEVERE_DISABILITY",
+        "long_term_effects": "Loss of function to right shoulder and arm, Horner's Syndrome",
+        "evidence_ids": [
+          "E019",
+          "E020"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not specified in judgment",
+        "key_findings": [
+          "Breach of duty in failing to refer according to NICE guidelines",
+          "Causation established - delay led to more invasive surgery"
+        ],
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to refer for specialist evaluation",
+        "counterfactual": "Earlier referral could have prevented extensive surgery",
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "20 July 2015",
+        "event": "Patient presents with neck lump",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "14 September 2015",
+        "event": "Referral to ENT specialist",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [
+      {
+        "diagnosis": "Squamous cell carcinoma",
+        "when_made": "After referral to specialist",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E019"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Surgery involving neck dissection",
+        "date": "12 November 2015",
+        "provider": null,
+        "outcome": "Complicated surgery due to delayed referral",
+        "evidence_ids": [
+          "E020"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Horner's Syndrome",
+        "when_occurred": "Post-surgery",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E020"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to refer according to NICE guidelines",
+        "against": "Defendant nurse practitioner",
+        "found_proven": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.09782608695652174,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-21 17:32:55.625802",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

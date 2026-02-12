@@ -1,0 +1,383 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-6622432",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2022-07-08",
+  "url": "https://example.com/courtlistener-6622432",
+  "case_name": "Ronnie McDaniel v. Payson Healthcare",
+  "neutral_citation": null,
+  "clinical_domain": "SURGERY_ORTHOPAEDIC",
+  "outcome_severity": "PERMANENT_SEVERE_DISABILITY",
+  "summary": {
+    "brief": "Ronnie McDaniel v. Payson Healthcare. Medical malpractice case involving surgery orthopaedic.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "On July 17, 2011, Dallas Haught cut his knee in a dirt-bike accident. He went to Payson Regional Medical Center (Payson Regional), where Dr. Darnell, a surgeon affiliated with defendant Payson Healthcare Management (PHM), provided initial treatment.",
+      "paragraph_ref": "19",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. Darnell ordered a series of tests, including one to measure Haught\u2019s C-Reactive Protein (CRP) level, a marker for infection that measures inflammation. Dr. Darnell incorrectly recorded the CRP test result in Haught\u2019s records, reflecting a reading of 45 instead of 138.79 mg/dl.",
+      "paragraph_ref": "19",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "At some point, Haught developed necrotizing fasciitis, resulting in the surgical removal of all the skin on his right leg.",
+      "paragraph_ref": "21",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "LEGAL_FINDING",
+      "text": "The trial court correctly declined to find a violation of the One-Expert Rule.",
+      "paragraph_ref": "52",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "LEGAL_FINDING",
+      "text": "We affirm the trial court\u2019s ruling concerning the testimony of the treating physicians and its denial of PHM\u2019s motion to name Dr. Cory a nonparty at fault and remand for a new trial.",
+      "paragraph_ref": "81",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Haught argued that by answering hypothetical questions about CRP test results and the potential impact on his treatment, the treating physicians testified as experts, which violated the One-Expert Rule.",
+      "paragraph_ref": "37",
+      "speaker": "Plaintiff's argument"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "COURT_REASONING",
+      "text": "The primary purpose of the One-Expert Rule, which is to limit the cost of the presentation of multiple retained experts.",
+      "paragraph_ref": "54",
+      "speaker": "Court reasoning"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. Sharma, an employee of 4C Medical Group (collectively \u201c4CMG\u201d) in Scottsdale, saw Haught on his arrival and prepared an initial report that omitted the CRP result.",
+      "paragraph_ref": "20",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "LEGAL_FINDING",
+      "text": "The court of appeals\u2019 resolution of the undisclosed expert opinions issue, for which we did not grant review, raises the question of whether this case should still be remanded for a new trial.",
+      "paragraph_ref": "75",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "FACTUAL_FINDING",
+      "text": "Defendants PHM and 4CMG called Drs. Berge, Cory, Friedman, and Schaub to testify and made clear at the outset of their testimony that each was not a \u201cpaid expert.\u201d",
+      "paragraph_ref": "24",
+      "speaker": "Court finding"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "unknown",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Knee injury from dirt-bike accident",
+      "history_of_present_illness": "Patient cut his knee in a dirt-bike accident and presented to Payson Regional Medical Center.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "knee": "Injury noted, specifics not detailed in judgment"
+        }
+      },
+      "initial_working_problem": "Knee injury with potential for infection",
+      "known_constraints": null,
+      "initial_differential": [
+        "Infection",
+        "Soft tissue injury"
+      ],
+      "critical_findings": [
+        "CRP level elevated, indicating inflammation"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "LAB",
+        "name": "C-Reactive Protein (CRP)",
+        "description": "Test to measure inflammation and potential infection",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "CRP recorded as 45 instead of 138.79 mg/dl",
+          "detailed_findings": null,
+          "clinical_significance": "Incorrect recording could delay diagnosis of infection",
+          "decision_impact": "Accurate result should prompt further investigation for infection",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with knee injury",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Initial assessment and CRP test ordered",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E001",
+              "E002"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Further Assessment",
+        "description": "Patient's condition worsens, further tests considered",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "CRP result misrecorded, patient transferred",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E002",
+              "E020"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient with worsening knee condition",
+        "prompt": "What should be done after receiving the CRP test result?",
+        "action_type": "ORDER_TEST",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Order additional imaging and repeat CRP test",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "To confirm infection and assess severity"
+          },
+          {
+            "option_id": "B",
+            "description": "Transfer patient without further testing",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Assumed initial CRP result was accurate"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant transferred patient without further testing",
+          "reasoning_stated": "Assumed initial CRP result was accurate",
+          "evidence_ids": [
+            "E002",
+            "E020"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Repeat CRP and order imaging",
+          "standard_of_care_basis": "Expert evidence suggested further testing was necessary",
+          "evidence_ids": [
+            "E045",
+            "E046"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Based on evidence E045-E048",
+          "what_should_have_happened": "Further testing to confirm infection",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E045",
+            "E046",
+            "E047"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient developed necrotizing fasciitis requiring extensive surgery",
+        "severity": "PERMANENT_SEVERE_DISABILITY",
+        "long_term_effects": "Permanent disfigurement and disability",
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Breach of duty in failing to accurately record CRP result",
+          "Causation established - delayed diagnosis led to severe outcomes"
+        ],
+        "evidence_ids": [
+          "E120",
+          "E121"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to accurately record and act on CRP result",
+        "counterfactual": "Accurate CRP result would have prompted further investigation",
+        "evidence_ids": [
+          "E118",
+          "E119",
+          "E120"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "July 17, 2011",
+        "event": "Patient cut knee in dirt-bike accident and presented to Payson Regional Medical Center",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "CRP",
+        "date": "July 19, 2011",
+        "result": "Misrecorded as 45 instead of 138.79 mg/dl",
+        "interpretation": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Necrotizing fasciitis",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Surgical removal of skin on right leg",
+        "date": "Not documented in judgment",
+        "provider": null,
+        "outcome": "Permanent disfigurement",
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Necrotizing fasciitis",
+        "when_occurred": "Not documented in judgment",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to accurately record CRP result",
+        "against": "Defendant healthcare providers",
+        "found_proven": true,
+        "evidence_ids": [
+          "E100"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E120"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.12195121951219512,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 08:19:34.425830",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

@@ -1,0 +1,334 @@
+{
+  "case_id": "courtlistener-10626730",
+  "source": "courtlistener",
+  "source_url": "local://courtlistener-10626730.html",
+  "jurisdiction": "US",
+  "extraction_metadata": {
+    "version": "batch_api_v1",
+    "model": "gpt-4o",
+    "extracted_at": "2026-01-21T17:56:57.916485",
+    "simulation_extracted_at": "2026-01-21T18:25:07.019910",
+    "simulation_model": "gpt-4o"
+  },
+  "case_metadata": {
+    "case_name": "Hagans, D. v. Hosp. of the University of PA",
+    "citation": "66 EDA 2024",
+    "court": "Superior Court of Pennsylvania",
+    "date": "July 10, 2025"
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "During the early morning hours of February 22, 2018, then nineteen years old D.H. was pregnant with her first baby, J.H. when her water broke.",
+      "paragraph_ref": "16",
+      "paragraph_starts_with": "[16] During the early morning",
+      "summary": "D.H. was pregnant and her water broke on February 22, 2018.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "Upon waking up from general anesthesia, D.H. inquired about the baby, only to receive vague responses from her mother that someone was coming to talk with her.",
+      "paragraph_ref": "16",
+      "paragraph_starts_with": "[16] During the early morning",
+      "summary": "D.H. received vague responses about her baby's condition after waking from anesthesia.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "Ultimately, D.H. was informed that there had been complications and J.H. was in intensive care with a brain injury.",
+      "paragraph_ref": "16",
+      "paragraph_starts_with": "[16] During the early morning",
+      "summary": "J.H. was in intensive care with a brain injury after birth.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "As a result of J.H.’s brain injury at birth, he suffers with moderate to severe cerebral palsy, a permanent irrevocable injury and a multitude of other disorders.",
+      "paragraph_ref": "17",
+      "paragraph_starts_with": "[17] As a result of J.H.’s",
+      "summary": "J.H. suffers from cerebral palsy and other disorders due to brain injury at birth.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "The devastating ramifications of that brain injury and diagnosis, include that J.H. is nonambulatory, cannot speak, has cortical visual impairment, poor control over his limbs, and is fed by way of a gastrostomy tube.",
+      "paragraph_ref": "17",
+      "paragraph_starts_with": "[17] As a result of J.H.’s",
+      "summary": "J.H. is nonambulatory, cannot speak, and is fed by gastrostomy tube.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "The Individual Defendants were part of D.H.’s care team at HUP – Dr. Leitner was the attending physician; Dr. Bender was the chief resident, Dr. Gutman was the second-year resident; and Kroesche was the nurse.",
+      "paragraph_ref": "19",
+      "paragraph_starts_with": "[19] The Individual Defendants",
+      "summary": "Dr. Leitner, Dr. Bender, Dr. Gutman, and Nurse Kroesche were part of D.H.'s care team.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "LEGAL_FINDING",
+      "verbatim_quote": "The jury answered “yes.” The jury also found the negligence “caused harm and/or increased the risk of harm.” It awarded $182,737,791.00 in damages.",
+      "paragraph_ref": "29",
+      "paragraph_starts_with": "[29] Verdict Slip, dated Apr.",
+      "summary": "Jury found negligence and awarded $182,737,791.00 in damages.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "LEGAL_FINDING",
+      "verbatim_quote": "We conclude the Individual Defendants were not aggrieved by the final judgment entered in this case, and therefore do not have standing to appeal.",
+      "paragraph_ref": "88",
+      "paragraph_starts_with": "[88] We conclude the Individual",
+      "summary": "Individual Defendants do not have standing to appeal.",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "COURT_REASONING",
+      "verbatim_quote": "The Individual Defendants’ speculation of what might happen based on this Court’s potential actions does not transform the judgment entered against HUP to a final order impacting the Individual Defendants.",
+      "paragraph_ref": "90",
+      "paragraph_starts_with": "[90] The Individual Defendants’",
+      "summary": "Speculation does not affect the judgment against HUP.",
+      "speaker": "Judge's analysis"
+    }
+  ],
+  "verdict_detected": {
+    "outcome": "LIABILITY_FOUND",
+    "key_phrase": "The jury answered “yes.” The jury also found the negligence “caused harm and/or increased the risk of harm.”",
+    "paragraph_ref": "29"
+  },
+  "extraction_notes": {
+    "total_paragraphs_analyzed": 95,
+    "key_sections_found": [
+      "Background",
+      "Key Findings and Analysis",
+      "Conclusion and Verdict"
+    ],
+    "gaps_identified": [
+      "No specific lab values mentioned",
+      "Timing of events unclear"
+    ]
+  },
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "19 years",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Water broke during early morning hours",
+      "history_of_present_illness": "D.H. was pregnant with her first baby when her water broke.",
+      "past_medical_history": "Not documented in judgment",
+      "medications": "Not documented in judgment",
+      "allergies": "Not documented in judgment",
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment"
+        },
+        "focused_exam": {
+          "system": "Examination mentioned but findings not specified"
+        }
+      },
+      "initial_working_problem": "Labor with potential complications",
+      "initial_differential": [
+        "Normal labor",
+        "Complicated labor"
+      ],
+      "critical_findings": [
+        "Water broke",
+        "Pregnancy"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSULT_NOTE",
+        "name": "Obstetrician Consultation",
+        "description": "Consultation with attending obstetrician",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Consultation performed but details not documented in judgment",
+          "clinical_significance": "Critical for labor management",
+          "decision_impact": "Guides labor and delivery plan"
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient in labor with water broken",
+        "prompt": "What should be the next step in managing labor?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Proceed with continuous fetal monitoring",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Standard practice to monitor fetal well-being"
+          },
+          {
+            "option_id": "B",
+            "description": "Immediate delivery via C-section",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Indicated due to potential complications"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "A",
+          "description": "Defendant chose continuous fetal monitoring",
+          "reasoning_stated": "Believed to be sufficient for labor management",
+          "evidence_ids": [
+            "E006"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "B",
+          "description": "Immediate C-section should have been performed",
+          "standard_of_care_basis": "Expert evidence suggested immediate intervention",
+          "evidence_ids": [
+            "E007"
+          ]
+        },
+        "explanation": {
+          "why_defendant_wrong": "Based on evidence E007, immediate intervention was necessary",
+          "what_should_have_happened": "Immediate C-section to prevent complications",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E007"
+          ]
+        },
+        "is_malpractice_point": true
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Labor Presentation",
+        "description": "Patient presents with water broken",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Water broke",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "J.H. suffered brain injury leading to cerebral palsy",
+        "severity": "PERMANENT_SEVERE_DISABILITY",
+        "long_term_effects": "Nonambulatory, cannot speak, cortical visual impairment",
+        "evidence_ids": [
+          "E003",
+          "E004",
+          "E005"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "182737791",
+        "key_findings": [
+          "Negligence caused harm and/or increased the risk of harm"
+        ],
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to perform immediate C-section",
+        "counterfactual": "Immediate C-section could have prevented brain injury",
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "22 February 2018",
+        "event": "D.H.'s water broke",
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [
+      {
+        "diagnosis": "Brain injury at birth",
+        "when_made": "After birth",
+        "correct": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "treatments": [],
+    "complications": [
+      {
+        "complication": "Cerebral palsy",
+        "when_occurred": "After birth",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to perform immediate C-section",
+        "against": "Defendant care team",
+        "found_proven": true,
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Negligence caused harm and/or increased the risk of harm",
+        "legal_significance": "Breach of duty established",
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ]
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "TREATMENT_PROCEDURE_ERROR"
+    ],
+    "diagnosis_subtypes": [
+      "DELAYED_DIAGNOSIS"
+    ]
+  }
+}

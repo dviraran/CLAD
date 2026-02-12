@@ -1,0 +1,573 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10634486",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2025-03-03",
+  "url": "https://example.com/courtlistener-10634486",
+  "case_name": "Dodd v. Jones",
+  "neutral_citation": null,
+  "clinical_domain": "EMERGENCY_MEDICINE",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Dodd v. Jones. Medical malpractice case involving emergency medicine.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Julene saw her primary care physician for breathing difficulties. A CT scan was performed which revealed a large hiatal hernia that required surgery.",
+      "paragraph_ref": "II",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "On August 16, 2017, Dr. Fredline performed hernia surgery on Julene at Saint Alphonsus Regional Medical Center in Nampa, Idaho.",
+      "paragraph_ref": "II",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "A needle tip broke in Julene\u2019s abdomen during the procedure; however, Dr. Fredline characterized the tip as being 'too small to pose a danger.'",
+      "paragraph_ref": "II",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "On August 19, Julene collapsed when nurses tried to help her get out of her hospital bed. Julene\u2019s blood pressure had dropped to sixty over thirty (60/30).",
+      "paragraph_ref": "II",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "The results of the CT scan revealed that there was free fluid throughout Julene\u2019s abdomen.",
+      "paragraph_ref": "II",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "Julene\u2019s abdomen was irrigated and flushed, and the perforation was closed.",
+      "paragraph_ref": "II",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "Over the next four weeks, Julene stayed at Saint Alphonsus Hospital where she suffered from acute respiratory failure, swelling so severe that her toes turned black, and her surgical wound growing larger.",
+      "paragraph_ref": "II",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "FACTUAL_FINDING",
+      "text": "On September 19, 2017, Julene was transferred to Vibra Hospital, a critical care hospital, in serious condition.",
+      "paragraph_ref": "II",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "FACTUAL_FINDING",
+      "text": "Julene could not move her limbs on her own, had a wound VAC placed on her abdomen, a tracheotomy with a speaking valve, and visible blood in her urinary catheter bag.",
+      "paragraph_ref": "II",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "FACTUAL_FINDING",
+      "text": "On November 22, 2017, Julene was transferred from Vibra Hospital to Sunny Ridge skilled nursing facility.",
+      "paragraph_ref": "II",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E011",
+      "type": "FACTUAL_FINDING",
+      "text": "On February 23, 2018, Julene was discharged from Sunny Ridge to her home.",
+      "paragraph_ref": "II",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E012",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Simon opined based upon a reasonable degree of medical probability and certainty that [Saint] Alphonsus Medical Group Nampa and Dr. Forrest Fredline fell below the standard of care in the postoperative care of Julene Dodd.",
+      "paragraph_ref": "5",
+      "speaker": "Dr. Fred Simon"
+    },
+    {
+      "evidence_id": "E013",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Simon also reaffirmed his earlier opinion that Dr. Fredline and Saint Alphonsus failed to properly respond to Julene\u2019s worsening signs, symptoms, and complaints postoperatively.",
+      "paragraph_ref": "6",
+      "speaker": "Dr. Fred Simon"
+    },
+    {
+      "evidence_id": "E014",
+      "type": "LEGAL_FINDING",
+      "text": "The district court judgment is affirmed.",
+      "paragraph_ref": "4",
+      "speaker": "Chief Justice Bevan"
+    },
+    {
+      "evidence_id": "E015",
+      "type": "LEGAL_FINDING",
+      "text": "The district court struck the testimony of the Dodds\u2019 experts, which was key to establishing the viability of their medical malpractice claim.",
+      "paragraph_ref": "8",
+      "speaker": "Chief Justice Bevan"
+    },
+    {
+      "evidence_id": "E016",
+      "type": "LEGAL_FINDING",
+      "text": "The district court also dismissed the Dodds\u2019 third cause of action for fraudulent concealment because Jones ultimately complied with his disclosure requirements.",
+      "paragraph_ref": "9",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E017",
+      "type": "COURT_REASONING",
+      "text": "The Dodds\u2019 primary argument on appeal is that Jones is judicially estopped from claiming no medical malpractice occurred as a defense to the legal malpractice claim.",
+      "paragraph_ref": "V",
+      "speaker": "Court reasoning"
+    },
+    {
+      "evidence_id": "E018",
+      "type": "COURT_REASONING",
+      "text": "The district court exercised appropriate discretion given the legal issues presented to it.",
+      "paragraph_ref": "30",
+      "speaker": "Court reasoning"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Breathing difficulties",
+      "history_of_present_illness": "Patient presented with breathing difficulties, a CT scan revealed a large hiatal hernia.",
+      "past_medical_history": [
+        "Hiatal hernia"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "abdomen": "Not documented in judgment"
+        }
+      },
+      "initial_working_problem": "Hiatal hernia requiring surgical intervention",
+      "known_constraints": null,
+      "initial_differential": [
+        "Hiatal hernia"
+      ],
+      "critical_findings": [
+        "Large hiatal hernia on CT"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "CT Scan",
+        "description": "CT scan of the abdomen",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Large hiatal hernia",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates need for surgical intervention",
+          "decision_impact": "Prompted surgical consultation",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "IMAGING",
+        "name": "CT Scan",
+        "description": "CT scan of the abdomen post-collapse",
+        "available_phase": "postop",
+        "reveal": {
+          "result_summary": "Free fluid throughout abdomen",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates possible perforation",
+          "decision_impact": "Prompted emergency surgery",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with breathing difficulties, CT scan reveals hiatal hernia.",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "CT scan performed",
+            "timestamp": "June 2017",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "postop",
+        "name": "Postoperative Period",
+        "description": "Post-surgery complications and management",
+        "duration": "3 days",
+        "key_events": [
+          {
+            "event": "Patient collapses, CT scan reveals free fluid",
+            "timestamp": "August 19, 2017",
+            "evidence_ids": [
+              "E004",
+              "E005"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "procedure",
+        "name": "Hernia Surgery",
+        "description": "Surgery performed by Dr. Fredline",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Needle tip broke in abdomen",
+            "timestamp": "August 16, 2017",
+            "evidence_ids": [
+              "E002",
+              "E003"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "postop",
+        "clinical_context": "Patient post-hernia surgery with abdominal pain",
+        "prompt": "What should be done in response to worsening abdominal pain?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Order immediate imaging and consult surgery",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Worsening pain could indicate a serious complication such as perforation."
+          },
+          {
+            "option_id": "B",
+            "description": "Attribute pain to surgical wound and provide analgesia",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Pain was attributed to surgical wound without further investigation."
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Pain attributed to surgical wound, no immediate imaging ordered",
+          "reasoning_stated": "Pain was considered a normal postoperative symptom",
+          "evidence_ids": [
+            "E003",
+            "E004"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Immediate imaging and surgical consultation should have been ordered",
+          "standard_of_care_basis": "Expert testimony indicated this was necessary",
+          "evidence_ids": [
+            "E013"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to investigate worsening symptoms led to delayed diagnosis of perforation.",
+          "what_should_have_happened": "Immediate imaging and surgical consultation could have prevented complications.",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E013"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient suffered from acute respiratory failure and required extended hospitalization",
+        "severity": "PERMANENT_MODERATE_DISABILITY",
+        "long_term_effects": "Chronic respiratory issues, limited mobility",
+        "evidence_ids": [
+          "E007",
+          "E008",
+          "E009"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Breach of duty in failing to remove needle tip",
+          "Causation established - earlier intervention would have prevented complications"
+        ],
+        "evidence_ids": [
+          "E013",
+          "E014"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to remove needle tip",
+        "counterfactual": "Removal would have prevented complications",
+        "evidence_ids": [
+          "E013",
+          "E014"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "June 2017",
+        "event": "CT scan reveals large hiatal hernia",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "August 16, 2017",
+        "event": "Hernia surgery performed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "August 19, 2017",
+        "event": "Patient collapses, CT scan reveals free fluid",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004",
+          "E005"
+        ]
+      },
+      {
+        "timestamp": "August 16, 2017",
+        "event": "Hernia surgery performed, needle tip broke",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002",
+          "E003"
+        ]
+      },
+      {
+        "timestamp": "August 19, 2017",
+        "event": "Patient collapsed, CT scan revealed free fluid",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004",
+          "E005"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "CT Scan",
+        "date": "June 2017",
+        "result": "Large hiatal hernia",
+        "interpretation": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "test_name": "CT Scan",
+        "date": "August 19, 2017",
+        "result": "Free fluid throughout abdomen",
+        "interpretation": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "test_name": "CT Scan",
+        "date": "August 19, 2017",
+        "result": "Free fluid throughout abdomen",
+        "interpretation": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Perforated jejunum",
+        "when_made": "August 19, 2017",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "diagnosis": "Complications from retained needle tip",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E013"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Emergency surgery to repair perforation",
+        "date": "August 19, 2017",
+        "provider": null,
+        "outcome": "Perforation closed, patient transferred to ICU",
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "treatment": "Abdomen irrigated and flushed, perforation closed",
+        "date": "Not documented in judgment",
+        "provider": null,
+        "outcome": "Temporary stabilization",
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Sepsis and multiple organ failure",
+        "when_occurred": "Post-surgery",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E007",
+          "E008"
+        ]
+      },
+      {
+        "complication": "Acute respiratory failure",
+        "when_occurred": "Not documented in judgment",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to properly respond to postoperative complications",
+        "against": "Dr. Fredline and Saint Alphonsus",
+        "found_proven": false,
+        "evidence_ids": [
+          "E013"
+        ]
+      },
+      {
+        "allegation": "Failure to remove needle tip",
+        "against": "Dr. Fredline",
+        "found_proven": true,
+        "evidence_ids": [
+          "E013"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Expert testimony excluded, no breach of standard of care proven",
+        "legal_significance": "No liability found due to lack of admissible evidence",
+        "evidence_ids": [
+          "E014",
+          "E015"
+        ]
+      },
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E014"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP",
+      "TREATMENT_PROCEDURE_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.43902439024390244,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 09:43:33.481793",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

@@ -1,0 +1,327 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-9431371",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2023-10-06",
+  "url": "https://example.com/courtlistener-9431371",
+  "case_name": "Falletta v. Norman",
+  "neutral_citation": null,
+  "clinical_domain": "CARDIOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Falletta v. Norman. Medical malpractice case involving cardiology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "In February 2016, James A. Falletta (decedent) arrived at the emergency department at Millard Fillmore Suburban Hospital (Millard Fillmore) complaining of burning in his chest and shortness of breath.",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Decedent died of a myocardial rupture due to myocardial infarction the day after he arrived at Millard Fillmore.",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "MEDICAL_RECORD",
+      "text": "Decedent's medical records included a note that an interventional cardiologist was contacted, but the name of the physician was not listed.",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "LEGAL_FINDING",
+      "text": "The order denied the motion of defendant David M. Zlotnick, M.D. to dismiss the amended complaint against him.",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "COURT_REASONING",
+      "text": "We nevertheless reject Zlotnick's contention that the court erred in denying his motion inasmuch as we conclude that plaintiff raised a triable issue of fact with respect to the applicability of the relation back doctrine.",
+      "paragraph_ref": "13",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "COURT_REASONING",
+      "text": "Zlotnick does not dispute that the first prong is met here, and we reject his contention that plaintiff failed to raise an issue of fact with respect to the second and third prongs.",
+      "paragraph_ref": "13",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "LEGAL_FINDING",
+      "text": "Plaintiff raised a triable issue of fact whether Kaleida and Zlotnick are united in interest, and thus there is a triable issue of fact whether the second prong of the relation back doctrine is satisfied.",
+      "paragraph_ref": "13",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "LEGAL_FINDING",
+      "text": "With respect to the third prong, plaintiff established that her failure to include Zlotnick was a mistake and not the result of a strategy to obtain a tactical advantage.",
+      "paragraph_ref": "13",
+      "speaker": "Judge's analysis"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "male",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Burning in chest and shortness of breath",
+      "history_of_present_illness": "Patient presented to the emergency department with burning chest pain and shortness of breath.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "cardiovascular": "Examination mentioned but findings not specified"
+        }
+      },
+      "initial_working_problem": "Possible acute coronary syndrome",
+      "known_constraints": null,
+      "initial_differential": [
+        "myocardial infarction",
+        "angina"
+      ],
+      "critical_findings": [
+        "Burning chest pain",
+        "Shortness of breath"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSULT_NOTE",
+        "name": "Interventional Cardiologist Consultation",
+        "description": "Consultation with on-call interventional cardiologist",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Consultation was requested but not documented in detail",
+          "detailed_findings": null,
+          "clinical_significance": "Critical for determining need for intervention",
+          "decision_impact": "Could have led to timely intervention",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Emergency Presentation",
+        "description": "Patient presents to ED with acute symptoms",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Patient arrives at ED",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient in ED with suspected myocardial infarction",
+        "prompt": "What should be the next step in management?",
+        "action_type": "ORDER_TEST",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Order immediate cardiac catheterization",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard care for suspected myocardial infarction with potential complications"
+          },
+          {
+            "option_id": "B",
+            "description": "Continue with medical management only",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Failed to escalate care appropriately"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant continued with medical management only",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E003"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Immediate cardiac catheterization should have been ordered",
+          "standard_of_care_basis": "Expert evidence established need for intervention",
+          "evidence_ids": [
+            "E003"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to escalate care based on symptoms",
+          "what_should_have_happened": "Immediate intervention could have prevented myocardial rupture",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E003"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient died of myocardial rupture due to myocardial infarction",
+        "severity": "FATAL",
+        "long_term_effects": "Not applicable",
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Breach of duty in failing to escalate care",
+          "Causation established - earlier intervention could have prevented death"
+        ],
+        "evidence_ids": [
+          "E004",
+          "E005"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to escalate care with cardiac intervention",
+        "counterfactual": "Timely intervention could have prevented myocardial rupture",
+        "evidence_ids": [
+          "E003",
+          "E004"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "February 2016",
+        "event": "Patient arrives at ED",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [
+      {
+        "diagnosis": "Myocardial infarction",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "treatments": [],
+    "complications": [
+      {
+        "complication": "Myocardial rupture",
+        "when_occurred": "Day after presentation",
+        "severity": "Fatal",
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to escalate care with cardiac intervention",
+        "against": "Defendant cardiologist",
+        "found_proven": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.5714285714285714,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 09:41:51.579924",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

@@ -1,0 +1,10 @@
+evaluator,minority_score,count
+claude,0,7
+claude,1,9
+claude,2,43
+grok,0,2
+grok,1,13
+grok,2,216
+gpt5,0,214
+gpt5,1,51
+gpt5,2,1

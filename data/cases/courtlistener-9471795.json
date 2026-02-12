@@ -1,0 +1,440 @@
+{
+  "case_id": "courtlistener-9471795",
+  "source": "courtlistener",
+  "source_url": "local://courtlistener-9471795.html",
+  "jurisdiction": "US",
+  "extraction_metadata": {
+    "version": "batch_api_v1",
+    "model": "gpt-4o",
+    "extracted_at": "2026-01-21T17:56:57.912678",
+    "simulation_extracted_at": "2026-01-21T18:25:06.988505",
+    "simulation_model": "gpt-4o"
+  },
+  "case_metadata": {
+    "case_name": "Combs v. Madejski",
+    "citation": "[2024] NY Slip Op 00558",
+    "court": "SUPREME COURT OF THE STATE OF NEW YORK, Appellate Division, Fourth Judicial Department",
+    "date": "February 2, 2024"
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "Plaintiff commenced this medical malpractice action after she sustained a perforated bowel during a right salpingo-oophorectomy performed by defendant Julie A. Madejski, M.D., an obstetrician/gynecologist (OB/GYN), on August 27, 2013.",
+      "paragraph_ref": "13",
+      "paragraph_starts_with": "Appeal and cross-appeal from",
+      "summary": "Plaintiff sustained a perforated bowel during surgery on August 27, 2013.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "The surgery was done laparoscopically using robotic assistance, and the perforation went undetected for several days.",
+      "paragraph_ref": "13",
+      "paragraph_starts_with": "Appeal and cross-appeal from",
+      "summary": "Surgery was laparoscopic with robotic assistance; perforation undetected for days.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "A few hours after she was discharged from defendant Eastern Niagara Hospital, Inc. (ENH), plaintiff contacted Dr. Madejski and reported severe abdominal pain and fever, and Dr. Madejski instructed her to go to ENH's emergency room.",
+      "paragraph_ref": "13",
+      "paragraph_starts_with": "Appeal and cross-appeal from",
+      "summary": "Plaintiff reported pain and fever post-discharge; instructed to return to ER.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "Emergency room physician defendant Thomas Michael Kowalak, M.D., wrote an order for a CT scan with oral and rectal contrast, but ENH's radiologic technologist who performed the CT scan on August 28, 2013, did so with only oral and IV contrast.",
+      "paragraph_ref": "13",
+      "paragraph_starts_with": "Appeal and cross-appeal from",
+      "summary": "CT scan ordered with oral and rectal contrast; performed with oral and IV contrast.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "EXPERT_TESTIMONY",
+      "verbatim_quote": "The expert opined that performing the surgery in a laparoscopic fashion was contraindicated for plaintiff and that performing the surgery in an open fashion was the required method given plaintiff's risk factors.",
+      "paragraph_ref": "13",
+      "paragraph_starts_with": "Appeal and cross-appeal from",
+      "summary": "Expert opined laparoscopic surgery was contraindicated; open surgery was required.",
+      "speaker": "Plaintiff's expert"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "LEGAL_FINDING",
+      "verbatim_quote": "We agree with plaintiff that the court erred in sua sponte dismissing the complaint and cross-claims against Dr. Kowalak, and we therefore modify the order by vacating the third ordering paragraph and reinstating the complaint and any cross-claims against him.",
+      "paragraph_ref": "13",
+      "paragraph_starts_with": "Appeal and cross-appeal from",
+      "summary": "Court erred in dismissing claims against Dr. Kowalak; claims reinstated.",
+      "speaker": "Court conclusion"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "COURT_REASONING",
+      "verbatim_quote": "Plaintiff alleged that Dr. Madejski, Artemis, Dr. Loftus, and ENH failed to ensure that rectal contrast was given to plaintiff for the CT scan.",
+      "paragraph_ref": "13",
+      "paragraph_starts_with": "Appeal and cross-appeal from",
+      "summary": "Allegation of failure to ensure rectal contrast for CT scan.",
+      "speaker": "Court reasoning"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "EXPERT_TESTIMONY",
+      "verbatim_quote": "Plaintiff's expert general surgeon opined that, in light of Dr. Madejski's concerns of a potential perforation, it was a deviation from the standard of care not to undertake any reasonable efforts to ensure that her directive to have rectal contrast administered was followed.",
+      "paragraph_ref": "13",
+      "paragraph_starts_with": "Appeal and cross-appeal from",
+      "summary": "Expert opined failure to ensure rectal contrast was a deviation from standard of care.",
+      "speaker": "Plaintiff's expert"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "LEGAL_FINDING",
+      "verbatim_quote": "We further agree with plaintiff on her cross-appeal that the court erred in granting that part of the motion of Dr. Madejski and Artemis for summary judgment dismissing the complaint against them to the extent that the complaint, as amplified by the bill of particulars, alleged that Dr. Madejski was negligent in her postoperative care of plaintiff.",
+      "paragraph_ref": "13",
+      "paragraph_starts_with": "Appeal and cross-appeal from",
+      "summary": "Court erred in dismissing claims of negligence in postoperative care against Dr. Madejski.",
+      "speaker": "Court conclusion"
+    }
+  ],
+  "verdict_detected": {
+    "outcome": "PARTIAL_LIABILITY",
+    "key_phrase": "We therefore further modify the order accordingly.",
+    "paragraph_ref": "13"
+  },
+  "extraction_notes": {
+    "total_paragraphs_analyzed": 14,
+    "key_sections_found": [
+      "Facts",
+      "Expert Evidence",
+      "Conclusion"
+    ],
+    "gaps_identified": [
+      "No specific lab values mentioned",
+      "Timing of events unclear"
+    ]
+  },
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Severe abdominal pain and fever post-surgery",
+      "history_of_present_illness": "Patient underwent a right salpingo-oophorectomy with robotic assistance and was discharged. She later reported severe abdominal pain and fever.",
+      "past_medical_history": "Not documented in judgment",
+      "medications": "Not documented in judgment",
+      "allergies": "Not documented in judgment",
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment"
+        },
+        "focused_exam": {
+          "abdomen": "Not documented in judgment"
+        }
+      },
+      "initial_working_problem": "Postoperative complications - possible bowel perforation",
+      "initial_differential": [
+        "bowel perforation",
+        "postoperative infection"
+      ],
+      "critical_findings": [
+        "Severe abdominal pain",
+        "Fever"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002",
+        "E003"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "CT scan with oral and rectal contrast",
+        "description": "CT scan to assess for bowel perforation",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Performed with oral and IV contrast only",
+          "clinical_significance": "Potentially missed bowel perforation",
+          "decision_impact": "Inadequate imaging may delay diagnosis"
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E004",
+          "E007"
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient in ER with severe abdominal pain post-surgery",
+        "prompt": "What imaging should be performed to assess for bowel perforation?",
+        "action_type": "ORDER_TEST",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Order CT scan with oral and rectal contrast",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Rectal contrast is necessary to detect bowel perforation"
+          },
+          {
+            "option_id": "B",
+            "description": "Order CT scan with oral and IV contrast",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "IV contrast alone may not adequately reveal perforation"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "CT scan performed with oral and IV contrast",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E004"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "CT scan should have been performed with rectal contrast",
+          "standard_of_care_basis": "Expert testimony indicated rectal contrast was necessary",
+          "evidence_ids": [
+            "E008"
+          ]
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to ensure rectal contrast was a deviation from standard of care",
+          "what_should_have_happened": "CT scan with rectal contrast should have been performed",
+          "legal_standard_applied": "Bolam test",
+          "evidence_ids": [
+            "E008"
+          ]
+        },
+        "is_malpractice_point": true
+      },
+      {
+        "decision_id": "D002",
+        "phase_id": "procedure",
+        "clinical_context": "Decision on surgical approach for right salpingo-oophorectomy",
+        "prompt": "What surgical approach should be used given the patient's risk factors?",
+        "action_type": "SELECT_TECHNIQUE",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Perform open surgery",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Open surgery was required due to patient's risk factors"
+          },
+          {
+            "option_id": "B",
+            "description": "Perform laparoscopic surgery with robotic assistance",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Laparoscopic approach was contraindicated"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Laparoscopic surgery with robotic assistance was performed",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E001",
+            "E002"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Open surgery should have been performed",
+          "standard_of_care_basis": "Expert testimony indicated open surgery was required",
+          "evidence_ids": [
+            "E005"
+          ]
+        },
+        "explanation": {
+          "why_defendant_wrong": "Laparoscopic approach was contraindicated",
+          "what_should_have_happened": "Open surgery should have been performed",
+          "legal_standard_applied": "Bolam test",
+          "evidence_ids": [
+            "E005"
+          ]
+        },
+        "is_malpractice_point": true
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Postoperative Presentation",
+        "description": "Patient presents with symptoms post-surgery",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Patient reports severe abdominal pain and fever",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E003"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Emergency Room Evaluation",
+        "description": "Patient evaluated in ER for postoperative complications",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "CT scan ordered and performed",
+            "timestamp": "August 28, 2013",
+            "evidence_ids": [
+              "E004"
+            ]
+          }
+        ]
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient sustained a perforated bowel that went undetected for several days",
+        "severity": "SEVERE",
+        "long_term_effects": "Not documented in judgment",
+        "evidence_ids": [
+          "E001",
+          "E002"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Breach of duty in failing to ensure rectal contrast for CT scan",
+          "Breach of duty in choosing laparoscopic approach"
+        ],
+        "evidence_ids": [
+          "E008",
+          "E009"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to ensure rectal contrast and inappropriate surgical approach",
+        "counterfactual": "Rectal contrast would have detected perforation; open surgery was required",
+        "evidence_ids": [
+          "E005",
+          "E008"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "August 27, 2013",
+        "event": "Right salpingo-oophorectomy performed",
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "August 28, 2013",
+        "event": "CT scan performed with oral and IV contrast",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "CT scan",
+        "date": "August 28, 2013",
+        "result": "Performed with oral and IV contrast",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Perforated bowel",
+        "when_made": "Not documented in judgment",
+        "correct": true,
+        "evidence_ids": [
+          "E001",
+          "E002"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Laparoscopic right salpingo-oophorectomy",
+        "date": "August 27, 2013",
+        "outcome": "Bowel perforation occurred",
+        "evidence_ids": [
+          "E001",
+          "E002"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Bowel perforation",
+        "when_occurred": "During surgery",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E001",
+          "E002"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to ensure rectal contrast for CT scan",
+        "against": "Dr. Madejski",
+        "found_proven": true,
+        "evidence_ids": [
+          "E008"
+        ]
+      },
+      {
+        "allegation": "Inappropriate choice of laparoscopic surgery",
+        "against": "Dr. Madejski",
+        "found_proven": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E008",
+          "E009"
+        ]
+      }
+    ]
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "TREATMENT_PROCEDURE_ERROR"
+    ],
+    "diagnosis_subtypes": [
+      "FAILURE_TO_INVESTIGATE"
+    ]
+  }
+}

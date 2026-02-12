@@ -1,0 +1,361 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10025931",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2024-01-08",
+  "url": "https://example.com/courtlistener-10025931",
+  "case_name": "Doctor's Weight Loss Ctrs. v. Blackston",
+  "neutral_citation": null,
+  "clinical_domain": "ONCOLOGY",
+  "outcome_severity": "PERMANENT_SEVERE_DISABILITY",
+  "summary": {
+    "brief": "Doctor's Weight Loss Ctrs. v. Blackston. Medical malpractice case involving oncology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "In September 2018, Ms. Blackston filed a complaint alleging medical malpractice and failure to obtain informed consent in the Circuit Court for Prince George\u2019s County.",
+      "paragraph_ref": "28",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "The jury awarded Ms. Blackston damages of $2,300,900, which included non-economic damages of $2,000,000, economic damages of $60,000, and medical expenses of $240,900.",
+      "paragraph_ref": "32",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "LEGAL_FINDING",
+      "text": "The Supreme Court of Maryland held that the Appellate Court of Maryland properly applied Virginia substantive law in accordance with the doctrine of lex loci delicti.",
+      "paragraph_ref": "3",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Ramineni opined that Dr. Heron breached the standard of care in several ways, and that those breaches increased the risk that Ms. Blackston would develop an infection.",
+      "paragraph_ref": "145",
+      "speaker": "Dr. Ramineni"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "During the procedure, she experienced excruciating pain, which Dr. Heron treated with additional injections of the local anesthesia he had administered prior to beginning the procedure.",
+      "paragraph_ref": "22",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "LEGAL_FINDING",
+      "text": "The jury found that Dr. Heron breached the standard of care in treating Ms. Blackston, that he failed to obtain Ms. Blackston\u2019s informed consent, and that these breaches were a cause of Ms. Blackston\u2019s injuries.",
+      "paragraph_ref": "231",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "COURT_REASONING",
+      "text": "We hold that the circuit court erred in applying the Maryland cap on non-economic damages to the damages that the jury awarded to Ms. Blackston.",
+      "paragraph_ref": "469",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "FACTUAL_FINDING",
+      "text": "After the procedure, Ms. Blackston returned to her home in Maryland, where the pain continued. Within a few days, an infection manifested, and she required hospitalization and underwent several procedures to treat that infection.",
+      "paragraph_ref": "24",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Ramineni concluded that the procedure caused the infection, citing the number of individual infections.",
+      "paragraph_ref": "438",
+      "speaker": "Dr. Ramineni"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "LEGAL_FINDING",
+      "text": "JUDGMENT OF THE APPELLATE COURT OF MARYLAND AFFIRMED. PETITIONERS TO PAY COSTS.",
+      "paragraph_ref": "480",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Resident of Upper Marlboro, Maryland"
+      },
+      "chief_complaint": "Excruciating pain during liposuction procedure",
+      "history_of_present_illness": "Patient underwent Smart Liposuction at Dr. Heron's office in Virginia. Experienced severe pain during the procedure.",
+      "past_medical_history": [],
+      "medications": [
+        "Ciprofloxacin prescribed pre-operatively"
+      ],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "abdomen": "Not documented in judgment"
+        }
+      },
+      "initial_working_problem": "Pain management during cosmetic procedure",
+      "known_constraints": null,
+      "initial_differential": [
+        "Pain due to inadequate anesthesia"
+      ],
+      "critical_findings": [
+        "Excruciating pain during procedure"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E005",
+        "E086"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSULT_NOTE",
+        "name": "Expert Testimony",
+        "description": "Testimony regarding the cause of infection",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Infection started during procedure",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates procedural breach",
+          "decision_impact": "Supports claim of malpractice",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E004",
+          "E009"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "procedure",
+        "name": "Surgical Procedure",
+        "description": "Patient undergoes procedure in Virginia",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Patient experiences excruciating pain",
+            "timestamp": "Not documented in judgment",
+            "evidence_ids": [
+              "E005"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "decision",
+        "name": "Post-Procedure",
+        "description": "Patient returns home, pain continues",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Pain persists, infection develops",
+            "timestamp": "Not documented in judgment",
+            "evidence_ids": [
+              "E008"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "procedure",
+        "clinical_context": "Patient experiencing pain during procedure",
+        "prompt": "How should the pain be managed?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Administer additional analgesia",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Immediate pain relief required"
+          },
+          {
+            "option_id": "B",
+            "description": "Investigate cause of pain before proceeding",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Ensure no procedural complications"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "A",
+          "description": "Administered additional analgesia",
+          "reasoning_stated": "Pain management during procedure",
+          "evidence_ids": [
+            "E005"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "B",
+          "description": "Investigate cause of pain",
+          "standard_of_care_basis": "Expert testimony indicated procedural breach",
+          "evidence_ids": [
+            "E004",
+            "E009"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to investigate pain source led to infection",
+          "what_should_have_happened": "Investigate and address underlying cause",
+          "legal_standard_applied": "Standard of care not met",
+          "evidence_ids": [
+            "E004",
+            "E009"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient developed infection post-procedure",
+        "severity": "PERMANENT_MODERATE_DISABILITY",
+        "long_term_effects": "Chronic pain, potential for further complications",
+        "evidence_ids": [
+          "E009"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "2300900",
+        "key_findings": [
+          "Breach of duty in managing pain and infection risk",
+          "Causation established - infection linked to procedure"
+        ],
+        "evidence_ids": [
+          "E002",
+          "E006"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to investigate pain during procedure",
+        "counterfactual": "Proper investigation could have prevented infection",
+        "evidence_ids": [
+          "E004",
+          "E009"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "Not documented in judgment",
+        "event": "Patient experiences pain during procedure",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [
+      {
+        "diagnosis": "Infection post-procedure",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E009"
+        ]
+      }
+    ],
+    "treatments": [],
+    "complications": [
+      {
+        "complication": "Infection",
+        "when_occurred": "Post-procedure",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E009"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to manage pain and prevent infection",
+        "against": "Dr. Heron",
+        "found_proven": true,
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached standard of care",
+        "legal_significance": "Breach led to infection",
+        "evidence_ids": [
+          "E004",
+          "E006"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "TREATMENT_PROCEDURE_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.02079002079002079,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 07:50:03.276518",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

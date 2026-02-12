@@ -1,0 +1,517 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-3126077",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "0030-07-13",
+  "url": "https://example.com/courtlistener-3126077",
+  "case_name": "Centocor, Inc. v. Patricia Hamilton, Thomas Hamilton, and Dr. Michael Bullen",
+  "neutral_citation": null,
+  "clinical_domain": "OBSTETRICS_GYNAECOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Centocor, Inc. v. Patricia Hamilton, Thomas Hamilton, and Dr. Michael Bullen. Medical malpractice case involving obstetrics gynaecology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Patricia and Thomas Hamilton sued Centocor, Inc. and others after Patricia suffered from a drug-induced lupus-like syndrome allegedly caused by her use of Remicade",
+      "paragraph_ref": "19",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "LEGAL_FINDING",
+      "text": "Today we recognize an exception to the learned intermediary doctrine when a drug manufacturer directly advertises to its consumers in a fraudulent manner.",
+      "paragraph_ref": "20",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Hauptman and Mary Olsen, M.D., an expert hired by Centocor but called by the Hamiltons, testified that lupus-like syndrome has characteristics similar to the autoimmune disorder systemic lupus erythematosus",
+      "paragraph_ref": "44",
+      "speaker": "Expert testimony"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "The patient presented to our clinic for evaluation of possible lupus-like syndrome which may have been induced by Remicade therapy.",
+      "paragraph_ref": "139",
+      "speaker": "Medical record"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "LEGAL_FINDING",
+      "text": "The jury found that Centocor was liable for fraud.",
+      "paragraph_ref": "154",
+      "speaker": "Jury finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "Patricia explained that 'at that time my understanding was I would be on this drug indefinitely and the Remicade had actually caused the flare of rheumatoid arthritis that I was now suffering from'",
+      "paragraph_ref": "128",
+      "speaker": "Patient testimony"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "LEGAL_FINDING",
+      "text": "We hold, however, that Patricia did not present sufficient evidence of future pain and mental anguish damages.",
+      "paragraph_ref": "20",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "FACTUAL_FINDING",
+      "text": "The trial court entered judgment on the jury's verdict in Patricia's favor for $4,687,461.70 in actual and punitive damages",
+      "paragraph_ref": "19",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "LEGAL_FINDING",
+      "text": "The trial court applied settlement credits and apportioned responsibility, entered judgment against Centocor based on the fraud claim",
+      "paragraph_ref": "155",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Matthews explained that if a risk associated with a drug's treatment is included on the package insert, that risk is reasonably associated with the treatment.",
+      "paragraph_ref": "38",
+      "speaker": "Expert testimony"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "47 years",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Joint pain and swelling, fatigue, rash",
+      "history_of_present_illness": "Patient with a history of Crohn's disease presented with joint pain, rash, and fatigue after receiving Remicade infusions.",
+      "past_medical_history": [
+        "Crohn's disease",
+        "Hepatitis C",
+        "Sarcoidosis",
+        "Rheumatoid arthritis (reported)"
+      ],
+      "medications": [
+        "Imuran",
+        "Remicade"
+      ],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "musculoskeletal": "Joint pain and swelling",
+          "skin": "Rash present"
+        }
+      },
+      "initial_working_problem": "Possible drug-induced lupus-like syndrome",
+      "known_constraints": null,
+      "initial_differential": [
+        "Drug-induced lupus-like syndrome",
+        "Rheumatoid arthritis flare"
+      ],
+      "critical_findings": [
+        "Positive ANA",
+        "Positive anti-dsDNA"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E004",
+        "E098",
+        "E099"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "LAB",
+        "name": "ANA and anti-dsDNA",
+        "description": "Tests for antinuclear antibodies and double-stranded DNA antibodies",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Positive ANA and anti-dsDNA",
+          "detailed_findings": null,
+          "clinical_significance": "Suggestive of lupus-like syndrome",
+          "decision_impact": "Should prompt consideration of drug-induced lupus",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E046",
+          "E047"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with joint pain and rash after Remicade",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Patient reports joint pain and rash",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E098"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Diagnostic Workup",
+        "description": "Laboratory tests conducted to assess lupus-like syndrome",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "ANA and anti-dsDNA tests ordered",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E046",
+              "E047"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient with joint pain and positive ANA after Remicade",
+        "prompt": "Should Remicade treatment be continued?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Continue Remicade and monitor symptoms",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Patient reported improvement in Crohn's symptoms"
+          },
+          {
+            "option_id": "B",
+            "description": "Discontinue Remicade due to risk of lupus-like syndrome",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Risk of lupus-like syndrome outweighs benefits"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "A",
+          "description": "Continued Remicade treatment",
+          "reasoning_stated": "Patient felt better with Remicade",
+          "evidence_ids": [
+            "E118",
+            "E119"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "B",
+          "description": "Remicade should have been discontinued",
+          "standard_of_care_basis": "Expert testimony on lupus-like syndrome risk",
+          "evidence_ids": [
+            "E120",
+            "E121"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Continued use of Remicade despite signs of lupus-like syndrome",
+          "what_should_have_happened": "Discontinue Remicade and explore alternative treatments",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E120",
+            "E121",
+            "E122"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient suffered from drug-induced lupus-like syndrome",
+        "severity": "Not documented in judgment",
+        "long_term_effects": "Not documented in judgment",
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "4687461.70",
+        "key_findings": [
+          "Breach of duty in failing to adequately warn patient",
+          "Causation established - misrepresentation of drug risks"
+        ],
+        "evidence_ids": [
+          "E005",
+          "E008"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to adequately inform patient of drug risks",
+        "counterfactual": "Proper warning would have informed patient of risks",
+        "evidence_ids": [
+          "E002",
+          "E005",
+          "E008"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "Not documented in judgment",
+        "event": "Patient reports joint pain and rash",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E098"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Patient presented with symptoms suggestive of lupus-like syndrome",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Patient evaluated for lupus-like syndrome",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "ANA and anti-dsDNA",
+        "date": "Not documented in judgment",
+        "result": "Positive",
+        "interpretation": null,
+        "evidence_ids": [
+          "E046",
+          "E047"
+        ]
+      },
+      {
+        "test_name": "Rheumatology Consultation",
+        "date": "Date not specified in judgment",
+        "result": "Confirmed drug-induced lupus-like syndrome",
+        "interpretation": null,
+        "evidence_ids": [
+          "E230",
+          "E232"
+        ]
+      },
+      {
+        "test_name": "Rheumatology Consultation",
+        "date": "Date not specified in judgment",
+        "result": "Consultation performed but details not documented",
+        "interpretation": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Lupus-like syndrome",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E098"
+        ]
+      },
+      {
+        "diagnosis": "Drug-induced lupus-like syndrome",
+        "when_made": "Date not specified in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E230",
+          "E232"
+        ]
+      },
+      {
+        "diagnosis": "Drug-induced lupus-like syndrome",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Continued Remicade",
+        "date": "Not documented in judgment",
+        "provider": null,
+        "outcome": "Worsening lupus-like symptoms",
+        "evidence_ids": [
+          "E118",
+          "E119"
+        ]
+      },
+      {
+        "treatment": "Continued Remicade",
+        "date": "Date not specified in judgment",
+        "provider": null,
+        "outcome": "Worsening of symptoms",
+        "evidence_ids": [
+          "E238"
+        ]
+      },
+      {
+        "treatment": "Not documented in judgment",
+        "date": "Not documented in judgment",
+        "provider": null,
+        "outcome": "Not documented in judgment",
+        "evidence_ids": []
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Lupus-like syndrome",
+        "when_occurred": "Not documented in judgment",
+        "severity": "Moderate",
+        "evidence_ids": [
+          "E098"
+        ]
+      },
+      {
+        "complication": "Severe lupus-like symptoms",
+        "when_occurred": "Date not specified in judgment",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E282"
+        ]
+      },
+      {
+        "complication": "Lupus-like syndrome",
+        "when_occurred": "Not documented in judgment",
+        "severity": "Not documented in judgment",
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to discontinue Remicade",
+        "against": "Defendant physician",
+        "found_proven": true,
+        "evidence_ids": [
+          "E120"
+        ]
+      },
+      {
+        "allegation": "Failure to discontinue Remicade",
+        "against": "Defendant",
+        "found_proven": true,
+        "evidence_ids": [
+          "E229",
+          "E230"
+        ]
+      },
+      {
+        "allegation": "Failure to adequately warn patient of drug risks",
+        "against": "Centocor, Inc.",
+        "found_proven": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E120"
+        ]
+      },
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E229",
+          "E230"
+        ]
+      },
+      {
+        "finding": "Defendant breached duty of care by misrepresenting drug risks",
+        "legal_significance": "Learned intermediary doctrine exception applied",
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "TREATMENT_PROCEDURE_ERROR",
+      "INFORMED_CONSENT"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.03003003003003003,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 08:12:40.216363",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

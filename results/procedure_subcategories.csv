@@ -1,0 +1,204 @@
+model,model_display,subcategory,cases_with,total_cases,proportion,avg_count
+openai/gpt-5.2,GPT-5.2,consult_cardio,9,234,0.038461538461538464,1.0
+openai/gpt-5.2,GPT-5.2,consult_gi,5,234,0.021367521367521368,1.0
+openai/gpt-5.2,GPT-5.2,consult_neuro,17,234,0.07264957264957266,1.1176470588235294
+openai/gpt-5.2,GPT-5.2,consult_ortho,10,234,0.042735042735042736,1.0
+openai/gpt-5.2,GPT-5.2,consult_other,81,234,0.34615384615384615,1.4197530864197532
+openai/gpt-5.2,GPT-5.2,consult_pt,15,234,0.0641025641025641,1.0
+openai/gpt-5.2,GPT-5.2,consult_surgery,30,234,0.1282051282051282,1.1333333333333333
+openai/gpt-5.2,GPT-5.2,imaging_ct,97,234,0.41452991452991456,1.288659793814433
+openai/gpt-5.2,GPT-5.2,imaging_ecg,40,234,0.17094017094017094,1.0
+openai/gpt-5.2,GPT-5.2,imaging_echo,15,234,0.0641025641025641,1.0666666666666667
+openai/gpt-5.2,GPT-5.2,imaging_mri,68,234,0.2905982905982906,1.088235294117647
+openai/gpt-5.2,GPT-5.2,imaging_other,71,234,0.3034188034188034,1.352112676056338
+openai/gpt-5.2,GPT-5.2,imaging_ultrasound,88,234,0.37606837606837606,1.2272727272727273
+openai/gpt-5.2,GPT-5.2,imaging_xray,69,234,0.2948717948717949,1.0869565217391304
+openai/gpt-5.2,GPT-5.2,lab_cardiac,31,234,0.13247863247863248,1.2903225806451613
+openai/gpt-5.2,GPT-5.2,lab_cbc,155,234,0.6623931623931624,1.0193548387096774
+openai/gpt-5.2,GPT-5.2,lab_coag,43,234,0.18376068376068377,1.1627906976744187
+openai/gpt-5.2,GPT-5.2,lab_culture,75,234,0.32051282051282054,1.4133333333333333
+openai/gpt-5.2,GPT-5.2,lab_inflammatory,58,234,0.24786324786324787,1.2241379310344827
+openai/gpt-5.2,GPT-5.2,lab_liver,34,234,0.1452991452991453,1.1470588235294117
+openai/gpt-5.2,GPT-5.2,lab_metabolic,120,234,0.5128205128205128,1.0333333333333334
+openai/gpt-5.2,GPT-5.2,lab_other,167,234,0.7136752136752137,3.251497005988024
+openai/gpt-5.2,GPT-5.2,lab_urine,62,234,0.26495726495726496,1.1935483870967742
+openai/gpt-5.2,GPT-5.2,proc_biopsy,11,234,0.04700854700854701,1.0909090909090908
+openai/gpt-5.2,GPT-5.2,proc_csection,4,234,0.017094017094017096,1.0
+openai/gpt-5.2,GPT-5.2,proc_endo,11,234,0.04700854700854701,1.0
+openai/gpt-5.2,GPT-5.2,proc_iv,15,234,0.0641025641025641,1.3333333333333333
+openai/gpt-5.2,GPT-5.2,proc_lp,10,234,0.042735042735042736,1.0
+openai/gpt-5.2,GPT-5.2,proc_other,111,234,0.47435897435897434,1.6756756756756757
+openai/gpt-4o,GPT-4o,consult_cardio,7,240,0.029166666666666667,1.0
+openai/gpt-4o,GPT-4o,consult_gi,5,240,0.020833333333333332,1.0
+openai/gpt-4o,GPT-4o,consult_neuro,16,240,0.06666666666666667,1.0
+openai/gpt-4o,GPT-4o,consult_ortho,9,240,0.0375,1.0
+openai/gpt-4o,GPT-4o,consult_other,51,240,0.2125,1.2156862745098038
+openai/gpt-4o,GPT-4o,consult_pt,4,240,0.016666666666666666,1.0
+openai/gpt-4o,GPT-4o,consult_surgery,5,240,0.020833333333333332,1.0
+openai/gpt-4o,GPT-4o,imaging_ct,24,240,0.1,1.0
+openai/gpt-4o,GPT-4o,imaging_ecg,0,240,0.0,0.0
+openai/gpt-4o,GPT-4o,imaging_echo,2,240,0.008333333333333333,1.0
+openai/gpt-4o,GPT-4o,imaging_mri,26,240,0.10833333333333334,1.0
+openai/gpt-4o,GPT-4o,imaging_other,12,240,0.05,1.0
+openai/gpt-4o,GPT-4o,imaging_ultrasound,28,240,0.11666666666666667,1.0
+openai/gpt-4o,GPT-4o,imaging_xray,21,240,0.0875,1.0476190476190477
+openai/gpt-4o,GPT-4o,lab_cardiac,1,240,0.004166666666666667,1.0
+openai/gpt-4o,GPT-4o,lab_cbc,7,240,0.029166666666666667,1.0
+openai/gpt-4o,GPT-4o,lab_coag,1,240,0.004166666666666667,1.0
+openai/gpt-4o,GPT-4o,lab_culture,3,240,0.0125,1.0
+openai/gpt-4o,GPT-4o,lab_inflammatory,0,240,0.0,0.0
+openai/gpt-4o,GPT-4o,lab_liver,1,240,0.004166666666666667,1.0
+openai/gpt-4o,GPT-4o,lab_metabolic,5,240,0.020833333333333332,1.0
+openai/gpt-4o,GPT-4o,lab_other,45,240,0.1875,1.2666666666666666
+openai/gpt-4o,GPT-4o,lab_urine,1,240,0.004166666666666667,1.0
+openai/gpt-4o,GPT-4o,proc_biopsy,6,240,0.025,1.0
+openai/gpt-4o,GPT-4o,proc_csection,2,240,0.008333333333333333,1.0
+openai/gpt-4o,GPT-4o,proc_endo,0,240,0.0,0.0
+openai/gpt-4o,GPT-4o,proc_iv,0,240,0.0,0.0
+openai/gpt-4o,GPT-4o,proc_lp,2,240,0.008333333333333333,1.0
+openai/gpt-4o,GPT-4o,proc_other,25,240,0.10416666666666667,1.12
+openrouter/anthropic/claude-sonnet-4,Claude Sonnet 4,consult_cardio,3,220,0.013636363636363636,1.0
+openrouter/anthropic/claude-sonnet-4,Claude Sonnet 4,consult_gi,4,220,0.01818181818181818,1.0
+openrouter/anthropic/claude-sonnet-4,Claude Sonnet 4,consult_neuro,21,220,0.09545454545454546,1.0
+openrouter/anthropic/claude-sonnet-4,Claude Sonnet 4,consult_ortho,17,220,0.07727272727272727,1.0
+openrouter/anthropic/claude-sonnet-4,Claude Sonnet 4,consult_other,58,220,0.2636363636363636,1.3793103448275863
+openrouter/anthropic/claude-sonnet-4,Claude Sonnet 4,consult_pt,7,220,0.031818181818181815,1.0
+openrouter/anthropic/claude-sonnet-4,Claude Sonnet 4,consult_surgery,15,220,0.06818181818181818,1.0
+openrouter/anthropic/claude-sonnet-4,Claude Sonnet 4,imaging_ct,51,220,0.2318181818181818,1.0980392156862746
+openrouter/anthropic/claude-sonnet-4,Claude Sonnet 4,imaging_ecg,4,220,0.01818181818181818,1.0
+openrouter/anthropic/claude-sonnet-4,Claude Sonnet 4,imaging_echo,5,220,0.022727272727272728,1.0
+openrouter/anthropic/claude-sonnet-4,Claude Sonnet 4,imaging_mri,41,220,0.18636363636363637,1.0
+openrouter/anthropic/claude-sonnet-4,Claude Sonnet 4,imaging_other,21,220,0.09545454545454546,1.1428571428571428
+openrouter/anthropic/claude-sonnet-4,Claude Sonnet 4,imaging_ultrasound,24,220,0.10909090909090909,1.0
+openrouter/anthropic/claude-sonnet-4,Claude Sonnet 4,imaging_xray,37,220,0.16818181818181818,1.054054054054054
+openrouter/anthropic/claude-sonnet-4,Claude Sonnet 4,lab_cardiac,9,220,0.04090909090909091,1.0
+openrouter/anthropic/claude-sonnet-4,Claude Sonnet 4,lab_cbc,69,220,0.31363636363636366,1.0
+openrouter/anthropic/claude-sonnet-4,Claude Sonnet 4,lab_coag,16,220,0.07272727272727272,1.25
+openrouter/anthropic/claude-sonnet-4,Claude Sonnet 4,lab_culture,16,220,0.07272727272727272,1.0
+openrouter/anthropic/claude-sonnet-4,Claude Sonnet 4,lab_inflammatory,9,220,0.04090909090909091,1.4444444444444444
+openrouter/anthropic/claude-sonnet-4,Claude Sonnet 4,lab_liver,9,220,0.04090909090909091,1.0
+openrouter/anthropic/claude-sonnet-4,Claude Sonnet 4,lab_metabolic,56,220,0.2545454545454545,1.0
+openrouter/anthropic/claude-sonnet-4,Claude Sonnet 4,lab_other,90,220,0.4090909090909091,1.6333333333333333
+openrouter/anthropic/claude-sonnet-4,Claude Sonnet 4,lab_urine,17,220,0.07727272727272727,1.0
+openrouter/anthropic/claude-sonnet-4,Claude Sonnet 4,proc_biopsy,5,220,0.022727272727272728,1.2
+openrouter/anthropic/claude-sonnet-4,Claude Sonnet 4,proc_csection,2,220,0.00909090909090909,1.0
+openrouter/anthropic/claude-sonnet-4,Claude Sonnet 4,proc_endo,1,220,0.004545454545454545,2.0
+openrouter/anthropic/claude-sonnet-4,Claude Sonnet 4,proc_iv,11,220,0.05,1.0
+openrouter/anthropic/claude-sonnet-4,Claude Sonnet 4,proc_lp,6,220,0.02727272727272727,1.0
+openrouter/anthropic/claude-sonnet-4,Claude Sonnet 4,proc_other,39,220,0.17727272727272728,1.358974358974359
+openrouter/x-ai/grok-4.1-fast,Grok 4.1,consult_cardio,16,220,0.07272727272727272,1.0
+openrouter/x-ai/grok-4.1-fast,Grok 4.1,consult_gi,9,220,0.04090909090909091,1.0
+openrouter/x-ai/grok-4.1-fast,Grok 4.1,consult_neuro,45,220,0.20454545454545456,1.1555555555555554
+openrouter/x-ai/grok-4.1-fast,Grok 4.1,consult_ortho,21,220,0.09545454545454546,1.0
+openrouter/x-ai/grok-4.1-fast,Grok 4.1,consult_other,107,220,0.4863636363636364,1.5233644859813085
+openrouter/x-ai/grok-4.1-fast,Grok 4.1,consult_pt,16,220,0.07272727272727272,1.0
+openrouter/x-ai/grok-4.1-fast,Grok 4.1,consult_surgery,36,220,0.16363636363636364,1.0
+openrouter/x-ai/grok-4.1-fast,Grok 4.1,imaging_ct,59,220,0.2681818181818182,1.0677966101694916
+openrouter/x-ai/grok-4.1-fast,Grok 4.1,imaging_ecg,22,220,0.1,1.0
+openrouter/x-ai/grok-4.1-fast,Grok 4.1,imaging_echo,18,220,0.08181818181818182,1.0
+openrouter/x-ai/grok-4.1-fast,Grok 4.1,imaging_mri,72,220,0.32727272727272727,1.0416666666666667
+openrouter/x-ai/grok-4.1-fast,Grok 4.1,imaging_other,37,220,0.16818181818181818,1.3783783783783783
+openrouter/x-ai/grok-4.1-fast,Grok 4.1,imaging_ultrasound,67,220,0.30454545454545456,1.0895522388059702
+openrouter/x-ai/grok-4.1-fast,Grok 4.1,imaging_xray,54,220,0.24545454545454545,1.0555555555555556
+openrouter/x-ai/grok-4.1-fast,Grok 4.1,lab_cardiac,20,220,0.09090909090909091,1.1
+openrouter/x-ai/grok-4.1-fast,Grok 4.1,lab_cbc,121,220,0.55,1.0
+openrouter/x-ai/grok-4.1-fast,Grok 4.1,lab_coag,30,220,0.13636363636363635,1.2333333333333334
+openrouter/x-ai/grok-4.1-fast,Grok 4.1,lab_culture,28,220,0.12727272727272726,1.3928571428571428
+openrouter/x-ai/grok-4.1-fast,Grok 4.1,lab_inflammatory,33,220,0.15,1.303030303030303
+openrouter/x-ai/grok-4.1-fast,Grok 4.1,lab_liver,16,220,0.07272727272727272,1.0625
+openrouter/x-ai/grok-4.1-fast,Grok 4.1,lab_metabolic,74,220,0.33636363636363636,1.0135135135135136
+openrouter/x-ai/grok-4.1-fast,Grok 4.1,lab_other,151,220,0.6863636363636364,2.2980132450331126
+openrouter/x-ai/grok-4.1-fast,Grok 4.1,lab_urine,30,220,0.13636363636363635,1.0666666666666667
+openrouter/x-ai/grok-4.1-fast,Grok 4.1,proc_biopsy,9,220,0.04090909090909091,1.1111111111111112
+openrouter/x-ai/grok-4.1-fast,Grok 4.1,proc_csection,5,220,0.022727272727272728,1.0
+openrouter/x-ai/grok-4.1-fast,Grok 4.1,proc_endo,9,220,0.04090909090909091,1.0
+openrouter/x-ai/grok-4.1-fast,Grok 4.1,proc_iv,7,220,0.031818181818181815,1.0
+openrouter/x-ai/grok-4.1-fast,Grok 4.1,proc_lp,8,220,0.03636363636363636,1.0
+openrouter/x-ai/grok-4.1-fast,Grok 4.1,proc_other,60,220,0.2727272727272727,1.6
+openrouter/meta-llama/llama-4-maverick,Llama 4,consult_cardio,5,242,0.02066115702479339,1.0
+openrouter/meta-llama/llama-4-maverick,Llama 4,consult_gi,8,242,0.03305785123966942,1.0
+openrouter/meta-llama/llama-4-maverick,Llama 4,consult_neuro,22,242,0.09090909090909091,1.0
+openrouter/meta-llama/llama-4-maverick,Llama 4,consult_ortho,19,242,0.07851239669421488,1.0
+openrouter/meta-llama/llama-4-maverick,Llama 4,consult_other,73,242,0.30165289256198347,1.2054794520547945
+openrouter/meta-llama/llama-4-maverick,Llama 4,consult_pt,3,242,0.012396694214876033,1.0
+openrouter/meta-llama/llama-4-maverick,Llama 4,consult_surgery,21,242,0.08677685950413223,1.0476190476190477
+openrouter/meta-llama/llama-4-maverick,Llama 4,imaging_ct,41,242,0.16942148760330578,1.0975609756097562
+openrouter/meta-llama/llama-4-maverick,Llama 4,imaging_ecg,6,242,0.024793388429752067,1.0
+openrouter/meta-llama/llama-4-maverick,Llama 4,imaging_echo,2,242,0.008264462809917356,1.0
+openrouter/meta-llama/llama-4-maverick,Llama 4,imaging_mri,33,242,0.13636363636363635,1.0
+openrouter/meta-llama/llama-4-maverick,Llama 4,imaging_other,12,242,0.049586776859504134,1.0
+openrouter/meta-llama/llama-4-maverick,Llama 4,imaging_ultrasound,29,242,0.11983471074380166,1.0689655172413792
+openrouter/meta-llama/llama-4-maverick,Llama 4,imaging_xray,24,242,0.09917355371900827,1.0
+openrouter/meta-llama/llama-4-maverick,Llama 4,lab_cardiac,4,242,0.01652892561983471,1.0
+openrouter/meta-llama/llama-4-maverick,Llama 4,lab_cbc,39,242,0.16115702479338842,1.0
+openrouter/meta-llama/llama-4-maverick,Llama 4,lab_coag,3,242,0.012396694214876033,1.0
+openrouter/meta-llama/llama-4-maverick,Llama 4,lab_culture,5,242,0.02066115702479339,1.2
+openrouter/meta-llama/llama-4-maverick,Llama 4,lab_inflammatory,0,242,0.0,0.0
+openrouter/meta-llama/llama-4-maverick,Llama 4,lab_liver,5,242,0.02066115702479339,1.2
+openrouter/meta-llama/llama-4-maverick,Llama 4,lab_metabolic,18,242,0.0743801652892562,1.0
+openrouter/meta-llama/llama-4-maverick,Llama 4,lab_other,48,242,0.19834710743801653,1.5
+openrouter/meta-llama/llama-4-maverick,Llama 4,lab_urine,5,242,0.02066115702479339,1.0
+openrouter/meta-llama/llama-4-maverick,Llama 4,proc_biopsy,5,242,0.02066115702479339,1.0
+openrouter/meta-llama/llama-4-maverick,Llama 4,proc_csection,1,242,0.004132231404958678,1.0
+openrouter/meta-llama/llama-4-maverick,Llama 4,proc_endo,3,242,0.012396694214876033,1.6666666666666667
+openrouter/meta-llama/llama-4-maverick,Llama 4,proc_iv,3,242,0.012396694214876033,1.0
+openrouter/meta-llama/llama-4-maverick,Llama 4,proc_lp,4,242,0.01652892561983471,1.0
+openrouter/meta-llama/llama-4-maverick,Llama 4,proc_other,31,242,0.128099173553719,1.2258064516129032
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen 2.5 72B,consult_cardio,11,218,0.05045871559633028,1.0
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen 2.5 72B,consult_gi,2,218,0.009174311926605505,1.0
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen 2.5 72B,consult_neuro,28,218,0.12844036697247707,1.0357142857142858
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen 2.5 72B,consult_ortho,8,218,0.03669724770642202,1.0
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen 2.5 72B,consult_other,67,218,0.3073394495412844,1.3880597014925373
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen 2.5 72B,consult_pt,15,218,0.06880733944954129,1.0
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen 2.5 72B,consult_surgery,13,218,0.05963302752293578,1.0
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen 2.5 72B,imaging_ct,30,218,0.13761467889908258,1.0666666666666667
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen 2.5 72B,imaging_ecg,4,218,0.01834862385321101,1.0
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen 2.5 72B,imaging_echo,4,218,0.01834862385321101,1.0
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen 2.5 72B,imaging_mri,45,218,0.20642201834862386,1.0222222222222221
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen 2.5 72B,imaging_other,9,218,0.04128440366972477,1.1111111111111112
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen 2.5 72B,imaging_ultrasound,38,218,0.1743119266055046,1.0263157894736843
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen 2.5 72B,imaging_xray,36,218,0.1651376146788991,1.0833333333333333
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen 2.5 72B,lab_cardiac,3,218,0.013761467889908258,1.0
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen 2.5 72B,lab_cbc,47,218,0.21559633027522937,1.0
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen 2.5 72B,lab_coag,4,218,0.01834862385321101,1.0
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen 2.5 72B,lab_culture,13,218,0.05963302752293578,1.0
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen 2.5 72B,lab_inflammatory,1,218,0.0045871559633027525,2.0
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen 2.5 72B,lab_liver,4,218,0.01834862385321101,1.0
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen 2.5 72B,lab_metabolic,29,218,0.13302752293577982,1.103448275862069
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen 2.5 72B,lab_other,84,218,0.3853211009174312,1.5
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen 2.5 72B,lab_urine,10,218,0.045871559633027525,1.0
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen 2.5 72B,proc_biopsy,4,218,0.01834862385321101,1.0
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen 2.5 72B,proc_csection,2,218,0.009174311926605505,1.0
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen 2.5 72B,proc_endo,4,218,0.01834862385321101,1.0
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen 2.5 72B,proc_iv,3,218,0.013761467889908258,1.0
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen 2.5 72B,proc_lp,4,218,0.01834862385321101,1.0
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen 2.5 72B,proc_other,22,218,0.10091743119266056,1.2272727272727273
+openrouter/google/gemini-3-pro-preview,Gemini 3 Pro,consult_cardio,0,145,0.0,0.0
+openrouter/google/gemini-3-pro-preview,Gemini 3 Pro,consult_gi,1,145,0.006896551724137931,1.0
+openrouter/google/gemini-3-pro-preview,Gemini 3 Pro,consult_neuro,12,145,0.08275862068965517,1.0833333333333333
+openrouter/google/gemini-3-pro-preview,Gemini 3 Pro,consult_ortho,7,145,0.04827586206896552,1.0
+openrouter/google/gemini-3-pro-preview,Gemini 3 Pro,consult_other,23,145,0.15862068965517243,1.2608695652173914
+openrouter/google/gemini-3-pro-preview,Gemini 3 Pro,consult_pt,6,145,0.041379310344827586,1.0
+openrouter/google/gemini-3-pro-preview,Gemini 3 Pro,consult_surgery,15,145,0.10344827586206896,1.0
+openrouter/google/gemini-3-pro-preview,Gemini 3 Pro,imaging_ct,32,145,0.2206896551724138,1.15625
+openrouter/google/gemini-3-pro-preview,Gemini 3 Pro,imaging_ecg,7,145,0.04827586206896552,1.0
+openrouter/google/gemini-3-pro-preview,Gemini 3 Pro,imaging_echo,2,145,0.013793103448275862,1.0
+openrouter/google/gemini-3-pro-preview,Gemini 3 Pro,imaging_mri,26,145,0.1793103448275862,1.0
+openrouter/google/gemini-3-pro-preview,Gemini 3 Pro,imaging_other,12,145,0.08275862068965517,1.0833333333333333
+openrouter/google/gemini-3-pro-preview,Gemini 3 Pro,imaging_ultrasound,20,145,0.13793103448275862,1.0
+openrouter/google/gemini-3-pro-preview,Gemini 3 Pro,imaging_xray,28,145,0.19310344827586207,1.25
+openrouter/google/gemini-3-pro-preview,Gemini 3 Pro,lab_cardiac,6,145,0.041379310344827586,1.3333333333333333
+openrouter/google/gemini-3-pro-preview,Gemini 3 Pro,lab_cbc,39,145,0.2689655172413793,1.0
+openrouter/google/gemini-3-pro-preview,Gemini 3 Pro,lab_coag,9,145,0.06206896551724138,1.1111111111111112
+openrouter/google/gemini-3-pro-preview,Gemini 3 Pro,lab_culture,10,145,0.06896551724137931,1.0
+openrouter/google/gemini-3-pro-preview,Gemini 3 Pro,lab_inflammatory,7,145,0.04827586206896552,1.5714285714285714
+openrouter/google/gemini-3-pro-preview,Gemini 3 Pro,lab_liver,2,145,0.013793103448275862,1.0
+openrouter/google/gemini-3-pro-preview,Gemini 3 Pro,lab_metabolic,22,145,0.15172413793103448,1.0
+openrouter/google/gemini-3-pro-preview,Gemini 3 Pro,lab_other,51,145,0.35172413793103446,1.7843137254901962
+openrouter/google/gemini-3-pro-preview,Gemini 3 Pro,lab_urine,15,145,0.10344827586206896,1.0
+openrouter/google/gemini-3-pro-preview,Gemini 3 Pro,proc_biopsy,6,145,0.041379310344827586,1.0
+openrouter/google/gemini-3-pro-preview,Gemini 3 Pro,proc_csection,2,145,0.013793103448275862,1.0
+openrouter/google/gemini-3-pro-preview,Gemini 3 Pro,proc_endo,0,145,0.0,0.0
+openrouter/google/gemini-3-pro-preview,Gemini 3 Pro,proc_iv,5,145,0.034482758620689655,1.4
+openrouter/google/gemini-3-pro-preview,Gemini 3 Pro,proc_lp,5,145,0.034482758620689655,1.0
+openrouter/google/gemini-3-pro-preview,Gemini 3 Pro,proc_other,28,145,0.19310344827586207,1.3928571428571428

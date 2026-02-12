@@ -1,0 +1,493 @@
+{
+  "case_id": "courtlistener-3179724",
+  "source": "courtlistener",
+  "source_url": "local://courtlistener-3179724.html",
+  "jurisdiction": "US",
+  "extraction_metadata": {
+    "version": "batch_api_v1",
+    "model": "gpt-4o",
+    "extracted_at": "2026-01-21T17:56:57.881316",
+    "simulation_extracted_at": "2026-01-21T18:25:06.977450",
+    "simulation_model": "gpt-4o"
+  },
+  "case_metadata": {
+    "case_name": "Vanderhoof v. Berk",
+    "citation": "2015 IL App (1st) 132927",
+    "court": "Appellate Court of Illinois, First District, First Division",
+    "date": "December 21, 2015"
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "In 2008, Vanderhoof presented on several occasions to his primary care physician, Dr. David Lerner, complaining of heartburn, stomach pain, back pain, nausea, and diarrhea.",
+      "paragraph_ref": "7",
+      "paragraph_starts_with": "[7] In 2008, Vanderhoof presented",
+      "summary": "Vanderhoof presented with symptoms of gallbladder disease in 2008.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "On January 12, 2009, after receiving preoperative clearance from Dr. Lerner, Vanderhoof underwent the cholecystectomy at Glenbrook Hospital.",
+      "paragraph_ref": "8",
+      "paragraph_starts_with": "[8] On January 12, 2009, after",
+      "summary": "Vanderhoof underwent cholecystectomy on January 12, 2009.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "Dr. Berk initially proceeded with a laparoscopic procedure, but soon converted to an open procedure after encountering significant inflammation around the gallbladder.",
+      "paragraph_ref": "8",
+      "paragraph_starts_with": "[8] On January 12, 2009, after",
+      "summary": "Dr. Berk converted to open procedure due to inflammation.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "Dr. Berk transected, or cut through, what he thought was the cystic duct; instead, it turned out, the severed structure was the common bile duct.",
+      "paragraph_ref": "8",
+      "paragraph_starts_with": "[8] On January 12, 2009, after",
+      "summary": "Dr. Berk mistakenly cut the common bile duct.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "Following his surgery, Vanderhoof suffered from an intermittent bile leak, which required the insertion of two drains.",
+      "paragraph_ref": "9",
+      "paragraph_starts_with": "[9] Following his surgery, Vanderhoof",
+      "summary": "Post-surgery, Vanderhoof had a bile leak requiring drains.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "Toward the end of this hospitalization, he became severely septic, and passed away on March 19.",
+      "paragraph_ref": "9",
+      "paragraph_starts_with": "[9] Following his surgery, Vanderhoof",
+      "summary": "Vanderhoof became septic and died on March 19.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "EXPERT_TESTIMONY",
+      "verbatim_quote": "Dr. Finks testified that the top priority in performing a gallbladder dissection is to make sure the common bile duct is not cut.",
+      "paragraph_ref": "14",
+      "paragraph_starts_with": "[14] Dr. Finks testified that the",
+      "summary": "Dr. Finks emphasized avoiding cutting the common bile duct.",
+      "speaker": "Dr. Jonathan Finks"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "EXPERT_TESTIMONY",
+      "verbatim_quote": "Dr. Finks opined to a reasonable degree of medical certainty, however, that Dr. Berk violated the standard of care by transecting the duct without first taking any of these four precautionary steps.",
+      "paragraph_ref": "16",
+      "paragraph_starts_with": "[16] Under these circumstances, Dr.",
+      "summary": "Dr. Finks stated Dr. Berk violated standard of care.",
+      "speaker": "Dr. Jonathan Finks"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "EXPERT_TESTIMONY",
+      "verbatim_quote": "Dr. Finks concluded, to a reasonable degree of medical certainty, that Dr. Berk’s transection of Vanderhoof’s common bile duct, and nothing else, caused the bile leak and sepsis that eventually led to his death.",
+      "paragraph_ref": "22",
+      "paragraph_starts_with": "[22] Dr. Finks concluded, to a",
+      "summary": "Dr. Finks linked bile duct transection to death.",
+      "speaker": "Dr. Jonathan Finks"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "WITNESS_STATEMENT",
+      "verbatim_quote": "Jennifer Foster was Dr. Berk’s physician’s assistant during Vanderhoof’s surgery. She testified that it was “incredibly difficult” to see the anatomy from the beginning of the surgery.",
+      "paragraph_ref": "26",
+      "paragraph_starts_with": "[26] Jennifer Foster was Dr.",
+      "summary": "Foster noted difficulty in seeing anatomy during surgery.",
+      "speaker": "Jennifer Foster"
+    },
+    {
+      "evidence_id": "E011",
+      "type": "WITNESS_STATEMENT",
+      "verbatim_quote": "Dr. Berk testified that Vanderhoof’s cholecystectomy was “[p]robably” one of the more difficult he had ever performed on a patient.",
+      "paragraph_ref": "28",
+      "paragraph_starts_with": "[28] Dr. Berk testified that",
+      "summary": "Dr. Berk described the surgery as very difficult.",
+      "speaker": "Dr. Richard Berk"
+    },
+    {
+      "evidence_id": "E012",
+      "type": "LEGAL_FINDING",
+      "verbatim_quote": "Following deliberations, on February 1, 2013, the jury returned a verdict in favor of plaintiff and against defendants Berk and NorthShore.",
+      "paragraph_ref": "3",
+      "paragraph_starts_with": "[3] A six-day jury trial",
+      "summary": "Jury verdict in favor of plaintiff against defendants.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E013",
+      "type": "LEGAL_FINDING",
+      "verbatim_quote": "We affirm the judgment of the circuit court.",
+      "paragraph_ref": "115",
+      "paragraph_starts_with": "[115] For the reasons stated,",
+      "summary": "Judgment of the circuit court affirmed.",
+      "speaker": "Court conclusion"
+    }
+  ],
+  "verdict_detected": {
+    "outcome": "LIABILITY_FOUND",
+    "key_phrase": "the jury returned a verdict in favor of plaintiff and against defendants",
+    "paragraph_ref": "3"
+  },
+  "extraction_notes": {
+    "total_paragraphs_analyzed": 116,
+    "key_sections_found": [
+      "Background",
+      "Evidence at Trial",
+      "Key Findings and Analysis",
+      "Conclusion and Verdict"
+    ],
+    "gaps_identified": [
+      "No specific lab values mentioned",
+      "Detailed timeline of post-surgery events unclear"
+    ]
+  },
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "Not documented in judgment",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Heartburn, stomach pain, back pain, nausea, and diarrhea",
+      "history_of_present_illness": "Patient presented on several occasions with symptoms suggestive of gallbladder disease.",
+      "past_medical_history": "Not documented in judgment",
+      "medications": "Not documented in judgment",
+      "allergies": "Not documented in judgment",
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment"
+        },
+        "focused_exam": {
+          "abdomen": "Not documented in judgment"
+        }
+      },
+      "initial_working_problem": "Symptoms suggestive of gallbladder disease",
+      "initial_differential": [
+        "Gallbladder disease"
+      ],
+      "critical_findings": [
+        "Symptoms of gallbladder disease"
+      ],
+      "urgency_level": "ELECTIVE",
+      "evidence_ids": [
+        "E001"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "PROCEDURE_NOTE",
+        "name": "Cholecystectomy",
+        "description": "Surgical removal of the gallbladder",
+        "available_phase": "procedure",
+        "reveal": {
+          "result_summary": "Conversion to open procedure due to inflammation",
+          "clinical_significance": "Indicates difficulty in procedure",
+          "decision_impact": "Increased risk of complications"
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E002",
+          "E003"
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "procedure",
+        "clinical_context": "During cholecystectomy, significant inflammation encountered",
+        "prompt": "What precautionary steps should be taken to avoid cutting the common bile duct?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Identify anatomical landmarks and use intraoperative cholangiography",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard practice to avoid bile duct injury"
+          },
+          {
+            "option_id": "B",
+            "description": "Proceed with dissection without additional precautions",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Increases risk of bile duct injury"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant proceeded without additional precautions",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E004",
+            "E008"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Precautionary steps should have been taken",
+          "standard_of_care_basis": "Expert testimony indicated standard of care",
+          "evidence_ids": [
+            "E007",
+            "E008"
+          ]
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to take precautionary steps led to bile duct injury",
+          "what_should_have_happened": "Precautionary steps should have been taken to avoid cutting the common bile duct",
+          "legal_standard_applied": "Bolam test",
+          "evidence_ids": [
+            "E007",
+            "E008",
+            "E009"
+          ]
+        },
+        "is_malpractice_point": true
+      },
+      {
+        "decision_id": "D002",
+        "phase_id": "postop",
+        "clinical_context": "Post-surgery bile leak observed",
+        "prompt": "How should the postoperative bile leak be managed?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Insert drains and monitor for sepsis",
+            "is_defendant_choice": true,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard management for bile leak"
+          },
+          {
+            "option_id": "B",
+            "description": "Observe without intervention",
+            "is_defendant_choice": false,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Increases risk of sepsis"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "A",
+          "description": "Drains were inserted to manage bile leak",
+          "reasoning_stated": "Standard management",
+          "evidence_ids": [
+            "E005"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Drains should be inserted to manage bile leak",
+          "standard_of_care_basis": "Standard management for bile leak",
+          "evidence_ids": [
+            "E005"
+          ]
+        },
+        "explanation": {
+          "why_defendant_wrong": "Not applicable as the correct action was taken",
+          "what_should_have_happened": "Drains should be inserted to manage bile leak",
+          "legal_standard_applied": "Standard management",
+          "evidence_ids": [
+            "E005"
+          ]
+        },
+        "is_malpractice_point": false
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with symptoms suggestive of gallbladder disease",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Presentation to primary care physician",
+            "timestamp": "2008",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "procedure",
+        "name": "Cholecystectomy",
+        "description": "Surgical removal of the gallbladder",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Conversion to open procedure",
+            "timestamp": "January 12, 2009",
+            "evidence_ids": [
+              "E002",
+              "E003"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "postop",
+        "name": "Postoperative Management",
+        "description": "Management of postoperative complications",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Bile leak observed and drains inserted",
+            "timestamp": "Not documented in judgment",
+            "evidence_ids": [
+              "E005"
+            ]
+          },
+          {
+            "event": "Patient became septic and died",
+            "timestamp": "March 19, 2009",
+            "evidence_ids": [
+              "E006"
+            ]
+          }
+        ]
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient developed sepsis and died",
+        "severity": "FATAL",
+        "long_term_effects": "Not applicable",
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Breach of duty in transecting the common bile duct",
+          "Causation established - bile duct transection led to sepsis and death"
+        ],
+        "evidence_ids": [
+          "E012",
+          "E013"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to avoid cutting the common bile duct",
+        "counterfactual": "Precautionary steps would have prevented bile duct injury",
+        "evidence_ids": [
+          "E008",
+          "E009"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "2008",
+        "event": "Patient presents with symptoms suggestive of gallbladder disease",
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "January 12, 2009",
+        "event": "Cholecystectomy performed, converted to open procedure",
+        "evidence_ids": [
+          "E002",
+          "E003"
+        ]
+      },
+      {
+        "timestamp": "March 19, 2009",
+        "event": "Patient became septic and died",
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [
+      {
+        "diagnosis": "Bile duct injury",
+        "when_made": "During surgery",
+        "correct": false,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Cholecystectomy",
+        "date": "January 12, 2009",
+        "outcome": "Bile duct injury occurred",
+        "evidence_ids": [
+          "E002",
+          "E004"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Bile leak",
+        "when_occurred": "Post-surgery",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "complication": "Sepsis",
+        "when_occurred": "Post-surgery",
+        "severity": "Fatal",
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to avoid cutting the common bile duct",
+        "against": "Dr. Berk",
+        "found_proven": true,
+        "evidence_ids": [
+          "E008"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Breach of standard of care",
+        "evidence_ids": [
+          "E012"
+        ]
+      }
+    ]
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "TREATMENT_PROCEDURE_ERROR"
+    ],
+    "diagnosis_subtypes": [
+      "SURGICAL_ERROR"
+    ]
+  }
+}

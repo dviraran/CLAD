@@ -1,0 +1,392 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10770386",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2026-01-07",
+  "url": "https://example.com/courtlistener-10770386",
+  "case_name": "H.F. v. Board of Trustees, Etc.",
+  "neutral_citation": null,
+  "clinical_domain": "PAEDIATRICS",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "H.F. v. Board of Trustees, Etc.. Medical malpractice case involving paediatrics.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "H.F. suffered a traumatic event that was caused by an external circumstance",
+      "paragraph_ref": "24",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "EXPERT_TESTIMONY",
+      "text": "A physician 'found [H.F.] to be suffering from PTSD.'",
+      "paragraph_ref": "72",
+      "speaker": "Expert witness"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "H.F. was dispatched, along with Sergeants J.V. and A.E., to a report of shots fired.",
+      "paragraph_ref": "55",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "H.F. shot the suspect in the chest, and J.V. and A.E. discharged their firearms.",
+      "paragraph_ref": "65",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "MEDICAL_RECORD",
+      "text": "David listed H.F.'s symptoms and opined he was 'unable to function as a police officer.'",
+      "paragraph_ref": "86",
+      "speaker": "Medical record"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "EXPERT_TESTIMONY",
+      "text": "David opined within 'a reasonable degree of medical certainty' that H.F. was 'permanently and totally disabled.'",
+      "paragraph_ref": "89",
+      "speaker": "Expert witness"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "LEGAL_FINDING",
+      "text": "We reverse the Board's decision because its heightened interpretation of Richardson factor 2(c) is unsupported.",
+      "paragraph_ref": "27",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "COURT_REASONING",
+      "text": "We hold Richardson factor 2(c) is satisfied when a member demonstrates he or she has suffered a disabling exacerbation.",
+      "paragraph_ref": "376",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "LEGAL_FINDING",
+      "text": "H.F., therefore, is entitled to ADR benefits for the exacerbation of his asymptomatic PTSD.",
+      "paragraph_ref": "383",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "40 years",
+        "sex": "male",
+        "relevant_social_history": "Married, father of two, former Marine"
+      },
+      "chief_complaint": "Acute stress reaction following a shooting incident",
+      "history_of_present_illness": "H.F. was involved in a shooting incident on May 23, 2020, where he shot a suspect in the chest. Following the incident, he experienced anxiety, nightmares, and flashbacks.",
+      "past_medical_history": [
+        "PTSD",
+        "Alcohol use disorder"
+      ],
+      "medications": [
+        "Lexapro",
+        "Klonopin",
+        "Abilify",
+        "Trazadone"
+      ],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "psychiatric": "Acute stress reaction observed at the scene"
+        }
+      },
+      "initial_working_problem": "Acute stress reaction with exacerbation of PTSD",
+      "known_constraints": null,
+      "initial_differential": [
+        "PTSD exacerbation",
+        "Acute stress disorder"
+      ],
+      "critical_findings": [
+        "Acute stress reaction",
+        "PTSD symptoms"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E003",
+        "E004",
+        "E005"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSULT_NOTE",
+        "name": "Psychiatric Evaluation",
+        "description": "Evaluation by psychiatrist David Gallina, M.D.",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "H.F. diagnosed with exacerbation of PTSD with dissociative symptoms",
+          "detailed_findings": null,
+          "clinical_significance": "Confirms exacerbation of PTSD due to shooting incident",
+          "decision_impact": "Supports need for ADR benefits",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Incident and Initial Reaction",
+        "description": "H.F. involved in shooting incident and experiences acute stress reaction",
+        "duration": "Immediate aftermath",
+        "key_events": [
+          {
+            "event": "Shooting incident",
+            "timestamp": "May 23, 2020",
+            "evidence_ids": [
+              "E003",
+              "E004"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Medical Evaluation and Treatment",
+        "description": "H.F. undergoes psychiatric evaluation and treatment",
+        "duration": "Following months",
+        "key_events": [
+          {
+            "event": "Psychiatric evaluation by Dr. Gallina",
+            "timestamp": "August 2020",
+            "evidence_ids": [
+              "E005",
+              "E006"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Evaluation of H.F.'s eligibility for ADR benefits",
+        "prompt": "Should H.F. be granted ADR benefits based on his condition?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Grant ADR benefits based on exacerbation of PTSD",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Exacerbation of PTSD due to external traumatic event qualifies for ADR benefits"
+          },
+          {
+            "option_id": "B",
+            "description": "Deny ADR benefits due to preexisting condition",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Misinterpretation of requirement for new onset of mental disease"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant denied ADR benefits",
+          "reasoning_stated": "Belief that exacerbation of preexisting condition does not qualify",
+          "evidence_ids": [
+            "E013",
+            "E014"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "ADR benefits should have been granted",
+          "standard_of_care_basis": "Exacerbation of PTSD due to traumatic event qualifies",
+          "evidence_ids": [
+            "E008",
+            "E009"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Based on evidence E008-E009",
+          "what_should_have_happened": "ADR benefits should have been granted",
+          "legal_standard_applied": "Richardson factor 2(c) interpretation",
+          "evidence_ids": [
+            "E008",
+            "E009"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "H.F. diagnosed with exacerbation of PTSD, unable to function as a police officer",
+        "severity": "PERMANENT_TOTAL_DISABILITY",
+        "long_term_effects": "Unable to perform duties as a Sheriff's Officer",
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not applicable",
+        "key_findings": [
+          "Board's denial of ADR benefits was incorrect",
+          "Exacerbation of PTSD due to traumatic event qualifies for ADR benefits"
+        ],
+        "evidence_ids": [
+          "E008",
+          "E009"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Denial of ADR benefits",
+        "counterfactual": "ADR benefits should have been granted",
+        "evidence_ids": [
+          "E008",
+          "E009"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "May 23, 2020",
+        "event": "H.F. involved in shooting incident",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003",
+          "E004"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Psychiatric Evaluation",
+        "date": "August 2020",
+        "result": "Exacerbation of PTSD diagnosed",
+        "interpretation": null,
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Exacerbation of PTSD",
+        "when_made": "August 2020",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Psychiatric medication",
+        "date": "August 2020",
+        "provider": null,
+        "outcome": "Symptom management",
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Permanent disability",
+        "when_occurred": "Following shooting incident",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Denial of ADR benefits",
+        "against": "Board of Trustees",
+        "found_proven": true,
+        "evidence_ids": [
+          "E008",
+          "E009"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Board's denial of ADR benefits was incorrect",
+        "legal_significance": "Misinterpretation of Richardson factor 2(c)",
+        "evidence_ids": [
+          "E008",
+          "E009"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.022900763358778626,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 09:39:07.953380",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

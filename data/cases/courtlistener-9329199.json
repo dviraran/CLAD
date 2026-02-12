@@ -1,0 +1,411 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-9329199",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "0016-02-22",
+  "url": "https://example.com/courtlistener-9329199",
+  "case_name": "Woodland Nursing Operations, LLC F/D/B/A Eastland Nursing & Rehabilitation and Trinity Healthcare, LLC v. Misty Vaughn, Individually and on Behalf of the Estate of Thomas Vaughn",
+  "neutral_citation": null,
+  "clinical_domain": "CARDIOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Woodland Nursing Operations, LLC F/D/B/A Eastland Nursing & Rehabilitation and Trinity Healthcare, LLC v. Misty Vaughn, Individually and on Behalf of the Estate of Thomas Vaughn. Medical malpractice case involving cardiology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Thomas had been admitted to Eastland\u2019s nursing and rehabilitation center for rehabilitation after suffering an intracerebral hemorrhagic stroke.",
+      "paragraph_ref": "47",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Thomas suffered a new injury while a patient at Eastland, (2) why the expert concluded that Thomas would not have suffered the injury if Eastland had been using the protective measures required by the standard of care.",
+      "paragraph_ref": "26",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Davis opined that this deviation from the standard of care delayed the diagnosis of Thomas\u2019s injury and impeded his opportunity for recovery.",
+      "paragraph_ref": "120",
+      "speaker": "Dr. Davis"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Davis concluded that neither a soft helmet nor a shower chair was provided to Thomas.",
+      "paragraph_ref": "128",
+      "speaker": "Dr. Davis"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "LEGAL_FINDING",
+      "text": "The trial court\u2019s order denying Eastland\u2019s motion to dismiss.",
+      "paragraph_ref": "30",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "COURT_REASONING",
+      "text": "Dr. Davis\u2019s report outlines specific interventions that he contends should have been made and why the failure to implement those interventions caused the injury.",
+      "paragraph_ref": "501",
+      "speaker": "Court reasoning"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "COURT_REASONING",
+      "text": "Because Dr. Davis\u2019s report contained the facts supporting his opinions on breaches of the standard of care and causation, its form met the requirements for an expert report.",
+      "paragraph_ref": "504",
+      "speaker": "Court reasoning"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "LEGAL_FINDING",
+      "text": "We affirm the order of the trial court.",
+      "paragraph_ref": "511",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "male",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Not documented in judgment",
+      "history_of_present_illness": "Thomas was admitted to Eastland for rehabilitation after a stroke and suffered a new head injury while there.",
+      "past_medical_history": [
+        "Intracerebral hemorrhagic stroke"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": null,
+        "general_appearance": null,
+        "focused_exam": {
+          "neurological": "Not documented in judgment"
+        }
+      },
+      "initial_working_problem": "Rehabilitation post-stroke",
+      "known_constraints": null,
+      "initial_differential": [],
+      "critical_findings": [],
+      "urgency_level": "Not documented in judgment",
+      "evidence_ids": [
+        "E001",
+        "E002"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "CT Head",
+        "description": "CT scan of the head to assess for intracranial hemorrhage",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not documented in judgment",
+          "detailed_findings": null,
+          "clinical_significance": "Would identify intracranial hemorrhage",
+          "decision_impact": "Should prompt immediate neurosurgical evaluation",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": [
+          "E003",
+          "E004"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Admission to Rehabilitation Facility",
+        "description": "Patient admitted to Eastland for rehabilitation",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Admission without comprehensive baseline care plan",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E001",
+              "E004"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Incident and Initial Assessment",
+        "description": "Patient suffered a head injury during stay",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Head injury occurred",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E002",
+              "E003"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient with head injury and confusion in rehabilitation facility",
+        "prompt": "What safety measures should be implemented for a patient with increased risk of head injury?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Ensure patient wears a soft helmet and provide assistance during ambulation",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard care for patients with increased risk of head injury"
+          },
+          {
+            "option_id": "B",
+            "description": "Do not provide helmet or assistance",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Neglects standard safety protocols for high-risk patients"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant did not ensure helmet use or provide assistance",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E004",
+            "E006"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Patient should have been provided with a soft helmet and assistance",
+          "standard_of_care_basis": "Expert evidence established these as necessary safety measures",
+          "evidence_ids": [
+            "E006",
+            "E007"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to implement safety measures increased risk of injury",
+          "what_should_have_happened": "Patient should have been provided with a soft helmet and assistance",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E006",
+            "E007"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      },
+      {
+        "decision_id": "D002",
+        "phase_id": "workup",
+        "clinical_context": "Patient with head injury and confusion in rehabilitation facility",
+        "prompt": "What documentation should be completed following a head injury?",
+        "action_type": "DOCUMENT_CONSENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Document comprehensive neurological assessment and events leading to injury",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Essential for continuity of care and legal compliance"
+          },
+          {
+            "option_id": "B",
+            "description": "Do not document the injury or assessment",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Neglects standard documentation practices"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant did not document the injury or assessment",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E004",
+            "E006"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Comprehensive documentation should have been completed",
+          "standard_of_care_basis": "Expert evidence established documentation as necessary",
+          "evidence_ids": [
+            "E006",
+            "E007"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Lack of documentation delayed diagnosis and treatment",
+          "what_should_have_happened": "Comprehensive documentation should have been completed",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E006",
+            "E007"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient suffered intracranial hemorrhage with delayed diagnosis",
+        "severity": "PERMANENT_SEVERE_DISABILITY",
+        "long_term_effects": "Progressive neurological deterioration",
+        "evidence_ids": [
+          "E003",
+          "E004"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Breach of duty in failing to provide helmet and assistance",
+          "Causation established - delay in diagnosis worsened outcome"
+        ],
+        "evidence_ids": [
+          "E005",
+          "E008"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to provide safety measures and document care",
+        "counterfactual": "Proper care and documentation would have prevented injury",
+        "evidence_ids": [
+          "E006",
+          "E007",
+          "E008"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Patient admitted to Eastland for rehabilitation",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Patient suffered head injury",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [
+      {
+        "diagnosis": "Intracranial hemorrhage",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "treatments": [],
+    "complications": [
+      {
+        "complication": "Progressive neurological deterioration",
+        "when_occurred": "Not documented in judgment",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to provide helmet and assistance",
+        "against": "Eastland Nursing & Rehabilitation",
+        "found_proven": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.015533980582524271,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 15:37:38.431270",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

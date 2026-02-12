@@ -1,0 +1,404 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-4870456",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2020-12-10",
+  "url": "https://example.com/courtlistener-4870456",
+  "case_name": "Gary Merchant v. Corizon Health, Inc.",
+  "neutral_citation": null,
+  "clinical_domain": "EMERGENCY_MEDICINE",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Gary Merchant v. Corizon Health, Inc.. Medical malpractice case involving emergency medicine.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Merchant alleges that he swallowed a razor blade to force his transport to a hospital because Corizon was providing him inadequate medical care.",
+      "paragraph_ref": "25",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Several hours after arriving at the hospital, doctors diagnosed a necrotizing fasciitis infection in Merchant\u2019s left leg and determined that an above-the-knee leg amputation was necessary to save his life.",
+      "paragraph_ref": "25",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "Merchant submitted several Health Services Requests (HSRs) to Corizon.",
+      "paragraph_ref": "27",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "On January 22, 2016, he submitted an HSR reporting a Chron\u2019s Disease \u201cflare-up\u201d and requesting Prednisone.",
+      "paragraph_ref": "27",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "Merchant first complained of leg pain in an HSR dated February 2.",
+      "paragraph_ref": "28",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "A Corizon nurse evaluated Merchant and observed \u201c+4 pitting edema\u201d on both legs.",
+      "paragraph_ref": "28",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "Merchant \u201crefuse[d] to be seen\u201d on February 4 and \u201c[was] angry for unknown reasons.\u201d",
+      "paragraph_ref": "28",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "FACTUAL_FINDING",
+      "text": "Around 12:30 a.m. on February 7, Merchant told one of the emergency room doctors that \u201che\u2019[d] been experiencing a Crohn\u2019s flare-up . . . and just couldn\u2019t take the pain anymore.\u201d",
+      "paragraph_ref": "30",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "FACTUAL_FINDING",
+      "text": "The emergency room doctors admitted Merchant to the intensive care unit (ICU) based on several concerns.",
+      "paragraph_ref": "31",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "LEGAL_FINDING",
+      "text": "The panel affirmed the district court\u2019s exclusion of expert evidence under Federal Rule of Civil Procedure 37(c)(1).",
+      "paragraph_ref": "12",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E011",
+      "type": "LEGAL_FINDING",
+      "text": "The district court did not err in granting summary judgment to defendants because plaintiff failed to demonstrate a genuine issue of material fact for trial.",
+      "paragraph_ref": "14",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E012",
+      "type": "LEGAL_FINDING",
+      "text": "We also conclude the district court correctly found that Merchant failed to exhaust his administrative remedies as required by the Prison Litigation Reform Act (PLRA).",
+      "paragraph_ref": "23",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E013",
+      "type": "COURT_REASONING",
+      "text": "Merchant repeatedly failed to meet his disclosure obligations, the district court reasonably concluded Merchant\u2019s failures were not substantially justified or harmless.",
+      "paragraph_ref": "23",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E014",
+      "type": "COURT_REASONING",
+      "text": "The district court sanctioned Merchant by excluding his improperly disclosed expert evidence under Federal Rule of Civil Procedure 37(c)(1).",
+      "paragraph_ref": "54",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E015",
+      "type": "COURT_REASONING",
+      "text": "The district court also considered the appropriateness of lesser sanctions, despite Merchant\u2019s failure to move for such, and found that Merchant\u2019s \u201cchronic\u201d noncompliance prejudiced Corizon.",
+      "paragraph_ref": "73",
+      "speaker": "Judge's analysis"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "unknown",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Swallowed razor blade to force hospital transport",
+      "history_of_present_illness": "Merchant alleges inadequate medical care by Corizon, leading to self-harm to receive hospital treatment.",
+      "past_medical_history": [
+        "Crohn's Disease"
+      ],
+      "medications": [
+        "Prednisone",
+        "Humira"
+      ],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "abdomen": "Right-sided abdominal pain reported",
+          "legs": "Left calf red, swollen, and bruised"
+        }
+      },
+      "initial_working_problem": "Suspected infection and Crohn's flare-up",
+      "known_constraints": null,
+      "initial_differential": [
+        "Necrotizing fasciitis",
+        "Crohn's flare-up"
+      ],
+      "critical_findings": [
+        "+4 pitting edema",
+        "elevated white blood count"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002",
+        "E008",
+        "E009"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "LAB",
+        "name": "White Blood Cell Count",
+        "description": "Assessment of infection",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Elevated white blood count",
+          "detailed_findings": null,
+          "clinical_significance": "Suspicious for infection",
+          "decision_impact": "Should prompt further investigation for infection source",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E008"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Hospital Presentation",
+        "description": "Patient presents to hospital after swallowing razor blade",
+        "duration": "Several hours",
+        "key_events": [
+          {
+            "event": "Patient admitted to ICU",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E009"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient in hospital with suspected infection",
+        "prompt": "What should be the next step in management?",
+        "action_type": "ORDER_TEST",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Order imaging to assess leg infection",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Imaging is necessary to confirm necrotizing fasciitis"
+          },
+          {
+            "option_id": "B",
+            "description": "Monitor without imaging",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Delayed imaging can lead to progression of infection"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant delayed imaging",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E002"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Imaging should have been ordered immediately",
+          "standard_of_care_basis": "Prompt imaging is standard for suspected necrotizing fasciitis",
+          "evidence_ids": [
+            "E002"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Delay in imaging led to progression of infection",
+          "what_should_have_happened": "Imaging should have been performed to confirm diagnosis",
+          "legal_standard_applied": "Standard of care for suspected severe infection",
+          "evidence_ids": [
+            "E002"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient required above-the-knee amputation",
+        "severity": "PERMANENT_SEVERE_DISABILITY",
+        "long_term_effects": "Loss of leg, chronic pain",
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "None",
+        "key_findings": [
+          "Plaintiff failed to demonstrate a genuine issue of material fact",
+          "Plaintiff failed to exhaust administrative remedies"
+        ],
+        "evidence_ids": [
+          "E011",
+          "E012"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Failure to exhaust administrative remedies",
+        "counterfactual": "Not applicable",
+        "evidence_ids": [
+          "E011",
+          "E012"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Patient admitted to hospital after swallowing razor blade",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "White Blood Cell Count",
+        "date": "Date not specified in judgment",
+        "result": "Elevated",
+        "interpretation": null,
+        "evidence_ids": [
+          "E008"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Necrotizing fasciitis",
+        "when_made": "Several hours after hospital admission",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Above-the-knee amputation",
+        "date": "Date not specified in judgment",
+        "provider": null,
+        "outcome": "Leg removed to save life",
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Loss of leg",
+        "when_occurred": "Following diagnosis of necrotizing fasciitis",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to timely diagnose and treat leg infection",
+        "against": "Corizon Health, Inc.",
+        "found_proven": false,
+        "evidence_ids": [
+          "E011"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Plaintiff failed to exhaust administrative remedies",
+        "legal_significance": "Summary judgment granted to defendants",
+        "evidence_ids": [
+          "E012"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.18518518518518517,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 07:57:26.508349",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

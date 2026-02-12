@@ -1,0 +1,460 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10653910",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2016-05-10",
+  "url": "https://example.com/courtlistener-10653910",
+  "case_name": "Arthur G. Watrous, Administrator Estate of Arthur H. Watrous",
+  "neutral_citation": null,
+  "clinical_domain": "NEUROLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Medical malpractice case involving neurology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Decedent Arthur H. Watrous was an eighty-six-year-old man with Parkinson\u2019s disease, COPD, and other medical complications.",
+      "paragraph_ref": "17",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Decedent was admitted to Porter Medical Center on May 10, 2016, for increasing weakness, difficulty walking, and auditory hallucinations.",
+      "paragraph_ref": "18",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "While at Porter Medical Center, decedent became increasingly agitated and aggressive, removing his telemetry box and swinging at and hitting hospital staff.",
+      "paragraph_ref": "21",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "To address decedent\u2019s aggression and calm him down for treatment, the hospital staff elected to use a chemical restraint known as Zyprexa.",
+      "paragraph_ref": "23",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "Nurse Sanders contacted decedent\u2019s daughter to gain approval for the use of Zyprexa in a 2.5mg dose, to which his daughter consented.",
+      "paragraph_ref": "24",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "Around 1:38 a.m. on May 11, 2016, Nurse Sanders administered decedent\u2019s first dose of Zyprexa.",
+      "paragraph_ref": "28",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "Around 8:00 a.m., decedent\u2019s oxygen-saturation level dropped to fifty-nine percent. He was intubated and subsequently transferred to UVM Medical Center for respiratory distress.",
+      "paragraph_ref": "32",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "FACTUAL_FINDING",
+      "text": "Decedent died on May 14, 2016. His cause of death was believed to be septic shock related to aspiration pneumonia.",
+      "paragraph_ref": "34",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Both parties presented expert testimony regarding the standard of care for use of chemical restraints.",
+      "paragraph_ref": "36",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "LEGAL_FINDING",
+      "text": "The court concluded that there was no undisputed evidence regarding the specific standard of care applicable to decedent\u2019s circumstances.",
+      "paragraph_ref": "53",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E011",
+      "type": "LEGAL_FINDING",
+      "text": "The law favors upholding jury verdicts.",
+      "paragraph_ref": "58",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E012",
+      "type": "COURT_REASONING",
+      "text": "The trial court must view the evidence in the light most favorable to the jury verdict.",
+      "paragraph_ref": "61",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E013",
+      "type": "LEGAL_FINDING",
+      "text": "Plaintiff has the burden of proving the applicable standard of care, that defendant breached that standard, and that as a proximate result plaintiff suffered injuries.",
+      "paragraph_ref": "71",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E014",
+      "type": "COURT_REASONING",
+      "text": "The jury heard multiple different versions of each element of the alleged standard of care.",
+      "paragraph_ref": "95",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E015",
+      "type": "LEGAL_FINDING",
+      "text": "Plaintiff failed to meet the burden of proof for establishing the applicable standard of care.",
+      "paragraph_ref": "129",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E016",
+      "type": "LEGAL_FINDING",
+      "text": "The court acted within its discretion in denying a new trial given the state of the record.",
+      "paragraph_ref": "133",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "86 years",
+        "sex": "male",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Increasing weakness and difficulty walking",
+      "history_of_present_illness": "Admitted for increasing weakness, difficulty walking, and auditory hallucinations. Symptoms possibly due to adverse interaction of Parkinson's medications.",
+      "past_medical_history": [
+        "Parkinson's disease",
+        "COPD"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "neurological": "Acutely delirious, agitated and aggressive behavior"
+        }
+      },
+      "initial_working_problem": "Acute delirium with aggression",
+      "known_constraints": null,
+      "initial_differential": [
+        "Adverse drug reaction",
+        "Delirium due to infection"
+      ],
+      "critical_findings": [
+        "Aggression",
+        "Delirium"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002",
+        "E003"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSULT_NOTE",
+        "name": "Neurology Consult",
+        "description": "Consult to evaluate potential adverse drug interaction",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not documented in judgment",
+          "detailed_findings": null,
+          "clinical_significance": "Not documented in judgment",
+          "decision_impact": "Not documented in judgment",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": []
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Hospital Admission",
+        "description": "Patient admitted with acute symptoms",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Admission to Porter Medical Center",
+            "timestamp": "May 10, 2016",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Initial Management",
+        "description": "Management of acute delirium and aggression",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "First dose of Zyprexa administered",
+            "timestamp": "May 11, 2016, 1:38 a.m.",
+            "evidence_ids": [
+              "E006"
+            ]
+          },
+          {
+            "event": "Second dose of Zyprexa administered",
+            "timestamp": "May 11, 2016, 5:58 a.m.",
+            "evidence_ids": [
+              "E006"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient with acute delirium and aggression",
+        "prompt": "How should the patient's aggression be managed?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Administer Zyprexa as needed after assessment",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Zyprexa was administered without proper assessment"
+          },
+          {
+            "option_id": "B",
+            "description": "Conduct thorough assessment before administering any chemical restraint",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard of care requires assessment before chemical restraint"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "A",
+          "description": "Zyprexa administered without prior assessment",
+          "reasoning_stated": "To calm patient for treatment",
+          "evidence_ids": [
+            "E004",
+            "E005",
+            "E006"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "B",
+          "description": "Assessment should have been conducted before administering Zyprexa",
+          "standard_of_care_basis": "Expert testimony indicated need for assessment",
+          "evidence_ids": [
+            "E009",
+            "E010"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to assess before administering chemical restraint",
+          "what_should_have_happened": "Assessment should have been conducted",
+          "legal_standard_applied": "Standard of care not established by plaintiff",
+          "evidence_ids": [
+            "E009",
+            "E010",
+            "E013"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient developed respiratory distress and was intubated",
+        "severity": "SEVERE",
+        "long_term_effects": "Death due to septic shock related to aspiration pneumonia",
+        "evidence_ids": [
+          "E007",
+          "E008"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "None",
+        "key_findings": [
+          "Plaintiff failed to prove the standard of care",
+          "Jury found no breach of standard of care"
+        ],
+        "evidence_ids": [
+          "E013",
+          "E015"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Failure to establish standard of care",
+        "counterfactual": "Not applicable",
+        "evidence_ids": [
+          "E013",
+          "E015"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "May 10, 2016",
+        "event": "Patient admitted to Porter Medical Center",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "May 11, 2016, 1:38 a.m.",
+        "event": "First dose of Zyprexa administered",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "timestamp": "May 11, 2016, 5:58 a.m.",
+        "event": "Second dose of Zyprexa administered",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "timestamp": "May 11, 2016, 8:00 a.m.",
+        "event": "Patient's oxygen saturation dropped, intubated",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      {
+        "timestamp": "May 14, 2016",
+        "event": "Patient died",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E008"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [
+      {
+        "diagnosis": "Septic shock related to aspiration pneumonia",
+        "when_made": "Post-mortem",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E008"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Intubation",
+        "date": "May 11, 2016",
+        "provider": null,
+        "outcome": "Respiratory support",
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Aspiration pneumonia",
+        "when_occurred": "Before death",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E008"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to assess before administering Zyprexa",
+        "against": "Porter Medical Center",
+        "found_proven": false,
+        "evidence_ids": [
+          "E013"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Plaintiff failed to prove the standard of care",
+        "legal_significance": "No liability found",
+        "evidence_ids": [
+          "E013",
+          "E015"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.11594202898550725,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 09:07:07.559273",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

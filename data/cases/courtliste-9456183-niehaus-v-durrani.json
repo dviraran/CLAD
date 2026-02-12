@@ -1,0 +1,418 @@
+{
+  "case_id": "courtliste-9456183-niehaus-v-durrani",
+  "source": "courtlistener",
+  "source_url": "local://courtliste-9456183-niehaus-v-durrani.html",
+  "jurisdiction": "US",
+  "extraction_metadata": {
+    "version": "batch_api_v1",
+    "model": "gpt-4o",
+    "extracted_at": "2026-01-21T17:56:57.943008",
+    "simulation_extracted_at": "2026-01-21T18:29:59.563551",
+    "simulation_model": "gpt-4o"
+  },
+  "case_metadata": {
+    "case_name": "Niehaus v. Durrani",
+    "citation": "2023-Ohio-4818",
+    "court": "OHIO FIRST DISTRICT COURT OF APPEALS",
+    "date": "December 29, 2023"
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "In 2013, Ms. Yeakle went to the emergency room after a fall related to a problem with her right knee.",
+      "paragraph_ref": "30",
+      "paragraph_starts_with": "{¶2}    In 2013, Ms. Yeakle went",
+      "summary": "Ms. Yeakle visited the ER in 2013 due to a knee issue.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "Dr. Durrani was called to consult on whether the problem could be neurological.",
+      "paragraph_ref": "31",
+      "paragraph_starts_with": "problem with her right knee. At",
+      "summary": "Dr. Durrani consulted on potential neurological issues.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "Dr. Durrani scheduled surgery to correct these issues, but on the day of surgery, Dr. Durrani was unavailable.",
+      "paragraph_ref": "34",
+      "paragraph_starts_with": "problems with Ms. Yeakle’s knee.",
+      "summary": "Dr. Durrani scheduled surgery but was unavailable on the day.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "Dr. Shanti, another surgeon in Dr. Durrani’s practice, filled in for Dr. Durrani and performed the surgery.",
+      "paragraph_ref": "35",
+      "paragraph_starts_with": "issues, but on the day of surgery,",
+      "summary": "Dr. Shanti performed the surgery instead of Dr. Durrani.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "Following the surgery, Ms. Yeakle suffered significant back pain that had not existed previously.",
+      "paragraph_ref": "37",
+      "paragraph_starts_with": "Following the surgery, Ms. Yeakle",
+      "summary": "Post-surgery, Ms. Yeakle experienced new back pain.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "The jury found Dr. Durrani liable for medical negligence and lack of informed consent.",
+      "paragraph_ref": "57",
+      "paragraph_starts_with": "would be held vicariously liable.",
+      "summary": "Jury found Dr. Durrani liable for negligence and lack of consent.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "LEGAL_FINDING",
+      "verbatim_quote": "The trial court’s judgments denying appellants’ motion for a new trial and appellants’ motion for a directed verdict on the claim for lack of informed consent are reversed.",
+      "paragraph_ref": "443",
+      "paragraph_starts_with": "{¶55} In the appeal numbered",
+      "summary": "Court reversed denial of new trial and directed verdict motions.",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "COURT_REASONING",
+      "verbatim_quote": "Construing the evidence most strongly in favor of Ms. Yeakle, reasonable minds could conclude that Dr. Durrani was responsible for medical negligence in his diagnosis and subsequent recommendation for a surgery.",
+      "paragraph_ref": "115",
+      "paragraph_starts_with": "reasonable minds could conclude",
+      "summary": "Court found evidence could support negligence by Dr. Durrani.",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "EXPERT_TESTIMONY",
+      "verbatim_quote": "The record contained competing expert testimony as to the necessity of the surgery and informed consent.",
+      "paragraph_ref": "327",
+      "paragraph_starts_with": "{¶42} In this case, the record",
+      "summary": "Experts disagreed on surgery necessity and informed consent.",
+      "speaker": "Court finding"
+    }
+  ],
+  "verdict_detected": {
+    "outcome": "NO_LIABILITY",
+    "key_phrase": "The trial court’s judgments denying appellants’ motion for a new trial and appellants’ motion for a directed verdict on the claim for lack of informed consent are reversed.",
+    "paragraph_ref": "443"
+  },
+  "extraction_notes": {
+    "total_paragraphs_analyzed": 452,
+    "key_sections_found": [
+      "Background",
+      "Key Findings and Analysis",
+      "Conclusion and Verdict"
+    ],
+    "gaps_identified": [
+      "No specific lab values mentioned",
+      "Timing of events unclear"
+    ]
+  },
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Right knee problem after a fall",
+      "history_of_present_illness": "In 2013, Ms. Yeakle went to the emergency room after a fall related to a problem with her right knee.",
+      "past_medical_history": "Not documented in judgment",
+      "medications": "Not documented in judgment",
+      "allergies": "Not documented in judgment",
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment"
+        },
+        "focused_exam": {
+          "knee": "Examination findings not specified in judgment"
+        }
+      },
+      "initial_working_problem": "Right knee problem - potential neurological involvement",
+      "initial_differential": [
+        "Neurological issue",
+        "Orthopedic issue"
+      ],
+      "critical_findings": [
+        "Knee problem post-fall"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSULT_NOTE",
+        "name": "Neurological Consultation",
+        "description": "Consultation by Dr. Durrani to assess neurological involvement",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Consultation performed, surgery recommended",
+          "clinical_significance": "Surgery deemed necessary by Dr. Durrani",
+          "decision_impact": "Led to scheduling of surgery"
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient with knee problem potentially involving neurological issues",
+        "prompt": "Should surgery be scheduled based on the consultation?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Schedule surgery based on consultation",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Surgery was scheduled by Dr. Durrani"
+          },
+          {
+            "option_id": "B",
+            "description": "Seek further diagnostic tests before deciding on surgery",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Further diagnostics could clarify the necessity of surgery"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "A",
+          "description": "Surgery was scheduled by Dr. Durrani",
+          "reasoning_stated": "Dr. Durrani recommended surgery",
+          "evidence_ids": [
+            "E002",
+            "E003"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "B",
+          "description": "Further diagnostics should have been pursued",
+          "standard_of_care_basis": "Expert testimony suggested surgery necessity was disputed",
+          "evidence_ids": [
+            "E009"
+          ]
+        },
+        "explanation": {
+          "why_defendant_wrong": "Based on expert testimony disputing surgery necessity",
+          "what_should_have_happened": "Further diagnostics should have been conducted",
+          "legal_standard_applied": "Bolam test",
+          "evidence_ids": [
+            "E009"
+          ]
+        },
+        "is_malpractice_point": true
+      },
+      {
+        "decision_id": "D002",
+        "phase_id": "procedure",
+        "clinical_context": "Surgery scheduled with Dr. Durrani unavailable",
+        "prompt": "Who should perform the surgery?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Proceed with Dr. Shanti performing the surgery",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Dr. Shanti filled in for Dr. Durrani"
+          },
+          {
+            "option_id": "B",
+            "description": "Reschedule surgery for when Dr. Durrani is available",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Patient consent was for Dr. Durrani"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "A",
+          "description": "Dr. Shanti performed the surgery",
+          "reasoning_stated": "Dr. Durrani was unavailable",
+          "evidence_ids": [
+            "E003",
+            "E004"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "B",
+          "description": "Surgery should have been rescheduled",
+          "standard_of_care_basis": "Informed consent was for Dr. Durrani",
+          "evidence_ids": [
+            "E006"
+          ]
+        },
+        "explanation": {
+          "why_defendant_wrong": "Informed consent was not obtained for Dr. Shanti",
+          "what_should_have_happened": "Surgery should have been rescheduled",
+          "legal_standard_applied": "Informed consent principles",
+          "evidence_ids": [
+            "E006"
+          ]
+        },
+        "is_malpractice_point": true
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Emergency Presentation",
+        "description": "Patient presents to ER with knee problem",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "ER visit due to knee problem",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Consultation and Decision for Surgery",
+        "description": "Consultation by Dr. Durrani and decision to schedule surgery",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Consultation by Dr. Durrani",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "procedure",
+        "name": "Surgery Performed",
+        "description": "Surgery performed by Dr. Shanti",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Surgery performed by Dr. Shanti",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E004"
+            ]
+          }
+        ]
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient developed significant back pain post-surgery",
+        "severity": "PERMANENT_MODERATE_DISABILITY",
+        "long_term_effects": "Chronic back pain",
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Breach of duty in scheduling surgery without proper consent",
+          "Causation established - surgery led to new back pain"
+        ],
+        "evidence_ids": [
+          "E006",
+          "E008"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to obtain informed consent and unnecessary surgery",
+        "counterfactual": "Proper consent and diagnostics could have prevented unnecessary surgery",
+        "evidence_ids": [
+          "E006",
+          "E008",
+          "E009"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "2013",
+        "event": "Patient visits ER for knee problem",
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [],
+    "treatments": [
+      {
+        "treatment": "Surgery performed by Dr. Shanti",
+        "date": "Not documented in judgment",
+        "outcome": "Patient developed back pain",
+        "evidence_ids": [
+          "E004",
+          "E005"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Significant back pain",
+        "when_occurred": "Post-surgery",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to obtain informed consent",
+        "against": "Dr. Durrani",
+        "found_proven": true,
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Dr. Durrani liable for negligence and lack of informed consent",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E006",
+          "E008"
+        ]
+      }
+    ]
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "INFORMED_CONSENT"
+    ],
+    "diagnosis_subtypes": [
+      "UNNECESSARY_PROCEDURE"
+    ]
+  }
+}

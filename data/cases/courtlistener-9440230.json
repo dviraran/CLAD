@@ -1,0 +1,671 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-9440230",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2023-01-24",
+  "url": "https://example.com/courtlistener-9440230",
+  "case_name": "Estate of Cindy Essex v. Grant County Pub. Hosp. Dist. No. 1",
+  "neutral_citation": null,
+  "clinical_domain": "PAEDIATRICS",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Estate of Cindy Essex v. Grant County Pub. Hosp. Dist. No. 1. Medical malpractice case involving paediatrics.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "On June 24, 2015, Cindy Essex visited Samaritan Healthcare\u2019s emergency department in Moses Lake complaining of left shoulder pain.",
+      "paragraph_ref": "14",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "She was experiencing 10 out of 10 pain and abdominal cramping. She arrived at 2:13 p.m. and was triaged at 2:31 p.m.",
+      "paragraph_ref": "16",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. Christopher Davis arrived at 3:47 p.m. to assess Ms. Essex. She reported bloody diarrhea, vomiting, general abdominal pain.",
+      "paragraph_ref": "21",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. Davis ordered two milligrams of intramuscular hydromorphone for pain, which was administered to Ms. Essex at 3:56 p.m.",
+      "paragraph_ref": "29",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "The x-rays, as read by radiologist Dr. Irene Cruite at 5:19 p.m., showed a '[n]onspecific paucity of gas in the bowel loops with a large gastric air bubble.'",
+      "paragraph_ref": "34",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. Davis suspected Ms. Essex had a gastric outlet obstruction and ordered a computed tomography (CT) scan of her abdomen and pelvis.",
+      "paragraph_ref": "37",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "The report of her CT scan was completed at 6:20 p.m. As interpreted by Dr. Cruite, it showed a '[m]arkedly distended stomach with[ ] fluid, suspicious for gastric outlet obstruction.'",
+      "paragraph_ref": "40",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "FACTUAL_FINDING",
+      "text": "At 6:56 p.m., a nasogastric tube was inserted into Ms. Essex\u2019s stomach and 1.6 to 1.8 liters of clear green fluid was removed.",
+      "paragraph_ref": "46",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. Davis consulted with a gastroenterologist, who recommended Ms. Essex be transferred for endoscopy.",
+      "paragraph_ref": "49",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "FACTUAL_FINDING",
+      "text": "At 8:25 p.m., while waiting for transfer, Ms. Essex reported that her lower back pain was again a 10 out of 10.",
+      "paragraph_ref": "64",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E011",
+      "type": "FACTUAL_FINDING",
+      "text": "Ms. Essex arrived at Central Washington Hospital at 10:10 p.m. She was very lethargic and had a high heart rate and low blood pressure.",
+      "paragraph_ref": "69",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E012",
+      "type": "FACTUAL_FINDING",
+      "text": "A CT scan at 1:11 a.m. revealed '[e]xtensive contusion or edema in the body wall . . . on the left.'",
+      "paragraph_ref": "75",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E013",
+      "type": "FACTUAL_FINDING",
+      "text": "The surgery revealed extensive areas of nonviable muscle, beyond anything the surgeon had seen.",
+      "paragraph_ref": "84",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E014",
+      "type": "LEGAL_FINDING",
+      "text": "We conclude the trial court erred in dismissing Essex\u2019s negligence claim against Samaritan\u2019s nurses.",
+      "paragraph_ref": "484",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E015",
+      "type": "LEGAL_FINDING",
+      "text": "Affirmed in part, reversed in part.",
+      "paragraph_ref": "488",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Severe abdominal pain and left shoulder pain",
+      "history_of_present_illness": "Cindy Essex presented with 10 out of 10 pain, abdominal cramping, bloody diarrhea, vomiting, and left shoulder pain. She reported that her children had a fever and suspected she picked up a virus from them.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": "98.1 degrees at 7:00 p.m.",
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "abdomen": "Distended abdomen",
+          "shoulder": "Increased aching left shoulder pain, worse with movement and palpation"
+        }
+      },
+      "initial_working_problem": "Suspected gastric outlet obstruction",
+      "known_constraints": null,
+      "initial_differential": [
+        "gastric outlet obstruction",
+        "viral infection"
+      ],
+      "critical_findings": [
+        "bloody diarrhea",
+        "vomiting",
+        "abdominal distension"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002",
+        "E003"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "X-ray",
+        "description": "Chest and abdominal x-rays",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Nonspecific paucity of gas in bowel loops with a large gastric air bubble",
+          "detailed_findings": null,
+          "clinical_significance": "Suggestive of gastric outlet obstruction",
+          "decision_impact": "Prompted further imaging with CT scan",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "IMAGING",
+        "name": "CT scan",
+        "description": "CT scan of abdomen and pelvis",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Markedly distended stomach with fluid, suspicious for gastric outlet obstruction",
+          "detailed_findings": null,
+          "clinical_significance": "No cause for obstruction identified",
+          "decision_impact": "Recommended nasogastric tube for decompression",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      {
+        "request_id": "R003",
+        "type": "CONSULT_NOTE",
+        "name": "Gastroenterology consult",
+        "description": "Consultation with gastroenterologist",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Recommended transfer for endoscopy",
+          "detailed_findings": null,
+          "clinical_significance": "Endoscopy needed to further investigate obstruction",
+          "decision_impact": "Led to decision to transfer patient",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E009"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Emergency Presentation",
+        "description": "Patient presents to ED with acute symptoms",
+        "duration": "2 hours",
+        "key_events": [
+          {
+            "event": "Patient arrives at ED",
+            "timestamp": "June 24, 2015 2:13 p.m.",
+            "evidence_ids": [
+              "E001"
+            ]
+          },
+          {
+            "event": "Triage assessment",
+            "timestamp": "2:31 p.m.",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Diagnostic Workup",
+        "description": "Imaging and initial management",
+        "duration": "4 hours",
+        "key_events": [
+          {
+            "event": "X-ray performed",
+            "timestamp": "5:19 p.m.",
+            "evidence_ids": [
+              "E005"
+            ]
+          },
+          {
+            "event": "CT scan completed",
+            "timestamp": "6:20 p.m.",
+            "evidence_ids": [
+              "E007"
+            ]
+          },
+          {
+            "event": "Nasogastric tube inserted",
+            "timestamp": "6:56 p.m.",
+            "evidence_ids": [
+              "E008"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "decision",
+        "name": "Transfer to Higher Care",
+        "description": "Patient transferred to another hospital for further management",
+        "duration": "2 hours",
+        "key_events": [
+          {
+            "event": "Patient transferred to Central Washington Hospital",
+            "timestamp": "8:35 p.m.",
+            "evidence_ids": [
+              "E067"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient in ED with severe abdominal pain and distension",
+        "prompt": "What should be the next step in management after CT findings?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Insert nasogastric tube for decompression",
+            "is_defendant_choice": true,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Recommended by radiologist to relieve gastric distension"
+          },
+          {
+            "option_id": "B",
+            "description": "Immediate surgical consult for potential necrotizing fasciitis",
+            "is_defendant_choice": false,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Would have addressed the underlying infection earlier"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "A",
+          "description": "Nasogastric tube was inserted",
+          "reasoning_stated": "To decompress the stomach as per CT recommendation",
+          "evidence_ids": [
+            "E008"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "B",
+          "description": "Immediate surgical consult should have been considered",
+          "standard_of_care_basis": "Expert testimony indicated earlier intervention could have altered outcome",
+          "evidence_ids": [
+            "E013",
+            "E389"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to consider necrotizing fasciitis despite symptoms",
+          "what_should_have_happened": "Surgical consult and intervention",
+          "legal_standard_applied": "Proximate cause and standard of care",
+          "evidence_ids": [
+            "E389",
+            "E390"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient developed necrotizing fasciitis requiring extensive surgery",
+        "severity": "PERMANENT_SEVERE_DISABILITY",
+        "long_term_effects": "Loss of muscle tissue, chronic pain",
+        "evidence_ids": [
+          "E013"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Breach of duty in failing to reassess patient",
+          "Causation established - earlier diagnosis would have prevented extensive tissue loss"
+        ],
+        "evidence_ids": [
+          "E457",
+          "E485"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to reassess and diagnose necrotizing fasciitis",
+        "counterfactual": "Reassessment would have led to correct diagnosis",
+        "evidence_ids": [
+          "E457",
+          "E485"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "June 24, 2015 2:13 p.m.",
+        "event": "Patient arrives at ED",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "June 24, 2015 5:19 p.m.",
+        "event": "X-ray performed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "timestamp": "June 24, 2015 6:20 p.m.",
+        "event": "CT scan completed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      {
+        "timestamp": "June 24, 2015 6:56 p.m.",
+        "event": "Nasogastric tube inserted",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E008"
+        ]
+      },
+      {
+        "timestamp": "June 24, 2015 8:35 p.m.",
+        "event": "Patient transferred to Central Washington Hospital",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E067"
+        ]
+      },
+      {
+        "timestamp": "June 24, 2015 14:13",
+        "event": "Patient arrives at ED",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "June 24, 2015 15:47",
+        "event": "Initial assessment by Dr. Davis",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "timestamp": "June 24, 2015 17:19",
+        "event": "Abdominal X-ray performed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "timestamp": "June 24, 2015 18:20",
+        "event": "CT scan performed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      {
+        "timestamp": "June 24, 2015 19:00",
+        "event": "Gastroenterology consult",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E009"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "X-ray",
+        "date": "June 24, 2015",
+        "result": "Nonspecific paucity of gas in bowel loops with a large gastric air bubble",
+        "interpretation": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "test_name": "CT scan",
+        "date": "June 24, 2015",
+        "result": "Markedly distended stomach with fluid, suspicious for gastric outlet obstruction",
+        "interpretation": null,
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      {
+        "test_name": "Abdominal X-ray",
+        "date": "June 24, 2015",
+        "result": "Nonspecific paucity of bowel gas",
+        "interpretation": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "test_name": "CT Abdomen",
+        "date": "June 24, 2015",
+        "result": "Massive gastric distention, no inflammation reported",
+        "interpretation": null,
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Gastric outlet obstruction",
+        "when_made": "June 24, 2015",
+        "made_by": null,
+        "correct": false,
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "diagnosis": "Necrotizing fasciitis",
+        "when_made": "June 25, 2015",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E073"
+        ]
+      },
+      {
+        "diagnosis": "Gastric outlet obstruction",
+        "when_made": "June 24, 2015",
+        "made_by": null,
+        "correct": false,
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "diagnosis": "Necrotizing fasciitis",
+        "when_made": "Date not specified in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E013"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Nasogastric tube insertion",
+        "date": "June 24, 2015",
+        "provider": null,
+        "outcome": "Decompression of stomach",
+        "evidence_ids": [
+          "E008"
+        ]
+      },
+      {
+        "treatment": "Surgical debridement",
+        "date": "June 25, 2015",
+        "provider": null,
+        "outcome": "Extensive areas of nonviable muscle found",
+        "evidence_ids": [
+          "E084"
+        ]
+      },
+      {
+        "treatment": "Surgical intervention",
+        "date": "Date not specified in judgment",
+        "provider": null,
+        "outcome": "Extensive areas of nonviable muscle found",
+        "evidence_ids": [
+          "E013"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Necrotizing fasciitis",
+        "when_occurred": "June 25, 2015",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E073"
+        ]
+      },
+      {
+        "complication": "Necrotizing fasciitis",
+        "when_occurred": "Date not specified in judgment",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E013"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to identify and act on signs of necrotizing fasciitis",
+        "against": "Dr. Cruite",
+        "found_proven": true,
+        "evidence_ids": [
+          "E457"
+        ]
+      },
+      {
+        "allegation": "Failure to diagnose necrotizing fasciitis",
+        "against": "Dr. Davis and Dr. Cruite",
+        "found_proven": true,
+        "evidence_ids": [
+          "E457",
+          "E485"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Breach of duty in failing to identify and act on signs of necrotizing fasciitis",
+        "legal_significance": "Proximate cause established",
+        "evidence_ids": [
+          "E457"
+        ]
+      },
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E457",
+          "E485"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.03048780487804878,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 15:51:12.803830",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

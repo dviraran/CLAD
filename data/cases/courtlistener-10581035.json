@@ -1,0 +1,430 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10581035",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2022-12-14",
+  "url": "https://example.com/courtlistener-10581035",
+  "case_name": "Yolanda Taylor, Catina Smith, Cynthia Smith, and Vernaon Taylor, Individually and On Behalf of Delores Jean Bogan (D) v. Nexion Health at Pierremont, Inc., D/B/A Pierremont Healthcare Center \u2013 Shreveport, University",
+  "neutral_citation": null,
+  "clinical_domain": "PAEDIATRICS",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Yolanda Taylor, Catina Smith, Cynthia Smith, and Vernaon Taylor, Individually and On Behalf of Delores Jean Bogan (D) v. Nexion Health at Pierremont, Inc., D/B/A Pierremont Healthcare Center \u2013 Shreveport, University. Medical malpractice case involving paediatrics.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "The nursing facility breached the standard of care by sending the patient with the wrong chart, with the result that the hospital was unaware of the woman\u2019s name or patient history for a period of time.",
+      "paragraph_ref": "19",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "A jury found the nursing facility liable for $150,000 in damages for the patient\u2019s lost chance of survival.",
+      "paragraph_ref": "22",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Jason Reingold, a cardiologist from Atlanta, testified that it was more likely than not that if LSU doctors had known Bogan\u2019s identity and conditions when she arrived at the hospital, they would have had a better chance at saving her life.",
+      "paragraph_ref": "96",
+      "speaker": "Dr. Jason Reingold"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "MEDICAL_RECORD",
+      "text": "Upon further investigation due to inconsistencies with PE and patient\u2019s chart, appears that NH sent wrong paperwork with patient and given her unresponsiveness was not able to verify identity.",
+      "paragraph_ref": "60",
+      "speaker": "LSU treating physicians"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "LEGAL_FINDING",
+      "text": "We affirm the trial court\u2019s verdict and damage award.",
+      "paragraph_ref": "426",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "COURT_REASONING",
+      "text": "The jury\u2019s findings of fact are reasonable in light of the entire record.",
+      "paragraph_ref": "304",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "WITNESS_STATEMENT",
+      "text": "Taylor testified that Pierremont called her at about 6 a.m. to tell her that her mother had collapsed.",
+      "paragraph_ref": "74",
+      "speaker": "Yolanda Taylor"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "WITNESS_STATEMENT",
+      "text": "Smith testified that she received a phone call from Pierremont around 6 a.m. and drove to LSU.",
+      "paragraph_ref": "87",
+      "speaker": "Cynthia Smith"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "64 years",
+        "sex": "female",
+        "relevant_social_history": "Active, social, involved in church"
+      },
+      "chief_complaint": "Unresponsive after collapse",
+      "history_of_present_illness": "Patient collapsed at nursing facility and was unresponsive. Previously had chest pain and was advised to undergo left heart catheterization but declined.",
+      "past_medical_history": [
+        "Cardiac stents",
+        "Dialysis",
+        "Non-ST elevation myocardial infarction"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "general": "Unresponsive",
+          "neurological": "Pupils not reactive, poor brain activity"
+        }
+      },
+      "initial_working_problem": "Unresponsive patient with potential cardiac issues",
+      "known_constraints": null,
+      "initial_differential": [
+        "Cardiac arrest",
+        "Pulmonary embolism"
+      ],
+      "critical_findings": [
+        "Unresponsiveness",
+        "Incorrect patient chart"
+      ],
+      "urgency_level": "CRITICAL",
+      "evidence_ids": [
+        "E001",
+        "E004",
+        "E007"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "LAB",
+        "name": "Blood Work",
+        "description": "Blood work drawn upon arrival at hospital",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Oxygen level 33, acidosis, elevated electrolytes",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates severe hypoxia and metabolic disturbance",
+          "decision_impact": "Requires immediate correction of metabolic issues",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E136",
+          "E157"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "IMAGING",
+        "name": "Chest X-ray",
+        "description": "Bedside chest x-ray performed",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": null,
+          "detailed_findings": "Imaging performed but findings not detailed in judgment",
+          "clinical_significance": "Not documented in judgment",
+          "decision_impact": "Not documented in judgment",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E058"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Emergency Presentation",
+        "description": "Patient presents to ER after collapse at nursing facility",
+        "duration": "1 hour",
+        "key_events": [
+          {
+            "event": "Patient arrives at ER with incorrect chart",
+            "timestamp": "6:30 a.m.",
+            "evidence_ids": [
+              "E041",
+              "E042"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Initial Workup",
+        "description": "Initial assessment and incorrect treatment based on wrong chart",
+        "duration": "2 hours",
+        "key_events": [
+          {
+            "event": "Blood work and chest x-ray performed",
+            "timestamp": "Time not specified",
+            "evidence_ids": [
+              "E058"
+            ]
+          },
+          {
+            "event": "Correct patient identity established",
+            "timestamp": "8:47 a.m.",
+            "evidence_ids": [
+              "E060"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient in ER with unresponsiveness and incorrect chart",
+        "prompt": "What should be the immediate next step in management?",
+        "action_type": "ORDER_TEST",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Verify patient identity and obtain correct medical history",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Correct patient identification is crucial for appropriate treatment"
+          },
+          {
+            "option_id": "B",
+            "description": "Proceed with treatment based on available chart",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Led to treatment based on incorrect data"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant proceeded with treatment based on incorrect chart",
+          "reasoning_stated": "Treatment was based on the chart of an 89-year-old woman",
+          "evidence_ids": [
+            "E004",
+            "E060"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Verify patient identity and obtain correct medical history",
+          "standard_of_care_basis": "Essential for accurate diagnosis and treatment",
+          "evidence_ids": [
+            "E003",
+            "E060"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Incorrect patient data led to inappropriate initial treatment",
+          "what_should_have_happened": "Patient identity should have been verified immediately",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E003",
+            "E004",
+            "E060"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient experienced prolonged ischemic time and passed away",
+        "severity": "DEATH",
+        "long_term_effects": "Not applicable",
+        "evidence_ids": [
+          "E064",
+          "E065"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "150000",
+        "key_findings": [
+          "Breach of duty by sending incorrect chart",
+          "Causation established - delay in treatment reduced chance of survival"
+        ],
+        "evidence_ids": [
+          "E002",
+          "E005"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to verify patient identity and obtain correct medical history",
+        "counterfactual": "Correct identification would have led to timely intervention",
+        "evidence_ids": [
+          "E003",
+          "E004",
+          "E060"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "November 16, 2015 6:30 a.m.",
+        "event": "Patient arrives at LSU with incorrect chart",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E041",
+          "E042"
+        ]
+      },
+      {
+        "timestamp": "November 16, 2015 8:47 a.m.",
+        "event": "Correct patient identity established",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E060"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Blood Work",
+        "date": "November 16, 2015",
+        "result": "Oxygen level 33, acidosis, elevated electrolytes",
+        "interpretation": null,
+        "evidence_ids": [
+          "E136",
+          "E157"
+        ]
+      },
+      {
+        "test_name": "Chest X-ray",
+        "date": "November 16, 2015",
+        "result": "Imaging performed but findings not detailed in judgment",
+        "interpretation": null,
+        "evidence_ids": [
+          "E058"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Prolonged ischemic time due to delayed treatment",
+        "when_made": "November 16, 2015",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E114",
+          "E115"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Emergent left heart catheterization",
+        "date": "November 16, 2015",
+        "provider": null,
+        "outcome": "Heart arrhythmias managed with pacemaker",
+        "evidence_ids": [
+          "E062",
+          "E063"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Prolonged ischemic time",
+        "when_occurred": "November 16, 2015",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E114",
+          "E115"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to verify patient identity and obtain correct medical history",
+        "against": "Nursing facility",
+        "found_proven": true,
+        "evidence_ids": [
+          "E001",
+          "E004"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care by sending incorrect chart",
+        "legal_significance": "Breach led to delay in treatment and reduced chance of survival",
+        "evidence_ids": [
+          "E002",
+          "E005"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "SYSTEM_COMMUNICATION"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.018561484918793503,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 15:54:53.293091",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

@@ -1,0 +1,352 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-8508848",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "0012-11-21",
+  "url": "https://example.com/courtlistener-8508848",
+  "case_name": "Dr. Robert L. Hogue, M.D. and Brownwood Regional Medical Center v. Brandon Steward and Courtney Steward",
+  "neutral_citation": null,
+  "clinical_domain": "OTHER",
+  "outcome_severity": "TEMPORARY_HARM",
+  "summary": {
+    "brief": "Dr. Robert L. Hogue, M.D. and Brownwood Regional Medical Center v. Brandon Steward and Courtney Steward. Medical malpractice case involving other.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "On July 20, 2018, Appellee Brandon Steward (Steward) presented at BRMC for a scheduled tonsillectomy to be performed by Dr. Hogue.",
+      "paragraph_ref": "6",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Appellees allege that prior to surgery, Steward noticed that 'Dr. Hogue had a black eye, busted hands, and appeared shaky.'",
+      "paragraph_ref": "6",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "Following his initial surgery, Steward returned to BRMC multiple times after experiencing various complications.",
+      "paragraph_ref": "6",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "On August 3, 2018, EMS transported Steward to BRMC where Dr. Hogue again attempted to operate on Steward in order to alleviate the complications Steward was experiencing.",
+      "paragraph_ref": "6",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "Steward filed his original petition on July 14, 2020.",
+      "paragraph_ref": "6",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "LEGAL_FINDING",
+      "text": "We affirm the trial court\u2019s order denying Dr. Hogue\u2019s motion to dismiss.",
+      "paragraph_ref": "19",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "LEGAL_FINDING",
+      "text": "We reverse the trial court\u2019s order denying BRMC\u2019s motion to dismiss.",
+      "paragraph_ref": "19",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "COURT_REASONING",
+      "text": "The trial court had discretion to grant Appellees\u2019 request for an extension under an emergency order issued by the Texas Supreme Court.",
+      "paragraph_ref": "6",
+      "speaker": "Court reasoning"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Baker\u2019s initial report is primarily directed at the conduct of Dr. Hogue.",
+      "paragraph_ref": "12",
+      "speaker": "Expert testimony"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Baker\u2019s initial report does not contain any statements that identify any nurse, administrator, or other employee of BRMC that allegedly did anything wrong.",
+      "paragraph_ref": "12",
+      "speaker": "Expert testimony"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "30 years",
+        "sex": "male",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Scheduled for tonsillectomy",
+      "history_of_present_illness": "Patient presented for a scheduled tonsillectomy. Noted that the surgeon had a black eye and appeared shaky.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "ENT": "Not documented in judgment"
+        }
+      },
+      "initial_working_problem": "Tonsillectomy scheduled",
+      "known_constraints": null,
+      "initial_differential": [
+        "Not applicable"
+      ],
+      "critical_findings": [
+        "Surgeon appeared shaky"
+      ],
+      "urgency_level": "ELECTIVE",
+      "evidence_ids": [
+        "E001",
+        "E002"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSULT_NOTE",
+        "name": "Pre-operative assessment",
+        "description": "Assessment prior to tonsillectomy",
+        "available_phase": "presentation",
+        "reveal": {
+          "result_summary": "Not documented in judgment",
+          "detailed_findings": null,
+          "clinical_significance": "Not documented in judgment",
+          "decision_impact": "Not documented in judgment",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": []
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents for scheduled tonsillectomy",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Patient notices surgeon's condition",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "procedure",
+        "name": "Surgical Procedure",
+        "description": "Tonsillectomy performed by Dr. Hogue",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Tonsillectomy performed",
+            "timestamp": "July 20, 2018",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "procedure",
+        "clinical_context": "Pre-operative assessment for tonsillectomy",
+        "prompt": "Should the surgery proceed given the surgeon's condition?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Proceed with surgery",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Surgeon stated he was fit to perform surgery despite recent accident"
+          },
+          {
+            "option_id": "B",
+            "description": "Postpone surgery and reassess surgeon's fitness",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Concerns about surgeon's physical condition should be addressed"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "A",
+          "description": "Surgery proceeded despite concerns",
+          "reasoning_stated": "Surgeon assured fitness to operate",
+          "evidence_ids": [
+            "E002"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "B",
+          "description": "Surgery should have been postponed",
+          "standard_of_care_basis": "Concerns about surgeon's condition warranted reassessment",
+          "evidence_ids": [
+            "E002"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Proceeding with surgery despite visible signs of impairment",
+          "what_should_have_happened": "Surgery should have been postponed until surgeon's fitness was confirmed",
+          "legal_standard_applied": "Standard of care requires ensuring surgeon's capability",
+          "evidence_ids": [
+            "E002"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient experienced complications post-surgery",
+        "severity": "SEVERE",
+        "long_term_effects": "Difficulty breathing, excessive bleeding, and blood loss",
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Breach of duty in proceeding with surgery despite surgeon's condition",
+          "Causation established - complications linked to surgeon's impaired state"
+        ],
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to reassess surgeon's fitness",
+        "counterfactual": "Postponing surgery could have prevented complications",
+        "evidence_ids": [
+          "E002",
+          "E003"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "July 20, 2018",
+        "event": "Patient presents for tonsillectomy",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [],
+    "treatments": [
+      {
+        "treatment": "Tonsillectomy",
+        "date": "July 20, 2018",
+        "provider": null,
+        "outcome": "Performed by Dr. Hogue",
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Difficulty breathing, excessive bleeding, and blood loss",
+        "when_occurred": "Post-surgery",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Proceeding with surgery despite surgeon's impaired condition",
+        "against": "Dr. Hogue",
+        "found_proven": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Breach of duty in proceeding with surgery",
+        "legal_significance": "Standard of care not met",
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "TREATMENT_PROCEDURE_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.43478260869565216,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 09:44:17.923959",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

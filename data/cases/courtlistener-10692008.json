@@ -1,0 +1,370 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10692008",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2025-10-07",
+  "url": "https://example.com/courtlistener-10692008",
+  "case_name": "Samuel C. Arp, II v. Indiana State Police",
+  "neutral_citation": null,
+  "clinical_domain": "PAEDIATRICS",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Samuel C. Arp, II v. Indiana State Police. Medical malpractice case involving paediatrics.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Samuel C. Arp II was an employee of the Indiana State Police (ISP), first as a state trooper, and then as an employee on disability status after he was injured in the line of duty.",
+      "paragraph_ref": "1",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Arp began receiving long-term disability (LTD) benefits pursuant to the terms of a Pension Trust Agreement (the Trust) and Supplemental Trust Agreement (the Supplemental Trust).",
+      "paragraph_ref": "11",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "In 2006, Arp sustained extensive back injuries when he was struck by a drunk driver while on duty.",
+      "paragraph_ref": "45",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "Arp\u2019s last regular workday with ISP was September 23, 2007; he was subsequently classified as disabled.",
+      "paragraph_ref": "47",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "In 2012, Arp notified ISP of his intention to attend law school.",
+      "paragraph_ref": "57",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "In 2014, Major Charles Sorrells, ISP\u2019s Assistant Chief of Staff of Human Resources and Administration, sent correspondence to Arp.",
+      "paragraph_ref": "68",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "Arp began his legal career with the Vanderburgh County Prosecutor\u2019s Office.",
+      "paragraph_ref": "83",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "FACTUAL_FINDING",
+      "text": "Arp notified Captain Michael Wylie of his candidacy for elected prosecutor of Lawrence County.",
+      "paragraph_ref": "87",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "LEGAL_FINDING",
+      "text": "Reinstatement of Arp\u2019s LTD benefits is not capable of being enforced.",
+      "paragraph_ref": "558",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "LEGAL_FINDING",
+      "text": "Judgment affirmed.",
+      "paragraph_ref": "60",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "unknown",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Not documented in judgment",
+      "history_of_present_illness": "Not documented in judgment",
+      "past_medical_history": [
+        "Extensive back injuries from 2006 accident"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "system": "Examination mentioned but findings not specified"
+        }
+      },
+      "initial_working_problem": "Not documented in judgment",
+      "known_constraints": null,
+      "initial_differential": [],
+      "critical_findings": [],
+      "urgency_level": "Not documented in judgment",
+      "evidence_ids": [
+        "E003",
+        "E004"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSULT_NOTE",
+        "name": "Legal Consultation",
+        "description": "Consultation regarding employment and disability benefits",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Consultation with ISP legal division regarding employment status",
+          "detailed_findings": null,
+          "clinical_significance": "Determines eligibility for continued benefits",
+          "decision_impact": "Impacts decision to pursue elected office",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E006",
+          "E007",
+          "E008"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Employment and Injury",
+        "description": "Arp's employment with ISP and subsequent injury",
+        "duration": "2000-2008",
+        "key_events": [
+          {
+            "event": "Arp sustains back injury",
+            "timestamp": "2006",
+            "evidence_ids": [
+              "E003"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "decision",
+        "name": "Decision to Run for Office",
+        "description": "Arp's decision to run for elected office while on disability benefits",
+        "duration": "2018",
+        "key_events": [
+          {
+            "event": "Arp elected as Prosecuting Attorney",
+            "timestamp": "November 2018",
+            "evidence_ids": [
+              "E122"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "decision",
+        "clinical_context": "Decision to run for elected office while on disability benefits",
+        "prompt": "Should Arp have resigned from ISP before assuming elected office?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Resign from ISP before assuming office",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Required by ISP regulations and Indiana law"
+          },
+          {
+            "option_id": "B",
+            "description": "Do not resign and assume office",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Contrary to ISP regulations and Indiana law"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Arp did not resign before assuming office",
+          "reasoning_stated": "Believed he could maintain benefits",
+          "evidence_ids": [
+            "E142",
+            "E143"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Arp should have resigned from ISP",
+          "standard_of_care_basis": "Mandated by Regulation 6 and Indiana Code",
+          "evidence_ids": [
+            "E150",
+            "E151"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to comply with statutory and regulatory requirements",
+          "what_should_have_happened": "Arp should have resigned to comply with legal obligations",
+          "legal_standard_applied": "Compliance with statutory mandates",
+          "evidence_ids": [
+            "E150",
+            "E151",
+            "E152"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Not documented in judgment",
+        "severity": "Not documented in judgment",
+        "long_term_effects": "Not documented in judgment",
+        "evidence_ids": []
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "Not applicable",
+        "key_findings": [
+          "Arp was not entitled to continued employment with ISP",
+          "LTD benefits terminated upon separation from ISP"
+        ],
+        "evidence_ids": [
+          "E009",
+          "E010"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Not applicable",
+        "counterfactual": "Not applicable",
+        "evidence_ids": []
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "2006",
+        "event": "Arp sustains back injury",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "timestamp": "November 2018",
+        "event": "Arp elected as Prosecuting Attorney",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E122"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Arp's last regular workday with ISP",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [],
+    "treatments": [],
+    "complications": [],
+    "allegations": [
+      {
+        "allegation": "Failure to resign before assuming office",
+        "against": "Arp",
+        "found_proven": true,
+        "evidence_ids": [
+          "E150",
+          "E151"
+        ]
+      },
+      {
+        "allegation": "Entitlement to continued employment and LTD benefits",
+        "against": "Indiana State Police",
+        "found_proven": false,
+        "evidence_ids": [
+          "E009",
+          "E010"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Arp was required to resign before assuming office",
+        "legal_significance": "Compliance with statutory mandates",
+        "evidence_ids": [
+          "E150",
+          "E151"
+        ]
+      },
+      {
+        "finding": "Arp not entitled to specific performance",
+        "legal_significance": "Judgment affirmed",
+        "evidence_ids": [
+          "E010"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "SYSTEM_COMMUNICATION"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.017513134851138354,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 10:07:54.407553",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

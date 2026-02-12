@@ -1,0 +1,347 @@
+{
+  "case_id": "courtliste-9501046-jones-v-durrani",
+  "source": "courtlistener",
+  "source_url": "local://courtliste-9501046-jones-v-durrani.html",
+  "jurisdiction": "US",
+  "extraction_metadata": {
+    "version": "batch_api_v1",
+    "model": "gpt-4o",
+    "extracted_at": "2026-01-21T17:56:57.943776",
+    "simulation_extracted_at": "2026-01-21T18:29:59.591026",
+    "simulation_model": "gpt-4o"
+  },
+  "case_metadata": {
+    "case_name": "Jones v. Durrani",
+    "citation": "2024-Ohio-1776",
+    "court": "OHIO FIRST DISTRICT COURT OF APPEALS",
+    "date": "May 10, 2024"
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "Plaintiffs each filed a separate medical-malpractice action against the defendants, arising from a spine surgery performed on them by Dr. Durrani.",
+      "paragraph_ref": "30",
+      "paragraph_starts_with": "[30] {¶2}   Plaintiffs each filed",
+      "summary": "Plaintiffs filed malpractice actions due to spine surgery by Dr. Durrani.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "verdicts were ultimately entered in favor of each plaintiff on their negligence and fraudulent-misrepresentation claims.",
+      "paragraph_ref": "44",
+      "paragraph_starts_with": "[44] verdicts were ultimately",
+      "summary": "Verdicts favored plaintiffs on negligence and fraud claims.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "EXPERT_TESTIMONY",
+      "verbatim_quote": "Dr. Steven Bloomfield, a neurosurgeon, testified as to his opinion that Dr. Durrani breached the standard of care in each case by misrepresenting, exaggerating, and/or fabricating certain history and imaging impressions.",
+      "paragraph_ref": "96",
+      "paragraph_starts_with": "[96] {¶7}   Dr. Steven Bloomfield,",
+      "summary": "Dr. Bloomfield testified Durrani misrepresented imaging to justify surgery.",
+      "speaker": "Dr. Steven Bloomfield"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "EXPERT_TESTIMONY",
+      "verbatim_quote": "Dr. Keith Wilkey, an orthopedic surgeon, testified as to his comparison of the original radiologist’s impressions of each plaintiff’s imaging versus Dr. Durrani’s impressions and expressed his opinion as to why he agreed with the radiologist’s impressions.",
+      "paragraph_ref": "103",
+      "paragraph_starts_with": "[103] {¶8}   Dr. Keith Wilkey,",
+      "summary": "Dr. Wilkey agreed with original radiologist, found Durrani's impressions inaccurate.",
+      "speaker": "Dr. Keith Wilkey"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "WITNESS_STATEMENT",
+      "verbatim_quote": "Ms. Jones testified that she experienced back pain on and off since 1959 and went to see Dr. Durrani in 2012 after trying various treatments and medications that never provided lasting relief.",
+      "paragraph_ref": "52",
+      "paragraph_starts_with": "[52] {¶4}   At trial, Ms. Jones",
+      "summary": "Ms. Jones sought Dr. Durrani's help for chronic back pain in 2012.",
+      "speaker": "Joan Jones"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "WITNESS_STATEMENT",
+      "verbatim_quote": "Mr. Conley testified that he experienced back pain for over 30 years and went to see Dr. Durrani in 2012 for back and neck pain after physical therapy and chiropractic treatment were unsuccessful.",
+      "paragraph_ref": "66",
+      "paragraph_starts_with": "[66] {¶5}   Mr. Conley testified",
+      "summary": "Mr. Conley consulted Dr. Durrani for unresolved back and neck pain.",
+      "speaker": "Dana Conley"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "LEGAL_FINDING",
+      "verbatim_quote": "The judgments of the trial court are reversed in part as to the awards of prejudgment interest but affirmed in all other respects.",
+      "paragraph_ref": "502",
+      "paragraph_starts_with": "[502] reversed in part as to",
+      "summary": "Judgments reversed on prejudgment interest, affirmed otherwise.",
+      "speaker": "Court conclusion"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "COURT_REASONING",
+      "verbatim_quote": "The record reflects that, while the trial court did hold a hearing on this issue, no “evidence” was taken at the hearing nor was any evidence submitted with the motions for prejudgment interest.",
+      "paragraph_ref": "490",
+      "paragraph_starts_with": "[490] {¶43} The record reflects",
+      "summary": "No evidence was submitted for prejudgment interest motions.",
+      "speaker": "Court analysis"
+    }
+  ],
+  "verdict_detected": {
+    "outcome": "PARTIAL_LIABILITY",
+    "key_phrase": "The judgments of the trial court are reversed in part as to the awards of prejudgment interest but affirmed in all other respects.",
+    "paragraph_ref": "502"
+  },
+  "extraction_notes": {
+    "total_paragraphs_analyzed": 508,
+    "key_sections_found": [
+      "Background",
+      "Key Findings",
+      "Testimonies",
+      "Conclusion"
+    ],
+    "gaps_identified": [
+      "No specific lab values mentioned",
+      "Exact surgery details unclear"
+    ]
+  },
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Chronic back pain",
+      "history_of_present_illness": "Ms. Jones experienced back pain on and off since 1959 and sought Dr. Durrani's help in 2012 after various treatments and medications failed to provide lasting relief.",
+      "past_medical_history": [
+        "Chronic back pain"
+      ],
+      "medications": "Not documented in judgment",
+      "allergies": "Not documented in judgment",
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment"
+        },
+        "focused_exam": {
+          "spine": "Examination findings not specified in judgment"
+        }
+      },
+      "initial_working_problem": "Chronic back pain",
+      "initial_differential": [
+        "Degenerative disc disease",
+        "Spinal stenosis"
+      ],
+      "critical_findings": [
+        "Chronic back pain"
+      ],
+      "urgency_level": "ELECTIVE",
+      "evidence_ids": [
+        "E005"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "Spinal MRI",
+        "description": "MRI of the spine to assess for structural abnormalities",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Imaging performed but findings not detailed in judgment",
+          "clinical_significance": "Not documented in judgment",
+          "decision_impact": "Not documented in judgment"
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E003",
+          "E004"
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient with chronic back pain considering surgical intervention",
+        "prompt": "What should be the basis for recommending spine surgery?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Recommend surgery based on accurate imaging and clinical correlation",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Surgery should be based on accurate and justified clinical findings"
+          },
+          {
+            "option_id": "B",
+            "description": "Recommend surgery based on exaggerated or fabricated imaging impressions",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Misrepresentation of imaging to justify surgery is inappropriate"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant recommended surgery based on misrepresented imaging",
+          "reasoning_stated": "Defendant misrepresented imaging to justify surgery",
+          "evidence_ids": [
+            "E003"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Surgery should have been recommended based on accurate imaging",
+          "standard_of_care_basis": "Expert testimony indicated misrepresentation was a breach",
+          "evidence_ids": [
+            "E003",
+            "E004"
+          ]
+        },
+        "explanation": {
+          "why_defendant_wrong": "Based on expert testimony E003 and E004",
+          "what_should_have_happened": "Surgery should be based on accurate imaging",
+          "legal_standard_applied": "Bolam test",
+          "evidence_ids": [
+            "E003",
+            "E004"
+          ]
+        },
+        "is_malpractice_point": true
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Consultation",
+        "description": "Patient presents with chronic back pain seeking surgical opinion",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Consultation with Dr. Durrani",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E005"
+            ]
+          }
+        ]
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient underwent unnecessary spine surgery",
+        "severity": "Not documented in judgment",
+        "long_term_effects": "Not documented in judgment",
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Breach of duty in misrepresenting imaging to justify surgery",
+          "Causation established - surgery was unnecessary"
+        ],
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Misrepresentation of imaging",
+        "counterfactual": "Accurate imaging interpretation would not have led to surgery",
+        "evidence_ids": [
+          "E003",
+          "E004"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "2012",
+        "event": "Ms. Jones consulted Dr. Durrani for chronic back pain",
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Spinal MRI",
+        "date": "Not documented in judgment",
+        "result": "Imaging performed but findings not detailed in judgment",
+        "evidence_ids": [
+          "E003",
+          "E004"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Chronic back pain",
+        "when_made": "2012",
+        "correct": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Spine surgery",
+        "date": "Not documented in judgment",
+        "outcome": "Unnecessary surgery performed",
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Not documented in judgment",
+        "when_occurred": "Not documented in judgment",
+        "severity": "Not documented in judgment",
+        "evidence_ids": []
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Misrepresentation of imaging to justify surgery",
+        "against": "Dr. Durrani",
+        "found_proven": true,
+        "evidence_ids": [
+          "E003",
+          "E004"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ]
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR"
+    ],
+    "diagnosis_subtypes": [
+      "MISREPRESENTATION"
+    ]
+  }
+}

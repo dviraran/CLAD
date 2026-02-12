@@ -1,0 +1,299 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10612241",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2023-10-26",
+  "url": "https://example.com/courtlistener-10612241",
+  "case_name": "Ronald J. French, M.D. and Flora French v. Quality Nighthawk Teleradiology Group, Inc.",
+  "neutral_citation": null,
+  "clinical_domain": "SURGERY_GENERAL",
+  "outcome_severity": "TEMPORARY_HARM",
+  "summary": {
+    "brief": "Ronald J. French, M.D. and Flora French v. Quality Nighthawk Teleradiology Group, Inc.. Medical malpractice case involving surgery general.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "On January 8, 2015, Dr. Ronald J. French, underwent a laparoscopic partial colectomy performed by Dr. Orangio.",
+      "paragraph_ref": "16",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "It is undisputed that Dr. French executed an informed consent form prior to the procedure.",
+      "paragraph_ref": "17",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "After the procedure, he suffered a ureteral injury and anastomotic leak.",
+      "paragraph_ref": "18",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. French filed a motion in limine, on June 30, 2023, seeking to prohibit reference to or introduction of the informed consent form.",
+      "paragraph_ref": "29",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "LEGAL_FINDING",
+      "text": "WRIT GRANTED; JUDGMENT REVERSED",
+      "paragraph_ref": "7",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "COURT_REASONING",
+      "text": "We find that the probative value of evidence that Dr. French consented to the procedure, and was therefore informed of the risk, outweighs any potential prejudice.",
+      "paragraph_ref": "81",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "LEGAL_FINDING",
+      "text": "Thus, there exists no rational basis for the exclusion of the evidence and its exclusion was an abuse of discretion by the trial court.",
+      "paragraph_ref": "83",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "male",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Not documented in judgment",
+      "history_of_present_illness": "Not documented in judgment",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "abdomen": "Not documented in judgment"
+        }
+      },
+      "initial_working_problem": "Not documented in judgment",
+      "known_constraints": null,
+      "initial_differential": [],
+      "critical_findings": [],
+      "urgency_level": "Not documented in judgment",
+      "evidence_ids": []
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSENT_DISCUSSION",
+        "name": "Informed Consent Form",
+        "description": "Consent form executed prior to procedure",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Consent form signed",
+          "detailed_findings": null,
+          "clinical_significance": "Patient was informed of procedure risks",
+          "decision_impact": "Relevant to understanding patient's awareness of risks",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "procedure",
+        "name": "Surgical Procedure",
+        "description": "Laparoscopic partial colectomy performed",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Procedure performed by Dr. Orangio",
+            "timestamp": "January 8, 2015",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "procedure",
+        "clinical_context": "During laparoscopic partial colectomy",
+        "prompt": "How should intra-operative complications be managed?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Perform intra-operative assessment for injury",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard care to assess for complications during surgery"
+          },
+          {
+            "option_id": "B",
+            "description": "Proceed without additional assessment",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Neglects potential intra-operative complications"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant did not perform additional assessment",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E023"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Intra-operative assessment should have been performed",
+          "standard_of_care_basis": "Expert evidence supports need for assessment",
+          "evidence_ids": [
+            "E023"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to assess for intra-operative injury",
+          "what_should_have_happened": "Intra-operative assessment to identify complications",
+          "legal_standard_applied": "Standard of care not met",
+          "evidence_ids": [
+            "E023"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient suffered ureteral injury and anastomotic leak",
+        "severity": "Not documented in judgment",
+        "long_term_effects": "Not documented in judgment",
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Breach of duty in failing to assess intra-operative injury",
+          "Causation established - failure to assess led to complications"
+        ],
+        "evidence_ids": [
+          "E023"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to assess intra-operative injury",
+        "counterfactual": "Assessment could have prevented complications",
+        "evidence_ids": [
+          "E023"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "January 8, 2015",
+        "event": "Laparoscopic partial colectomy performed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [],
+    "treatments": [],
+    "complications": [
+      {
+        "complication": "Ureteral injury and anastomotic leak",
+        "when_occurred": "Post-procedure",
+        "severity": "Not documented in judgment",
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to assess intra-operative injury",
+        "against": "Dr. Orangio",
+        "found_proven": true,
+        "evidence_ids": [
+          "E023"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Breach of duty of care",
+        "legal_significance": "Standard of care not met",
+        "evidence_ids": [
+          "E023"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.08139534883720931,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 09:41:34.587844",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

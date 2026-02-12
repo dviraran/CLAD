@@ -1,0 +1,497 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtliste-5793703-lisa-boyd-v-david-benjamin-gibson-iv-md",
+  "source": "BAILII",
+  "jurisdiction": "UK",
+  "court": "Unknown",
+  "decision_date": "2022-01-10",
+  "url": "https://example.com/courtliste-5793703-lisa-boyd-v-david-benjamin-gibson-iv-md",
+  "case_name": "Lisa Boyd v. David Benjamin Gibson IV M.D.",
+  "neutral_citation": null,
+  "clinical_domain": "ONCOLOGY",
+  "outcome_severity": "TEMPORARY_HARM",
+  "summary": {
+    "brief": "Lisa Boyd v. David Benjamin Gibson IV M.D.. Medical malpractice case involving oncology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "The complaint alleged that Dr. Gibson then referred Ms. Boyd to Dr. Walsh, an oncologist, for chemotherapy on October 13, 2014, \u201cwithout discussing chemo/radiation therapy or consulting a radiation oncologist.\u201d",
+      "paragraph_ref": "14",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. Gibson allegedly met with Ms. Boyd on August 11 and August 22, 2014. Ms. Boyd alleged that on the August 22 date, Dr. Gibson informed her that her MRI showed no significant finding and that neoadjuvant chemo/radiation therapy would not benefit her.",
+      "paragraph_ref": "12",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "The complaint stated that Dr. Gibson performed a low anterior resection of Ms. Boyd\u2019s rectum on September 16, 2014, averring that he \u201cpalpated the rectal cancer posteriorly along the rectum\u201d and \u201cfailed to perform rigid proctoscopy with a sigmoidoscope.\u201d",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "EXPERT_TESTIMONY",
+      "text": "According to Dr. Wolf\u2019s affidavit, radiation therapy, whether before or after surgery, reduces the likelihood of recurrence. Dr. Wolf stated that Dr. Gibson\u2019s actions had fallen below the standard of acceptable professional practice.",
+      "paragraph_ref": "27",
+      "speaker": "Dr. Patrick Wolf"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "LEGAL_FINDING",
+      "text": "The trial court ultimately entered an order granting the Defendants\u2019 motion to dismiss on September 4, 2020, albeit while noting that it had treated the issue before it as one for summary judgment.",
+      "paragraph_ref": "29",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "COURT_REASONING",
+      "text": "We conclude that the trial court\u2019s judgment should be vacated and the matter remanded for more detailed and specific findings and consideration.",
+      "paragraph_ref": "37",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "Ms. Boyd averred that she later discovered in August 2017 that her rectal cancer had reoccurred and spread, and she attributed blame for this result to the above described actions and/or inactions of Dr. Gibson and Dr. Walsh.",
+      "paragraph_ref": "16",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "LEGAL_FINDING",
+      "text": "The trial court\u2019s judgment is hereby vacated, and the case is remanded for further findings and consideration in light of this Opinion.",
+      "paragraph_ref": "52",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Rectal cancer diagnosis",
+      "history_of_present_illness": "Patient was diagnosed with invasive adenocarcinoma following a colonoscopy and biopsy on July 23, 2014.",
+      "past_medical_history": [
+        "Rectal cancer"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "abdomen": "Not documented in judgment"
+        }
+      },
+      "initial_working_problem": "Rectal cancer requiring surgical intervention",
+      "known_constraints": null,
+      "initial_differential": [
+        "Rectal cancer"
+      ],
+      "critical_findings": [
+        "Invasive adenocarcinoma"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E002",
+        "E012"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "MRI",
+        "description": "MRI to assess rectal cancer",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "No significant finding",
+          "detailed_findings": null,
+          "clinical_significance": "Used to determine treatment plan",
+          "decision_impact": "Influenced decision against neoadjuvant therapy",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "PATHOLOGY",
+        "name": "Surgical Pathology",
+        "description": "Pathological examination of resected rectal mass",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Cancerous mass 0.8 cm from distal margin, 4/24 lymph nodes positive",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates incomplete resection and lymphatic spread",
+          "decision_impact": "Should prompt consideration of adjuvant therapy",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E013"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with rectal cancer diagnosis",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Colonoscopy and biopsy performed",
+            "timestamp": "July 22, 2014",
+            "evidence_ids": [
+              "E012"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Pre-surgical Workup",
+        "description": "Assessment and planning for surgical intervention",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "MRI performed, no significant finding",
+            "timestamp": "August 22, 2014",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "procedure",
+        "name": "Surgical Procedure",
+        "description": "Low anterior resection performed",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Surgery performed",
+            "timestamp": "September 16, 2014",
+            "evidence_ids": [
+              "E003"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "postop",
+        "name": "Postoperative Management",
+        "description": "Post-surgical follow-up and management",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Referral to oncologist for chemotherapy",
+            "timestamp": "October 13, 2014",
+            "evidence_ids": [
+              "E014"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient with rectal cancer diagnosis",
+        "prompt": "What preoperative therapy should be considered?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Recommend neoadjuvant chemo/radiation therapy",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard care to reduce recurrence risk"
+          },
+          {
+            "option_id": "B",
+            "description": "Proceed directly to surgery without neoadjuvant therapy",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Based on MRI findings, deemed unnecessary"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant proceeded to surgery without neoadjuvant therapy",
+          "reasoning_stated": "MRI showed no significant finding",
+          "evidence_ids": [
+            "E002"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Neoadjuvant therapy should have been recommended",
+          "standard_of_care_basis": "Expert evidence supports preoperative therapy",
+          "evidence_ids": [
+            "E004"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to recommend standard preoperative therapy",
+          "what_should_have_happened": "Neoadjuvant therapy to reduce recurrence",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E004"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      },
+      {
+        "decision_id": "D002",
+        "phase_id": "decision",
+        "clinical_context": "Post-surgical management of rectal cancer",
+        "prompt": "What adjuvant therapy should be considered post-surgery?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Recommend adjuvant chemo/radiation therapy",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "To address positive lymph nodes and close margins"
+          },
+          {
+            "option_id": "B",
+            "description": "Refer to oncologist for chemotherapy only",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Did not consider radiation necessary"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant referred for chemotherapy only",
+          "reasoning_stated": "Did not discuss radiation therapy",
+          "evidence_ids": [
+            "E014"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Adjuvant chemo/radiation should have been recommended",
+          "standard_of_care_basis": "Expert evidence supports combined therapy",
+          "evidence_ids": [
+            "E004"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to recommend comprehensive adjuvant therapy",
+          "what_should_have_happened": "Combined therapy to prevent recurrence",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E004"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Cancer recurrence and metastasis",
+        "severity": "PERMANENT_SEVERE_DISABILITY",
+        "long_term_effects": "Cancer spread to spine and liver",
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "Not applicable",
+        "key_findings": [
+          "Case dismissed due to statute of limitations and repose issues"
+        ],
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Not applicable",
+        "counterfactual": "Not applicable",
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "July 22, 2014",
+        "event": "Colonoscopy and biopsy performed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E012"
+        ]
+      },
+      {
+        "timestamp": "August 22, 2014",
+        "event": "MRI performed, no significant finding",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "September 16, 2014",
+        "event": "Surgery performed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "timestamp": "October 13, 2014",
+        "event": "Referral to oncologist for chemotherapy",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E014"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "MRI",
+        "date": "August 22, 2014",
+        "result": "No significant finding",
+        "interpretation": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Invasive adenocarcinoma",
+        "when_made": "July 23, 2014",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E012"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Low anterior resection",
+        "date": "September 16, 2014",
+        "provider": null,
+        "outcome": "Cancerous mass removed",
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Cancer recurrence and metastasis",
+        "when_occurred": "August 2017",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to recommend neoadjuvant therapy",
+        "against": "Dr. Gibson",
+        "found_proven": false,
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Case dismissed due to statute of limitations and repose issues",
+        "legal_significance": "No liability found",
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "INFORMED_CONSENT"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.14814814814814814,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 09:38:31.738079",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

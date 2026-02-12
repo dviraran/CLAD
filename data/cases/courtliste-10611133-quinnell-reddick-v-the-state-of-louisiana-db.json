@@ -1,0 +1,413 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtliste-10611133-quinnell-reddick-v-the-state-of-louisiana-db",
+  "source": "BAILII",
+  "jurisdiction": "UK",
+  "court": "Unknown",
+  "decision_date": "2021-09-29",
+  "url": "https://example.com/courtliste-10611133-quinnell-reddick-v-the-state-of-louisiana-db",
+  "case_name": "Quinnell Reddick v. the State of Louisiana, D/B/A the Interim Lsu Public Hospital, Alan Bland Marr, M.D., Chiranjiv S. Virk, M.D., John P. Hunt, III, M.D. and Amir Abdul-Jabbar, M.D.",
+  "neutral_citation": null,
+  "clinical_domain": "ONCOLOGY",
+  "outcome_severity": "TEMPORARY_HARM",
+  "summary": {
+    "brief": "Quinnell Reddick v. the State of Louisiana, D/B/A the Interim Lsu Public Hospital, Alan Bland Marr, M.D., Chiranjiv S. Virk, M.D., John P. Hunt, III, M.D. and Amir Abdul-Jabbar, M.D.. Medical malpractice case involving oncology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "In 2012, Ms. Reddick underwent a cervical MRI which revealed moderate sized nodules on the right lobe of her thyroid.",
+      "paragraph_ref": "20",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "On September 18, 2012, under the supervision of Dr. Marr, Ms. Reddick underwent a right hemi-thyroidectomy.",
+      "paragraph_ref": "24",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "On April 29, 2013, Ms. Reddick was seen by Dr. Marr, Dr. Chiranjiv S. Virk and Dr. Amir Abdul-Jabbar as part of her right thyroid post-operative follow-up.",
+      "paragraph_ref": "25",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "It was recommended that her left thyroid be removed because the right thyroid post-operative report revealed cancerous lesions on the right thyroid.",
+      "paragraph_ref": "27",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "MEDICAL_RECORD",
+      "text": "On this same date, Ms. Reddick signed the 'Patient Consent to Medical Treatment or Surgical Procedure and Acknowledgement of Receipt of Medical Information' for the left thyroidectomy.",
+      "paragraph_ref": "29",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "The post-operative report of the left thyroid did not reveal any evidence of malignancy.",
+      "paragraph_ref": "35",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "LEGAL_FINDING",
+      "text": "The trial court found that Ms. Reddick failed to present any expert medical evidence establishing the requisite standard of care.",
+      "paragraph_ref": "89",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "LEGAL_FINDING",
+      "text": "The trial court dismissed Ms. Reddick\u2019s claims that defendants erroneously advised her that she had cancer and thus violated the appropriate standard of care.",
+      "paragraph_ref": "92",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "COURT_REASONING",
+      "text": "We find there exists a genuine issue of material fact as to whether ultrasound observation was a reasonable therapeutic alternative to the surgical removal of Ms. Reddick\u2019s left thyroid.",
+      "paragraph_ref": "218",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "LEGAL_FINDING",
+      "text": "We affirm the portion of the trial court\u2019s judgment denying Ms. Reddick\u2019s motion for partial summary judgment; reverse the portion of the judgment granting defendants\u2019 cross motion for summary judgment; and remand the matter for further proceedings.",
+      "paragraph_ref": "222",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Thyroid nodules",
+      "history_of_present_illness": "In 2012, Ms. Reddick underwent a cervical MRI which revealed moderate sized nodules on the right lobe of her thyroid.",
+      "past_medical_history": [
+        "Not documented in judgment"
+      ],
+      "medications": [
+        "Not documented in judgment"
+      ],
+      "allergies": [
+        "Not documented in judgment"
+      ],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "neck": "Not documented in judgment"
+        }
+      },
+      "initial_working_problem": "Thyroid nodules",
+      "known_constraints": null,
+      "initial_differential": [
+        "Thyroid cancer",
+        "Benign thyroid nodules"
+      ],
+      "critical_findings": [
+        "Moderate sized nodules on the right lobe of thyroid"
+      ],
+      "urgency_level": "ELECTIVE",
+      "evidence_ids": [
+        "E001"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "Cervical MRI",
+        "description": "MRI of the cervical region to assess thyroid nodules",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Moderate sized nodules on the right lobe of thyroid",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates potential thyroid pathology",
+          "decision_impact": "Prompted surgical intervention",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "CONSENT_DISCUSSION",
+        "name": "Consent for left thyroidectomy",
+        "description": "Discussion of risks and alternatives for left thyroidectomy",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Section on reasonable therapeutic alternatives left blank",
+          "detailed_findings": null,
+          "clinical_significance": "Potential lack of informed consent",
+          "decision_impact": "Legal implications regarding informed consent",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with thyroid nodules",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Cervical MRI performed",
+            "timestamp": "2012",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "decision",
+        "name": "Pre-Procedure Consultation",
+        "description": "Consultation for left thyroidectomy",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Consent form signed",
+            "timestamp": "April 29, 2013",
+            "evidence_ids": [
+              "E005"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "decision",
+        "clinical_context": "Decision to proceed with left thyroidectomy",
+        "prompt": "What should be discussed with the patient before surgery?",
+        "action_type": "DISCLOSE_ALTERNATIVES",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Discuss all reasonable therapeutic alternatives, including ultrasound observation",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Informed consent requires disclosure of reasonable alternatives"
+          },
+          {
+            "option_id": "B",
+            "description": "Proceed without discussing alternatives",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Assumed surgery was the only option"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant did not discuss alternatives",
+          "reasoning_stated": "Believed surgery was necessary",
+          "evidence_ids": [
+            "E005",
+            "E009"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Alternatives should have been discussed",
+          "standard_of_care_basis": "Informed consent principles",
+          "evidence_ids": [
+            "E009",
+            "E010"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to disclose reasonable alternatives",
+          "what_should_have_happened": "Alternatives should have been discussed",
+          "legal_standard_applied": "Informed consent doctrine",
+          "evidence_ids": [
+            "E009",
+            "E010"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Complete thyroidectomy performed; no malignancy found in left thyroid",
+        "severity": "No malignancy found",
+        "long_term_effects": "Potential unnecessary surgery",
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "None",
+        "key_findings": [
+          "No expert evidence provided by plaintiff",
+          "Genuine issue of material fact regarding informed consent"
+        ],
+        "evidence_ids": [
+          "E007",
+          "E008"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Failure to discuss alternatives",
+        "counterfactual": "Discussion of alternatives could have changed decision",
+        "evidence_ids": [
+          "E009",
+          "E010"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "2012",
+        "event": "Cervical MRI reveals thyroid nodules",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "April 29, 2013",
+        "event": "Consent for left thyroidectomy signed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Cervical MRI",
+        "date": "2012",
+        "result": "Moderate sized nodules on right lobe",
+        "interpretation": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Thyroid nodules",
+        "when_made": "2012",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Complete thyroidectomy",
+        "date": "May 15, 2013",
+        "provider": null,
+        "outcome": "No malignancy found in left thyroid",
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Potential unnecessary surgery",
+        "when_occurred": "Post-surgery",
+        "severity": "Not documented in judgment",
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to inform of alternatives",
+        "against": "Defendant doctors",
+        "found_proven": false,
+        "evidence_ids": [
+          "E007",
+          "E008"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "No expert evidence provided by plaintiff",
+        "legal_significance": "No breach of standard of care established",
+        "evidence_ids": [
+          "E007",
+          "E008"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "INFORMED_CONSENT"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.04424778761061947,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 09:47:04.161471",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

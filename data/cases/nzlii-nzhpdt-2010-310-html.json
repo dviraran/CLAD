@@ -1,0 +1,476 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "nzlii-nzhpdt-2010-310-html",
+  "source": "BAILII",
+  "jurisdiction": "UK",
+  "court": "Unknown",
+  "decision_date": "2010-06-15",
+  "url": "https://example.com/nzlii-nzhpdt-2010-310-html",
+  "case_name": "10.      In the decision ofZ v Complaints Assessment Committee[2008] NZSC 55;[2009]\n1 NZLR 1, a majority of the Supreme Court stated that in civil proceedings in\nNew Zealand (including disciplinary proceedings) there is a\ncivil standard, the\nbalance of probabilities, which is applied flexibly according to the seriousness\nof matters to be proved and\nthe consequences of proving them.  The Court\nendorsed the classic passage of Dixon J inBrigginshaw v Brigginshaw[1938] HCA 34;(1938) 60 CLR 336, 361-362 to the effect that the affirmative of an\nallegation must be made out to the reasonable satisfaction of the fact finder.\n \nReasonable satisfaction is not a state of mind that is attained or established\nindependently of the nature and consequence of the\nfact or facts to be proved. \nThe seriousness of an allegation made, the inherent unlikelihood of an\noccurrence of a given  description,\n and  the  gravity  of  the  consequences \nflowing  from  a  particular finding are considerations which must affect the\nanswer to\nthe question whether the issue has been proved to the reasonable\nsatisfaction of the Tribunal.",
+  "neutral_citation": "[2005] EWHC 2143",
+  "clinical_domain": "PAEDIATRICS",
+  "outcome_severity": "PERMANENT_SEVERE_DISABILITY",
+  "summary": {
+    "brief": "10.      In the decision ofZ v Complaints Assessment Committee[2008] NZSC 55;[2009]\n1 NZLR 1, a majority of the Supreme Court stated that in civil proceedings in\nNew Zealand (including disciplinary proceedings) there is a\ncivil standard, the\nbalance of probabilities, which is applied flexibly according to the seriousness\nof matters to be proved and\nthe consequences of proving them.  The Court\nendorsed the classic passage of Dixon J inBrigginshaw v Brigginshaw[1938] HCA 34;(1938) 60 CLR 336, 361-",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr Parker made some brief notes in Sally\u2019s clinical records but it is unclear from his documentation what his findings were.",
+      "paragraph_ref": "11",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "There is no evidence in the x-rays and the accompanying x-ray report to support Dr Parker\u2019s conclusions that Ms Clegg had significant spinal problems.",
+      "paragraph_ref": "20",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "He also told Sally that she had a greater than 70% (severe) decrease in spinal curvatures and decreased stability.",
+      "paragraph_ref": "25",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Expert evidence from Dr B M McKellow, chiropractor. He provided helpful opinion evidence with regard to each of the particulars in each case.",
+      "paragraph_ref": "26",
+      "speaker": "Expert witness"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "The Tribunal finds that on 11 April 2007 Ms Clegg consulted Dr Parker and explained to him that her elbow was sore.",
+      "paragraph_ref": "28",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr Parker noted various vertebrae, but did not record what his examination found or why.",
+      "paragraph_ref": "37",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "LEGAL_FINDING",
+      "text": "The Tribunal is satisfied an order of censure should be imposed.",
+      "paragraph_ref": "698",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "LEGAL_FINDING",
+      "text": "The Tribunal orders Dr Parker to pay costs and disbursements as follows: $3,000.00, exclusive of GST, in respect of the costs and disbursements of the Director.",
+      "paragraph_ref": "179",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Business owner, mother of a young child"
+      },
+      "chief_complaint": "Sore elbow",
+      "history_of_present_illness": "Sally experienced ongoing discomfort in her elbow after an incident on 22 November 2006 where she twisted it while holding her son and removing a pushchair from the car.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "elbow": "Not examined; Dr Parker did not look at or examine the elbow",
+          "spine": "Dr Parker observed Sally's posture and noted a previous ankle injury but did not document specific findings"
+        }
+      },
+      "initial_working_problem": "Elbow pain",
+      "known_constraints": null,
+      "initial_differential": [
+        "Tennis elbow",
+        "Muscle strain"
+      ],
+      "critical_findings": [
+        "Elbow pain not assessed"
+      ],
+      "urgency_level": "ROUTINE",
+      "evidence_ids": [
+        "E005",
+        "E006"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "Spinal X-ray",
+        "description": "Full spinal x-ray",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": null,
+          "detailed_findings": "Imaging performed but findings not detailed in judgment",
+          "clinical_significance": "Not documented in judgment",
+          "decision_impact": "Not documented in judgment",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E002",
+          "E003"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Consultation",
+        "description": "Patient presents with cervical spine issues and neurological symptoms",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Consultation with Dr Parker",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E100"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient with cervical spine issues and neurological symptoms",
+        "prompt": "What should be the next step in management?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Refer to a neurosurgeon for surgical evaluation",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Surgical evaluation is necessary given the neurological symptoms and previous diagnosis of discal bulge."
+          },
+          {
+            "option_id": "B",
+            "description": "Enter into a prolonged chiropractic treatment plan",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Prolonged chiropractic treatment was not supported by clinical findings."
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant entered patient into a prolonged chiropractic treatment plan",
+          "reasoning_stated": "Defendant claimed it would fix the patient's back issues.",
+          "evidence_ids": [
+            "E103",
+            "E104"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Referral to a neurosurgeon should have been made",
+          "standard_of_care_basis": "Expert evidence established that surgical evaluation was necessary.",
+          "evidence_ids": [
+            "E105",
+            "E106"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Based on evidence E105-E108",
+          "what_should_have_happened": "Referral to a neurosurgeon for surgical evaluation",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E105",
+            "E106",
+            "E107"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient experienced prolonged pain and delayed surgical intervention",
+        "severity": "PERMANENT_MODERATE_DISABILITY",
+        "long_term_effects": "Prolonged pain and financial stress",
+        "evidence_ids": [
+          "E124"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Breach of duty in failing to refer to a medical specialist",
+          "Causation established - earlier referral would have led to timely surgery"
+        ],
+        "evidence_ids": [
+          "E124",
+          "E127"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to refer to a medical specialist",
+        "counterfactual": "Referral would have led to timely surgical intervention",
+        "evidence_ids": [
+          "E124",
+          "E127"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "11 April 2007",
+        "event": "Patient presents with elbow pain",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Patient consulted Dr Parker",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E100"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Patient consulted Dr Parker for back pain",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Full Spinal X-ray",
+        "date": "Not documented in judgment",
+        "result": "No significant spinal problems",
+        "interpretation": null,
+        "evidence_ids": [
+          "E020"
+        ]
+      },
+      {
+        "test_name": "Spinal X-ray",
+        "date": "Not documented in judgment",
+        "result": "Not documented in judgment",
+        "interpretation": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "test_name": "X-ray",
+        "date": "Not documented in judgment",
+        "result": "No evidence to support Dr Parker\u2019s conclusion",
+        "interpretation": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Not documented in judgment",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": false,
+        "evidence_ids": []
+      },
+      {
+        "diagnosis": "Cervical spine issue with neurological symptoms",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E100"
+        ]
+      },
+      {
+        "diagnosis": "Chronic back pain",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": false,
+        "evidence_ids": [
+          "E124"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Not documented in judgment",
+        "date": "Not documented in judgment",
+        "provider": null,
+        "outcome": "Not documented in judgment",
+        "evidence_ids": []
+      },
+      {
+        "treatment": "Prolonged chiropractic treatment",
+        "date": "Not documented in judgment",
+        "provider": null,
+        "outcome": "Patient dissatisfied, symptoms persisted",
+        "evidence_ids": [
+          "E103"
+        ]
+      },
+      {
+        "treatment": "C5-6 anterior cervical discectomy fusion and plating",
+        "date": "Not documented in judgment",
+        "provider": null,
+        "outcome": "Successful, symptoms resolved",
+        "evidence_ids": [
+          "E037"
+        ]
+      },
+      {
+        "treatment": "Chiropractic treatment",
+        "date": "Not documented in judgment",
+        "provider": null,
+        "outcome": "Prolonged pain and delayed surgery",
+        "evidence_ids": [
+          "E124"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Not documented in judgment",
+        "when_occurred": "Not documented in judgment",
+        "severity": "Not documented in judgment",
+        "evidence_ids": []
+      },
+      {
+        "complication": "Prolonged symptoms due to delayed surgical intervention",
+        "when_occurred": "Not documented in judgment",
+        "severity": "Moderate",
+        "evidence_ids": [
+          "E123"
+        ]
+      },
+      {
+        "complication": "Prolonged pain",
+        "when_occurred": "Not documented in judgment",
+        "severity": "Moderate",
+        "evidence_ids": [
+          "E124"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to assess elbow and unnecessary x-ray recommendation",
+        "against": "Dr Parker",
+        "found_proven": true,
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      },
+      {
+        "allegation": "Failure to refer for surgical evaluation",
+        "against": "Dr Parker",
+        "found_proven": true,
+        "evidence_ids": [
+          "E123"
+        ]
+      },
+      {
+        "allegation": "Failure to refer to a medical specialist",
+        "against": "Dr Parker",
+        "found_proven": true,
+        "evidence_ids": [
+          "E124"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      },
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E123"
+        ]
+      },
+      {
+        "finding": "Dr Parker breached duty of care by not referring to a medical specialist",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E124"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.011267605633802818,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 07:48:51.230473",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

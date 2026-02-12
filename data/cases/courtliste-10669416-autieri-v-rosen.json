@@ -1,0 +1,417 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtliste-10669416-autieri-v-rosen",
+  "source": "BAILII",
+  "jurisdiction": "UK",
+  "court": "Unknown",
+  "decision_date": "2025-09-10",
+  "url": "https://example.com/courtliste-10669416-autieri-v-rosen",
+  "case_name": "Autieri v. Rosen",
+  "neutral_citation": null,
+  "clinical_domain": "ONCOLOGY",
+  "outcome_severity": "TEMPORARY_HARM",
+  "summary": {
+    "brief": "Autieri v. Rosen. Medical malpractice case involving oncology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "The defendant Mitchell K. Rosen, as the plaintiff's primary care physician, ordered blood-work panels for the plaintiff in February 2016, March 2017, and August 2018 to test for prostate-specific androgen (hereinafter PSA), among other things.",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "In April 2017, Rosen referred the plaintiff to a urologist but made no mention of the plaintiff's elevated PSA level, only listing hematuria as the reason for the referral.",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "In November 2019, following a prostate biopsy and more blood work, the plaintiff was diagnosed with prostate cancer.",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "EXPERT_TESTIMONY",
+      "text": "The defendants' expert affidavit addressed the specific allegations in the plaintiff's bill of particulars and explained that the standard of care for a primary care physician in the scenario herein was to make a referral to a specialist and to allow the specialist to conduct further testing.",
+      "paragraph_ref": "13",
+      "speaker": "Defendants' expert"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "EXPERT_TESTIMONY",
+      "text": "The plaintiff's expert explained that, at the plaintiff's initial consultation with the urologist, the plaintiff's elevated PSA level was not addressed because Rosen failed to inform the first urologist of the plaintiff's elevated PSA level.",
+      "paragraph_ref": "13",
+      "speaker": "Plaintiff's expert"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "LEGAL_FINDING",
+      "text": "Accordingly, we reverse the order and deny the defendants' motion for summary judgment dismissing the complaint insofar as asserted against them.",
+      "paragraph_ref": "13",
+      "speaker": "Court conclusion"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "male",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Referred for hematuria",
+      "history_of_present_illness": "Patient had elevated PSA levels in March 2017 and August 2018, but was referred to a urologist for hematuria without mention of elevated PSA.",
+      "past_medical_history": [
+        "Not documented in judgment"
+      ],
+      "medications": [
+        "Not documented in judgment"
+      ],
+      "allergies": [
+        "Not documented in judgment"
+      ],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "system": "Examination mentioned but findings not specified"
+        }
+      },
+      "initial_working_problem": "Hematuria",
+      "known_constraints": null,
+      "initial_differential": [
+        "Not documented in judgment"
+      ],
+      "critical_findings": [
+        "Elevated PSA levels not communicated to urologist"
+      ],
+      "urgency_level": "ROUTINE",
+      "evidence_ids": [
+        "E001",
+        "E002"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "LAB",
+        "name": "PSA Test",
+        "description": "Prostate-specific antigen test",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Elevated PSA levels in March 2017 and August 2018",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates potential prostate pathology",
+          "decision_impact": "Should prompt further investigation or referral with full information",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "CONSULT_NOTE",
+        "name": "Urology Consultation",
+        "description": "Consultation with urologist for hematuria",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Initial consultation did not address elevated PSA",
+          "detailed_findings": null,
+          "clinical_significance": "Missed opportunity to investigate potential prostate cancer",
+          "decision_impact": "Could have led to earlier diagnosis if PSA was communicated",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E002",
+          "E005"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with hematuria and elevated PSA levels",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Blood work ordered by primary care physician",
+            "timestamp": "February 2016, March 2017, August 2018",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Referral to Urologist",
+        "description": "Patient referred to urologist for hematuria",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Referral made without mention of elevated PSA",
+            "timestamp": "April 2017",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient referred to urologist for hematuria",
+        "prompt": "What information should be included in the referral to the urologist?",
+        "action_type": "DOCUMENT_CONSENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Include elevated PSA levels in referral",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Ensures comprehensive evaluation by specialist"
+          },
+          {
+            "option_id": "B",
+            "description": "Only mention hematuria in referral",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Incomplete information may lead to missed diagnosis"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant only mentioned hematuria in referral",
+          "reasoning_stated": "Defendant did not consider elevated PSA relevant",
+          "evidence_ids": [
+            "E002"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Referral should have included elevated PSA levels",
+          "standard_of_care_basis": "Expert evidence indicated comprehensive information is necessary",
+          "evidence_ids": [
+            "E005"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to communicate elevated PSA levels led to delayed diagnosis",
+          "what_should_have_happened": "Referral should have included all relevant lab results",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E005"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient diagnosed with prostate cancer after delayed referral",
+        "severity": "PERMANENT_MODERATE_DISABILITY",
+        "long_term_effects": "Potential progression of cancer due to delayed diagnosis",
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Breach of duty in failing to communicate elevated PSA levels",
+          "Causation established - earlier communication could have led to earlier diagnosis"
+        ],
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to communicate elevated PSA levels",
+        "counterfactual": "Earlier communication could have prompted timely diagnosis",
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "February 2016",
+        "event": "Blood work ordered by primary care physician",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "March 2017",
+        "event": "Elevated PSA level detected",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "April 2017",
+        "event": "Patient referred to urologist for hematuria",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "August 2018",
+        "event": "Elevated PSA level detected again",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "November 2019",
+        "event": "Patient diagnosed with prostate cancer",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "PSA Test",
+        "date": "March 2017",
+        "result": "Elevated",
+        "interpretation": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "test_name": "PSA Test",
+        "date": "August 2018",
+        "result": "Elevated",
+        "interpretation": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Prostate cancer",
+        "when_made": "November 2019",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Not documented in judgment",
+        "date": "Not documented in judgment",
+        "provider": null,
+        "outcome": "Not documented in judgment",
+        "evidence_ids": []
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Delayed diagnosis of prostate cancer",
+        "when_occurred": "November 2019",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to communicate elevated PSA levels",
+        "against": "Defendant primary care physician",
+        "found_proven": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.42857142857142855,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 13:57:35.673922",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

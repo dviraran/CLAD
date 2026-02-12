@@ -1,0 +1,388 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtliste-7329731-trisvan-v-heyman",
+  "source": "BAILII",
+  "jurisdiction": "UK",
+  "court": "Unknown",
+  "decision_date": "2026-01-18",
+  "url": "https://example.com/courtliste-7329731-trisvan-v-heyman",
+  "case_name": "Trisvan v. Heyman",
+  "neutral_citation": null,
+  "clinical_domain": "PAEDIATRICS",
+  "outcome_severity": "TEMPORARY_HARM",
+  "summary": {
+    "brief": "Trisvan v. Heyman. Medical malpractice case involving paediatrics.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "In May of 2016, Defendants moved to dismiss the Complaint for lack of personal jurisdiction, proper service, and for failure to state a claim pursuant to Rules 12(b)(2), (5), and (6) of the Federal Rules of Civil Procedure.",
+      "paragraph_ref": "4",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Defendants appear to be brand-name drug manufacturers of the medications at issue.",
+      "paragraph_ref": "6",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "Plaintiff described how he spoke with a physician about his liver damage.",
+      "paragraph_ref": "14",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "Plaintiff and the physician apparently discussed potential causes of the liver damage, ultimately concluding that Risperdal and Wellbutrin may have been the cause of injury.",
+      "paragraph_ref": "14",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "LEGAL_FINDING",
+      "text": "The Court does not conclude that the warnings as described were sufficient in all circumstances.",
+      "paragraph_ref": "16",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "LEGAL_FINDING",
+      "text": "Plaintiff has already been afforded an opportunity to amend the Complaint once.",
+      "paragraph_ref": "27",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "LEGAL_FINDING",
+      "text": "The Court determines leave to amend as to these claims would be futile.",
+      "paragraph_ref": "27",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "39 years",
+        "sex": "male",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Weight gain, gynecomastia, hypertension, and liver damage",
+      "history_of_present_illness": "Patient reports significant weight gain, development of gynecomastia, and hypertension after starting medications Risperdal and Wellbutrin in 2001. In September 2015, test results indicated an enlarged liver and early stages of fatty liver disease.",
+      "past_medical_history": [
+        "Depression",
+        "Psychosis"
+      ],
+      "medications": [
+        "Risperdal",
+        "Wellbutrin"
+      ],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "general": "Gynecomastia observed",
+          "abdomen": "Not documented in judgment"
+        }
+      },
+      "initial_working_problem": "Adverse effects from medication",
+      "known_constraints": null,
+      "initial_differential": [
+        "Medication side effects",
+        "Other causes of liver damage"
+      ],
+      "critical_findings": [
+        "Enlarged liver",
+        "Gynecomastia"
+      ],
+      "urgency_level": "ROUTINE",
+      "evidence_ids": [
+        "E003",
+        "E004"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "LAB",
+        "name": "Liver Function Tests",
+        "description": "Assessment of liver enzymes and function",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Enlarged liver and early stages of fatty liver disease",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates potential liver damage",
+          "decision_impact": "Should prompt review of medication side effects",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with symptoms related to medication side effects",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Patient reports symptoms to physician",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E003"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient with adverse effects from medication",
+        "prompt": "What should be done regarding the patient's medication?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Discontinue Risperdal and Wellbutrin and switch to alternative medications",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "To prevent further adverse effects and manage existing conditions"
+          },
+          {
+            "option_id": "B",
+            "description": "Continue current medications without change",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Assumed medications were necessary despite side effects"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant continued medications without change",
+          "reasoning_stated": "Defendant assumed medications were necessary",
+          "evidence_ids": [
+            "E003",
+            "E004"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Medications should have been reviewed and alternatives considered",
+          "standard_of_care_basis": "Expert evidence suggested alternative treatments were available",
+          "evidence_ids": [
+            "E005"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to address known side effects and consider alternatives",
+          "what_should_have_happened": "Medications should have been reviewed and alternatives considered",
+          "legal_standard_applied": "Standard of care for managing medication side effects",
+          "evidence_ids": [
+            "E005"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient experienced liver damage potentially due to medication",
+        "severity": "Not documented in judgment",
+        "long_term_effects": "Not documented in judgment",
+        "evidence_ids": [
+          "E003",
+          "E004"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "Not applicable",
+        "key_findings": [
+          "Failure to adequately plead causation as to all claims",
+          "Discussion with physician identified potential medication cause"
+        ],
+        "evidence_ids": [
+          "E003",
+          "E004",
+          "E014"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Not applicable",
+        "counterfactual": "Not applicable",
+        "evidence_ids": [
+          "E003",
+          "E004"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "September 14, 2015",
+        "event": "Patient received test results indicating liver issues",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Patient discussed liver damage with physician",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003",
+          "E004"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Liver Function Tests",
+        "date": "September 14, 2015",
+        "result": "Enlarged liver, early stages of fatty liver disease",
+        "interpretation": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Liver damage due to medication",
+        "when_made": "September 14, 2015",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "diagnosis": "Potential drug-induced liver damage",
+        "when_made": "Date not specified in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E003",
+          "E004"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Continued current medications",
+        "date": "Not documented in judgment",
+        "provider": null,
+        "outcome": "Persistent adverse effects",
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Chronic liver issues",
+        "when_occurred": "Ongoing",
+        "severity": "Moderate",
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to warn about medication side effects",
+        "against": "Defendant drug manufacturers",
+        "found_proven": false,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "allegation": "Failure to adequately plead causation",
+        "against": "Defendant",
+        "found_proven": false,
+        "evidence_ids": [
+          "E003",
+          "E004"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "No breach of duty in medication management",
+        "legal_significance": "Claims dismissed due to lack of personal jurisdiction and failure to state a claim",
+        "evidence_ids": [
+          "E005",
+          "E007"
+        ]
+      },
+      {
+        "finding": "Failure to adequately plead causation",
+        "legal_significance": "No liability found",
+        "evidence_ids": [
+          "E003",
+          "E004"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.25,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 09:52:40.683399",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

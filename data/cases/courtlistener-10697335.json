@@ -1,0 +1,422 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10697335",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2023-07-12",
+  "url": "https://example.com/courtlistener-10697335",
+  "case_name": "Mary Margaret Upchurch and Rickie Upchurch v. Adam I. Lewis, M.D. and Jackson Neurosurgery Clinic, PLLC",
+  "neutral_citation": null,
+  "clinical_domain": "PAEDIATRICS",
+  "outcome_severity": "PERMANENT_SEVERE_DISABILITY",
+  "summary": {
+    "brief": "Mary Margaret Upchurch and Rickie Upchurch v. Adam I. Lewis, M.D. and Jackson Neurosurgery Clinic, PLLC. Medical malpractice case involving paediatrics.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Mary Margaret Upchurch suffered paralysis in her legs following a surgery performed at Merit Health Rankin by Dr. Adam Lewis",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "LEGAL_FINDING",
+      "text": "A Rankin County Circuit Court jury found that Dr. Lewis was not negligent in his care and treatment of Mary and returned a verdict in favor of Dr. Lewis and Jackson Neurosurgery.",
+      "paragraph_ref": "20",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Beaty concluded that Dr. Lewis 'ended up doing more surgery because he was not prepared.'",
+      "paragraph_ref": "258",
+      "speaker": "Dr. Beaty"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Neely opined that Dr. Lewis did not breach the standard of care owed to Mary in his diagnosis and treatment.",
+      "paragraph_ref": "362",
+      "speaker": "Dr. Neely"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "LEGAL_FINDING",
+      "text": "We therefore reverse the circuit court\u2019s judgment and the jury\u2019s verdict in favor of Dr. Lewis and Jackson Neurosurgery and remand the case for a new trial.",
+      "paragraph_ref": "61",
+      "speaker": "Court conclusion"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "Mary suffered from severe fibromyalgia and chronic back pain.",
+      "paragraph_ref": "68",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Beaty reiterated that the standard of care additionally required Dr. Lewis to have the proper equipment available.",
+      "paragraph_ref": "255",
+      "speaker": "Dr. Beaty"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "FACTUAL_FINDING",
+      "text": "Mary\u2019s physician referred her to Dr. Lewis for the replacement of the pain pump.",
+      "paragraph_ref": "85",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "WITNESS_STATEMENT",
+      "text": "Rickie testified that after the September 2015 surgery to replace the original battery, the spinal cord stimulator finally began providing Mary with noticeable pain relief.",
+      "paragraph_ref": "81",
+      "speaker": "Rickie Upchurch"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "COURT_REASONING",
+      "text": "The jury could have returned a defense verdict simply because it found that the plaintiffs\u2019 experts were not persuasive or credible.",
+      "paragraph_ref": "608",
+      "speaker": "Court reasoning"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Chronic back pain and need for pain pump replacement",
+      "history_of_present_illness": "Mary Margaret Upchurch had a history of severe fibromyalgia and chronic back pain. She had a spinal cord stimulator and a pain pump implanted previously for pain relief. The pain pump needed replacement.",
+      "past_medical_history": [
+        "Severe fibromyalgia",
+        "Chronic back pain"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "neurological": "Not documented in judgment"
+        }
+      },
+      "initial_working_problem": "Pain pump replacement",
+      "known_constraints": null,
+      "initial_differential": [
+        "Pain pump malfunction",
+        "Battery replacement"
+      ],
+      "critical_findings": [
+        "Need for pain pump replacement"
+      ],
+      "urgency_level": "ELECTIVE",
+      "evidence_ids": [
+        "E006",
+        "E008"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSULT_NOTE",
+        "name": "Pre-surgical consultation",
+        "description": "Consultation with Dr. Lewis regarding pain pump replacement",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Discussion about replacing pain pump with Boston Scientific model",
+          "detailed_findings": null,
+          "clinical_significance": "Informed consent and device compatibility discussion",
+          "decision_impact": "Informed consent should have included potential need for lead replacement",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E091",
+          "E112"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Consultation",
+        "description": "Consultation with Dr. Lewis for pain pump replacement",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Discussion of pain pump replacement",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E091"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "procedure",
+        "name": "Surgical Procedure",
+        "description": "Surgery to replace pain pump and battery",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Attempt to connect St. Jude leads to Boston Scientific battery",
+            "timestamp": "15 June 2016",
+            "evidence_ids": [
+              "E123",
+              "E124"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "procedure",
+        "clinical_context": "During surgery, difficulty connecting St. Jude leads to Boston Scientific battery",
+        "prompt": "What should be done when the lead does not fit the new battery?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Stop the procedure and consult with patient/family for further consent",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Ensures informed consent and avoids unnecessary risk"
+          },
+          {
+            "option_id": "B",
+            "description": "Proceed with replacing the spinal cord stimulator without additional consent",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Lack of informed consent for additional procedure"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant proceeded with replacing the spinal cord stimulator",
+          "reasoning_stated": "Believed consent was obtained",
+          "evidence_ids": [
+            "E134",
+            "E143"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Should have stopped and obtained further consent",
+          "standard_of_care_basis": "Informed consent requires patient awareness of all risks",
+          "evidence_ids": [
+            "E267",
+            "E268"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Proceeding without explicit consent for additional procedure",
+          "what_should_have_happened": "Patient should have been informed of the need for lead replacement",
+          "legal_standard_applied": "Informed consent and standard of care",
+          "evidence_ids": [
+            "E267",
+            "E268"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient suffered partial paralysis following surgery",
+        "severity": "PERMANENT_MODERATE_DISABILITY",
+        "long_term_effects": "Paralysis in legs",
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Breach of standard of care by not obtaining proper consent",
+          "Causation established - surgery led to paralysis"
+        ],
+        "evidence_ids": [
+          "E534",
+          "E535",
+          "E536"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to obtain informed consent for laminectomy",
+        "counterfactual": "Proper consent could have led to different surgical decisions",
+        "evidence_ids": [
+          "E534",
+          "E535",
+          "E536"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "15 June 2016",
+        "event": "Surgery performed by Dr. Lewis",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E123"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Patient referred to Dr. Lewis for battery replacement",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E008"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [
+      {
+        "diagnosis": "Paralysis following surgery",
+        "when_made": "Post-surgery",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Surgical replacement of pain pump and battery",
+        "date": "15 June 2016",
+        "provider": null,
+        "outcome": "Complications leading to paralysis",
+        "evidence_ids": [
+          "E123",
+          "E124"
+        ]
+      },
+      {
+        "treatment": "Laminectomy performed during surgery",
+        "date": "Date not specified in judgment",
+        "provider": null,
+        "outcome": "Lead replaced",
+        "evidence_ids": [
+          "E587",
+          "E588"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Paralysis",
+        "when_occurred": "Post-surgery",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "complication": "Partial paralysis",
+        "when_occurred": "Post-surgery",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to obtain informed consent",
+        "against": "Dr. Lewis",
+        "found_proven": true,
+        "evidence_ids": [
+          "E267"
+        ]
+      },
+      {
+        "allegation": "Failure to obtain informed consent for laminectomy",
+        "against": "Dr. Lewis",
+        "found_proven": true,
+        "evidence_ids": [
+          "E534",
+          "E535"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Dr. Lewis breached the standard of care",
+        "legal_significance": "Failure to obtain informed consent and use of incompatible equipment",
+        "evidence_ids": [
+          "E267"
+        ]
+      },
+      {
+        "finding": "Breach of standard of care by not obtaining proper consent",
+        "legal_significance": "Standard of care requires informed consent for significant procedural changes",
+        "evidence_ids": [
+          "E534",
+          "E535",
+          "E536"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "INFORMED_CONSENT",
+      "TREATMENT_PROCEDURE_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.01610305958132045,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 10:07:51.503229",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

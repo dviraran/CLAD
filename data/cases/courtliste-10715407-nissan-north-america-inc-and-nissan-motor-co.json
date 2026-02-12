@@ -1,0 +1,392 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtliste-10715407-nissan-north-america-inc-and-nissan-motor-co",
+  "source": "BAILII",
+  "jurisdiction": "UK",
+  "court": "Unknown",
+  "decision_date": "2025-10-31",
+  "url": "https://example.com/courtliste-10715407-nissan-north-america-inc-and-nissan-motor-co",
+  "case_name": "Nissan North America, Inc., and Nissan Motor Co., Ltd. v. Alise Henderson-Brundidge",
+  "neutral_citation": null,
+  "clinical_domain": "PAEDIATRICS",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Nissan North America, Inc., and Nissan Motor Co., Ltd. v. Alise Henderson-Brundidge. Medical malpractice case involving paediatrics.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Alise was riding to her mom's workplace with Lola Rodriques, a school friend, and Lola's younger sister Nyla.",
+      "paragraph_ref": "42",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Alise suffered serious injuries to her eyes when the Infiniti's front passenger airbag deployed and struck her in the face.",
+      "paragraph_ref": "51",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "Alise suffered irreparable and permanent vision loss in her left eye, rendering her blind in that eye.",
+      "paragraph_ref": "54",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "EXPERT_TESTIMONY",
+      "text": "William Broadhead, Alise's airbag expert, testified that the Infiniti's airbag deployed unnecessarily, too late, and too forcefully.",
+      "paragraph_ref": "117",
+      "speaker": "William Broadhead"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "LEGAL_FINDING",
+      "text": "The jury returned a $8.5 million verdict in favor of Alise on her AEMLD claim.",
+      "paragraph_ref": "16",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "LEGAL_FINDING",
+      "text": "The trial court has the discretion to grant the defendants a new trial should it determine one is warranted.",
+      "paragraph_ref": "844",
+      "speaker": "Court conclusion"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "COURT_REASONING",
+      "text": "The trial court misunderstood the impact of prior caselaw on its decision.",
+      "paragraph_ref": "860",
+      "speaker": "Judge's analysis"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "15 years",
+        "sex": "female",
+        "relevant_social_history": "High school sophomore"
+      },
+      "chief_complaint": "Serious eye injuries following airbag deployment",
+      "history_of_present_illness": "Alise was involved in a minor vehicle collision while seated in the front passenger seat of a 1998 Infiniti QX4. The airbag deployed and struck her in the face, causing serious injuries to her eyes.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "eyes": "Serious injuries to eyes, permanent vision loss in left eye"
+        }
+      },
+      "initial_working_problem": "Eye trauma due to airbag deployment",
+      "known_constraints": null,
+      "initial_differential": [
+        "Eye trauma",
+        "Orbital fracture"
+      ],
+      "critical_findings": [
+        "Irreparable and permanent vision loss in left eye"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E002",
+        "E003"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "CT Scan of the Head and Orbits",
+        "description": "Imaging to assess for fractures or other injuries",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": null,
+          "detailed_findings": "Imaging performed but findings not detailed in judgment",
+          "clinical_significance": null,
+          "decision_impact": null,
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": []
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with eye injuries following airbag deployment",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Vehicle collision and airbag deployment",
+            "timestamp": "October 5, 2018",
+            "evidence_ids": [
+              "E001",
+              "E002"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient with eye injuries following airbag deployment",
+        "prompt": "What safety features should have been included in the vehicle to prevent such injuries?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Install dual-threshold sensors and depowered airbags",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "These features would have prevented unnecessary and forceful airbag deployment."
+          },
+          {
+            "option_id": "B",
+            "description": "Maintain current airbag system",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "The current system was deemed defective and led to unnecessary deployment."
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant maintained current airbag system",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E004"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Install dual-threshold sensors and depowered airbags",
+          "standard_of_care_basis": "Expert evidence established these as safer alternatives",
+          "evidence_ids": [
+            "E004"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Based on evidence E004",
+          "what_should_have_happened": "Safer airbag design should have been implemented",
+          "legal_standard_applied": "AEMLD",
+          "evidence_ids": [
+            "E004"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient suffered permanent vision loss in left eye",
+        "severity": "PERMANENT_SEVERE_DISABILITY",
+        "long_term_effects": "Blindness in left eye",
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "8500000",
+        "key_findings": [
+          "Breach of duty in failing to evaluate airbag design",
+          "Causation established - alternative design could have prevented injury"
+        ],
+        "evidence_ids": [
+          "E005",
+          "E004"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to evaluate airbag design",
+        "counterfactual": "Alternative design would have mitigated injury",
+        "evidence_ids": [
+          "E004",
+          "E005"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "October 5, 2018",
+        "event": "Patient involved in vehicle collision and airbag deployment",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001",
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "Not documented in judgment",
+        "event": "Airbag deployment causing eye injury",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Not documented in judgment",
+        "date": "Not documented in judgment",
+        "result": "Not documented in judgment",
+        "interpretation": null,
+        "evidence_ids": []
+      },
+      {
+        "test_name": "Ophthalmology assessment",
+        "date": "Not documented in judgment",
+        "result": "Irreparable vision loss in left eye",
+        "interpretation": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Permanent vision loss in left eye",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "diagnosis": "Permanent vision loss in left eye",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Not documented in judgment",
+        "date": "Not documented in judgment",
+        "provider": null,
+        "outcome": "Not documented in judgment",
+        "evidence_ids": []
+      },
+      {
+        "treatment": "Not documented in judgment",
+        "date": "Not documented in judgment",
+        "provider": null,
+        "outcome": "Not documented in judgment",
+        "evidence_ids": []
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Permanent vision loss in left eye",
+        "when_occurred": "Not documented in judgment",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "complication": "Permanent blindness in left eye",
+        "when_occurred": "Not documented in judgment",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Manufacturing a defective airbag system",
+        "against": "Nissan",
+        "found_proven": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "allegation": "Failure to evaluate airbag design",
+        "against": "Nissan",
+        "found_proven": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care under AEMLD",
+        "legal_significance": "Liability found for defective product",
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "AEMLD claim requirements not met",
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.008130081300813009,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 09:29:15.579907",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

@@ -1,0 +1,351 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtliste-10767429-quiroz-v-hernandez",
+  "source": "BAILII",
+  "jurisdiction": "UK",
+  "court": "Unknown",
+  "decision_date": "2025-12-31",
+  "url": "https://example.com/courtliste-10767429-quiroz-v-hernandez",
+  "case_name": "Quiroz v. Hernandez",
+  "neutral_citation": null,
+  "clinical_domain": "NEUROLOGY",
+  "outcome_severity": "TEMPORARY_HARM",
+  "summary": {
+    "brief": "Quiroz v. Hernandez. Medical malpractice case involving neurology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "On January 23, 2020, appellant Madelyn Quiroz, then just 16 years old, was a backseat passenger in a car driven by appellee Morgan White.",
+      "paragraph_ref": "12",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Morgan was driving at a dangerous speed\u2014around 86 to 96 miles per hour\u2014on a roadway with a posted speed limit of 30 miles per hour.",
+      "paragraph_ref": "12",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "Madelyn suffered serious injuries from the crash, including a broken back, a serious spinal cord injury, broken ribs, and internal bleeding.",
+      "paragraph_ref": "12",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "Due to these injuries, Madelyn is now a paraplegic, confined to a wheelchair and paralyzed from the chest down.",
+      "paragraph_ref": "12",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "LEGAL_FINDING",
+      "text": "The district court characterized Appellants\u2019 claims against the Allegiance Defendants as vague and conclusory.",
+      "paragraph_ref": "15",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "LEGAL_FINDING",
+      "text": "We therefore conclude that Appellants also lack standing to file suit against the Liberty County Defendants.",
+      "paragraph_ref": "68",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "COURT_REASONING",
+      "text": "It is clear that allowing Appellants to replead for the fourth time would be entirely futile.",
+      "paragraph_ref": "82",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "LEGAL_FINDING",
+      "text": "For the foregoing reasons, we AFFIRM the district court\u2019s judgment, with the exception of the dismissal of the Liberty County Defendants, whose dismissal we modify to be without prejudice.",
+      "paragraph_ref": "82",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "16 years",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Severe injuries following a car accident",
+      "history_of_present_illness": "Patient was a backseat passenger in a car driven recklessly at 86 to 96 mph, resulting in a crash.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "general": "Patient is paraplegic, confined to a wheelchair, paralyzed from the chest down",
+          "musculoskeletal": "Broken back, broken ribs",
+          "neurological": "Serious spinal cord injury"
+        }
+      },
+      "initial_working_problem": "Severe trauma from motor vehicle accident",
+      "known_constraints": null,
+      "initial_differential": [
+        "Spinal cord injury",
+        "Internal bleeding"
+      ],
+      "critical_findings": [
+        "Paraplegia",
+        "Spinal cord injury"
+      ],
+      "urgency_level": "EMERGENCY",
+      "evidence_ids": [
+        "E001",
+        "E002",
+        "E003",
+        "E004"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "Spinal Imaging",
+        "description": "Imaging to assess spinal injuries",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Imaging performed but findings not detailed in judgment",
+          "detailed_findings": null,
+          "clinical_significance": "Not documented in judgment",
+          "decision_impact": "Not documented in judgment",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Accident Scene",
+        "description": "Initial response to car accident",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Car accident occurs",
+            "timestamp": "January 23, 2020",
+            "evidence_ids": [
+              "E001",
+              "E002"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient with severe injuries from car accident",
+        "prompt": "What is the appropriate emergency response?",
+        "action_type": "ESCALATE_CARE",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Immediate medivac to trauma center",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard care for severe trauma"
+          },
+          {
+            "option_id": "B",
+            "description": "Delay in transport due to argument over medivac",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Resulted in significant delay in treatment"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Delay in transport due to argument over medivac",
+          "reasoning_stated": "Disagreement between paramedic and fire chief",
+          "evidence_ids": [
+            "E005"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Immediate medivac should have been arranged",
+          "standard_of_care_basis": "Expert evidence established immediate transport is standard",
+          "evidence_ids": [
+            "E005"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Delay in treatment due to argument",
+          "what_should_have_happened": "Immediate medivac to trauma center",
+          "legal_standard_applied": "Standard of care for emergency response",
+          "evidence_ids": [
+            "E005"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient is paraplegic, confined to a wheelchair",
+        "severity": "PERMANENT_SEVERE_DISABILITY",
+        "long_term_effects": "Paralysis from the chest down",
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "None",
+        "key_findings": [
+          "Claims against defendants dismissed with prejudice",
+          "No error or abuse of discretion found by the court"
+        ],
+        "evidence_ids": [
+          "E008"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Not applicable",
+        "counterfactual": "Not applicable",
+        "evidence_ids": [
+          "E008"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "January 23, 2020",
+        "event": "Patient involved in car accident",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001",
+          "E002"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Spinal Imaging",
+        "date": "Not documented in judgment",
+        "result": "Imaging performed but findings not detailed in judgment",
+        "interpretation": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Paraplegia",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Emergency response",
+        "date": "Not documented in judgment",
+        "provider": null,
+        "outcome": "Delay in treatment due to argument",
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Paralysis from the chest down",
+        "when_occurred": "Not documented in judgment",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Delay in emergency response",
+        "against": "Allegiance Defendants",
+        "found_proven": false,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "No error or abuse of discretion found",
+        "legal_significance": "Claims dismissed with prejudice",
+        "evidence_ids": [
+          "E008"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.0963855421686747,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 07:54:35.193554",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

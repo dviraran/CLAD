@@ -1,0 +1,389 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "bailii-qb-2022-1171-html",
+  "source": "BAILII",
+  "jurisdiction": "UK",
+  "court": "Unknown",
+  "decision_date": "2022-05-17",
+  "url": "https://example.com/bailii-qb-2022-1171-html",
+  "case_name": "Phoebe Charmaine Pickering   v Cambridge University Hospitals NHS Foundation Trust [2022] EWHC 1171 (QB) (17 May 2022)",
+  "neutral_citation": "[2022] EWHC 1171",
+  "clinical_domain": "OBSTETRICS_GYNAECOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Medical malpractice case involving obstetrics gynaecology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "The Claimant is a patient who attended Addenbrookes Hospital in Cambridge for treatment.",
+      "paragraph_ref": "12",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "The Defendant runs Addenbrookes Hospital and is responsible for the standards of clinical care provided there.",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "The Defendant had admitted that it had been negligent in failing to treat the Claimant with immediate low molecular weight Heparin by injection in A&E at or before 01.44 am on 25 September 2015.",
+      "paragraph_ref": "74",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "The Claimant had suffered a massive stroke. A blood clot or clots had travelled from her left atrial appendage to her brain and lodged in the left middle cerebral artery and the left internal carotid artery.",
+      "paragraph_ref": "95",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Michael is an eminent consultant neurologist... He advised that both the leg clot and the stroke clot 'were attributable to the same mechanism, namely embolic fragments being thrown off from a common cardiac source.'",
+      "paragraph_ref": "105",
+      "speaker": "Dr. Michael"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "EXPERT_TESTIMONY",
+      "text": "In their joint report Dr. Michael and Dr. Giallombardo agreed that the Claimant was at significant risk of further emboli after she had suffered the first blood clot in her leg.",
+      "paragraph_ref": "115",
+      "speaker": "Dr. Michael and Dr. Giallombardo"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "LEGAL_FINDING",
+      "text": "The Defendant's hospital breached its duty of care to the Claimant, as it admits, in failing to start the Claimant on injected Heparin at just before 2:00 AM on the morning of 25 September 2015.",
+      "paragraph_ref": "211",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "COURT_REASONING",
+      "text": "I consider that Professor Mehta's evidence was more logical and better reasoned than Dr. Patel's evidence. Where the evidence of the two conflict I accept Professor Mehta's evidence.",
+      "paragraph_ref": "206",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "LEGAL_FINDING",
+      "text": "I enter judgment for the Claimant.",
+      "paragraph_ref": "225",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "52 years",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Intermittent episodes of right leg turning cold and white",
+      "history_of_present_illness": "Patient experienced intermittent episodes of her right leg turning cold and white, with paraesthesia and pain, lasting about 5 minutes each and resolving completely.",
+      "past_medical_history": [
+        "Atrial fibrillation",
+        "Muscular dystrophy",
+        "Hypertension",
+        "Thyroid disease"
+      ],
+      "medications": [
+        "Aspirin 75mg"
+      ],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "130/66 mmHg",
+          "heart_rate": "70 bpm",
+          "respiratory_rate": "18 breaths/min",
+          "temperature": "36.6\u00b0C",
+          "oxygen_saturation": "95%",
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "legs": "Near normal appearance of both legs; pedal pulses bilaterally present; feet slightly cold equally; normal power and sensation in knees and ankles"
+        }
+      },
+      "initial_working_problem": "Intermittent claudication - cause undetermined",
+      "known_constraints": null,
+      "initial_differential": [
+        "Intermittent claudication",
+        "Resolved ischaemic event of right leg"
+      ],
+      "critical_findings": [
+        "Intermittent episodes of leg turning cold and white"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002",
+        "E063"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "LAB",
+        "name": "ECG",
+        "description": "Electrocardiogram to assess heart rhythm",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "ECG reported as normal",
+          "detailed_findings": null,
+          "clinical_significance": "No acute cardiac abnormalities detected",
+          "decision_impact": "Did not alter immediate management",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E063"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents to A&E with leg symptoms",
+        "duration": "4 hours",
+        "key_events": [
+          {
+            "event": "Triage assessment",
+            "timestamp": "24 September 2015 22:04",
+            "evidence_ids": [
+              "E063"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "A&E Workup",
+        "description": "Assessment and management in A&E",
+        "duration": "3 hours",
+        "key_events": [
+          {
+            "event": "Consultation with Dr. Elsaka",
+            "timestamp": "25 September 2015 01:35",
+            "evidence_ids": [
+              "E073"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient in A&E with symptoms suggestive of embolic event",
+        "prompt": "What immediate treatment should be initiated?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Administer low molecular weight Heparin",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "To reduce risk of further embolic events"
+          },
+          {
+            "option_id": "B",
+            "description": "Discharge with advice to take Aspirin",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Symptoms resolved, no ongoing ischaemia"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant discharged patient with advice to take Aspirin",
+          "reasoning_stated": "Symptoms had resolved, no ongoing ischaemia",
+          "evidence_ids": [
+            "E073",
+            "E074"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Heparin should have been administered",
+          "standard_of_care_basis": "Expert evidence indicated high risk of further embolic events",
+          "evidence_ids": [
+            "E007",
+            "E100"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to administer Heparin increased risk of stroke",
+          "what_should_have_happened": "Immediate anticoagulation with Heparin",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E007",
+            "E100"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient suffered a massive stroke",
+        "severity": "PERMANENT_SEVERE_DISABILITY",
+        "long_term_effects": "Expressive and receptive dysphasia, right-sided weakness",
+        "evidence_ids": [
+          "E095"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Breach of duty in failing to administer Heparin",
+          "Causation established - earlier treatment would have prevented stroke"
+        ],
+        "evidence_ids": [
+          "E009",
+          "E102"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to administer Heparin",
+        "counterfactual": "Heparin would have reduced risk of stroke",
+        "evidence_ids": [
+          "E007",
+          "E102"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "24 September 2015 21:20",
+        "event": "Ambulance report of right leg symptoms",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E059"
+        ]
+      },
+      {
+        "timestamp": "27 September 2015 20:42",
+        "event": "Patient suffered a stroke",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E079"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "ECG",
+        "date": "24 September 2015",
+        "result": "Normal",
+        "interpretation": null,
+        "evidence_ids": [
+          "E063"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Massive stroke",
+        "when_made": "27 September 2015",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E095"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Thrombolysis",
+        "date": "27 September 2015",
+        "provider": null,
+        "outcome": "Partial improvement",
+        "evidence_ids": [
+          "E090"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Expressive and receptive dysphasia",
+        "when_occurred": "28 September 2015",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E094"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to administer Heparin",
+        "against": "Defendant hospital",
+        "found_proven": true,
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E102"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "TREATMENT_PROCEDURE_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.04,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 06:51:29.023738",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

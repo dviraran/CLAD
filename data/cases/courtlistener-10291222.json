@@ -1,0 +1,315 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10291222",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2026-01-18",
+  "url": "https://example.com/courtlistener-10291222",
+  "case_name": "Rosenthal v. Sperling",
+  "neutral_citation": null,
+  "clinical_domain": "ONCOLOGY",
+  "outcome_severity": "TEMPORARY_HARM",
+  "summary": {
+    "brief": "Rosenthal v. Sperling. Medical malpractice case involving oncology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "There is no basis to disturb the jury's finding that defendants committed medical malpractice where plaintiffs' experts unequivocally testified that the laser ablation procedure performed by Dr. Sperling was experimental and contraindicated, that it constituted a deviation from the standard of care, and that it caused plaintiff's injuries.",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Plaintiffs' experts unequivocally testified that the laser ablation procedure performed by Dr. Sperling was experimental and contraindicated, that it constituted a deviation from the standard of care, and that it caused plaintiff's injuries.",
+      "paragraph_ref": "13",
+      "speaker": "Plaintiffs' experts"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "LEGAL_FINDING",
+      "text": "The damage award does not deviate from fair and reasonable compensation.",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "COURT_REASONING",
+      "text": "The trial court providently exercised its discretion in permitting plaintiffs to renew their motion to amend the complaint to assert a claim for punitive damages.",
+      "paragraph_ref": "13",
+      "speaker": "Court reasoning"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "WITNESS_STATEMENT",
+      "text": "Testimony from defendants' employees that the doctor directed changes to plaintiff's medical records after it was determined that his biopsy was negative for cancer, and then again after this suit had been filed.",
+      "paragraph_ref": "13",
+      "speaker": "Defendants' employees"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "LEGAL_FINDING",
+      "text": "THIS CONSTITUTES THE DECISION AND ORDER OF THE SUPREME COURT, APPELLATE DIVISION, FIRST DEPARTMENT.",
+      "paragraph_ref": "13",
+      "speaker": "Court conclusion"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "unknown",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Not documented in judgment",
+      "history_of_present_illness": "Not documented in judgment",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "system": "Examination mentioned but findings not specified"
+        }
+      },
+      "initial_working_problem": "Not documented in judgment",
+      "known_constraints": null,
+      "initial_differential": [],
+      "critical_findings": [],
+      "urgency_level": "Not documented in judgment",
+      "evidence_ids": []
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSULT_NOTE",
+        "name": "Expert Testimony",
+        "description": "Testimony from plaintiffs' experts regarding the procedure",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Procedure was experimental and contraindicated",
+          "detailed_findings": null,
+          "clinical_significance": "Deviation from standard of care",
+          "decision_impact": "Contributed to jury's finding of malpractice",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "procedure",
+        "name": "Procedure Phase",
+        "description": "Decision and execution of the laser ablation procedure",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Laser ablation procedure performed",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E001",
+              "E002"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "procedure",
+        "clinical_context": "Decision to perform laser ablation procedure",
+        "prompt": "Should the laser ablation procedure be performed?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Proceed with laser ablation procedure",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Procedure was experimental and contraindicated"
+          },
+          {
+            "option_id": "B",
+            "description": "Do not perform the procedure",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Procedure was not standard of care and contraindicated"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "A",
+          "description": "Defendant performed the laser ablation procedure",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E001",
+            "E002"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "B",
+          "description": "Procedure should not have been performed",
+          "standard_of_care_basis": "Expert testimony indicated it was experimental and contraindicated",
+          "evidence_ids": [
+            "E002"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Procedure was experimental and not standard of care",
+          "what_should_have_happened": "Procedure should have been avoided",
+          "legal_standard_applied": "Deviation from standard of care",
+          "evidence_ids": [
+            "E001",
+            "E002"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Urological and sexual dysfunction resulting from the procedure",
+        "severity": "PERMANENT_MODERATE_DISABILITY",
+        "long_term_effects": "Not documented in judgment",
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Breach of duty in performing experimental procedure",
+          "Causation established - procedure caused injuries"
+        ],
+        "evidence_ids": [
+          "E001",
+          "E002",
+          "E003"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Performance of experimental procedure",
+        "counterfactual": "Procedure should not have been performed",
+        "evidence_ids": [
+          "E001",
+          "E002"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Laser ablation procedure performed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001",
+          "E002"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [],
+    "treatments": [
+      {
+        "treatment": "Laser ablation procedure",
+        "date": "Date not specified in judgment",
+        "provider": null,
+        "outcome": "Resulted in urological and sexual dysfunction",
+        "evidence_ids": [
+          "E001",
+          "E002",
+          "E003"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Urological and sexual dysfunction",
+        "when_occurred": "Post-procedure",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Performance of experimental and contraindicated procedure",
+        "against": "Dr. Sperling",
+        "found_proven": true,
+        "evidence_ids": [
+          "E001",
+          "E002"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Deviation from standard of care",
+        "evidence_ids": [
+          "E001",
+          "E002"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "TREATMENT_PROCEDURE_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.2222222222222222,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 13:49:06.405114",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

@@ -1,0 +1,523 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10352078",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2024-11-13",
+  "url": "https://example.com/courtlistener-10352078",
+  "case_name": "Marlene Banwart and Richard Banwart v. Neurosurgery of North Iowa, P.C., David Beck, M.D., and Thomas Getta, M.D.",
+  "neutral_citation": null,
+  "clinical_domain": "OBSTETRICS_GYNAECOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Marlene Banwart and Richard Banwart v. Neurosurgery of North Iowa, P.C., David Beck, M.D., and Thomas Getta, M.D.. Medical malpractice case involving obstetrics gynaecology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Marlene has a long history of back pain. She had spinal surgery in 1985, and two more surgeries about five years later.",
+      "paragraph_ref": "56",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "On July 24, Dr. Beck performed a lumbar laminectomy on Marlene at Mercy Medical Center\u2013North Iowa.",
+      "paragraph_ref": "59",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "On August 14, Marlene was seen in the local emergency room complaining of double vision, glossy eyes, and chronic back pain.",
+      "paragraph_ref": "66",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "The next day, an MRI revealed an epidural hematoma, a complication from her July 24 laminectomy.",
+      "paragraph_ref": "68",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. Beck performed emergency surgery that day to evacuate the epidural hematoma.",
+      "paragraph_ref": "69",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "LEGAL_FINDING",
+      "text": "The plaintiffs appeal from the district court\u2019s ruling dismissing their medical malpractice action as time-barred.",
+      "paragraph_ref": "10",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "LEGAL_FINDING",
+      "text": "We apply our cases interpreting section 147.140 to hold that the certificates in this case did not substantially comply with the statute\u2019s affidavit requirement.",
+      "paragraph_ref": "45",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "LEGAL_FINDING",
+      "text": "We reject the plaintiffs\u2019 claim that section 147.140 is void for vagueness.",
+      "paragraph_ref": "49",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "LEGAL_FINDING",
+      "text": "We remand the case for an order granting the defendants\u2019 motions for summary judgment.",
+      "paragraph_ref": "52",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "FACTUAL_FINDING",
+      "text": "The Banwarts alleged Dr. Beck breached the standard of care in his July 24, 2018 surgery and postoperative care.",
+      "paragraph_ref": "76",
+      "speaker": "Court finding"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Chronic back pain and postoperative complications",
+      "history_of_present_illness": "Marlene Banwart has a long history of back pain and underwent a lumbar laminectomy on July 24, 2018. Postoperative pain exceeded expectations.",
+      "past_medical_history": [
+        "Spinal surgery in 1985",
+        "Two additional surgeries approximately five years later"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": null,
+        "general_appearance": null,
+        "focused_exam": {
+          "neurological": "Complaints of double vision and glossy eyes on August 14, 2018"
+        }
+      },
+      "initial_working_problem": "Postoperative complications following lumbar laminectomy",
+      "known_constraints": null,
+      "initial_differential": [
+        "Epidural hematoma",
+        "Other postoperative complications"
+      ],
+      "critical_findings": [
+        "Epidural hematoma confirmed by MRI"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002",
+        "E003",
+        "E004"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "MRI of the spine",
+        "description": "MRI to evaluate postoperative complications",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Epidural hematoma identified",
+          "detailed_findings": null,
+          "clinical_significance": "Complication from July 24 laminectomy",
+          "decision_impact": "Prompted emergency surgery",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation and Surgery",
+        "description": "Patient undergoes lumbar laminectomy",
+        "duration": "July 24, 2018",
+        "key_events": [
+          {
+            "event": "Lumbar laminectomy performed by Dr. Beck",
+            "timestamp": "July 24, 2018",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "postop",
+        "name": "Postoperative Care and Complications",
+        "description": "Postoperative evaluation and complications",
+        "duration": "July 27, 2018 to August 14, 2018",
+        "key_events": [
+          {
+            "event": "Patient transferred to skilled care center",
+            "timestamp": "July 27, 2018",
+            "evidence_ids": [
+              "E002"
+            ]
+          },
+          {
+            "event": "Evaluation by Dr. Getta",
+            "timestamp": "July 31, 2018",
+            "evidence_ids": [
+              "E002"
+            ]
+          },
+          {
+            "event": "Emergency room visit for double vision and glossy eyes",
+            "timestamp": "August 14, 2018",
+            "evidence_ids": [
+              "E003"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Diagnostic Workup",
+        "description": "Imaging performed to identify cause of symptoms",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "MRI reveals epidural hematoma",
+            "timestamp": "August 15, 2018",
+            "evidence_ids": [
+              "E004"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "procedure",
+        "name": "Emergency Surgical Intervention",
+        "description": "Surgical procedure to address identified complication",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Emergency surgery to evacuate hematoma",
+            "timestamp": "August 15, 2018",
+            "evidence_ids": [
+              "E005"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "postop",
+        "clinical_context": "Postoperative evaluation at skilled care center",
+        "prompt": "What should have been done during the postoperative evaluation?",
+        "action_type": "REFER",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Refer for neurological consultation",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Persistent symptoms warranted further evaluation"
+          },
+          {
+            "option_id": "B",
+            "description": "No further evaluation or referral",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Symptoms were not adequately addressed"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "No referral for further evaluation",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E010"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Referral for neurological consultation should have been made",
+          "standard_of_care_basis": "Persistent symptoms required further investigation",
+          "evidence_ids": [
+            "E010"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to refer for further evaluation led to delayed diagnosis of epidural hematoma",
+          "what_should_have_happened": "Referral for neurological consultation",
+          "legal_standard_applied": "Breach of standard of care",
+          "evidence_ids": [
+            "E010"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient required emergency surgery to evacuate epidural hematoma",
+        "severity": "Not documented in judgment",
+        "long_term_effects": "Not documented in judgment",
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "None",
+        "key_findings": [
+          "Defendants met the standard of care in ordering appropriate imaging and performing necessary surgery"
+        ],
+        "evidence_ids": [
+          "E006",
+          "E009"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Not applicable",
+        "counterfactual": "Not applicable",
+        "evidence_ids": [
+          "E006",
+          "E009"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "July 24, 2018",
+        "event": "Lumbar laminectomy performed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "August 14, 2018",
+        "event": "Emergency room visit for double vision",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "timestamp": "August 15, 2018",
+        "event": "MRI reveals epidural hematoma",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "timestamp": "August 15, 2018",
+        "event": "Emergency surgery to evacuate hematoma",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "timestamp": "July 24, 2018",
+        "event": "Lumbar laminectomy performed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "August 15, 2018",
+        "event": "MRI reveals epidural hematoma",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "timestamp": "August 15, 2018",
+        "event": "Emergency surgery to evacuate hematoma",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "MRI",
+        "date": "August 15, 2018",
+        "result": "Epidural hematoma",
+        "interpretation": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "test_name": "MRI of the spine",
+        "date": "August 15, 2018",
+        "result": "Epidural hematoma identified",
+        "interpretation": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Epidural hematoma",
+        "when_made": "August 15, 2018",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "diagnosis": "Epidural hematoma",
+        "when_made": "August 15, 2018",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Emergency surgery",
+        "date": "August 15, 2018",
+        "provider": null,
+        "outcome": "Hematoma evacuated",
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "treatment": "Emergency surgery to evacuate hematoma",
+        "date": "August 15, 2018",
+        "provider": null,
+        "outcome": "Hematoma evacuated",
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Epidural hematoma",
+        "when_occurred": "Post-surgery",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "complication": "Epidural hematoma",
+        "when_occurred": "Post-surgery",
+        "severity": "Not documented in judgment",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to refer for neurological consultation",
+        "against": "Dr. Getta",
+        "found_proven": false,
+        "evidence_ids": [
+          "E010"
+        ]
+      },
+      {
+        "allegation": "Breach of standard of care in surgery and postoperative management",
+        "against": "Dr. Beck",
+        "found_proven": false,
+        "evidence_ids": [
+          "E010"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Certificates of merit did not comply with statutory requirements",
+        "legal_significance": "Case dismissed as time-barred",
+        "evidence_ids": [
+          "E006",
+          "E007",
+          "E008"
+        ]
+      },
+      {
+        "finding": "Defendants met the standard of care",
+        "legal_significance": "No liability found",
+        "evidence_ids": [
+          "E006",
+          "E009"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.014749262536873156,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 10:06:12.481001",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

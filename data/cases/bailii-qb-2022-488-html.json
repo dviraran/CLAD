@@ -1,0 +1,474 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "bailii-qb-2022-488-html",
+  "source": "BAILII",
+  "jurisdiction": "UK",
+  "court": "Unknown",
+  "decision_date": "2022-03-08",
+  "url": "https://example.com/bailii-qb-2022-488-html",
+  "case_name": "5.\tIt is not in dispute that under Polish law the claimant has a direct action, nominally in tort, against the third defendant in respect of liabilities which may arise in respect of their insured, the second defendant.  As explained by the claimant this is an \"Odenbreit claim\" namely an action brought by a claimant against a wrongdoer's EU insurer in the Courts of the EU Member State where the claimant is domiciled.  It is named afterOdenbreit v FBTO Schadeverzekeringen NVCase C-463/06 (decided by reference to section 3 of the Brussels I Regulation: Council Regulation 44/2001 now recast in: Regulation No 2015/2012).  It is an action in tort (Maher & Another v Groupama Grand Est[2010] 1 WLR 1564(CA)), and, subject to the applicable law of the tort and the existence of a direct right of action against an insurer, by section 3 of the recast Brussels I Regulation it gives a claimant a right to assert the jurisdiction of the English Court: the Court of the claimant's domicile (seeOdenbreitabove).",
+  "neutral_citation": "[2022] EWHC 488",
+  "clinical_domain": "PAEDIATRICS",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "5.\tIt is not in dispute that under Polish law the claimant has a direct action, nominally in tort, against the third defendant in respect of liabilities which may arise in respect of their insured, the second defendant.  As explained by the claimant this is an \"Odenbreit claim\" namely an action brought by a claimant against a wrongdoer's EU insurer in the Courts of the EU Member State where the claimant is domiciled.  It is named afterOdenbreit v FBTO Schadeverzekeringen NVCase C-463/06 (decided",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "This is a claim for damages for personal injury sustained during cosmetic surgery undergone by the claimant Ms Laura Clarke on 7 January 2015.",
+      "paragraph_ref": "1",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Ms Clarke who was born on 11 December 1985 claims against Mr Adam Kaleci\u0144ski, the surgeon who performed the breast and thigh procedures upon Ms Clarke, in Poland.",
+      "paragraph_ref": "1",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "The real issue in the case is as to liability.",
+      "paragraph_ref": "2",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "The claimant sues both the surgeon and the clinic, both in contract and in tort.",
+      "paragraph_ref": "7",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "EXPERT_TESTIMONY",
+      "text": "The claimant's skeleton argument stated it was common ground that Polish law would apply to the claimant's claim in tort.",
+      "paragraph_ref": "18",
+      "speaker": "Claimant's legal argument"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "EXPERT_TESTIMONY",
+      "text": "The expert outlined how liability for negligence was decided in the Polish law, referring to Article 415 of the Civil.",
+      "paragraph_ref": "24",
+      "speaker": "Expert witness"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Mr Urso-Baiarda further observes, having studied the website entry which induced Laura Clarke to have surgery.",
+      "paragraph_ref": "62",
+      "speaker": "Expert witness"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "LEGAL_FINDING",
+      "text": "I have come to the clear conclusion the claimant has proved her case in tort as well as in contract.",
+      "paragraph_ref": "94",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "COURT_REASONING",
+      "text": "The standard of care outlined as necessary by the Polish law expert is amply fulfilled by the terms of the report from Mr Urso-Baiarda.",
+      "paragraph_ref": "98",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "LEGAL_FINDING",
+      "text": "I have no hesitation in concluding that the case of negligence is made out against both the first and second defendants.",
+      "paragraph_ref": "100",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E011",
+      "type": "COURT_REASONING",
+      "text": "The care offered by the clinic likewise.",
+      "paragraph_ref": "107",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E012",
+      "type": "LEGAL_FINDING",
+      "text": "The third defendant is liable to the extent of the indemnity.",
+      "paragraph_ref": "112",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "29 years",
+        "sex": "female",
+        "relevant_social_history": "Nightclub dancer and stripper"
+      },
+      "chief_complaint": "Post-operative pain and fever following cosmetic surgery",
+      "history_of_present_illness": "Patient underwent breast augmentation and thigh liposuction in Poland. Post-operatively, she experienced severe pain, fever, and shivering.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "136 beats per minute upon arrival in UK",
+          "respiratory_rate": null,
+          "temperature": "39.5 degrees Celsius upon arrival in UK",
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "general": "Patient appeared frail and in distress",
+          "breasts": "Copious purulent discharge from incisions",
+          "thighs": "Cellulitis noted in left thigh"
+        }
+      },
+      "initial_working_problem": "Post-operative infection",
+      "known_constraints": null,
+      "initial_differential": [
+        "Sepsis",
+        "Necrotising fasciitis"
+      ],
+      "critical_findings": [
+        "Severe infection signs",
+        "High fever",
+        "Tachycardia"
+      ],
+      "urgency_level": "EMERGENCY",
+      "evidence_ids": [
+        "E001",
+        "E002",
+        "E053"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "LAB",
+        "name": "Blood Culture",
+        "description": "To identify the causative organism of the infection",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not documented in judgment",
+          "detailed_findings": null,
+          "clinical_significance": "Would confirm bacterial infection",
+          "decision_impact": "Guide antibiotic therapy",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": []
+      },
+      {
+        "request_id": "R002",
+        "type": "IMAGING",
+        "name": "CT Scan",
+        "description": "To assess the extent of infection and abscess formation",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": null,
+          "detailed_findings": "Imaging performed but findings not detailed in judgment",
+          "clinical_significance": "Would help in surgical planning",
+          "decision_impact": "Determine need for surgical intervention",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": []
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with severe post-operative symptoms",
+        "duration": "1 day",
+        "key_events": [
+          {
+            "event": "Patient arrives at UK hospital with severe symptoms",
+            "timestamp": "14 January 2015",
+            "evidence_ids": [
+              "E053"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "postop",
+        "name": "Post-operative Management",
+        "description": "Management of post-operative complications",
+        "duration": "5 days",
+        "key_events": [
+          {
+            "event": "Patient experiences severe pain and fever",
+            "timestamp": "9 January 2015",
+            "evidence_ids": [
+              "E048"
+            ]
+          },
+          {
+            "event": "Patient returns to clinic with worsening symptoms",
+            "timestamp": "11 January 2015",
+            "evidence_ids": [
+              "E050"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "postop",
+        "clinical_context": "Patient presenting with severe post-operative symptoms",
+        "prompt": "What should be the immediate management for a patient with suspected severe post-operative infection?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Immediate surgical washout and debridement",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Urgent intervention required to control infection"
+          },
+          {
+            "option_id": "B",
+            "description": "Continue with oral antibiotics and observe",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Inadequate for severe infection"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant continued with oral antibiotics and observation",
+          "reasoning_stated": "Believed symptoms were normal post-operative course",
+          "evidence_ids": [
+            "E050",
+            "E051"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Immediate surgical intervention was necessary",
+          "standard_of_care_basis": "Expert evidence indicated urgent surgical intervention was required",
+          "evidence_ids": [
+            "E060",
+            "E061"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to recognize and treat severe infection promptly",
+          "what_should_have_happened": "Immediate surgical washout and debridement",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E060",
+            "E061",
+            "E062"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient suffered from severe infections post-surgery",
+        "severity": "PERMANENT_MODERATE_DISABILITY",
+        "long_term_effects": "Chronic pain and potential disfigurement",
+        "evidence_ids": [
+          "E095",
+          "E096"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "155074.17",
+        "key_findings": [
+          "Breach of duty in failing to implement adequate infection control measures",
+          "Causation established - infections were preventable with proper care"
+        ],
+        "evidence_ids": [
+          "E100",
+          "E101"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to implement adequate infection control measures",
+        "counterfactual": "Proper measures would have prevented infections",
+        "evidence_ids": [
+          "E095",
+          "E096",
+          "E100"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "7 January 2015",
+        "event": "Patient undergoes cosmetic surgery in Poland",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "14 January 2015",
+        "event": "Patient arrives at UK hospital with severe symptoms",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E053"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Patient develops multiple infections post-surgery",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E095"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Blood Culture",
+        "date": "Not documented in judgment",
+        "result": "Not documented in judgment",
+        "interpretation": null,
+        "evidence_ids": []
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Severe sepsis",
+        "when_made": "14 January 2015",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E053"
+        ]
+      },
+      {
+        "diagnosis": "Post-operative infections",
+        "when_made": "Date not specified in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E095"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Surgical washout and debridement",
+        "date": "14 January 2015",
+        "provider": null,
+        "outcome": "Infection controlled",
+        "evidence_ids": [
+          "E053"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Severe infection and scarring",
+        "when_occurred": "Post-surgery",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E065"
+        ]
+      },
+      {
+        "complication": "Multiple infections",
+        "when_occurred": "Date not specified in judgment",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E095"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to manage post-operative infection",
+        "against": "Defendant surgeon and clinic",
+        "found_proven": true,
+        "evidence_ids": [
+          "E094"
+        ]
+      },
+      {
+        "allegation": "Failure to implement adequate infection control measures",
+        "against": "Defendant surgeon and clinic",
+        "found_proven": true,
+        "evidence_ids": [
+          "E100"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E094"
+        ]
+      },
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E100"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP",
+      "TREATMENT_PROCEDURE_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.08633093525179857,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 15:47:59.152391",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

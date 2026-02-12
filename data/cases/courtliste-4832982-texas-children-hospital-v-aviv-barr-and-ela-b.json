@@ -1,0 +1,412 @@
+{
+  "case_id": "courtliste-4832982-texas-children-hospital-v-aviv-barr-and-ela-b",
+  "source": "courtlistener",
+  "source_url": "local://courtliste-4832982-texas-children-hospital-v-aviv-barr-and-ela-b.html",
+  "jurisdiction": "US",
+  "extraction_metadata": {
+    "version": "batch_api_v1",
+    "model": "gpt-4o",
+    "extracted_at": "2026-01-21T17:56:57.951630",
+    "simulation_extracted_at": "2026-01-21T18:29:59.604754",
+    "simulation_model": "gpt-4o"
+  },
+  "case_metadata": {
+    "case_name": "Texas Children Hospital v. Aviv Barr and Ela Barr, Individually and as Next Friends of MB, a Minor Child",
+    "citation": "NO. 01-20-00146-CV",
+    "court": "Court of Appeals, First District of Texas",
+    "date": "November 19, 2020"
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "The Barrs’ minor daughter, M.B., underwent a minimally-invasive brain surgery to treat her epilepsy at TCH in Houston.",
+      "paragraph_ref": "15",
+      "paragraph_starts_with": "[15] The Barrs’ minor daughter",
+      "summary": "M.B. underwent brain surgery at TCH for epilepsy.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "Dr. Daniel Curry performed the surgery at TCH using the NeuroBlate system, which is an MRI-guided laser ablation device that had been subject to a recall by the Food and Drug Administration (FDA), prior to M.B.’s surgery, in October 2017.",
+      "paragraph_ref": "17",
+      "paragraph_starts_with": "[17] performed the surgery at",
+      "summary": "Dr. Curry used a recalled NeuroBlate system for M.B.'s surgery.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "M.B. was discharged from TCH on July 22, 2018, but she later experienced symptoms such as dizziness, vomiting, and loss of consciousness and was admitted to St. Mary’s Medical Center in Florida for further treatment.",
+      "paragraph_ref": "20",
+      "paragraph_starts_with": "[20] discharged from TCH on",
+      "summary": "M.B. was discharged but later admitted to another hospital with symptoms.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "EXPERT_TESTIMONY",
+      "verbatim_quote": "Dr. Avellino opined: “The NeuroBlate laser probe used in [M.B.’s] surgery caused unintended heating to surrounding brain tissue, damaging a blood vessel in the brain and creating a pseudoaneurysm that eventually ruptured.",
+      "paragraph_ref": "120",
+      "paragraph_starts_with": "[120] If [TCH] had prevented",
+      "summary": "Dr. Avellino stated the laser probe caused unintended heating and vessel damage.",
+      "speaker": "Dr. Avellino"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "LEGAL_FINDING",
+      "verbatim_quote": "We affirm the trial court’s order denying TCH’s motion to dismiss.",
+      "paragraph_ref": "314",
+      "paragraph_starts_with": "[314] We affirm the trial",
+      "summary": "Court affirms denial of TCH's motion to dismiss.",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "COURT_REASONING",
+      "verbatim_quote": "Because Dr. Avellino explained how the alleged negligent conduct—TCH’s providing a recalled device with which it allowed Dr. Curry to perform M.B.’s surgery—caused the damage to the blood vessel in M.B.’s brain that resulted in the remainder of her injuries, we cannot conclude that the trial court abused its discretion.",
+      "paragraph_ref": "305",
+      "paragraph_starts_with": "[305] Because Dr. Avellino",
+      "summary": "Court found Dr. Avellino's explanation sufficient to establish causation.",
+      "speaker": "Judge's analysis"
+    }
+  ],
+  "verdict_detected": {
+    "outcome": "NO_LIABILITY",
+    "key_phrase": "We affirm the trial court’s order denying TCH’s motion to dismiss.",
+    "paragraph_ref": "314"
+  },
+  "extraction_notes": {
+    "total_paragraphs_analyzed": 317,
+    "key_sections_found": [
+      "Background",
+      "Key Findings and Analysis",
+      "Conclusion and Verdict"
+    ],
+    "gaps_identified": [
+      "No specific lab values mentioned",
+      "Timing of events unclear"
+    ]
+  },
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Epilepsy requiring surgical intervention",
+      "history_of_present_illness": "M.B. underwent minimally-invasive brain surgery to treat epilepsy.",
+      "past_medical_history": [
+        "Epilepsy"
+      ],
+      "medications": "Not documented in judgment",
+      "allergies": "Not documented in judgment",
+      "physical_examination": {
+        "vital_signs": "Not documented in judgment",
+        "focused_exam": {
+          "neurological": "Not documented in judgment"
+        }
+      },
+      "initial_working_problem": "Epilepsy requiring surgical intervention",
+      "initial_differential": [
+        "Epilepsy"
+      ],
+      "critical_findings": "Not documented in judgment",
+      "urgency_level": "ELECTIVE",
+      "evidence_ids": [
+        "E001"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "PROCEDURE_NOTE",
+        "name": "Surgical Procedure Note",
+        "description": "Details of the minimally-invasive brain surgery",
+        "available_phase": "procedure",
+        "reveal": {
+          "result_summary": "Surgery performed using NeuroBlate system",
+          "clinical_significance": "Device was subject to FDA recall",
+          "decision_impact": "Use of recalled device led to complications"
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "procedure",
+        "clinical_context": "Decision to use surgical equipment for epilepsy treatment",
+        "prompt": "Which surgical device should be used for the procedure?",
+        "action_type": "SELECT_TECHNIQUE",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Use FDA-approved and non-recalled surgical device",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Avoids risk associated with recalled devices"
+          },
+          {
+            "option_id": "B",
+            "description": "Use NeuroBlate system despite recall",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Device was recalled due to safety concerns"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant used NeuroBlate system",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E002"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Use of a non-recalled device was expected",
+          "standard_of_care_basis": "Avoidance of recalled devices",
+          "evidence_ids": [
+            "E006"
+          ]
+        },
+        "explanation": {
+          "why_defendant_wrong": "Use of recalled device led to complications",
+          "what_should_have_happened": "A non-recalled device should have been used",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E006"
+          ]
+        },
+        "is_malpractice_point": true
+      },
+      {
+        "decision_id": "D002",
+        "phase_id": "postop",
+        "clinical_context": "Post-surgical monitoring and follow-up",
+        "prompt": "What follow-up care should be provided after discharge?",
+        "action_type": "MONITORING_FOLLOWUP",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Regular neurological assessments and imaging",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "To monitor for potential complications"
+          },
+          {
+            "option_id": "B",
+            "description": "Discharge with standard instructions only",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Insufficient monitoring for post-surgical complications"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Standard discharge instructions given",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E003"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Enhanced monitoring was expected",
+          "standard_of_care_basis": "Post-surgical complication prevention",
+          "evidence_ids": [
+            "E004"
+          ]
+        },
+        "explanation": {
+          "why_defendant_wrong": "Lack of monitoring led to delayed recognition of complications",
+          "what_should_have_happened": "Regular follow-up and monitoring",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E004"
+          ]
+        },
+        "is_malpractice_point": true
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents for surgical treatment of epilepsy",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Decision to perform surgery",
+            "timestamp": "Not documented in judgment",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "procedure",
+        "name": "Surgical Procedure",
+        "description": "Minimally-invasive brain surgery using NeuroBlate system",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Surgery performed",
+            "timestamp": "Not documented in judgment",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "postop",
+        "name": "Postoperative Care",
+        "description": "Patient discharged and later experiences complications",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Patient discharged",
+            "timestamp": "July 22, 2018",
+            "evidence_ids": [
+              "E003"
+            ]
+          },
+          {
+            "event": "Patient admitted to another hospital with symptoms",
+            "timestamp": "Not documented in judgment",
+            "evidence_ids": [
+              "E003"
+            ]
+          }
+        ]
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient developed complications post-surgery",
+        "severity": "SEVERE",
+        "long_term_effects": "Not documented in judgment",
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Use of recalled device caused vessel damage",
+          "Causation established by expert testimony"
+        ],
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Use of recalled NeuroBlate system",
+        "counterfactual": "Use of a non-recalled device would have avoided complications",
+        "evidence_ids": [
+          "E004",
+          "E006"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "Not documented in judgment",
+        "event": "M.B. underwent brain surgery at TCH",
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "July 22, 2018",
+        "event": "M.B. discharged from TCH",
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Surgical procedure using NeuroBlate",
+        "date": "Not documented in judgment",
+        "result": "Performed with recalled device",
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Complications from surgery",
+        "when_made": "Not documented in judgment",
+        "correct": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Minimally-invasive brain surgery",
+        "date": "Not documented in judgment",
+        "outcome": "Complications developed",
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Pseudoaneurysm and vessel damage",
+        "when_occurred": "Not documented in judgment",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Use of recalled surgical device",
+        "against": "TCH and Dr. Curry",
+        "found_proven": true,
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ]
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "TREATMENT_PROCEDURE_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "diagnosis_subtypes": [
+      "FAILURE_TO_INVESTIGATE"
+    ]
+  }
+}

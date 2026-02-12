@@ -1,0 +1,350 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "bailii-uksc-2015-11-html",
+  "source": "BAILII",
+  "jurisdiction": "UK",
+  "court": "Unknown",
+  "decision_date": "2015-03-11",
+  "url": "https://example.com/bailii-uksc-2015-11-html",
+  "case_name": "It is in addition only in comparatively rare cases that this court interferes with concurrent findings of fact by lower courts. As Lord Jauncey of Tullichettle explained inHiggins v J & C M Smith (Whiteinch) Ltd1990 SC (HL) 63, 82:",
+  "neutral_citation": "[2015] UKSC 11",
+  "clinical_domain": "OBSTETRICS_GYNAECOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "It is in addition only in comparatively rare cases that this court interferes with concurrent findings of fact by lower courts. As Lord Jauncey of Tullichettle explained inHiggins v J & C M Smith (Whiteinch) Ltd1990 SC (HL) 63, 82:. Medical malpractice case involving obstetrics gynaecology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Nadine Montgomery gave birth to a baby boy on 1 October 1999 at Bellshill Maternity Hospital, Lanarkshire. As a result of complications during the delivery, the baby was born with severe disabilities.",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "The first concerned her ante-natal care. It was contended that she ought to have been given advice about the risk of shoulder dystocia... and of the alternative possibility of delivery by elective caesarean section.",
+      "paragraph_ref": "14",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "During the 12 minutes between the baby's head appearing and the delivery, the umbilical cord was completely or partially occluded, depriving him of oxygen.",
+      "paragraph_ref": "35",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr Philip Owen, an expert witness who gave evidence on behalf of the Board, as 'a major obstetric emergency associated with a short and long term neonatal and maternal morbidity [and] an associated neonatal mortality'.",
+      "paragraph_ref": "21",
+      "speaker": "Dr. Philip Owen"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "LEGAL_FINDING",
+      "text": "The Lord Ordinary, Lord Bannatyne, rejected both grounds of fault: [2010] CSOH 104.",
+      "paragraph_ref": "15",
+      "speaker": "Lord Bannatyne"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "COURT_REASONING",
+      "text": "The court has been invited to depart from the decision of the House of Lords in Sidaway and to re-consider the duty of a doctor towards a patient in relation to advice about treatment.",
+      "paragraph_ref": "16",
+      "speaker": "Court reasoning"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "Mrs Montgomery was told that she was having a larger than usual baby. But she was not told about the risks of her experiencing mechanical problems during labour.",
+      "paragraph_ref": "26",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr McLellan accepted that this was a high risk. But, despite the risk, she said that her practice was not to spend a lot of time, or indeed any time at all, discussing potential risks of shoulder dystocia.",
+      "paragraph_ref": "26",
+      "speaker": "Dr. McLellan"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "LEGAL_FINDING",
+      "text": "For these reasons, we would allow the appeal.",
+      "paragraph_ref": "130",
+      "speaker": "Court conclusion"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "COURT_REASONING",
+      "text": "The question should properly have been addressed as to Mrs Montgomery's likely reaction if she had been told of the risk of shoulder dystocia.",
+      "paragraph_ref": "126",
+      "speaker": "Court reasoning"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Pregnancy management",
+      "history_of_present_illness": "Mrs. Montgomery was expecting her first baby and was under the care of Dr. McLellan at Bellshill Maternity Hospital. She was a diabetic patient, which made her pregnancy high risk.",
+      "past_medical_history": [
+        "Insulin dependent diabetes mellitus"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "abdomen": "Not documented in judgment"
+        }
+      },
+      "initial_working_problem": "High-risk pregnancy due to diabetes",
+      "known_constraints": null,
+      "initial_differential": [
+        "Shoulder dystocia risk",
+        "Cephalopelvic disproportion"
+      ],
+      "critical_findings": [
+        "High risk of shoulder dystocia due to diabetes"
+      ],
+      "urgency_level": "ROUTINE",
+      "evidence_ids": [
+        "E001",
+        "E020",
+        "E026"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSULT_NOTE",
+        "name": "Obstetric Consultation",
+        "description": "Discussion of delivery options and associated risks",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Risk of shoulder dystocia not disclosed",
+          "detailed_findings": null,
+          "clinical_significance": "Patient not informed of significant risk associated with vaginal delivery",
+          "decision_impact": "Lack of informed consent for delivery method",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E007",
+          "E115"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Obstetric Consultation",
+        "description": "Discussion of delivery options for diabetic patient",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Patient informed of larger than usual baby",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E007"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Pregnant patient with known risk factors",
+        "prompt": "What should be discussed with the patient regarding delivery options?",
+        "action_type": "DISCLOSE_ALTERNATIVES",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Discuss risk of shoulder dystocia and offer elective caesarean section",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Patient should be informed of all material risks to make an informed decision"
+          },
+          {
+            "option_id": "B",
+            "description": "Proceed with vaginal delivery without discussing risks",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Defendant withheld information to avoid patient opting for caesarean section"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant did not disclose risk of shoulder dystocia",
+          "reasoning_stated": "Defendant believed disclosure would lead to unnecessary caesarean requests",
+          "evidence_ids": [
+            "E007",
+            "E116"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Risk of shoulder dystocia should have been disclosed",
+          "standard_of_care_basis": "Patient autonomy and informed consent principles",
+          "evidence_ids": [
+            "E115",
+            "E116"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to disclose material risk violated informed consent",
+          "what_should_have_happened": "Patient should have been informed of all risks and alternatives",
+          "legal_standard_applied": "Informed consent and patient autonomy",
+          "evidence_ids": [
+            "E115",
+            "E116",
+            "E117"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Baby suffered from shoulder dystocia during delivery",
+        "severity": "PERMANENT_MODERATE_DISABILITY",
+        "long_term_effects": "Not documented in judgment",
+        "evidence_ids": [
+          "E003",
+          "E115"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Breach of duty in failing to disclose risk of shoulder dystocia",
+          "Causation established - informed consent not obtained"
+        ],
+        "evidence_ids": [
+          "E115",
+          "E130"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to disclose risk of shoulder dystocia",
+        "counterfactual": "Disclosure would have led to elective caesarean section",
+        "evidence_ids": [
+          "E115",
+          "E126",
+          "E127"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "1 October 1999",
+        "event": "Nadine Montgomery gave birth at Bellshill Maternity Hospital",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [
+      {
+        "diagnosis": "Shoulder dystocia during delivery",
+        "when_made": "During delivery",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "treatments": [],
+    "complications": [
+      {
+        "complication": "Shoulder dystocia",
+        "when_occurred": "During delivery",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to disclose risk of shoulder dystocia",
+        "against": "Dr McLellan",
+        "found_proven": true,
+        "evidence_ids": [
+          "E115"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care by not disclosing risk",
+        "legal_significance": "Informed consent not obtained",
+        "evidence_ids": [
+          "E115"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "INFORMED_CONSENT"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.06993006993006994,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 07:23:34.064834",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

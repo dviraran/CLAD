@@ -1,0 +1,647 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-9998272",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Michigan Supreme Court",
+  "decision_date": "2024-07-08",
+  "url": "https://www.courtlistener.com/opinion/9998272/lynda-danhoff-v-daniel-k-fahim-md/",
+  "case_name": "Danhoff v. Fahim",
+  "neutral_citation": "No. 163120",
+  "clinical_domain": "SURGERY_SPINE",
+  "outcome_severity": "PERMANENT_DISABILITY",
+  "summary": {
+    "brief": "Patient developed bowel perforation after XLIF spinal surgery. Post-operative signs of perforation (pain, fever) were dismissed as normal surgical responses, delaying diagnosis by 3 days.",
+    "clinical_synopsis": "Female patient underwent extreme lateral intrabody fusion (XLIF) procedure for back pain. On post-op day 1, she developed pain and fever which were dismissed as normal surgical responses. A second planned surgery was performed on post-op day 2. On post-op day 3, she developed incision site redness with elevated temperature and blood pressure, prompting CT scan that revealed free air and material outside the colon. Emergency surgery found sigmoid colon perforation with stool leakage. Patient required four additional surgeries and 30-day hospitalization, resulting in permanent medical conditions.",
+    "legal_synopsis": "Case reversed and remanded by Michigan Supreme Court on procedural grounds (expert witness admissibility). The underlying malpractice allegations concern failure to recognize post-operative signs of bowel perforation and dismissing warning symptoms as normal surgical responses."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. Fahim and Dr. D'Andrea performed an extreme lateral intrabody fusion (XLIF) procedure on December 7, 2015.",
+      "paragraph_ref": "303-321",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Plaintiff experienced pain and fever the next day. Dr. Fahim believed those complications were normal surgical responses and did not have concerns.",
+      "paragraph_ref": "323-326",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "He performed the second spinal surgery on December 9, 2015, thus concluding the XLIF operation as initially planned.",
+      "paragraph_ref": "326-329",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "On December 10, 2015, plaintiff experienced redness at the site of the incision that was made during the first procedure. Plaintiff's body temperature and blood pressure both elevated to the point that she was taken to the hospital's intensive care unit for a CT scan.",
+      "paragraph_ref": "331-336",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "The CT scan revealed that there was 'free air and free material outside the colon.'",
+      "paragraph_ref": "337",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "During this procedure, Dr. Anthony Iacco observed that there was a hole in plaintiff's sigmoid colon that was leaking stool.",
+      "paragraph_ref": "340-343",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "Plaintiff had four surgeries over the next six days to correct the perforation. She was discharged from the hospital on January 6, 2016—30 days after her first procedure. She complains of continuing medical ramifications that have now become permanent.",
+      "paragraph_ref": "351-357",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Koebbe averred that the appropriate standard of care includes: to diagnose and surgically repair all injuries to the patient's colon prior to closing the surgical site.",
+      "paragraph_ref": "411-441",
+      "speaker": "Plaintiff's expert (Dr. Koebbe)"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Perforations to the colon that occur during lumbar spine surgery are extremely rare. It happens less than one percent of the time.",
+      "paragraph_ref": "466-493",
+      "speaker": "Plaintiff's expert (Dr. Koebbe)"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "EXPERT_TESTIMONY",
+      "text": "A bowel injury caused during the type of procedure performed upon Ms. Danhoff is not an acceptable known complication of this procedure but rather is so rare as to only occur as a result of surgical error.",
+      "paragraph_ref": "536-540",
+      "speaker": "Plaintiff's expert (Dr. Koebbe)"
+    },
+    {
+      "evidence_id": "E011",
+      "type": "LEGAL_FINDING",
+      "text": "Reversed and remanded. The trial court abused its discretion by inadequately assessing the reliability of a standard-of-care expert witness.",
+      "paragraph_ref": "130",
+      "speaker": "Michigan Supreme Court"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": "Clear post-operative monitoring failure with dismissal of warning signs",
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Adult",
+        "sex": "female",
+        "relevant_social_history": "Work-related back injury"
+      },
+      "chief_complaint": "Pain and fever one day after spinal surgery",
+      "history_of_present_illness": "Patient underwent XLIF (extreme lateral intrabody fusion) spinal surgery yesterday for back pain from a work injury. The surgery was performed on the L3-L4 disc space. Today she is experiencing pain and fever.",
+      "past_medical_history": [
+        "Work-related back injury requiring surgical intervention"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Normal range initially",
+          "heart_rate": "Not documented",
+          "respiratory_rate": null,
+          "temperature": "Elevated (fever)",
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": "Post-operative patient with discomfort",
+        "focused_exam": {
+          "surgical_site": "Lateral approach incision site",
+          "abdomen": "Not documented initially"
+        }
+      },
+      "initial_working_problem": "Post-operative pain and fever after XLIF procedure",
+      "known_constraints": "Patient is 1 day post-op from lateral approach spinal surgery near retroperitoneal space",
+      "initial_differential": [
+        "Normal post-operative inflammatory response",
+        "Surgical site infection",
+        "Intra-abdominal injury (bowel perforation)",
+        "Deep vein thrombosis",
+        "Atelectasis"
+      ],
+      "critical_findings": [
+        "Fever on post-op day 1",
+        "Pain beyond expected post-operative course"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "CT Abdomen/Pelvis",
+        "description": "CT scan of abdomen and pelvis with contrast to evaluate for intra-abdominal complications",
+        "available_phase": "postop_day1",
+        "reveal": {
+          "result_summary": "Free air and free material outside the colon",
+          "detailed_findings": "Pneumoperitoneum with extraluminal material adjacent to sigmoid colon, concerning for bowel perforation",
+          "clinical_significance": "Indicates bowel perforation requiring emergency surgical intervention",
+          "decision_impact": "Would have prompted immediate surgical exploration and repair",
+          "if_normal_would_mean": "No evidence of bowel injury, pain/fever likely from other cause",
+          "if_abnormal_means": "Bowel perforation - surgical emergency"
+        },
+        "was_ordered_in_case": false,
+        "delayed_until": "Post-op day 3",
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "LAB",
+        "name": "CBC with differential",
+        "description": "Complete blood count to assess for infection/inflammation",
+        "available_phase": "postop_day1",
+        "reveal": {
+          "result_summary": "Likely elevated WBC with left shift",
+          "clinical_significance": "Would support infectious/inflammatory process"
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": []
+      },
+      {
+        "request_id": "R003",
+        "type": "LAB",
+        "name": "Lactate",
+        "description": "Serum lactate level",
+        "available_phase": "postop_day1",
+        "reveal": {
+          "result_summary": "Potentially elevated in setting of bowel ischemia/perforation",
+          "clinical_significance": "Elevated lactate in post-op patient with fever raises concern for serious complication"
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": []
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "surgery",
+        "name": "Initial XLIF Surgery",
+        "description": "XLIF procedure performed on L3-L4",
+        "duration": "1 day",
+        "key_events": [
+          {
+            "event": "XLIF procedure performed by Dr. Fahim and Dr. D'Andrea",
+            "timestamp": "December 7, 2015",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "postop_day1",
+        "name": "Post-operative Day 1 - CRITICAL DECISION POINT",
+        "description": "Patient develops pain and fever - dismissed as normal",
+        "duration": "1 day",
+        "key_events": [
+          {
+            "event": "Patient experiences pain and fever",
+            "timestamp": "December 8, 2015",
+            "evidence_ids": [
+              "E002"
+            ]
+          },
+          {
+            "event": "Dr. Fahim dismisses symptoms as normal surgical responses",
+            "timestamp": "December 8, 2015",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "postop_day2",
+        "name": "Post-operative Day 2",
+        "description": "Second planned surgery performed despite symptoms",
+        "duration": "1 day",
+        "key_events": [
+          {
+            "event": "Second spinal surgery performed as planned",
+            "timestamp": "December 9, 2015",
+            "evidence_ids": [
+              "E003"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "postop_day3",
+        "name": "Post-operative Day 3 - Deterioration",
+        "description": "Patient deteriorates with clear signs of complication",
+        "duration": "1 day",
+        "key_events": [
+          {
+            "event": "Incision site redness, elevated temperature and blood pressure",
+            "timestamp": "December 10, 2015",
+            "evidence_ids": [
+              "E004"
+            ]
+          },
+          {
+            "event": "Transfer to ICU, CT scan performed",
+            "timestamp": "December 10, 2015",
+            "evidence_ids": [
+              "E004",
+              "E005"
+            ]
+          },
+          {
+            "event": "CT reveals free air and material outside colon",
+            "timestamp": "December 10, 2015",
+            "evidence_ids": [
+              "E005"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "emergency_surgery",
+        "name": "Emergency Surgical Intervention",
+        "description": "Discovery and repair of bowel perforation",
+        "duration": "6 days",
+        "key_events": [
+          {
+            "event": "Sigmoid colon perforation with stool leakage discovered",
+            "timestamp": "December 10, 2015",
+            "evidence_ids": [
+              "E006"
+            ]
+          },
+          {
+            "event": "Four additional surgeries to correct perforation",
+            "timestamp": "December 10-16, 2015",
+            "evidence_ids": [
+              "E007"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "postop_day1",
+        "clinical_context": "Post-operative day 1 after XLIF spinal surgery. Patient has developed pain and fever. XLIF is performed through a lateral retroperitoneal approach, in proximity to the sigmoid colon.",
+        "prompt": "A patient presents with pain and fever on post-operative day 1 after XLIF spinal surgery. How should you evaluate and manage these symptoms?",
+        "action_type": "CHOOSE_WORKUP",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Order CT abdomen/pelvis to rule out intra-abdominal injury given proximity of surgical approach to bowel",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "XLIF approaches the spine through the retroperitoneal space near the sigmoid colon. Fever and pain post-operatively should raise concern for bowel injury, which requires prompt imaging"
+          },
+          {
+            "option_id": "B",
+            "description": "Dismiss as normal post-operative inflammatory response and proceed with planned second surgery",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Failed to consider serious complication despite proximity of surgical approach to bowel structures"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Dismissed pain and fever as normal surgical responses and proceeded with second planned surgery",
+          "reasoning_stated": "Dr. Fahim believed those complications were normal surgical responses and did not have concerns",
+          "evidence_ids": [
+            "E002",
+            "E003"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Should have investigated post-operative fever and pain with imaging to rule out bowel injury, given the surgical approach passes near the sigmoid colon",
+          "standard_of_care_basis": "Expert testimony: Standard of care requires diagnosing and repairing injuries to bowel. Post-op fever and pain after retroperitoneal surgery warrants evaluation for bowel injury.",
+          "evidence_ids": [
+            "E008",
+            "E009",
+            "E010"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 2,
+          "criteria": [
+            "Recognizes need for imaging workup (CT) given symptoms",
+            "Considers bowel injury in differential for post-XLIF fever/pain",
+            "Does not dismiss symptoms as routine without investigation"
+          ]
+        },
+        "explanation": {
+          "why_defendant_wrong": "Dismissed post-operative fever and pain as normal without considering that XLIF surgery passes near the sigmoid colon, creating risk of bowel injury. Failed to order imaging that would have revealed perforation 2 days earlier.",
+          "what_should_have_happened": "Post-operative fever and pain after retroperitoneal spinal surgery should prompt evaluation for intra-abdominal complications including bowel injury. CT imaging should have been ordered on post-op day 1.",
+          "legal_standard_applied": "Expert testimony established that bowel perforation during XLIF is extremely rare (<1%) and when it occurs, represents surgical error. Standard of care requires prompt diagnosis.",
+          "evidence_ids": [
+            "E002",
+            "E008",
+            "E009",
+            "E010"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": "PREMATURE_CLOSURE",
+        "reasoning_error_explanation": "Attributed symptoms to benign cause (normal post-op response) without adequately considering more serious alternatives",
+        "defendant_ignored_evidence": [
+          "Post-operative fever",
+          "Post-operative pain beyond expected",
+          "Surgical approach proximity to bowel"
+        ],
+        "what_triggered_error": "Anchoring on expectation that symptoms were normal post-operative course",
+        "differential_at_decision": [
+          "Normal post-operative inflammatory response",
+          "Bowel perforation",
+          "Surgical site infection",
+          "Intra-abdominal abscess"
+        ]
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Sigmoid colon perforation discovered 3 days post-op. Required four additional surgeries, ostomy, 30-day hospitalization, and developed permanent medical conditions.",
+        "severity": "PERMANENT_MODERATE_DISABILITY",
+        "long_term_effects": "Permanent medical conditions from delayed treatment of bowel perforation",
+        "evidence_ids": [
+          "E006",
+          "E007"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "REVERSED_REMANDED",
+        "damages_awarded": "Not determined - case remanded for retrial",
+        "key_findings": [
+          "Michigan Supreme Court reversed lower court's exclusion of plaintiff's expert witness",
+          "Case remanded for retrial on malpractice claims"
+        ],
+        "evidence_ids": [
+          "E011"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": null,
+        "causation_established": null,
+        "point_of_failure": "Failure to investigate post-operative fever and pain with appropriate imaging, resulting in 2-day delay in diagnosis of bowel perforation",
+        "counterfactual": "Earlier CT imaging would have revealed perforation sooner, potentially reducing number of required surgeries and severity of permanent disability",
+        "evidence_ids": [
+          "E002",
+          "E004",
+          "E005"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "2015",
+        "event": "Patient sustains work-related back injury",
+        "actor": "Patient",
+        "location": null,
+        "evidence_ids": []
+      },
+      {
+        "timestamp": "December 7, 2015",
+        "event": "First XLIF surgery performed on L3-L4",
+        "actor": "Dr. Fahim and Dr. D'Andrea",
+        "location": "Beaumont Hospital",
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "December 8, 2015",
+        "event": "Patient develops pain and fever - dismissed as normal post-op response",
+        "actor": "Dr. Fahim",
+        "location": "Beaumont Hospital",
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "December 9, 2015",
+        "event": "Second planned spinal surgery performed",
+        "actor": "Dr. Fahim",
+        "location": "Beaumont Hospital",
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "timestamp": "December 10, 2015",
+        "event": "Patient deteriorates - redness at incision, elevated temp/BP, transferred to ICU",
+        "actor": null,
+        "location": "Beaumont Hospital ICU",
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "timestamp": "December 10, 2015",
+        "event": "CT scan reveals free air and material outside colon",
+        "actor": null,
+        "location": "Beaumont Hospital",
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "timestamp": "December 10, 2015",
+        "event": "Emergency surgery reveals sigmoid colon perforation with stool leakage",
+        "actor": "Dr. Anthony Iacco",
+        "location": "Beaumont Hospital",
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "timestamp": "December 10-16, 2015",
+        "event": "Four additional surgeries to repair perforation and complications",
+        "actor": null,
+        "location": "Beaumont Hospital",
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      {
+        "timestamp": "January 6, 2016",
+        "event": "Patient discharged after 30-day hospitalization",
+        "actor": null,
+        "location": "Beaumont Hospital",
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "CT Abdomen/Pelvis",
+        "date": "December 10, 2015",
+        "result": "Free air and free material outside the colon",
+        "interpretation": "Bowel perforation",
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Sigmoid colon perforation",
+        "when_made": "December 10, 2015 (post-op day 3)",
+        "made_by": "Dr. Anthony Iacco",
+        "correct": true,
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "XLIF spinal surgery (planned)",
+        "date": "December 7, 2015",
+        "provider": "Dr. Fahim, Dr. D'Andrea",
+        "outcome": "Complicated by unrecognized bowel perforation",
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "treatment": "Second spinal surgery (planned)",
+        "date": "December 9, 2015",
+        "provider": "Dr. Fahim",
+        "outcome": "Performed despite warning signs",
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "treatment": "Emergency surgical repair with ostomy",
+        "date": "December 10, 2015",
+        "provider": "Dr. Anthony Iacco",
+        "outcome": "Perforation repaired, stool diverted",
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "treatment": "Four additional surgeries",
+        "date": "December 10-16, 2015",
+        "provider": null,
+        "outcome": "Required to address complications",
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Sigmoid colon perforation",
+        "when_occurred": "During or immediately after December 7, 2015 surgery",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "complication": "Fecal contamination of peritoneum",
+        "when_occurred": "December 7-10, 2015",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "complication": "Permanent medical conditions",
+        "when_occurred": "Ongoing",
+        "severity": "Permanent moderate disability",
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to diagnose bowel perforation in timely manner",
+        "against": "Dr. Fahim",
+        "found_proven": null,
+        "evidence_ids": [
+          "E002",
+          "E008"
+        ]
+      },
+      {
+        "allegation": "Dismissing post-operative warning signs as normal",
+        "against": "Dr. Fahim",
+        "found_proven": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Trial court improperly excluded plaintiff's expert witness",
+        "legal_significance": "Case reversed and remanded for retrial",
+        "evidence_ids": [
+          "E011"
+        ]
+      }
+    ],
+    "malpractice_analysis": {
+      "key_teaching_point": "Post-operative fever and pain after retroperitoneal spinal surgery should prompt investigation for bowel injury. XLIF approaches pass near the sigmoid colon, and bowel perforation, while rare (<1%), requires prompt diagnosis to minimize harm."
+    }
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": [
+      "DELAYED_DIAGNOSIS",
+      "FAILURE_TO_ORDER_DIAGNOSTIC_TEST"
+    ],
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.85,
+    "simulation_completeness": 0.9,
+    "decision_point_quality": "high",
+    "missing_elements": [
+      "Patient age not specified in judgment",
+      "Specific vital sign values not documented"
+    ],
+    "warnings": [
+      "Case was reversed and remanded - no final liability determination"
+    ],
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 09:11:38.929340",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": true,
+    "revision_notes": "Manually revised to reframe as post-operative monitoring scenario. Original extraction incorrectly focused on intraoperative technique. Key teaching point is recognition of post-op warning signs of bowel perforation after retroperitoneal surgery."
+  }
+}

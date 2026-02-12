@@ -1,0 +1,391 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10697266",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2024-02-05",
+  "url": "https://example.com/courtlistener-10697266",
+  "case_name": "Justin Estess, M.D. v. Forrest Health System, Forrest General Hospital and Pine Grove Behavioral Health & Addiction Services",
+  "neutral_citation": null,
+  "clinical_domain": "PSYCHIATRY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Justin Estess, M.D. v. Forrest Health System, Forrest General Hospital and Pine Grove Behavioral Health & Addiction Services. Medical malpractice case involving psychiatry.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Estess is a licensed physician in Mississippi with a specialization in anesthesiology",
+      "paragraph_ref": "15",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "From February 2017 through June 2017, Estess underwent treatment through Pine Grove\u2019s Next Step and PEP program.",
+      "paragraph_ref": "43",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "Estess was given a total of seven polygraph tests and two EyeDetect tests.",
+      "paragraph_ref": "47",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "Following Estess\u2019s re-evaluation, Estess said that Pine Grove made a recommendation to MPHP that he was not currently fit to practice medicine",
+      "paragraph_ref": "58",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "On June 29, 2020, Estess sent Notice of Claim letters to Andy Woodard, Chief Executive Officer of Forrest Health System and Forrest General Hospital",
+      "paragraph_ref": "71",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "LEGAL_FINDING",
+      "text": "The court found that FGH met its burden for summary judgment because Estess lacked expert testimony to meet the elements of medical negligence",
+      "paragraph_ref": "243",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "LEGAL_FINDING",
+      "text": "Therefore, the trial court did not err when dismissing Estess\u2019s claims of breach of contract and tortious breach of contract.",
+      "paragraph_ref": "531",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "COURT_REASONING",
+      "text": "To distinguish between malpractice claims and ordinary negligence, a court should consider whether the claim involves a professional relationship",
+      "paragraph_ref": "313",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "COURT_REASONING",
+      "text": "Accordingly, the layman\u2019s exception does not apply to \u201csituations involving judgment calls",
+      "paragraph_ref": "345",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "LEGAL_FINDING",
+      "text": "AFFIRMED.",
+      "paragraph_ref": "536",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "unknown",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Not documented in judgment",
+      "history_of_present_illness": "Patient was undergoing treatment for opioid addiction and was evaluated for fitness to practice medicine.",
+      "past_medical_history": [
+        "Opioid Use Disorder",
+        "Back injury"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "system": "Examination mentioned but findings not specified"
+        }
+      },
+      "initial_working_problem": "Evaluation for fitness to practice medicine",
+      "known_constraints": null,
+      "initial_differential": [
+        "Opioid Use Disorder management"
+      ],
+      "critical_findings": [
+        "Failed polygraph tests"
+      ],
+      "urgency_level": "Not documented in judgment",
+      "evidence_ids": [
+        "E002",
+        "E004",
+        "E005"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSULT_NOTE",
+        "name": "Addiction Treatment Evaluation",
+        "description": "Evaluation of patient's progress in addiction treatment",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Patient not fit to practice medicine; additional treatment recommended",
+          "detailed_findings": null,
+          "clinical_significance": "Determines patient's ability to resume medical practice",
+          "decision_impact": "Led to extension of treatment and restricted medical license",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E004",
+          "E058"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "workup",
+        "name": "Addiction Treatment Evaluation",
+        "description": "Patient undergoes evaluation for fitness to practice medicine",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Polygraph tests conducted",
+            "timestamp": "Not documented in judgment",
+            "evidence_ids": [
+              "E003"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Evaluation of patient's fitness to practice medicine",
+        "prompt": "What should be the basis for determining fitness to practice?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Use comprehensive medical and psychological evaluation",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Comprehensive evaluation provides a holistic view of patient's readiness"
+          },
+          {
+            "option_id": "B",
+            "description": "Rely primarily on polygraph test results",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Polygraph tests are unreliable for this purpose"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant relied on polygraph test results",
+          "reasoning_stated": "Defendant believed polygraph tests were sufficient",
+          "evidence_ids": [
+            "E058",
+            "E082"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Comprehensive evaluation should have been used",
+          "standard_of_care_basis": "Expert evidence established comprehensive evaluation is standard",
+          "evidence_ids": [
+            "E008",
+            "E009"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Based on evidence E008-E009",
+          "what_should_have_happened": "Comprehensive evaluation should have been conducted",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E008",
+            "E009",
+            "E010"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Not documented in judgment",
+        "severity": "Not documented in judgment",
+        "long_term_effects": "Not documented in judgment",
+        "evidence_ids": []
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "Not applicable",
+        "key_findings": [
+          "Breach of contract claim dismissed due to lack of evidence",
+          "Summary judgment in favor of Forrest General Hospital"
+        ],
+        "evidence_ids": [
+          "E006",
+          "E007",
+          "E531",
+          "E535"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Failure to provide valid contract evidence",
+        "counterfactual": "Not applicable",
+        "evidence_ids": [
+          "E006",
+          "E007",
+          "E531",
+          "E535"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "Not documented in judgment",
+        "event": "Patient undergoes polygraph tests",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Polygraph",
+        "date": "Not documented in judgment",
+        "result": "Failed",
+        "interpretation": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Opioid Use Disorder",
+        "when_made": "2017",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E018"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Addiction treatment program",
+        "date": "2017",
+        "provider": null,
+        "outcome": "Not fit to practice medicine",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "License restriction",
+        "when_occurred": "Not documented in judgment",
+        "severity": "Not documented in judgment",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Improper reliance on polygraph tests",
+        "against": "Forrest General Hospital",
+        "found_proven": true,
+        "evidence_ids": [
+          "E082"
+        ]
+      },
+      {
+        "allegation": "Breach of contract",
+        "against": "Forrest General Hospital",
+        "found_proven": false,
+        "evidence_ids": [
+          "E006",
+          "E007",
+          "E531",
+          "E535"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "finding": "Summary judgment in favor of Forrest General Hospital",
+        "legal_significance": "No breach of contract established",
+        "evidence_ids": [
+          "E006",
+          "E007",
+          "E531",
+          "E535"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.01858736059479554,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 08:07:17.338828",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

@@ -1,0 +1,408 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "bailii-qb-2021-2525-html",
+  "source": "BAILII",
+  "jurisdiction": "UK",
+  "court": "Unknown",
+  "decision_date": "2021-05-28",
+  "url": "https://example.com/bailii-qb-2021-2525-html",
+  "case_name": "Bond   v Specsavers International Healthcare Ltd & Anor [2021] EWHC 2525 (QB) (28 May 2021)",
+  "neutral_citation": "[2021] EWHC 2525",
+  "clinical_domain": "PAEDIATRICS",
+  "outcome_severity": "TEMPORARY_HARM",
+  "summary": {
+    "brief": "Medical malpractice case involving paediatrics.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "The claimant, Mr Jonathan Bond, was born on 25 March 1996. On 2 September 2012, when 16 years old, Mr Bond attended a branch of the first defendant, Specsavers in Accrington for an appointment.",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Mr Bond described getting headaches in 2008 to 2009. He was referred to hospital for this and other potentially unrelated problems.",
+      "paragraph_ref": "15",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Expert evidence of optometry was provided by Ms Gillian Whitby, instructed on behalf of Mr Bond, and Mr Ian Cameron, instructed on behalf of Mr Moustafa.",
+      "paragraph_ref": "41",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "LEGAL_FINDING",
+      "text": "In circumstances where I conclude on balance that further investigation was not undertaken by Mr Moustafa, it follows from that agreed position (which I accept) that Mr Moustafa should have referred Mr Bond.",
+      "paragraph_ref": "42",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "Mr Bond's evidence was that his headaches continued on a regular basis.",
+      "paragraph_ref": "16",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "Mr Bond's evidence was that initially, Specsavers told his mother that his previous eye test was done in October 2011 and therefore, he was not due an eye test until October 2012.",
+      "paragraph_ref": "17",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "Mr Bond's evidence was that he explained to Mr Moustafa that he had been having difficult with his eyesight during his revision and exams and over the summer and had been having lots of bad headaches.",
+      "paragraph_ref": "19",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "FACTUAL_FINDING",
+      "text": "A further appointment with Specsavers Accrington on 21 March 2013 followed. This was not with Mr Moustafa.",
+      "paragraph_ref": "21",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "FACTUAL_FINDING",
+      "text": "His referral to hospital was to the Royal Preston Hospital on 4 April 2013.",
+      "paragraph_ref": "22",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "EXPERT_TESTIMONY",
+      "text": "The experts differed on their opinion as to the progression of the keratoconus, including acceleration of progression in this case.",
+      "paragraph_ref": "60",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E011",
+      "type": "LEGAL_FINDING",
+      "text": "I am persuaded that on the balance of probabilities, had Mr Bond been referred in September 2012, cross-linking treatment would have been offered to him by November 2012.",
+      "paragraph_ref": "67",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E012",
+      "type": "LEGAL_FINDING",
+      "text": "The balance of probabilities is that he then would have avoided corneal transplant surgery.",
+      "paragraph_ref": "68",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "16 years",
+        "sex": "male",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Deteriorating eyesight and frequent headaches",
+      "history_of_present_illness": "Mr. Bond reported worsening vision and frequent headaches during his GCSE revision period.",
+      "past_medical_history": [
+        "Headaches since 2008-2009"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "eyes": "Large change in astigmatism in the left eye since previous appointment"
+        }
+      },
+      "initial_working_problem": "Vision problems with possible underlying pathology",
+      "known_constraints": null,
+      "initial_differential": [
+        "Keratoconus",
+        "Refractive error"
+      ],
+      "critical_findings": [
+        "Large change in astigmatism"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002",
+        "E005",
+        "E007"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSULT_NOTE",
+        "name": "Optometry Consultation",
+        "description": "Consultation with optometrist Mr. Moustafa",
+        "available_phase": "presentation",
+        "reveal": {
+          "result_summary": "New glasses prescribed, large change in astigmatism noted",
+          "detailed_findings": null,
+          "clinical_significance": "Significant change in astigmatism should prompt further investigation",
+          "decision_impact": "Referral to ophthalmology should have been considered",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E013",
+          "E037"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Optometry Visit",
+        "description": "Patient presents to optometrist with vision issues",
+        "duration": "1 hour",
+        "key_events": [
+          {
+            "event": "Optometry examination",
+            "timestamp": "2 September 2012",
+            "evidence_ids": [
+              "E013"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "followup",
+        "name": "Subsequent Hospital Referral",
+        "description": "Patient referred to hospital for further evaluation",
+        "duration": "1 month",
+        "key_events": [
+          {
+            "event": "Referral to Royal Preston Hospital",
+            "timestamp": "4 April 2013",
+            "evidence_ids": [
+              "E009"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "presentation",
+        "clinical_context": "Patient presents with significant change in astigmatism",
+        "prompt": "What should be the next step in management?",
+        "action_type": "REFER",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Refer to ophthalmology for further evaluation",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Significant change in astigmatism suggests possible keratoconus, requiring specialist evaluation"
+          },
+          {
+            "option_id": "B",
+            "description": "Prescribe new glasses and schedule routine follow-up",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Failed to address potential underlying pathology"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant prescribed new glasses and set a 24-month follow-up",
+          "reasoning_stated": "Defendant did not recognize the need for further investigation",
+          "evidence_ids": [
+            "E034",
+            "E035"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Referral to ophthalmology should have been made",
+          "standard_of_care_basis": "Expert evidence indicated referral was necessary",
+          "evidence_ids": [
+            "E037",
+            "E041"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failed to refer despite significant astigmatism change",
+          "what_should_have_happened": "Referral to ophthalmology for potential keratoconus",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E037",
+            "E041"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient required corneal transplant surgery",
+        "severity": "PERMANENT_MODERATE_DISABILITY",
+        "long_term_effects": "Chronic visual impairment",
+        "evidence_ids": [
+          "E012",
+          "E049"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Breach of duty in failing to refer for further investigation",
+          "Causation established - earlier referral would have prevented severe outcomes"
+        ],
+        "evidence_ids": [
+          "E040",
+          "E067"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to refer for further investigation",
+        "counterfactual": "Referral would have led to timely treatment",
+        "evidence_ids": [
+          "E040",
+          "E067"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "2 September 2012",
+        "event": "Patient attends optometry appointment",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E013"
+        ]
+      },
+      {
+        "timestamp": "4 April 2013",
+        "event": "Patient referred to Royal Preston Hospital",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E009"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Optometry examination",
+        "date": "2 September 2012",
+        "result": "Significant change in astigmatism",
+        "interpretation": null,
+        "evidence_ids": [
+          "E013"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Keratoconus",
+        "when_made": "4 April 2013",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E009"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Corneal transplant",
+        "date": "8 August 2018",
+        "provider": null,
+        "outcome": "Transplant completed",
+        "evidence_ids": [
+          "E049"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Chronic visual impairment",
+        "when_occurred": "Post-transplant",
+        "severity": "Moderate",
+        "evidence_ids": [
+          "E049"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to refer for further investigation",
+        "against": "Defendant optometrist",
+        "found_proven": true,
+        "evidence_ids": [
+          "E040"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E040"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.16666666666666666,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 07:22:58.160666",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

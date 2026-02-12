@@ -1,0 +1,447 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "nzlii-nzhpdt-2016-760-html",
+  "source": "BAILII",
+  "jurisdiction": "UK",
+  "court": "Unknown",
+  "decision_date": "2016-02-05",
+  "url": "https://example.com/nzlii-nzhpdt-2016-760-html",
+  "case_name": "15.         The  Director  submitted  that  the  facts  established  that \nthere  was  professional misconduct both under both section\n100(1)(a) and\n100(1)(b) of the HPCA Act. Referring to authorities she relied onMartin v\nDirector of Proceedings3and the rejection by the\nCourt of Appeal ofPillai v Messiter4as raising\n\u201ctoo high a threshold\u201d and relied rather onF v Medical\nPractitioners Disciplinary Tribunal.5",
+  "neutral_citation": null,
+  "clinical_domain": "OBSTETRICS_GYNAECOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "15.         The  Director  submitted  that  the  facts  established  that \nthere  was  professional misconduct both under both section\n100(1)(a) and\n100(1)(b) of the HPCA Act. Referring to authorities she relied onMartin v\nDirector of Proceedings3and the rejection by the\nCourt of Appeal ofPillai v Messiter4as raising\n\u201ctoo high a threshold\u201d and relied rather onF v Medical\nPractitioners Disciplinary Tribunal.5. Medical malpractice case involving obstetrics gynaecology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "The Charge alleged malpractice or negligence or conduct which brought discredit to the medical profession under the HPCA Act",
+      "paragraph_ref": "2",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "LEGAL_FINDING",
+      "text": "The Tribunal is of the view that the Charge is not made out in respect of any of its Particulars and it is dismissed.",
+      "paragraph_ref": "4",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr Love\u2019s evidence also was that he had never heard of surgical stimulation in a patient with an adequate regional anaesthetic causing leg movement.",
+      "paragraph_ref": "120",
+      "speaker": "Dr Love"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "WITNESS_STATEMENT",
+      "text": "Mrs S described her relief after the baby had been delivered, having been exhausted and crying and \u201c in a lot of pain. \u201d",
+      "paragraph_ref": "87",
+      "speaker": "Mrs S"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "COURT_REASONING",
+      "text": "There is a significant element of judgment call about Dr N\u2019s response to the situation as he perceived it.",
+      "paragraph_ref": "144",
+      "speaker": "Tribunal"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "LEGAL_FINDING",
+      "text": "The conclusion that the Tribunal has reached is that there is insufficient evidence that there were non-verbal indicators of pain or verbal complaints of pain",
+      "paragraph_ref": "160",
+      "speaker": "Tribunal"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "The baby was delivered at 6.44 p.m, that is 4 minutes after the skin incision which Dr A described as acceptable and reasonable incision delivery interval.",
+      "paragraph_ref": "30",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr Jones said that, based on the first blood pressure record at 6.22 p.m. and the top-up of epidural at 6.24 p.m.",
+      "paragraph_ref": "54",
+      "speaker": "Dr Jones"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "WITNESS_STATEMENT",
+      "text": "Ms Mitchell said that just before the operation commenced Ms Johnson noticed Mrs S\u2019s legs move and she saw that too;",
+      "paragraph_ref": "103",
+      "speaker": "Ms Mitchell"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "LEGAL_FINDING",
+      "text": "The Charge against him and each of its three Particulars are therefore dismissed.",
+      "paragraph_ref": "197",
+      "speaker": "Tribunal"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Stay-at-home mother"
+      },
+      "chief_complaint": "Preparation for emergency caesarean section",
+      "history_of_present_illness": "Mrs S was initially planned for a vaginal delivery but due to non-reassuring CTG trace, it was decided to proceed with a caesarean section.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "180/104 before lignocaine administration",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "abdomen": "Not documented in judgment"
+        }
+      },
+      "initial_working_problem": "Preparation for caesarean section",
+      "known_constraints": null,
+      "initial_differential": [
+        "Not applicable"
+      ],
+      "critical_findings": [
+        "Non-reassuring CTG trace"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E109",
+        "E110",
+        "E111"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSULT_NOTE",
+        "name": "Anaesthetist's assessment",
+        "description": "Assessment of patient's pain and anaesthesia level",
+        "available_phase": "procedure",
+        "reveal": {
+          "result_summary": "Patient reported discomfort, anaesthetist assessed as manageable",
+          "detailed_findings": null,
+          "clinical_significance": "Assessment influenced decision not to alter anaesthetic plan",
+          "decision_impact": "No additional anaesthesia was administered",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E105",
+          "E106",
+          "E107"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "procedure",
+        "name": "Caesarean Section",
+        "description": "Surgical delivery of the baby",
+        "duration": "4 minutes for delivery, 45 minutes for suturing",
+        "key_events": [
+          {
+            "event": "Surgery commenced",
+            "timestamp": "6:40 p.m.",
+            "evidence_ids": [
+              "E091"
+            ]
+          },
+          {
+            "event": "Baby delivered",
+            "timestamp": "6:44 p.m.",
+            "evidence_ids": [
+              "E096"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "procedure",
+        "clinical_context": "Patient experiencing pain during caesarean section",
+        "prompt": "What should the anaesthetist do in response to the patient's pain?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Administer additional anaesthesia or analgesia",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "To manage patient's pain effectively during surgery"
+          },
+          {
+            "option_id": "B",
+            "description": "Continue with current anaesthetic plan",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Anaesthetist assessed pain as manageable"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Anaesthetist continued with current anaesthetic plan",
+          "reasoning_stated": "Pain assessed as manageable",
+          "evidence_ids": [
+            "E105",
+            "E106",
+            "E107"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Additional anaesthesia should have been administered",
+          "standard_of_care_basis": "Expert evidence suggested inadequate pain management",
+          "evidence_ids": [
+            "E113",
+            "E114"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Pain management was inadequate as per expert testimony",
+          "what_should_have_happened": "Additional anaesthesia or analgesia should have been considered",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E113",
+            "E114",
+            "E115"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Not documented in judgment",
+        "severity": "Not documented in judgment",
+        "long_term_effects": "Not documented in judgment",
+        "evidence_ids": []
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "Not applicable",
+        "key_findings": [
+          "The Tribunal finds that there has not been such misconduct on Dr N\u2019s part.",
+          "The Charge against him and each of its three Particulars are therefore dismissed."
+        ],
+        "evidence_ids": [
+          "E002",
+          "E010"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Not applicable",
+        "counterfactual": "Not applicable",
+        "evidence_ids": [
+          "E002",
+          "E010"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "15 February 2013",
+        "event": "Decision to proceed with caesarean section",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E109",
+          "E110"
+        ]
+      },
+      {
+        "timestamp": "6:40 p.m.",
+        "event": "Surgery commenced",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E091"
+        ]
+      },
+      {
+        "timestamp": "6:44 p.m.",
+        "event": "Baby delivered",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E096"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Ice test for anaesthesia level",
+        "date": "15 February 2013",
+        "result": "Patient reported sensation below T4",
+        "interpretation": null,
+        "evidence_ids": [
+          "E109",
+          "E110"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Inadequate anaesthesia during caesarean",
+        "when_made": "During procedure",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E109",
+          "E110"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Caesarean section",
+        "date": "15 February 2013",
+        "provider": null,
+        "outcome": "Baby delivered",
+        "evidence_ids": [
+          "E109",
+          "E110"
+        ]
+      },
+      {
+        "treatment": "Caesarean section",
+        "date": "Not documented in judgment",
+        "provider": null,
+        "outcome": "Baby delivered",
+        "evidence_ids": [
+          "E096"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Pain during surgery",
+        "when_occurred": "During procedure",
+        "severity": "Moderate",
+        "evidence_ids": [
+          "E109",
+          "E110"
+        ]
+      },
+      {
+        "complication": "Significant pain during surgery",
+        "when_occurred": "During procedure",
+        "severity": "Moderate",
+        "evidence_ids": [
+          "E148",
+          "E149"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to ensure adequate anaesthesia",
+        "against": "Dr N",
+        "found_proven": false,
+        "evidence_ids": [
+          "E002",
+          "E010"
+        ]
+      },
+      {
+        "allegation": "Failure to manage pain adequately",
+        "against": "Dr N",
+        "found_proven": false,
+        "evidence_ids": [
+          "E160"
+        ]
+      },
+      {
+        "allegation": "Misconduct or negligence",
+        "against": "Dr N",
+        "found_proven": false,
+        "evidence_ids": [
+          "E002",
+          "E010"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Charge not made out",
+        "legal_significance": "No breach of professional standards",
+        "evidence_ids": [
+          "E002",
+          "E010"
+        ]
+      },
+      {
+        "finding": "No malpractice or negligence found",
+        "legal_significance": "Insufficient evidence of breach",
+        "evidence_ids": [
+          "E160"
+        ]
+      },
+      {
+        "finding": "The Tribunal finds that there has not been such misconduct on Dr N\u2019s part.",
+        "legal_significance": "No breach of standards requiring disciplinary sanction",
+        "evidence_ids": [
+          "E002",
+          "E010"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.022123893805309734,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 09:50:48.328078",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

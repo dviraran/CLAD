@@ -1,0 +1,363 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "nzlii-nzhpdt-2010-316-html",
+  "source": "BAILII",
+  "jurisdiction": "UK",
+  "court": "Unknown",
+  "decision_date": "2010-04-01",
+  "url": "https://example.com/nzlii-nzhpdt-2010-316-html",
+  "case_name": "(b)The maintenance of professional standards.This is referred\nto inDentice v The  Valuers  Registration  Board[1991] NZHC 1689;[1992]  1 NZLR  720, \n724-725  and inB v Medical  Council  of New  Zealand[2005]  3 NZLR \np.180  L.48  High  Court, Elias J.",
+  "neutral_citation": "[2005]\nEWHC 2143",
+  "clinical_domain": "ONCOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "(b)The maintenance of professional standards.This is referred\nto inDentice v The  Valuers  Registration  Board[1991] NZHC 1689;[1992]  1 NZLR  720, \n724-725  and inB v Medical  Council  of New  Zealand[2005]  3 NZLR \np.180  L.48  High  Court, Elias J.. Medical malpractice case involving oncology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr Stubbs stated he accepted \u201cabsolutely\u201d the decision of the Tribunal which found he had no right to proceed with Mr N\u2019s surgery once he knew the risks to his patient were substantially greater than those he had previously outlined to him.",
+      "paragraph_ref": "7",
+      "speaker": "Dr Stubbs"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "LEGAL_FINDING",
+      "text": "The Tribunal had found the charge proved, the presumption of innocence no longer applied.",
+      "paragraph_ref": "32",
+      "speaker": "Tribunal"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr Stubbs failed to inform adequately his patient in that case of the possible serious complications and risks and adverse effects of performing a revision gastric bypass so that the patient was unable to make an informed choice as to whether to undertake the surgery.",
+      "paragraph_ref": "29",
+      "speaker": "Tribunal"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "LEGAL_FINDING",
+      "text": "The conduct alleged in paragraphs 1 to 2 either separately or cumulatively amounts to professional misconduct.",
+      "paragraph_ref": "35",
+      "speaker": "Tribunal"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "The Tribunal\u2019s findings gave rise to serious concerns about the quality of the care provided by Dr Stubbs and therefore raised serious public safety issues.",
+      "paragraph_ref": "40",
+      "speaker": "Tribunal"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "LEGAL_FINDING",
+      "text": "The Tribunal now makes orders prohibiting, on a permanent basis, the publication of the names of the following persons who were referred to at the substantive hearing.",
+      "paragraph_ref": "157",
+      "speaker": "Tribunal"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "unknown",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Not documented in judgment",
+      "history_of_present_illness": "Patient was scheduled for elective gastric bypass surgery.",
+      "past_medical_history": [
+        "Not documented in judgment"
+      ],
+      "medications": [
+        "Not documented in judgment"
+      ],
+      "allergies": [
+        "Not documented in judgment"
+      ],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "system": "Examination mentioned but findings not specified"
+        }
+      },
+      "initial_working_problem": "Patient scheduled for elective gastric bypass surgery.",
+      "known_constraints": null,
+      "initial_differential": [
+        "Not documented in judgment"
+      ],
+      "critical_findings": [
+        "Abnormal liver function tests"
+      ],
+      "urgency_level": "ELECTIVE",
+      "evidence_ids": [
+        "E003",
+        "E005"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "LAB",
+        "name": "Liver Function Tests",
+        "description": "Assessment of liver function prior to surgery",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Abnormal liver function",
+          "detailed_findings": null,
+          "clinical_significance": "Increased risk of complications during surgery",
+          "decision_impact": "Should have prompted further investigation or discussion with the patient",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Pre-operative Assessment",
+        "description": "Patient assessed for elective gastric bypass surgery",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Liver function tests performed",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E003"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Pre-surgery Workup",
+        "description": "Review of pre-operative tests and decision to proceed with surgery",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Decision to proceed with surgery despite abnormal liver function",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E003",
+              "E005"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient scheduled for elective gastric bypass surgery with abnormal liver function tests",
+        "prompt": "What should be done upon discovering abnormal liver function tests?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Proceed with surgery without informing the patient",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Defendant believed it was in the patient's best interest to proceed"
+          },
+          {
+            "option_id": "B",
+            "description": "Inform the patient of the abnormal results and discuss increased risks",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Patient autonomy and informed consent are critical"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "A",
+          "description": "Defendant proceeded with surgery without informing the patient",
+          "reasoning_stated": "Believed it was in the patient's best interest",
+          "evidence_ids": [
+            "E003",
+            "E005"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "B",
+          "description": "Patient should have been informed of the abnormal liver function and associated risks",
+          "standard_of_care_basis": "Informed consent is a fundamental patient right",
+          "evidence_ids": [
+            "E003",
+            "E005"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to obtain informed consent is a breach of patient rights",
+          "what_should_have_happened": "Patient should have been informed and consent obtained",
+          "legal_standard_applied": "Bolam test",
+          "evidence_ids": [
+            "E003",
+            "E005"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient faced increased risk of complications due to surgery with abnormal liver function",
+        "severity": "Not documented in judgment",
+        "long_term_effects": "Not documented in judgment",
+        "evidence_ids": [
+          "E003",
+          "E005"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Breach of duty in failing to obtain informed consent",
+          "Causation established - increased risk not communicated to patient"
+        ],
+        "evidence_ids": [
+          "E003",
+          "E005"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to inform patient of abnormal liver function and associated risks",
+        "counterfactual": "Patient should have been informed and consent obtained",
+        "evidence_ids": [
+          "E003",
+          "E005"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Liver function tests performed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Liver Function Tests",
+        "date": "Date not specified in judgment",
+        "result": "Abnormal",
+        "interpretation": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Abnormal liver function",
+        "when_made": "Date not specified in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Gastric bypass surgery",
+        "date": "Date not specified in judgment",
+        "provider": null,
+        "outcome": "Increased risk due to abnormal liver function",
+        "evidence_ids": [
+          "E003",
+          "E005"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Increased risk of postoperative complications",
+        "when_occurred": "During surgery",
+        "severity": "Not documented in judgment",
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to obtain informed consent",
+        "against": "Dr Stubbs",
+        "found_proven": true,
+        "evidence_ids": [
+          "E003",
+          "E005"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E003",
+          "E005"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "INFORMED_CONSENT",
+      "DOCUMENTATION"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.015625,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 15:44:44.416970",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

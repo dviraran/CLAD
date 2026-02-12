@@ -1,0 +1,294 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "nzlii-nzmpdt-2000-124-html",
+  "source": "BAILII",
+  "jurisdiction": "UK",
+  "court": "Unknown",
+  "decision_date": "2000-08-04",
+  "url": "https://example.com/nzlii-nzmpdt-2000-124-html",
+  "case_name": "Stubbs [2000] NZMPDT 124 (4 August 2000)",
+  "neutral_citation": null,
+  "clinical_domain": "CARDIOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Medical malpractice case involving cardiology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr Stubbs failed adequately to inform the complainant of the possible risks and adverse effects of certain proposed surgery",
+      "paragraph_ref": "1",
+      "speaker": "Tribunal finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "LEGAL_FINDING",
+      "text": "It dismissed a charge of professional misconduct but found that the proven conduct was conduct unbecoming a medical practitioner",
+      "paragraph_ref": "4",
+      "speaker": "Tribunal finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "COURT_REASONING",
+      "text": "Obtaining it is at the heart of the practice of medicine. It is a fundamental aspect of proper medical practice",
+      "paragraph_ref": "4",
+      "speaker": "Tribunal reasoning"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "LEGAL_FINDING",
+      "text": "Dr Richard Strawson Stubbs, having been guilty of conduct unbecoming a medical practitioner which conduct reflects adversely on his fitness to practise medicine",
+      "paragraph_ref": "76",
+      "speaker": "Tribunal conclusion"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "The conduct which the Tribunal has found proven in this case occurred in 1993",
+      "paragraph_ref": "2",
+      "speaker": "Tribunal finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "LEGAL_FINDING",
+      "text": "a fine of 70% of the available maximum, i.e. $700, should be imposed on Dr Stubbs",
+      "paragraph_ref": "6",
+      "speaker": "Tribunal conclusion"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr Stubbs has already endured considerable publicity (prior to, during and since the hearing)",
+      "paragraph_ref": "58",
+      "speaker": "Tribunal finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "COURT_REASONING",
+      "text": "the Tribunal considers it unlikely that he will re-offend",
+      "paragraph_ref": "7",
+      "speaker": "Tribunal reasoning"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "LEGAL_FINDING",
+      "text": "pay $24,000 towards the costs and expenses of and incidental to the inquiry",
+      "paragraph_ref": "78",
+      "speaker": "Tribunal conclusion"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "COURT_REASONING",
+      "text": "the Tribunal is indebted to counsel for their helpful submissions",
+      "paragraph_ref": "3",
+      "speaker": "Tribunal reasoning"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "unknown",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Not documented in judgment",
+      "history_of_present_illness": "Not documented in judgment",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "system": "Examination mentioned but findings not specified"
+        }
+      },
+      "initial_working_problem": "Not documented in judgment",
+      "known_constraints": null,
+      "initial_differential": [],
+      "critical_findings": [],
+      "urgency_level": "Not documented in judgment",
+      "evidence_ids": []
+    },
+    "requestables": [],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Consultation",
+        "description": "Patient consults Dr. Stubbs for surgical evaluation",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Consultation with Dr. Stubbs",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "decision",
+        "clinical_context": "Pre-operative consultation for surgery",
+        "prompt": "What should be discussed with the patient regarding the surgery?",
+        "action_type": "DISCLOSE_ALTERNATIVES",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Discuss all potential risks, including the possibility of extended hospital stay and further surgery",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Ensures informed consent by discussing material risks"
+          },
+          {
+            "option_id": "B",
+            "description": "Do not discuss potential risks of extended hospital stay and further surgery",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Failed to provide full information for informed consent"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant did not inform the patient of the material risks",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E001",
+            "E003"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Full disclosure of risks should have been provided",
+          "standard_of_care_basis": "Informed consent is a fundamental aspect of medical practice",
+          "evidence_ids": [
+            "E003"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to inform the patient of material risks prevented informed consent",
+          "what_should_have_happened": "Patient should have been informed of all material risks to make an informed decision",
+          "legal_standard_applied": "Informed consent requirement",
+          "evidence_ids": [
+            "E001",
+            "E003"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient experienced serious complications post-surgery",
+        "severity": "Not documented in judgment",
+        "long_term_effects": "Not documented in judgment",
+        "evidence_ids": []
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "700",
+        "key_findings": [
+          "Failure to obtain informed consent",
+          "Conduct unbecoming a medical practitioner"
+        ],
+        "evidence_ids": [
+          "E004",
+          "E006"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": false,
+        "point_of_failure": "Failure to inform patient of material risks",
+        "counterfactual": "Patient would have made an informed decision if risks were disclosed",
+        "evidence_ids": [
+          "E001",
+          "E003"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Consultation with Dr. Stubbs",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [],
+    "treatments": [],
+    "complications": [],
+    "allegations": [
+      {
+        "allegation": "Failure to obtain informed consent",
+        "against": "Dr. Stubbs",
+        "found_proven": true,
+        "evidence_ids": [
+          "E001",
+          "E003"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Conduct unbecoming a medical practitioner",
+        "legal_significance": "Reflects adversely on fitness to practice",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "INFORMED_CONSENT"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.11904761904761904,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 08:14:20.372318",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

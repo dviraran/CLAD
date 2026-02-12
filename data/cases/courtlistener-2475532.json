@@ -1,0 +1,360 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-2475532",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2026-01-18",
+  "url": "https://example.com/courtlistener-2475532",
+  "case_name": "Bhagwant v. Kent School Corp.",
+  "neutral_citation": null,
+  "clinical_domain": "CARDIOLOGY",
+  "outcome_severity": "TEMPORARY_HARM",
+  "summary": {
+    "brief": "Bhagwant v. Kent School Corp.. Medical malpractice case involving cardiology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "The plaintiff, Rajinda Bhagwant, a resident of New York, initiated this action against the defendants, the Kent School Corporation (hereinafter \u201cKent\u201d), Joel Danisi, M.D., and Marie Savan, alleging medical malpractice and negligence.",
+      "paragraph_ref": "3",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "At approximately 4:10 p.m. on November 17, 2002, Bhagwant, a student at the school, arrived at the Infirmary complaining of a pain in his right groin, a bump on his right testicle, and a tender right abdomen, upper thigh, and lower thigh.",
+      "paragraph_ref": "24",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "During Bhagwant\u2019s visit to the Infirmary at 4:10 p.m., Savan did not examine Bhagwant\u2019s testicle or groin.",
+      "paragraph_ref": "25",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "Around 7:40 a.m. on the next day, Bhagwant returned to the Infirmary. At 11:00 a.m., Danisi examined Bhagwant and diagnosed him with epididymitis.",
+      "paragraph_ref": "27",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "Bhagwant underwent surgery at Lincoln Hospital to remove his right testicle on August 19, 2003.",
+      "paragraph_ref": "28",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Lynn\u2019s affidavit, also dated January 5, 2006, essentially states that Danisi departed from accepted medical practice on August 26, 2002, the day he signed Kent\u2019s standing orders.",
+      "paragraph_ref": "32",
+      "speaker": "Dr. Stephen Lynn"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "LEGAL_FINDING",
+      "text": "Therefore, Savan and Kent\u2019s Motion for Summary Judgment is denied.",
+      "paragraph_ref": "97",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "LEGAL_FINDING",
+      "text": "As a result, this court denies Danisi\u2019s Motion for Summary Judgment.",
+      "paragraph_ref": "272",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "male",
+        "relevant_social_history": "Student at Kent School"
+      },
+      "chief_complaint": "Pain in right groin, bump on right testicle, tender right abdomen, upper thigh, and lower thigh",
+      "history_of_present_illness": "Pain began by 12 noon on November 17, 2002",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "groin": "Not examined during initial visit",
+          "abdomen": "Tender right abdomen"
+        }
+      },
+      "initial_working_problem": "Groin pain with possible testicular involvement",
+      "known_constraints": null,
+      "initial_differential": [
+        "epididymitis",
+        "testicular torsion"
+      ],
+      "critical_findings": [
+        "Bump on right testicle",
+        "Tender right abdomen"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E002",
+        "E003"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSULT_NOTE",
+        "name": "Initial Infirmary Visit",
+        "description": "Documentation of initial visit to infirmary",
+        "available_phase": "presentation",
+        "reveal": {
+          "result_summary": "Patient presented with groin pain, bump on testicle, and tenderness",
+          "detailed_findings": null,
+          "clinical_significance": "Potential testicular torsion not ruled out",
+          "decision_impact": "Should have prompted immediate examination and possible referral",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E002",
+          "E003"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents to infirmary with acute symptoms",
+        "duration": "2 hours",
+        "key_events": [
+          {
+            "event": "Patient arrives at infirmary",
+            "timestamp": "4:10 p.m. on November 17, 2002",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "followup",
+        "name": "Follow-up and Diagnosis",
+        "description": "Subsequent visits and eventual diagnosis",
+        "duration": "Several months",
+        "key_events": [
+          {
+            "event": "Patient returns to infirmary",
+            "timestamp": "7:40 a.m. on November 18, 2002",
+            "evidence_ids": [
+              "E004"
+            ]
+          },
+          {
+            "event": "Diagnosis of testicular torsion",
+            "timestamp": "July 28, 2003",
+            "evidence_ids": [
+              "E028"
+            ]
+          },
+          {
+            "event": "Surgery to remove right testicle",
+            "timestamp": "August 19, 2003",
+            "evidence_ids": [
+              "E005"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "presentation",
+        "clinical_context": "Patient in infirmary with groin pain and testicular bump",
+        "prompt": "What should be the next step in management?",
+        "action_type": "ORDER_TEST",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Perform immediate physical examination of the groin and testicle",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Essential to rule out testicular torsion"
+          },
+          {
+            "option_id": "B",
+            "description": "Provide ibuprofen and discharge with instructions to return next day",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Delayed examination could miss critical diagnosis"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant provided ibuprofen and discharged patient",
+          "reasoning_stated": "Defendant did not perform examination",
+          "evidence_ids": [
+            "E003"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Immediate examination should have been performed",
+          "standard_of_care_basis": "Expert testimony indicated examination was necessary",
+          "evidence_ids": [
+            "E006"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to examine led to missed diagnosis of testicular torsion",
+          "what_should_have_happened": "Immediate examination and possible referral",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E006",
+            "E007"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient underwent surgery to remove right testicle",
+        "severity": "PERMANENT_MODERATE_DISABILITY",
+        "long_term_effects": "Loss of testicle, potential fertility issues",
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Breach of duty in failing to examine and diagnose testicular torsion",
+          "Causation established - earlier diagnosis would have prevented loss of testicle"
+        ],
+        "evidence_ids": [
+          "E007",
+          "E008"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to examine and diagnose testicular torsion",
+        "counterfactual": "Immediate examination could have led to timely intervention",
+        "evidence_ids": [
+          "E006",
+          "E007"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "November 17, 2002 4:10 p.m.",
+        "event": "Patient arrives at infirmary",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [
+      {
+        "diagnosis": "Testicular torsion",
+        "when_made": "July 28, 2003",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E028"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Surgery to remove right testicle",
+        "date": "August 19, 2003",
+        "provider": null,
+        "outcome": "Testicle removed",
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "complications": [],
+    "allegations": [
+      {
+        "allegation": "Failure to examine and diagnose testicular torsion",
+        "against": "Defendant nurse and physician",
+        "found_proven": true,
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.06060606060606061,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 10:08:34.924614",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

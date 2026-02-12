@@ -1,0 +1,439 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10603711",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2024-09-12",
+  "url": "https://example.com/courtlistener-10603711",
+  "case_name": "Jared Bush, Jr. v. Columbia Medical Center of Arlington Subsidiary, L.P. D/B/A Medical City Arlington and Hca Inc.",
+  "neutral_citation": null,
+  "clinical_domain": "OBSTETRICS_GYNAECOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Jared Bush, Jr. v. Columbia Medical Center of Arlington Subsidiary, L.P. D/B/A Medical City Arlington and Hca Inc.. Medical malpractice case involving obstetrics gynaecology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "35-year-old Ireille Williams-Bush fainted and was taken by ambulance to Medical City Arlington Hospital. She presented with symptoms consistent with a pulmonary embolism: chest pain, shortness of breath, and severe fainting.",
+      "paragraph_ref": "8",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "The emergency room doctor\u2019s initial impression was that she had suffered a non-ST-elevated myocardial infarction, so the hospital admitted her under that diagnosis.",
+      "paragraph_ref": "8",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "Williams-Bush was later discharged in stable condition with instructions to follow up in two weeks.",
+      "paragraph_ref": "8",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "Three days after her discharge, she was found in bed, struggling to breathe. She was rushed to the hospital but died that day. An autopsy revealed clotting in her heart and lungs.",
+      "paragraph_ref": "8",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Patterson opines that the Hospital breached the standard of care by failing to adopt and enforce such a protocol and that breach was a direct and proximate cause of Williams-Bush\u2019s death.",
+      "paragraph_ref": "6",
+      "speaker": "Dr. Patterson"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "LEGAL_FINDING",
+      "text": "We reverse the judgment of the court of appeals and remand to the trial court for further proceedings.",
+      "paragraph_ref": "8",
+      "speaker": "Supreme Court of Texas"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "COURT_REASONING",
+      "text": "The report adequately supported the claim against the hospital.",
+      "paragraph_ref": "8",
+      "speaker": "Supreme Court of Texas"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Patterson filed an amended report setting forth his qualifications and opinions on standard of care, breach, and causation.",
+      "paragraph_ref": "4",
+      "speaker": "Dr. Patterson"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "LEGAL_FINDING",
+      "text": "The trial court did not abuse its discretion in overruling the Hospital\u2019s objections to the amended report and denying the Hospital\u2019s motion to dismiss.",
+      "paragraph_ref": "30",
+      "speaker": "Supreme Court of Texas"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "COURT_REASONING",
+      "text": "The amended report satisfies the statutory requirements.",
+      "paragraph_ref": "27",
+      "speaker": "Supreme Court of Texas"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "35 years",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Fainting and chest pain",
+      "history_of_present_illness": "Patient presented with symptoms consistent with a pulmonary embolism: chest pain, shortness of breath, and severe fainting.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "cardiovascular": "Examination mentioned but findings not specified"
+        }
+      },
+      "initial_working_problem": "Non-ST-elevated myocardial infarction",
+      "known_constraints": null,
+      "initial_differential": [
+        "pulmonary embolism",
+        "myocardial infarction"
+      ],
+      "critical_findings": [
+        "chest pain",
+        "shortness of breath",
+        "fainting"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "Cardiac Catheterization",
+        "description": "Procedure performed to assess cardiac function",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": null,
+          "detailed_findings": "Imaging performed but findings not detailed in judgment",
+          "clinical_significance": "Not documented in judgment",
+          "decision_impact": "Not documented in judgment",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Emergency Presentation",
+        "description": "Patient presents to ED with acute symptoms",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Initial assessment and admission",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Diagnostic Workup",
+        "description": "Diagnostic procedures and evaluations conducted",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Cardiac catheterization performed",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient in ED with symptoms suggestive of pulmonary embolism",
+        "prompt": "What diagnostic protocol should be implemented?",
+        "action_type": "ORDER_TEST",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Implement Triple Rule Out protocol including CT angiogram",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard protocol to rule out life-threatening conditions like pulmonary embolism"
+          },
+          {
+            "option_id": "B",
+            "description": "Proceed with cardiac catheterization only",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Focused on myocardial infarction diagnosis"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant proceeded with cardiac catheterization only",
+          "reasoning_stated": "Focused on myocardial infarction diagnosis",
+          "evidence_ids": [
+            "E002"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Triple Rule Out protocol should have been implemented",
+          "standard_of_care_basis": "Expert evidence established need for comprehensive evaluation",
+          "evidence_ids": [
+            "E005",
+            "E008"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to implement comprehensive diagnostic protocol",
+          "what_should_have_happened": "Triple Rule Out protocol should have been used to rule out pulmonary embolism",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E005",
+            "E008"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient died from a pulmonary embolism",
+        "severity": "FATAL",
+        "long_term_effects": "Not applicable",
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Breach of duty in failing to implement appropriate diagnostic protocols",
+          "Causation established - failure to diagnose pulmonary embolism"
+        ],
+        "evidence_ids": [
+          "E005",
+          "E029"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to implement Triple Rule Out protocol",
+        "counterfactual": "Protocol would have identified pulmonary embolism",
+        "evidence_ids": [
+          "E005",
+          "E029"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Patient presents to ED with symptoms",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Patient fainted and was taken to the hospital",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Cardiac Catheterization",
+        "date": "Date not specified in judgment",
+        "result": "Not documented in judgment",
+        "interpretation": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "test_name": "Initial cardiac evaluation",
+        "date": "Date not specified in judgment",
+        "result": "Non-ST-elevated myocardial infarction suspected",
+        "interpretation": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Non-ST-elevated myocardial infarction",
+        "when_made": "Date not specified in judgment",
+        "made_by": null,
+        "correct": false,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "diagnosis": "Pulmonary embolism",
+        "when_made": "Post-mortem",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Discharge with follow-up instructions",
+        "date": "Date not specified in judgment",
+        "provider": null,
+        "outcome": "Patient stable at discharge",
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "treatment": "Discharge with follow-up instructions",
+        "date": "Date not specified in judgment",
+        "provider": null,
+        "outcome": "Patient later died",
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Pulmonary embolism",
+        "when_occurred": "Three days post-discharge",
+        "severity": "Fatal",
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "complication": "Pulmonary embolism",
+        "when_occurred": "Three days post-discharge",
+        "severity": "Fatal",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to implement appropriate diagnostic protocols",
+        "against": "Hospital",
+        "found_proven": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "allegation": "Failure to implement appropriate diagnostic protocols",
+        "against": "Hospital",
+        "found_proven": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Hospital breached standard of care by not implementing protocols",
+        "legal_significance": "Breach led to failure to diagnose pulmonary embolism",
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "finding": "Hospital breached standard of care",
+        "legal_significance": "Failure to implement necessary protocols",
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "SYSTEM_COMMUNICATION"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.19607843137254902,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 10:03:19.100156",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

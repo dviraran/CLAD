@@ -1,0 +1,529 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10021230",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2020-01-29",
+  "url": "https://example.com/courtlistener-10021230",
+  "case_name": "Adventist Healthcare v. Mattingly",
+  "neutral_citation": null,
+  "clinical_domain": "PAEDIATRICS",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Adventist Healthcare v. Mattingly. Medical malpractice case involving paediatrics.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Mr. Mattingly died on August 5, 2014, five days after a surgical procedure to reverse his colostomy.",
+      "paragraph_ref": "19",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. Anand was involved with Mr. Mattingly\u2019s post-operative care and saw Mr. Mattingly several times while he remained in the medical-surgical unit at WAH.",
+      "paragraph_ref": "74",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Jackson opined that Mr. Mattingly 'died of septic shock' caused by 'an anastomotic leak.'",
+      "paragraph_ref": "223",
+      "speaker": "Dr. Jackson"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "EXPERT_TESTIMONY",
+      "text": "The expert testimony of a nursing expert and a surgeon expert, when considered together and in conjunction with other evidence presented at trial, was sufficient to establish the element of causation.",
+      "paragraph_ref": "5",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "LEGAL_FINDING",
+      "text": "The jury returned a verdict in favor of Ms. Mattingly against both Appellants and awarded damages in the amount of $1,350,000.00.",
+      "paragraph_ref": "256",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "COURT_REASONING",
+      "text": "The circuit court did not err by submitting the claim premised upon Nurse Matilukuro\u2019s failure to activate the Rapid Response Team to the jury.",
+      "paragraph_ref": "499",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "Mr. Mattingly informed nurses overnight that he was in pain. At approximately 5:30 a.m. on August 5, Mr. Mattingly telephoned his mother, Ms. Mattingly.",
+      "paragraph_ref": "77",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Nurse Cable testified as to whether Nurse Matilukuro breached the standard of care.",
+      "paragraph_ref": "243",
+      "speaker": "Nurse Cable"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "LEGAL_FINDING",
+      "text": "We shall hold that the cremation of Mr. Mattingly\u2019s remains did not constitute spoliation.",
+      "paragraph_ref": "55",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "FACTUAL_FINDING",
+      "text": "Mr. Mattingly had a sigmoid colectomy and colostomy.",
+      "paragraph_ref": "65",
+      "speaker": "Court finding"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "male",
+        "relevant_social_history": "History of drug abuse, but no evidence of use during hospitalization"
+      },
+      "chief_complaint": "Post-operative care following colostomy reversal",
+      "history_of_present_illness": "Mr. Mattingly underwent a surgical procedure to reverse his colostomy on July 31, 2014. He remained hospitalized for post-operative care.",
+      "past_medical_history": [
+        "Diverticulitis",
+        "Perforated colon"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Very low, 70/50 as per Ms. Mattingly's testimony",
+          "heart_rate": "High peripheral pulse rate",
+          "respiratory_rate": "High, labored breathing",
+          "temperature": "Elevated body temperature",
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "abdomen": "Distended and tender to touch, firm abdomen"
+        }
+      },
+      "initial_working_problem": "Post-operative monitoring for potential complications",
+      "known_constraints": null,
+      "initial_differential": [
+        "Anastomotic leak",
+        "Bowel obstruction",
+        "Worsening ileus"
+      ],
+      "critical_findings": [
+        "Abdominal distension",
+        "Pain",
+        "Shortness of breath"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002",
+        "E007",
+        "E010"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "Abdominal X-ray",
+        "description": "STAT abdominal x-ray to assess for bowel obstruction or other issues",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not documented in judgment",
+          "detailed_findings": null,
+          "clinical_significance": "Intended to identify potential bowel obstruction or anastomotic leak",
+          "decision_impact": "Should have prompted immediate surgical intervention if leak was identified",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "VITAL_SIGNS",
+        "name": "Vital Signs Monitoring",
+        "description": "Monitoring of vital signs for post-operative patient",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Vital signs were extremely concerning",
+          "detailed_findings": null,
+          "clinical_significance": "Indicated potential for rapid deterioration",
+          "decision_impact": "Should have prompted activation of Rapid Response Team",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E007",
+          "E008"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Post-operative Monitoring",
+        "description": "Patient monitored post-surgery for complications",
+        "duration": "5 days",
+        "key_events": [
+          {
+            "event": "Surgery to reverse colostomy",
+            "timestamp": "31 July 2014",
+            "evidence_ids": [
+              "E001",
+              "E010"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Deterioration and Response",
+        "description": "Patient's condition deteriorates, requiring urgent intervention",
+        "duration": "6 hours",
+        "key_events": [
+          {
+            "event": "Patient reports severe pain and distress",
+            "timestamp": "5 August 2014, early morning",
+            "evidence_ids": [
+              "E007"
+            ]
+          },
+          {
+            "event": "Nurse Matilukuro contacts Dr. Anand",
+            "timestamp": "5 August 2014, 7:00 a.m.",
+            "evidence_ids": [
+              "E002"
+            ]
+          },
+          {
+            "event": "STAT x-ray ordered",
+            "timestamp": "5 August 2014, 7:30 a.m.",
+            "evidence_ids": [
+              "E002"
+            ]
+          },
+          {
+            "event": "Patient taken for x-ray",
+            "timestamp": "5 August 2014, 9:20 a.m.",
+            "evidence_ids": [
+              "E002"
+            ]
+          },
+          {
+            "event": "Rapid Response Team called",
+            "timestamp": "5 August 2014, 10:49 a.m.",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient showing signs of potential anastomotic leak post-surgery",
+        "prompt": "What should be the immediate next step in management?",
+        "action_type": "ESCALATE_CARE",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Activate Rapid Response Team and prepare for emergency surgery",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Rapid deterioration and signs of sepsis require immediate surgical intervention"
+          },
+          {
+            "option_id": "B",
+            "description": "Continue monitoring and wait for Dr. Anand's arrival",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Delay in intervention despite signs of critical deterioration"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Continued monitoring without immediate escalation",
+          "reasoning_stated": "Awaiting Dr. Anand's arrival",
+          "evidence_ids": [
+            "E002",
+            "E007"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Immediate activation of Rapid Response Team and surgical intervention",
+          "standard_of_care_basis": "Expert testimony indicated immediate surgery was necessary",
+          "evidence_ids": [
+            "E004",
+            "E006"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Delay in surgical intervention led to preventable deterioration",
+          "what_should_have_happened": "Immediate surgical intervention could have prevented death",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E004",
+            "E006"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Mr. Mattingly died of septic shock caused by an anastomotic leak",
+        "severity": "FATAL",
+        "long_term_effects": "Not applicable",
+        "evidence_ids": [
+          "E001",
+          "E003"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Breach of duty by failing to activate Rapid Response Team",
+          "Causation established - earlier intervention could have prevented death"
+        ],
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to activate Rapid Response Team",
+        "counterfactual": "Timely surgical intervention could have prevented death",
+        "evidence_ids": [
+          "E004",
+          "E005",
+          "E006"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "31 July 2014",
+        "event": "Surgery to reverse colostomy",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001",
+          "E010"
+        ]
+      },
+      {
+        "timestamp": "5 August 2014, early morning",
+        "event": "Patient reports severe pain and distress",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      {
+        "timestamp": "5 August 2014, 7:00 a.m.",
+        "event": "Nurse Matilukuro contacts Dr. Anand",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "5 August 2014, 9:20 a.m.",
+        "event": "Patient taken for x-ray",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "5 August 2014, 10:49 a.m.",
+        "event": "Rapid Response Team called",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "5 August 2014, 11:09 a.m.",
+        "event": "Patient pronounced dead",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "August 5, 2014",
+        "event": "Mr. Mattingly died",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Abdominal X-ray",
+        "date": "5 August 2014",
+        "result": "Not documented in judgment",
+        "interpretation": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Anastomotic leak leading to septic shock",
+        "when_made": "Post-mortem",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "diagnosis": "Septic shock due to anastomotic leak",
+        "when_made": "Post-mortem",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "None documented before death",
+        "date": "Not applicable",
+        "provider": null,
+        "outcome": "Patient died",
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Septic shock",
+        "when_occurred": "5 August 2014",
+        "severity": "Fatal",
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "complication": "Anastomotic leak",
+        "when_occurred": "Post-operative period",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to timely diagnose and treat anastomotic leak",
+        "against": "Dr. Anand and Nurse Matilukuro",
+        "found_proven": true,
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      },
+      {
+        "allegation": "Failure to activate Rapid Response Team",
+        "against": "Nurse Matilukuro",
+        "found_proven": true,
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendants breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      },
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.0199203187250996,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 15:42:34.971776",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

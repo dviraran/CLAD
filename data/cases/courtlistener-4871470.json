@@ -1,0 +1,391 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-4871470",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2026-01-18",
+  "url": "https://example.com/courtlistener-4871470",
+  "case_name": "Crim v. Dietrich",
+  "neutral_citation": null,
+  "clinical_domain": "OBSTETRICS_GYNAECOLOGY",
+  "outcome_severity": "TEMPORARY_HARM",
+  "summary": {
+    "brief": "Crim v. Dietrich. Medical malpractice case involving obstetrics gynaecology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "In August 2015, plaintiffs, Kristopher Crim and Teri Crim, acting on behalf of their biological son, Collin Crim (born June 17, 2005), filed a fourth amended medical malpractice claim against defendant, Gina Dietrich, D.O.",
+      "paragraph_ref": "4",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Defendant failed to obtain Teri\u2019s informed consent to perform a natural birth despite possible risks associated with Collin\u2019s large size.",
+      "paragraph_ref": "4",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "During Collin\u2019s June 17, 2005, natural delivery, Collin suffered shoulder dystocia, which is an obstructed labor whereby, after the delivery of the head, one or both shoulders of an infant cannot pass or requires significant manipulation.",
+      "paragraph_ref": "6",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "As a result, Collin suffered a broken clavicle and extensive nerve damage in his right shoulder, arm, and hand.",
+      "paragraph_ref": "6",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "LEGAL_FINDING",
+      "text": "The appellate court issued its opinion in Crim I, reversing the circuit\u2019s court\u2019s judgment and remanding the case to the circuit court.",
+      "paragraph_ref": "11",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "LEGAL_FINDING",
+      "text": "We answer the certified question in the negative, and we reverse the judgment of the appellate court.",
+      "paragraph_ref": "43",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "COURT_REASONING",
+      "text": "The majority\u2019s assertion that a proper use of Rule 308 is to determine the effects that previous decisions have on the pending case contradicts this court\u2019s prior case law on Rule 308.",
+      "paragraph_ref": "76",
+      "speaker": "Dissenting opinion"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "male",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Natural delivery of a large baby",
+      "history_of_present_illness": "Not documented in judgment",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "obstetric": "Not documented in judgment"
+        }
+      },
+      "initial_working_problem": "Natural delivery with potential complications due to fetal macrosomia",
+      "known_constraints": null,
+      "initial_differential": [
+        "Fetal macrosomia",
+        "Shoulder dystocia"
+      ],
+      "critical_findings": [
+        "Not documented in judgment"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E003",
+        "E004"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "Ultrasound",
+        "description": "Ultrasound to assess fetal size and position",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not documented in judgment",
+          "detailed_findings": null,
+          "clinical_significance": "Could have identified fetal macrosomia",
+          "decision_impact": "Would inform decision on delivery method",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": [
+          "E002",
+          "E004"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents for delivery",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Decision on delivery method",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Decision on delivery method for large baby",
+        "prompt": "What delivery method should be considered given the baby's size?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Proceed with natural delivery",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Natural delivery chosen despite risks"
+          },
+          {
+            "option_id": "B",
+            "description": "Consider Caesarean section",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Caesarean section could mitigate risks of shoulder dystocia"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "A",
+          "description": "Defendant proceeded with natural delivery",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E002",
+            "E003"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "B",
+          "description": "Caesarean section should have been considered",
+          "standard_of_care_basis": "Expert evidence suggested C-section due to fetal macrosomia",
+          "evidence_ids": [
+            "E002",
+            "E004"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to consider C-section despite known risks",
+          "what_should_have_happened": "C-section should have been offered",
+          "legal_standard_applied": "Informed consent and standard of care",
+          "evidence_ids": [
+            "E002",
+            "E004"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient suffered a broken clavicle and extensive nerve damage",
+        "severity": "PERMANENT_MODERATE_DISABILITY",
+        "long_term_effects": "Chronic nerve damage in right shoulder, arm, and hand",
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Breach of duty in failing to manage shoulder dystocia",
+          "Causation established - proper management would have prevented injury"
+        ],
+        "evidence_ids": [
+          "E002",
+          "E004"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to manage shoulder dystocia",
+        "counterfactual": "Proper maneuvers would have prevented injury",
+        "evidence_ids": [
+          "E002",
+          "E004"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "June 17, 2005",
+        "event": "Collin's natural delivery",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "timestamp": "June 17, 2005",
+        "event": "Natural delivery with shoulder dystocia",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Ultrasound",
+        "date": "Not performed",
+        "result": "Not documented in judgment",
+        "interpretation": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Shoulder dystocia and nerve damage",
+        "when_made": "During delivery",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E003",
+          "E004"
+        ]
+      },
+      {
+        "diagnosis": "Shoulder dystocia with nerve damage",
+        "when_made": "During delivery",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E003",
+          "E004"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Natural delivery",
+        "date": "June 17, 2005",
+        "provider": null,
+        "outcome": "Resulted in shoulder dystocia and injuries",
+        "evidence_ids": [
+          "E003",
+          "E004"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Shoulder dystocia",
+        "when_occurred": "During delivery",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "complication": "Broken clavicle and nerve damage",
+        "when_occurred": "During delivery",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to obtain informed consent",
+        "against": "Defendant doctor",
+        "found_proven": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "allegation": "Failure to manage shoulder dystocia",
+        "against": "Defendant obstetrician",
+        "found_proven": true,
+        "evidence_ids": [
+          "E002",
+          "E004"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Failure to inform of risks and offer C-section",
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E002",
+          "E004"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "INFORMED_CONSENT",
+      "TREATMENT_PROCEDURE_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.14583333333333334,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 09:28:42.412308",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

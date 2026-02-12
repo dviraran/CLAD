@@ -1,0 +1,461 @@
+{
+  "case_id": "courtlistener-10715950",
+  "source": "courtlistener",
+  "source_url": "local://courtlistener-10715950.html",
+  "jurisdiction": "US",
+  "extraction_metadata": {
+    "version": "batch_api_v1",
+    "model": "gpt-4o",
+    "extracted_at": "2026-01-21T17:56:57.899213",
+    "simulation_extracted_at": "2026-01-21T18:29:59.586335",
+    "simulation_model": "gpt-4o"
+  },
+  "case_metadata": {
+    "case_name": "Clifford Luttrell, DDS and Boerne Dental Center, PLLC v. Amy Mulroy",
+    "citation": "13-23-0056",
+    "court": "Thirteenth District of Texas, Court of Appeals",
+    "date": "30th day of October, 2025"
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "Appellee Amy Mulroy filed a medical malpractice lawsuit against appellants and the jury awarded damages totaling $131,358.66.",
+      "paragraph_ref": "12",
+      "paragraph_starts_with": "[12] Appellee Amy Mulroy filed",
+      "summary": "Jury awarded damages of $131,358.66 to Amy Mulroy.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "On September 20, 2021, appellee filed suit against appellants for medical malpractice arising from the negligent and improper treatment of appellee when she sought treatment for restoration of her teeth due to a malocclusion.",
+      "paragraph_ref": "18",
+      "paragraph_starts_with": "[18] On September 20, 2021,",
+      "summary": "Amy Mulroy filed suit for negligent treatment related to dental restoration.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "Dr. Luttrell testified that it is 'the dentist’s job, and sole job, to make sure that the dental bur [—] is properly seated and secured' into a dental handpiece.",
+      "paragraph_ref": "23",
+      "paragraph_starts_with": "[23] Dr. Luttrell testified that",
+      "summary": "Dr. Luttrell stated it is the dentist's responsibility to secure the dental bur.",
+      "speaker": "Dr. Luttrell"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "Dr. Luttrell testified that he has 'no specific memory' of his 'process of placement of the bur into the handpiece' related to providing dental treatment to appellee.",
+      "paragraph_ref": "36",
+      "paragraph_starts_with": "[36] Dr. Luttrell testified that",
+      "summary": "Dr. Luttrell does not recall the specific process of bur placement for the treatment.",
+      "speaker": "Dr. Luttrell"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "Dr. Luttrell further testified that the bur landed in 'the back of [appellee’s] tongue . . . lodged between the tongue and the throat . . . [the] worst possible place.'",
+      "paragraph_ref": "40",
+      "paragraph_starts_with": "[40] Dr. Luttrell further testified",
+      "summary": "The bur landed in a critical area between the tongue and throat.",
+      "speaker": "Dr. Luttrell"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "In the days after the bur was swallowed by appellee, x-rays were performed to locate the bur. The first two x-rays showed the bur in the small intestines. A subsequent CT scan showed the bur in the mesentery, an organ that surrounds other gut organs and holds them in place. The bur ultimately became lodged in appellee’s appendix, resulting in appellee’s appendectomy.",
+      "paragraph_ref": "65",
+      "paragraph_starts_with": "[65] In the days after the",
+      "summary": "X-rays and CT scan showed the bur moved to the appendix, requiring appendectomy.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "EXPERT_TESTIMONY",
+      "verbatim_quote": "Dr. Boyle testified that an improperly sized dental bur shank would have been noticeable to the practitioner upon inserting it in a handpiece because you can 'feel it, like you move it, you see it slip.'",
+      "paragraph_ref": "51",
+      "paragraph_starts_with": "[51] Dr. Boyle testified that",
+      "summary": "Dr. Boyle stated an improperly sized bur would be noticeable upon insertion.",
+      "speaker": "Dr. Boyle"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "LEGAL_FINDING",
+      "verbatim_quote": "We affirm the judgment of the trial court.",
+      "paragraph_ref": "252",
+      "paragraph_starts_with": "[252] We affirm the judgment",
+      "summary": "The trial court's judgment is affirmed.",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "verdict_detected": {
+    "outcome": "LIABILITY_FOUND",
+    "key_phrase": "We affirm the judgment of the trial court.",
+    "paragraph_ref": "252"
+  },
+  "extraction_notes": {
+    "total_paragraphs_analyzed": 257,
+    "key_sections_found": [
+      "Background",
+      "Key Findings and Analysis",
+      "Conclusion and Verdict"
+    ],
+    "gaps_identified": [
+      "No specific lab values mentioned",
+      "Limited details on expert testimony specifics"
+    ]
+  },
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Seeking dental restoration for malocclusion",
+      "history_of_present_illness": "Patient sought treatment for restoration of her teeth due to a malocclusion.",
+      "past_medical_history": "Not documented in judgment",
+      "medications": "Not documented in judgment",
+      "allergies": "Not documented in judgment",
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment"
+        },
+        "focused_exam": {
+          "oral": "Not documented in judgment"
+        }
+      },
+      "initial_working_problem": "Dental restoration for malocclusion",
+      "initial_differential": [
+        "malocclusion"
+      ],
+      "critical_findings": [
+        "Not documented in judgment"
+      ],
+      "urgency_level": "ROUTINE",
+      "evidence_ids": [
+        "E002"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "X-ray",
+        "description": "X-ray to locate the dental bur",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Bur in the small intestines",
+          "clinical_significance": "Indicates migration of the bur",
+          "decision_impact": "Requires further imaging to track bur movement"
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "IMAGING",
+        "name": "CT scan",
+        "description": "CT scan to locate the dental bur",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Bur in the mesentery, later lodged in appendix",
+          "clinical_significance": "Bur migration led to appendectomy",
+          "decision_impact": "Surgical intervention required"
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "procedure",
+        "clinical_context": "During dental restoration procedure",
+        "prompt": "How should the dental bur be secured in the handpiece?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Ensure the dental bur is properly seated and secured",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Proper seating prevents accidental dislodgement"
+          },
+          {
+            "option_id": "B",
+            "description": "Proceed without checking the bur's seating",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Neglecting this step can lead to dislodgement"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant did not ensure proper seating of the bur",
+          "reasoning_stated": "Defendant had no specific memory of the process",
+          "evidence_ids": [
+            "E004"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Proper seating of the bur should have been ensured",
+          "standard_of_care_basis": "Expert testimony indicated it is noticeable if improperly seated",
+          "evidence_ids": [
+            "E007"
+          ]
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to ensure proper seating led to bur dislodgement",
+          "what_should_have_happened": "Proper seating would have prevented the incident",
+          "legal_standard_applied": "Bolam test",
+          "evidence_ids": [
+            "E003",
+            "E007"
+          ]
+        },
+        "is_malpractice_point": true
+      },
+      {
+        "decision_id": "D002",
+        "phase_id": "followup",
+        "clinical_context": "After the bur was swallowed",
+        "prompt": "What imaging should be performed to locate the swallowed bur?",
+        "action_type": "ORDER_TEST",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Order X-ray and CT scan to track bur movement",
+            "is_defendant_choice": true,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Necessary to determine bur location and plan intervention"
+          },
+          {
+            "option_id": "B",
+            "description": "Monitor without imaging",
+            "is_defendant_choice": false,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Imaging is critical to assess risk and plan treatment"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "A",
+          "description": "X-ray and CT scan were ordered",
+          "reasoning_stated": "To locate the bur and assess the need for intervention",
+          "evidence_ids": [
+            "E006"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Imaging was necessary to track the bur",
+          "standard_of_care_basis": "Imaging is standard to locate foreign objects",
+          "evidence_ids": [
+            "E006"
+          ]
+        },
+        "explanation": {
+          "why_defendant correct": "Imaging was appropriately ordered to track the bur",
+          "what_should_have_happened": "Imaging confirmed the bur's location and need for surgery",
+          "legal_standard_applied": "Standard of care for foreign object ingestion",
+          "evidence_ids": [
+            "E006"
+          ]
+        },
+        "is_malpractice_point": false
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Dental Consultation",
+        "description": "Patient presents for dental restoration due to malocclusion",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Consultation for dental restoration",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "procedure",
+        "name": "Dental Procedure",
+        "description": "Dental restoration procedure where bur was improperly secured",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Bur dislodged and swallowed",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E005"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "followup",
+        "name": "Post-Procedure Follow-up",
+        "description": "Imaging performed to locate swallowed bur",
+        "duration": "Days following procedure",
+        "key_events": [
+          {
+            "event": "X-ray and CT scan performed",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E006"
+            ]
+          }
+        ]
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Bur lodged in appendix, requiring appendectomy",
+        "severity": "PERMANENT_MODERATE_DISABILITY",
+        "long_term_effects": "Not documented in judgment",
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "131358.66",
+        "key_findings": [
+          "Breach of duty in failing to secure the dental bur",
+          "Causation established - improper bur placement led to appendectomy"
+        ],
+        "evidence_ids": [
+          "E001",
+          "E008"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to secure dental bur",
+        "counterfactual": "Properly securing the bur would have prevented dislodgement",
+        "evidence_ids": [
+          "E003",
+          "E005",
+          "E007"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Patient presents for dental restoration",
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Bur dislodged and swallowed",
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "X-ray and CT scan performed",
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "X-ray",
+        "date": "Date not specified in judgment",
+        "result": "Bur in small intestines",
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "test_name": "CT scan",
+        "date": "Date not specified in judgment",
+        "result": "Bur in mesentery, later appendix",
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Bur lodged in appendix",
+        "when_made": "Date not specified in judgment",
+        "correct": true,
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Appendectomy",
+        "date": "Date not specified in judgment",
+        "outcome": "Bur removed",
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Bur lodged in appendix",
+        "when_occurred": "Date not specified in judgment",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to secure dental bur",
+        "against": "Dr. Luttrell",
+        "found_proven": true,
+        "evidence_ids": [
+          "E003",
+          "E005"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E001",
+          "E008"
+        ]
+      }
+    ]
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "TREATMENT_PROCEDURE_ERROR"
+    ],
+    "diagnosis_subtypes": [
+      "FAILURE_TO_SECURE_DEVICE"
+    ]
+  }
+}

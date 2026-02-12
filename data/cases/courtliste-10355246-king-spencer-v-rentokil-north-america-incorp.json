@@ -1,0 +1,389 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtliste-10355246-king-spencer-v-rentokil-north-america-incorp",
+  "source": "BAILII",
+  "jurisdiction": "UK",
+  "court": "Unknown",
+  "decision_date": "2026-01-18",
+  "url": "https://example.com/courtliste-10355246-king-spencer-v-rentokil-north-america-incorp",
+  "case_name": "KING, SPENCER v. RENTOKIL NORTH AMERICA, INCORPORATED",
+  "neutral_citation": null,
+  "clinical_domain": "OTHER",
+  "outcome_severity": "TEMPORARY_HARM",
+  "summary": {
+    "brief": "KING, SPENCER v. RENTOKIL NORTH AMERICA, INCORPORATED. Medical malpractice case involving other.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Mr. King injured his right knee in 2023 while working for Rentokil, which accepted the claim.",
+      "paragraph_ref": "7",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Mr. King\u2019s authorized doctor, Johnathan Bryant, repaired a meniscus tear in May 2024.",
+      "paragraph_ref": "7",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "The surgeon also biopsied Mr. King\u2019s knee to see if he was a candidate for a procedure to repair a cartilage defect (ACI).",
+      "paragraph_ref": "7",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "Utilization Review physician Eddie Sassoon denied the surgery recommendation.",
+      "paragraph_ref": "7",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. Bryant appealed to the Bureau\u2019s Medical Director, who overturned the denial and approved the procedure.",
+      "paragraph_ref": "7",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "LEGAL_FINDING",
+      "text": "The Court holds Rentokil shall authorize the surgery.",
+      "paragraph_ref": "5",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "LEGAL_FINDING",
+      "text": "The utilization physician was not licensed to practice in Tennessee, so the utilization review report denying the surgery was invalid.",
+      "paragraph_ref": "15",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "COURT_REASONING",
+      "text": "The authorized doctor\u2019s recommendation is considered medically necessary under Tennessee Code Annotated section 50-6-204(a)(3)(H) (2024).",
+      "paragraph_ref": "13",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "COURT_REASONING",
+      "text": "Rentokil has the burden of rebutting this presumption.",
+      "paragraph_ref": "13",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "EXPERT_TESTIMONY",
+      "text": "The parties submitted records from Dr. Bryant, Dr. Sassoon, and Dr. T. Lisle Whitman, who performed an independent medical examination.",
+      "paragraph_ref": "10",
+      "speaker": "Court finding"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "male",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Right knee injury",
+      "history_of_present_illness": "Mr. King injured his right knee in 2023 while working for Rentokil.",
+      "past_medical_history": [
+        "Meniscus tear repaired in May 2024"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "knee": "Not documented in judgment"
+        }
+      },
+      "initial_working_problem": "Right knee injury with potential cartilage defect",
+      "known_constraints": null,
+      "initial_differential": [
+        "Cartilage defect",
+        "Meniscus tear"
+      ],
+      "critical_findings": [
+        "Meniscus tear",
+        "Cartilage defect"
+      ],
+      "urgency_level": "ELECTIVE",
+      "evidence_ids": [
+        "E001",
+        "E002",
+        "E003"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSULT_NOTE",
+        "name": "Orthopedic Surgery Consultation",
+        "description": "Consultation with Dr. Johnathan Bryant regarding knee injury",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Meniscus tear repaired; biopsy performed for cartilage defect",
+          "detailed_findings": null,
+          "clinical_significance": "Indicated potential for ACI surgery",
+          "decision_impact": "Led to recommendation for ACI surgery",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E002",
+          "E003"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Mr. King presents with a right knee injury",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Knee injury reported",
+            "timestamp": "2023",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Surgical Workup",
+        "description": "Evaluation and recommendation for ACI surgery",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Meniscus repair and biopsy",
+            "timestamp": "May 2024",
+            "evidence_ids": [
+              "E002",
+              "E003"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Decision on surgical intervention for knee injury",
+        "prompt": "Should the ACI surgery be authorized?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Authorize ACI surgery as recommended by Dr. Bryant",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Medically necessary as per authorized doctor and Medical Director"
+          },
+          {
+            "option_id": "B",
+            "description": "Deny ACI surgery based on utilization review",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Utilization review physician denied surgery"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant denied ACI surgery based on utilization review",
+          "reasoning_stated": "Utilization review physician's recommendation",
+          "evidence_ids": [
+            "E004",
+            "E007"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Authorize ACI surgery as per Medical Director's approval",
+          "standard_of_care_basis": "Medically necessary under Tennessee Code Annotated",
+          "evidence_ids": [
+            "E005",
+            "E008"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Utilization review physician was not licensed in Tennessee, invalidating the denial",
+          "what_should_have_happened": "Surgery should have been authorized based on Medical Director's decision",
+          "legal_standard_applied": "Tennessee Code Annotated section 50-6-204(a)(3)(H)",
+          "evidence_ids": [
+            "E007",
+            "E008",
+            "E015"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Pending ACI surgery authorization",
+        "severity": "Not documented in judgment",
+        "long_term_effects": "Not documented in judgment",
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Breach of duty in denying surgery based on invalid utilization review",
+          "Court orders Rentokil to authorize ACI surgery"
+        ],
+        "evidence_ids": [
+          "E006",
+          "E015"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": false,
+        "point_of_failure": "Invalid utilization review denial",
+        "counterfactual": "Surgery should have been authorized",
+        "evidence_ids": [
+          "E007",
+          "E008",
+          "E015"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "2023",
+        "event": "Mr. King injured his right knee",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "May 2024",
+        "event": "Meniscus repair and biopsy performed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002",
+          "E003"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Knee biopsy",
+        "date": "May 2024",
+        "result": "Evaluated for cartilage defect",
+        "interpretation": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Cartilage defect",
+        "when_made": "May 2024",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Meniscus repair",
+        "date": "May 2024",
+        "provider": null,
+        "outcome": "Completed",
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "complications": [],
+    "allegations": [
+      {
+        "allegation": "Improper denial of ACI surgery",
+        "against": "Rentokil",
+        "found_proven": true,
+        "evidence_ids": [
+          "E006",
+          "E007"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Utilization review denial invalid due to unlicensed physician",
+        "legal_significance": "Breach of duty",
+        "evidence_ids": [
+          "E007",
+          "E015"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.2,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 09:33:52.972579",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

@@ -1,0 +1,421 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "nzlii-nzhpdt-2006-54-html",
+  "source": "BAILII",
+  "jurisdiction": "UK",
+  "court": "Unknown",
+  "decision_date": "2006-07-25",
+  "url": "https://example.com/nzlii-nzhpdt-2006-54-html",
+  "case_name": "7         New Zealand authorities currently require the Tribunal to assess\nthe culpability of a health practitioner  on the basis\nof the civil standard of\nproof, bearing in mind that serious allegations require a high level of proof. \nInBrake v Preliminary Proceedings Committee1a full Court  of the High  Court  expressed  the standard  of proof \nin the following way:",
+  "neutral_citation": null,
+  "clinical_domain": "OBSTETRICS_GYNAECOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "7         New Zealand authorities currently require the Tribunal to assess\nthe culpability of a health practitioner  on the basis\nof the civil standard of\nproof, bearing in mind that serious allegations require a high level of proof. \nInBrake v Preliminary Proceedings Committee1a full Court  of the High  Court  expressed  the standard  of proof \nin the following way:. Medical malpractice case involving obstetrics gynaecology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "On 24 November Ms Wilson and her partner attended a consultation with Dr Johri regarding a lump in her left breast.",
+      "paragraph_ref": "21",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "The Tribunal is satisfied that Dr Johri\u2019s acts and omissions were a serious departure from the standards ordinarily expected of a general practitioner.",
+      "paragraph_ref": "32",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "LEGAL_FINDING",
+      "text": "The Tribunal has determined Dr Johri\u2019s conduct constitutes professional misconduct and that he should be censured and ordered to pay 30% of the costs.",
+      "paragraph_ref": "5",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "The Director of Proceedings alleged that the conduct set out in all three particulars amounted to professional misconduct when viewed cumulatively.",
+      "paragraph_ref": "31",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "Following a mammography and fine needle cytology a diagnosis of left breast carcinoma was confirmed.",
+      "paragraph_ref": "26",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "LEGAL_FINDING",
+      "text": "The Tribunal believes that the interests of society and the profession are best served by way of a censure.",
+      "paragraph_ref": "48",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "Ms Wilson was induced and gave birth by way of caesarean section to a baby girl.",
+      "paragraph_ref": "27",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "COURT_REASONING",
+      "text": "The Tribunal is of the view that much of the jurisprudence concerning the meaning of professional misconduct under earlier legislative regimes continues to be relevant under the Act.",
+      "paragraph_ref": "16",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "FACTUAL_FINDING",
+      "text": "The midwife\u2019s notes documented Ms Wilson had a lump on her left breast and that she had advised Ms Wilson to see her general practitioner.",
+      "paragraph_ref": "20",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "LEGAL_FINDING",
+      "text": "The Tribunal is satisfied that in the circumstances of this case a disciplinary finding is needed in order to protect the public and/or maintain professional standards.",
+      "paragraph_ref": "32",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "40 years",
+        "sex": "female",
+        "relevant_social_history": "21 weeks pregnant"
+      },
+      "chief_complaint": "Lump in left breast",
+      "history_of_present_illness": "Patient reports a three-day history of a painful lump in the left breast.",
+      "past_medical_history": [],
+      "medications": [
+        "Antibiotics",
+        "Panadol"
+      ],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "breast": "3cm lump in left breast, considered likely a blocked duct with infection or a tumor"
+        }
+      },
+      "initial_working_problem": "Breast lump - differential includes blocked duct with infection or tumor",
+      "known_constraints": null,
+      "initial_differential": [
+        "blocked duct with infection",
+        "tumor"
+      ],
+      "critical_findings": [
+        "3cm lump in left breast"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E009",
+        "E022"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "Mammography",
+        "description": "Breast imaging to evaluate the lump",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not documented in judgment",
+          "detailed_findings": null,
+          "clinical_significance": "Not documented in judgment",
+          "decision_impact": "Not documented in judgment",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "PATHOLOGY",
+        "name": "Fine Needle Cytology",
+        "description": "Cytological examination of breast lump",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Diagnosis of left breast carcinoma confirmed",
+          "detailed_findings": null,
+          "clinical_significance": "Confirms malignancy",
+          "decision_impact": "Should prompt urgent referral and treatment",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with a breast lump",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Consultation with Dr Johri",
+            "timestamp": "24 November 2004",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Follow-up and Monitoring",
+        "description": "Patient returns for follow-up",
+        "duration": "1 week",
+        "key_events": [
+          {
+            "event": "Follow-up consultation",
+            "timestamp": "1 December 2004",
+            "evidence_ids": [
+              "E022"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient with a breast lump during pregnancy",
+        "prompt": "What should be the next step in management?",
+        "action_type": "ORDER_TEST",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Refer to a breast specialist immediately",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Urgent referral needed due to potential malignancy"
+          },
+          {
+            "option_id": "B",
+            "description": "Wait and see if the lump resolves with antibiotics",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Inappropriate delay in potential cancer diagnosis"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant chose to wait and see",
+          "reasoning_stated": "Believed lump might resolve with antibiotics",
+          "evidence_ids": [
+            "E022",
+            "E023"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Immediate referral to a specialist was necessary",
+          "standard_of_care_basis": "Expert evidence established urgency due to potential malignancy",
+          "evidence_ids": [
+            "E002",
+            "E003"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Delay in referral led to progression of cancer",
+          "what_should_have_happened": "Immediate specialist referral and further diagnostic workup",
+          "legal_standard_applied": "Negligence in failing to act on potential malignancy",
+          "evidence_ids": [
+            "E002",
+            "E003"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient developed advanced breast cancer and died",
+        "severity": "FATAL",
+        "long_term_effects": "Not applicable",
+        "evidence_ids": [
+          "E005",
+          "E027"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Breach of duty in failing to refer to a specialist",
+          "Causation established - delay contributed to progression of cancer"
+        ],
+        "evidence_ids": [
+          "E002",
+          "E003"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to refer to a specialist",
+        "counterfactual": "Referral could have led to earlier diagnosis and treatment",
+        "evidence_ids": [
+          "E002",
+          "E003"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "24 November 2004",
+        "event": "Patient consults Dr Johri about breast lump",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "1 December 2004",
+        "event": "Follow-up consultation with Dr Johri",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E022"
+        ]
+      },
+      {
+        "timestamp": "15 March 2005",
+        "event": "Diagnosis of breast carcinoma confirmed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Mammography and Fine Needle Cytology",
+        "date": "15 March 2005",
+        "result": "Diagnosis of left breast carcinoma",
+        "interpretation": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Left breast carcinoma",
+        "when_made": "15 March 2005",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Left mastectomy and axillary dissection",
+        "date": "14 April 2005",
+        "provider": null,
+        "outcome": "Not documented in judgment",
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Metastatic disease",
+        "when_occurred": "18 April 2005",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to refer to a specialist",
+        "against": "Dr Johri",
+        "found_proven": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Dr Johri failed to adhere to expected standards",
+        "legal_significance": "Negligence established",
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.05813953488372093,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 07:44:37.587368",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

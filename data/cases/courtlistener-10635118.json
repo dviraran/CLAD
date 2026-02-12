@@ -1,0 +1,387 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10635118",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2025-03-24",
+  "url": "https://example.com/courtlistener-10635118",
+  "case_name": "Paulsen v. Avera McKennan",
+  "neutral_citation": null,
+  "clinical_domain": "OBSTETRICS_GYNAECOLOGY",
+  "outcome_severity": "TEMPORARY_HARM",
+  "summary": {
+    "brief": "Paulsen v. Avera McKennan. Medical malpractice case involving obstetrics gynaecology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Jessica Paulsen had severe bleeding after giving birth. On December 14, 2021, Dr. Amber Saloum and the staff at the Avera McKennan Hospital performed a hysterectomy and another surgery to stop Paulsen\u2019s bleeding.",
+      "paragraph_ref": "11",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Paulsen insists that she did not consent to a possible hysterectomy.",
+      "paragraph_ref": "31",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "In the early morning hours of December 14, 2021, Dr. Saloum began an exploratory laparotomy and quickly determined the uterus had ruptured and that uterine tears were present in two different locations.",
+      "paragraph_ref": "34",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "Paulsen continued to bleed after the hysterectomy was completed and underwent a second surgery in the early morning hours of December 14, 2021, to explore a suspected intraabdominal hemorrhage.",
+      "paragraph_ref": "37",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "LEGAL_FINDING",
+      "text": "The circuit court concluded the statute of repose barred Paulsen\u2019s suit.",
+      "paragraph_ref": "82",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "LEGAL_FINDING",
+      "text": "Because Paulsen commenced her lawsuit on December 15, 2023, one day too late, the statute of repose in SDCL 15-2-14.1 bars her claim. We affirm.",
+      "paragraph_ref": "258",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Severe bleeding after giving birth",
+      "history_of_present_illness": "Patient experienced severe bleeding following childbirth on December 13, 2021.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "abdomen": "Examination mentioned but findings not specified"
+        }
+      },
+      "initial_working_problem": "Postpartum hemorrhage",
+      "known_constraints": null,
+      "initial_differential": [
+        "Uterine rupture",
+        "Ruptured uterine artery"
+      ],
+      "critical_findings": [
+        "Severe bleeding",
+        "Prominent hemorrhage on CT"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E003"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "CT scan",
+        "description": "CT scan of the abdomen and pelvis",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Prominent hemorrhage",
+          "detailed_findings": null,
+          "clinical_significance": "Suggests uterine rupture",
+          "decision_impact": "Prompted surgical intervention",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E001",
+          "E003"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "CONSENT_DISCUSSION",
+        "name": "Informed Consent",
+        "description": "Discussion of surgical options including possible hysterectomy",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Consent for exploratory laparotomy and possible hysterectomy disputed",
+          "detailed_findings": null,
+          "clinical_significance": "Central to legal case",
+          "decision_impact": "Determines legality of performed procedures",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E002",
+          "E003"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with severe bleeding after childbirth",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "CT scan performed",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E001",
+              "E003"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "procedure",
+        "name": "Surgical Intervention",
+        "description": "Exploratory laparotomy and hysterectomy performed",
+        "duration": "Early morning hours of December 14, 2021",
+        "key_events": [
+          {
+            "event": "Hysterectomy completed",
+            "timestamp": "Early morning hours of December 14, 2021",
+            "evidence_ids": [
+              "E003",
+              "E004"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "decision",
+        "clinical_context": "Patient with severe postpartum hemorrhage",
+        "prompt": "What surgical procedure should be performed?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Perform exploratory laparotomy with possible hysterectomy",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Defendant claimed it was necessary due to uterine rupture"
+          },
+          {
+            "option_id": "B",
+            "description": "Perform uterine artery embolization",
+            "is_defendant_choice": false,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Less invasive option to control bleeding"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "A",
+          "description": "Defendant performed hysterectomy",
+          "reasoning_stated": "Uterine repair was not feasible",
+          "evidence_ids": [
+            "E003",
+            "E004"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Court focused on consent issue rather than procedure choice",
+          "standard_of_care_basis": "Consent for hysterectomy disputed",
+          "evidence_ids": [
+            "E002",
+            "E003"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Consent for hysterectomy was disputed",
+          "what_should_have_happened": "Clear documentation of consent should have been obtained",
+          "legal_standard_applied": "Informed consent principles",
+          "evidence_ids": [
+            "E002",
+            "E003"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient underwent hysterectomy and second surgery to stop bleeding",
+        "severity": "Not documented in judgment",
+        "long_term_effects": "Not documented in judgment",
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "None",
+        "key_findings": [
+          "Statute of repose barred the lawsuit",
+          "Consent for hysterectomy was disputed but not resolved due to timing of lawsuit"
+        ],
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Consent process",
+        "counterfactual": "Clearer consent documentation could have prevented legal dispute",
+        "evidence_ids": [
+          "E002",
+          "E003"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "December 13, 2021",
+        "event": "Patient gave birth and experienced severe bleeding",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "Early morning hours of December 14, 2021",
+        "event": "Hysterectomy performed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "CT scan",
+        "date": "Not documented in judgment",
+        "result": "Prominent hemorrhage",
+        "interpretation": null,
+        "evidence_ids": [
+          "E001",
+          "E003"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Uterine rupture",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Hysterectomy",
+        "date": "Early morning hours of December 14, 2021",
+        "provider": null,
+        "outcome": "Bleeding initially continued, then stopped after second surgery",
+        "evidence_ids": [
+          "E003",
+          "E004"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Continued bleeding post-hysterectomy",
+        "when_occurred": "Early morning hours of December 14, 2021",
+        "severity": "Not documented in judgment",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Non-consensual hysterectomy",
+        "against": "Dr. Amber Saloum",
+        "found_proven": false,
+        "evidence_ids": [
+          "E002",
+          "E005"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Statute of repose barred the lawsuit",
+        "legal_significance": "Case dismissed due to timing",
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "INFORMED_CONSENT"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.022900763358778626,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 10:06:24.707829",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

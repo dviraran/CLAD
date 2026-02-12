@@ -1,0 +1,440 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10612625",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2024-08-27",
+  "url": "https://example.com/courtlistener-10612625",
+  "case_name": "Jahmal Tillman and Jirus Tillman Individually and O/B/O Rose Tillman v. Lammico, Practice Protection Trust Fund, the State of Louisiana, Through the Board of Supervisors of the Louisiana State University and Agricultural Mechanical College, and Lsu Health Sciences Center, West Jefferson Holdings, LLC, Woldenberg Village, Inc., Durga Sure, M.D., Frank Culicchia, M.D., Joshua Lowentritt, M.D., and Michael Puente, M.D.",
+  "neutral_citation": null,
+  "clinical_domain": "CARDIOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Jahmal Tillman and Jirus Tillman Individually and O/B/O Rose Tillman v. Lammico, Practice Protection Trust Fund, the State of Louisiana, Through the Board of Supervisors of the Louisiana State University and Agricultural Mechanical College, and Lsu Health Sciences Center, West Jefferson Holdings, LLC, Woldenberg Village, Inc., Durga Sure, M.D., Frank Culicchia, M.D., Joshua Lowentritt, M.D., and Michael Puente, M.D.. Medical malpractice case involving cardiology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "On March 25, 2012, Ms. Tillman, presented to the emergency department at West Jefferson Medical Center via EMS complaining of a severe headache and left-sided weakness.",
+      "paragraph_ref": "25",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "A CT scan of the head . . . revealed a right basal ganglia bleed extending into the right lateral ventricular posterior horn.",
+      "paragraph_ref": "27",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. Sure, a neurosurgeon, recommended that Ms. Tillman be admitted to the Intensive Care Unit and receive a repeat CT scan in six hours.",
+      "paragraph_ref": "29",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "Dilantin [(phenytoin)] was started for seizure prophylaxis.",
+      "paragraph_ref": "31",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "Ms. Tillman was . . . admitted to the Cardiac Care Unit under the care of Dr. Frank Culicchia with a diagnosis of hemorrhagic stroke.",
+      "paragraph_ref": "33",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. Freiberg evaluated Ms. Tillman at Dr. Culicchia\u2019s request and noted that Ms. Tillman was doing well, with no clear need for continued prophylactic, anti-convulsant medication.",
+      "paragraph_ref": "35",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. Sure noted that Ms. Tillman\u2019s neurological examination was improved, but ordered that Ms. Tillman was to continue receiving Dilantin.",
+      "paragraph_ref": "41",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "FACTUAL_FINDING",
+      "text": "Ms. Tillman\u2019s neurological examination was described as \u2018stable,\u2019 at which time transfer to rehabilitation was approved by neurosurgery.",
+      "paragraph_ref": "45",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "FACTUAL_FINDING",
+      "text": "Ms. Tillman continued to receive Dilantin, and she complained of symptoms indicative of an allergic reaction, including itching.",
+      "paragraph_ref": "47",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "FACTUAL_FINDING",
+      "text": "Ms. Tillman was transferred to Woldenberg on April 27, 2012, on which date Dr. Lowentritt assumed care for Ms. Tillman and ordered that Ms. Tillman would continue to receive phenytoin.",
+      "paragraph_ref": "51",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E011",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. Dalinkus noted that he highly suspected [Drug Reaction/Rash with Eosinophilia and Systemic Symptoms (\u201cDRESS\u201d)] syndrome present upon admission due to phenytoin.",
+      "paragraph_ref": "64",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E012",
+      "type": "FACTUAL_FINDING",
+      "text": "Ms. Tillman ultimately passed away on May 22, 2012.",
+      "paragraph_ref": "71",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E013",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Zwerner opined that if DRESS would have been considered while Ms. Tillman was at Woldenberg, as he believes it should have been, the phenytoin stopped, and supportive therapy promptly started, then there is an excellent chance that her reaction to the medication would not have had the severe progression that it did.",
+      "paragraph_ref": "229",
+      "speaker": "Dr. Zwerner"
+    },
+    {
+      "evidence_id": "E014",
+      "type": "LEGAL_FINDING",
+      "text": "We find that the trial court abused its discretion in granting Respondents\u2019 Motion to Exclude and in limiting Dr. Zwerner\u2019s testimony.",
+      "paragraph_ref": "237",
+      "speaker": "Court conclusion"
+    },
+    {
+      "evidence_id": "E015",
+      "type": "LEGAL_FINDING",
+      "text": "Accordingly, we grant Relators\u2019 writ application and reverse the trial court\u2019s June 17, 2024 judgment.",
+      "paragraph_ref": "240",
+      "speaker": "Court conclusion"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Severe headache and left-sided weakness",
+      "history_of_present_illness": "Patient presented to the emergency department via EMS with severe headache and left-sided weakness.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "neurological": "Left-sided weakness noted"
+        }
+      },
+      "initial_working_problem": "Hemorrhagic stroke",
+      "known_constraints": null,
+      "initial_differential": [
+        "Hemorrhagic stroke",
+        "Other causes of headache and weakness"
+      ],
+      "critical_findings": [
+        "Right basal ganglia bleed extending into the right lateral ventricular posterior horn"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "CT scan of the head",
+        "description": "CT scan to evaluate for intracranial hemorrhage",
+        "available_phase": "presentation",
+        "reveal": {
+          "result_summary": "Right basal ganglia bleed extending into the right lateral ventricular posterior horn",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates intracranial hemorrhage",
+          "decision_impact": "Prompted admission to ICU and repeat CT scan",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "CONSULT_NOTE",
+        "name": "Neurosurgery consult",
+        "description": "Consultation with neurosurgeon for management of intracranial hemorrhage",
+        "available_phase": "presentation",
+        "reveal": {
+          "result_summary": "Recommended admission to ICU and repeat CT scan in six hours",
+          "detailed_findings": null,
+          "clinical_significance": "Guided initial management plan",
+          "decision_impact": "Led to ICU admission and monitoring",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Emergency Presentation",
+        "description": "Patient presents to ED with acute symptoms",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Patient arrives at ED",
+            "timestamp": "March 25, 2012",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Initial Workup and Management",
+        "description": "Patient admitted to ICU and managed for intracranial hemorrhage",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "CT scan reveals intracranial hemorrhage",
+            "timestamp": "Not documented in judgment",
+            "evidence_ids": [
+              "E002"
+            ]
+          },
+          {
+            "event": "Neurosurgery consult and ICU admission",
+            "timestamp": "Not documented in judgment",
+            "evidence_ids": [
+              "E003"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient admitted with intracranial hemorrhage",
+        "prompt": "Should antiepileptic medication be continued?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Discontinue Dilantin as per neurologist's suggestion",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "No clear need for continued prophylactic, anti-convulsant medication"
+          },
+          {
+            "option_id": "B",
+            "description": "Continue Dilantin despite neurologist's suggestion",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Continued despite suggestion to consider discontinuation"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant continued Dilantin",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E006",
+            "E007"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Discontinue Dilantin as per neurologist's suggestion",
+          "standard_of_care_basis": "Expert opinion suggested no need for continued medication",
+          "evidence_ids": [
+            "E006"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to consider neurologist's recommendation",
+          "what_should_have_happened": "Discontinuation of Dilantin should have been considered",
+          "legal_standard_applied": "Standard of care not met",
+          "evidence_ids": [
+            "E006",
+            "E007"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient developed DRESS syndrome and passed away",
+        "severity": "FATAL",
+        "long_term_effects": "Not applicable",
+        "evidence_ids": [
+          "E012",
+          "E013"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Failure to discontinue phenytoin despite signs of allergic reaction",
+          "Causation established - DRESS syndrome led to patient's death"
+        ],
+        "evidence_ids": [
+          "E013",
+          "E014"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to discontinue phenytoin",
+        "counterfactual": "Discontinuation could have prevented DRESS syndrome",
+        "evidence_ids": [
+          "E013",
+          "E014"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "March 25, 2012",
+        "event": "Patient arrives at ED",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "CT scan of the head",
+        "date": "Not documented in judgment",
+        "result": "Right basal ganglia bleed extending into the right lateral ventricular posterior horn",
+        "interpretation": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "DRESS syndrome",
+        "when_made": "May 13, 2012",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E011"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Phenytoin discontinued",
+        "date": "May 13, 2012",
+        "provider": null,
+        "outcome": "Too late to prevent progression",
+        "evidence_ids": [
+          "E011"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "DRESS syndrome",
+        "when_occurred": "Not documented in judgment",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E011"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to discontinue phenytoin",
+        "against": "Dr. Lowentritt and Woldenberg",
+        "found_proven": true,
+        "evidence_ids": [
+          "E013"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Failure to act on signs of allergic reaction",
+        "evidence_ids": [
+          "E013"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "TREATMENT_PROCEDURE_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.06172839506172839,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 10:07:22.315366",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

@@ -1,0 +1,446 @@
+{
+  "case_id": "courtlistener-10353070",
+  "source": "courtlistener",
+  "source_url": "local://courtlistener-10353070.html",
+  "jurisdiction": "US",
+  "extraction_metadata": {
+    "version": "batch_api_v1",
+    "model": "gpt-4o",
+    "extracted_at": "2026-01-21T17:56:57.925543",
+    "simulation_extracted_at": "2026-01-21T18:29:59.593358",
+    "simulation_model": "gpt-4o"
+  },
+  "case_metadata": {
+    "case_name": "Matthew Womack v. Jonathan Buckelew",
+    "citation": "A24A1463, A24A1642",
+    "court": "Court of Appeals of Georgia",
+    "date": "March 10, 2025"
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "At around 4:20 p.m. on October 26, 2015, 32-year-old Jonathan Buckelew arrived by ambulance to the emergency department of North Fulton Hospital after he experienced seizure-like activity and became unresponsive during a chiropractic neck adjustment.",
+      "paragraph_ref": "6",
+      "paragraph_starts_with": "[6] At around 4:20 p.m.",
+      "summary": "Patient arrived at ED after seizure-like activity during chiropractic adjustment.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "Although the hospital was a primary stroke center, Buckelew’s brain stem stroke was not diagnosed until the following day, after the window of opportunity for a mechanical thrombectomy had passed.",
+      "paragraph_ref": "9",
+      "paragraph_starts_with": "[9] Although the hospital",
+      "summary": "Stroke diagnosis delayed beyond treatment window.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "As a result of this delay in treatment, Buckelew has locked-in syndrome, requiring constant care.",
+      "paragraph_ref": "11",
+      "paragraph_starts_with": "[11] a result of this delay",
+      "summary": "Delay in treatment resulted in locked-in syndrome.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "LEGAL_FINDING",
+      "verbatim_quote": "jury found Dr. Womack and the radiologist liable and awarded Buckelew $75 million in damages.",
+      "paragraph_ref": "16",
+      "paragraph_starts_with": "[16] jury found Dr.",
+      "summary": "Dr. Womack and radiologist found liable; $75 million awarded.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "LEGAL_FINDING",
+      "verbatim_quote": "The jury returned a verdict in favor of the chiropractor, NFMC, the on-call neurologist, and PA Nickum, but found that Dr. Womack and the radiologist were grossly negligent.",
+      "paragraph_ref": "47",
+      "paragraph_starts_with": "[47] NFMC, the on-call",
+      "summary": "Verdict in favor of chiropractor and others; Womack and radiologist grossly negligent.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "EXPERT_TESTIMONY",
+      "verbatim_quote": "Dr. Lutz opined with a reasonable degree of medical certainty that Dr. Womack grossly departed from the standard of care by failing to inform Dr. Futrell.",
+      "paragraph_ref": "202",
+      "paragraph_starts_with": "[202] Dr. Lutz opined",
+      "summary": "Expert opined Womack grossly departed from standard of care.",
+      "speaker": "Expert testimony"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "Dr. Womack ordered a CT scan and CT angiogram (“CTA”) scan of Buckelew’s head and neck.",
+      "paragraph_ref": "28",
+      "paragraph_starts_with": "[27] that within 20",
+      "summary": "CT and CTA scans ordered by Dr. Womack.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "Although Dr. Womack listed stroke as a possible diagnosis on the differential diagnosis, he suspected Buckelew was experiencing meningitis or encephalitis.",
+      "paragraph_ref": "29",
+      "paragraph_starts_with": "[29] and neck. Although",
+      "summary": "Stroke listed as possible diagnosis; meningitis or encephalitis suspected.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "Dr. Womack did not mention that Buckelew had seen a chiropractor, that Buckelew experienced a second seizure-like event while Dr. Womack was performing a lumbar puncture.",
+      "paragraph_ref": "32",
+      "paragraph_starts_with": "[32] neurologist, Dr. Peter",
+      "summary": "Womack did not mention chiropractic visit or second seizure-like event.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "LEGAL_FINDING",
+      "verbatim_quote": "The trial court did not err in denying Womack’s motion for directed verdict.",
+      "paragraph_ref": "315",
+      "paragraph_starts_with": "[315] court did not",
+      "summary": "Court denied Womack's motion for directed verdict.",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "verdict_detected": {
+    "outcome": "LIABILITY_FOUND",
+    "key_phrase": "jury found Dr. Womack and the radiologist liable",
+    "paragraph_ref": "16"
+  },
+  "extraction_notes": {
+    "total_paragraphs_analyzed": 322,
+    "key_sections_found": [
+      "Background",
+      "Key Findings and Analysis",
+      "Conclusion and Verdict"
+    ],
+    "gaps_identified": [
+      "No specific lab values mentioned",
+      "Timing of events unclear"
+    ]
+  },
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "32 years",
+        "sex": "male",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Seizure-like activity and unresponsiveness",
+      "history_of_present_illness": "Patient experienced seizure-like activity and became unresponsive during a chiropractic neck adjustment.",
+      "past_medical_history": "Not documented in judgment",
+      "medications": "Not documented in judgment",
+      "allergies": "Not documented in judgment",
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment"
+        },
+        "focused_exam": {
+          "neurological": "Seizure-like activity observed"
+        }
+      },
+      "initial_working_problem": "Possible stroke, meningitis, or encephalitis",
+      "initial_differential": [
+        "stroke",
+        "meningitis",
+        "encephalitis"
+      ],
+      "critical_findings": [
+        "Seizure-like activity",
+        "Unresponsiveness"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E008"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "CT Scan",
+        "description": "CT scan of head and neck",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not documented in judgment",
+          "clinical_significance": "Not documented in judgment",
+          "decision_impact": "Not documented in judgment"
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "IMAGING",
+        "name": "CT Angiogram",
+        "description": "CT angiogram of head and neck",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not documented in judgment",
+          "clinical_significance": "Not documented in judgment",
+          "decision_impact": "Not documented in judgment"
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient in ED with seizure-like activity and possible stroke",
+        "prompt": "What should be the next step in management?",
+        "action_type": "ORDER_TEST",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Order MRI of the brain",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "MRI is more sensitive for detecting acute ischemic stroke."
+          },
+          {
+            "option_id": "B",
+            "description": "Proceed with lumbar puncture",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Lumbar puncture is not indicated without ruling out stroke."
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant proceeded with lumbar puncture",
+          "reasoning_stated": "Suspected meningitis or encephalitis",
+          "evidence_ids": [
+            "E008",
+            "E009"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "MRI should have been ordered",
+          "standard_of_care_basis": "Expert evidence established MRI is standard for suspected stroke",
+          "evidence_ids": [
+            "E006"
+          ]
+        },
+        "explanation": {
+          "why_defendant_wrong": "Based on expert testimony and standard of care",
+          "what_should_have_happened": "MRI should have been prioritized to confirm stroke",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E006"
+          ]
+        },
+        "is_malpractice_point": true
+      },
+      {
+        "decision_id": "D002",
+        "phase_id": "workup",
+        "clinical_context": "Patient with suspected stroke",
+        "prompt": "What should be communicated to the on-call neurologist?",
+        "action_type": "ESCALATE_CARE",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Inform neurologist of chiropractic visit and seizure-like events",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Complete information is crucial for accurate diagnosis and management."
+          },
+          {
+            "option_id": "B",
+            "description": "Do not mention chiropractic visit or seizure-like events",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Incomplete information can lead to misdiagnosis."
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant did not mention chiropractic visit or seizure-like events",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E009"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Complete information should have been communicated",
+          "standard_of_care_basis": "Standard practice to provide full clinical picture",
+          "evidence_ids": [
+            "E006"
+          ]
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to provide complete information led to delayed diagnosis",
+          "what_should_have_happened": "All relevant clinical events should have been communicated",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E006"
+          ]
+        },
+        "is_malpractice_point": true
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Emergency Presentation",
+        "description": "Patient presents to ED with acute symptoms",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Patient arrives at ED",
+            "timestamp": "4:20 p.m. on October 26, 2015",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Diagnostic Workup",
+        "description": "Initial diagnostic tests and assessments",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "CT and CTA scans ordered",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E007"
+            ]
+          }
+        ]
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient developed locked-in syndrome requiring constant care",
+        "severity": "PERMANENT_SEVERE_DISABILITY",
+        "long_term_effects": "Locked-in syndrome",
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "75000000",
+        "key_findings": [
+          "Breach of duty in failing to diagnose stroke timely",
+          "Causation established - delay led to locked-in syndrome"
+        ],
+        "evidence_ids": [
+          "E004",
+          "E005"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to diagnose stroke timely",
+        "counterfactual": "Timely diagnosis could have prevented locked-in syndrome",
+        "evidence_ids": [
+          "E002",
+          "E003",
+          "E004"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "4:20 p.m. on October 26, 2015",
+        "event": "Patient arrives at ED",
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "CT Scan",
+        "date": "Date not specified in judgment",
+        "result": "Not documented in judgment",
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      {
+        "test_name": "CT Angiogram",
+        "date": "Date not specified in judgment",
+        "result": "Not documented in judgment",
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Brain stem stroke",
+        "when_made": "Following day after presentation",
+        "correct": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "treatments": [],
+    "complications": [
+      {
+        "complication": "Locked-in syndrome",
+        "when_occurred": "Following delay in treatment",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to diagnose stroke timely",
+        "against": "Dr. Womack and radiologist",
+        "found_proven": true,
+        "evidence_ids": [
+          "E004",
+          "E005"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Dr. Womack and radiologist grossly negligent",
+        "legal_significance": "Breach of duty and causation established",
+        "evidence_ids": [
+          "E004",
+          "E005"
+        ]
+      }
+    ]
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR"
+    ],
+    "diagnosis_subtypes": [
+      "DELAYED_DIAGNOSIS",
+      "FAILURE_TO_INVESTIGATE"
+    ]
+  }
+}

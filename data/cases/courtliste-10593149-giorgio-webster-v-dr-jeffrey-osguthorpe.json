@@ -1,0 +1,339 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtliste-10593149-giorgio-webster-v-dr-jeffrey-osguthorpe",
+  "source": "BAILII",
+  "jurisdiction": "UK",
+  "court": "Unknown",
+  "decision_date": "2026-01-18",
+  "url": "https://example.com/courtliste-10593149-giorgio-webster-v-dr-jeffrey-osguthorpe",
+  "case_name": "Giorgio Webster v. Dr Jeffrey Osguthorpe",
+  "neutral_citation": null,
+  "clinical_domain": "OTHER",
+  "outcome_severity": "TEMPORARY_HARM",
+  "summary": {
+    "brief": "Giorgio Webster v. Dr Jeffrey Osguthorpe. Medical malpractice case involving other.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Giorgio Webster brought an action in the Macomb Circuit Court against Dr. Jeffrey Osguthorpe and Summit Oral and Maxillofacial Surgery, PC, for dental malpractice concerning care rendered during a biopsy.",
+      "paragraph_ref": "6",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "On December 8, 2020, the parties participated in what was then mandatory case evaluation under MCR 2.403.",
+      "paragraph_ref": "6",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "The case-evaluation panel entered an evaluation that included an award in favor of plaintiff; plaintiff accepted the award, but defendants rejected it.",
+      "paragraph_ref": "6",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "Following a trial, the jury returned a verdict in favor of plaintiff.",
+      "paragraph_ref": "6",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "The trial court held a hearing and granted plaintiff\u2019s request for sanctions, applying the former court rule.",
+      "paragraph_ref": "6",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "LEGAL_FINDING",
+      "text": "The Court of Appeals held that even if the trial court had discretion to apply former MCR 2.403(O), a sanctions award was not justified because the verdict that plaintiff received was so substantially above the case-evaluation award that there was no injustice to plaintiff.",
+      "paragraph_ref": "6",
+      "speaker": "Court of Appeals"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "LEGAL_FINDING",
+      "text": "We reverse the Court of Appeals\u2019 judgment in part and reinstate the trial court\u2019s award of case-evaluation sanctions.",
+      "paragraph_ref": "24",
+      "speaker": "Supreme Court"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "FACTUAL_FINDING",
+      "text": "The jury returned a verdict in favor of plaintiff, awarding $68,000 in past economic damages, $1.375 million in past noneconomic damages, and $1.307 million in future noneconomic damages.",
+      "paragraph_ref": "38",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "LEGAL_FINDING",
+      "text": "The trial court did not abuse its discretion by awarding case-evaluation sanctions to plaintiff under former MCR 2.403(O).",
+      "paragraph_ref": "307",
+      "speaker": "Supreme Court"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "unknown",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Not documented in judgment",
+      "history_of_present_illness": "Not documented in judgment",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "system": "Examination mentioned but findings not specified"
+        }
+      },
+      "initial_working_problem": "Not documented in judgment",
+      "known_constraints": null,
+      "initial_differential": [],
+      "critical_findings": [],
+      "urgency_level": "Not documented in judgment",
+      "evidence_ids": []
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSULT_NOTE",
+        "name": "Biopsy procedure note",
+        "description": "Details of the biopsy procedure performed by Dr. Jeffrey Osguthorpe",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not documented in judgment",
+          "detailed_findings": null,
+          "clinical_significance": "Not documented in judgment",
+          "decision_impact": "Not documented in judgment",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents for biopsy procedure",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Biopsy procedure performed",
+            "timestamp": "Not documented in judgment",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "procedure",
+        "clinical_context": "Care rendered during a biopsy",
+        "prompt": "What should have been done during the biopsy procedure?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Perform biopsy with standard care protocols",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard care protocols reduce risk of complications"
+          },
+          {
+            "option_id": "B",
+            "description": "Perform biopsy without standard care protocols",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Deviation from standard care increases risk"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant performed biopsy without standard care protocols",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E001"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Biopsy should have been performed with standard care protocols",
+          "standard_of_care_basis": "Expert evidence established standard care protocols",
+          "evidence_ids": [
+            "E001"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Based on evidence E001",
+          "what_should_have_happened": "Based on court's findings",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E001"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Not documented in judgment",
+        "severity": "Not documented in judgment",
+        "long_term_effects": "Not documented in judgment",
+        "evidence_ids": []
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "565000",
+        "key_findings": [
+          "Breach of duty in performing biopsy without standard care protocols",
+          "Causation established - deviation from standard care led to complications"
+        ],
+        "evidence_ids": [
+          "E004",
+          "E008"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to follow standard care protocols during biopsy",
+        "counterfactual": "Standard care protocols would have reduced risk of complications",
+        "evidence_ids": [
+          "E001",
+          "E004"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "Not documented in judgment",
+        "event": "Biopsy procedure performed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Biopsy",
+        "date": "Not documented in judgment",
+        "result": "Not documented in judgment",
+        "interpretation": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Not documented in judgment",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": false,
+        "evidence_ids": []
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Biopsy procedure",
+        "date": "Not documented in judgment",
+        "provider": null,
+        "outcome": "Not documented in judgment",
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Not documented in judgment",
+        "when_occurred": "Not documented in judgment",
+        "severity": "Not documented in judgment",
+        "evidence_ids": []
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to follow standard care protocols during biopsy",
+        "against": "Dr. Jeffrey Osguthorpe",
+        "found_proven": true,
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.028662420382165606,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 07:42:20.636520",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

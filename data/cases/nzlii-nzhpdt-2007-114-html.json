@@ -1,0 +1,663 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "nzlii-nzhpdt-2007-114-html",
+  "source": "BAILII",
+  "jurisdiction": "UK",
+  "court": "Unknown",
+  "decision_date": "2007-08-01",
+  "url": "https://example.com/nzlii-nzhpdt-2007-114-html",
+  "case_name": "8.\tIn  the  recent  decision  ofZ  v  Complaints  Assessment  Committee \nand  Another",
+  "neutral_citation": null,
+  "clinical_domain": "PAEDIATRICS",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "8.\tIn  the  recent  decision  ofZ  v  Complaints  Assessment  Committee \nand  Another. Medical malpractice case involving paediatrics.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "On 28 September 2006, the Director of Proceedings (the Director) laid a disciplinary charge against Dr A with the Tribunal, under the Health Practitioners Competence Assurance Act 2003 (HPCA Act).",
+      "paragraph_ref": "2",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "The charge alleges that Dr A breached informed consent obligations, performed an inappropriate procedure on a patient, and failed to provide adequate information about the patient\u2019s postoperative condition.",
+      "paragraph_ref": "2",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr G H Poole, a general surgeon, who gave expert evidence.",
+      "paragraph_ref": "26",
+      "speaker": "Expert witness"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr S J Langley, a plastic and reconstructive surgeon, who gave expert evidence.",
+      "paragraph_ref": "26",
+      "speaker": "Expert witness"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "LEGAL_FINDING",
+      "text": "The Tribunal concludes that the issue was not raised with Ms Dick, which will have implications for Particular 1, to be considered shortly.",
+      "paragraph_ref": "119",
+      "speaker": "Tribunal conclusion"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "LEGAL_FINDING",
+      "text": "The Tribunal is satisfied that the established conduct amounts to negligence, malpractice and brings discredit to the medical profession.",
+      "paragraph_ref": "125",
+      "speaker": "Tribunal conclusion"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "LEGAL_FINDING",
+      "text": "The Tribunal concludes on this subparticular: The Tribunal prefers the evidence of Ms Dick, on the balance of probabilities, and concludes that she was informed she would be able to breast feed.",
+      "paragraph_ref": "150",
+      "speaker": "Tribunal conclusion"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "LEGAL_FINDING",
+      "text": "The Tribunal is satisfied that the established facts amount to negligence, malpractice and bring discredit to the medical profession; and that this conduct falls seriously short of that which is to be considered acceptable.",
+      "paragraph_ref": "153",
+      "speaker": "Tribunal conclusion"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "LEGAL_FINDING",
+      "text": "The Tribunal accepts that Ms Dick had ischemia postoperatively, and that this was more likely than not to have been caused by the procedure rather than any other cause.",
+      "paragraph_ref": "157",
+      "speaker": "Tribunal conclusion"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "LEGAL_FINDING",
+      "text": "On the balance of probabilities, the Tribunal accepts the evidence of the experts and concludes that necrosis was due to ischemia due to the choice of surgical technique.",
+      "paragraph_ref": "159",
+      "speaker": "Tribunal conclusion"
+    },
+    {
+      "evidence_id": "E011",
+      "type": "LEGAL_FINDING",
+      "text": "The Tribunal considers that the established subparticulars constitute negligence, and bring discredit to the profession.",
+      "paragraph_ref": "179",
+      "speaker": "Tribunal conclusion"
+    },
+    {
+      "evidence_id": "E012",
+      "type": "LEGAL_FINDING",
+      "text": "The Tribunal concluded that Particulars 1, 2 and 3, considered cumulatively amount to such a significant departure from the accepted standards and warrant discipline.",
+      "paragraph_ref": "182",
+      "speaker": "Tribunal conclusion"
+    },
+    {
+      "evidence_id": "E013",
+      "type": "LEGAL_FINDING",
+      "text": "A censure is imposed (Section 101(1)(d) HPCA Act).",
+      "paragraph_ref": "221",
+      "speaker": "Tribunal conclusion"
+    },
+    {
+      "evidence_id": "E014",
+      "type": "LEGAL_FINDING",
+      "text": "A fine of $5,000.00 is imposed (section 101(1)(e) HPCA Act).",
+      "paragraph_ref": "221",
+      "speaker": "Tribunal conclusion"
+    },
+    {
+      "evidence_id": "E015",
+      "type": "LEGAL_FINDING",
+      "text": "An order for costs is made: $7,500.00 for costs as to the conduct of the hearing by the Tribunal is to be paid by Dr A.",
+      "paragraph_ref": "221",
+      "speaker": "Tribunal conclusion"
+    },
+    {
+      "evidence_id": "E016",
+      "type": "LEGAL_FINDING",
+      "text": "The application for a permanent order of non publication is declined; and the interim order as to non publication of name dated 19 December 2006 is discharged, as from 8 August 2007.",
+      "paragraph_ref": "221",
+      "speaker": "Tribunal conclusion"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Smoker, obese with BMI of 39"
+      },
+      "chief_complaint": "Desire for breast reduction due to large breasts and back pain",
+      "history_of_present_illness": "Patient experienced back pain due to large breasts and had lost 20kg recently, increasing back pain.",
+      "past_medical_history": [
+        "High blood pressure"
+      ],
+      "medications": [
+        "Contraceptives",
+        "Antihypertensives"
+      ],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "breasts": "Sternal notch to nipple distance of 49cm, large breasts"
+        }
+      },
+      "initial_working_problem": "Desire for breast reduction",
+      "known_constraints": null,
+      "initial_differential": [
+        "Not documented in judgment"
+      ],
+      "critical_findings": [
+        "Obesity",
+        "Smoking",
+        "High sternal notch to nipple distance"
+      ],
+      "urgency_level": "ELECTIVE",
+      "evidence_ids": [
+        "E001",
+        "E002",
+        "E003",
+        "E004",
+        "E005"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSULT_NOTE",
+        "name": "Pre-operative consultation",
+        "description": "Consultation with Dr A regarding breast reduction",
+        "available_phase": "presentation",
+        "reveal": {
+          "result_summary": "Patient interested in breast reduction, informed of procedure but not of specific risks related to obesity and smoking",
+          "detailed_findings": null,
+          "clinical_significance": "Lack of informed consent regarding specific risks",
+          "decision_impact": "Informed consent not adequately obtained",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E002",
+          "E005",
+          "E007"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "IMAGING",
+        "name": "Chest X-ray",
+        "description": "Performed postoperatively to check for missing swab",
+        "available_phase": "postop",
+        "reveal": {
+          "result_summary": null,
+          "detailed_findings": "Imaging performed but findings not detailed in judgment",
+          "clinical_significance": "Performed due to missing swab concern",
+          "decision_impact": "Did not impact immediate management",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E045"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Consultation",
+        "description": "Patient consults Dr A for breast reduction",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "First consultation with Dr A",
+            "timestamp": "24 January 2005",
+            "evidence_ids": [
+              "E130"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "procedure",
+        "name": "Surgical Procedure",
+        "description": "Lejour vertical mammoplasty performed",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Breast reduction surgery",
+            "timestamp": "15 February 2005",
+            "evidence_ids": [
+              "E040"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "postop",
+        "name": "Postoperative Complications",
+        "description": "Management of postoperative complications",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Patient experiences major discharge and infection",
+            "timestamp": "22 February 2005",
+            "evidence_ids": [
+              "E043"
+            ]
+          },
+          {
+            "event": "Debridement and antibiotic treatment",
+            "timestamp": "26 February 2005",
+            "evidence_ids": [
+              "E047"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "decision",
+        "name": "Pre-operative Decision",
+        "description": "Decision-making process regarding surgical approach",
+        "duration": "Not specified in judgment",
+        "key_events": [
+          {
+            "event": "Decision to proceed with Lejour technique",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E107",
+              "E123"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "decision",
+        "clinical_context": "Pre-operative planning for breast reduction",
+        "prompt": "What surgical technique should be chosen for this patient?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Choose Lejour vertical mammoplasty",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Technique chosen despite patient's obesity and high sternal notch to nipple distance"
+          },
+          {
+            "option_id": "B",
+            "description": "Choose alternative technique suitable for obese patients",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Alternative techniques would reduce risk of complications in obese patients"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "A",
+          "description": "Defendant chose Lejour vertical mammoplasty",
+          "reasoning_stated": "Defendant did not consider obesity a significant risk factor",
+          "evidence_ids": [
+            "E002",
+            "E003",
+            "E004"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "B",
+          "description": "Alternative technique should have been chosen",
+          "standard_of_care_basis": "Expert evidence indicated Lejour technique was inappropriate for patient's condition",
+          "evidence_ids": [
+            "E003",
+            "E004",
+            "E010"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Lejour technique not suitable for obese patients with high sternal notch to nipple distance",
+          "what_should_have_happened": "Alternative technique should have been used to minimize risk",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E003",
+            "E004",
+            "E010"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      },
+      {
+        "decision_id": "D002",
+        "phase_id": "postop",
+        "clinical_context": "Postoperative management of complications",
+        "prompt": "How should postoperative complications be managed?",
+        "action_type": "ESCALATE_CARE",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Continue with current management by Dr A",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Defendant continued with debridement and antibiotics despite worsening condition"
+          },
+          {
+            "option_id": "B",
+            "description": "Refer to specialist for further management",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Referral to specialist could have provided more effective management of complications"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "A",
+          "description": "Defendant continued with current management",
+          "reasoning_stated": "Defendant believed current management was sufficient",
+          "evidence_ids": [
+            "E009",
+            "E010"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "B",
+          "description": "Referral to specialist should have been made",
+          "standard_of_care_basis": "Expert evidence indicated need for specialist intervention",
+          "evidence_ids": [
+            "E009",
+            "E010"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to refer to specialist led to prolonged complications",
+          "what_should_have_happened": "Specialist referral could have mitigated complications",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E009",
+            "E010"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient experienced postoperative ischemia",
+        "severity": "Not documented in judgment",
+        "long_term_effects": "Not documented in judgment",
+        "evidence_ids": [
+          "E009"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Breach of informed consent obligations",
+          "Negligence and malpractice established"
+        ],
+        "evidence_ids": [
+          "E006",
+          "E008",
+          "E011"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to provide informed consent",
+        "counterfactual": "Proper consent would have informed patient of risks",
+        "evidence_ids": [
+          "E002",
+          "E005",
+          "E006"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "24 January 2005",
+        "event": "First consultation with Dr A",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E130"
+        ]
+      },
+      {
+        "timestamp": "15 February 2005",
+        "event": "Breast reduction surgery",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E040"
+        ]
+      },
+      {
+        "timestamp": "22 February 2005",
+        "event": "Patient experiences major discharge and infection",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E043"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Patient consults Dr A for breast reduction",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E137"
+        ]
+      },
+      {
+        "timestamp": "Not documented in judgment",
+        "event": "Patient consults with Dr A",
+        "actor": null,
+        "location": null,
+        "evidence_ids": []
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Chest X-ray",
+        "date": "24 February 2005",
+        "result": "Not documented in judgment",
+        "interpretation": null,
+        "evidence_ids": [
+          "E045"
+        ]
+      },
+      {
+        "test_name": "Not documented in judgment",
+        "date": "Not documented in judgment",
+        "result": "Not documented in judgment",
+        "interpretation": null,
+        "evidence_ids": []
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Postoperative infection and necrosis",
+        "when_made": "22 February 2005",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E043"
+        ]
+      },
+      {
+        "diagnosis": "Postoperative ischemia and necrosis",
+        "when_made": "Post-surgery",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E157"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Debridement and antibiotics",
+        "date": "26 February 2005",
+        "provider": null,
+        "outcome": "Continued complications",
+        "evidence_ids": [
+          "E047"
+        ]
+      },
+      {
+        "treatment": "Lejour breast reduction",
+        "date": "Not documented in judgment",
+        "provider": null,
+        "outcome": "Complications due to ischemia",
+        "evidence_ids": [
+          "E123"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Significant tissue loss and compromised breast shape",
+        "when_occurred": "Post-surgery",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E061"
+        ]
+      },
+      {
+        "complication": "Ischemia and necrosis",
+        "when_occurred": "Post-surgery",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E157"
+        ]
+      },
+      {
+        "complication": "Postoperative ischemia",
+        "when_occurred": "Not documented in judgment",
+        "severity": "Not documented in judgment",
+        "evidence_ids": [
+          "E009"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to obtain informed consent",
+        "against": "Dr A",
+        "found_proven": true,
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "allegation": "Failure to obtain informed consent",
+        "against": "Dr A",
+        "found_proven": true,
+        "evidence_ids": [
+          "E153"
+        ]
+      },
+      {
+        "allegation": "Failure to provide informed consent",
+        "against": "Dr A",
+        "found_proven": true,
+        "evidence_ids": [
+          "E002",
+          "E005"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Dr A breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "finding": "Dr A breached duty of care by not obtaining informed consent",
+        "legal_significance": "Negligence and malpractice established",
+        "evidence_ids": [
+          "E153"
+        ]
+      },
+      {
+        "finding": "Negligence and malpractice established",
+        "legal_significance": "Breach of informed consent obligations",
+        "evidence_ids": [
+          "E006",
+          "E008",
+          "E011"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "TREATMENT_PROCEDURE_ERROR",
+      "INFORMED_CONSENT"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.022792022792022793,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 08:13:40.793260",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

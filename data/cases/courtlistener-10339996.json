@@ -1,0 +1,468 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10339996",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2025-02-26",
+  "url": "https://example.com/courtlistener-10339996",
+  "case_name": "Georgia Ann Miller v. Tran, M.D. Trinh",
+  "neutral_citation": null,
+  "clinical_domain": "SURGERY_ORTHOPAEDIC",
+  "outcome_severity": "TEMPORARY_HARM",
+  "summary": {
+    "brief": "Georgia Ann Miller v. Tran, M.D. Trinh. Medical malpractice case involving surgery orthopaedic.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Georgia Miller brought a medical malpractice action against Dr. Trinh Tran and Dr. Tran\u2019s employer, Allcare Rheumatology (\u201cAllcare\u201d).",
+      "paragraph_ref": "1",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "On June 25, 2019, Miller filed a medical malpractice action against Dr. Tran and Allcare.",
+      "paragraph_ref": "9",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "Miller had her first visit with Dr. Tran on February 20, 2015.",
+      "paragraph_ref": "5",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. Tran recommended that Miller begin taking hydroxychloroquine and a steroid\u2014prednisone.",
+      "paragraph_ref": "42",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "Miller reported reduced pain since beginning the steroids, but her pain did not completely abate.",
+      "paragraph_ref": "45",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "In October 2015, Dr. Tranh changed the prescription to Rayos, a slow-releasing form of prednisone, to minimize side effects.",
+      "paragraph_ref": "50",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "On December 18, 2015, Miller reported increased pain and flare-ups. She had torn a biceps tendon near the shoulder when reaching back.",
+      "paragraph_ref": "56",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "FACTUAL_FINDING",
+      "text": "Laboratory testing in December 2016 revealed a Vectra score of forty-five, which indicated high rheumatoid arthritis disease activity.",
+      "paragraph_ref": "62",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "FACTUAL_FINDING",
+      "text": "Miller sought a second opinion regarding her symptoms from the Cleveland Clinic.",
+      "paragraph_ref": "64",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Littlejohn did not believe there was sufficient evidence that Miller had lupus or a form of arthritis.",
+      "paragraph_ref": "67",
+      "speaker": "Expert testimony"
+    },
+    {
+      "evidence_id": "E011",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Gregori then offered his expert opinion that Dr. Tran\u2019s treatment caused Miller\u2019s injuries.",
+      "paragraph_ref": "18",
+      "speaker": "Expert testimony"
+    },
+    {
+      "evidence_id": "E012",
+      "type": "LEGAL_FINDING",
+      "text": "The jury found Dr. Tran and Allcare not liable.",
+      "paragraph_ref": "9",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E013",
+      "type": "LEGAL_FINDING",
+      "text": "Accordingly, we affirm.",
+      "paragraph_ref": "366",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E014",
+      "type": "COURT_REASONING",
+      "text": "The trial court did not abuse its discretion in instructing the jury on the Choice of Treatment Modalities instruction.",
+      "paragraph_ref": "365",
+      "speaker": "Judge's analysis"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "59 years",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Years of pain in muscles and joints, swelling in knuckles, stiffness, pain in shoulders and hips, hair loss, weight gain, mouth sores, and rashes",
+      "history_of_present_illness": "Referred to Dr. Tran by primary care physician due to suspected rheumatological disease. Blood testing revealed ANA levels four times above normal.",
+      "past_medical_history": [
+        "Fibromyalgia"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "joints": "Tenderness, swelling, and synovial thickening in several joints"
+        }
+      },
+      "initial_working_problem": "Suspected inflammatory disease such as rheumatoid arthritis, polymyalgia rheumatica, or lupus",
+      "known_constraints": null,
+      "initial_differential": [
+        "Rheumatoid arthritis",
+        "Polymyalgia rheumatica",
+        "Lupus"
+      ],
+      "critical_findings": [
+        "Synovial thickening",
+        "Elevated ANA levels"
+      ],
+      "urgency_level": "Routine",
+      "evidence_ids": [
+        "E003",
+        "E004",
+        "E005"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "LAB",
+        "name": "ANA Test",
+        "description": "Antinuclear antibody test",
+        "available_phase": "presentation",
+        "reveal": {
+          "result_summary": "ANA levels four times above normal",
+          "detailed_findings": null,
+          "clinical_significance": "Suggestive of autoimmune disease",
+          "decision_impact": "Supports further investigation for inflammatory diseases",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "LAB",
+        "name": "Vectra Score",
+        "description": "Blood test to assess rheumatoid arthritis disease activity",
+        "available_phase": "followup",
+        "reveal": {
+          "result_summary": "Vectra score of forty-five indicating high rheumatoid arthritis disease activity",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates active rheumatoid arthritis",
+          "decision_impact": "Supports continuation of treatment for inflammatory disease",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E008"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient referred to Dr. Tran for suspected rheumatological disease",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "First visit with Dr. Tran",
+            "timestamp": "February 20, 2015",
+            "evidence_ids": [
+              "E003"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "followup",
+        "name": "Follow-up and Treatment",
+        "description": "Ongoing treatment with steroids and other medications",
+        "duration": "2015-2017",
+        "key_events": [
+          {
+            "event": "Change to Rayos and addition of methotrexate",
+            "timestamp": "October 2015",
+            "evidence_ids": [
+              "E006"
+            ]
+          },
+          {
+            "event": "Laboratory testing reveals high Vectra score",
+            "timestamp": "December 2016",
+            "evidence_ids": [
+              "E008"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "followup",
+        "clinical_context": "Patient experiencing ongoing symptoms despite treatment",
+        "prompt": "Should the steroid treatment be continued?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Continue steroid treatment",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Patient's symptoms suggest inflammatory disease"
+          },
+          {
+            "option_id": "B",
+            "description": "Discontinue steroid treatment and reassess",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Symptoms could be due to fibromyalgia; long-term steroid use not justified"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "A",
+          "description": "Continued steroid treatment",
+          "reasoning_stated": "Believed symptoms were due to inflammatory disease",
+          "evidence_ids": [
+            "E005",
+            "E006"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "B",
+          "description": "Discontinue steroids and reassess",
+          "standard_of_care_basis": "Expert opinion suggested reevaluation of treatment",
+          "evidence_ids": [
+            "E011",
+            "E012"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Continued steroid use despite lack of improvement",
+          "what_should_have_happened": "Reevaluation and possible discontinuation of steroids",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E011",
+            "E012"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient experienced tendon injuries and other symptoms",
+        "severity": "Moderate",
+        "long_term_effects": "Chronic pain managed with non-steroid medications",
+        "evidence_ids": [
+          "E007",
+          "E009"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "None",
+        "key_findings": [
+          "Dr. Tran's treatment did not cause the injuries",
+          "Jury found Dr. Tran and Allcare not liable"
+        ],
+        "evidence_ids": [
+          "E012",
+          "E013"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Not applicable",
+        "counterfactual": "Not applicable",
+        "evidence_ids": [
+          "E012",
+          "E013"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "February 20, 2015",
+        "event": "First visit with Dr. Tran",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "timestamp": "October 2015",
+        "event": "Prescription changed to Rayos",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "timestamp": "December 2016",
+        "event": "Vectra score revealed high disease activity",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E008"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "ANA Test",
+        "date": "Not documented in judgment",
+        "result": "Four times above normal",
+        "interpretation": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "test_name": "Vectra Score",
+        "date": "December 2016",
+        "result": "Score of forty-five",
+        "interpretation": null,
+        "evidence_ids": [
+          "E008"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Inflammatory disease suspected",
+        "when_made": "February 20, 2015",
+        "made_by": null,
+        "correct": false,
+        "evidence_ids": [
+          "E003",
+          "E004"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Steroid therapy",
+        "date": "2015-2017",
+        "provider": null,
+        "outcome": "Continued symptoms and tendon injuries",
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Tendon injuries",
+        "when_occurred": "Not documented in judgment",
+        "severity": "Moderate",
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Inappropriate long-term steroid use",
+        "against": "Dr. Tran",
+        "found_proven": false,
+        "evidence_ids": [
+          "E012"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Dr. Tran's treatment did not cause the injuries",
+        "legal_significance": "No liability found",
+        "evidence_ids": [
+          "E012",
+          "E013"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.03763440860215054,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 09:05:26.279671",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

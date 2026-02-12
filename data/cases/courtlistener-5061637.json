@@ -1,0 +1,439 @@
+{
+  "case_id": "courtlistener-5061637",
+  "source": "courtlistener",
+  "source_url": "local://courtlistener-5061637.html",
+  "jurisdiction": "US",
+  "extraction_metadata": {
+    "version": "batch_api_v1",
+    "model": "gpt-4o",
+    "extracted_at": "2026-01-21T17:56:57.918633",
+    "simulation_extracted_at": "2026-01-21T18:29:59.566133",
+    "simulation_model": "gpt-4o"
+  },
+  "case_metadata": {
+    "case_name": "Hrynkiw v. Trammell",
+    "citation": null,
+    "court": "Not specified",
+    "date": "July 15, 2005"
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "On July 15, 2005, Dr. Hrynkiw, a neurosurgeon, performed fusion surgery on Thomas’s spine to relieve pain in his lower back and pain and numbness in his right leg and foot caused by a herniated disk.",
+      "paragraph_ref": "3",
+      "paragraph_starts_with": "[3] On July 15, 2005, Dr.",
+      "summary": "Dr. Hrynkiw performed spine fusion surgery on Thomas to relieve pain and numbness.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "Immediately following the surgery, Thomas experienced weakness, numbness, and pain in his lower extremities, along with numbness in his perineal area and urinary and fecal incontinence.",
+      "paragraph_ref": "3",
+      "paragraph_starts_with": "[3] On July 15, 2005, Dr.",
+      "summary": "Post-surgery, Thomas experienced symptoms of CES including weakness and incontinence.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "verbatim_quote": "On July 25, 2005, Dr. Hrynkiw performed a second surgery on Thomas’s spine. The second surgery provided Thomas no relief, and he is permanently partially disabled.",
+      "paragraph_ref": "3",
+      "paragraph_starts_with": "[3] On July 15, 2005, Dr.",
+      "summary": "A second surgery was performed but did not relieve Thomas's symptoms.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "LEGAL_FINDING",
+      "verbatim_quote": "The jury found in favor of the Trammells, awarding compensatory damages of $1,650,000 to Thomas and $500,000 to Barbara.",
+      "paragraph_ref": "3",
+      "paragraph_starts_with": "[3] On July 15, 2005, Dr.",
+      "summary": "Jury awarded damages to Thomas and Barbara Trammell.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "EXPERT_TESTIMONY",
+      "verbatim_quote": "Dr. Hash opined that Dr. Hrynkiw violated the standard of care in performing the first surgery.",
+      "paragraph_ref": "5",
+      "paragraph_starts_with": "[5] Hrynkiw argues that the",
+      "summary": "Dr. Hash testified that Dr. Hrynkiw violated the standard of care.",
+      "speaker": "Dr. Hash"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "COURT_REASONING",
+      "verbatim_quote": "We hold that the Trammells presented sufficient evidence of Dr. Hrynkiw’s failure to adhere to the standard of care applicable to postoperative treatment of CES.",
+      "paragraph_ref": "7",
+      "paragraph_starts_with": "[7] The trial court submitted",
+      "summary": "Court found sufficient evidence of failure in postoperative care.",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "LEGAL_FINDING",
+      "verbatim_quote": "Accordingly, we affirm the judgment of the trial court.",
+      "paragraph_ref": "7",
+      "paragraph_starts_with": "[7] The trial court submitted",
+      "summary": "Judgment of the trial court affirmed.",
+      "speaker": "Court conclusion"
+    }
+  ],
+  "verdict_detected": {
+    "outcome": "LIABILITY_FOUND",
+    "key_phrase": "The jury found in favor of the Trammells, awarding compensatory damages",
+    "paragraph_ref": "3"
+  },
+  "extraction_notes": {
+    "total_paragraphs_analyzed": 10,
+    "key_sections_found": [
+      "Facts",
+      "Expert Evidence",
+      "Conclusion"
+    ],
+    "gaps_identified": [
+      "No specific lab values mentioned",
+      "Timing of events unclear"
+    ]
+  },
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "male",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Lower back pain and numbness in right leg and foot",
+      "history_of_present_illness": "Patient presented with pain and numbness due to a herniated disk.",
+      "past_medical_history": [
+        "Herniated disk"
+      ],
+      "medications": "Not documented in judgment",
+      "allergies": "Not documented in judgment",
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment"
+        },
+        "focused_exam": {
+          "neurological": "Not documented in judgment"
+        }
+      },
+      "initial_working_problem": "Herniated disk causing pain and numbness",
+      "initial_differential": [
+        "Herniated disk"
+      ],
+      "critical_findings": [
+        "Not documented in judgment"
+      ],
+      "urgency_level": "Not documented in judgment",
+      "evidence_ids": [
+        "E001"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "PROCEDURE_NOTE",
+        "name": "Spine Fusion Surgery",
+        "description": "Surgical notes from the fusion surgery performed by Dr. Hrynkiw",
+        "available_phase": "procedure",
+        "reveal": {
+          "result_summary": "Fusion surgery performed to relieve pain and numbness",
+          "clinical_significance": "Intended to address symptoms caused by herniated disk",
+          "decision_impact": "Surgery was performed but led to complications"
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "procedure",
+        "clinical_context": "Patient undergoing spine fusion surgery",
+        "prompt": "What surgical approach should be taken to address the herniated disk?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Perform standard fusion surgery with careful monitoring",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Standard procedure but led to complications"
+          },
+          {
+            "option_id": "B",
+            "description": "Consider alternative surgical techniques or additional monitoring",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Expert testimony suggested violation of standard care"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "A",
+          "description": "Standard fusion surgery performed",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E001",
+            "E005"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "B",
+          "description": "Alternative techniques or additional monitoring should have been considered",
+          "standard_of_care_basis": "Expert testimony indicated a violation of standard care",
+          "evidence_ids": [
+            "E005",
+            "E006"
+          ]
+        },
+        "explanation": {
+          "why_defendant_wrong": "Based on expert testimony and court findings",
+          "what_should_have_happened": "Alternative techniques or additional monitoring",
+          "legal_standard_applied": "Standard of care not met",
+          "evidence_ids": [
+            "E005",
+            "E006"
+          ]
+        },
+        "is_malpractice_point": true
+      },
+      {
+        "decision_id": "D002",
+        "phase_id": "postop",
+        "clinical_context": "Postoperative care following spine surgery",
+        "prompt": "How should postoperative complications be managed?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Immediate assessment and intervention for CES symptoms",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Prompt management is critical for CES"
+          },
+          {
+            "option_id": "B",
+            "description": "Standard postoperative care without specific focus on CES",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Court found failure in postoperative care"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Standard postoperative care provided",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E002",
+            "E006"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Immediate assessment and intervention for CES symptoms",
+          "standard_of_care_basis": "Court found failure in postoperative care",
+          "evidence_ids": [
+            "E006"
+          ]
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to adhere to standard of care for CES",
+          "what_should_have_happened": "Immediate intervention for CES symptoms",
+          "legal_standard_applied": "Standard of care not met",
+          "evidence_ids": [
+            "E006"
+          ]
+        },
+        "is_malpractice_point": true
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "procedure",
+        "name": "Surgical Procedure",
+        "description": "Spine fusion surgery performed by Dr. Hrynkiw",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Fusion surgery performed",
+            "timestamp": "July 15, 2005",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "postop",
+        "name": "Postoperative Care",
+        "description": "Care following the initial spine surgery",
+        "duration": "10 days",
+        "key_events": [
+          {
+            "event": "Patient experienced CES symptoms",
+            "timestamp": "Immediately post-surgery",
+            "evidence_ids": [
+              "E002"
+            ]
+          },
+          {
+            "event": "Second surgery performed",
+            "timestamp": "July 25, 2005",
+            "evidence_ids": [
+              "E003"
+            ]
+          }
+        ]
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient is permanently partially disabled",
+        "severity": "PERMANENT_PARTIAL_DISABILITY",
+        "long_term_effects": "Chronic pain and disability",
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "2150000",
+        "key_findings": [
+          "Breach of duty in performing the first surgery",
+          "Failure in postoperative care for CES"
+        ],
+        "evidence_ids": [
+          "E004",
+          "E006"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure in surgical and postoperative care",
+        "counterfactual": "Proper care could have prevented permanent disability",
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "July 15, 2005",
+        "event": "Spine fusion surgery performed",
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "Immediately post-surgery",
+        "event": "Patient experienced CES symptoms",
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "July 25, 2005",
+        "event": "Second surgery performed",
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [
+      {
+        "diagnosis": "Cauda Equina Syndrome (CES)",
+        "when_made": "Immediately post-surgery",
+        "correct": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Spine fusion surgery",
+        "date": "July 15, 2005",
+        "outcome": "Led to CES symptoms",
+        "evidence_ids": [
+          "E001",
+          "E002"
+        ]
+      },
+      {
+        "treatment": "Second spine surgery",
+        "date": "July 25, 2005",
+        "outcome": "No relief from symptoms",
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Cauda Equina Syndrome (CES)",
+        "when_occurred": "Immediately post-surgery",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Violation of standard of care in first surgery",
+        "against": "Dr. Hrynkiw",
+        "found_proven": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "allegation": "Failure in postoperative care for CES",
+        "against": "Dr. Hrynkiw",
+        "found_proven": true,
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Breach of duty in performing the first surgery",
+        "legal_significance": "Standard of care not met",
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "finding": "Failure in postoperative care for CES",
+        "legal_significance": "Standard of care not met",
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ]
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "TREATMENT_PROCEDURE_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "diagnosis_subtypes": [
+      "FAILURE_TO_MONITOR",
+      "FAILURE_TO_INTERVENE"
+    ]
+  }
+}

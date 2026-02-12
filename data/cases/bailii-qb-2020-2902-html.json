@@ -1,0 +1,567 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "bailii-qb-2020-2902-html",
+  "source": "BAILII",
+  "jurisdiction": "UK",
+  "court": "Unknown",
+  "decision_date": "2020-11-02",
+  "url": "https://example.com/bailii-qb-2020-2902-html",
+  "case_name": "Plan v El-Amir & Anor [2020] EWHC 2902 (QB) (02 November 2020)",
+  "neutral_citation": "[2020] EWHC 2902",
+  "clinical_domain": "PAEDIATRICS",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Medical malpractice case involving paediatrics.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "The claimant's claim of negligence against the first defendant, Mr Ahmed El-Amir, and the second defendant the London Eye Hospital Limited (LEH) in respect of private surgery performed to the claimant's right eye by the first defendant at the second defendant hospital on 23 August 2013",
+      "paragraph_ref": "11",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "The claimant was no longer pursuing a claim for breach of a contractual duty of care. Breach of the tortious duty, causation and quantum were all in dispute.",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "The 9 particular allegations of negligence that were pursued at trial fell into two distinct strands: firstly a failure properly or adequately to obtain the informed consent of the claimant for the surgery and to perform the surgery without such consent",
+      "paragraph_ref": "14",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "EXPERT_TESTIMONY",
+      "text": "The expert evidence came from consultant ophthalmic surgeons Mr Robert Morris, MRCP FRCS FRCOphth for the claimant and Professor Claude Claou\u00e9, MD, DO, FRCS(Eng) FRCOphth for the first defendant.",
+      "paragraph_ref": "19",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "The claimant developed glaucoma in her right eye as a result of the surgery from 25 September to 11 December 2013, which she would not have done if the surgery had not been performed.",
+      "paragraph_ref": "55",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "EXPERT_TESTIMONY",
+      "text": "He recommended treatment with eye drops and systemic medication such as Diamox as a temporising measure. If control was not achieved by this means, then YAG laser iridotomy/surgical iridectomy also referred to as peripheral iridotomy (PI) should be performed.",
+      "paragraph_ref": "59",
+      "speaker": "Dr. Abu-Bakra"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "I find as a matter of fact, that it was negligent for the first defendant not to have urgently performed a PI on the right eye to attempt to relieve the right eye pressure within 48 hours of the appointment on 6 November 2013.",
+      "paragraph_ref": "78",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "LEGAL_FINDING",
+      "text": "Liability and causation are therefore established against the first defendant in relation to consent.",
+      "paragraph_ref": "109",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "LEGAL_FINDING",
+      "text": "The first defendant failed to provide the claimant with advice, care and surgical treatment to the reasonable standard expected which caused the glaucoma damage to her right eye",
+      "paragraph_ref": "116",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "79 years",
+        "sex": "female",
+        "relevant_social_history": "Retired psychiatric nurse, independent and energetic"
+      },
+      "chief_complaint": "Desire to improve vision to read magazines",
+      "history_of_present_illness": "Patient with age-related macular degeneration (AMD) seeking surgery to improve vision.",
+      "past_medical_history": [
+        "Age-related macular degeneration"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "eyes": "Right eye visual acuity 2/60, left eye hand movements only"
+        }
+      },
+      "initial_working_problem": "Severe AMD with poor vision",
+      "known_constraints": null,
+      "initial_differential": [
+        "Age-related macular degeneration"
+      ],
+      "critical_findings": [
+        "Severe AMD",
+        "Poor vision"
+      ],
+      "urgency_level": "ELECTIVE",
+      "evidence_ids": [
+        "E005",
+        "E027"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSULT_NOTE",
+        "name": "Initial Consultation with Dr Qureshi",
+        "description": "Consultation regarding potential surgery for AMD",
+        "available_phase": "presentation",
+        "reveal": {
+          "result_summary": "Patient interested in surgery to improve vision, advised surgery on both eyes",
+          "detailed_findings": null,
+          "clinical_significance": "Patient's desire to improve vision for reading",
+          "decision_impact": "Led to decision to proceed with surgery",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E029",
+          "E030"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "IMAGING",
+        "name": "Eye Examination",
+        "description": "Examination of eye condition and pressure",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": null,
+          "detailed_findings": "Imaging performed but findings not detailed in judgment",
+          "clinical_significance": "Assessment of eye condition pre-surgery",
+          "decision_impact": "Informed decision to proceed with surgery",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E041"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Consultation",
+        "description": "Patient consults for potential eye surgery",
+        "duration": "1 day",
+        "key_events": [
+          {
+            "event": "Consultation with Dr Qureshi",
+            "timestamp": "15 July 2013",
+            "evidence_ids": [
+              "E029"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "procedure",
+        "name": "Surgical Procedure",
+        "description": "Surgery performed on right eye",
+        "duration": "1 day",
+        "key_events": [
+          {
+            "event": "Surgery on right eye",
+            "timestamp": "23 August 2013",
+            "evidence_ids": [
+              "E045"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "postop",
+        "name": "Post-operative Care",
+        "description": "Follow-up and management of complications",
+        "duration": "4 months",
+        "key_events": [
+          {
+            "event": "Raised IOP detected",
+            "timestamp": "25 September 2013",
+            "evidence_ids": [
+              "E055"
+            ]
+          },
+          {
+            "event": "Consultation on raised IOP",
+            "timestamp": "6 November 2013",
+            "evidence_ids": [
+              "E068"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "presentation",
+        "clinical_context": "Patient considering surgery for AMD",
+        "prompt": "What should be discussed during the consent process?",
+        "action_type": "DISCLOSE_ALTERNATIVES",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Discuss risks and limited benefits of surgery",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Patient must be informed of risks and realistic outcomes"
+          },
+          {
+            "option_id": "B",
+            "description": "Proceed with surgery without detailed consent",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Patient was not fully informed of risks and benefits"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant proceeded without detailed consent",
+          "reasoning_stated": "Patient was not informed of limited benefits and risks",
+          "evidence_ids": [
+            "E104",
+            "E105"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Full disclosure of risks and benefits should have been provided",
+          "standard_of_care_basis": "Montgomery v Lanarkshire Health Board",
+          "evidence_ids": [
+            "E096",
+            "E097"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Patient was not informed of the limited benefits and significant risks",
+          "what_should_have_happened": "Detailed consent process should have been conducted",
+          "legal_standard_applied": "Montgomery test",
+          "evidence_ids": [
+            "E096",
+            "E097",
+            "E104"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      },
+      {
+        "decision_id": "D002",
+        "phase_id": "postop",
+        "clinical_context": "Post-operative care with raised intraocular pressure",
+        "prompt": "What should be the next step in managing raised IOP?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Perform peripheral iridotomy (PI) within 48 hours",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Urgent intervention needed to prevent optic nerve damage"
+          },
+          {
+            "option_id": "B",
+            "description": "Continue with medication and delay PI",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Delay led to further optic nerve damage"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant delayed PI, continued with medication",
+          "reasoning_stated": "Believed medication would control IOP",
+          "evidence_ids": [
+            "E078",
+            "E079"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "PI should have been performed urgently",
+          "standard_of_care_basis": "Expert consensus on urgency of PI",
+          "evidence_ids": [
+            "E078",
+            "E079"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Delay in PI led to permanent optic nerve damage",
+          "what_should_have_happened": "PI should have been performed within 48 hours",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E078",
+            "E079",
+            "E080"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient left with no perception of light in right eye",
+        "severity": "PERMANENT_SEVERE_DISABILITY",
+        "long_term_effects": "Permanent vision loss in right eye",
+        "evidence_ids": [
+          "E005",
+          "E009"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Breach of duty in failing to perform urgent surgery",
+          "Causation established - failure led to permanent vision loss"
+        ],
+        "evidence_ids": [
+          "E008",
+          "E009"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to perform urgent surgical intervention",
+        "counterfactual": "Urgent surgery could have prevented vision loss",
+        "evidence_ids": [
+          "E007",
+          "E008",
+          "E009"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "15 July 2013",
+        "event": "Initial consultation with Dr Qureshi",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E029"
+        ]
+      },
+      {
+        "timestamp": "23 August 2013",
+        "event": "Surgery on right eye",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E045"
+        ]
+      },
+      {
+        "timestamp": "25 September 2013",
+        "event": "Raised IOP detected",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E055"
+        ]
+      },
+      {
+        "timestamp": "6 November 2013",
+        "event": "Consultation on raised IOP",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E068"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Patient developed glaucoma in right eye",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Eye Examination",
+        "date": "5 August 2013",
+        "result": "Not detailed in judgment",
+        "interpretation": null,
+        "evidence_ids": [
+          "E041"
+        ]
+      },
+      {
+        "test_name": "Ophthalmology assessment",
+        "date": "Not documented in judgment",
+        "result": "Glaucoma confirmed",
+        "interpretation": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Glaucoma",
+        "when_made": "25 September 2013",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E055"
+        ]
+      },
+      {
+        "diagnosis": "Glaucoma in right eye",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Medication for raised IOP",
+        "date": "2 October 2013",
+        "provider": null,
+        "outcome": "Temporary reduction in IOP",
+        "evidence_ids": [
+          "E060"
+        ]
+      },
+      {
+        "treatment": "Conservative management",
+        "date": "Not documented in judgment",
+        "provider": null,
+        "outcome": "Ineffective, led to permanent vision loss",
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Total loss of vision in right eye",
+        "when_occurred": "By January 2015",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E091"
+        ]
+      },
+      {
+        "complication": "Permanent vision loss in right eye",
+        "when_occurred": "Not documented in judgment",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to obtain informed consent",
+        "against": "First defendant",
+        "found_proven": true,
+        "evidence_ids": [
+          "E104"
+        ]
+      },
+      {
+        "allegation": "Failure to perform urgent surgery",
+        "against": "First defendant",
+        "found_proven": true,
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Montgomery test not satisfied",
+        "evidence_ids": [
+          "E109"
+        ]
+      },
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E008"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP",
+      "TREATMENT_PROCEDURE_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.07563025210084033,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 08:31:16.391687",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

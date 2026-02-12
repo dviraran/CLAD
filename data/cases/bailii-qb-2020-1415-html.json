@@ -1,0 +1,472 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "bailii-qb-2020-1415-html",
+  "source": "BAILII",
+  "jurisdiction": "UK",
+  "court": "Unknown",
+  "decision_date": "2020-06-04",
+  "url": "https://example.com/bailii-qb-2020-1415-html",
+  "case_name": "Paul & Anor v The Royal Wolverhampton NHS Trust [2020] EWHC 1415 (QB)",
+  "neutral_citation": "[2020] EWHC 1415",
+  "clinical_domain": "CARDIOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Patient presented with chest and jaw pain. Hospital failed to diagnose ischaemic heart disease and coronary artery atherosclerosis. Patient was discharged without coronary angiography and died from a heart attack 14 months later.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "On 9 November 2012, Mr Paul was admitted to New Cross Hospital in Wolverhampton, part of the Defendant Trust, after complaining of chest and jaw pain.",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "He was discharged on 12 November 2012 after various tests and investigations.",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "More than 14 months later, on 26 January 2014, while out on a shopping trip with Saffron (then 12) and Mya (then 9), he collapsed and died from a heart attack.",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "Mr Paul's heart attack was caused by ischaemic heart disease and occlusive coronary artery atherosclerosis.",
+      "paragraph_ref": "14",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "EXPERT_TESTIMONY",
+      "text": "The Claimants' case is that the failure to diagnose these conditions during Mr Paul's stay in hospital in November 2012 was negligent.",
+      "paragraph_ref": "14",
+      "speaker": "Claimants' position"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "LEGAL_FINDING",
+      "text": "The Defendant accepts that it owed a duty of care to Mrs Paul. It does not accept that it owed a duty of care to Saffron or Mya.",
+      "paragraph_ref": "15",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "COURT_REASONING",
+      "text": "Foreseeability in this context involves 'a hypothetical person, looking with hindsight at an event which has occurred'.",
+      "paragraph_ref": "108",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "COURT_REASONING",
+      "text": "The control mechanisms limit liability for psychiatric injury which is proved to have been caused by the defendant's negligence.",
+      "paragraph_ref": "108",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "LEGAL_FINDING",
+      "text": "The appeal will be allowed and the Master's order striking out the Claimants' claims will be set aside.",
+      "paragraph_ref": "124",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "male",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Chest and jaw pain",
+      "history_of_present_illness": "Mr. Paul was admitted to New Cross Hospital in Wolverhampton on 9 November 2012 with complaints of chest and jaw pain.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "cardiovascular": "Examination mentioned but findings not specified"
+        }
+      },
+      "initial_working_problem": "Chest pain - differential includes cardiac causes",
+      "known_constraints": null,
+      "initial_differential": [
+        "Ischaemic heart disease",
+        "Other cardiac conditions"
+      ],
+      "critical_findings": [
+        "Chest pain",
+        "Jaw pain"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "Coronary Angiography",
+        "description": "Imaging to assess coronary artery disease",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not performed",
+          "detailed_findings": null,
+          "clinical_significance": "Would have revealed significant coronary artery disease",
+          "decision_impact": "Could have led to coronary revascularisation",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "IMAGING",
+        "name": "Coronary Angiography",
+        "description": "Imaging to assess coronary artery blockages",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": null,
+          "detailed_findings": "Imaging performed but findings not detailed in judgment",
+          "clinical_significance": "Not documented in judgment",
+          "decision_impact": "Not documented in judgment",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Hospital Admission",
+        "description": "Patient presents with chest and jaw pain",
+        "duration": "3 days",
+        "key_events": [
+          {
+            "event": "Admission to New Cross Hospital",
+            "timestamp": "9 November 2012",
+            "evidence_ids": [
+              "E001"
+            ]
+          },
+          {
+            "event": "Discharge from hospital",
+            "timestamp": "12 November 2012",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "decision",
+        "name": "Cardiac Event",
+        "description": "Patient experiences a heart attack",
+        "duration": "Immediate",
+        "key_events": [
+          {
+            "event": "Heart attack and collapse",
+            "timestamp": "26 January 2014",
+            "evidence_ids": [
+              "E003",
+              "E004"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient admitted with chest and jaw pain",
+        "prompt": "What diagnostic test should be ordered to assess for coronary artery disease?",
+        "action_type": "ORDER_TEST",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Order coronary angiography",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard investigation for suspected coronary artery disease"
+          },
+          {
+            "option_id": "B",
+            "description": "Discharge without further cardiac investigation",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Failed to investigate potential coronary artery disease"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant discharged patient without coronary angiography",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E002",
+            "E005"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Coronary angiography should have been ordered",
+          "standard_of_care_basis": "Would have revealed significant coronary artery disease",
+          "evidence_ids": [
+            "E005"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to diagnose and treat coronary artery disease",
+          "what_should_have_happened": "Coronary angiography and potential revascularisation",
+          "legal_standard_applied": "Breach of duty in failing to diagnose",
+          "evidence_ids": [
+            "E005"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient suffered a fatal heart attack",
+        "severity": "FATAL",
+        "long_term_effects": "Not applicable",
+        "evidence_ids": [
+          "E003",
+          "E004"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Failure to diagnose and treat cardiac condition",
+          "Causation established - earlier diagnosis could have prevented heart attack"
+        ],
+        "evidence_ids": [
+          "E005",
+          "E124"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to order cardiac testing",
+        "counterfactual": "Cardiac testing would have identified ischaemic heart disease",
+        "evidence_ids": [
+          "E005",
+          "E124"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "9 November 2012",
+        "event": "Patient admitted to New Cross Hospital",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "12 November 2012",
+        "event": "Patient discharged from hospital",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "26 January 2014",
+        "event": "Patient suffered fatal heart attack",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "timestamp": "9 November 2012",
+        "event": "Patient admitted to New Cross Hospital",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "12 November 2012",
+        "event": "Patient discharged from hospital",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "26 January 2014",
+        "event": "Patient suffered a heart attack",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Various tests and investigations",
+        "date": "9-12 November 2012",
+        "result": "Not documented in judgment",
+        "interpretation": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Ischaemic heart disease and occlusive coronary artery atherosclerosis",
+        "when_made": "Post-mortem",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "diagnosis": "Ischaemic heart disease",
+        "when_made": "Post-mortem",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Not applicable",
+        "date": "Not applicable",
+        "provider": null,
+        "outcome": "Not applicable",
+        "evidence_ids": []
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Heart attack",
+        "when_occurred": "26 January 2014",
+        "severity": "Fatal",
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "complication": "Heart attack",
+        "when_occurred": "26 January 2014",
+        "severity": "Fatal",
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to diagnose coronary artery disease",
+        "against": "Defendant Trust",
+        "found_proven": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "allegation": "Failure to diagnose and treat cardiac condition",
+        "against": "Defendant hospital",
+        "found_proven": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Failure to perform coronary angiography",
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.07258064516129033,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 06:58:12.026949",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

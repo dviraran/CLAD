@@ -1,0 +1,449 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-9430548",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2023-09-06",
+  "url": "https://example.com/courtlistener-9430548",
+  "case_name": "Calloway v. McKenna",
+  "neutral_citation": null,
+  "clinical_domain": "CARDIOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Calloway v. McKenna. Medical malpractice case involving cardiology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "James Calloway met with Dr. Brarens, a podiatrist, to discuss pain that he was having in his foot and ankle.",
+      "paragraph_ref": "36",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "James met with Dr. Peter McKenna, a plastic surgeon at CIPS, to discuss having a liposuction procedure while he was off of work for the ankle surgery.",
+      "paragraph_ref": "39",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. McKenna evaluated James for his risk of deep vein thrombosis (\u201cDVT\u201d) and pulmonary embolism (\u201cPE\u201d) by using a self-evaluation worksheet.",
+      "paragraph_ref": "43",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "James had ankle surgery and was instructed not to put any weight on that leg for eight weeks.",
+      "paragraph_ref": "50",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "On June 20, 2019, James had a successful liposuction surgery.",
+      "paragraph_ref": "56",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "James began to experience congestion. He went to his primary care physician\u2019s office on July 11 and met with the nurse practitioner, who instructed him to go to the emergency room immediately.",
+      "paragraph_ref": "62",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "James eventually went to Bethesda North Hospital and was informed that he had developed blood clots and needed surgery.",
+      "paragraph_ref": "65",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "FACTUAL_FINDING",
+      "text": "James passed away on July 14. Following his death, the coroner\u2019s office determined his cause of death as complications from a DVT/PE blood clot.",
+      "paragraph_ref": "68",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "LEGAL_FINDING",
+      "text": "The jury found that Dr. McKenna was negligent by not adequately explaining to James his correct risk level and that he failed to obtain informed consent.",
+      "paragraph_ref": "78",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "LEGAL_FINDING",
+      "text": "The jury also found that the lack of informed consent was not the proximate cause of James\u2019s death.",
+      "paragraph_ref": "80",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E011",
+      "type": "LEGAL_FINDING",
+      "text": "The jury\u2019s verdict in favor of Dr. McKenna and CIPS was not against the manifest weight of the evidence.",
+      "paragraph_ref": "239",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E012",
+      "type": "COURT_REASONING",
+      "text": "We conclude that no exceptional circumstance exists, and we decline to label as plainly erroneous the conclusion section of the jury instructions.",
+      "paragraph_ref": "154",
+      "speaker": "Judge's analysis"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "male",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Foot and ankle pain",
+      "history_of_present_illness": "James Calloway met with Dr. Brarens, a podiatrist, to discuss pain in his foot and ankle. He decided to have foot surgery scheduled for May 30, 2019. On May 29, 2019, he met with Dr. Peter McKenna to discuss having a liposuction procedure while he was off work for the ankle surgery.",
+      "past_medical_history": [
+        "Not documented in judgment"
+      ],
+      "medications": [
+        "Aspirin as anticoagulant post-ankle surgery"
+      ],
+      "allergies": [
+        "Not documented in judgment"
+      ],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "foot_and_ankle": "Painful, scheduled for surgery"
+        }
+      },
+      "initial_working_problem": "Foot and ankle pain requiring surgery",
+      "known_constraints": null,
+      "initial_differential": [
+        "Not documented in judgment"
+      ],
+      "critical_findings": [
+        "Not documented in judgment"
+      ],
+      "urgency_level": "Not documented in judgment",
+      "evidence_ids": [
+        "E001",
+        "E002",
+        "E004"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSULT_NOTE",
+        "name": "Podiatry Consultation",
+        "description": "Consultation with Dr. Brarens regarding foot and ankle pain",
+        "available_phase": "presentation",
+        "reveal": {
+          "result_summary": "James decided to have foot surgery scheduled for May 30, 2019.",
+          "detailed_findings": null,
+          "clinical_significance": "Decision to proceed with surgery",
+          "decision_impact": "Led to scheduling of ankle surgery",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "CONSULT_NOTE",
+        "name": "Plastic Surgery Consultation",
+        "description": "Consultation with Dr. McKenna regarding liposuction",
+        "available_phase": "presentation",
+        "reveal": {
+          "result_summary": "James discussed having a liposuction procedure while off work for ankle surgery.",
+          "detailed_findings": null,
+          "clinical_significance": "Consideration of additional procedure during recovery",
+          "decision_impact": "Liposuction scheduled for June 20, 2019",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "James presents with foot and ankle pain and considers additional procedures.",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Consultation with Dr. Brarens",
+            "timestamp": "March 2019",
+            "evidence_ids": [
+              "E001"
+            ]
+          },
+          {
+            "event": "Consultation with Dr. McKenna",
+            "timestamp": "May 29, 2019",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Pre-operative Workup",
+        "description": "Assessment and preparation for liposuction",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "DVT risk assessment",
+            "timestamp": "Not documented in judgment",
+            "evidence_ids": [
+              "E003"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Pre-operative evaluation for liposuction",
+        "prompt": "What should be done to assess DVT risk?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Conduct a comprehensive DVT risk assessment including all relevant factors",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Comprehensive assessment is necessary to accurately determine risk"
+          },
+          {
+            "option_id": "B",
+            "description": "Use a self-evaluation worksheet without considering all factors",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Incomplete assessment may miss critical risk factors"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Dr. McKenna used a self-evaluation worksheet and did not include the fact that James would be in a plaster cast.",
+          "reasoning_stated": "Dr. McKenna concluded James had a moderate risk for DVT.",
+          "evidence_ids": [
+            "E003"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "A comprehensive DVT risk assessment should have been conducted.",
+          "standard_of_care_basis": "Expert evidence established the need for a thorough risk assessment.",
+          "evidence_ids": [
+            "E009"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Based on evidence E009, the assessment was incomplete.",
+          "what_should_have_happened": "A comprehensive risk assessment should have been conducted.",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E009"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "James developed blood clots and passed away due to complications from DVT/PE.",
+        "severity": "FATAL",
+        "long_term_effects": "Not applicable",
+        "evidence_ids": [
+          "E008"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "None",
+        "key_findings": [
+          "Dr. McKenna was found negligent in not adequately explaining DVT risk.",
+          "Lack of informed consent was not the proximate cause of death."
+        ],
+        "evidence_ids": [
+          "E009",
+          "E010"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": false,
+        "point_of_failure": "Failure to adequately assess and communicate DVT risk",
+        "counterfactual": "Comprehensive risk assessment might have altered management",
+        "evidence_ids": [
+          "E009",
+          "E010"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "March 2019",
+        "event": "James met with Dr. Brarens for foot and ankle pain",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "May 29, 2019",
+        "event": "Consultation with Dr. McKenna for liposuction",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "June 20, 2019",
+        "event": "James had successful liposuction surgery",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "timestamp": "July 14, 2019",
+        "event": "James passed away due to DVT/PE complications",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E008"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "DVT Risk Assessment",
+        "date": "Not documented in judgment",
+        "result": "Moderate risk assessed without considering plaster cast",
+        "interpretation": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "DVT/PE",
+        "when_made": "July 11, 2019",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Surgery to remove blood clots",
+        "date": "July 12, 2019",
+        "provider": null,
+        "outcome": "Initially successful, later complications",
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "DVT/PE",
+        "when_occurred": "July 11, 2019",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to adequately assess and communicate DVT risk",
+        "against": "Dr. McKenna",
+        "found_proven": true,
+        "evidence_ids": [
+          "E009"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Dr. McKenna was negligent but lack of informed consent was not the proximate cause of death",
+        "legal_significance": "No liability found",
+        "evidence_ids": [
+          "E010"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "INFORMED_CONSENT"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.048582995951417005,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 09:48:17.297850",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

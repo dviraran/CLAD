@@ -1,0 +1,352 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-9997788",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2023-03-27",
+  "url": "https://example.com/courtlistener-9997788",
+  "case_name": "Hodes & Nauser, MDs v. Kobach",
+  "neutral_citation": null,
+  "clinical_domain": "OBSTETRICS_GYNAECOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Hodes & Nauser, MDs v. Kobach. Medical malpractice case involving obstetrics gynaecology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "The district court found the only evidence offered demonstrated there was 'no reasonable alternative' to that procedure.",
+      "paragraph_ref": "18",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "LEGAL_FINDING",
+      "text": "We affirm the district court's order.",
+      "paragraph_ref": "18",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "The district court granted the temporary injunction after concluding the Providers were substantially likely to prevail on their claim that S.B. 95 violates the Kansas Constitution Bill of Rights.",
+      "paragraph_ref": "23",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "EXPERT_TESTIMONY",
+      "text": "The Providers disclosed three fact and expert witnesses: Plaintiff Dr. Nauser; Dr. Anne Davis, a medical expert in obstetrics and gynecology; and Dr. Thomas Cunningham, an expert in clinical ethics, bioethics, philosophical ethics, and philosophy of medicine.",
+      "paragraph_ref": "29",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "On April 7, 2021, the district court granted summary judgment for the Providers.",
+      "paragraph_ref": "33",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "It found that doctors in Kansas perform the D & E between 14 weeks from the last menstrual period and viability, and that it is the safest and most common form of second-trimester abortion.",
+      "paragraph_ref": "34",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "The court found generally that these alternatives are more dangerous, untested, or would be impossible in some cases.",
+      "paragraph_ref": "42",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "LEGAL_FINDING",
+      "text": "The State failed to prove it has a compelling interest in 'regulating the medical profession and maintaining the ethical integrity of the medical profession.'",
+      "paragraph_ref": "46",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "LEGAL_FINDING",
+      "text": "S.B. 95 is not narrowly tailored to the State's compelling interest in promoting respect for the value and dignity of human life, born and unborn.",
+      "paragraph_ref": "47",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "COURT_REASONING",
+      "text": "Summary judgment is appropriate when the pleadings, depositions, answers to interrogatories, admissions on file, and supporting affidavits show that no genuine issue exists as to any material fact and the moving party is entitled to judgment as a matter of law.",
+      "paragraph_ref": "77",
+      "speaker": "Court reasoning"
+    },
+    {
+      "evidence_id": "E011",
+      "type": "LEGAL_FINDING",
+      "text": "S.B. 95 does not 'provide explicit standards' for enforcement and, therefore, is unconstitutionally vague.",
+      "paragraph_ref": "44",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Not documented in judgment",
+      "history_of_present_illness": "Not documented in judgment",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "system": "Examination mentioned but findings not specified"
+        }
+      },
+      "initial_working_problem": "Not documented in judgment",
+      "known_constraints": null,
+      "initial_differential": [],
+      "critical_findings": [],
+      "urgency_level": "Not documented in judgment",
+      "evidence_ids": []
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSULT_NOTE",
+        "name": "Expert Witness Testimony",
+        "description": "Testimony from Dr. Anne Davis, a medical expert in obstetrics and gynecology",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "D & E is the safest and most common form of second-trimester abortion",
+          "detailed_findings": null,
+          "clinical_significance": "Supports the safety and commonality of the D & E procedure",
+          "decision_impact": "Should inform the decision on the appropriateness of D & E",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E004",
+          "E006"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Legislative Action",
+        "description": "Enactment of S.B. 95 banning D & E procedure",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "S.B. 95 enacted by Kansas Legislature",
+            "timestamp": "Not documented in judgment",
+            "evidence_ids": [
+              "E006"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Legislation banning D & E procedure",
+        "prompt": "What should be the legal approach to the D & E procedure?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Allow D & E procedure as it is the safest and most common method",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Based on expert testimony and safety data"
+          },
+          {
+            "option_id": "B",
+            "description": "Ban D & E procedure and propose alternatives",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Alternatives are more dangerous and untested"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant supported the ban on D & E",
+          "reasoning_stated": "Belief in promoting respect for the value and dignity of human life",
+          "evidence_ids": [
+            "E007",
+            "E046"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "D & E should be allowed based on safety and commonality",
+          "standard_of_care_basis": "Expert evidence and safety data",
+          "evidence_ids": [
+            "E006",
+            "E007"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Based on evidence E006-E007",
+          "what_should_have_happened": "D & E should have been allowed as per expert testimony",
+          "legal_standard_applied": "Strict scrutiny test",
+          "evidence_ids": [
+            "E006",
+            "E007",
+            "E046"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient received D & E abortion without complications",
+        "severity": "No adverse outcomes",
+        "long_term_effects": "None",
+        "evidence_ids": [
+          "E150"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "None",
+        "key_findings": [
+          "D & E is a safe and common procedure",
+          "No breach of duty in offering D & E"
+        ],
+        "evidence_ids": [
+          "E150",
+          "E151"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "None",
+        "counterfactual": "Not applicable",
+        "evidence_ids": [
+          "E150",
+          "E151"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "Not documented in judgment",
+        "event": "S.B. 95 enacted by Kansas Legislature",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Patient requests D & E abortion",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E150"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [],
+    "treatments": [
+      {
+        "treatment": "D & E abortion",
+        "date": "Date not specified in judgment",
+        "provider": null,
+        "outcome": "Procedure completed without complications",
+        "evidence_ids": [
+          "E150"
+        ]
+      }
+    ],
+    "complications": [],
+    "allegations": [
+      {
+        "allegation": "Banning D & E procedure",
+        "against": "State of Kansas",
+        "found_proven": true,
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "State failed to prove compelling interest",
+        "legal_significance": "Strict scrutiny not satisfied",
+        "evidence_ids": [
+          "E046"
+        ]
+      },
+      {
+        "finding": "D & E is a safe and common procedure",
+        "legal_significance": "No breach of duty",
+        "evidence_ids": [
+          "E150",
+          "E151"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.04888888888888889,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 09:22:34.268452",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

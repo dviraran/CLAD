@@ -1,0 +1,385 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "bailii-qb-2020-3903-html",
+  "source": "BAILII",
+  "jurisdiction": "UK",
+  "court": "Unknown",
+  "decision_date": "2020-04-27",
+  "url": "https://example.com/bailii-qb-2020-3903-html",
+  "case_name": "ABC  v Basildon & Thurrock Hospitals NHS Foundation Trust [2020] EWHC 3903 (QB) (27 April 2020)",
+  "neutral_citation": "[2020] EWHC 3903",
+  "clinical_domain": "OBSTETRICS_GYNAECOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Medical malpractice case involving obstetrics gynaecology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "The Claimant is 20 years old, but because he lacks capacity these proceedings have been brought on his behalf by his mother as litigation friend.",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "He was born on 8 th April 2000 at the very young gestational age of 27 weeks at the Basildon Hospital in Essex.",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "He suffered severe injury in the form of intracranial haemorrhage in the germinal matrix area of his brain.",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "This has given rise to asymmetric spastic cerebral palsy.",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "The case advanced on behalf of the Claimant was that his mother should have been given antenatal corticosteroid treatment in the days before the birth.",
+      "paragraph_ref": "14",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "The defendant accepted that the failure to give the mother corticosteroids was negligent, but said that these would not have made any difference.",
+      "paragraph_ref": "14",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "The Claimant went to a local mainstream primary school, secondary school and sixth form college.",
+      "paragraph_ref": "16",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "FACTUAL_FINDING",
+      "text": "He has a number of GCSEs and has undertaken two work placements.",
+      "paragraph_ref": "16",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "FACTUAL_FINDING",
+      "text": "He does however have impaired motor control in his right arm and hand and in both legs.",
+      "paragraph_ref": "16",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "FACTUAL_FINDING",
+      "text": "The dexterity in his right hand has improved to some extent, but his lower limb function has not.",
+      "paragraph_ref": "16",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E011",
+      "type": "FACTUAL_FINDING",
+      "text": "He trips and falls frequently and uses a stick.",
+      "paragraph_ref": "16",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E012",
+      "type": "FACTUAL_FINDING",
+      "text": "He is likely to have to use a wheelchair outside and possibly inside too in later life.",
+      "paragraph_ref": "16",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E013",
+      "type": "FACTUAL_FINDING",
+      "text": "He also suffers from anxiety, and his development is a little behind that of some of his peers.",
+      "paragraph_ref": "16",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E014",
+      "type": "LEGAL_FINDING",
+      "text": "The reasonableness of the settlement must be approached with that firmly in mind.",
+      "paragraph_ref": "17",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E015",
+      "type": "COURT_REASONING",
+      "text": "I am satisfied, on the basis of his analysis of those issues, that it is entirely justified to accept a settlement that reflects litigation risk in the way he has outlined.",
+      "paragraph_ref": "18",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E016",
+      "type": "LEGAL_FINDING",
+      "text": "I am satisfied that these figures are appropriate ones which it is the Claimant's best interests to accept.",
+      "paragraph_ref": "21",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "20 years",
+        "sex": "male",
+        "relevant_social_history": "Lives with mother and two sisters, close family unit"
+      },
+      "chief_complaint": "Not explicitly stated in judgment",
+      "history_of_present_illness": "Born at 27 weeks gestation, suffered intracranial haemorrhage leading to cerebral palsy",
+      "past_medical_history": [
+        "Asymmetric spastic cerebral palsy",
+        "Anxiety"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "neurological": "Impaired motor control in right arm and hand, both legs; poor balance; uses a stick"
+        }
+      },
+      "initial_working_problem": "Cerebral palsy with motor impairment",
+      "known_constraints": null,
+      "initial_differential": [
+        "Cerebral palsy complications"
+      ],
+      "critical_findings": [
+        "Impaired motor control",
+        "Poor balance"
+      ],
+      "urgency_level": "CHRONIC",
+      "evidence_ids": [
+        "E001",
+        "E003",
+        "E004",
+        "E009"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSULT_NOTE",
+        "name": "Neurology Consultation",
+        "description": "Assessment of motor function and cerebral palsy management",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Motor impairment consistent with cerebral palsy",
+          "detailed_findings": null,
+          "clinical_significance": "Confirms diagnosis and guides management",
+          "decision_impact": "Supports need for ongoing physiotherapy and potential future wheelchair use",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E009",
+          "E010",
+          "E011"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "decision",
+        "name": "Antenatal Care",
+        "description": "Mother's care prior to preterm delivery",
+        "duration": "Not specified in judgment",
+        "key_events": [
+          {
+            "event": "Decision not to administer corticosteroids",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E005"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "decision",
+        "clinical_context": "Mother at risk of preterm delivery",
+        "prompt": "Should antenatal corticosteroids be administered?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Administer antenatal corticosteroids",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard care to improve neonatal outcomes in preterm birth"
+          },
+          {
+            "option_id": "B",
+            "description": "Do not administer corticosteroids",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Negligent as per court findings"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant did not administer corticosteroids",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E005",
+            "E006"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Corticosteroids should have been administered",
+          "standard_of_care_basis": "Expert evidence supports improved outcomes with corticosteroids",
+          "evidence_ids": [
+            "E005"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to administer corticosteroids was negligent",
+          "what_should_have_happened": "Corticosteroids should have been given to improve lung function",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E005",
+            "E006"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient has asymmetric spastic cerebral palsy with motor impairments",
+        "severity": "PERMANENT_MODERATE_DISABILITY",
+        "long_term_effects": "Impaired motor control, likely future wheelchair use",
+        "evidence_ids": [
+          "E004",
+          "E009",
+          "E012"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "5,996,661",
+        "key_findings": [
+          "Breach of duty in failing to administer corticosteroids",
+          "Settlement reflects litigation risk"
+        ],
+        "evidence_ids": [
+          "E006",
+          "E021"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": false,
+        "point_of_failure": "Failure to administer antenatal corticosteroids",
+        "counterfactual": "Corticosteroids might have improved neonatal outcomes",
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "8 April 2000",
+        "event": "Claimant born at 27 weeks gestation",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [
+      {
+        "diagnosis": "Asymmetric spastic cerebral palsy",
+        "when_made": "Not specified in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "treatments": [],
+    "complications": [],
+    "allegations": [
+      {
+        "allegation": "Failure to administer antenatal corticosteroids",
+        "against": "Defendant",
+        "found_proven": true,
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.7619047619047619,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 07:48:10.242338",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

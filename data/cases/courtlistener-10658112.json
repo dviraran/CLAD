@@ -1,0 +1,391 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10658112",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2025-08-21",
+  "url": "https://example.com/courtlistener-10658112",
+  "case_name": "Lyon v. Riverside Methodist Hosp.",
+  "neutral_citation": null,
+  "clinical_domain": "PAEDIATRICS",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Lyon v. Riverside Methodist Hosp.. Medical malpractice case involving paediatrics.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "On or about May 27, 2015, Lyon presented at Lower Lights Christian Health Center with a history of GERD and tachycardia.",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "In October 2015, Lyon presented again at Lower Lights with complaints of gastroparesis. Lyon had lost over 30 pounds since her last visit.",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "On November 24, 2015, Lyon presented to the Riverside Methodist Hospital, reporting that she had not been able to keep water down for several days as well as intractable vomiting with nausea for several weeks.",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "Lyon was readmitted to Riverside two days later with persistent nausea and positional vertigo with spinning, as well as diplopia and blurred vision.",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "On January 15, 2016, Lyon was admitted to the Ohio State University Wexner Medical Center where she was diagnosed with severe nutritional deficiency and Wernicke-Korsakoff syndrome, which led to severe peripheral neuropathy.",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "LEGAL_FINDING",
+      "text": "The trial court found the noneconomic damages cap in R.C. 2323.43 unconstitutional as it violated both Lyon\u2019s right to due process and equal protection.",
+      "paragraph_ref": "14",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "LEGAL_FINDING",
+      "text": "The jury rendered its verdict in favor of Lyon and awarded damages of $25,172,526.32.",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "LEGAL_FINDING",
+      "text": "The jury also determined that Makkar, Reddy, and Gaible were each 3 percent responsible for Lyon\u2019s injuries and damages while Ohio Gastroenterology Group, Inc. was jointly liable for 9 percent.",
+      "paragraph_ref": "14",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "COURT_REASONING",
+      "text": "We find the instant case more analogous to Kalitan than Oliver. Unlike Oliver, this matter concerns a private litigant and not a political subdivision.",
+      "paragraph_ref": "42",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "COURT_REASONING",
+      "text": "Accordingly, as applied to the facts of this case, R.C. 2323.43 is unconstitutional under the equal protection provision of the Ohio Constitution.",
+      "paragraph_ref": "51",
+      "speaker": "Judge's analysis"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Intractable vomiting and nausea for several weeks",
+      "history_of_present_illness": "Patient reports not being able to keep water down for several days and has been in and out of the emergency department for two months receiving IV fluids.",
+      "past_medical_history": [
+        "GERD",
+        "Gastroparesis"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "general": "Patient appears malnourished",
+          "neurological": "Positional vertigo with spinning, diplopia, and blurred vision"
+        }
+      },
+      "initial_working_problem": "Severe nausea and vomiting with possible nutritional deficiency",
+      "known_constraints": null,
+      "initial_differential": [
+        "Thiamine deficiency",
+        "Other nutritional deficiencies"
+      ],
+      "critical_findings": [
+        "Intractable vomiting",
+        "Nutritional deficiency signs"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E003",
+        "E004"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "LAB",
+        "name": "Thiamine Level",
+        "description": "Measurement of thiamine (Vitamin B1) level in blood",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not documented in judgment",
+          "detailed_findings": null,
+          "clinical_significance": "Could confirm thiamine deficiency",
+          "decision_impact": "Would guide immediate supplementation and prevent neurological complications",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents to Riverside Methodist Hospital with severe symptoms",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Patient reports intractable vomiting and nausea",
+            "timestamp": "November 24, 2015",
+            "evidence_ids": [
+              "E003"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Diagnostic Workup",
+        "description": "Evaluation and testing to determine cause of symptoms",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Patient discharged without thiamine level check",
+            "timestamp": "December 7, 2015",
+            "evidence_ids": [
+              "E003"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient with severe nausea, vomiting, and signs of nutritional deficiency",
+        "prompt": "What laboratory test should be ordered to investigate the cause of the patient's symptoms?",
+        "action_type": "ORDER_TEST",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Order thiamine level",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Thiamine deficiency is a known cause of Wernicke-Korsakoff syndrome and should be ruled out in this clinical context."
+          },
+          {
+            "option_id": "B",
+            "description": "Order basic metabolic panel only",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Does not address the specific risk of thiamine deficiency given the patient's symptoms."
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant did not order thiamine level",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E003",
+            "E004"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Thiamine level should have been ordered",
+          "standard_of_care_basis": "Expert evidence established the need to rule out thiamine deficiency",
+          "evidence_ids": [
+            "E005"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to order thiamine level led to missed diagnosis of Wernicke-Korsakoff syndrome",
+          "what_should_have_happened": "Thiamine deficiency should have been identified and treated early",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E005"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient developed Wernicke-Korsakoff syndrome and severe peripheral neuropathy",
+        "severity": "PERMANENT_SEVERE_DISABILITY",
+        "long_term_effects": "Severe neurological injury",
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "25172526.32",
+        "key_findings": [
+          "Breach of duty in failing to diagnose thiamine deficiency",
+          "Causation established - earlier diagnosis would have prevented neurological injury"
+        ],
+        "evidence_ids": [
+          "E007",
+          "E008"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to order thiamine level",
+        "counterfactual": "Thiamine supplementation would have prevented Wernicke-Korsakoff syndrome",
+        "evidence_ids": [
+          "E005",
+          "E007"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "November 24, 2015",
+        "event": "Patient presents to Riverside Methodist Hospital",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "timestamp": "December 7, 2015",
+        "event": "Patient discharged from Riverside Methodist Hospital",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Thiamine Level",
+        "date": "Not ordered",
+        "result": "Not documented in judgment",
+        "interpretation": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Wernicke-Korsakoff syndrome",
+        "when_made": "January 15, 2016",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Thiamine supplementation",
+        "date": "Not documented in judgment",
+        "provider": null,
+        "outcome": "Not documented in judgment",
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Severe peripheral neuropathy",
+        "when_occurred": "January 15, 2016",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to diagnose thiamine deficiency",
+        "against": "Defendant physicians",
+        "found_proven": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.18867924528301888,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 09:51:45.134208",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

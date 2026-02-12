@@ -1,0 +1,532 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "bailii-EWHC-KB-2024-1432",
+  "source": "BAILII",
+  "jurisdiction": "UK",
+  "court": "Unknown",
+  "decision_date": "2024-06-11",
+  "url": "https://example.com/bailii-EWHC-KB-2024-1432",
+  "case_name": "Woods v Doncaster And Bassetlaw Teaching Hospitals NHS Foundation Trust [2024] EWHC 1432 (KB) (11 June 2024)",
+  "neutral_citation": "[2024] EWHC 1432",
+  "clinical_domain": "OBSTETRICS_GYNAECOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Medical malpractice case involving obstetrics gynaecology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "The claimant was Julie Woods' first child. Mrs Woods attended her general practitioner on 19 February 1998 when the pregnancy was confirmed.",
+      "paragraph_ref": "15",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "On 5 June Mrs Woods attended the hospital feeling unwell since the previous day and complained of feeling nauseous, lightheaded and with intermittent cramping pain in her lower abdomen.",
+      "paragraph_ref": "15",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "The claimant brings this action for damages for personal injury arising from the alleged negligent delay in her delivery by the medical and nursing staff of the Doncaster Royal Infirmary.",
+      "paragraph_ref": "11",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "Mrs Woods was transferred to the operating theatre at 05.02. At 05.10 the fetal heart was auscultated and found to be 136 bpm.",
+      "paragraph_ref": "25",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "The claimant was delivered at 05.20 with the cord wrapped once around the neck.",
+      "paragraph_ref": "25",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "The claimant's Apgar scores included the value of 3 at 1 minute.",
+      "paragraph_ref": "25",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "It is not contentious that the claimant's condition in the first 24 hours of life was consistent with hypoxic ischaemic encephalopathy.",
+      "paragraph_ref": "28",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Mr Hare said that it was unacceptable for Dr Samy to have concluded that the trace was reassuring.",
+      "paragraph_ref": "51",
+      "speaker": "Expert testimony"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Mr Hare said that at birth, the claimant had intrauterine growth retardation due to placental insufficiency.",
+      "paragraph_ref": "53",
+      "speaker": "Expert testimony"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Mr Tuffnell said that a tachycardia with normal variability was in his experience almost always caused by the baby moving.",
+      "paragraph_ref": "63",
+      "speaker": "Expert testimony"
+    },
+    {
+      "evidence_id": "E011",
+      "type": "WITNESS_STATEMENT",
+      "text": "Mrs Woods' statement (dated August 2009) records that on 28 September 1998 she had felt a gush of fluid from her vagina.",
+      "paragraph_ref": "39",
+      "speaker": "Mrs Woods"
+    },
+    {
+      "evidence_id": "E012",
+      "type": "WITNESS_STATEMENT",
+      "text": "Mrs Woods said that, after 28 September, she remained concerned about the pregnancy and in particular the lack of fetal movement.",
+      "paragraph_ref": "40",
+      "speaker": "Mrs Woods"
+    },
+    {
+      "evidence_id": "E013",
+      "type": "LEGAL_FINDING",
+      "text": "Judgment should be entered for the claimant.",
+      "paragraph_ref": "105",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E014",
+      "type": "COURT_REASONING",
+      "text": "I am satisfied that the decision by Dr Samy to instigate further CTG monitoring after a break of one hour was appropriate and reasonable management.",
+      "paragraph_ref": "86",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E015",
+      "type": "COURT_REASONING",
+      "text": "The second trace did not provide sufficient reassurance to justify allowing Mrs Woods to go home with routine antenatal follow up.",
+      "paragraph_ref": "92",
+      "speaker": "Judge's analysis"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "History of leaking per vaginum and reduced fetal movements",
+      "history_of_present_illness": "Mrs Woods, at 39 weeks' gestation, self-referred to the hospital on 28 September 1998, reporting a history of leaking fluid since midday and contractions that morning.",
+      "past_medical_history": [
+        "Irritable bowel syndrome"
+      ],
+      "medications": [
+        "Colofac"
+      ],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "obstetric": "Fetal heart rate noted to be 160-175 bpm on CTG"
+        }
+      },
+      "initial_working_problem": "Possible fetal distress",
+      "known_constraints": null,
+      "initial_differential": [
+        "Fetal distress",
+        "Normal fetal activity"
+      ],
+      "critical_findings": [
+        "Tachycardia on CTG",
+        "Reduced fetal movements"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E002",
+        "E016",
+        "E017"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "CTG Monitoring",
+        "description": "Continuous fetal heart rate monitoring",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "First trace showed tachycardia and two decelerations; second trace was non-reassuring",
+          "detailed_findings": null,
+          "clinical_significance": "Indicated potential fetal distress",
+          "decision_impact": "Should have prompted further investigation and possible early delivery",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E016",
+          "E017",
+          "E018"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "CONSULT_NOTE",
+        "name": "Obstetric Consultation",
+        "description": "Consultation with Dr Samy regarding CTG interpretation",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Dr Samy concluded the trace was reassuring and discharged Mrs Woods",
+          "detailed_findings": null,
+          "clinical_significance": "Decision to discharge was contested as unreasonable",
+          "decision_impact": "Led to delayed delivery and potential harm",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E018",
+          "E019"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Mrs Woods presents to hospital with concerns about fetal movements and leaking fluid",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "CTG monitoring initiated",
+            "timestamp": "28 September 1998 19:42",
+            "evidence_ids": [
+              "E016"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "CTG Monitoring and Decision",
+        "description": "CTG monitoring and decision to discharge",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "First CTG trace reviewed",
+            "timestamp": "28 September 1998 21:30",
+            "evidence_ids": [
+              "E018"
+            ]
+          },
+          {
+            "event": "Second CTG trace reviewed",
+            "timestamp": "28 September 1998 23:00",
+            "evidence_ids": [
+              "E019"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Mrs Woods presented with potential fetal distress",
+        "prompt": "What should be the next step after reviewing the CTG trace?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Admit for further monitoring and possible early delivery",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Non-reassuring CTG should prompt further investigation"
+          },
+          {
+            "option_id": "B",
+            "description": "Discharge with routine antenatal follow-up",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Trace was incorrectly deemed reassuring"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant discharged Mrs Woods",
+          "reasoning_stated": "Trace was considered reassuring",
+          "evidence_ids": [
+            "E018",
+            "E019"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Further monitoring and assessment should have been conducted",
+          "standard_of_care_basis": "Expert evidence indicated need for further investigation",
+          "evidence_ids": [
+            "E020",
+            "E021"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Based on evidence E020-E021, the trace was non-reassuring",
+          "what_should_have_happened": "Further monitoring and possible early delivery",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E020",
+            "E021",
+            "E022"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "The claimant was delivered with intrauterine growth retardation and signs of fetal distress.",
+        "severity": "PERMANENT_MODERATE_DISABILITY",
+        "long_term_effects": "Chronic health issues related to birth complications",
+        "evidence_ids": [
+          "E005",
+          "E009"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not specified in judgment",
+        "key_findings": [
+          "Failure to induce labor despite signs of fetal distress",
+          "Causation established - earlier intervention would have prevented complications"
+        ],
+        "evidence_ids": [
+          "E013",
+          "E105"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to induce labor",
+        "counterfactual": "Induction would have prevented fetal distress",
+        "evidence_ids": [
+          "E103",
+          "E105"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "28 September 1998 19:42",
+        "event": "CTG monitoring initiated",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E016"
+        ]
+      },
+      {
+        "timestamp": "28 September 1998 21:30",
+        "event": "First CTG trace reviewed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E018"
+        ]
+      },
+      {
+        "timestamp": "28 September 1998 23:00",
+        "event": "Second CTG trace reviewed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E019"
+        ]
+      },
+      {
+        "timestamp": "5 June 1998",
+        "event": "Mrs. Woods attended the hospital feeling unwell",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "CTG Monitoring",
+        "date": "28 September 1998",
+        "result": "Non-reassuring",
+        "interpretation": null,
+        "evidence_ids": [
+          "E016",
+          "E017"
+        ]
+      },
+      {
+        "test_name": "CTG Monitoring",
+        "date": "5 June 1998",
+        "result": "Tachycardia with decelerations",
+        "interpretation": null,
+        "evidence_ids": [
+          "E008",
+          "E010"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Hypoxic ischaemic encephalopathy",
+        "when_made": "Post-birth",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      {
+        "diagnosis": "Intrauterine growth retardation",
+        "when_made": "At birth",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E009"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Emergency caesarean section",
+        "date": "14 October 1998",
+        "provider": null,
+        "outcome": "Claimant delivered with complications",
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "treatment": "Delivery",
+        "date": "14 October 1998",
+        "provider": null,
+        "outcome": "Claimant delivered with complications",
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Cognitive and behavioral difficulties",
+        "when_occurred": "Post-birth",
+        "severity": "Moderate",
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      {
+        "complication": "Fetal distress",
+        "when_occurred": "At birth",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to conduct further investigations",
+        "against": "Dr Samy",
+        "found_proven": true,
+        "evidence_ids": [
+          "E014"
+        ]
+      },
+      {
+        "allegation": "Failure to induce labor",
+        "against": "Dr. Samy",
+        "found_proven": true,
+        "evidence_ids": [
+          "E105"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E013"
+        ]
+      },
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E105"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.14285714285714285,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-21 19:35:23.050807",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

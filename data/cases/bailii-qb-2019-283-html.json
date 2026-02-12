@@ -1,0 +1,456 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "bailii-qb-2019-283-html",
+  "source": "BAILII",
+  "jurisdiction": "UK",
+  "court": "Unknown",
+  "decision_date": "2019-02-15",
+  "url": "https://example.com/bailii-qb-2019-283-html",
+  "case_name": "Marshall v Schembri [2019] EWHC 283 (QB)",
+  "neutral_citation": "[2019] EWHC 283",
+  "clinical_domain": "EMERGENCY_MEDICINE",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "GP failed to refer patient with history of pulmonary embolism presenting with chest pain and breathlessness. Patient died the following morning from massive PE.",
+    "clinical_synopsis": "64-year-old female with known history of PE (2008) presented to GP with chest pain and breathlessness. GP diagnosed muscle strain and discharged with ibuprofen. Patient suffered fatal cardiac arrest next morning due to massive pulmonary embolism.",
+    "legal_synopsis": "Court found GP breached duty of care by failing to refer to hospital. Causation established - patient would have survived with timely anticoagulation."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "The Claimant is the husband of Doreen Marshall (\"the deceased\") who died on 26 th April 2014. The time of death was declared at 09:37 hours.",
+      "paragraph_ref": "12",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "On 25 th April 2014 the deceased attended at Shoebury Health Centre, Shoeburyness. It was about 4 p.m. Her presenting symptoms were chest pain and breathlessness.",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "The admitted negligence is that the Defendant should have referred the deceased directly to Southend Hospital. He did not do so and the deceased returned home.",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Professor Empey said in his Report that heparin \"\u0085 on the balance of probabilities, would have prevented additional clot forming in the deep veins of the leg, and even if further embolism had occurred in the morning, it would have been significantly smaller than the massive one which caused her demise.\"",
+      "paragraph_ref": "58",
+      "speaker": "Professor Empey"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "LEGAL_FINDING",
+      "text": "It is admitted that the Defendant breached his duty of care to the deceased. It is denied that that breach of duty of care caused the deceased's death.",
+      "paragraph_ref": "12",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "COURT_REASONING",
+      "text": "For those reasons I find for the Claimant on the issue of causation.",
+      "paragraph_ref": "185",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "WITNESS_STATEMENT",
+      "text": "Mr Marshall briefly gave oral evidence. The only point he made was that the distance from the bedroom to the bathroom was somewhat less than the width of the courtroom.",
+      "paragraph_ref": "1",
+      "speaker": "Mr. Marshall"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Professor Davies suggested that the post-mortem report was consistent with one clot which entered the lung and fragmented.",
+      "paragraph_ref": "80",
+      "speaker": "Professor Davies"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "FACTUAL_FINDING",
+      "text": "The next morning the couple woke at about 7.30 a.m. Mr Marshall switched on the television and went downstairs to make coffee.",
+      "paragraph_ref": "38",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "EXPERT_TESTIMONY",
+      "text": "The Defendant's experts and Doctor Gomez, the Claimant's Haematologist, all agreed that the initiation of therapeutic anticoagulation in the 24 hours prior to the time of the massive PE which caused the deceased's death would not, on the balance of probabilities, have prevented the fatal arrest.",
+      "paragraph_ref": "55",
+      "speaker": "Defendant's experts and Dr. Gomez"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "64 years",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Chest pain and breathlessness",
+      "history_of_present_illness": "Patient with a known history of pulmonary embolism presented with chest pain and breathlessness.",
+      "past_medical_history": [
+        "Pulmonary embolism in 2008"
+      ],
+      "medications": [
+        "Warfarin (previously prescribed)"
+      ],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "respiratory": "Breathlessness noted, further details not specified"
+        }
+      },
+      "initial_working_problem": "Suspected pulmonary embolism",
+      "known_constraints": null,
+      "initial_differential": [
+        "Pulmonary embolism",
+        "Muscle strain"
+      ],
+      "critical_findings": [
+        "History of PE",
+        "Chest pain",
+        "Breathlessness"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E002",
+        "E003"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "CT Pulmonary Angiography (CTPA)",
+        "description": "Imaging to confirm pulmonary embolism",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "CTPA would have shown PE",
+          "detailed_findings": null,
+          "clinical_significance": "Confirms diagnosis of pulmonary embolism",
+          "decision_impact": "Would prompt immediate anticoagulation treatment",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": [
+          "E048"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "LAB",
+        "name": "D-dimer",
+        "description": "Blood test to assess clotting activity",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "D-dimer would have been elevated",
+          "detailed_findings": null,
+          "clinical_significance": "Supports diagnosis of pulmonary embolism",
+          "decision_impact": "Would prompt further imaging and treatment",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": [
+          "E048"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents to health center with symptoms",
+        "duration": "1 hour",
+        "key_events": [
+          {
+            "event": "Patient seen by GP",
+            "timestamp": "25 April 2014 16:00",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Missed Referral",
+        "description": "Patient discharged without hospital referral",
+        "duration": "Not specified",
+        "key_events": [
+          {
+            "event": "Patient discharged home",
+            "timestamp": "25 April 2014",
+            "evidence_ids": [
+              "E003"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient presenting with chest pain and breathlessness",
+        "prompt": "What should be the next step in management?",
+        "action_type": "ORDER_TEST",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Refer to hospital for further investigation",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Given history of PE, urgent hospital referral is necessary"
+          },
+          {
+            "option_id": "B",
+            "description": "Reassure and discharge with pain relief",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Misdiagnosed as muscle strain"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant reassured and discharged patient",
+          "reasoning_stated": "Believed symptoms were due to muscle strain",
+          "evidence_ids": [
+            "E003"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Referral to hospital should have been made",
+          "standard_of_care_basis": "Expert evidence indicated hospital referral was necessary",
+          "evidence_ids": [
+            "E003",
+            "E005"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to refer patient with known PE history",
+          "what_should_have_happened": "Patient should have been referred for urgent hospital assessment",
+          "legal_standard_applied": "Breach of duty established",
+          "evidence_ids": [
+            "E003",
+            "E005"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient died from massive pulmonary embolism",
+        "severity": "FATAL",
+        "long_term_effects": "Not applicable",
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Breach of duty in failing to refer to hospital and administer heparin",
+          "Causation established - earlier intervention would have likely prevented death"
+        ],
+        "evidence_ids": [
+          "E003",
+          "E006"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to administer heparin and refer to hospital",
+        "counterfactual": "Heparin and hospital care would have likely prevented death",
+        "evidence_ids": [
+          "E003",
+          "E006",
+          "E171"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "25 April 2014 16:00",
+        "event": "Patient seen at health center",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "26 April 2014 09:37",
+        "event": "Patient declared dead",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "25 April 2014",
+        "event": "Patient presented at Shoebury Health Centre",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Blood pressure measurement",
+        "date": "25 April 2014",
+        "result": "Systolic 132",
+        "interpretation": null,
+        "evidence_ids": [
+          "E192"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Pulmonary embolism",
+        "when_made": "Post-mortem",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E008"
+        ]
+      },
+      {
+        "diagnosis": "Pulmonary embolism",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E169"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Heparin",
+        "date": "Not administered",
+        "provider": null,
+        "outcome": "Not applicable",
+        "evidence_ids": [
+          "E171"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Cardiac arrest",
+        "when_occurred": "26 April 2014",
+        "severity": "Fatal",
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "complication": "Massive pulmonary embolism",
+        "when_occurred": "26 April 2014",
+        "severity": "Fatal",
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to refer to hospital",
+        "against": "Defendant GP",
+        "found_proven": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "allegation": "Failure to refer to hospital and administer heparin",
+        "against": "Defendant",
+        "found_proven": true,
+        "evidence_ids": [
+          "E003",
+          "E006"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Breach of duty established",
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E003",
+          "E006"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.043859649122807015,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 10:03:43.078521",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

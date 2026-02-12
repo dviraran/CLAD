@@ -1,0 +1,518 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "nzlii-nzhpdt-2006-50-html",
+  "source": "BAILII",
+  "jurisdiction": "UK",
+  "court": "Unknown",
+  "decision_date": "2006-08-31",
+  "url": "https://example.com/nzlii-nzhpdt-2006-50-html",
+  "case_name": "16       New Zealand authorities currently require the Tribunal to assess the\nculpability of a health practitioner  on the basis of\nthe civil standard of\nproof, bearing in mind that serious allegations require a high level of proof. \nInBrake v Preliminary Proceedings Committee1a full Court of the High Court expressed  the standard  of proof in\nthe following way:",
+  "neutral_citation": null,
+  "clinical_domain": "OBSTETRICS_GYNAECOLOGY",
+  "outcome_severity": "PERMANENT_SEVERE_DISABILITY",
+  "summary": {
+    "brief": "16       New Zealand authorities currently require the Tribunal to assess the\nculpability of a health practitioner  on the basis of\nthe civil standard of\nproof, bearing in mind that serious allegations require a high level of proof. \nInBrake v Preliminary Proceedings Committee1a full Court of the High Court expressed  the standard  of proof in\nthe following way:. Medical malpractice case involving obstetrics gynaecology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "The Director of Proceedings alleged the patient presented to Dr S on 10 October 2003 with a bloated stomach and suffering abdominal discomfort.",
+      "paragraph_ref": "2",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Ultimately the patient underwent surgery on 16 March 2004 at which time a large mucinous cystadenocarcinoma of the ovary was removed. The cyst weighed 14.7kg.",
+      "paragraph_ref": "2",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "LEGAL_FINDING",
+      "text": "The Tribunal was satisfied they constituted professional misconduct.",
+      "paragraph_ref": "4",
+      "speaker": "Tribunal conclusion"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "LEGAL_FINDING",
+      "text": "Doctor S has been found guilty of professional misconduct.",
+      "paragraph_ref": "236",
+      "speaker": "Tribunal conclusion"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "COURT_REASONING",
+      "text": "The Tribunal has assessed Dr S\u2019s conduct in this case by addressing the tests noted in paragraph 25 in relation to the allegations in the notice of charge.",
+      "paragraph_ref": "28",
+      "speaker": "Tribunal analysis"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr Marshall described the consultations of 7 November, 24 February and 11 March as recorded in Dr S\u2019s notes, and suggested that \u201cDr S\u2019s treatment of Ms L\u2019s ovarian cyst was of the standard expected of a competent general practitioner\u201d.",
+      "paragraph_ref": "126",
+      "speaker": "Dr Marshall"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr Ngan Kee also thought however that by 24 February 2004 Ms L was likely to have \u201chad a large cyst\u201d.",
+      "paragraph_ref": "119",
+      "speaker": "Dr Ngan Kee"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "MEDICAL_RECORD",
+      "text": "Among the matters noted in Ms L\u2019s medical records are references to: In January, February and April 2003, I visited Dr S to have prescriptions filled and for other unrelated medical conditions.",
+      "paragraph_ref": "115",
+      "speaker": "Medical records"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "WITNESS_STATEMENT",
+      "text": "Ms L disputed the accuracy of this part of Dr S\u2019s notes. She said she told Dr S she ate frequently because she found it impossible to eat a regular size meal because her stomach was compressed.",
+      "paragraph_ref": "46",
+      "speaker": "Ms L"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "LEGAL_FINDING",
+      "text": "The Tribunal has found Dr S breached the duty of care he owed Ms L in 12 respects identified in the notice of charge.",
+      "paragraph_ref": "151",
+      "speaker": "Tribunal finding"
+    },
+    {
+      "evidence_id": "E011",
+      "type": "COURT_REASONING",
+      "text": "The Tribunal is in no doubt Dr S breached his duty of care to Ms L by failing to calculate her BMI and record that figure before prescribing Duromine.",
+      "paragraph_ref": "157",
+      "speaker": "Tribunal analysis"
+    },
+    {
+      "evidence_id": "E012",
+      "type": "FACTUAL_FINDING",
+      "text": "The charge was divided into five particulars and referred to Dr S\u2019s care and treatment of Ms L during the period 10 October 2003 to 24 February 2004.",
+      "paragraph_ref": "8",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E013",
+      "type": "COURT_REASONING",
+      "text": "The Tribunal\u2019s primary goal is to rehabilitate Dr S. This objective would be put at risk if Dr S\u2019s name were published.",
+      "paragraph_ref": "235",
+      "speaker": "Tribunal analysis"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Bloated stomach and abdominal discomfort",
+      "history_of_present_illness": "Patient reports bloating and abdominal discomfort since 11 November 2002. On 10 October 2003, she presented with a bloated stomach and abdominal discomfort. She had a history of palpitations and was on Sotalol and Ranitidine.",
+      "past_medical_history": [
+        "Palpitations",
+        "Recurrent lower back pain",
+        "Peptic ulcers"
+      ],
+      "medications": [
+        "Sotalol",
+        "Ranitidine"
+      ],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "abdomen": "Not documented in judgment"
+        }
+      },
+      "initial_working_problem": "Abdominal bloating and discomfort",
+      "known_constraints": null,
+      "initial_differential": [
+        "Obesity",
+        "Gastrointestinal disorder"
+      ],
+      "critical_findings": [
+        "Bloated stomach",
+        "Abdominal discomfort"
+      ],
+      "urgency_level": "ROUTINE",
+      "evidence_ids": [
+        "E001",
+        "E002",
+        "E006"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "LAB",
+        "name": "Blood Tests",
+        "description": "Blood tests to exclude other pathology",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not ordered",
+          "detailed_findings": null,
+          "clinical_significance": "Could have helped identify underlying pathology",
+          "decision_impact": "Failure to order was a breach of standard care",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": [
+          "E010",
+          "E011"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "IMAGING",
+        "name": "Ultrasound",
+        "description": "Ultrasound to assess abdominal organs",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not ordered",
+          "detailed_findings": null,
+          "clinical_significance": "Could have identified the cyst earlier",
+          "decision_impact": "Failure to order was a breach of standard care",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": [
+          "E010",
+          "E011"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with bloating and abdominal discomfort",
+        "duration": "Not specified",
+        "key_events": [
+          {
+            "event": "Patient reports bloating and discomfort",
+            "timestamp": "10 October 2003",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Follow-up Consultations",
+        "description": "Subsequent visits with continued symptoms",
+        "duration": "October 2003 to February 2004",
+        "key_events": [
+          {
+            "event": "Patient returns with persistent symptoms",
+            "timestamp": "7 November 2003",
+            "evidence_ids": [
+              "E006"
+            ]
+          },
+          {
+            "event": "Patient requests repeat prescription",
+            "timestamp": "9 December 2003",
+            "evidence_ids": [
+              "E006"
+            ]
+          },
+          {
+            "event": "Patient presents with severe symptoms",
+            "timestamp": "24 February 2004",
+            "evidence_ids": [
+              "E006"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient presented with bloated stomach and abdominal discomfort",
+        "prompt": "What examinations and tests should be performed?",
+        "action_type": "ORDER_TEST",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Perform abdominal and rectal examination, order blood tests and ultrasound",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard care for abdominal symptoms"
+          },
+          {
+            "option_id": "B",
+            "description": "Prescribe Duromine without further examination or tests",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Inadequate assessment for prescribing weight loss medication"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant prescribed Duromine without adequate assessment",
+          "reasoning_stated": "Defendant believed it was appropriate based on patient's weight concerns",
+          "evidence_ids": [
+            "E010",
+            "E011"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Perform comprehensive examinations and order necessary tests",
+          "standard_of_care_basis": "Expert evidence established these as standard care",
+          "evidence_ids": [
+            "E010",
+            "E011"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to perform adequate examinations and tests",
+          "what_should_have_happened": "Comprehensive assessment and testing",
+          "legal_standard_applied": "Breach of duty of care",
+          "evidence_ids": [
+            "E010",
+            "E011"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient underwent surgery for a large mucinous cystadenocarcinoma",
+        "severity": "PERMANENT_MODERATE_DISABILITY",
+        "long_term_effects": "Not documented in judgment",
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Failure to perform adequate examinations and investigations",
+          "Prescribed medication without proper assessment"
+        ],
+        "evidence_ids": [
+          "E004",
+          "E010"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to perform abdominal examination and order tests",
+        "counterfactual": "Proper examination and tests could have led to earlier diagnosis",
+        "evidence_ids": [
+          "E004",
+          "E010"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "10 October 2003",
+        "event": "Patient presents with bloated stomach and abdominal discomfort",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "16 March 2004",
+        "event": "Patient undergoes surgery to remove cyst",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "10 October 2003",
+        "event": "Patient presents with bloating and weight concerns",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001",
+          "E136"
+        ]
+      },
+      {
+        "timestamp": "7 November 2003",
+        "event": "Patient reports continued abdominal issues",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E141"
+        ]
+      },
+      {
+        "timestamp": "9 December 2003",
+        "event": "Patient requests repeat prescription",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E146"
+        ]
+      },
+      {
+        "timestamp": "24 February 2004",
+        "event": "Patient presents with significant discomfort",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E147"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [
+      {
+        "diagnosis": "Mucinous cystadenocarcinoma",
+        "when_made": "16 March 2004",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "diagnosis": "Large mucinous cystadenocarcinoma",
+        "when_made": "16 March 2004",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Surgery to remove cyst",
+        "date": "16 March 2004",
+        "provider": null,
+        "outcome": "Cyst removed",
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "treatment": "Surgery to remove cyst",
+        "date": "16 March 2004",
+        "provider": null,
+        "outcome": "Cyst removed",
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Stage 1 cancerous cells",
+        "when_occurred": "Post-surgery",
+        "severity": "Moderate",
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to perform adequate examinations and tests",
+        "against": "Dr S",
+        "found_proven": true,
+        "evidence_ids": [
+          "E010"
+        ]
+      },
+      {
+        "allegation": "Failure to perform adequate examinations and investigations",
+        "against": "Dr S",
+        "found_proven": true,
+        "evidence_ids": [
+          "E004",
+          "E010"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Dr S breached duty of care",
+        "legal_significance": "Professional misconduct",
+        "evidence_ids": [
+          "E003",
+          "E004"
+        ]
+      },
+      {
+        "finding": "Dr S breached the duty of care",
+        "legal_significance": "Professional misconduct",
+        "evidence_ids": [
+          "E004",
+          "E010"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.01859799713876967,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 15:32:52.712581",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

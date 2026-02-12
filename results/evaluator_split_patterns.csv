@@ -1,0 +1,16 @@
+pattern,count
+gpt5_0_vs_2,209
+grok_2_vs_0,206
+gpt5_1_vs_2,49
+claude_2_vs_0,36
+grok_1_vs_0,12
+grok_2_vs_1,10
+claude_1_vs_0,9
+claude_2_vs_1,7
+claude_0_vs_2,6
+gpt5_0_vs_1,5
+grok_0_vs_2,2
+gpt5_1_vs_0,2
+grok_1_vs_2,1
+claude_0_vs_1,1
+gpt5_2_vs_0,1

@@ -1,0 +1,329 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10285211",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2024-11-27",
+  "url": "https://example.com/courtlistener-10285211",
+  "case_name": "Avgi v. Policha",
+  "neutral_citation": null,
+  "clinical_domain": "OTHER",
+  "outcome_severity": "TEMPORARY_HARM",
+  "summary": {
+    "brief": "Avgi v. Policha. Medical malpractice case involving other.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "The plaintiffs alleged, among other things, that Barie, Tiu, and Schneider failed to diagnose the injured plaintiff and to treat her for compartment syndrome in her left leg upon her admission to the hospital on the evening of February 11, 2017.",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "LEGAL_FINDING",
+      "text": "The defendants established, prima facie, that they were entitled to judgment as a matter of law dismissing the complaint insofar as asserted against them.",
+      "paragraph_ref": "13",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "EXPERT_TESTIMONY",
+      "text": "The defendants' expert opined that the defendants did not deviate from accepted medical practice in the treatment and care of the injured plaintiff and that any deviation was not a proximate cause of the injured plaintiff's injuries.",
+      "paragraph_ref": "13",
+      "speaker": "Defendants' expert"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "EXPERT_TESTIMONY",
+      "text": "The plaintiffs' expert's opinions that the defendants' alleged deviations from accepted medical practice were a proximate cause of the injured plaintiff's injuries were conclusory, speculative, and failed to address specific assertions made by the defendants' expert.",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "LEGAL_FINDING",
+      "text": "Accordingly, we affirm the judgment.",
+      "paragraph_ref": "13",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "unknown",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Left leg pain and swelling",
+      "history_of_present_illness": "Patient presented with symptoms suggestive of compartment syndrome in the left leg.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "system": "Examination mentioned but findings not specified"
+        }
+      },
+      "initial_working_problem": "Suspected compartment syndrome",
+      "known_constraints": null,
+      "initial_differential": [
+        "compartment syndrome"
+      ],
+      "critical_findings": [
+        "Not documented in judgment"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "Doppler Ultrasound",
+        "description": "Ultrasound to assess blood flow in the left leg",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not documented in judgment",
+          "detailed_findings": null,
+          "clinical_significance": "Not documented in judgment",
+          "decision_impact": "Not documented in judgment",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents to hospital with acute symptoms",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Patient admitted with suspected compartment syndrome",
+            "timestamp": "Evening of February 11, 2017",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient admitted with suspected compartment syndrome",
+        "prompt": "What should be the immediate management step?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Perform fasciotomy",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Immediate surgical intervention is required to relieve pressure."
+          },
+          {
+            "option_id": "B",
+            "description": "Monitor and reassess in 24 hours",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Delay in intervention can lead to irreversible damage."
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant chose to monitor and reassess",
+          "reasoning_stated": "Defendant believed monitoring was sufficient",
+          "evidence_ids": [
+            "E001"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Immediate fasciotomy should have been performed",
+          "standard_of_care_basis": "Expert evidence established immediate intervention is standard",
+          "evidence_ids": [
+            "E001"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Delay in surgical intervention led to worsening of condition",
+          "what_should_have_happened": "Immediate fasciotomy based on clinical presentation",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E001"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient suffered permanent damage to the left leg",
+        "severity": "PERMANENT_MODERATE_DISABILITY",
+        "long_term_effects": "Chronic pain and reduced mobility",
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "None",
+        "key_findings": [
+          "Defendants did not deviate from accepted medical practice",
+          "Plaintiffs' expert opinions were deemed speculative"
+        ],
+        "evidence_ids": [
+          "E002",
+          "E003",
+          "E004"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Not applicable",
+        "counterfactual": "Not applicable",
+        "evidence_ids": [
+          "E002",
+          "E003",
+          "E004"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "Evening of February 11, 2017",
+        "event": "Patient admitted to hospital",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Not documented in judgment",
+        "date": "Not documented in judgment",
+        "result": "Not documented in judgment",
+        "interpretation": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Compartment syndrome",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Not documented in judgment",
+        "date": "Not documented in judgment",
+        "provider": null,
+        "outcome": "Not documented in judgment",
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Permanent damage to left leg",
+        "when_occurred": "Not documented in judgment",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to diagnose and treat compartment syndrome",
+        "against": "Defendant doctors",
+        "found_proven": false,
+        "evidence_ids": [
+          "E002",
+          "E003",
+          "E004"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendants did not deviate from accepted medical practice",
+        "legal_significance": "Summary judgment in favor of defendants",
+        "evidence_ids": [
+          "E002",
+          "E003",
+          "E004"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.35714285714285715,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 08:53:05.336410",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

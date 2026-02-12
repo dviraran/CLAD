@@ -1,0 +1,418 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "bailii-qb-2022-854-html",
+  "source": "BAILII",
+  "jurisdiction": "UK",
+  "court": "Unknown",
+  "decision_date": "2022-03-11",
+  "url": "https://example.com/bailii-qb-2022-854-html",
+  "case_name": "1.\tThis is an application to commit the Respondent for contempt of court on the grounds of making knowingly false statements in documents supported by statements of truth. The criminal standard of proof applies. That means that the application cannot succeed unless, having considered the evidence, I am satisfied so that I am sure that (1) one or more of the statements was false, (2) that such statement has, or if persisted in would be likely to have, interfered with the course of justice in some material respects, and (3) that at the time it was made, the Respondent had no honest belief in the truth of the statement and knew of its likelihood to interfere with the course of justice. That test was set out inAXA Insurance UK Plc v Rossiter[2013] EWHC 3805 QBat [9].",
+  "neutral_citation": "[2022] EWHC 854",
+  "clinical_domain": "OBSTETRICS_GYNAECOLOGY",
+  "outcome_severity": "PERMANENT_SEVERE_DISABILITY",
+  "summary": {
+    "brief": "1.\tThis is an application to commit the Respondent for contempt of court on the grounds of making knowingly false statements in documents supported by statements of truth. The criminal standard of proof applies. That means that the application cannot succeed unless, having considered the evidence, I am satisfied so that I am sure that (1) one or more of the statements was false, (2) that such statement has, or if persisted in would be likely to have, interfered with the course of justice in some",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Megan was born on 7 July 2000 with severe acetabular dysplasia, which is a severe disorder of the hip joints.",
+      "paragraph_ref": "14",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "The Applicant did however admit that there were some breaches of duty in connection with surgery.",
+      "paragraph_ref": "15",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Mr Dwyer found that 'her symptomatology is confusing in that she appears to have neuralgic pain most probably attributable to multiple surgeries and sensitisation of a lateral cutaneous nerve of thighs'.",
+      "paragraph_ref": "29",
+      "speaker": "Mr Dwyer, Orthopaedic Surgeon"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Professor Montgomery also felt that many of Megan's reported symptoms could not have been caused by her hip problems and that one possible explanation for them was exaggeration, conscious or unconscious.",
+      "paragraph_ref": "40",
+      "speaker": "Professor Montgomery, Orthopaedic Expert"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "WITNESS_STATEMENT",
+      "text": "Ms Bull did not observe her having any difficulty in walking. She did not recall her ever using a wheelchair and was sure that she would remember if she had seen this.",
+      "paragraph_ref": "83",
+      "speaker": "Ellie Bull, History Teacher"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "LEGAL_FINDING",
+      "text": "I therefore find that the statements specified in paragraphs 104-105 above were false and that Mrs Colley knew that they were false when she made them.",
+      "paragraph_ref": "125",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "COURT_REASONING",
+      "text": "The deception may have prolonged the litigation and increased the costs but I cannot be sure that it did, given the other fundamental issues in play.",
+      "paragraph_ref": "143",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "LEGAL_FINDING",
+      "text": "The sentence is imprisonment for 6 months, suspended for 2 years on condition that no other contempt of court is committed during that time.",
+      "paragraph_ref": "162",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "16 years",
+        "sex": "female",
+        "relevant_social_history": "Student, involved in performing arts"
+      },
+      "chief_complaint": "Chronic hip pain and mobility issues",
+      "history_of_present_illness": "Patient reports chronic hip pain, difficulty walking, and reliance on wheelchair for long distances.",
+      "past_medical_history": [
+        "Severe acetabular dysplasia"
+      ],
+      "medications": [
+        "Tramadol - dosage not specified"
+      ],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "musculoskeletal": "Patient reports pain after walking short distances, uses wheelchair for long distances"
+        }
+      },
+      "initial_working_problem": "Chronic hip pain due to acetabular dysplasia",
+      "known_constraints": null,
+      "initial_differential": [
+        "Chronic pain syndrome",
+        "Mobility impairment due to hip dysplasia"
+      ],
+      "critical_findings": [
+        "Reported reliance on wheelchair",
+        "Chronic pain"
+      ],
+      "urgency_level": "ROUTINE",
+      "evidence_ids": [
+        "E001",
+        "E002",
+        "E003"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSULT_NOTE",
+        "name": "Orthopaedic Surgeon Report",
+        "description": "Evaluation of hip dysplasia and surgical history",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Severe acetabular dysplasia with history of multiple surgeries",
+          "detailed_findings": null,
+          "clinical_significance": "Confirms chronic hip condition",
+          "decision_impact": "Supports need for ongoing pain management",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E001",
+          "E002"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "CONSULT_NOTE",
+        "name": "Pain Management Consultation",
+        "description": "Assessment of chronic pain and management plan",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Chronic pain with recommendation for multidisciplinary management",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates need for comprehensive pain management approach",
+          "decision_impact": "Should guide pain management strategy",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E003",
+          "E004"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with chronic hip pain and mobility issues",
+        "duration": "Not specified in judgment",
+        "key_events": [
+          {
+            "event": "Orthopaedic evaluation",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient with chronic hip pain and reported mobility issues",
+        "prompt": "What should be the approach to assess the patient's functional capacity?",
+        "action_type": "ORDER_TEST",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Conduct functional capacity evaluation",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Provides objective assessment of mobility and functional limitations"
+          },
+          {
+            "option_id": "B",
+            "description": "Rely on patient and family reports",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Subjective reports may not accurately reflect functional capacity"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant relied on patient and family reports",
+          "reasoning_stated": "Defendant accepted reported limitations without objective assessment",
+          "evidence_ids": [
+            "E002",
+            "E003"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Functional capacity evaluation should have been conducted",
+          "standard_of_care_basis": "Objective assessment needed to verify reported limitations",
+          "evidence_ids": [
+            "E004",
+            "E005"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to objectively assess functional capacity led to reliance on potentially exaggerated reports",
+          "what_should_have_happened": "Functional capacity evaluation would have provided objective data",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E004",
+            "E005",
+            "E006"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient's claims of disability found to be exaggerated",
+        "severity": "No physical disability confirmed",
+        "long_term_effects": "Potential psychological impact due to litigation",
+        "evidence_ids": [
+          "E113",
+          "E115"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "None, claim abandoned",
+        "key_findings": [
+          "Exaggeration of disability claims",
+          "Objective evidence contradicted reported symptoms"
+        ],
+        "evidence_ids": [
+          "E113",
+          "E115",
+          "E125"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": false,
+        "point_of_failure": "Failure to verify claims with objective evidence",
+        "counterfactual": "Objective assessment would have clarified true capabilities",
+        "evidence_ids": [
+          "E115",
+          "E117"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "7 July 2000",
+        "event": "Patient born with severe acetabular dysplasia",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "2016-2017",
+        "event": "Patient participated in theatrical performances",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E115"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Orthopaedic evaluation",
+        "date": "Not specified in judgment",
+        "result": "Severe acetabular dysplasia with history of multiple surgeries",
+        "interpretation": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Chronic hip pain",
+        "when_made": "Not specified in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "diagnosis": "Exaggeration of symptoms",
+        "when_made": "During litigation",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E113",
+          "E115"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Pain management",
+        "date": "Not specified in judgment",
+        "provider": null,
+        "outcome": "Ongoing management recommended",
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Exaggeration of disability",
+        "when_occurred": "During litigation",
+        "severity": "Moderate",
+        "evidence_ids": [
+          "E003",
+          "E004"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Exaggeration of disability",
+        "against": "Defendant",
+        "found_proven": true,
+        "evidence_ids": [
+          "E002",
+          "E003"
+        ]
+      },
+      {
+        "allegation": "Exaggeration of disability claims",
+        "against": "Megan and Mrs Colley",
+        "found_proven": true,
+        "evidence_ids": [
+          "E113",
+          "E115"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant failed to conduct objective assessment",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E004",
+          "E005"
+        ]
+      },
+      {
+        "finding": "False statements made to exaggerate claim",
+        "legal_significance": "Contempt of court",
+        "evidence_ids": [
+          "E125"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.04938271604938271,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 07:01:12.558803",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

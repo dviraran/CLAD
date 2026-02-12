@@ -1,0 +1,459 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtliste-4590531-john-r-hall-do-and-south-texas-spinal-clinic-",
+  "source": "BAILII",
+  "jurisdiction": "UK",
+  "court": "Unknown",
+  "decision_date": "0059-04-18",
+  "url": "https://example.com/courtliste-4590531-john-r-hall-do-and-south-texas-spinal-clinic-",
+  "case_name": "John R. Hall, D.O. and South Texas Spinal Clinic, PA v. Julian Vasquez",
+  "neutral_citation": null,
+  "clinical_domain": "CARDIOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "John R. Hall, D.O. and South Texas Spinal Clinic, PA v. Julian Vasquez. Medical malpractice case involving cardiology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Vasquez developed complications from a cervical epidural steroid injection performed by Dr. Hall.",
+      "paragraph_ref": "12",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Vasquez began to experience muscle weakness and lethargy. He was rushed to Southwest General Hospital where he complained of pain in his back, arms, legs, and neck.",
+      "paragraph_ref": "21",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "He underwent a cervical and thoracic MRI which revealed a spinal hematoma extending from C5-C6 through T2-T3.",
+      "paragraph_ref": "24",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Odell concluded by stating 'the Depo Medrol itself did not cause the hematoma.'",
+      "paragraph_ref": "46",
+      "speaker": "Dr. Odell"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Odell identified two breaches of the standard of care in his report.",
+      "paragraph_ref": "107",
+      "speaker": "Dr. Odell"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "LEGAL_FINDING",
+      "text": "We therefore reverse the trial court\u2019s order denying the motion to dismiss and remand the cause to the trial court for further proceedings consistent with this opinion.",
+      "paragraph_ref": "158",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "COURT_REASONING",
+      "text": "Because the expert report fails to sufficiently explain the causation element of Vasquez\u2019s health care liability claim, the trial court abused its discretion in denying the motion to dismiss.",
+      "paragraph_ref": "157",
+      "speaker": "Judge's analysis"
+    }
+  ],
+  "simulation": {
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "unknown",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Muscle weakness and lethargy",
+      "history_of_present_illness": "Vasquez began to experience muscle weakness and lethargy after a cervical epidural steroid injection.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "neurological": "Patient complained of pain in back, arms, legs, and neck"
+        }
+      },
+      "initial_working_problem": "Complications following cervical epidural steroid injection",
+      "known_constraints": null,
+      "initial_differential": [
+        "Spinal hematoma",
+        "Other neurological complications"
+      ],
+      "critical_findings": [
+        "Muscle weakness",
+        "Lethargy"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "Cervical and Thoracic MRI",
+        "description": "MRI to assess for spinal complications",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": null,
+          "detailed_findings": "Revealed a spinal hematoma extending from C5-C6 through T2-T3",
+          "clinical_significance": "Identified the cause of neurological symptoms",
+          "decision_impact": "Prompted surgical intervention",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with symptoms following procedure",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Patient experiences muscle weakness and lethargy",
+            "timestamp": "Not documented in judgment",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Diagnostic Workup",
+        "description": "Imaging and assessment to determine cause of symptoms",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Cervical and thoracic MRI performed",
+            "timestamp": "Not documented in judgment",
+            "evidence_ids": [
+              "E003"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "procedure",
+        "name": "Surgical Intervention",
+        "description": "Surgical procedure to address identified complications",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Laminectomy at C7-T1 with evacuation of hematoma",
+            "timestamp": "Not documented in judgment",
+            "evidence_ids": [
+              "E003"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "procedure",
+        "clinical_context": "Decision to perform cervical epidural steroid injection",
+        "prompt": "What steroid should be used for the injection?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Use a particulate-free steroid",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Particulate-free steroids reduce risk of vascular complications"
+          },
+          {
+            "option_id": "B",
+            "description": "Use Depo Medrol (particulate steroid)",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Depo Medrol contains particulates which can cause complications"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant used Depo Medrol",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E001",
+            "E005"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Particulate-free steroid should have been used",
+          "standard_of_care_basis": "Expert evidence established risk with particulate steroids",
+          "evidence_ids": [
+            "E005"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Use of particulate steroid not standard of care",
+          "what_should_have_happened": "Particulate-free steroid should have been used",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E005"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      },
+      {
+        "decision_id": "D002",
+        "phase_id": "procedure",
+        "clinical_context": "Informed consent process",
+        "prompt": "What should be disclosed to the patient?",
+        "action_type": "DISCLOSE_ALTERNATIVES",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Disclose risks associated with Depo Medrol",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Patient should be informed of all risks to provide informed consent"
+          },
+          {
+            "option_id": "B",
+            "description": "Do not disclose specific risks of Depo Medrol",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Failure to inform patient of specific risks"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant did not disclose specific risks of Depo Medrol",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E005"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Specific risks should have been disclosed",
+          "standard_of_care_basis": "Informed consent requires disclosure of specific risks",
+          "evidence_ids": [
+            "E005"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to disclose specific risks violates informed consent",
+          "what_should_have_happened": "Patient should have been informed of specific risks",
+          "legal_standard_applied": "Informed consent principles",
+          "evidence_ids": [
+            "E005"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient suffered permanent neurological injuries",
+        "severity": "PERMANENT_SEVERE_DISABILITY",
+        "long_term_effects": "Requires use of catheters to urinate",
+        "evidence_ids": [
+          "E001",
+          "E003"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "Not applicable",
+        "key_findings": [
+          "Expert report failed to establish causation",
+          "Court reversed trial court's denial of motion to dismiss"
+        ],
+        "evidence_ids": [
+          "E006",
+          "E007"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": false,
+        "point_of_failure": "Failure to use appropriate steroid and obtain informed consent",
+        "counterfactual": "Use of appropriate steroid and informed consent could have prevented complications",
+        "evidence_ids": [
+          "E005",
+          "E007"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "Not documented in judgment",
+        "event": "Cervical epidural steroid injection performed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "Not documented in judgment",
+        "event": "Patient experiences muscle weakness and lethargy",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "Not documented in judgment",
+        "event": "Cervical and thoracic MRI performed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "timestamp": "Not documented in judgment",
+        "event": "Laminectomy at C7-T1 with evacuation of hematoma",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Cervical and Thoracic MRI",
+        "date": "Not documented in judgment",
+        "result": "Spinal hematoma from C5-C6 through T2-T3",
+        "interpretation": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Spinal hematoma",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Laminectomy at C7-T1",
+        "date": "Not documented in judgment",
+        "provider": null,
+        "outcome": "Evacuation of hematoma",
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Permanent neurological injuries",
+        "when_occurred": "Not documented in judgment",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E001",
+          "E003"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to use appropriate steroid and obtain informed consent",
+        "against": "Dr. Hall",
+        "found_proven": false,
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Expert report failed to establish causation",
+        "legal_significance": "Court reversed trial court's denial of motion to dismiss",
+        "evidence_ids": [
+          "E006",
+          "E007"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "INFORMED_CONSENT"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.043478260869565216,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-01-18 10:06:58.288544",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}
