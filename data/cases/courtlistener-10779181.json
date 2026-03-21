@@ -1,0 +1,472 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10779181",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2026-01-22",
+  "url": "https://example.com/courtlistener-10779181",
+  "case_name": "Norman T. Crabb and Taelor Campbell-Crabb v. Arun Kumar Durgam, M.D. and Shwe Y. Win, M.D.",
+  "neutral_citation": null,
+  "clinical_domain": "NEUROLOGY",
+  "outcome_severity": "TEMPORARY_HARM",
+  "summary": {
+    "brief": "Norman T. Crabb and Taelor Campbell-Crabb v. Arun Kumar Durgam, M.D. and Shwe Y. Win, M.D.. Medical malpractice case involving neurology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Crabb presented to the emergency room complaining of nausea, vertigo, vomiting, and pain in his abdominal, flank, and kidney areas.",
+      "paragraph_ref": "20",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. Durgam, the first of Crabb’s attending physicians during his hospital stay, ordered a blood test, and 'a number of CT scans to determine whether [Crabb] had suffered a stroke.'",
+      "paragraph_ref": "21",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "The blood test indicated that Crabb’s white blood cell count was elevated, and one of the CT scans indicated that he had 'diverticulosis coli' or bulges in his colon.",
+      "paragraph_ref": "24",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "Crabb’s abdominal pain grew more and more severe, and his stomach grew bloated.",
+      "paragraph_ref": "26",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. Win, who took over after Dr. Durgam’s shift, 'noted that [Crabb] had ‘developed severe abdominal pain’ and that a nasogastric tube had to be inserted to decompress his bloated stomach.'",
+      "paragraph_ref": "31",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "Crabb 'called Dr. Dan Martin, a general surgeon with extensive experience in gastric, liver, pancreas, gallbladder and spleen surgery, and told him about his severe abdominal pain and elevated white blood cell count.'",
+      "paragraph_ref": "37",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "Surgery revealed that Crabb’s colon was perforated and that Crabb’s 'entire abdominal cavity was infected and filled with pus.'",
+      "paragraph_ref": "41",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Goodman opined that the standard of care for a physician 'caring for a patient with acute sigmoid diverticulitis requires . . . urgent surgical evaluation in order to identify in a timely fashion.'",
+      "paragraph_ref": "118",
+      "speaker": "Dr. Goodman"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Goodman opined that had appellees not breached the applicable standard of care, 'the degree of contamination of the peritoneal cavity would have been significantly lower.'",
+      "paragraph_ref": "123",
+      "speaker": "Dr. Goodman"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "LEGAL_FINDING",
+      "text": "We reverse the trial court’s judgment and remand the case for further proceedings.",
+      "paragraph_ref": "137",
+      "speaker": "Court conclusion"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "male",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Nausea, vertigo, vomiting, and abdominal pain",
+      "history_of_present_illness": "Patient presented to the emergency room with nausea, vertigo, vomiting, and pain in abdominal, flank, and kidney areas.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "abdomen": "Examination findings not specified, but severe abdominal pain and bloating noted later"
+        }
+      },
+      "initial_working_problem": "Possible stroke or abdominal pathology",
+      "known_constraints": null,
+      "initial_differential": [
+        "stroke",
+        "abdominal pathology"
+      ],
+      "critical_findings": [
+        "elevated white blood cell count",
+        "diverticulosis coli"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002",
+        "E003"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "LAB",
+        "name": "Blood Test",
+        "description": "Blood test to check white blood cell count",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Elevated white blood cell count",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates possible infection or inflammation",
+          "decision_impact": "Should prompt further investigation of abdominal symptoms",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "IMAGING",
+        "name": "CT Scan",
+        "description": "CT scan to check for stroke and abdominal issues",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Diverticulosis coli noted",
+          "detailed_findings": null,
+          "clinical_significance": "Presence of diverticulosis, requires monitoring for complications",
+          "decision_impact": "Should prompt consideration of abdominal pathology",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "request_id": "R003",
+        "type": "CONSULT_NOTE",
+        "name": "Surgical Consultation",
+        "description": "Consultation with a general surgeon for abdominal pain",
+        "available_phase": "decision",
+        "reveal": {
+          "result_summary": "Emergency surgery determined necessary",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates severe abdominal pathology requiring immediate intervention",
+          "decision_impact": "Leads to surgical intervention",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Emergency Presentation",
+        "description": "Patient presents to ED with acute symptoms",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Patient arrives at ED with nausea, vertigo, vomiting, and abdominal pain",
+            "timestamp": "March 1, 2020",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Initial Workup",
+        "description": "Initial diagnostic tests and evaluations",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Blood test and CT scan ordered",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E002",
+              "E003"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "decision",
+        "name": "Clinical Decision",
+        "description": "Decision-making regarding further management",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Decision to continue treating as stroke",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E005"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "procedure",
+        "name": "Surgical Intervention",
+        "description": "Emergency surgery performed",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Emergency surgery reveals perforated colon",
+            "timestamp": "March 4, 2020",
+            "evidence_ids": [
+              "E007"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient with severe abdominal pain and elevated white blood cell count",
+        "prompt": "What should be the next step in managing the patient's abdominal pain?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Order repeat CT scans and surgical evaluation",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard of care for suspected acute abdominal pathology"
+          },
+          {
+            "option_id": "B",
+            "description": "Continue treating as stroke without further abdominal investigation",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Neglects potential abdominal emergency"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant continued treating as stroke without further abdominal investigation",
+          "reasoning_stated": "Focused on initial stroke suspicion",
+          "evidence_ids": [
+            "E005",
+            "E036"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Repeat CT scans and surgical evaluation should have been ordered",
+          "standard_of_care_basis": "Expert evidence established need for urgent surgical evaluation",
+          "evidence_ids": [
+            "E008",
+            "E009"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to address severe abdominal symptoms and elevated WBC",
+          "what_should_have_happened": "Urgent surgical evaluation and repeat imaging",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E008",
+            "E009"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient developed severe abdominal infection requiring surgery",
+        "severity": "PERMANENT_MODERATE_DISABILITY",
+        "long_term_effects": "Loss of sigmoid colon, spleen, and appendix",
+        "evidence_ids": [
+          "E007",
+          "E043"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "UNKNOWN",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Breach of duty in failing to address abdominal symptoms",
+          "Causation established - earlier intervention could have prevented severe outcomes"
+        ],
+        "evidence_ids": [
+          "E010"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to order repeat imaging and surgical evaluation",
+        "counterfactual": "Timely intervention could have reduced severity of infection",
+        "evidence_ids": [
+          "E008",
+          "E009"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "March 1, 2020",
+        "event": "Patient arrives at ED with nausea, vertigo, vomiting, and abdominal pain",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "March 4, 2020",
+        "event": "Emergency surgery reveals perforated colon",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Blood Test",
+        "date": "Not documented in judgment",
+        "result": "Elevated white blood cell count",
+        "interpretation": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "test_name": "CT Scan",
+        "date": "Not documented in judgment",
+        "result": "Diverticulosis coli",
+        "interpretation": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Perforated colon",
+        "when_made": "March 4, 2020",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Emergency surgery",
+        "date": "March 4, 2020",
+        "provider": null,
+        "outcome": "Colon perforation and infection addressed",
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Severe abdominal infection",
+        "when_occurred": "March 4, 2020",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to address abdominal symptoms and elevated WBC",
+        "against": "Dr. Durgam and Dr. Win",
+        "found_proven": true,
+        "evidence_ids": [
+          "E008",
+          "E009"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendants breached duty of care",
+        "legal_significance": "Standard of care not met",
+        "evidence_ids": [
+          "E008",
+          "E009"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.07042253521126761,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-17 07:34:59.126029",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

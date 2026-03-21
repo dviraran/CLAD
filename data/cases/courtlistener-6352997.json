@@ -1,0 +1,437 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-6352997",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2022-02-15",
+  "url": "https://example.com/courtlistener-6352997",
+  "case_name": "Bryant v. Wake Forest Univ. Baptist Med. Ctr.",
+  "neutral_citation": null,
+  "clinical_domain": "OBSTETRICS_GYNAECOLOGY",
+  "outcome_severity": "PERMANENT_SEVERE_DISABILITY",
+  "summary": {
+    "brief": "Bryant v. Wake Forest Univ. Baptist Med. Ctr.. Medical malpractice case involving obstetrics gynaecology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "In 2007, Plaintiff was referred to Mehmet Tamer Yalcinkaya, M.D. by a large uterine myoma, also known as a uterine fibroid.",
+      "paragraph_ref": "25",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "After examining Plaintiff, Defendant Yalcinkaya confirmed her uterine myoma diagnosis and recommended an exploratory laparotomy (abdominal surgery) and myomectomy (surgical removal of uterine fibroids).",
+      "paragraph_ref": "33",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "Defendant Yalcinkaya performed the surgery on 5 October 2007.",
+      "paragraph_ref": "36",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "Defendant Yalcinkaya determined that Plaintiff had Stage IV endometriosis, an advanced form of a disorder that results in abnormal endometrial tissue growth outside the uterus.",
+      "paragraph_ref": "40",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "Near the end of the surgery, Defendant Yalcinkaya implanted a prelude peritoneal membrane, also known as a Gore-Tex adhesion barrier, to prevent adhesions from forming at the surgical incision site.",
+      "paragraph_ref": "51",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "MEDICAL_RECORD",
+      "text": "The use of the Gore-Tex barrier was documented in Defendant Yalcinkaya\u2019s operative note for the procedure, as well as in the perioperative record of the procedure.",
+      "paragraph_ref": "56",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "EXPERT_TESTIMONY",
+      "text": "On 12 March 2020, Plaintiff\u2019s standard of care expert, Steven D. McCarus, M.D. (\u201cDr. McCarus\u201d), was deposed.",
+      "paragraph_ref": "93",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Gore-Tex barriers \u201ccan\u201d have a therapeutic purpose \u201cif they are properly used. In the case of Kimberly Bryant, the Gore-Tex adhesion barriers were improperly used because Dr. Yalcinkaya failed to remove them within 2 to 8 weeks after the gynecologic surgery.\u201d",
+      "paragraph_ref": "112",
+      "speaker": "Dr. McCarus"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "LEGAL_FINDING",
+      "text": "We affirm the trial court\u2019s grant of summary judgment for each of Plaintiff\u2019s claims.",
+      "paragraph_ref": "23",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "COURT_REASONING",
+      "text": "Summary judgment is proper \u201cif the pleadings, depositions, answers to interrogatories, and admissions on file, together with the affidavits, if any, show that there is no genuine issue as to any material fact and that any party is entitled to a judgment as a matter of law.\u201d",
+      "paragraph_ref": "132",
+      "speaker": "Court reasoning"
+    },
+    {
+      "evidence_id": "E011",
+      "type": "LEGAL_FINDING",
+      "text": "Therefore, because we hold that the trial court properly granted summary judgment on each of Plaintiff\u2019s claims above, Plaintiff has no independent basis for punitive damages and this claim necessarily fails.",
+      "paragraph_ref": "462",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Pelvic pain",
+      "history_of_present_illness": "Patient was referred to Dr. Yalcinkaya due to pelvic pain caused by a large uterine myoma.",
+      "past_medical_history": [
+        "Uterine myoma",
+        "Stage IV endometriosis"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "abdomen": "Not documented in judgment"
+        }
+      },
+      "initial_working_problem": "Large uterine myoma causing pelvic pain",
+      "known_constraints": null,
+      "initial_differential": [
+        "Uterine fibroid",
+        "Endometriosis"
+      ],
+      "critical_findings": [
+        "Large uterine fibroid",
+        "Stage IV endometriosis"
+      ],
+      "urgency_level": "ELECTIVE",
+      "evidence_ids": [
+        "E001",
+        "E002",
+        "E004"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "OP_NOTE",
+        "name": "Operative Note",
+        "description": "Details of the surgical procedure performed by Dr. Yalcinkaya",
+        "available_phase": "procedure",
+        "reveal": {
+          "result_summary": "Gore-Tex barrier implanted, fibroid and adhesions removed",
+          "detailed_findings": null,
+          "clinical_significance": "Implantation of Gore-Tex barrier to prevent adhesions",
+          "decision_impact": "Implantation intended to prevent adhesions and improve fertility",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "CONSULT_NOTE",
+        "name": "Post-operative Consultation",
+        "description": "Follow-up consultation with Dr. Yalcinkaya",
+        "available_phase": "postop",
+        "reveal": {
+          "result_summary": "Recommendation for drug therapy and possible second surgery",
+          "detailed_findings": null,
+          "clinical_significance": "Further treatment needed for endometriosis and fibroid management",
+          "decision_impact": "Patient did not follow up with recommended treatments",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with pelvic pain due to uterine myoma",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Referral to Dr. Yalcinkaya",
+            "timestamp": "2007",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "procedure",
+        "name": "Surgical Procedure",
+        "description": "Exploratory laparotomy and myomectomy performed",
+        "duration": "5 October 2007",
+        "key_events": [
+          {
+            "event": "Gore-Tex barrier implanted",
+            "timestamp": "5 October 2007",
+            "evidence_ids": [
+              "E003",
+              "E005"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "postop",
+        "name": "Post-operative Follow-up",
+        "description": "Follow-up visits and recommendations for further treatment",
+        "duration": "October 2007 - March 2008",
+        "key_events": [
+          {
+            "event": "Recommendation for drug therapy and second surgery",
+            "timestamp": "9 October 2007",
+            "evidence_ids": [
+              "E005"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "procedure",
+        "clinical_context": "During surgery for uterine fibroid removal",
+        "prompt": "Should the Gore-Tex barrier be left permanently?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Leave Gore-Tex barrier permanently",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Intended to prevent adhesions and improve fertility"
+          },
+          {
+            "option_id": "B",
+            "description": "Plan to remove Gore-Tex barrier within 2-8 weeks",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Proper use requires removal to prevent complications"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "A",
+          "description": "Defendant left Gore-Tex barrier permanently",
+          "reasoning_stated": "Believed it would prevent adhesions and improve fertility",
+          "evidence_ids": [
+            "E005",
+            "E008"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "B",
+          "description": "Gore-Tex barrier should have been removed within 2-8 weeks",
+          "standard_of_care_basis": "Expert testimony indicated removal was necessary",
+          "evidence_ids": [
+            "E008",
+            "E009"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Leaving the barrier permanently was not therapeutic",
+          "what_should_have_happened": "Barrier should have been removed to prevent complications",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E008",
+            "E009"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient developed a large pelvic mass requiring further surgery",
+        "severity": "Significant complications due to retained Gore-Tex barrier",
+        "long_term_effects": "Potential impact on fertility",
+        "evidence_ids": [
+          "E007",
+          "E008"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "None",
+        "key_findings": [
+          "Summary judgment granted for defendants",
+          "Gore-Tex barrier had a therapeutic purpose at implantation"
+        ],
+        "evidence_ids": [
+          "E009",
+          "E011"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Alleged failure to remove Gore-Tex barrier",
+        "counterfactual": "Barrier removal might have prevented complications",
+        "evidence_ids": [
+          "E008",
+          "E009"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "2007",
+        "event": "Patient referred to Dr. Yalcinkaya for uterine myoma",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "5 October 2007",
+        "event": "Surgery performed, Gore-Tex barrier implanted",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003",
+          "E005"
+        ]
+      },
+      {
+        "timestamp": "21 February 2017",
+        "event": "Exploratory laparotomy by Dr. Johnston, Gore-Tex barrier removed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [
+      {
+        "diagnosis": "Stage IV endometriosis",
+        "when_made": "During surgery on 5 October 2007",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Exploratory laparotomy and myomectomy",
+        "date": "5 October 2007",
+        "provider": null,
+        "outcome": "Uterine fibroid and adhesions removed",
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Large pelvic mass",
+        "when_occurred": "December 2016",
+        "severity": "Significant",
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to remove Gore-Tex barrier",
+        "against": "Defendant Yalcinkaya",
+        "found_proven": false,
+        "evidence_ids": [
+          "E009"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "No breach of duty of care",
+        "legal_significance": "Summary judgment for defendants",
+        "evidence_ids": [
+          "E009"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "TREATMENT_PROCEDURE_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.023504273504273504,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-09 21:19:41.205037",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

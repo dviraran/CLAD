@@ -1,0 +1,561 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10324094",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2025-01-30",
+  "url": "https://example.com/courtlistener-10324094",
+  "case_name": "Paganini v. Cataract Eye Ctr. of Cleveland",
+  "neutral_citation": null,
+  "clinical_domain": "OBSTETRICS_GYNAECOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Paganini v. Cataract Eye Ctr. of Cleveland. Medical malpractice case involving obstetrics gynaecology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "On December 9, 2021, Dr. Louis performed cataract surgery on Paganini. The surgery went well, and Paganini returned home the same day.",
+      "paragraph_ref": "30",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Paganini experienced some pain that evening that he attributed to the surgery.",
+      "paragraph_ref": "32",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "When Paganini awoke early the next morning, he saw black dots and the number of black dots was increasing.",
+      "paragraph_ref": "33",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "Paganini called Dr. Louis’s office to report his symptoms, and the call was routed to Dr. Louis’s afterhours answering service.",
+      "paragraph_ref": "35",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. Louis examined Paganini’s eye. The eye was not red, but Dr. Louis observed some inflammation and signs of a vitreous hemorrhage.",
+      "paragraph_ref": "51",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. Louis did not suspect endophthalmitis because Paganini’s symptoms were common among patients after cataract surgery.",
+      "paragraph_ref": "56",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. Louis diagnosed Paganini with a vitreous hemorrhage, i.e., bleeding in the eye from a tear in the retina or blood vessels.",
+      "paragraph_ref": "62",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. Louis then referred Paganini to Dr. Thomas Hull, a retina specialist in Akron, Ohio.",
+      "paragraph_ref": "68",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. Hull diagnosed Paganini with acute endophthalmitis.",
+      "paragraph_ref": "69",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "FACTUAL_FINDING",
+      "text": "Paganini’s retina had detached. At that point, Paganini understood that his loss of vision was permanent.",
+      "paragraph_ref": "76",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E011",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. John Huang testified to three separate alleged deviations from the standard of care.",
+      "paragraph_ref": "111",
+      "speaker": "Expert witness"
+    },
+    {
+      "evidence_id": "E012",
+      "type": "LEGAL_FINDING",
+      "text": "The trial court found R.C. 2323.43(A)(3) unconstitutional as applied to Paganini.",
+      "paragraph_ref": "378",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E013",
+      "type": "LEGAL_FINDING",
+      "text": "Judgment affirmed.",
+      "paragraph_ref": "563",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "male",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Seeing black dots and experiencing eye pain",
+      "history_of_present_illness": "Patient underwent cataract surgery on December 9, 2021. Experienced some pain that evening attributed to the surgery. Awoke the next morning seeing black dots, with the number increasing.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "eye": "No redness, some inflammation, signs of vitreous hemorrhage, no hypopyon observed"
+        }
+      },
+      "initial_working_problem": "Possible vitreous hemorrhage",
+      "known_constraints": null,
+      "initial_differential": [
+        "vitreous hemorrhage",
+        "endophthalmitis"
+      ],
+      "critical_findings": [
+        "black dots in vision",
+        "eye pain"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002",
+        "E003",
+        "E005"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSULT_NOTE",
+        "name": "Retina Specialist Consultation",
+        "description": "Consultation with Dr. Thomas Hull, retina specialist",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Diagnosed with acute endophthalmitis",
+          "detailed_findings": null,
+          "clinical_significance": "Critical diagnosis requiring immediate treatment",
+          "decision_impact": "Prompted immediate antibiotic treatment",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E009"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "IMAGING",
+        "name": "Ultrasound of the Eye",
+        "description": "Ultrasound to assess retina status",
+        "available_phase": "followup",
+        "reveal": {
+          "result_summary": "Retina detached",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates severe progression of condition",
+          "decision_impact": "Confirmed permanent vision loss",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E010"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with post-surgical symptoms",
+        "duration": "Morning of December 10, 2021",
+        "key_events": [
+          {
+            "event": "Patient reports symptoms to Dr. Louis",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E004",
+              "E005"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Initial Examination and Diagnosis",
+        "description": "Dr. Louis examines patient and makes initial diagnosis",
+        "duration": "December 10, 2021",
+        "key_events": [
+          {
+            "event": "Dr. Louis diagnoses vitreous hemorrhage",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E007"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "followup",
+        "name": "Referral and Further Diagnosis",
+        "description": "Patient referred to retina specialist and diagnosed with endophthalmitis",
+        "duration": "December 11, 2021",
+        "key_events": [
+          {
+            "event": "Dr. Hull diagnoses acute endophthalmitis",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E009"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "decision",
+        "name": "Referral to Retina Specialist",
+        "description": "Patient is referred to a retina specialist for further evaluation",
+        "duration": "Following initial examination",
+        "key_events": [
+          {
+            "event": "Referral to Dr. Thomas Hull, retina specialist",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E008"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient presenting with post-surgical eye symptoms",
+        "prompt": "What should be the next step in management?",
+        "action_type": "REFER",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Refer to retina specialist immediately",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard of care for suspected endophthalmitis"
+          },
+          {
+            "option_id": "B",
+            "description": "Diagnose as vitreous hemorrhage and send patient home",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Misinterpretation of symptoms as common post-surgical effects"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant diagnosed vitreous hemorrhage and sent patient home",
+          "reasoning_stated": "Symptoms were common post-surgery",
+          "evidence_ids": [
+            "E006",
+            "E007"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Immediate referral to retina specialist",
+          "standard_of_care_basis": "Expert testimony indicated need for urgent referral",
+          "evidence_ids": [
+            "E011"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to recognize signs of endophthalmitis",
+          "what_should_have_happened": "Referral to specialist for immediate treatment",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E011"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient developed acute endophthalmitis and retinal detachment, resulting in permanent vision loss",
+        "severity": "PERMANENT_SEVERE_DISABILITY",
+        "long_term_effects": "Permanent loss of vision in the affected eye",
+        "evidence_ids": [
+          "E009",
+          "E010"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Breach of duty in failing to suspect and refer for endophthalmitis",
+          "Causation established - earlier referral could have prevented vision loss"
+        ],
+        "evidence_ids": [
+          "E011",
+          "E013"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to suspect and refer for endophthalmitis",
+        "counterfactual": "Immediate referral could have led to timely treatment and prevention of vision loss",
+        "evidence_ids": [
+          "E011",
+          "E013"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "December 9, 2021",
+        "event": "Cataract surgery performed by Dr. Louis",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "December 10, 2021",
+        "event": "Patient reports symptoms to Dr. Louis",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004",
+          "E005"
+        ]
+      },
+      {
+        "timestamp": "December 11, 2021",
+        "event": "Patient referred to Dr. Hull and diagnosed with endophthalmitis",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E009"
+        ]
+      },
+      {
+        "timestamp": "December 9, 2021",
+        "event": "Cataract surgery performed by Dr. Louis",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "Evening of December 9, 2021",
+        "event": "Patient experiences pain and visual disturbances",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002",
+          "E003"
+        ]
+      },
+      {
+        "timestamp": "Morning of December 10, 2021",
+        "event": "Dr. Louis examines the eye and diagnoses vitreous hemorrhage",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E005",
+          "E007"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Referral to Dr. Thomas Hull, retina specialist",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E008"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Eye Examination",
+        "date": "December 10, 2021",
+        "result": "Signs of vitreous hemorrhage, no hypopyon",
+        "interpretation": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Vitreous hemorrhage",
+        "when_made": "December 10, 2021",
+        "made_by": null,
+        "correct": false,
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      {
+        "diagnosis": "Acute endophthalmitis",
+        "when_made": "December 11, 2021",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E009"
+        ]
+      },
+      {
+        "diagnosis": "Vitreous hemorrhage",
+        "when_made": "Morning of December 10, 2021",
+        "made_by": null,
+        "correct": false,
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      {
+        "diagnosis": "Acute endophthalmitis",
+        "when_made": "Date not specified in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E009"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Antibiotic injection",
+        "date": "December 11, 2021",
+        "provider": null,
+        "outcome": "Attempt to treat endophthalmitis",
+        "evidence_ids": [
+          "E009"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Retinal detachment",
+        "when_occurred": "December 27, 2021",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E010"
+        ]
+      },
+      {
+        "complication": "Retinal detachment",
+        "when_occurred": "Date not specified in judgment",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E010"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to diagnose endophthalmitis",
+        "against": "Dr. Louis",
+        "found_proven": true,
+        "evidence_ids": [
+          "E011"
+        ]
+      },
+      {
+        "allegation": "Failure to suspect and refer for endophthalmitis",
+        "against": "Dr. Louis",
+        "found_proven": true,
+        "evidence_ids": [
+          "E011"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Dr. Louis breached duty of care",
+        "legal_significance": "Failure to refer to specialist",
+        "evidence_ids": [
+          "E013"
+        ]
+      },
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Failure to meet standard of care by not suspecting endophthalmitis",
+        "evidence_ids": [
+          "E011"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "SYSTEM_COMMUNICATION"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.022727272727272728,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-16 16:29:48.626437",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

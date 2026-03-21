@@ -1,0 +1,419 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-6245733",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2015-07-09",
+  "url": "https://example.com/courtlistener-6245733",
+  "case_name": "Oroville Hospital v. Superior Court",
+  "neutral_citation": null,
+  "clinical_domain": "PAEDIATRICS",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Oroville Hospital v. Superior Court. Medical malpractice case involving paediatrics.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Prior to her death, Eyvon Ambrose (decedent) had become entirely dependent upon others for her basic care needs.",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Defendants provided such in-home wound care on six occasions in July 2015 and four additional occasions in October 2015.",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "On July 27, 2015, defendants documented the wound appeared to be 'infected with large area of induration filled with purulent drainage,' malodorous.",
+      "paragraph_ref": "3",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Fugaro also opined that defendants’ care of decedent complied with the applicable standard of care.",
+      "paragraph_ref": "21",
+      "speaker": "Steven Fugaro, M.D."
+    },
+    {
+      "evidence_id": "E005",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Sullivan opined defendants’ care and treatment of decedent fell below the applicable standard of care in both July and October 2015.",
+      "paragraph_ref": "9",
+      "speaker": "Linda Sullivan, R.N."
+    },
+    {
+      "evidence_id": "E006",
+      "type": "LEGAL_FINDING",
+      "text": "We conclude that, in opposition to defendants’ prima facie showing of entitlement to summary adjudication on plaintiffs’ Elder Abuse Cause of action based on the absence of a substantial caretaking or custodial relationship, plaintiffs failed to raise a triable issue of material fact.",
+      "paragraph_ref": "2",
+      "speaker": "Court conclusion"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "LEGAL_FINDING",
+      "text": "Accordingly, the trial court should have granted defendants summary adjudication on the Elder Abuse Act cause of action.",
+      "paragraph_ref": "31",
+      "speaker": "Court conclusion"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "COURT_REASONING",
+      "text": "The provision of medical care will not always give rise to the type of caretaking or custodial relationship required to establish neglect under the Elder Abuse Act.",
+      "paragraph_ref": "25",
+      "speaker": "Court reasoning"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "COURT_REASONING",
+      "text": "In our view, on these undisputed facts, finding the existence of a substantial or robust caretaking or custodial relationship between defendants and decedent would '[b]lur[] the distinction between neglect under the [Elder Abuse] Act and conduct actionable under ordinary tort remedies.'",
+      "paragraph_ref": "31",
+      "speaker": "Court reasoning"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "WITNESS_STATEMENT",
+      "text": "Foster testified she was decedent’s caretaker at the relevant times. Decedent needed help getting dressed, getting food, getting medicine, and getting to and using the bathroom.",
+      "paragraph_ref": "21",
+      "speaker": "Rebecca Foster"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Dependent on others for basic care needs"
+      },
+      "chief_complaint": "Worsening pressure injury to left ischium or buttock",
+      "history_of_present_illness": "Patient was referred for in-home nursing care for a pressure injury. The wound was initially managed with Hydrocolloid film dressing, which was deemed inappropriate due to the presence of eschar.",
+      "past_medical_history": [
+        "Diabetes",
+        "Chronic health issues requiring assistance"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "wound": "Pressure injury with eschar on left buttock, malodorous, increasing in size"
+        }
+      },
+      "initial_working_problem": "Pressure injury with risk of infection and complications",
+      "known_constraints": null,
+      "initial_differential": [
+        "Infected pressure ulcer",
+        "Sepsis"
+      ],
+      "critical_findings": [
+        "Malodorous wound",
+        "Eschar present"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002",
+        "E003"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSULT_NOTE",
+        "name": "Wound care evaluation",
+        "description": "Evaluation of the pressure injury by in-home nursing services",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Wound appeared infected with large area of induration filled with purulent drainage",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates severe infection requiring immediate intervention",
+          "decision_impact": "Should prompt hospital transfer for further evaluation and treatment",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient referred for in-home nursing care for pressure injury",
+        "duration": "Not specified",
+        "key_events": [
+          {
+            "event": "Referral for in-home care",
+            "timestamp": "July 9, 2015",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "In-Home Care and Evaluation",
+        "description": "In-home nursing services provided wound care",
+        "duration": "July 11, 2015 to October 24, 2015",
+        "key_events": [
+          {
+            "event": "Wound care evaluations and dressing changes",
+            "timestamp": "Multiple dates in July and October 2015",
+            "evidence_ids": [
+              "E002",
+              "E003"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient with worsening pressure injury and signs of infection",
+        "prompt": "What should be the next step in managing the patient's wound?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Transfer patient to hospital for evaluation and possible surgical debridement",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Severe infection and eschar require hospital-level care"
+          },
+          {
+            "option_id": "B",
+            "description": "Continue in-home wound care with current dressing",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Inappropriate for the severity of the wound"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant continued in-home care without hospital transfer",
+          "reasoning_stated": "Defendant did not recognize the need for higher level care",
+          "evidence_ids": [
+            "E005"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Patient should have been transferred to hospital",
+          "standard_of_care_basis": "Expert testimony indicated hospital care was necessary",
+          "evidence_ids": [
+            "E005"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to transfer patient led to worsening condition",
+          "what_should_have_happened": "Patient should have been transferred for surgical evaluation",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E005"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Wound care provided by defendants",
+        "severity": "Not documented in judgment",
+        "long_term_effects": "Not documented in judgment",
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "None",
+        "key_findings": [
+          "Defendants did not have a caretaking or custodial relationship with decedent",
+          "Provision of wound care was appropriate and did not constitute neglect"
+        ],
+        "evidence_ids": [
+          "E006",
+          "E007"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "None",
+        "counterfactual": "Not applicable",
+        "evidence_ids": [
+          "E006",
+          "E007"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "July 9, 2015",
+        "event": "Patient referred for in-home nursing care",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "July 27, 2015",
+        "event": "Wound documented as infected with purulent drainage",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "timestamp": "July 2015",
+        "event": "Defendants provided in-home wound care",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [
+      {
+        "diagnosis": "Infected pressure ulcer",
+        "when_made": "July 27, 2015",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "In-home wound care",
+        "date": "July 11, 2015 to October 24, 2015",
+        "provider": null,
+        "outcome": "Wound worsened",
+        "evidence_ids": [
+          "E002",
+          "E003"
+        ]
+      },
+      {
+        "treatment": "In-home wound care",
+        "date": "July 2015",
+        "provider": null,
+        "outcome": "Wound care provided",
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Sepsis",
+        "when_occurred": "October 24, 2015",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to transfer to hospital",
+        "against": "Defendant healthcare provider",
+        "found_proven": false,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "allegation": "Failure to provide adequate wound care",
+        "against": "Defendants",
+        "found_proven": false,
+        "evidence_ids": [
+          "E006",
+          "E007"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "No substantial caretaking or custodial relationship",
+        "legal_significance": "Elder Abuse Act not applicable",
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "finding": "Defendants did not have a caretaking or custodial relationship with decedent",
+        "legal_significance": "No liability under the Elder Abuse Act",
+        "evidence_ids": [
+          "E006",
+          "E007"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.15384615384615385,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-09 17:14:50.036057",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

@@ -1,0 +1,398 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-9492885",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2024-04-09",
+  "url": "https://example.com/courtlistener-9492885",
+  "case_name": "Rivera v. New York City Health & Hosps. Corp.",
+  "neutral_citation": null,
+  "clinical_domain": "ONCOLOGY",
+  "outcome_severity": "PERMANENT_SEVERE_DISABILITY",
+  "summary": {
+    "brief": "Rivera v. New York City Health & Hosps. Corp.. Medical malpractice case involving oncology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Plaintiff treated at Woodhull as her primary health care provider for various ailments since June 2003.",
+      "paragraph_ref": "4",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "On September 16, 2014, she was treated at Woodhull's emergency department with shortness of breath and numbness in her left arm and shoulder.",
+      "paragraph_ref": "6",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "On March 14, 2016, Plaintiff saw Dr. Zaki for prescription refills and care for her diabetes and hepatitis.",
+      "paragraph_ref": "8",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "Plaintiff alleges that HHC/Woodhull departed from good and accepted standards of medical practice by failing to properly diagnose her cervical rib anomaly.",
+      "paragraph_ref": "11",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Sherman opines that a cervical rib is 'difficult to visualize on many types of radiological studies' and it is especially difficult to visualize on an MRI of the cervical spine.",
+      "paragraph_ref": "44",
+      "speaker": "Dr. Sherman"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Plaintiff's radiology expert counters Dr. Sherman's expert opinion that a cervical rib is typically asymptomatic and therefore not a pertinent detail.",
+      "paragraph_ref": "48",
+      "speaker": "Plaintiff's radiology expert"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Plaintiff's vascular surgery expert opines that these omissions from the CT scan report were a proximate cause of Plaintiff's alleged injuries.",
+      "paragraph_ref": "51",
+      "speaker": "Plaintiff's vascular surgery expert"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "LEGAL_FINDING",
+      "text": "ORDERED that Defendant New York City Health & Hospital Corp.'s motion (Seq. No. 3) for summary judgment is GRANTED TO THE EXTENT of dismissing Plaintiff's medical malpractice claims except those claims related to the radiological review and report of the September 8, 2015 CT scan.",
+      "paragraph_ref": "60",
+      "speaker": "Court order"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "COURT_REASONING",
+      "text": "The conflicting expert opinions on whether HHC's radiologist deviated from community standards by not including the cervical rib and post-stenotic dilatation findings, and whether that deviation resulted in a failure to properly diagnose and treat Plaintiff's condition in the two years she treated at Woodhull before her emergency thrombectomy on August 28, 2017, raise issues of fact and credibility which preclude summary judgment.",
+      "paragraph_ref": "57",
+      "speaker": "Court reasoning"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Neck and shoulder pain",
+      "history_of_present_illness": "Patient has a history of neck and shoulder pain, with intermittent symptoms including numbness and burning in the arms. She was treated for various conditions including diabetes and hypertension.",
+      "past_medical_history": [
+        "Diabetes",
+        "Hypertension",
+        "Hepatitis C"
+      ],
+      "medications": [
+        "Not documented in judgment"
+      ],
+      "allergies": [
+        "Not documented in judgment"
+      ],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "neck": "Tenderness noted, lump found on right side",
+          "upper_extremities": "Burning sensation in right arm and hand"
+        }
+      },
+      "initial_working_problem": "Neck and shoulder pain with possible nerve involvement",
+      "known_constraints": null,
+      "initial_differential": [
+        "Cervicalgia",
+        "Diabetic neuropathy",
+        "Thoracic Outlet Syndrome"
+      ],
+      "critical_findings": [
+        "Lump in neck",
+        "Burning sensation in right arm"
+      ],
+      "urgency_level": "ROUTINE",
+      "evidence_ids": [
+        "E002",
+        "E003",
+        "E007"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "CT Scan with Contrast",
+        "description": "CT scan of neck to evaluate lump and pain",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Cervical rib visible, post-stenotic dilatation of subclavian artery",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates potential for vascular complications",
+          "decision_impact": "Should prompt referral to vascular surgery",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E007",
+          "E048"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with neck and shoulder pain",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Patient reports neck pain and lump in neck",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Diagnostic Workup",
+        "description": "CT scan performed to evaluate neck lump",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "CT scan performed",
+            "timestamp": "September 8, 2015",
+            "evidence_ids": [
+              "E007"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient with neck pain and lump in neck, CT scan performed",
+        "prompt": "What should be done after reviewing the CT scan?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Refer to vascular surgery for evaluation of cervical rib and artery involvement",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Presence of cervical rib and artery involvement requires specialist evaluation"
+          },
+          {
+            "option_id": "B",
+            "description": "No further action, treat symptomatically",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Cervical rib considered incidental finding"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "No further action taken, treated symptomatically",
+          "reasoning_stated": "Cervical rib considered incidental finding",
+          "evidence_ids": [
+            "E045",
+            "E046"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Referral to vascular surgery should have been made",
+          "standard_of_care_basis": "Expert evidence established need for specialist evaluation",
+          "evidence_ids": [
+            "E048",
+            "E049"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to recognize the clinical significance of the cervical rib and artery involvement",
+          "what_should_have_happened": "Referral to vascular surgery for further evaluation and management",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E048",
+            "E049",
+            "E050"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient developed thrombosis in right subclavian artery requiring emergency surgery",
+        "severity": "PERMANENT_MODERATE_DISABILITY",
+        "long_term_effects": "Persisting numbness and disability in right arm",
+        "evidence_ids": [
+          "E010",
+          "E011"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "PARTIAL_LIABILITY",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Failure to diagnose cervical rib and artery involvement from CT scan",
+          "Causation established - earlier intervention could have prevented complications"
+        ],
+        "evidence_ids": [
+          "E057",
+          "E058"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to act on CT scan findings",
+        "counterfactual": "Referral to vascular surgery could have prevented thrombosis",
+        "evidence_ids": [
+          "E048",
+          "E049",
+          "E050"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "September 8, 2015",
+        "event": "CT scan performed, cervical rib visible",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      {
+        "timestamp": "August 28, 2017",
+        "event": "Patient treated in Cuba for thrombosis",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E010"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "CT Scan with Contrast",
+        "date": "September 8, 2015",
+        "result": "Cervical rib and post-stenotic dilatation visible",
+        "interpretation": null,
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Cervical rib with subclavian artery involvement",
+        "when_made": "Not diagnosed until after emergency treatment",
+        "made_by": null,
+        "correct": false,
+        "evidence_ids": [
+          "E010"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Emergency thrombectomy",
+        "date": "August 28, 2017",
+        "provider": null,
+        "outcome": "Blood clot cleared, blood flow reestablished",
+        "evidence_ids": [
+          "E010"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Thrombosis in right subclavian artery",
+        "when_occurred": "August 28, 2017",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E010"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to diagnose cervical rib and artery involvement",
+        "against": "HHC/Woodhull radiologist",
+        "found_proven": true,
+        "evidence_ids": [
+          "E057"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Radiologist failed to report cervical rib and artery involvement",
+        "legal_significance": "Breach of standard of care",
+        "evidence_ids": [
+          "E057"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.14516129032258066,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-17 08:33:33.339439",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

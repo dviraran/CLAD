@@ -1,0 +1,436 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10737471",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2025-09-05",
+  "url": "https://example.com/courtlistener-10737471",
+  "case_name": "JEAN BENNETT, Personal Representative v. MICHAEL COLLINS",
+  "neutral_citation": null,
+  "clinical_domain": "CARDIOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "JEAN BENNETT, Personal Representative v. MICHAEL COLLINS. Medical malpractice case involving cardiology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "This lawsuit involves the decedent's treatment for a shoulder injury beginning on July 6, 2020, until his death on August 8, 2020, with Collins attending to him from August 4 to August 5, 2020.",
+      "paragraph_ref": "7",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "On July 6, the decedent, a fifty-eight year old man, presented to the emergency department at Cape Cod Hospital (CCH or hospital) via ambulance because he was unable to use his left arm.",
+      "paragraph_ref": "7",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "Four days later, on July 10, the decedent returned to CCH's emergency department due to increased and worsening pain in his left hand and shoulder, with the antibiotic having failed to improve his condition.",
+      "paragraph_ref": "8",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "On the next day, August 4, at 9:42 P.M., the decedent again went to CCH's emergency department by ambulance, this time with complaints of general weakness that had lasted for sixteen hours, left shoulder pain after chiropractic manipulation, and dizziness when changing positions.",
+      "paragraph_ref": "10",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "At 4:50 A.M. on August 5, Collins discharged the decedent and advised him to follow up with an orthopedic evaluation.",
+      "paragraph_ref": "11",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "At 7:57 A.M. on August 8, the decedent suffered cardiac arrest and died. The causes of death noted on his death certificate were septic shock, acute septic arthritis of the left shoulder, metabolic acidosis, and acute-on-chronic renal failure.",
+      "paragraph_ref": "14",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Mark Richman, a board-certified emergency and internal medicine physician, opined that Collins's care and treatment of the decedent fell below the accepted standard of care for a qualified nurse practitioner.",
+      "paragraph_ref": "16",
+      "speaker": "Dr. Mark Richman"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Richman opined that Collins failed to recognize and appreciate signs and symptoms of possible septic arthritis.",
+      "paragraph_ref": "28",
+      "speaker": "Dr. Mark Richman"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "LEGAL_FINDING",
+      "text": "We hold that the decision of the tribunal was erroneous and accordingly vacate the judgment of dismissal.",
+      "paragraph_ref": "20",
+      "speaker": "Court conclusion"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "COURT_REASONING",
+      "text": "Richman's expert opinion, rooted in the evidence, was sufficient to meet the tribunal standard.",
+      "paragraph_ref": "31",
+      "speaker": "Court analysis"
+    },
+    {
+      "evidence_id": "E011",
+      "type": "COURT_REASONING",
+      "text": "The tribunal's apparent conclusion to the contrary is unsupported.",
+      "paragraph_ref": "39",
+      "speaker": "Court analysis"
+    },
+    {
+      "evidence_id": "E012",
+      "type": "LEGAL_FINDING",
+      "text": "The judgment of dismissal as to Collins is vacated, and the plaintiff may proceed with her claims against him without posting a bond.",
+      "paragraph_ref": "40",
+      "speaker": "Court conclusion"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "58 years",
+        "sex": "male",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Inability to use left arm",
+      "history_of_present_illness": "Patient fell approximately two weeks prior, did not experience pain until one week afterward. Presented with inability to use left arm.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "shoulder": "Tenderness and limited range of motion in left shoulder"
+        }
+      },
+      "initial_working_problem": "Rotator cuff tendinitis and localized skin infection",
+      "known_constraints": null,
+      "initial_differential": [
+        "rotator cuff tendinitis",
+        "localized skin infection"
+      ],
+      "critical_findings": [
+        "Inability to use left arm",
+        "Tenderness in left shoulder"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "LAB",
+        "name": "Complete Blood Count",
+        "description": "Blood work to assess for infection",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Elevated white blood cell count and neutrophils, low lymphocytes",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates possible infection",
+          "decision_impact": "Should prompt further investigation for infection",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "IMAGING",
+        "name": "CT Scan of Left Shoulder",
+        "description": "Imaging to evaluate shoulder condition",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": null,
+          "detailed_findings": "Not documented in judgment",
+          "clinical_significance": "Could identify septic arthritis",
+          "decision_impact": "Should have been ordered to confirm diagnosis",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": [
+          "E008"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents to ED with shoulder pain",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Patient examined and diagnosed with rotator cuff tendinitis",
+            "timestamp": "July 6, 2020",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Subsequent ED Visit",
+        "description": "Patient returns with worsening symptoms",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Patient discharged with oral antibiotics",
+            "timestamp": "August 5, 2020",
+            "evidence_ids": [
+              "E005"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient in ED with shoulder pain and signs of infection",
+        "prompt": "What should be the next step in management?",
+        "action_type": "ORDER_TEST",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Order CT scan of the shoulder",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Necessary to rule out septic arthritis"
+          },
+          {
+            "option_id": "B",
+            "description": "Discharge with oral antibiotics",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Inadequate given signs of possible septic arthritis"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant discharged patient with oral antibiotics",
+          "reasoning_stated": "Attributed worsening pain to chiropractic manipulation",
+          "evidence_ids": [
+            "E005",
+            "E029"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "CT scan should have been ordered",
+          "standard_of_care_basis": "Expert evidence established need for imaging",
+          "evidence_ids": [
+            "E007",
+            "E008"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failed to recognize signs of septic arthritis",
+          "what_should_have_happened": "CT scan and further workup",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E007",
+            "E008",
+            "E010"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient developed septic shock and died",
+        "severity": "FATAL",
+        "long_term_effects": "Not applicable",
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Failure to order necessary imaging and admit for further treatment",
+          "Causation established - earlier intervention could have prevented death"
+        ],
+        "evidence_ids": [
+          "E009",
+          "E010",
+          "E012"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to order CT imaging and admit for treatment",
+        "counterfactual": "Earlier diagnosis and treatment could have prevented deterioration",
+        "evidence_ids": [
+          "E007",
+          "E008",
+          "E010"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "July 6, 2020",
+        "event": "Patient presents to ED with shoulder pain",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "August 5, 2020",
+        "event": "Patient discharged with oral antibiotics",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "timestamp": "August 8, 2020",
+        "event": "Patient died from septic shock",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Complete Blood Count",
+        "date": "August 4, 2020",
+        "result": "Elevated WBC and neutrophils, low lymphocytes",
+        "interpretation": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Septic arthritis",
+        "when_made": "August 7, 2020",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E013"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "IV antibiotics",
+        "date": "August 6, 2020",
+        "provider": null,
+        "outcome": "Condition worsened",
+        "evidence_ids": [
+          "E014"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Septic shock",
+        "when_occurred": "August 8, 2020",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to order CT scan",
+        "against": "Defendant nurse practitioner",
+        "found_proven": true,
+        "evidence_ids": [
+          "E008"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Standard of care not met",
+        "evidence_ids": [
+          "E010"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.25,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-09 19:31:16.243281",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

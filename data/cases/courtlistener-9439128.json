@@ -1,0 +1,466 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-9439128",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2023-08-22",
+  "url": "https://example.com/courtlistener-9439128",
+  "case_name": "Santana v. State",
+  "neutral_citation": null,
+  "clinical_domain": "OBSTETRICS_GYNAECOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Santana v. State. Medical malpractice case involving obstetrics gynaecology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "C was admitted to a state hospital for an induction of labor. During labor, it was determined that E was malpositioned and that a vaginal delivery would pose risks.",
+      "paragraph_ref": "5",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "C agreed to the manual rotation, which was unsuccessful. At that point, the delivery plan was changed to a cesarean section.",
+      "paragraph_ref": "5",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "The cesarean section ultimately took an extended period of time, and E suffered permanent injuries in the process.",
+      "paragraph_ref": "5",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "EXPERT_TESTIMONY",
+      "text": "The expert opined in that letter, to a reasonable degree of medical certainty, that the state departed from the applicable standard of care in that it, among other things, failed to inform C regarding the risks of attempting a vaginal delivery.",
+      "paragraph_ref": "5",
+      "speaker": "Expert witness"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "LEGAL_FINDING",
+      "text": "The trial court denied the motion, concluding that the second count reasonably could be understood to sound in medical malpractice, and the state appealed.",
+      "paragraph_ref": "5",
+      "speaker": "Trial court conclusion"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "COURT_REASONING",
+      "text": "The term \u2018\u2018medical malpractice claims\u2019\u2019 in \u00a7 4-160 (f) is broad enough to encompass a birthing mother\u2019s allegation that she suffered emotional distress from physical injuries to her child.",
+      "paragraph_ref": "6",
+      "speaker": "Court reasoning"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "COURT_REASONING",
+      "text": "This court concluded that, when a fetus or infant suffers physical injuries as a result of medical malpractice during the labor and delivery process, the birthing mother is a joint victim of the malpractice.",
+      "paragraph_ref": "11",
+      "speaker": "Court reasoning"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "LEGAL_FINDING",
+      "text": "C was not precluded from asserting a medical malpractice claim against the state for damages based on purely emotional distress.",
+      "paragraph_ref": "12",
+      "speaker": "Court conclusion"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "COURT_REASONING",
+      "text": "To ascertain whether a claim qualifies as a medical malpractice claim, multiple factors are considered, including whether the defendant is being sued in his or her capacity as a medical professional.",
+      "paragraph_ref": "15",
+      "speaker": "Court reasoning"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "LEGAL_FINDING",
+      "text": "The trial court properly denied the state\u2019s motion to dismiss that count of the complaint.",
+      "paragraph_ref": "13",
+      "speaker": "Court conclusion"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Admitted for induction of labor",
+      "history_of_present_illness": "C was admitted to a state hospital for an induction of labor. During labor, it was determined that E was malpositioned and that a vaginal delivery would pose risks. C agreed to a manual rotation, which was unsuccessful, leading to a cesarean section.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": null,
+        "general_appearance": null,
+        "focused_exam": {
+          "system": "Examination mentioned but findings not specified"
+        }
+      },
+      "initial_working_problem": "Labor induction with complications due to fetal malposition",
+      "known_constraints": null,
+      "initial_differential": [
+        "Fetal malposition",
+        "Complicated labor"
+      ],
+      "critical_findings": [
+        "Fetal malposition",
+        "Unsuccessful manual rotation"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002",
+        "E003"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "Fetal Sonography",
+        "description": "Sonography to assess fetal position and growth",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Fetal weight above 90th percentile, abdominal circumference above 95th percentile",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates fetal overgrowth, potential for obstructed labor",
+          "decision_impact": "Should prompt consideration of delivery options",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "CONSULT_NOTE",
+        "name": "Obstetrician Consultation",
+        "description": "Consultation with obstetrician regarding delivery options",
+        "available_phase": "decision",
+        "reveal": {
+          "result_summary": "Counseling on delivery options including manual rotation and C-section",
+          "detailed_findings": null,
+          "clinical_significance": "Informed decision-making for delivery method",
+          "decision_impact": "Should have led to earlier decision for C-section",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with elevated blood pressure and fetal overgrowth",
+        "duration": "Not specified in judgment",
+        "key_events": [
+          {
+            "event": "Admission for induction of labor",
+            "timestamp": "March 23, 2020",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Labor Induction and Monitoring",
+        "description": "Patient undergoes labor induction and monitoring",
+        "duration": "Two days",
+        "key_events": [
+          {
+            "event": "Sonography reveals fetal overgrowth",
+            "timestamp": "March 17, 2020",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "decision",
+        "name": "Decision on Delivery Method",
+        "description": "Decision-making regarding delivery method due to labor complications",
+        "duration": "Not specified in judgment",
+        "key_events": [
+          {
+            "event": "Manual rotation attempted, then C-section decided",
+            "timestamp": "March 25, 2020",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "decision",
+        "clinical_context": "Patient in labor with fetal malposition and maternal exhaustion",
+        "prompt": "What delivery method should be chosen given the fetal malposition and maternal exhaustion?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Proceed with C-section immediately",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Given fetal malposition and maternal exhaustion, C-section is safer"
+          },
+          {
+            "option_id": "B",
+            "description": "Attempt manual rotation and continue with vaginal delivery",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Attempting manual rotation despite malposition and exhaustion"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant attempted manual rotation, then proceeded to C-section",
+          "reasoning_stated": "Defendant believed manual rotation was feasible",
+          "evidence_ids": [
+            "E002",
+            "E003"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Immediate C-section should have been performed",
+          "standard_of_care_basis": "Expert evidence indicated C-section was appropriate given the circumstances",
+          "evidence_ids": [
+            "E004"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Manual rotation was inappropriate given the fetal position and maternal condition",
+          "what_should_have_happened": "Immediate C-section to prevent complications",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E004"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient suffered permanent injuries due to extended cesarean section",
+        "severity": "PERMANENT_MODERATE_DISABILITY",
+        "long_term_effects": "Not documented in judgment",
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Breach of duty in delaying cesarean section",
+          "Causation established - delay led to extended procedure and injuries"
+        ],
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Delay in performing cesarean section",
+        "counterfactual": "Prompt cesarean section would have prevented extended procedure time",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "March 3, 2020",
+        "event": "Patient diagnosed with elevated blood pressure, influenza, and proteinuria",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "March 17, 2020",
+        "event": "Sonography reveals fetal overgrowth",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "March 23, 2020",
+        "event": "Patient admitted for induction of labor",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "March 25, 2020",
+        "event": "Manual rotation attempted, then C-section performed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Patient admitted for induction of labor",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Fetal Sonography",
+        "date": "March 17, 2020",
+        "result": "Fetal overgrowth",
+        "interpretation": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Fetal malposition",
+        "when_made": "March 25, 2020",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "C-section",
+        "date": "March 25, 2020",
+        "provider": null,
+        "outcome": "Delayed extraction, fetal injuries",
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "treatment": "Cesarean section",
+        "date": "Date not specified in judgment",
+        "provider": null,
+        "outcome": "Extended procedure time, permanent injuries",
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Permanent brain damage",
+        "when_occurred": "During delivery",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to perform timely C-section",
+        "against": "UConn Health and its staff",
+        "found_proven": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "allegation": "Delay in performing cesarean section",
+        "against": "State hospital",
+        "found_proven": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "finding": "Breach of duty in delaying cesarean section",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "TREATMENT_PROCEDURE_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.47619047619047616,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-09 13:16:25.366140",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

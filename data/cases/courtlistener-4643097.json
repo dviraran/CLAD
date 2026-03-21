@@ -1,0 +1,467 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-4643097",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2019-07-25",
+  "url": "https://example.com/courtlistener-4643097",
+  "case_name": "Estate of Effie Taylor v. University Physician Group",
+  "neutral_citation": null,
+  "clinical_domain": "CARDIOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Estate of Effie Taylor v. University Physician Group. Medical malpractice case involving cardiology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "This medical malpractice case arises from a colonoscopy performed by defendant Manuel Sklar, M.D., on plaintiff\u2019s decedent, Effie Taylor.",
+      "paragraph_ref": "11",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "During the procedure, Dr. Sklar observed lesions in Taylor\u2019s colon that he believed were arteriovenous malformations, called AVMs.",
+      "paragraph_ref": "11",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "Three days later, Taylor developed colorectal bleeding. Despite the emergent removal of her entire colon, Taylor died.",
+      "paragraph_ref": "11",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Plaintiff\u2019s expert witness, Dr. Todd Eisner, testified that the improper and unindicated biopsies caused the bleeding that ultimately led to Taylor\u2019s death.",
+      "paragraph_ref": "13",
+      "speaker": "Dr. Todd Eisner"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "EXPERT_TESTIMONY",
+      "text": "His expert witness, Dr. Veslav Stecevic, performed an emergent colonoscopy on Taylor the day before she died, looking for the source of the bleeding in her colon.",
+      "paragraph_ref": "14",
+      "speaker": "Dr. Veslav Stecevic"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. Stecevic recorded that he found '[r]ed blood . . . in the entire colon' during the second colonoscopy, and performed a '[l]imited exam due to large amount of blood in the entire colon.'",
+      "paragraph_ref": "22",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Eisner explained that Dr. Sklar\u2019s description of the lesion he biopsied matched an AVM, and that it is common for AVMs to be found in the right colon.",
+      "paragraph_ref": "23",
+      "speaker": "Dr. Todd Eisner"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "LEGAL_FINDING",
+      "text": "The trial court denied defendants\u2019 motion, stating, 'The Court finds that summary disposition is not appropriate.'",
+      "paragraph_ref": "27",
+      "speaker": "Trial court"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "COURT_REASONING",
+      "text": "Summary disposition is improper when a trier of fact could reasonably draw an inference supporting causation from the established facts.",
+      "paragraph_ref": "29",
+      "speaker": "Court reasoning"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. Sklar acknowledged awareness that Taylor, a 79-year-old woman and a Jehovah\u2019s Witness, had been taking Plavix before the colonoscopy.",
+      "paragraph_ref": "16",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E011",
+      "type": "MEDICAL_RECORD",
+      "text": "Dr. Sklar dictated the official operative report on the day of the colonoscopy. He noted that a segment of Taylor\u2019s ascending colon 'had an appearance of multiple small blood vessels suggestive for an extensive AVM malformation.'",
+      "paragraph_ref": "17",
+      "speaker": "Dr. Sklar"
+    },
+    {
+      "evidence_id": "E012",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Eisner explained that diverticular bleeding is 'very rare, however old you are,' and is not a reported complication of a colonoscopy.",
+      "paragraph_ref": "24",
+      "speaker": "Dr. Todd Eisner"
+    },
+    {
+      "evidence_id": "E013",
+      "type": "LEGAL_FINDING",
+      "text": "We affirm and remand for further proceedings. We do not retain jurisdiction.",
+      "paragraph_ref": "66",
+      "speaker": "Court conclusion"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "79 years",
+        "sex": "female",
+        "relevant_social_history": "Jehovah\u2019s Witness"
+      },
+      "chief_complaint": "Scheduled for colonoscopy",
+      "history_of_present_illness": "Patient had been taking Plavix, a blood thinner, and was instructed to discontinue it 5-7 days before the procedure but stopped only 3 days prior.",
+      "past_medical_history": [
+        "Not documented in judgment"
+      ],
+      "medications": [
+        "Plavix"
+      ],
+      "allergies": [
+        "Not documented in judgment"
+      ],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "abdomen": "Not documented in judgment"
+        }
+      },
+      "initial_working_problem": "Colonoscopy to investigate lesions",
+      "known_constraints": null,
+      "initial_differential": [
+        "Arteriovenous malformations (AVMs)"
+      ],
+      "critical_findings": [
+        "Lesions suspected to be AVMs"
+      ],
+      "urgency_level": "ELECTIVE",
+      "evidence_ids": [
+        "E001",
+        "E010",
+        "E011"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "Colonoscopy",
+        "description": "Endoscopic examination of the colon",
+        "available_phase": "procedure",
+        "reveal": {
+          "result_summary": "Lesions observed, suspected to be AVMs",
+          "detailed_findings": null,
+          "clinical_significance": "Potential source of bleeding if biopsied",
+          "decision_impact": "Biopsy decision critical due to bleeding risk",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E002",
+          "E011"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "CONSULT_NOTE",
+        "name": "Expert Testimony",
+        "description": "Testimony from Dr. Todd Eisner",
+        "available_phase": "postop",
+        "reveal": {
+          "result_summary": "Biopsies likely caused bleeding",
+          "detailed_findings": null,
+          "clinical_significance": "Biopsying AVMs in a patient on Plavix is risky",
+          "decision_impact": "Informed consent and biopsy decision questioned",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E004",
+          "E012"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient scheduled for colonoscopy",
+        "duration": "Not specified",
+        "key_events": [
+          {
+            "event": "Patient instructed to stop Plavix 5-7 days before procedure",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E010"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "procedure",
+        "name": "Colonoscopy Procedure",
+        "description": "Colonoscopy performed by Dr. Sklar",
+        "duration": "Not specified",
+        "key_events": [
+          {
+            "event": "Biopsies taken from suspected AVMs",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E002",
+              "E011"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "postop",
+        "name": "Post-Procedure Complications",
+        "description": "Patient developed colorectal bleeding",
+        "duration": "3 days post-procedure",
+        "key_events": [
+          {
+            "event": "Patient presented with rectal bleeding",
+            "timestamp": "3 days after colonoscopy",
+            "evidence_ids": [
+              "E003"
+            ]
+          },
+          {
+            "event": "Emergent colonoscopy performed by Dr. Stecevic",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E005",
+              "E006"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "procedure",
+        "clinical_context": "During colonoscopy, lesions suspected to be AVMs were observed",
+        "prompt": "Should biopsies be taken from the suspected AVMs?",
+        "action_type": "ORDER_TEST",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Do not biopsy due to bleeding risk",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Patient on Plavix and Jehovah\u2019s Witness, high bleeding risk"
+          },
+          {
+            "option_id": "B",
+            "description": "Proceed with biopsies",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Biopsies taken despite bleeding risk"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant proceeded with biopsies",
+          "reasoning_stated": "Believed lesions were AVMs and needed confirmation",
+          "evidence_ids": [
+            "E002",
+            "E011"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Biopsies should not have been taken",
+          "standard_of_care_basis": "Expert testimony indicated high risk of bleeding",
+          "evidence_ids": [
+            "E004",
+            "E012"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Biopsying AVMs in a patient on Plavix is risky and not standard care",
+          "what_should_have_happened": "Biopsies should have been avoided",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E004",
+            "E012"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient developed massive colorectal bleeding and died after total colectomy",
+        "severity": "FATAL",
+        "long_term_effects": "Not applicable",
+        "evidence_ids": [
+          "E003",
+          "E022"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not specified in judgment",
+        "key_findings": [
+          "Breach of duty in performing biopsies on AVMs",
+          "Causation established - biopsies led to fatal bleeding"
+        ],
+        "evidence_ids": [
+          "E004",
+          "E012"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Biopsying AVMs in a patient on Plavix",
+        "counterfactual": "Avoiding biopsies would have prevented bleeding",
+        "evidence_ids": [
+          "E004",
+          "E012"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Colonoscopy performed by Dr. Sklar",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "3 days after colonoscopy",
+        "event": "Patient presented with rectal bleeding",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Colonoscopy",
+        "date": "Date not specified in judgment",
+        "result": "Lesions suspected to be AVMs biopsied",
+        "interpretation": null,
+        "evidence_ids": [
+          "E002",
+          "E011"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Colorectal bleeding due to biopsied AVMs",
+        "when_made": "Post-procedure",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E004",
+          "E012"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Total colectomy",
+        "date": "Date not specified in judgment",
+        "provider": null,
+        "outcome": "Patient died",
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Massive colorectal bleeding",
+        "when_occurred": "3 days post-procedure",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Improper biopsies of AVMs",
+        "against": "Dr. Sklar",
+        "found_proven": true,
+        "evidence_ids": [
+          "E004",
+          "E012"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care by performing biopsies",
+        "legal_significance": "Biopsies led to fatal bleeding",
+        "evidence_ids": [
+          "E004",
+          "E012"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "TREATMENT_PROCEDURE_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.18840579710144928,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-09 15:05:09.816192",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

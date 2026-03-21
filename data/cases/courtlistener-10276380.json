@@ -1,0 +1,586 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10276380",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2024-09-27",
+  "url": "https://example.com/courtlistener-10276380",
+  "case_name": "Schmidt v. Crayne",
+  "neutral_citation": null,
+  "clinical_domain": "CARDIOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Schmidt v. Crayne. Medical malpractice case involving cardiology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Joel Pasienza (\u201cJoel\u201d) was a 37-year-old man who suffered from cerebral palsy and was nonverbal and non-ambulatory.",
+      "paragraph_ref": "17",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "He died on September 5, 2017, about five hours after being released from St. Anne Hospital, where he had spent 11 days undergoing treatment for a bowel obstruction.",
+      "paragraph_ref": "18",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "Following an autopsy, the Lucas County Coroner determined that Joel died of sepsis caused by klebsiella pneumoniae.",
+      "paragraph_ref": "21",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "EXPERT_TESTIMONY",
+      "text": "The parties retained expert witnesses who provided standard of care and causation opinions.",
+      "paragraph_ref": "107",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Plaintiff presented testimony from hospitalist, Mohammad Alhabbal, who opined that Dr. Crayne deviated from the standard of care for a hospitalist because he failed to address bilateral opacities evident in the imaging.",
+      "paragraph_ref": "116",
+      "speaker": "Plaintiff's expert"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "Joel was discharged from St. Anne on the evening of September 5, 2017, and at approximately 6:00 p.m., he returned to Ann Grady Center, the facility where he lived.",
+      "paragraph_ref": "91",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "LEGAL_FINDING",
+      "text": "The jury rendered a defense verdict. Interrogatories indicate that it found that the doctors did not breach the standard of care in their treatment of Joel.",
+      "paragraph_ref": "681",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "COURT_REASONING",
+      "text": "We affirm the July 25, 2023 judgment of the Lucas County Court of Common Pleas.",
+      "paragraph_ref": "1304",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "37 years",
+        "sex": "male",
+        "relevant_social_history": "Nonverbal and non-ambulatory due to cerebral palsy"
+      },
+      "chief_complaint": "Abdominal pain",
+      "history_of_present_illness": "Joel presented to the emergency department with abdominal pain. Imaging showed a bowel obstruction.",
+      "past_medical_history": [
+        "Cerebral palsy",
+        "History of aspiration pneumonia"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Low at times, but not persistently",
+          "heart_rate": "Sometimes exceeded 100",
+          "respiratory_rate": "Mostly 20 or below",
+          "temperature": "Afebrile except for brief spikes",
+          "oxygen_saturation": "Never fell below 90%",
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "abdomen": "Not documented in judgment"
+        }
+      },
+      "initial_working_problem": "Bowel obstruction",
+      "known_constraints": null,
+      "initial_differential": [
+        "Bowel obstruction",
+        "Pneumonia"
+      ],
+      "critical_findings": [
+        "Bilateral lower lobe patchy airspace densities on CT suggestive of pneumonia"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002",
+        "E003",
+        "E035"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "CT Abdomen",
+        "description": "CT scan of the abdomen showing bowel obstruction and incidental lung findings",
+        "available_phase": "presentation",
+        "reveal": {
+          "result_summary": "Bowel obstruction; bilateral lower lobe patchy airspace densities suggestive of pneumonia",
+          "detailed_findings": null,
+          "clinical_significance": "Suggestive of pneumonia, requires further investigation",
+          "decision_impact": "Should prompt consideration of pneumonia treatment",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E035"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "IMAGING",
+        "name": "Chest X-ray",
+        "description": "Serial chest x-rays performed during hospitalization",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Stable atelectasis and airspace disease, no significant changes",
+          "detailed_findings": null,
+          "clinical_significance": "No progression suggestive of pneumonia",
+          "decision_impact": "Did not prompt change in management",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E055",
+          "E056",
+          "E057",
+          "E058",
+          "E059"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents to ED with abdominal pain",
+        "duration": "11 days",
+        "key_events": [
+          {
+            "event": "CT scan performed showing bowel obstruction and lung findings",
+            "timestamp": "August 25, 2017",
+            "evidence_ids": [
+              "E035"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Hospitalization and Treatment",
+        "description": "Patient undergoes surgery and post-operative care",
+        "duration": "August 25, 2017 to September 5, 2017",
+        "key_events": [
+          {
+            "event": "Surgery for bowel obstruction",
+            "timestamp": "August 28, 2017",
+            "evidence_ids": [
+              "E045"
+            ]
+          },
+          {
+            "event": "Discharge from hospital",
+            "timestamp": "September 5, 2017",
+            "evidence_ids": [
+              "E006"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "decision",
+        "name": "Discharge Decision",
+        "description": "Decision to discharge Joel from the hospital",
+        "duration": "September 5, 2017",
+        "key_events": [
+          {
+            "event": "Joel discharged from hospital",
+            "timestamp": "September 5, 2017",
+            "evidence_ids": [
+              "E006"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient with abdominal pain and incidental lung findings suggestive of pneumonia",
+        "prompt": "Should the incidental lung findings on CT be further investigated?",
+        "action_type": "ORDER_TEST",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Order further imaging or consult pulmonology",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "To confirm or rule out pneumonia and guide treatment"
+          },
+          {
+            "option_id": "B",
+            "description": "Do not pursue further investigation",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Assumed not clinically significant without further evidence"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Did not pursue further investigation of lung findings",
+          "reasoning_stated": "Believed pneumonia was ruled out clinically",
+          "evidence_ids": [
+            "E115",
+            "E116"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Further investigation should have been pursued",
+          "standard_of_care_basis": "Expert testimony indicated need for further investigation",
+          "evidence_ids": [
+            "E115",
+            "E116"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to investigate potential pneumonia despite suggestive imaging",
+          "what_should_have_happened": "Further imaging or pulmonology consult should have been ordered",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E115",
+            "E116"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient died of sepsis caused by klebsiella pneumoniae.",
+        "severity": "FATAL",
+        "long_term_effects": "Not applicable",
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "None",
+        "key_findings": [
+          "Jury found no breach of standard of care by Dr. Crayne."
+        ],
+        "evidence_ids": [
+          "E007",
+          "E008"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Discharge without further investigation.",
+        "counterfactual": "Further investigation could have identified sepsis risk.",
+        "evidence_ids": [
+          "E005",
+          "E007"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "August 25, 2017",
+        "event": "Patient presents to ED with abdominal pain",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E035"
+        ]
+      },
+      {
+        "timestamp": "August 28, 2017",
+        "event": "Surgery for bowel obstruction",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E045"
+        ]
+      },
+      {
+        "timestamp": "September 5, 2017",
+        "event": "Patient discharged from hospital",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "timestamp": "September 5, 2017",
+        "event": "Patient died of sepsis",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "timestamp": "August 28, 2017",
+        "event": "Joel admitted for bowel surgery",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "September 5, 2017",
+        "event": "Joel discharged from hospital",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "timestamp": "September 5, 2017",
+        "event": "Joel died of sepsis",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002",
+          "E003"
+        ]
+      },
+      {
+        "timestamp": "September 5, 2017",
+        "event": "Patient discharged from St. Anne Hospital",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "CT Abdomen",
+        "date": "August 25, 2017",
+        "result": "Bowel obstruction; bilateral lower lobe patchy airspace densities",
+        "interpretation": null,
+        "evidence_ids": [
+          "E035"
+        ]
+      },
+      {
+        "test_name": "Chest X-ray",
+        "date": "Multiple dates",
+        "result": "Stable atelectasis and airspace disease",
+        "interpretation": null,
+        "evidence_ids": [
+          "E055",
+          "E056",
+          "E057",
+          "E058",
+          "E059"
+        ]
+      },
+      {
+        "test_name": "Chest X-ray",
+        "date": "Not specified in judgment",
+        "result": "Atelectasis noted, no signs of pneumonia",
+        "interpretation": null,
+        "evidence_ids": [
+          "E599"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Bowel obstruction",
+        "when_made": "August 25, 2017",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E035"
+        ]
+      },
+      {
+        "diagnosis": "Sepsis caused by klebsiella pneumoniae",
+        "when_made": "Post-mortem",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "diagnosis": "Atelectasis",
+        "when_made": "During hospitalization",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E599"
+        ]
+      },
+      {
+        "diagnosis": "Sepsis caused by klebsiella pneumoniae",
+        "when_made": "Post-mortem",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Surgery for bowel obstruction",
+        "date": "August 28, 2017",
+        "provider": null,
+        "outcome": "Successful surgery",
+        "evidence_ids": [
+          "E045"
+        ]
+      },
+      {
+        "treatment": "Cefazolin prophylactically",
+        "date": "During hospitalization",
+        "provider": null,
+        "outcome": "Prophylactic measure for bowel surgery",
+        "evidence_ids": [
+          "E632"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Sepsis",
+        "when_occurred": "Post-discharge",
+        "severity": "Fatal",
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "complication": "Sepsis caused by klebsiella pneumoniae",
+        "when_occurred": "After discharge",
+        "severity": "Fatal",
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "complication": "Death due to sepsis",
+        "when_occurred": "September 5, 2017",
+        "severity": "Fatal",
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to investigate lung findings suggestive of pneumonia",
+        "against": "Dr. Crayne",
+        "found_proven": false,
+        "evidence_ids": [
+          "E115",
+          "E116"
+        ]
+      },
+      {
+        "allegation": "Failure to diagnose pneumonia",
+        "against": "Dr. Crayne",
+        "found_proven": false,
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      {
+        "allegation": "Failure to conduct further investigation before discharge",
+        "against": "Dr. Crayne",
+        "found_proven": false,
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "No breach of standard of care",
+        "legal_significance": "Jury found in favor of defendants",
+        "evidence_ids": [
+          "E007",
+          "E008"
+        ]
+      },
+      {
+        "finding": "No breach of standard of care",
+        "legal_significance": "Defense verdict affirmed",
+        "evidence_ids": [
+          "E007",
+          "E008"
+        ]
+      },
+      {
+        "finding": "No breach of standard of care by Dr. Crayne",
+        "legal_significance": "Jury found in favor of the defense",
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.0061068702290076335,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-16 14:18:54.188617",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

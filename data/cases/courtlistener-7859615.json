@@ -1,0 +1,550 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-7859615",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2022-08-25",
+  "url": "https://example.com/courtlistener-7859615",
+  "case_name": "Miriam Rivera v. The Valley Hospital, Inc. (085992/085993/085994) (Bergen County and Statewide)",
+  "neutral_citation": null,
+  "clinical_domain": "OBSTETRICS_GYNAECOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Miriam Rivera v. The Valley Hospital, Inc. (085992/085993/085994) (Bergen County and Statewide). Medical malpractice case involving obstetrics gynaecology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Ruscitto sought treatment for uterine fibroids from defendant Howard Jones, a gynecologic surgeon at the hospital with whom Ruscitto met four times before she underwent surgery.",
+      "paragraph_ref": "6",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "At their fourth appointment, Ruscitto signed a consent form agreeing to a laparoscopic hysterectomy. The form described the procedure in simple terms and did not mention the use of a power morcellation device.",
+      "paragraph_ref": "8",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "After the procedure, tissue from Ruscitto’s uterus revealed Stage 4 leiomyosarcoma. Ruscitto began cancer treatment and passed away less than one year later.",
+      "paragraph_ref": "8",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "EXPERT_TESTIMONY",
+      "text": "The FDA Communication noted that there was less than a one percent risk that a woman would have unsuspected uterine sarcoma, and leiomyosarcoma unfortunately cannot be reliably diagnosed preoperatively.",
+      "paragraph_ref": "2",
+      "speaker": "Court analysis"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "LEGAL_FINDING",
+      "text": "Partial summary judgment should have been granted because there was no genuine issue of material fact as to whether defendants knew that their actions or omissions involved a high probability of harm to Ruscitto and that their conduct evinced reckless indifference to her health.",
+      "paragraph_ref": "505",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "COURT_REASONING",
+      "text": "The evidence proffered by the plaintiffs may establish defendants’ negligence, but does not constitute conduct that can be characterized as wanton and willful.",
+      "paragraph_ref": "510",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "Approximately six months before Ruscitto’s surgery, the FDA issued a Safety Communication discouraging the use of power morcellation.",
+      "paragraph_ref": "8",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "LEGAL_FINDING",
+      "text": "Plaintiffs cannot recover damages here by recasting their negligence claims as wanton and willful actions based on the same alleged conduct.",
+      "paragraph_ref": "2",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "FACTUAL_FINDING",
+      "text": "Valley Hospital administrators and Dr. Jones exchanged emails about the continued use of power morcellation.",
+      "paragraph_ref": "9",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "FACTUAL_FINDING",
+      "text": "A form was prepared and approved by the legal department but was never implemented or used prior to Ruscitto’s surgery.",
+      "paragraph_ref": "9",
+      "speaker": "Court finding"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Heavy bleeding and anemia due to uterine fibroids",
+      "history_of_present_illness": "Viviana Ruscitto was diagnosed with uterine fibroids in December 2012. Following the birth of her son in July 2013, her fibroids became symptomatic, leading to heavy bleeding and anemia.",
+      "past_medical_history": [
+        "Uterine fibroids"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "abdomen": "Not documented in judgment"
+        }
+      },
+      "initial_working_problem": "Symptomatic uterine fibroids",
+      "known_constraints": null,
+      "initial_differential": [
+        "Uterine fibroids",
+        "Potential leiomyosarcoma"
+      ],
+      "critical_findings": [
+        "Heavy bleeding",
+        "Anemia"
+      ],
+      "urgency_level": "ELECTIVE",
+      "evidence_ids": [
+        "E001",
+        "E067",
+        "E068"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "Pelvic MRI",
+        "description": "MRI to assess fibroids and rule out malignancy",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "8-centimeter degenerating fibroid, no suspicion of cancer",
+          "detailed_findings": null,
+          "clinical_significance": "Supports diagnosis of benign fibroid",
+          "decision_impact": "Informs surgical planning",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E079",
+          "E080"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "PATHOLOGY",
+        "name": "Endometrial Biopsy",
+        "description": "Biopsy to assess for cancerous tissue",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Benign or noncancerous tissue",
+          "detailed_findings": null,
+          "clinical_significance": "No immediate indication of cancer",
+          "decision_impact": "Supports decision for surgical intervention",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E081",
+          "E082"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with symptomatic fibroids",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Diagnosis of uterine fibroids",
+            "timestamp": "December 2012",
+            "evidence_ids": [
+              "E067"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Diagnostic Workup",
+        "description": "Imaging and biopsy to assess fibroids",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Pelvic MRI and endometrial biopsy performed",
+            "timestamp": "June 30, 2014",
+            "evidence_ids": [
+              "E079",
+              "E081"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "decision",
+        "name": "Surgical Decision",
+        "description": "Decision on surgical management of fibroids",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Patient consented to laparoscopic hysterectomy",
+            "timestamp": "September 17, 2014",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "procedure",
+        "name": "Surgical Procedure",
+        "description": "Laparoscopic hysterectomy performed",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Surgery performed using power morcellation",
+            "timestamp": "October 17, 2014",
+            "evidence_ids": [
+              "E118"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "postop",
+        "name": "Postoperative Diagnosis",
+        "description": "Diagnosis of leiomyosarcoma post-surgery",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Pathology report reveals leiomyosarcoma",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E003"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Preoperative Assessment and Consent",
+        "description": "Patient assessed and consent obtained for laparoscopic hysterectomy.",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Consent form signed without specific risks of power morcellation.",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "decision",
+        "clinical_context": "Patient considering surgical options for fibroid management",
+        "prompt": "What surgical procedure should be recommended?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Recommend laparoscopic hysterectomy with power morcellation",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Minimally invasive with quicker recovery, but risk of spreading undiagnosed cancer"
+          },
+          {
+            "option_id": "B",
+            "description": "Recommend open hysterectomy without morcellation",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Avoids risk of spreading undiagnosed cancer"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "A",
+          "description": "Defendant recommended laparoscopic hysterectomy with power morcellation",
+          "reasoning_stated": "Minimally invasive approach preferred",
+          "evidence_ids": [
+            "E002",
+            "E104"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "B",
+          "description": "Open hysterectomy should have been recommended",
+          "standard_of_care_basis": "FDA advisory against power morcellation due to cancer spread risk",
+          "evidence_ids": [
+            "E004",
+            "E007"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Use of power morcellation despite FDA advisory",
+          "what_should_have_happened": "Open procedure should have been chosen to avoid cancer spread",
+          "legal_standard_applied": "Standard of care as informed by FDA advisory",
+          "evidence_ids": [
+            "E004",
+            "E007",
+            "E104"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Postoperative diagnosis of Stage 4 leiomyosarcoma.",
+        "severity": "SEVERE",
+        "long_term_effects": "Patient began chemotherapy following diagnosis.",
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "0",
+        "key_findings": [
+          "Defendants' actions did not constitute wanton and willful disregard.",
+          "Lack of informed consent was considered ordinary negligence, not malice."
+        ],
+        "evidence_ids": [
+          "E005",
+          "E006",
+          "E520"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Failure to include specific risks in informed consent.",
+        "counterfactual": "If informed, patient might have chosen a different treatment.",
+        "evidence_ids": [
+          "E004",
+          "E007",
+          "E497"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "December 2012",
+        "event": "Diagnosis of uterine fibroids",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E067"
+        ]
+      },
+      {
+        "timestamp": "June 30, 2014",
+        "event": "Pelvic MRI and endometrial biopsy performed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E079",
+          "E081"
+        ]
+      },
+      {
+        "timestamp": "September 17, 2014",
+        "event": "Patient consented to laparoscopic hysterectomy",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "October 17, 2014",
+        "event": "Surgery performed using power morcellation",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E118"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Patient signed consent form for laparoscopic hysterectomy.",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Pelvic MRI",
+        "date": "June 30, 2014",
+        "result": "8-centimeter degenerating fibroid, no suspicion of cancer",
+        "interpretation": null,
+        "evidence_ids": [
+          "E079"
+        ]
+      },
+      {
+        "test_name": "Endometrial Biopsy",
+        "date": "June 30, 2014",
+        "result": "Benign or noncancerous tissue",
+        "interpretation": null,
+        "evidence_ids": [
+          "E081"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Leiomyosarcoma",
+        "when_made": "Post-surgery",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "diagnosis": "Stage 4 leiomyosarcoma",
+        "when_made": "Postoperative",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Laparoscopic hysterectomy with power morcellation",
+        "date": "October 17, 2014",
+        "provider": null,
+        "outcome": "Performed without complications",
+        "evidence_ids": [
+          "E118"
+        ]
+      },
+      {
+        "treatment": "Chemotherapy",
+        "date": "Postoperative",
+        "provider": null,
+        "outcome": "Ongoing treatment for leiomyosarcoma",
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Spread of leiomyosarcoma",
+        "when_occurred": "Post-surgery",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to adequately inform about risks of power morcellation",
+        "against": "Dr. Howard Jones",
+        "found_proven": false,
+        "evidence_ids": [
+          "E012"
+        ]
+      },
+      {
+        "allegation": "Failure to provide informed consent regarding power morcellation risks",
+        "against": "Valley Hospital and Dr. Jones",
+        "found_proven": false,
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "No wanton and willful disregard for patient safety",
+        "legal_significance": "No punitive damages warranted",
+        "evidence_ids": [
+          "E012"
+        ]
+      },
+      {
+        "finding": "Defendants did not act with wanton and willful disregard",
+        "legal_significance": "No punitive damages awarded",
+        "evidence_ids": [
+          "E520"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "INFORMED_CONSENT",
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.019083969465648856,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-09 19:19:14.156887",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

@@ -1,0 +1,482 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-7858232",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2022-08-19",
+  "url": "https://example.com/courtlistener-7858232",
+  "case_name": "Connette v. Charlotte-Mecklenburg Hospital Authority",
+  "neutral_citation": null,
+  "clinical_domain": "OBSTETRICS_GYNAECOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Connette v. Charlotte-Mecklenburg Hospital Authority. Medical malpractice case involving obstetrics gynaecology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "On 11 September 2010, an emergency room visit for an upper respiratory infection revealed that three-year-old Amaya Gullatte was tachycardic",
+      "paragraph_ref": "40",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "The cardiologist recommended the performance of an 'ablation procedure' on Amaya\u2019s heart",
+      "paragraph_ref": "46",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "anesthetics team consisting of anesthesiologist James M. Doyle, M.D. and Certified Registered Nurse Anesthetist (CRNA) Gus C. VanSoestbergen utilized a mask to administer the anesthetic sevoflurane",
+      "paragraph_ref": "49",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "Shortly after she was induced with the sevoflurane, Amaya went into cardiac arrest.",
+      "paragraph_ref": "51",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "the approximately thirteen minutes of oxygen deprivation which was experienced by the child resulted in the onset of permanent brain damage, cerebral palsy, and profound developmental delay.",
+      "paragraph_ref": "54",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Plaintiffs were prepared to present evidence through certified registered nurse anesthetist Dean Cary acting as an expert witness",
+      "paragraph_ref": "86",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "LEGAL_FINDING",
+      "text": "the trial court\u2019s exclusion of plaintiffs\u2019 expert testimony regarding the allegedly negligent anesthesia plan as a claimed breach of the applicable professional standard of care.",
+      "paragraph_ref": "120",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "COURT_REASONING",
+      "text": "We determine that it is timely and appropriate to overrule Byrd as it is applied to the facts of this case.",
+      "paragraph_ref": "34",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "LEGAL_FINDING",
+      "text": "Accordingly, we reverse and remand this matter to the trial court for further proceedings consistent with this opinion.",
+      "paragraph_ref": "35",
+      "speaker": "Court finding"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "3 years",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Upper respiratory infection with tachycardia",
+      "history_of_present_illness": "Patient presented with symptoms of an upper respiratory infection and was found to be tachycardic, leading to a referral to a cardiologist.",
+      "past_medical_history": [
+        "Cardiomyopathy"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Tachycardic, exact rate not stated",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "cardiac": "Not documented in judgment"
+        }
+      },
+      "initial_working_problem": "Tachycardia in the context of upper respiratory infection",
+      "known_constraints": null,
+      "initial_differential": [
+        "Cardiomyopathy exacerbation",
+        "Infection-related tachycardia"
+      ],
+      "critical_findings": [
+        "Tachycardia"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSULT_NOTE",
+        "name": "Cardiology Consultation",
+        "description": "Consultation with cardiologist regarding tachycardia and cardiomyopathy",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Cardiomyopathy diagnosed, ablation procedure recommended",
+          "detailed_findings": null,
+          "clinical_significance": "Identified underlying heart condition requiring intervention",
+          "decision_impact": "Led to decision for ablation procedure",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents to ED with upper respiratory infection and tachycardia",
+        "duration": "Not specified",
+        "key_events": [
+          {
+            "event": "Tachycardia noted, referral to cardiologist",
+            "timestamp": "11 September 2010",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "procedure",
+        "name": "Ablation Procedure",
+        "description": "Patient undergoes anesthesia induction for ablation procedure",
+        "duration": "Not specified",
+        "key_events": [
+          {
+            "event": "Sevoflurane mask induction administered",
+            "timestamp": "20 October 2010",
+            "evidence_ids": [
+              "E003",
+              "E004"
+            ]
+          },
+          {
+            "event": "Cardiac arrest and resuscitation",
+            "timestamp": "Shortly after induction",
+            "evidence_ids": [
+              "E004"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "procedure",
+        "clinical_context": "Patient undergoing anesthesia induction for ablation procedure",
+        "prompt": "What method of anesthesia induction should be used?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Use intravenous induction with etomidate",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Safer alternative for patients with cardiomyopathy"
+          },
+          {
+            "option_id": "B",
+            "description": "Use sevoflurane mask induction",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Chosen by anesthesiology team but not ideal for cardiomyopathy"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant used sevoflurane mask induction",
+          "reasoning_stated": "Defendant and anesthesiologist agreed on this method",
+          "evidence_ids": [
+            "E003",
+            "E004"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Intravenous induction with etomidate should have been used",
+          "standard_of_care_basis": "Expert testimony indicated this was the safer method",
+          "evidence_ids": [
+            "E006"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Sevoflurane mask induction was not appropriate for a patient with cardiomyopathy",
+          "what_should_have_happened": "Intravenous induction with etomidate should have been used",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E006",
+            "E007"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient suffered oxygen deprivation leading to cerebral palsy and global developmental delay",
+        "severity": "PERMANENT_SEVERE_DISABILITY",
+        "long_term_effects": "Cerebral palsy, global developmental delay",
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "0",
+        "key_findings": [
+          "CRNA not liable as the physician was responsible for the anesthesia plan",
+          "Court upheld that the physician bears sole responsibility for treatment decisions"
+        ],
+        "evidence_ids": [
+          "E568",
+          "E573"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Anesthesia induction method",
+        "counterfactual": "Alternative anesthetic method could have prevented cardiac arrest",
+        "evidence_ids": [
+          "E006",
+          "E007"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "11 September 2010",
+        "event": "Patient presents with upper respiratory infection and tachycardia",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "20 October 2010",
+        "event": "Patient undergoes ablation procedure with sevoflurane mask induction",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003",
+          "E004"
+        ]
+      },
+      {
+        "timestamp": "11 September 2010",
+        "event": "Emergency room visit for upper respiratory infection",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Cardiology consultation recommending ablation",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Anesthesia induction with sevoflurane",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Cardiac arrest and resuscitation",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004",
+          "E005"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Cardiology Consultation",
+        "date": "Not specified",
+        "result": "Cardiomyopathy diagnosed",
+        "interpretation": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Cardiomyopathy",
+        "when_made": "Not specified",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "diagnosis": "Cerebral palsy and global developmental delay",
+        "when_made": "After cardiac arrest",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Sevoflurane mask induction",
+        "date": "20 October 2010",
+        "provider": null,
+        "outcome": "Cardiac arrest",
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "treatment": "Radiofrequency ablation procedure",
+        "date": "Date not specified in judgment",
+        "provider": null,
+        "outcome": "Cardiac arrest during procedure",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Cardiac arrest and brain damage",
+        "when_occurred": "Shortly after induction",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E004",
+          "E005"
+        ]
+      },
+      {
+        "complication": "Cardiac arrest",
+        "when_occurred": "During procedure",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "complication": "Oxygen deprivation leading to cerebral palsy",
+        "when_occurred": "During resuscitation",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Negligent selection of anesthesia method",
+        "against": "CRNA VanSoestbergen",
+        "found_proven": false,
+        "evidence_ids": [
+          "E009"
+        ]
+      },
+      {
+        "allegation": "Negligent anesthesia induction method",
+        "against": "CRNA",
+        "found_proven": false,
+        "evidence_ids": [
+          "E568",
+          "E573"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "No liability found for CRNA VanSoestbergen",
+        "legal_significance": "Exclusion of expert testimony upheld",
+        "evidence_ids": [
+          "E009"
+        ]
+      },
+      {
+        "finding": "CRNA not liable as physician responsible for anesthesia plan",
+        "legal_significance": "Physician bears sole responsibility for treatment decisions",
+        "evidence_ids": [
+          "E568",
+          "E573"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "TREATMENT_PROCEDURE_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.011221945137157107,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-17 07:40:13.303159",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

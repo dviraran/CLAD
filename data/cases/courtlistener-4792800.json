@@ -1,0 +1,710 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-4792800",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2019-05-07",
+  "url": "https://example.com/courtlistener-4792800",
+  "case_name": "Teresa Grimes Kidd v. James Q. Dickerson",
+  "neutral_citation": null,
+  "clinical_domain": "CARDIOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Teresa Grimes Kidd v. James Q. Dickerson. Medical malpractice case involving obstetrics gynaecology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "On October 21, Ms. Grimes fainted and was seen at the Maury Regional Medical Center emergency room and admitted to the hospital for further examination and treatment.",
+      "paragraph_ref": "11",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "A consultation with a radiation oncologist was conducted on October 24, who diagnosed her with a stage IV 'malignant neoplasm of fundus of stomach'.",
+      "paragraph_ref": "11",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "Ms. Grimes’ pathology 'returned with invasive gastric adenocarcinoma'; 'prior imaging had revealed a mass in liver which is now consistent with metastatic disease.'",
+      "paragraph_ref": "11",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "An MRI on October 24 revealed 'multiple strokes consistent with embolic etiology.'",
+      "paragraph_ref": "11",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "Ms. Grimes was subsequently diagnosed with 'healthcare associated pneumonia' and later transferred to a nursing home; she remained non-communicative and non-responsive until she expired on November 21, 2014.",
+      "paragraph_ref": "11",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "On September 30, 2014, 82-year-old Doris Grimes went to the Family Health Group ('Family Health Group' or 'FHG') in Columbia, Tennessee, complaining of pain and swelling in her lower left arm; she was seen by her primary care physician, Dr. Charles Ball, who diagnosed her with a blood clot.",
+      "paragraph_ref": "9",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "On October 7, she returned to the practice, complaining of a sudden onset of pain behind her right knee. She was seen by another doctor in the practice, Dr. Thomas Farmer, who ordered further diagnostic evaluations; he concluded that Ms. Grimes had a blood clot and prescribed a blood-thinning medication known as 'Pradaxa.'",
+      "paragraph_ref": "9",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "FACTUAL_FINDING",
+      "text": "Ms. Grimes returned to Family Health Group on October 13 for a follow-up appointment relative to swelling in her leg. Her medical chart recites that she was 'placed on one week of [P]radaxa and made appointment with [Dr. Ball] after seeing Dr. Farmer.'",
+      "paragraph_ref": "10",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "FACTUAL_FINDING",
+      "text": "The chart records that Ms. Grimes stated that her leg 'does get tender and sore if she stands to[o] long,' and that she has 'a little bit of swelling at times.'",
+      "paragraph_ref": "10",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "FACTUAL_FINDING",
+      "text": "The entry for October 13 states that Dr. Ball observed that the swelling in her leg was 'now completely resolved,' that he changed her prescription to Xarelto, 20 milligrams daily, and set a one month follow-up appointment.",
+      "paragraph_ref": "10",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E011",
+      "type": "FACTUAL_FINDING",
+      "text": "On October 20, Ms. Grimes returned and was seen by a nurse practitioner, Shavonne Frierson; at that visit, an exam was conducted, which resulted in findings that Ms. Grimes was 'ill appearing' and her cardiovascular rhythm was 'irregularly irregular.'",
+      "paragraph_ref": "10",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E012",
+      "type": "FACTUAL_FINDING",
+      "text": "A chest x-ray was conducted, and an entry in her chart states that she was to be referred to a cardiologist 'this week.'",
+      "paragraph_ref": "10",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E013",
+      "type": "LEGAL_FINDING",
+      "text": "The trial court granted summary judgment to the pharmacy defendants on all claims, holding that the proof submitted by Plaintiff was insufficient to establish the element of causation.",
+      "paragraph_ref": "4",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E014",
+      "type": "LEGAL_FINDING",
+      "text": "The trial court granted summary judgment to Dr. Thomas Farmer in toto.",
+      "paragraph_ref": "4",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E015",
+      "type": "LEGAL_FINDING",
+      "text": "We affirm the grant of summary judgment to the pharmacy defendants; we affirm the grant of summary judgment to Dr. Thomas Farmer in toto.",
+      "paragraph_ref": "4",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E016",
+      "type": "LEGAL_FINDING",
+      "text": "We affirm in part the grant of partial summary judgment to the doctors and their group and remand for further proceedings on whether the nurse practitioner’s actions caused Ms. Grimes’ injury and suffering during the period of October 20 until she was stabilized in the hospital.",
+      "paragraph_ref": "4",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E017",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Arthur Axelbank, who opined that Ms. Grimes’ death was 'directly referable to the progressive and cumulative effects of the loss of blood caused by continued ingestion of Pradaxa, which led to severe intestinal bleeding.'",
+      "paragraph_ref": "38",
+      "speaker": "Expert witness"
+    },
+    {
+      "evidence_id": "E018",
+      "type": "LEGAL_FINDING",
+      "text": "The trial court appropriately granted summary judgment in favor of Defendants Thomas William Farmer, M.D., Charles Albert Ball, M.D., or Family Health Group, Inc. as to Plaintiff’s wrongful death claim.",
+      "paragraph_ref": "22",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E019",
+      "type": "LEGAL_FINDING",
+      "text": "The trial court appropriately granted summary judgment in favor of Defendants Thomas William Farmer, M.D., Charles Albert Ball, M.D., or Family Health Group, Inc., as to Plaintiff’s 'hastening of death' claim.",
+      "paragraph_ref": "22",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E020",
+      "type": "LEGAL_FINDING",
+      "text": "The trial court appropriately granted summary judgment in favor of Defendants Thomas William Farmer, M.D., Charles Albert Ball, M.D., or Family Health Group, Inc. as to Plaintiff’s informed consent claim.",
+      "paragraph_ref": "22",
+      "speaker": "Court finding"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "82 years",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Pain and swelling in lower left arm",
+      "history_of_present_illness": "On September 30, 2014, Doris Grimes presented with pain and swelling in her lower left arm. She was diagnosed with a blood clot.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "extremities": "Swelling in lower left arm"
+        }
+      },
+      "initial_working_problem": "Blood clot in lower left arm",
+      "known_constraints": null,
+      "initial_differential": [
+        "Blood clot"
+      ],
+      "critical_findings": [
+        "Swelling in lower left arm"
+      ],
+      "urgency_level": "ROUTINE",
+      "evidence_ids": [
+        "E006"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "Chest X-ray",
+        "description": "Chest X-ray conducted on October 20",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not documented in judgment",
+          "detailed_findings": null,
+          "clinical_significance": "Not documented in judgment",
+          "decision_impact": "Not documented in judgment",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E012"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "IMAGING",
+        "name": "MRI",
+        "description": "MRI conducted on October 24",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Multiple strokes consistent with embolic etiology",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates embolic strokes",
+          "decision_impact": "Should prompt further investigation into embolic sources",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with pain and swelling in lower left arm",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Diagnosis of blood clot",
+            "timestamp": "September 30, 2014",
+            "evidence_ids": [
+              "E006"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Follow-up and Monitoring",
+        "description": "Patient returns for follow-up and monitoring of blood clot treatment",
+        "duration": "October 7, 2014 to October 20, 2014",
+        "key_events": [
+          {
+            "event": "Prescription of Pradaxa",
+            "timestamp": "October 7, 2014",
+            "evidence_ids": [
+              "E007"
+            ]
+          },
+          {
+            "event": "Change of medication to Xarelto",
+            "timestamp": "October 13, 2014",
+            "evidence_ids": [
+              "E010"
+            ]
+          },
+          {
+            "event": "Patient seen by nurse practitioner",
+            "timestamp": "October 20, 2014",
+            "evidence_ids": [
+              "E011"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient with history of blood clot and on blood-thinning medication",
+        "prompt": "What should be done to monitor the effects of Pradaxa?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Regular monitoring of blood levels and signs of bleeding",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard practice to monitor anticoagulation therapy"
+          },
+          {
+            "option_id": "B",
+            "description": "No additional monitoring required",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Neglects potential side effects of anticoagulation"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "No additional monitoring was conducted",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E013"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Regular monitoring should have been conducted",
+          "standard_of_care_basis": "Expert testimony indicated need for monitoring",
+          "evidence_ids": [
+            "E017"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to monitor increased risk of undetected complications",
+          "what_should_have_happened": "Regular monitoring could have detected bleeding earlier",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E017",
+            "E018"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient experienced pain and suffering due to undiagnosed GI bleeding",
+        "severity": "SEVERE",
+        "long_term_effects": "Not documented in judgment",
+        "evidence_ids": [
+          "E184",
+          "E192"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "PARTIAL_LIABILITY",
+        "damages_awarded": "Not specified in judgment",
+        "key_findings": [
+          "Failure to monitor closely led to pain and suffering",
+          "No causation established for death"
+        ],
+        "evidence_ids": [
+          "E211",
+          "E212"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": false,
+        "point_of_failure": "Failure to monitor closely",
+        "counterfactual": "Closer monitoring could have reduced suffering",
+        "evidence_ids": [
+          "E184",
+          "E195"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "September 30, 2014",
+        "event": "Patient presents with pain and swelling in lower left arm",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "timestamp": "October 7, 2014",
+        "event": "Patient prescribed Pradaxa",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      {
+        "timestamp": "October 13, 2014",
+        "event": "Medication changed to Xarelto",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E010"
+        ]
+      },
+      {
+        "timestamp": "October 20, 2014",
+        "event": "Patient seen by nurse practitioner",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E011"
+        ]
+      },
+      {
+        "timestamp": "October 21, 2014",
+        "event": "Patient admitted to hospital",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "October 24, 2014",
+        "event": "MRI reveals multiple strokes",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "timestamp": "October 7, 2014",
+        "event": "Patient presented with sudden onset of pain behind right knee",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      {
+        "timestamp": "October 10, 2014",
+        "event": "Patient reported nausea and stomach burning",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E113"
+        ]
+      },
+      {
+        "timestamp": "October 13, 2014",
+        "event": "Follow-up appointment at Family Health Group",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E008"
+        ]
+      },
+      {
+        "timestamp": "October 20, 2014",
+        "event": "Patient reported symptoms of blood loss",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E126"
+        ]
+      },
+      {
+        "timestamp": "October 7, 2014",
+        "event": "Patient reports sudden onset of pain behind right knee",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      {
+        "timestamp": "October 20, 2014",
+        "event": "Patient seen by Nurse Practitioner, additional tests ordered",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E011"
+        ]
+      },
+      {
+        "timestamp": "October 24, 2014",
+        "event": "MRI reveals multiple strokes",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "MRI",
+        "date": "October 24, 2014",
+        "result": "Multiple strokes consistent with embolic etiology",
+        "interpretation": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "test_name": "MRI",
+        "date": "October 24, 2014",
+        "result": "Multiple strokes consistent with embolic etiology",
+        "interpretation": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "test_name": "MRI",
+        "date": "October 24, 2014",
+        "result": "Multiple strokes consistent with embolic etiology",
+        "interpretation": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "test_name": "Pathology",
+        "date": "Not specified in judgment",
+        "result": "Invasive gastric adenocarcinoma",
+        "interpretation": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Multiple strokes",
+        "when_made": "October 24, 2014",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "diagnosis": "Gastric cancer",
+        "when_made": "October 24, 2014",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "diagnosis": "Invasive gastric adenocarcinoma",
+        "when_made": "October 24, 2014",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E002",
+          "E003"
+        ]
+      },
+      {
+        "diagnosis": "Invasive gastric adenocarcinoma",
+        "when_made": "Not specified in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Prescription of Pradaxa",
+        "date": "October 7, 2014",
+        "provider": null,
+        "outcome": "Not documented in judgment",
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      {
+        "treatment": "Pradaxa",
+        "date": "Not documented in judgment",
+        "provider": null,
+        "outcome": "Continued despite symptoms of blood loss",
+        "evidence_ids": [
+          "E011"
+        ]
+      },
+      {
+        "treatment": "Transfusion of 3 units PRBCs",
+        "date": "Not specified in judgment",
+        "provider": null,
+        "outcome": "Patient stabilized",
+        "evidence_ids": [
+          "E191"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Multiple strokes",
+        "when_occurred": "October 24, 2014",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "complication": "Embolic strokes",
+        "when_occurred": "October 24, 2014",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "complication": "Pain and suffering due to undiagnosed GI bleeding",
+        "when_occurred": "Not specified in judgment",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E184",
+          "E192"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to monitor effects of Pradaxa",
+        "against": "Defendant doctors",
+        "found_proven": false,
+        "evidence_ids": [
+          "E013"
+        ]
+      },
+      {
+        "allegation": "Failure to investigate symptoms of blood loss",
+        "against": "Defendant Doctors",
+        "found_proven": false,
+        "evidence_ids": [
+          "E170"
+        ]
+      },
+      {
+        "allegation": "Failure to monitor closely",
+        "against": "Dr. Ball",
+        "found_proven": true,
+        "evidence_ids": [
+          "E195"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Summary judgment granted to pharmacy defendants",
+        "legal_significance": "Plaintiff failed to establish causation",
+        "evidence_ids": [
+          "E015"
+        ]
+      },
+      {
+        "finding": "No breach of standard of care found",
+        "legal_significance": "No liability for Defendant Doctors",
+        "evidence_ids": [
+          "E168",
+          "E170"
+        ]
+      },
+      {
+        "finding": "Failure to monitor closely led to pain and suffering",
+        "legal_significance": "Breach of standard of care",
+        "evidence_ids": [
+          "E195"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "MONITORING_FOLLOWUP",
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.09345794392523364,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-09 20:37:00.171571",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

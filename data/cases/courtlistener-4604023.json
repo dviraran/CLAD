@@ -1,0 +1,437 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-4604023",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2018-05-01",
+  "url": "https://example.com/courtlistener-4604023",
+  "case_name": "Marshall v. Dodds",
+  "neutral_citation": null,
+  "clinical_domain": "PAEDIATRICS",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Marshall v. Dodds. Medical malpractice case involving paediatrics.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "In February 2010, Marshall was diagnosed with Waldenstrom's macroglobulinemia, also known as lymphoplasmacytic lymphoma, a rare type of blood cancer.",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Dodds first evaluated Marshall on July 16, 1999, two days after she was admitted to Roper Hospital for a persistent high fever.",
+      "paragraph_ref": "15",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "On September 15, 2004, Marshall returned to Dodds for the first time since the 1999 visit, and during this appointment, Dodds reviewed a 24-hour urine test performed a month prior that revealed urine protein levels of 3.5 grams per day.",
+      "paragraph_ref": "15",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "EXPERT_TESTIMONY",
+      "text": "One expert, Barry L. Singer, M.D., a specialist in oncology, testified Marshall likely had blood cancer in 2004, which would have been revealed then if a UPEP or SPEP test had been performed.",
+      "paragraph_ref": "16",
+      "speaker": "Barry L. Singer, M.D."
+    },
+    {
+      "evidence_id": "E005",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Luke opined Dodds was negligent in failing to recognize that the continued proteinuria could constitute cancer and failing to order UPEP and SPEP testing, which would have revealed cancerous protein.",
+      "paragraph_ref": "20",
+      "speaker": "Robert G. Luke, M.D."
+    },
+    {
+      "evidence_id": "E006",
+      "type": "LEGAL_FINDING",
+      "text": "The circuit court concluded Dodds' alleged misdiagnoses after February 7, 2005, were a continuation of his previous alleged misdiagnoses and were not distinct acts of negligence that could serve as new trigger points of the statute of repose.",
+      "paragraph_ref": "22",
+      "speaker": "Circuit court conclusion"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. Roane began treating Marshall in 2000 and in that year diagnosed Marshall with mixed connective tissue disease (MCTD), a rare autoimmune disease.",
+      "paragraph_ref": "24",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Zizic testified that from 2004 until treatment ended in 2007, Roane should have administered yearly laboratory studies until reaching a definitive diagnosis of Marshall's blood cancer.",
+      "paragraph_ref": "27",
+      "speaker": "Thomas M. Zizic, M.D."
+    },
+    {
+      "evidence_id": "E009",
+      "type": "LEGAL_FINDING",
+      "text": "The Marshalls focus solely upon the negligent conduct of Roane occurring on and after April 29, 2005, contending separate repose periods were triggered by each misdiagnosis.",
+      "paragraph_ref": "28",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "COURT_REASONING",
+      "text": "Section 15-3-545(A) begins to run after each occurrence, which is consistent with our rejection of the continuous treatment rule and the continuous tort doctrine.",
+      "paragraph_ref": "50",
+      "speaker": "Court reasoning"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Persistent high fever",
+      "history_of_present_illness": "Patient admitted to Roper Hospital with persistent high fever. Initial evaluation by Dr. Dodds revealed elevated sedimentation rates and proteinuria.",
+      "past_medical_history": [
+        "Mixed connective tissue disease",
+        "Waldenstrom's macroglobulinemia"
+      ],
+      "medications": [
+        "Diovan",
+        "Imuran",
+        "CellCept"
+      ],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "general": "Fever noted",
+          "abdomen": "Not documented in judgment"
+        }
+      },
+      "initial_working_problem": "Persistent fever with proteinuria",
+      "known_constraints": null,
+      "initial_differential": [
+        "Infection",
+        "Autoimmune disease",
+        "Cancer"
+      ],
+      "critical_findings": [
+        "Elevated sedimentation rates",
+        "Proteinuria"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E002",
+        "E003"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "LAB",
+        "name": "24-hour urine test",
+        "description": "Measurement of protein levels in urine over 24 hours",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Proteinuria with levels of 3.5 to 4.2 grams per day",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates significant proteinuria, potential marker for underlying disease",
+          "decision_impact": "Should prompt further testing to determine cause",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E003",
+          "E005"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "LAB",
+        "name": "UPEP and SPEP tests",
+        "description": "Urine and serum protein electrophoresis tests to identify protein type",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not performed",
+          "detailed_findings": null,
+          "clinical_significance": "Could have identified cancerous protein",
+          "decision_impact": "Failure to order these tests delayed diagnosis of cancer",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": [
+          "E005",
+          "E017"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with persistent high fever and is admitted to hospital",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Initial evaluation by Dr. Dodds",
+            "timestamp": "July 16, 1999",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Follow-up and Monitoring",
+        "description": "Patient undergoes follow-up visits with persistent proteinuria",
+        "duration": "September 15, 2004 to September 5, 2005",
+        "key_events": [
+          {
+            "event": "24-hour urine test reveals proteinuria",
+            "timestamp": "September 15, 2004",
+            "evidence_ids": [
+              "E003"
+            ]
+          },
+          {
+            "event": "Final visit with Dr. Dodds",
+            "timestamp": "September 5, 2005",
+            "evidence_ids": [
+              "E003"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient with persistent proteinuria and elevated sedimentation rates",
+        "prompt": "What further testing should be ordered to investigate the cause of proteinuria?",
+        "action_type": "ORDER_TEST",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Order UPEP and SPEP tests",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard of care requires ruling out cancerous protein in cases of significant proteinuria"
+          },
+          {
+            "option_id": "B",
+            "description": "Continue monitoring without additional tests",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Failed to address potential underlying causes of proteinuria"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant continued monitoring without additional tests",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E005",
+            "E017"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "UPEP and SPEP tests should have been ordered",
+          "standard_of_care_basis": "Expert testimony indicated these tests were necessary to diagnose cancer",
+          "evidence_ids": [
+            "E005",
+            "E017"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to order necessary tests delayed diagnosis of cancer",
+          "what_should_have_happened": "UPEP and SPEP tests should have been conducted to identify cancerous protein",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E005",
+            "E017"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient diagnosed with Waldenstrom's macroglobulinemia in 2010",
+        "severity": "Chronic condition requiring ongoing management",
+        "long_term_effects": "Potential complications from delayed diagnosis",
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Breach of duty in failing to order UPEP and SPEP tests",
+          "Causation established - earlier diagnosis would have identified cancer"
+        ],
+        "evidence_ids": [
+          "E005",
+          "E017"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to order UPEP and SPEP tests",
+        "counterfactual": "Tests would have identified cancerous protein earlier",
+        "evidence_ids": [
+          "E005",
+          "E017"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "July 16, 1999",
+        "event": "Patient first evaluated by Dr. Dodds",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "September 15, 2004",
+        "event": "24-hour urine test reveals proteinuria",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "timestamp": "September 5, 2005",
+        "event": "Final visit with Dr. Dodds",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "24-hour urine test",
+        "date": "September 15, 2004",
+        "result": "Proteinuria with levels of 3.5 grams per day",
+        "interpretation": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Waldenstrom's macroglobulinemia",
+        "when_made": "February 2010",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Diovan",
+        "date": "Not documented in judgment",
+        "provider": null,
+        "outcome": "No change in protein levels",
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Delayed diagnosis of cancer",
+        "when_occurred": "Not documented in judgment",
+        "severity": "Chronic condition",
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to order UPEP and SPEP tests",
+        "against": "Dr. Dodds",
+        "found_proven": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Standard of care not met",
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.11764705882352941,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-09 21:08:36.857962",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

@@ -1,0 +1,463 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10629682",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2022-01-03",
+  "url": "https://example.com/courtlistener-10629682",
+  "case_name": "Singing River Health System v. Amy Brand, Individually and as Administratrix of the Estate of Debbie Edwards, and on Behalf of all Wrongful Death Beneficiaries of Debbie Edwards, and April Kattawar",
+  "neutral_citation": null,
+  "clinical_domain": "CARDIOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Singing River Health System v. Amy Brand, Individually and as Administratrix of the Estate of Debbie Edwards, and on Behalf of all Wrongful Death Beneficiaries of Debbie Edwards, and April Kattawar. Medical malpractice case involving cardiology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Debbie Edwards was admitted to Singing River Hospital in Ocean Springs on May 27, 2018. She was suffering from weakness and passing bloody stool.",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "The next day, Debbie underwent a procedure called an esophagogastroduodenoscopy, or EGD, to diagnose and treat problems in her upper gastrointestinal tract.",
+      "paragraph_ref": "14",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "Over the next few days, June 4 and 5, Debbie\u2019s health began to fluctuate. After June 4, Dr. Stuart Phillips viewed her condition as improved; he moved her out of intensive care.",
+      "paragraph_ref": "38",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "At 8:20 a.m., the hospital staff realized Singing River\u2019s radiologist was on vacation. No one at Singing River could perform the critical operation to stop Debbie\u2019s GI bleed.",
+      "paragraph_ref": "51",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "With the patient now bleeding extensively, she was transferred back to ICU. A general surgical consultation was ordered to address the GI bleed.",
+      "paragraph_ref": "53",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "Even though efforts had been made hours before to transfer her to Ochsner, an ambulance was not called until 6:20 p.m., nearly five hours later.",
+      "paragraph_ref": "64",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "LEGAL_FINDING",
+      "text": "The circuit court found the facility breached the standard of care it owed to the patient.",
+      "paragraph_ref": "10",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "LEGAL_FINDING",
+      "text": "The court found Brand incurred economic damages in the amount of $6,213.54 as well as non-economic damages of $375,000.",
+      "paragraph_ref": "167",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Debbie\u2019s Estate also offered the expert testimony of Dr. Kyle Happel, a professor of critical care medicine.",
+      "paragraph_ref": "125",
+      "speaker": "Expert witness"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Brown\u2019s expert testimony persuaded the trial court that the weather conditions made flying too dangerous.",
+      "paragraph_ref": "1",
+      "speaker": "Expert witness"
+    },
+    {
+      "evidence_id": "E011",
+      "type": "WITNESS_STATEMENT",
+      "text": "Brand testified that on June 5, when she got to the hospital, her mother was \u201cvery nauseous and . . . kept asking for Phenergan because that\u2019s what helped her with the nause[a].\u201d",
+      "paragraph_ref": "76",
+      "speaker": "Amy Brand"
+    },
+    {
+      "evidence_id": "E012",
+      "type": "WITNESS_STATEMENT",
+      "text": "Kattawar testified that she arrived at Ochsner around 10:30 p.m. on June 5. Upon her arrival, her mother was \u201ccoding.\u201d",
+      "paragraph_ref": "80",
+      "speaker": "April Kattawar"
+    },
+    {
+      "evidence_id": "E013",
+      "type": "COURT_REASONING",
+      "text": "Competent expert testimony established this was a breach of the applicable standard of care and caused the damages awarded.",
+      "paragraph_ref": "387",
+      "speaker": "Court reasoning"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "65 years",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Weakness and passing bloody stool",
+      "history_of_present_illness": "Patient admitted with weakness and bloody stool. Previous fundoplication procedure failed, resulting in a Mallory Weiss tear.",
+      "past_medical_history": [
+        "Fundoplication procedure"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "abdomen": "Not documented in judgment"
+        }
+      },
+      "initial_working_problem": "Upper gastrointestinal bleed",
+      "known_constraints": null,
+      "initial_differential": [
+        "Mallory Weiss tear",
+        "Other GI bleed sources"
+      ],
+      "critical_findings": [
+        "Mallory Weiss tear at failed fundoplication site"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002",
+        "E003"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "PROCEDURE_NOTE",
+        "name": "Esophagogastroduodenoscopy (EGD)",
+        "description": "Procedure to diagnose and treat upper GI tract issues",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Mallory Weiss tear identified, bleeding not stopped",
+          "detailed_findings": null,
+          "clinical_significance": "Identified source of GI bleed",
+          "decision_impact": "Prompted further EGDs and consideration of IR",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E002",
+          "E003"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "CONSULT_NOTE",
+        "name": "Interventional Radiology Consultation",
+        "description": "Consultation for potential embolization of bleeding artery",
+        "available_phase": "decision",
+        "reveal": {
+          "result_summary": "IR not available due to radiologist on vacation",
+          "detailed_findings": null,
+          "clinical_significance": "Delay in appropriate treatment",
+          "decision_impact": "Contributed to delay in stopping bleed",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": [
+          "E004",
+          "E013"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with weakness and bloody stool",
+        "duration": "1 day",
+        "key_events": [
+          {
+            "event": "Admission to Singing River Hospital",
+            "timestamp": "May 27, 2018",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Diagnostic Workup",
+        "description": "EGD performed to identify source of bleeding",
+        "duration": "10 days",
+        "key_events": [
+          {
+            "event": "First EGD performed",
+            "timestamp": "May 28, 2018",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "decision",
+        "name": "Critical Decision Making",
+        "description": "Decision to transfer patient due to lack of IR capability",
+        "duration": "1 day",
+        "key_events": [
+          {
+            "event": "Decision to transfer to Ochsner Medical Center",
+            "timestamp": "June 5, 2018",
+            "evidence_ids": [
+              "E005",
+              "E006"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "decision",
+        "clinical_context": "Patient with ongoing GI bleed, IR not available",
+        "prompt": "What should be the next step in managing the patient's GI bleed?",
+        "action_type": "ESCALATE_CARE",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Transfer patient immediately to a facility with IR capability",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Immediate transfer necessary due to lack of IR capability at current facility"
+          },
+          {
+            "option_id": "B",
+            "description": "Perform another EGD and delay transfer",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "EGD unlikely to stop bleed, delay in transfer increases risk"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Performed another EGD and delayed transfer",
+          "reasoning_stated": "Attempted to manage bleed with EGD despite lack of IR",
+          "evidence_ids": [
+            "E005",
+            "E006"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Immediate transfer to facility with IR capability",
+          "standard_of_care_basis": "Expert testimony indicated immediate transfer was necessary",
+          "evidence_ids": [
+            "E009",
+            "E013"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Delay in transfer led to prolonged bleeding and cardiac arrest",
+          "what_should_have_happened": "Immediate transfer to a facility with IR capability",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E013",
+            "E009"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient suffered cardiac arrest and died after prolonged bleeding",
+        "severity": "FATAL",
+        "long_term_effects": "Not applicable",
+        "evidence_ids": [
+          "E012",
+          "E013"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "381213.54",
+        "key_findings": [
+          "Breach of duty in failing to transfer patient promptly",
+          "Causation established - delay in transfer contributed to death"
+        ],
+        "evidence_ids": [
+          "E007",
+          "E008"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Delay in transferring patient to facility with IR capability",
+        "counterfactual": "Immediate transfer could have prevented death",
+        "evidence_ids": [
+          "E013",
+          "E009"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "May 27, 2018",
+        "event": "Patient admitted to Singing River Hospital",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "May 28, 2018",
+        "event": "First EGD performed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "June 5, 2018",
+        "event": "Decision to transfer to Ochsner Medical Center",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "EGD",
+        "date": "May 28, 2018",
+        "result": "Mallory Weiss tear identified",
+        "interpretation": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Mallory Weiss tear",
+        "when_made": "May 28, 2018",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "EGD",
+        "date": "May 28, 2018",
+        "provider": null,
+        "outcome": "Bleeding not stopped",
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Cardiac arrest",
+        "when_occurred": "June 5, 2018",
+        "severity": "Fatal",
+        "evidence_ids": [
+          "E012"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to transfer patient promptly",
+        "against": "Singing River Health System",
+        "found_proven": true,
+        "evidence_ids": [
+          "E007",
+          "E013"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Breach of standard of care by delaying transfer",
+        "legal_significance": "Proximate cause of death",
+        "evidence_ids": [
+          "E013"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.03316326530612245,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-16 14:55:23.009520",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

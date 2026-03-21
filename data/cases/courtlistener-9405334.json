@@ -1,0 +1,547 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-9405334",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2023-06-09",
+  "url": "https://example.com/courtlistener-9405334",
+  "case_name": "Cotton v. Coccaro",
+  "neutral_citation": null,
+  "clinical_domain": "ONCOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Cotton v. Coccaro. Medical malpractice case involving oncology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "In 2011, Cotton filed a medical negligence action against several healthcare providers—including Dr. Mitchell, Dr. Cansler, and Dr. Coccaro—in connection with their failure to diagnose her breast cancer.",
+      "paragraph_ref": "49",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "The case proceeded to a jury trial, and a jury returned a verdict in Cotton’s favor and against Dr. Coccaro and Associated St. James Radiologists in the amount of $6,528,000.",
+      "paragraph_ref": "55",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "At age 27, Maya Cotton discovered a pea-sized lump in her breast during a self-examination.",
+      "paragraph_ref": "17",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "Cotton went to a community health clinic for a breast exam, and a doctor there gave her an order for an ultrasound.",
+      "paragraph_ref": "19",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "In March 2009, Cotton went to Dr. Mitchell for the first time and told her about the lump in her breast.",
+      "paragraph_ref": "22",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. Mitchell performed a breast exam and also felt the lump. After going over Cotton’s medical history and family history, Dr. Mitchell gave Cotton an order for a mammogram and recommended that she go to St. James Hospital in Olympia Fields.",
+      "paragraph_ref": "23",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "A radiology technician who performed the mammogram informed Cotton that the mammogram and ultrasound were clear and told her to do a follow-up for regular mammograms after the age of 35.",
+      "paragraph_ref": "27",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. Gregg Coccaro, a radiologist, had interpreted Cotton’s mammogram and ultrasound.",
+      "paragraph_ref": "28",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "FACTUAL_FINDING",
+      "text": "The trial court modified the original judgment order to include prejudgment interest, and Cotton withdrew her posttrial motion as moot.",
+      "paragraph_ref": "62",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "LEGAL_FINDING",
+      "text": "For all these reasons, we affirm the trial court’s judgment.",
+      "paragraph_ref": "628",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "27 years",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Pea-sized lump in breast",
+      "history_of_present_illness": "Maya Cotton discovered a pea-sized lump in her breast during a self-examination. She confirmed the lump with her mother and sister, who advised her to see a doctor.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "breast": "Lump palpable in breast"
+        }
+      },
+      "initial_working_problem": "Breast lump - differential includes benign fibroid or malignancy",
+      "known_constraints": null,
+      "initial_differential": [
+        "benign fibroid",
+        "breast cancer"
+      ],
+      "critical_findings": [
+        "palpable breast lump"
+      ],
+      "urgency_level": "ROUTINE",
+      "evidence_ids": [
+        "E003",
+        "E004",
+        "E005"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "Mammogram",
+        "description": "Mammogram to evaluate breast lump",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Clear mammogram",
+          "detailed_findings": null,
+          "clinical_significance": "No suspicious findings reported",
+          "decision_impact": "Led to reassurance and no further immediate action",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E007",
+          "E008"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "IMAGING",
+        "name": "Ultrasound",
+        "description": "Ultrasound to evaluate breast lump",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Clear ultrasound",
+          "detailed_findings": null,
+          "clinical_significance": "No suspicious findings reported",
+          "decision_impact": "Led to reassurance and no further immediate action",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E007",
+          "E008"
+        ]
+      },
+      {
+        "request_id": "R003",
+        "type": "IMAGING",
+        "name": "MRI",
+        "description": "MRI to further evaluate breast lump",
+        "available_phase": "followup",
+        "reveal": {
+          "result_summary": "Suggestive of cancer",
+          "detailed_findings": null,
+          "clinical_significance": "Prompted biopsy",
+          "decision_impact": "Led to diagnosis of breast cancer",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E046"
+        ]
+      },
+      {
+        "request_id": "R004",
+        "type": "PATHOLOGY",
+        "name": "Biopsy",
+        "description": "Biopsy of breast lump",
+        "available_phase": "followup",
+        "reveal": {
+          "result_summary": "Positive for cancer",
+          "detailed_findings": null,
+          "clinical_significance": "Confirmed diagnosis of breast cancer",
+          "decision_impact": "Led to treatment planning for cancer",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E048"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with breast lump",
+        "duration": "Initial visit",
+        "key_events": [
+          {
+            "event": "Patient discovers lump and seeks medical advice",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E003",
+              "E004"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Initial Workup",
+        "description": "Initial imaging and follow-up",
+        "duration": "Several months",
+        "key_events": [
+          {
+            "event": "Mammogram and ultrasound performed",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E007",
+              "E008"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "followup",
+        "name": "Follow-up and Diagnosis",
+        "description": "Further investigation and diagnosis",
+        "duration": "Subsequent months",
+        "key_events": [
+          {
+            "event": "MRI and biopsy performed, cancer diagnosed",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E046",
+              "E048"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient with palpable breast lump and clear initial imaging",
+        "prompt": "What should be the next step in management?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Reassure patient and recommend routine follow-up",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Based on clear imaging results"
+          },
+          {
+            "option_id": "B",
+            "description": "Order further imaging or biopsy to rule out malignancy",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard of care for persistent palpable breast lump"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "A",
+          "description": "Reassured patient and recommended routine follow-up",
+          "reasoning_stated": "Clear imaging results",
+          "evidence_ids": [
+            "E006",
+            "E007"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "B",
+          "description": "Further imaging or biopsy should have been ordered",
+          "standard_of_care_basis": "Expert testimony indicated need for further investigation",
+          "evidence_ids": [
+            "E050"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to investigate further despite palpable lump",
+          "what_should_have_happened": "Further imaging or biopsy to confirm or rule out cancer",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E050",
+            "E051"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Delayed diagnosis of breast cancer",
+        "severity": "PERMANENT_MODERATE_DISABILITY",
+        "long_term_effects": "Potential progression of cancer due to delay",
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Breach of duty in failing to refer for biopsy",
+          "Causation established - delay in diagnosis impacted treatment"
+        ],
+        "evidence_ids": [
+          "E002",
+          "E010"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to refer for biopsy",
+        "counterfactual": "Biopsy would have confirmed diagnosis earlier",
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "March 2009",
+        "event": "Patient first visits Dr. Mitchell and reports breast lump",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "timestamp": "May 2010",
+        "event": "Patient seeks second opinion and is diagnosed with cancer",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E046",
+          "E048"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Patient discovers lump and visits clinic",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003",
+          "E004"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Mammogram",
+        "date": "Not specified in judgment",
+        "result": "Clear",
+        "interpretation": null,
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      {
+        "test_name": "Ultrasound",
+        "date": "Not specified in judgment",
+        "result": "Clear",
+        "interpretation": null,
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      {
+        "test_name": "MRI",
+        "date": "Not specified in judgment",
+        "result": "Suggestive of cancer",
+        "interpretation": null,
+        "evidence_ids": [
+          "E046"
+        ]
+      },
+      {
+        "test_name": "Biopsy",
+        "date": "Not specified in judgment",
+        "result": "Positive for cancer",
+        "interpretation": null,
+        "evidence_ids": [
+          "E048"
+        ]
+      },
+      {
+        "test_name": "Mammogram",
+        "date": "Not documented in judgment",
+        "result": "Not documented in judgment",
+        "interpretation": null,
+        "evidence_ids": [
+          "E007",
+          "E008"
+        ]
+      },
+      {
+        "test_name": "Ultrasound",
+        "date": "Not documented in judgment",
+        "result": "Not documented in judgment",
+        "interpretation": null,
+        "evidence_ids": [
+          "E007",
+          "E008"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Breast cancer",
+        "when_made": "After MRI and biopsy",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E048"
+        ]
+      },
+      {
+        "diagnosis": "Breast cancer",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Not documented in judgment",
+        "date": "Not documented in judgment",
+        "provider": null,
+        "outcome": "Not documented in judgment",
+        "evidence_ids": []
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Delayed diagnosis of breast cancer",
+        "when_occurred": "Not specified in judgment",
+        "severity": "Significant",
+        "evidence_ids": [
+          "E048"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to recognize and report suspicious findings on imaging",
+        "against": "Dr. Coccaro",
+        "found_proven": true,
+        "evidence_ids": [
+          "E002",
+          "E056"
+        ]
+      },
+      {
+        "allegation": "Failure to refer for biopsy",
+        "against": "Dr. Gregg Coccaro",
+        "found_proven": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Breach of standard of care",
+        "evidence_ids": [
+          "E002",
+          "E056"
+        ]
+      },
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Standard of care not met",
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.015723270440251572,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-09 21:48:46.366567",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

@@ -1,0 +1,388 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-6238782",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2017-01-06",
+  "url": "https://example.com/courtlistener-6238782",
+  "case_name": "Bigler-Engler v. Breg, Inc.",
+  "neutral_citation": null,
+  "clinical_domain": "PAEDIATRICS",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Bigler-Engler v. Breg, Inc.. Medical malpractice case involving paediatrics.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "The Polar Care device itself had a label with the following warning: \"WARNING: A LICENSED HEALTH CARE PRACTITIONER MUST DETERMINE THE CORRECT TEMPERATURE RANGE FOR EACH PATIENT.\"",
+      "paragraph_ref": "5",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Testing conducted by one of Engler's medical experts revealed that the Polar Care device's temperature controls were ineffective and inadequate.",
+      "paragraph_ref": "8",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "LEGAL_FINDING",
+      "text": "We conclude the jury's verdict against Breg on Engler's claim for intentional concealment must be reversed.",
+      "paragraph_ref": "20",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "LEGAL_FINDING",
+      "text": "The jury answered each of the following questions in the affirmative as to Breg: (1) \"Did [Breg] intentionally fail to disclose an important fact that Whitney Engler did not know and could not reasonably have discovered?\"",
+      "paragraph_ref": "23",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "COURT_REASONING",
+      "text": "We believe Stern's comments in his opening and closing statements that other evidence of defendants' liability existed but he was prevented from offering it at trial to be the most serious example of counsel's disrespect for the courts.",
+      "paragraph_ref": "15",
+      "speaker": "Judge's analysis"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "High school age",
+        "sex": "female",
+        "relevant_social_history": "High school athlete"
+      },
+      "chief_complaint": "Knee pain and weakness, especially during sports",
+      "history_of_present_illness": "Patient injured her knee while running hurdles, experiencing pain and weakness. Diagnosed with patella alta and possible meniscus tear.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "knee": "Presence of a loose body underneath the patella"
+        }
+      },
+      "initial_working_problem": "Knee injury with suspected patella alta and possible meniscus tear",
+      "known_constraints": null,
+      "initial_differential": [
+        "patella alta",
+        "meniscus tear"
+      ],
+      "critical_findings": [
+        "loose body underneath patella"
+      ],
+      "urgency_level": "ELECTIVE",
+      "evidence_ids": [
+        "E001"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSULT_NOTE",
+        "name": "Orthopedic consultation",
+        "description": "Consultation with Dr. Chao regarding knee injury",
+        "available_phase": "presentation",
+        "reveal": {
+          "result_summary": "Diagnosis of patella alta and possible meniscus tear",
+          "detailed_findings": null,
+          "clinical_significance": "Indication for arthroscopic surgery",
+          "decision_impact": "Led to recommendation for surgery and use of Polar Care device",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "CONSENT_DISCUSSION",
+        "name": "Surgical consent",
+        "description": "Discussion of risks and benefits of knee surgery",
+        "available_phase": "decision",
+        "reveal": {
+          "result_summary": "Written disclosure of surgical risks provided",
+          "detailed_findings": null,
+          "clinical_significance": "Informed consent for surgery obtained",
+          "decision_impact": "Patient and family agreed to proceed with surgery",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with knee injury",
+        "duration": "Date not specified in judgment",
+        "key_events": [
+          {
+            "event": "Consultation with Dr. Chao",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "postop",
+        "name": "Postoperative Care",
+        "description": "Care following knee surgery",
+        "duration": "Several weeks",
+        "key_events": [
+          {
+            "event": "Use of Polar Care device as instructed",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "postop",
+        "clinical_context": "Postoperative care following knee surgery",
+        "prompt": "Should continuous use of the Polar Care device be recommended?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Recommend intermittent use of the Polar Care device with monitoring",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Continuous use without monitoring can lead to NFCI; intermittent use is safer"
+          },
+          {
+            "option_id": "B",
+            "description": "Recommend continuous use of the Polar Care device as much as possible",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Believed to decrease risk of infection and aid recovery"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant recommended continuous use of the Polar Care device",
+          "reasoning_stated": "Believed it was superior to traditional methods",
+          "evidence_ids": [
+            "E001"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Intermittent use with monitoring should have been recommended",
+          "standard_of_care_basis": "Expert testimony indicated continuous use without monitoring was below standard",
+          "evidence_ids": [
+            "E001"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Continuous use led to NFCI; expert testimony indicated need for monitoring",
+          "what_should_have_happened": "Intermittent use with professional monitoring",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E001"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient suffered cold-related injury due to ineffective temperature control",
+        "severity": "Not documented in judgment",
+        "long_term_effects": "Not documented in judgment",
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Breg's failure to update device labeling and ensure effective temperature control",
+          "Causation established - device's ineffective temperature control led to injury"
+        ],
+        "evidence_ids": [
+          "E003",
+          "E004"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to monitor and control device temperature",
+        "counterfactual": "Proper monitoring would have prevented injury",
+        "evidence_ids": [
+          "E001",
+          "E002",
+          "E003"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "May 2003",
+        "event": "Engler's knee surgery",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Use of Polar Care device post knee surgery",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001",
+          "E002"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [
+      {
+        "diagnosis": "Nonfreezing cold injury (NFCI)",
+        "when_made": "Post-surgery",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Surgery to remove necrotic tissue",
+        "date": "June 12, 2003",
+        "provider": null,
+        "outcome": "Dead tissue removed",
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Necrosis and scarring",
+        "when_occurred": "Post-surgery",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "complication": "Cold-related injury",
+        "when_occurred": "Not documented in judgment",
+        "severity": "Not documented in judgment",
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to warn about risks of continuous use",
+        "against": "Dr. Chao",
+        "found_proven": true,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "allegation": "Failure to monitor and control device temperature",
+        "against": "Breg, Inc.",
+        "found_proven": true,
+        "evidence_ids": [
+          "E003",
+          "E004"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Standard of care not met",
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "finding": "Breg's failure to update device labeling and ensure effective temperature control",
+        "legal_significance": "Breach of duty leading to injury",
+        "evidence_ids": [
+          "E003",
+          "E004"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "TREATMENT_PROCEDURE_ERROR",
+      "MONITORING_FOLLOWUP",
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.1724137931034483,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-09 16:59:00.325714",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

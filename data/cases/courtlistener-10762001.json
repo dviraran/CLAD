@@ -1,0 +1,381 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10762001",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2026-03-09",
+  "url": "https://example.com/courtlistener-10762001",
+  "case_name": "Faiaipau v. THC-Orange County, LLC",
+  "neutral_citation": null,
+  "clinical_domain": "SURGERY_GENERAL",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Faiaipau v. THC-Orange County, LLC. Medical malpractice case involving paediatrics.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Ana was born in 1944. She underwent heart surgery in January 2023 and was placed on a ventilator and feeding tube while she recovered.",
+      "paragraph_ref": "7",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "In March 2023, Ana was transferred to Kindred, a long-term acute care hospital, for care during her recovery.",
+      "paragraph_ref": "7",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "Kindred withheld dialysis treatment from Ana, which led to swelling, discomfort, and harm to her health.",
+      "paragraph_ref": "7",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "Ana’s ventilator began beeping and flashing red while her family was visiting her. No staff responded until Ana’s family yelled and shouted for help.",
+      "paragraph_ref": "7",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "Ana had suffered a severe anoxic brain injury as a result of the disconnection of the ventilator.",
+      "paragraph_ref": "7",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "LEGAL_FINDING",
+      "text": "The trial court’s order is modified to compel arbitration of Jennifer and Faamalieloto’s claim for wrongful death, as well as the negligence, neglect, fraud, and UCL claims brought on Ana’s behalf.",
+      "paragraph_ref": "24",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "COURT_REASONING",
+      "text": "Because Kindred’s alleged failure to monitor Ana’s ventilator that led to her death involved medical and not custodial care, the trial court erred by not ordering Jennifer and Faamalieloto’s wrongful death claim based on the ventilator to arbitration.",
+      "paragraph_ref": "20",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "LEGAL_FINDING",
+      "text": "Kindred shall recover its costs on appeal.",
+      "paragraph_ref": "24",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "79 years",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Recovery from heart surgery with ventilator support",
+      "history_of_present_illness": "Ana underwent heart surgery in January 2023 and was placed on a ventilator and feeding tube while she recovered. In March 2023, she was transferred to Kindred, a long-term acute care hospital, for continued care.",
+      "past_medical_history": [
+        "Heart surgery"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "respiratory": "Ventilator support required"
+        }
+      },
+      "initial_working_problem": "Post-operative care with ventilator dependency",
+      "known_constraints": null,
+      "initial_differential": [
+        "Post-operative recovery",
+        "Ventilator dependency"
+      ],
+      "critical_findings": [
+        "Ventilator support",
+        "Feeding tube"
+      ],
+      "urgency_level": "CRITICAL",
+      "evidence_ids": [
+        "E001",
+        "E002"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSULT_NOTE",
+        "name": "Respiratory Care Plan",
+        "description": "Plan for weaning off ventilator and monitoring",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not documented in judgment",
+          "detailed_findings": null,
+          "clinical_significance": "Critical for ensuring proper ventilator management",
+          "decision_impact": "Should guide monitoring and intervention strategies",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": []
+      },
+      {
+        "request_id": "R002",
+        "type": "NURSING_NOTES",
+        "name": "Ventilator Monitoring",
+        "description": "Documentation of ventilator checks and alarms",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Ventilator alarms not responded to in a timely manner",
+          "detailed_findings": null,
+          "clinical_significance": "Failure to respond led to anoxic brain injury",
+          "decision_impact": "Critical failure in monitoring leading to severe outcome",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E004",
+          "E005"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Transfer to Long-term Acute Care",
+        "description": "Patient transferred to Kindred for continued recovery",
+        "duration": "Not specified in judgment",
+        "key_events": [
+          {
+            "event": "Transfer to Kindred",
+            "timestamp": "March 2023",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Ventilator Monitoring",
+        "description": "Period during which ventilator monitoring was critical",
+        "duration": "Not specified in judgment",
+        "key_events": [
+          {
+            "event": "Ventilator alarm not responded to",
+            "timestamp": "April 2023",
+            "evidence_ids": [
+              "E004"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient in long-term acute care with ventilator support",
+        "prompt": "How should the ventilator be monitored?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Implement regular checks and immediate response to alarms",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard care requires continuous monitoring of ventilator function"
+          },
+          {
+            "option_id": "B",
+            "description": "Rely on periodic checks without immediate response to alarms",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Inadequate monitoring can lead to critical failures"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant failed to monitor ventilator adequately",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E004",
+            "E005"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Continuous monitoring and immediate response to alarms",
+          "standard_of_care_basis": "Expert evidence established this as standard",
+          "evidence_ids": [
+            "E007"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to monitor led to anoxic brain injury",
+          "what_should_have_happened": "Continuous monitoring and immediate response",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E007"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient suffered severe anoxic brain injury and died",
+        "severity": "FATAL",
+        "long_term_effects": "Death",
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Breach of duty in failing to monitor ventilator",
+          "Causation established - failure to monitor led to anoxic brain injury and death"
+        ],
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to monitor ventilator",
+        "counterfactual": "Proper monitoring would have prevented anoxic brain injury",
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "January 2023",
+        "event": "Ana underwent heart surgery",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "March 2023",
+        "event": "Ana transferred to Kindred",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "April 2023",
+        "event": "Ventilator alarm not responded to",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [
+      {
+        "diagnosis": "Severe anoxic brain injury",
+        "when_made": "April 2023",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "treatments": [],
+    "complications": [
+      {
+        "complication": "Anoxic brain injury",
+        "when_occurred": "April 2023",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to monitor ventilator",
+        "against": "Kindred",
+        "found_proven": true,
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Failure to monitor ventilator led to death",
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.16326530612244897,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-09 20:38:30.926161",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

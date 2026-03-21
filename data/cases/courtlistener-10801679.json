@@ -1,0 +1,804 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10801679",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2026-02-27",
+  "url": "https://example.com/courtlistener-10801679",
+  "case_name": "Reid v. Balt. Ambulatory Center",
+  "neutral_citation": null,
+  "clinical_domain": "PAEDIATRICS",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Reid v. Balt. Ambulatory Center. Medical malpractice case involving paediatrics.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "On the morning of October 13, 2015, Carroll Reid underwent an upper endoscopy",
+      "paragraph_ref": "25",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Mr. Reid fell to the ground and injured his back. He died two weeks later from complications related to emergency spinal surgery.",
+      "paragraph_ref": "26",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "EXPERT_TESTIMONY",
+      "text": "The plaintiffs offered expert testimony from a board-certified anesthesiologist, who opined that the gastroenterologist violated the standard of care in the post-procedure discharge assessment of the patient.",
+      "paragraph_ref": "4",
+      "speaker": "Expert witness"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "LEGAL_FINDING",
+      "text": "The erroneous grant of summary judgment in favor of one defendant did not provide a basis to overturn the verdicts in favor of the other defendants.",
+      "paragraph_ref": "8",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "Mr. Reid’s surviving family members brought a medical negligence and wrongful death action in the Circuit Court for Baltimore County against health care providers",
+      "paragraph_ref": "29",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. Khan recommended that Mr. Reid undergo an upper endoscopy with biopsies and dilation.",
+      "paragraph_ref": "48",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "MEDICAL_RECORD",
+      "text": "Mr. Reid signed a consent form in which he agreed that CRNA Sergott would administer anesthesia during the procedure under the supervision of Dr. Khan.",
+      "paragraph_ref": "70",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "FACTUAL_FINDING",
+      "text": "CRNA Sergott used an intravenous line to administer two short-acting sedative drugs, Propofol and Versed, to Mr. Reid.",
+      "paragraph_ref": "81",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. Khan approved Mr. Reid for discharge at 7:28 a.m.",
+      "paragraph_ref": "94",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "FACTUAL_FINDING",
+      "text": "Mr. Reid walked out of the BACE facility, accompanied by Ms. Reid.",
+      "paragraph_ref": "96",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E011",
+      "type": "FACTUAL_FINDING",
+      "text": "X-ray images of Mr. Reid’s lumbar spine showed no visible fractures.",
+      "paragraph_ref": "105",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E012",
+      "type": "FACTUAL_FINDING",
+      "text": "The MRI images showed an unstable fracture in two thoracic vertebrae.",
+      "paragraph_ref": "114",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E013",
+      "type": "LEGAL_FINDING",
+      "text": "JUDGMENT OF THE CIRCUIT COURT FOR BALTIMORE COUNTY AFFIRMED IN PART AND REVERSED IN PART.",
+      "paragraph_ref": "1622",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "76 years",
+        "sex": "male",
+        "relevant_social_history": "Part-time security guard, morbidly obese"
+      },
+      "chief_complaint": "Indigestion and difficulty swallowing",
+      "history_of_present_illness": "Mr. Reid had a history of chronic gastroesophageal reflux disease and was evaluated by Dr. Khan for indigestion and difficulty swallowing.",
+      "past_medical_history": [
+        "Diabetes",
+        "Diabetic neuropathy",
+        "Hypertension"
+      ],
+      "medications": [
+        "Blood pressure medication"
+      ],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "general": "Morbidly obese, able to walk without assistance"
+        }
+      },
+      "initial_working_problem": "Indigestion and dysphagia, possible esophageal pathology",
+      "known_constraints": null,
+      "initial_differential": [
+        "Esophageal stricture",
+        "Gastroesophageal reflux disease"
+      ],
+      "critical_findings": [
+        "Morbid obesity",
+        "History of falls"
+      ],
+      "urgency_level": "ELECTIVE",
+      "evidence_ids": [
+        "E001",
+        "E006",
+        "E045"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "X-ray of lumbar spine",
+        "description": "Initial imaging to assess for fractures after fall",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "No visible fractures",
+          "detailed_findings": null,
+          "clinical_significance": "Did not identify any acute injury",
+          "decision_impact": "Further imaging needed due to persistent symptoms",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E011"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "IMAGING",
+        "name": "MRI of thoracic spine",
+        "description": "Advanced imaging to assess for fractures",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Unstable fracture in two thoracic vertebrae",
+          "detailed_findings": null,
+          "clinical_significance": "Identified significant injury requiring surgical intervention",
+          "decision_impact": "Prompted emergency surgery",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E012"
+        ]
+      },
+      {
+        "request_id": "R003",
+        "type": "IMAGING",
+        "name": "MRI of thoracic spine",
+        "description": "MRI images of Mr. Reid’s thoracic spine",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Unstable fracture in two thoracic vertebrae",
+          "detailed_findings": null,
+          "clinical_significance": "Identified serious injury post-fall",
+          "decision_impact": "Required further medical intervention",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E012"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Evaluation",
+        "description": "Patient evaluated for indigestion and difficulty swallowing",
+        "duration": "1 day",
+        "key_events": [
+          {
+            "event": "Consultation with Dr. Khan",
+            "timestamp": "October 9, 2015",
+            "evidence_ids": [
+              "E006"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "procedure",
+        "name": "Endoscopy Procedure",
+        "description": "Upper endoscopy performed under sedation",
+        "duration": "4 minutes",
+        "key_events": [
+          {
+            "event": "Endoscopy performed",
+            "timestamp": "October 13, 2015 06:50",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "decision",
+        "name": "Recovery and Discharge",
+        "description": "Patient monitored post-procedure and discharged",
+        "duration": "30 minutes",
+        "key_events": [
+          {
+            "event": "Patient discharged",
+            "timestamp": "October 13, 2015 07:28",
+            "evidence_ids": [
+              "E009"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "decision",
+        "name": "Post-Fall Assessment",
+        "description": "Patient assessed after fall outside facility",
+        "duration": "2 weeks",
+        "key_events": [
+          {
+            "event": "MRI shows unstable fracture",
+            "timestamp": "October 24, 2015",
+            "evidence_ids": [
+              "E012"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "postop",
+        "name": "Post-procedure Discharge",
+        "description": "Patient discharged following upper endoscopy",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Patient discharged without wheelchair",
+            "timestamp": "7:28 a.m.",
+            "evidence_ids": [
+              "E009",
+              "E010"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "decision",
+        "name": "Pre-procedure Preparation",
+        "description": "Patient prepared for upper endoscopy",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Consent for anesthesia obtained",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E007"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "decision",
+        "clinical_context": "Patient in recovery after endoscopy",
+        "prompt": "Should the patient be discharged with a mobility aid?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Discharge with a wheelchair",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Patient was a fall risk due to anesthesia and medical history"
+          },
+          {
+            "option_id": "B",
+            "description": "Discharge without a mobility aid",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Patient appeared stable and had no immediate signs of dizziness"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Patient was discharged without a mobility aid",
+          "reasoning_stated": "Patient was assessed as stable and not a fall risk",
+          "evidence_ids": [
+            "E009",
+            "E010"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Patient should have been discharged with a wheelchair",
+          "standard_of_care_basis": "Expert testimony indicated patient was a fall risk",
+          "evidence_ids": [
+            "E003",
+            "E144",
+            "E145"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to recognize fall risk due to anesthesia and medical history",
+          "what_should_have_happened": "Patient should have been discharged with a wheelchair to prevent fall",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E003",
+            "E144",
+            "E145"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient suffered a fall resulting in unstable spinal fractures",
+        "severity": "SEVERE",
+        "long_term_effects": "Complications related to spinal injury",
+        "evidence_ids": [
+          "E002",
+          "E012"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Failure to provide appropriate discharge instructions",
+          "Breach of standard of care in post-anesthesia management"
+        ],
+        "evidence_ids": [
+          "E013",
+          "E003"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to assess fall risk and provide wheelchair",
+        "counterfactual": "Wheelchair assistance could have prevented the fall",
+        "evidence_ids": [
+          "E003",
+          "E013"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "October 13, 2015 06:50",
+        "event": "Endoscopy performed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "October 13, 2015 07:28",
+        "event": "Patient discharged",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E009"
+        ]
+      },
+      {
+        "timestamp": "October 24, 2015",
+        "event": "MRI shows unstable fracture",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E012"
+        ]
+      },
+      {
+        "timestamp": "13 October 2015",
+        "event": "Mr. Reid underwent upper endoscopy",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "7:28 a.m.",
+        "event": "Dr. Khan approved Mr. Reid for discharge",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E009"
+        ]
+      },
+      {
+        "timestamp": "Date not specified",
+        "event": "Mr. Reid fell and injured his back",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Patient underwent upper endoscopy",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Patient discharged and walked out of facility",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E010"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Patient fell and sustained injury",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "October 13, 2015",
+        "event": "Mr. Reid underwent an upper endoscopy",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "7:28 a.m.",
+        "event": "Mr. Reid discharged from BACE facility",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E009"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Mr. Reid fell and injured his back",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "X-ray of lumbar spine",
+        "date": "October 13, 2015",
+        "result": "No visible fractures",
+        "interpretation": null,
+        "evidence_ids": [
+          "E011"
+        ]
+      },
+      {
+        "test_name": "MRI of thoracic spine",
+        "date": "October 24, 2015",
+        "result": "Unstable fracture in two thoracic vertebrae",
+        "interpretation": null,
+        "evidence_ids": [
+          "E012"
+        ]
+      },
+      {
+        "test_name": "X-ray of lumbar spine",
+        "date": "Not specified",
+        "result": "No visible fractures",
+        "interpretation": null,
+        "evidence_ids": [
+          "E011"
+        ]
+      },
+      {
+        "test_name": "MRI of thoracic spine",
+        "date": "Not specified",
+        "result": "Unstable fracture in two thoracic vertebrae",
+        "interpretation": null,
+        "evidence_ids": [
+          "E012"
+        ]
+      },
+      {
+        "test_name": "X-ray of lumbar spine",
+        "date": "Date not specified in judgment",
+        "result": "No visible fractures",
+        "interpretation": null,
+        "evidence_ids": [
+          "E011"
+        ]
+      },
+      {
+        "test_name": "MRI of thoracic spine",
+        "date": "Date not specified in judgment",
+        "result": "Unstable fracture in two thoracic vertebrae",
+        "interpretation": null,
+        "evidence_ids": [
+          "E012"
+        ]
+      },
+      {
+        "test_name": "X-ray Lumbar Spine",
+        "date": "Date not specified in judgment",
+        "result": "No visible fractures",
+        "interpretation": null,
+        "evidence_ids": [
+          "E011"
+        ]
+      },
+      {
+        "test_name": "MRI Thoracic Spine",
+        "date": "Date not specified in judgment",
+        "result": "Unstable fracture in two thoracic vertebrae",
+        "interpretation": null,
+        "evidence_ids": [
+          "E012"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Unstable thoracic spine fracture",
+        "when_made": "October 24, 2015",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E012"
+        ]
+      },
+      {
+        "diagnosis": "Unstable fracture in thoracic vertebrae",
+        "when_made": "Not specified",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E012"
+        ]
+      },
+      {
+        "diagnosis": "Unstable fracture in thoracic vertebrae",
+        "when_made": "Date not specified in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E012"
+        ]
+      },
+      {
+        "diagnosis": "Unstable thoracic vertebrae fracture",
+        "when_made": "Date not specified in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E012"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Emergency spinal surgery",
+        "date": "October 24, 2015",
+        "provider": null,
+        "outcome": "Attempt to stabilize fracture",
+        "evidence_ids": [
+          "E115"
+        ]
+      },
+      {
+        "treatment": "Discharge from facility",
+        "date": "13 October 2015",
+        "provider": null,
+        "outcome": "Patient discharged without wheelchair",
+        "evidence_ids": [
+          "E009",
+          "E010"
+        ]
+      },
+      {
+        "treatment": "Not documented in judgment",
+        "date": "Not documented in judgment",
+        "provider": null,
+        "outcome": "Not documented in judgment",
+        "evidence_ids": []
+      },
+      {
+        "treatment": "Not documented in judgment",
+        "date": "Not documented in judgment",
+        "provider": null,
+        "outcome": "Not documented in judgment",
+        "evidence_ids": []
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Cardiopulmonary arrest",
+        "when_occurred": "October 29, 2015",
+        "severity": "Fatal",
+        "evidence_ids": [
+          "E117"
+        ]
+      },
+      {
+        "complication": "Fall resulting in back injury",
+        "when_occurred": "Date not specified",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "complication": "Fall resulting in unstable fracture",
+        "when_occurred": "Date not specified in judgment",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E002",
+          "E012"
+        ]
+      },
+      {
+        "complication": "Spinal injury complications",
+        "when_occurred": "Date not specified in judgment",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to discharge with a wheelchair",
+        "against": "CRNA Sergott and Nurse Dinisio",
+        "found_proven": false,
+        "evidence_ids": [
+          "E003",
+          "E144",
+          "E145"
+        ]
+      },
+      {
+        "allegation": "Failure to identify fall risk and provide wheelchair",
+        "against": "Dr. Khan",
+        "found_proven": false,
+        "evidence_ids": [
+          "E681",
+          "E684"
+        ]
+      },
+      {
+        "allegation": "Failure to ensure safe discharge",
+        "against": "CRNA Sergott and Nurse Dinisio",
+        "found_proven": false,
+        "evidence_ids": [
+          "E1130",
+          "E1127"
+        ]
+      },
+      {
+        "allegation": "Failure to assess fall risk and provide wheelchair",
+        "against": "Dr. Khan",
+        "found_proven": true,
+        "evidence_ids": [
+          "E003",
+          "E013"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "No breach of standard of care by CRNA Sergott or Nurse Dinisio",
+        "legal_significance": "No liability found",
+        "evidence_ids": [
+          "E013",
+          "E429"
+        ]
+      },
+      {
+        "finding": "No liability found for CRNA Sergott or Nurse Dinisio",
+        "legal_significance": "Jury verdict in favor of defendants",
+        "evidence_ids": [
+          "E881",
+          "E882"
+        ]
+      },
+      {
+        "finding": "No breach of standard of care",
+        "legal_significance": "No liability found",
+        "evidence_ids": [
+          "E1130",
+          "E1127"
+        ]
+      },
+      {
+        "finding": "Breach of standard of care in post-anesthesia management",
+        "legal_significance": "Standard of care not met",
+        "evidence_ids": [
+          "E003",
+          "E013"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.007951070336391437,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-09 18:02:46.516275",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

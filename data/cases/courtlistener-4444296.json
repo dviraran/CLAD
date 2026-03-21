@@ -1,0 +1,362 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-4444296",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2017-11-17",
+  "url": "https://example.com/courtlistener-4444296",
+  "case_name": "Francisco Perez, Jr., Individually, and by Laura Aguirre his natural guardian and next friend, and Laura Aguirre, Individually v. Michael Hu, M.D. St. Catherine Hospital of East Chicago Indiana, Inc.",
+  "neutral_citation": null,
+  "clinical_domain": "OBSTETRICS_GYNAECOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Francisco Perez, Jr., Individually, and by Laura Aguirre his natural guardian and next friend, and Laura Aguirre, Individually v. Michael Hu, M.D. St. Catherine Hospital of East Chicago Indiana, Inc.. Medical malpractice case involving obstetrics gynaecology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Aguirre was diagnosed with gestational diabetes and was treated for it. Gestational diabetes increases the risk of having a significantly larger than average, or macrosomic, baby.",
+      "paragraph_ref": "21",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Aguirre qualified as obese during her pregnancy. A c-section substantially reduces the risk of shoulder dystocia during birth.",
+      "paragraph_ref": "32",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "WITNESS_STATEMENT",
+      "text": "Aguirre, who has an elementary school education and does not speak English, does not recall Dr. Hu ever discussing the increased risk of harm to her baby during a vaginal birth as opposed to a c-section.",
+      "paragraph_ref": "35",
+      "speaker": "Aguirre's testimony"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "MEDICAL_RECORD",
+      "text": "Prior to her labor being induced, Aguirre signed a consent to treatment form, specifying that she was consenting to a vaginal delivery.",
+      "paragraph_ref": "50",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "On February 8, 2010, Aguirre gave birth to Francisco. During the delivery, shoulder dystocia occurred.",
+      "paragraph_ref": "58",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Halbridge went on to testify that, given Aguirre\u2019s risk factors, Dr. Hu should have advised her of the risk of shoulder dystocia and resulting brachial plexus injury occurring during vaginal birth and the reduced risk of such injury during a c-section.",
+      "paragraph_ref": "90",
+      "speaker": "Dr. Halbridge"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "LEGAL_FINDING",
+      "text": "Therefore, the trial court erroneously granted Dr. Hu\u2019s motion for directed verdict on the issue of informed consent. We reverse and remand for further proceedings on that issue.",
+      "paragraph_ref": "301",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Elementary school education, does not speak English"
+      },
+      "chief_complaint": "Labor induction for delivery",
+      "history_of_present_illness": "Patient is seven months pregnant with gestational diabetes and obesity. Previous three children were born vaginally without complications.",
+      "past_medical_history": [
+        "Gestational diabetes",
+        "Obesity"
+      ],
+      "medications": [
+        "Not documented in judgment"
+      ],
+      "allergies": [
+        "Not documented in judgment"
+      ],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "abdomen": "Not documented in judgment"
+        }
+      },
+      "initial_working_problem": "Pregnancy with risk factors for shoulder dystocia",
+      "known_constraints": null,
+      "initial_differential": [
+        "Vaginal delivery",
+        "Caesarean section"
+      ],
+      "critical_findings": [
+        "Gestational diabetes",
+        "Obesity",
+        "Macrosomic baby"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002",
+        "E005"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSENT_DISCUSSION",
+        "name": "Consent for delivery method",
+        "description": "Discussion of risks and benefits of vaginal delivery versus c-section",
+        "available_phase": "presentation",
+        "reveal": {
+          "result_summary": "Patient signed consent for vaginal delivery, but risks of shoulder dystocia not adequately discussed",
+          "detailed_findings": null,
+          "clinical_significance": "Informed consent not properly obtained",
+          "decision_impact": "Patient was not fully informed of risks associated with vaginal delivery",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E003",
+          "E004",
+          "E006"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents for labor induction",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Consent form signed for vaginal delivery",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E004"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "procedure",
+        "name": "Delivery",
+        "description": "Patient undergoes vaginal delivery",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Shoulder dystocia occurs during delivery",
+            "timestamp": "February 8, 2010",
+            "evidence_ids": [
+              "E005"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "presentation",
+        "clinical_context": "Patient with gestational diabetes and macrosomic baby",
+        "prompt": "What delivery method should be recommended?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Recommend caesarean section",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "C-section reduces risk of shoulder dystocia and brachial plexus injury"
+          },
+          {
+            "option_id": "B",
+            "description": "Proceed with vaginal delivery",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Vaginal delivery chosen without adequate risk discussion"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant recommended vaginal delivery",
+          "reasoning_stated": "Defendant stated everything was fine",
+          "evidence_ids": [
+            "E003",
+            "E005"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "C-section should have been recommended",
+          "standard_of_care_basis": "Expert testimony indicated high risk of shoulder dystocia",
+          "evidence_ids": [
+            "E006",
+            "E007"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to adequately inform patient of risks associated with vaginal delivery",
+          "what_should_have_happened": "Patient should have been advised of the risks and offered a c-section",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E006",
+            "E007"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Francisco suffered brachial plexus injury resulting in permanent disability of left arm",
+        "severity": "PERMANENT_SEVERE_DISABILITY",
+        "long_term_effects": "Unable to use left arm",
+        "evidence_ids": [
+          "E005",
+          "E063"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "0",
+        "key_findings": [
+          "Directed verdict in favor of Dr. Hu on informed consent issue",
+          "Jury found in favor of Dr. Hu on negligence claim"
+        ],
+        "evidence_ids": [
+          "E007",
+          "E112"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Failure to adequately inform patient of risks",
+        "counterfactual": "C-section could have reduced risk of injury",
+        "evidence_ids": [
+          "E006",
+          "E007"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "February 8, 2010",
+        "event": "Aguirre gave birth to Francisco",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [
+      {
+        "diagnosis": "Shoulder dystocia with brachial plexus injury",
+        "when_made": "During delivery",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Vaginal delivery with additional pressure applied",
+        "date": "February 8, 2010",
+        "provider": null,
+        "outcome": "Brachial plexus injury",
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Brachial plexus injury",
+        "when_occurred": "During delivery",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to provide informed consent",
+        "against": "Dr. Hu",
+        "found_proven": false,
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Directed verdict in favor of Dr. Hu on informed consent issue",
+        "legal_significance": "No liability found",
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "INFORMED_CONSENT"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.02287581699346405,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-09 18:28:08.107733",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

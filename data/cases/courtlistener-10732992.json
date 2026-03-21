@@ -1,0 +1,571 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10732992",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2016-01-25",
+  "url": "https://example.com/courtlistener-10732992",
+  "case_name": "Easterling v. Kendall, M.D.",
+  "neutral_citation": null,
+  "clinical_domain": "EMERGENCY_MEDICINE",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Easterling v. Kendall, M.D.. Medical malpractice case involving obstetrics gynaecology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "On September 5, 2011, Alesa Easterling, then fifteen years old, was swimming at the YMCA in Twin Falls, Idaho, when she fell from a large floating structure.",
+      "paragraph_ref": "1",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "After falling, Easterling experienced a severe headache, vomiting, and numbness in her left arm.",
+      "paragraph_ref": "1",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "When paramedics arrived, they noted that Easterling was alert but was experiencing an obvious left facial droop and slurred speech.",
+      "paragraph_ref": "1",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "Upon arriving at St. Luke’s, Easterling was examined by emergency room physician Dr. Kendall.",
+      "paragraph_ref": "1",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "Kendall ordered a CT scan and basic testing of Easterling, which did not reveal any abnormalities.",
+      "paragraph_ref": "1",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "Believing that Easterling was suffering from a concussion, Kendall consulted the on-call neurologist, who agreed with his diagnosis.",
+      "paragraph_ref": "1",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "The next morning, Easterling was taken to the emergency room in Twin Falls because she was experiencing a severe headache and nausea and her father had observed her twitching in her sleep.",
+      "paragraph_ref": "1",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "FACTUAL_FINDING",
+      "text": "A CT Scan and MRI were performed. After reviewing the MRI, a radiologist concluded that Easterling had a dissection of the right internal carotid artery.",
+      "paragraph_ref": "1",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "FACTUAL_FINDING",
+      "text": "Easterling was again air lifted to St. Luke’s in Boise. Treating physicians at St. Luke’s in Boise agreed that Easterling had suffered a stroke due to a carotid artery dissection.",
+      "paragraph_ref": "2",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "FACTUAL_FINDING",
+      "text": "Easterling remained in intensive care from September 6 to September 8, 2011.",
+      "paragraph_ref": "2",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E011",
+      "type": "FACTUAL_FINDING",
+      "text": "On September 8, Easterling experienced another stroke.",
+      "paragraph_ref": "2",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E012",
+      "type": "FACTUAL_FINDING",
+      "text": "Easterling alleges that she has suffered permanent neurological damage due to the series of strokes.",
+      "paragraph_ref": "2",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E013",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Wapen would testify that Kendall should have diagnosed Easterling with a carotid artery dissection and started Easterling on anticoagulant treatment on September 5th and the failure to do so was a substantial factor in causing her further stroke.",
+      "paragraph_ref": "4",
+      "speaker": "Expert witness"
+    },
+    {
+      "evidence_id": "E014",
+      "type": "LEGAL_FINDING",
+      "text": "The district court granted Kendall’s motion for a directed verdict, holding that Easterling failed to provide substantial evidence to prove proximate cause.",
+      "paragraph_ref": "5",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E015",
+      "type": "COURT_REASONING",
+      "text": "The district court reasoned that a jury is simply not qualified to determine whether Dr. Kendall’s failure to properly diagnose and the potential delay in treatment were a substantial cause of Easterling’s injuries without reliance on expert testimony or evidence.",
+      "paragraph_ref": "5",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E016",
+      "type": "LEGAL_FINDING",
+      "text": "We affirm the district court’s decisions to grant a directed verdict to Kendall, to exclude Easterling’s expert opinion testimony on causation, and to deny Easterling’s motion to present rebuttal evidence in her case in chief.",
+      "paragraph_ref": "V",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "15 years",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Severe headache, vomiting, and numbness in left arm after falling",
+      "history_of_present_illness": "Patient fell from a large floating structure while swimming, experienced severe headache, vomiting, and numbness in left arm.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "neurological": "Subtle left side facial asymmetry, left facial droop, slurred speech"
+        }
+      },
+      "initial_working_problem": "Possible stroke or concussion",
+      "known_constraints": null,
+      "initial_differential": [
+        "stroke",
+        "concussion"
+      ],
+      "critical_findings": [
+        "left facial droop",
+        "slurred speech",
+        "numbness in left arm"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002",
+        "E003"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "CT Scan",
+        "description": "CT scan of the head",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "No abnormalities detected",
+          "detailed_findings": null,
+          "clinical_significance": "Did not reveal cause of symptoms",
+          "decision_impact": "Did not lead to further imaging or diagnosis",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "IMAGING",
+        "name": "MRI",
+        "description": "MRI of the head and neck",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Carotid artery dissection detected",
+          "detailed_findings": null,
+          "clinical_significance": "Identified cause of symptoms",
+          "decision_impact": "Should have prompted immediate treatment",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": [
+          "E008"
+        ]
+      },
+      {
+        "request_id": "R003",
+        "type": "CONSULT_NOTE",
+        "name": "Neurology Consult",
+        "description": "Consultation with on-call neurologist",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Agreed with concussion diagnosis",
+          "detailed_findings": null,
+          "clinical_significance": "Did not suggest further imaging",
+          "decision_impact": "Reinforced initial misdiagnosis",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents to ED with acute symptoms after fall",
+        "duration": "Not specified in judgment",
+        "key_events": [
+          {
+            "event": "Patient airlifted to St. Luke’s Regional Medical Center",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E003"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Emergency Department Workup",
+        "description": "Initial assessment and imaging performed",
+        "duration": "Not specified in judgment",
+        "key_events": [
+          {
+            "event": "CT scan performed",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E005"
+            ]
+          },
+          {
+            "event": "Neurology consult obtained",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E006"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "followup",
+        "name": "Subsequent Hospitalization",
+        "description": "Patient re-evaluated and diagnosed with carotid artery dissection",
+        "duration": "September 6 to October 1, 2011",
+        "key_events": [
+          {
+            "event": "MRI performed, carotid artery dissection diagnosed",
+            "timestamp": "September 6, 2011",
+            "evidence_ids": [
+              "E008"
+            ]
+          },
+          {
+            "event": "Patient admitted to intensive care",
+            "timestamp": "September 6, 2011",
+            "evidence_ids": [
+              "E009"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient in ED with symptoms suggestive of stroke",
+        "prompt": "What imaging investigation should be ordered?",
+        "action_type": "ORDER_TEST",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Order MRI of the head and neck",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "MRI is more sensitive for detecting carotid artery dissection"
+          },
+          {
+            "option_id": "B",
+            "description": "Order CT scan only",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "CT scan is less sensitive for detecting carotid artery dissection"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant ordered CT scan only",
+          "reasoning_stated": "Believed CT scan was sufficient",
+          "evidence_ids": [
+            "E005"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "MRI should have been ordered",
+          "standard_of_care_basis": "Expert evidence established MRI is standard for suspected carotid artery dissection",
+          "evidence_ids": [
+            "E013"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to order MRI led to misdiagnosis",
+          "what_should_have_happened": "MRI would have identified carotid artery dissection",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E013"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient suffered permanent neurological damage due to strokes",
+        "severity": "PERMANENT_SEVERE_DISABILITY",
+        "long_term_effects": "Permanent neurological damage",
+        "evidence_ids": [
+          "E012"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "0",
+        "key_findings": [
+          "Directed verdict for defendant due to lack of causation evidence",
+          "Court found no breach of standard of care"
+        ],
+        "evidence_ids": [
+          "E014",
+          "E016"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Failure to order MRI",
+        "counterfactual": "MRI would have shown carotid artery dissection",
+        "evidence_ids": [
+          "E013",
+          "E014"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "September 5, 2011",
+        "event": "Patient fell and experienced severe headache, vomiting, and numbness",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001",
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "September 6, 2011",
+        "event": "MRI performed, carotid artery dissection diagnosed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E008"
+        ]
+      },
+      {
+        "timestamp": "September 5, 2011",
+        "event": "Patient experienced severe headache and neurological symptoms after swimming",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001",
+          "E002"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "CT Scan",
+        "date": "September 5, 2011",
+        "result": "No abnormalities detected",
+        "interpretation": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "test_name": "CT Scan",
+        "date": "Not documented in judgment",
+        "result": "No abnormalities detected",
+        "interpretation": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Carotid artery dissection",
+        "when_made": "September 6, 2011",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E008"
+        ]
+      },
+      {
+        "diagnosis": "Concussion",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": false,
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "diagnosis": "Carotid artery dissection",
+        "when_made": "After subsequent MRI",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E008"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Anticoagulant therapy",
+        "date": "September 6, 2011",
+        "provider": null,
+        "outcome": "Patient experienced further strokes",
+        "evidence_ids": [
+          "E009",
+          "E011"
+        ]
+      },
+      {
+        "treatment": "Initial discharge with concussion diagnosis",
+        "date": "Not documented in judgment",
+        "provider": null,
+        "outcome": "Missed diagnosis of carotid artery dissection",
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Stroke",
+        "when_occurred": "September 8, 2011",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E011"
+        ]
+      },
+      {
+        "complication": "Permanent neurological damage",
+        "when_occurred": "After series of strokes",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E012"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to diagnose carotid artery dissection",
+        "against": "Dr. Kendall",
+        "found_proven": false,
+        "evidence_ids": [
+          "E014"
+        ]
+      },
+      {
+        "allegation": "Failure to order MRI",
+        "against": "Dr. Kendall",
+        "found_proven": false,
+        "evidence_ids": [
+          "E014"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Directed verdict for defendant due to lack of expert testimony on causation",
+        "legal_significance": "Plaintiff failed to prove causation",
+        "evidence_ids": [
+          "E014",
+          "E016"
+        ]
+      },
+      {
+        "finding": "Directed verdict for defendant",
+        "legal_significance": "No breach of standard of care found",
+        "evidence_ids": [
+          "E014",
+          "E016"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.4444444444444444,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-09 16:50:08.434590",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

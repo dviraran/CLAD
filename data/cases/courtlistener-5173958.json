@@ -1,0 +1,484 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-5173958",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2021-09-28",
+  "url": "https://example.com/courtlistener-5173958",
+  "case_name": "Debra Chesnut v. United States",
+  "neutral_citation": null,
+  "clinical_domain": "NEUROLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Debra Chesnut v. United States. Medical malpractice case involving neurology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "On April 4, 2016, Debra went to the emergency room at Manchester Memorial Hospital in Manchester, Kentucky, where she presented with numbness from the waist down, pain in both legs, with the right leg being worse and cold.",
+      "paragraph_ref": "15",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "On April 19, 2016, Debra\u2019s right leg was amputated below the knee at the University of Kentucky Medical Center (\u201cUKMC\u201d) due to serious clots that restricted blood flow.",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. Madden then proceeded to his examination. He found that Debra\u2019s dorsalis pedis pulse, from an artery in the foot, which is a measure of blood flow to the legs, was normal.",
+      "paragraph_ref": "20",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "LEGAL_FINDING",
+      "text": "The district court found that Dr. Madden had been negligent when he had examined Debra on April 12, 2016, and failed to meet the applicable standard of care when he did not consider vascular causes of Debra\u2019s symptoms in diagnosing her.",
+      "paragraph_ref": "32",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "LEGAL_FINDING",
+      "text": "The district court found in favor of the United States on Plaintiffs\u2019 claims because it determined that Plaintiffs had \u201cfailed to prove by way of expert testimony that Dr. Madden\u2019s deviation from the standard of care was a proximate cause of Ms. Chesnut\u2019s below-the-knee amputation.\u201d",
+      "paragraph_ref": "32",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Roberts explained that the amputation of Debra\u2019s leg became necessary after seeing Dr. Madden because \u201clegs don\u2019t really become cyanotic until you knock off the profunda. And the profunda is up in the thigh.\u201d",
+      "paragraph_ref": "98",
+      "speaker": "Dr. Roberts"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Roberts opined that the clotting in Debra\u2019s leg observed at the University of Kentucky on April 13 would have taken \u201con average . . . five to seven days.\u201d",
+      "paragraph_ref": "100",
+      "speaker": "Dr. Roberts"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "COURT_REASONING",
+      "text": "The district court\u2019s factual findings as to causation were predicated on multiple misunderstandings of Kentucky law, internally inconsistent analysis, and implausible factual findings.",
+      "paragraph_ref": "105",
+      "speaker": "Court reasoning"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "LEGAL_FINDING",
+      "text": "For the reasons stated above, we REVERSE the district court\u2019s decision and REMAND for proceedings consistent with this opinion.",
+      "paragraph_ref": "114",
+      "speaker": "Court conclusion"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Heavy cigarette smoker"
+      },
+      "chief_complaint": "Pain and numbness in legs, right leg worse and cold",
+      "history_of_present_illness": "Sudden onset of pain and numbness in legs on April 4, 2016. Right leg colder than left.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "legs": "Right leg cool to touch, left leg warm, pulses present in both legs"
+        }
+      },
+      "initial_working_problem": "Sciatica",
+      "known_constraints": null,
+      "initial_differential": [
+        "sciatica",
+        "musculoskeletal issues"
+      ],
+      "critical_findings": [
+        "Right leg colder than left",
+        "Pain and numbness in legs"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E003"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "CT Angiogram",
+        "description": "Imaging to assess blood flow and identify clots",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Serious blood clots in right leg",
+          "detailed_findings": null,
+          "clinical_significance": "Confirms vascular issue",
+          "decision_impact": "Should prompt immediate vascular intervention",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents to emergency room with leg symptoms",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Patient seen by Dr. Thomas and diagnosed with sciatica",
+            "timestamp": "April 4, 2016",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Follow-up and Examination",
+        "description": "Patient seen by APRN Cole and Dr. Madden",
+        "duration": "April 5, 2016 to April 12, 2016",
+        "key_events": [
+          {
+            "event": "Patient seen by APRN Cole, diagnosed with sciatica",
+            "timestamp": "April 5, 2016",
+            "evidence_ids": [
+              "E001"
+            ]
+          },
+          {
+            "event": "Patient seen by Dr. Madden, diagnosed with musculoskeletal issues",
+            "timestamp": "April 12, 2016",
+            "evidence_ids": [
+              "E003"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "decision",
+        "name": "Emergency Diagnosis",
+        "description": "Patient experiences worsening symptoms and is diagnosed with ischemia",
+        "duration": "April 13, 2016",
+        "key_events": [
+          {
+            "event": "Patient's right foot turns blue, diagnosed with ischemia",
+            "timestamp": "April 13, 2016",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient with leg pain and numbness, right leg colder than left",
+        "prompt": "What should be included in the differential diagnosis?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Include vascular causes in differential diagnosis",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard of care requires considering vascular issues given symptoms"
+          },
+          {
+            "option_id": "B",
+            "description": "Focus on musculoskeletal causes only",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Overlooked potential vascular issues"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Focused on musculoskeletal causes only",
+          "reasoning_stated": "Diagnosed with sciatica",
+          "evidence_ids": [
+            "E004"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Include vascular causes in differential diagnosis",
+          "standard_of_care_basis": "Expert testimony indicated vascular issues should have been considered",
+          "evidence_ids": [
+            "E004",
+            "E006"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failed to consider vascular causes despite symptoms",
+          "what_should_have_happened": "Vascular causes should have been included in differential diagnosis",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E004",
+            "E006"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Right leg amputation below the knee",
+        "severity": "PERMANENT_SEVERE_DISABILITY",
+        "long_term_effects": "Loss of limb, need for prosthesis",
+        "evidence_ids": [
+          "E002",
+          "E006"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "Not applicable",
+        "key_findings": [
+          "District court found no liability due to causation issues",
+          "Appellate court reversed and remanded for further proceedings"
+        ],
+        "evidence_ids": [
+          "E005",
+          "E009"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": false,
+        "point_of_failure": "Failure to refer to vascular surgery",
+        "counterfactual": "Timely referral could have prevented amputation",
+        "evidence_ids": [
+          "E004",
+          "E006",
+          "E009"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "April 4, 2016",
+        "event": "Patient presents to emergency room with leg pain and numbness",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "April 12, 2016",
+        "event": "Patient seen by Dr. Madden, diagnosed with musculoskeletal issues",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "timestamp": "April 13, 2016",
+        "event": "Patient diagnosed with ischemia at emergency room",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "April 4, 2016",
+        "event": "Patient arrives at ED with leg symptoms",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "April 12, 2016",
+        "event": "Examination by Dr. Madden",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "timestamp": "April 19, 2016",
+        "event": "Right leg amputation at University of Kentucky",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "CT Angiogram",
+        "date": "April 13, 2016",
+        "result": "Serious blood clots in right leg",
+        "interpretation": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Ischemia",
+        "when_made": "April 13, 2016",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "diagnosis": "Acute limb ischemia",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Below-the-knee amputation",
+        "date": "April 19, 2016",
+        "provider": null,
+        "outcome": "Right leg amputated",
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "treatment": "Amputation",
+        "date": "April 19, 2016",
+        "provider": null,
+        "outcome": "Leg amputated below the knee",
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Loss of limb",
+        "when_occurred": "April 19, 2016",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "complication": "Limb loss",
+        "when_occurred": "April 19, 2016",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to consider vascular causes",
+        "against": "Dr. Madden",
+        "found_proven": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "allegation": "Failure to refer to vascular surgery",
+        "against": "Dr. Madden",
+        "found_proven": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Dr. Madden was negligent but not a substantial factor in causing amputation",
+        "legal_significance": "No liability found",
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "finding": "District court found no liability due to causation issues",
+        "legal_significance": "Causation not established",
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.0782608695652174,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-17 07:28:30.491123",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

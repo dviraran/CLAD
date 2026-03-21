@@ -1,0 +1,689 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10023815",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2021-05-28",
+  "url": "https://example.com/courtlistener-10023815",
+  "case_name": "Allen v. Sarah Bush Lincoln Health Center",
+  "neutral_citation": null,
+  "clinical_domain": "PAEDIATRICS",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Allen v. Sarah Bush Lincoln Health Center. Medical malpractice case involving paediatrics.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "On September 21, 2012, plaintiff, Mark Allen, felt a 'pop' in his neck and began to experience neck pain.",
+      "paragraph_ref": "11",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Allen was given painkillers and discharged. The following day, September 22, 2012, Allen again went to defendant’s emergency room and, again, was given painkillers and discharged.",
+      "paragraph_ref": "11",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "On September 26, 2012, Allen’s condition worsened. He went to defendant’s emergency room where he was seen by Dr. Derek Stout, who ordered a computerized tomography (CT) scan for Allen.",
+      "paragraph_ref": "12",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "Allen collapsed and was taken to defendant’s emergency room via ambulance before being transferred to Carle Hospital early the following morning.",
+      "paragraph_ref": "12",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "At Carle, a neurologist examined Allen and ordered a magnetic resonance imaging (MRI) scan, which revealed that Allen had a spinal epidural abscess.",
+      "paragraph_ref": "12",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "Allen had spinal surgery to drain the abscess but still suffered a spinal cord injury as a result of the abscess.",
+      "paragraph_ref": "12",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "LEGAL_FINDING",
+      "text": "The jury returned a $14 million verdict in favor of Allen.",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "LEGAL_FINDING",
+      "text": "We disagree and affirm.",
+      "paragraph_ref": "5",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Raja testified that Allen presented to Stout with the classic triad of symptoms for a spinal epidural abscess: (1) fever, (2) pain radiating down the back, and (3) neurological changes such as tingling and hypersensitive skin on the shoulders.",
+      "paragraph_ref": "41",
+      "speaker": "Dr. Ali Raja"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Raja opined that Stout should have put it at the top of his differential diagnosis, not the bottom; further, Stout should have immediately ordered an MRI.",
+      "paragraph_ref": "41",
+      "speaker": "Dr. Ali Raja"
+    },
+    {
+      "evidence_id": "E011",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Kopin opined that the standard of care for any physician, regardless of specialty, required an MRI of Allen’s cervical spine.",
+      "paragraph_ref": "44",
+      "speaker": "Dr. Jeff Kopin"
+    },
+    {
+      "evidence_id": "E012",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Bernstein opined that if Allen had been operated on prior to September 28, it was more likely than not true that Allen would have spent five to seven days in the hospital, would have had a full neurological recovery, and would have returned to normal activities.",
+      "paragraph_ref": "45",
+      "speaker": "Dr. Avi Bernstein"
+    },
+    {
+      "evidence_id": "E013",
+      "type": "WITNESS_STATEMENT",
+      "text": "Melissa Taylor testified that she was Allen’s ex-wife and the mother of his children.",
+      "paragraph_ref": "22",
+      "speaker": "Melissa Taylor"
+    },
+    {
+      "evidence_id": "E014",
+      "type": "WITNESS_STATEMENT",
+      "text": "Taylor testified that Allen began feeling severe pain on September 20, 2012.",
+      "paragraph_ref": "23",
+      "speaker": "Melissa Taylor"
+    },
+    {
+      "evidence_id": "E015",
+      "type": "WITNESS_STATEMENT",
+      "text": "Allen testified that on September 21, 2012, he was moving boxes at his mother’s house when he felt pain and numbness in his neck.",
+      "paragraph_ref": "37",
+      "speaker": "Mark Allen"
+    },
+    {
+      "evidence_id": "E016",
+      "type": "MEDICAL_RECORD",
+      "text": "Allen’s blood was tested at around 12:35 p.m. and showed he had an abnormally high white blood cell count.",
+      "paragraph_ref": "8",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E017",
+      "type": "COURT_REASONING",
+      "text": "The trial court granted in part defendant’s motion for partial summary judgment, stating that it found no genuine issue of material fact regarding actual agency because Dale was not an actual agent of the hospital.",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E018",
+      "type": "COURT_REASONING",
+      "text": "The trial court denied Allen’s motion for leave to file the second amended complaint because, in part, (1) Allen’s original complaint was based solely on Stout’s negligence and never alleged Dale made a mistake.",
+      "paragraph_ref": "19",
+      "speaker": "Court finding"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "male",
+        "relevant_social_history": "Professional drummer, landscaper"
+      },
+      "chief_complaint": "Severe neck pain and tingling sensation",
+      "history_of_present_illness": "On September 21, 2012, patient felt a 'pop' in his neck while moving boxes, followed by severe neck pain. Presented to the emergency department with neck pain and was discharged with painkillers. Returned on September 22 with persistent pain and fever, again discharged with painkillers. On September 26, presented with worsening symptoms including severe neck pain, tingling in hands, and burning sensation in shoulders.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": "Intermittent fever reported, specific values not documented",
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "neurological": "Tingling in hands, burning sensation in shoulders",
+          "general": "Severe neck pain, difficulty moving"
+        }
+      },
+      "initial_working_problem": "Neck pain with neurological symptoms",
+      "known_constraints": null,
+      "initial_differential": [
+        "Viral infection",
+        "Spinal epidural abscess"
+      ],
+      "critical_findings": [
+        "Elevated white blood cell count",
+        "Severe neck pain",
+        "Neurological symptoms"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002",
+        "E003",
+        "E009",
+        "E010"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "LAB",
+        "name": "Complete Blood Count",
+        "description": "Blood test to check for infection",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Elevated white blood cell count",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates possible infection",
+          "decision_impact": "Should prompt further investigation for source of infection",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E016"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "IMAGING",
+        "name": "CT Scan of Neck",
+        "description": "Imaging to check for abscess or other abnormalities",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": null,
+          "detailed_findings": "CT scan read as normal, no abscess detected",
+          "clinical_significance": "Did not rule out spinal epidural abscess",
+          "decision_impact": "Should have prompted MRI for definitive diagnosis",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E003",
+          "E010"
+        ]
+      },
+      {
+        "request_id": "R003",
+        "type": "IMAGING",
+        "name": "MRI of Cervical Spine",
+        "description": "Definitive imaging for spinal epidural abscess",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": null,
+          "detailed_findings": "Not performed initially; later MRI revealed spinal epidural abscess",
+          "clinical_significance": "Confirmed diagnosis of spinal epidural abscess",
+          "decision_impact": "Would have led to earlier surgical intervention",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": [
+          "E005",
+          "E011"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents to ED with neck pain",
+        "duration": "September 21-22, 2012",
+        "key_events": [
+          {
+            "event": "Patient discharged with painkillers",
+            "timestamp": "September 21, 2012",
+            "evidence_ids": [
+              "E001",
+              "E002"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Subsequent Presentation and Workup",
+        "description": "Patient returns with worsening symptoms",
+        "duration": "September 26, 2012",
+        "key_events": [
+          {
+            "event": "CT scan performed, patient discharged",
+            "timestamp": "September 26, 2012",
+            "evidence_ids": [
+              "E003"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "decision",
+        "name": "Critical Decision Point",
+        "description": "Decision on imaging modality",
+        "duration": "September 26, 2012",
+        "key_events": [
+          {
+            "event": "Decision to order CT instead of MRI",
+            "timestamp": "September 26, 2012",
+            "evidence_ids": [
+              "E010"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "procedure",
+        "name": "Emergency Intervention",
+        "description": "Patient undergoes surgery",
+        "duration": "September 28, 2012",
+        "key_events": [
+          {
+            "event": "Surgery to drain spinal abscess",
+            "timestamp": "September 28, 2012",
+            "evidence_ids": [
+              "E006"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient in ED with severe neck pain and neurological symptoms",
+        "prompt": "What imaging investigation should be ordered?",
+        "action_type": "ORDER_TEST",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Order MRI of cervical spine",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "MRI is the definitive test for spinal epidural abscess"
+          },
+          {
+            "option_id": "B",
+            "description": "Order CT scan of neck",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "CT scan is not sufficient to rule out spinal epidural abscess"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant ordered CT scan only",
+          "reasoning_stated": "Believed CT scan was sufficient to rule out abscess",
+          "evidence_ids": [
+            "E003",
+            "E010"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "MRI should have been ordered",
+          "standard_of_care_basis": "Expert testimony established MRI as standard for suspected spinal epidural abscess",
+          "evidence_ids": [
+            "E011",
+            "E012"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "CT scan does not adequately rule out spinal epidural abscess",
+          "what_should_have_happened": "MRI should have been performed to confirm diagnosis",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E011",
+            "E012"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient suffered spinal cord injury due to delayed diagnosis",
+        "severity": "PERMANENT_SEVERE_DISABILITY",
+        "long_term_effects": "Chronic pain, reduced mobility",
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "14000000",
+        "key_findings": [
+          "Breach of duty in failing to order MRI",
+          "Causation established - earlier diagnosis would have prevented spinal cord injury"
+        ],
+        "evidence_ids": [
+          "E007",
+          "E008"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to order MRI imaging",
+        "counterfactual": "MRI would have shown spinal epidural abscess",
+        "evidence_ids": [
+          "E011",
+          "E012"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "September 21, 2012",
+        "event": "Patient felt a 'pop' in neck and presented to ED",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "September 26, 2012",
+        "event": "Patient presented with worsening symptoms, CT scan performed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "timestamp": "September 28, 2012",
+        "event": "Patient underwent spinal surgery",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "timestamp": "September 21, 2012",
+        "event": "Patient reports neck pain and 'pop' sensation",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001",
+          "E015"
+        ]
+      },
+      {
+        "timestamp": "September 26, 2012",
+        "event": "Patient's condition worsens, goes to emergency room",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "timestamp": "September 28, 2012",
+        "event": "MRI reveals spinal epidural abscess",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "timestamp": "September 21, 2012",
+        "event": "Patient felt a 'pop' in neck and experienced pain",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001",
+          "E015"
+        ]
+      },
+      {
+        "timestamp": "September 26, 2012",
+        "event": "Patient's condition worsened, visited ER",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "CT Scan of Neck",
+        "date": "September 26, 2012",
+        "result": "Normal",
+        "interpretation": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "test_name": "CT scan",
+        "date": "Not documented in judgment",
+        "result": "Not documented in judgment",
+        "interpretation": null,
+        "evidence_ids": [
+          "E010"
+        ]
+      },
+      {
+        "test_name": "White Blood Cell Count",
+        "date": "September 21, 2012",
+        "result": "Abnormally high",
+        "interpretation": null,
+        "evidence_ids": [
+          "E016"
+        ]
+      },
+      {
+        "test_name": "White Blood Cell Count",
+        "date": "Not documented in judgment",
+        "result": "Abnormally high",
+        "interpretation": null,
+        "evidence_ids": [
+          "E016"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Spinal epidural abscess",
+        "when_made": "September 28, 2012",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "diagnosis": "Spinal epidural abscess",
+        "when_made": "September 28, 2012",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "diagnosis": "Spinal epidural abscess",
+        "when_made": "After MRI at Carle",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Spinal surgery to drain abscess",
+        "date": "September 28, 2012",
+        "provider": null,
+        "outcome": "Spinal cord injury",
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "treatment": "Spinal surgery to drain abscess",
+        "date": "Not documented in judgment",
+        "provider": null,
+        "outcome": "Spinal cord injury occurred",
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "treatment": "Spinal surgery to drain abscess",
+        "date": "Not documented in judgment",
+        "provider": null,
+        "outcome": "Spinal cord injury occurred",
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Spinal cord injury",
+        "when_occurred": "Post-surgery",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "complication": "Spinal cord injury",
+        "when_occurred": "Not documented in judgment",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "complication": "Spinal cord injury",
+        "when_occurred": "Post-surgery",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to order MRI",
+        "against": "Dr. Derek Stout",
+        "found_proven": true,
+        "evidence_ids": [
+          "E010",
+          "E011"
+        ]
+      },
+      {
+        "allegation": "Failure to order MRI",
+        "against": "Defendant physician",
+        "found_proven": true,
+        "evidence_ids": [
+          "E011"
+        ]
+      },
+      {
+        "allegation": "Failure to order MRI",
+        "against": "Defendant physician",
+        "found_proven": true,
+        "evidence_ids": [
+          "E011"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Failure to order MRI was a breach",
+        "evidence_ids": [
+          "E007",
+          "E008"
+        ]
+      },
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Standard of care not met",
+        "evidence_ids": [
+          "E011"
+        ]
+      },
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Standard of care not met",
+        "evidence_ids": [
+          "E011"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.21951219512195122,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-16 16:17:59.651069",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

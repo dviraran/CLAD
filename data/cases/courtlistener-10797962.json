@@ -1,0 +1,470 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10797962",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2022-06-02",
+  "url": "https://example.com/courtlistener-10797962",
+  "case_name": "Davies v. MultiCare Health Sys.",
+  "neutral_citation": null,
+  "clinical_domain": "OBSTETRICS_GYNAECOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Davies v. MultiCare Health Sys.. Medical malpractice case involving obstetrics gynaecology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "On August 23, 2017, Mari Davies was in a single-car rollover accident.",
+      "paragraph_ref": "15",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Davies\u2019 stroke was caused by a vertebral artery dissection (VAD) that occurred at the time of the accident.",
+      "paragraph_ref": "45",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "Emergency responders transported her to the emergency room (E.R.) at Good Samaritan Hospital in Puyallup.",
+      "paragraph_ref": "16",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "When Davies arrived at the E.R. she had hypertension, high blood pressure, left shoulder pain, neck pain, chest pain, abdominal pain, a headache, and some tingling in her left arm.",
+      "paragraph_ref": "18",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. Michael Hirsig evaluated her as soon as she arrived in the E.R.",
+      "paragraph_ref": "22",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. Hirsig ordered computerized tomography (CT) scans of her head, cervical spine, abdomen, chest, and pelvis.",
+      "paragraph_ref": "23",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "Davies\u2019 CT scan showed a cervical spine fracture at the C3 level.",
+      "paragraph_ref": "26",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. Morris recommended a cervical collar for eight weeks with a follow-up CT scan to check for healing and alignment.",
+      "paragraph_ref": "30",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "FACTUAL_FINDING",
+      "text": "Davies visited her primary care provider, Dr. Larsen, the next day. While in his office, Davies exhibited stroke symptoms.",
+      "paragraph_ref": "40",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "FACTUAL_FINDING",
+      "text": "It is undisputed that Dr. Hirsig did not order a CTA scan for Davies while she was in the E.R.",
+      "paragraph_ref": "50",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E011",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Davies\u2019 experts testified that if Davies had undergone a CTA, it would have revealed her VAD and she would have received treatment that likely would have prevented the stroke.",
+      "paragraph_ref": "68",
+      "speaker": "Davies' expert"
+    },
+    {
+      "evidence_id": "E012",
+      "type": "EXPERT_TESTIMONY",
+      "text": "experts testified that a VAD is 'commonly found' when there is a cervical spine fracture, so it is standard to perform a CTA scan if there is a C3 fracture.",
+      "paragraph_ref": "70",
+      "speaker": "Davies' expert"
+    },
+    {
+      "evidence_id": "E013",
+      "type": "LEGAL_FINDING",
+      "text": "The trial court dismissed the informed consent claim on summary judgment; the jury found for the health care provider defendants on Davies\u2019 negligence claim at trial.",
+      "paragraph_ref": "54",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E014",
+      "type": "LEGAL_FINDING",
+      "text": "We reverse the Court of Appeals and reinstate the trial court\u2019s order dismissing Davies\u2019 informed consent claim.",
+      "paragraph_ref": "361",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E015",
+      "type": "COURT_REASONING",
+      "text": "A provider may not be liable for informed consent claims arising from a ruled out diagnosis under RCW 7.70.050.",
+      "paragraph_ref": "346",
+      "speaker": "Judge's analysis"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Multiple injuries following a single-car rollover accident",
+      "history_of_present_illness": "Patient was involved in a single-car rollover accident and presented with hypertension, high blood pressure, left shoulder pain, neck pain, chest pain, abdominal pain, headache, and tingling in the left arm.",
+      "past_medical_history": [
+        "Kidney stones",
+        "Diverticulosis",
+        "Pneumonia",
+        "Diabetes"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Hypertension noted, exact values not documented",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "neurological": "No neurological symptoms noted",
+          "musculoskeletal": "Left shoulder pain, neck pain"
+        }
+      },
+      "initial_working_problem": "Multiple trauma following motor vehicle accident",
+      "known_constraints": null,
+      "initial_differential": [
+        "Cervical spine fracture",
+        "Vertebral artery dissection"
+      ],
+      "critical_findings": [
+        "C3 cervical spine fracture"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E003",
+        "E004",
+        "E005",
+        "E007"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "CT Scan",
+        "description": "CT scans of head, cervical spine, abdomen, chest, and pelvis",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "C3 cervical spine fracture identified",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates potential for vertebral artery dissection",
+          "decision_impact": "Should prompt consideration of further imaging to rule out VAD",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E006",
+          "E007"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "IMAGING",
+        "name": "CTA Scan",
+        "description": "Computed tomography angiography to detect vertebral artery dissection",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not performed",
+          "detailed_findings": null,
+          "clinical_significance": "Would have detected vertebral artery dissection",
+          "decision_impact": "Could have led to treatment preventing stroke",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": [
+          "E010",
+          "E011"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Emergency Presentation",
+        "description": "Patient presents to E.R. following a rollover accident",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Patient arrives at E.R.",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E003"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Initial Workup",
+        "description": "CT scans and other diagnostics performed",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "CT scan reveals C3 fracture",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E007"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "decision",
+        "name": "Clinical Decision",
+        "description": "Decision made not to order CTA scan",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Decision not to order CTA scan",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E010"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient in E.R. following a rollover accident with a cervical spine fracture",
+        "prompt": "Should a CTA scan be ordered to rule out vertebral artery dissection?",
+        "action_type": "ORDER_TEST",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Order CTA scan to rule out vertebral artery dissection",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard practice to rule out VAD in presence of cervical spine fracture"
+          },
+          {
+            "option_id": "B",
+            "description": "Do not order CTA scan",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Defendant ruled out VAD based on clinical presentation"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant did not order CTA scan",
+          "reasoning_stated": "Defendant ruled out VAD based on lack of symptoms",
+          "evidence_ids": [
+            "E010",
+            "E074"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "CTA scan should have been ordered",
+          "standard_of_care_basis": "Expert testimony indicated CTA is standard with cervical spine fracture",
+          "evidence_ids": [
+            "E011",
+            "E012"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to order CTA scan led to missed diagnosis of VAD",
+          "what_should_have_happened": "CTA scan would have detected VAD, allowing for preventive treatment",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E011",
+            "E012"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient suffered a stroke due to undiagnosed VAD",
+        "severity": "PERMANENT_SEVERE_DISABILITY",
+        "long_term_effects": "Brain damage, requires assisted living",
+        "evidence_ids": [
+          "E002",
+          "E043"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "0",
+        "key_findings": [
+          "Jury found no negligence by healthcare providers",
+          "Court dismissed informed consent claim"
+        ],
+        "evidence_ids": [
+          "E013",
+          "E014"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Failure to order CTA imaging",
+        "counterfactual": "CTA would have shown vertebral artery dissection",
+        "evidence_ids": [
+          "E011",
+          "E012"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "August 23, 2017",
+        "event": "Patient involved in a single-car rollover accident",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Patient arrives at E.R. with multiple injuries",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "CT Scan",
+        "date": "Date not specified in judgment",
+        "result": "C3 cervical spine fracture",
+        "interpretation": null,
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Stable cervical spine fracture",
+        "when_made": "Date not specified in judgment",
+        "made_by": null,
+        "correct": false,
+        "evidence_ids": [
+          "E032"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Aspen collar and discharge",
+        "date": "Date not specified in judgment",
+        "provider": null,
+        "outcome": "Patient discharged without further imaging",
+        "evidence_ids": [
+          "E032"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Stroke",
+        "when_occurred": "Date not specified in judgment",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to order CTA scan",
+        "against": "Dr. Michael Hirsig",
+        "found_proven": false,
+        "evidence_ids": [
+          "E013"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "No negligence by healthcare providers",
+        "legal_significance": "Jury found no breach of standard of care",
+        "evidence_ids": [
+          "E013"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.04120879120879121,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-09 17:46:47.844389",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

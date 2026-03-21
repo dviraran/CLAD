@@ -1,0 +1,493 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-4656183",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2019-06-10",
+  "url": "https://example.com/courtlistener-4656183",
+  "case_name": "Okic v. Fullerton Surgery Center, Ltd.",
+  "neutral_citation": null,
+  "clinical_domain": "OBSTETRICS_GYNAECOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Okic v. Fullerton Surgery Center, Ltd.. Medical malpractice case involving obstetrics gynaecology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Mr. Okic was diagnosed with gallstones in May 2012 and consulted with Dr. Diniotis in early August of that year regarding the need for an outpatient laparoscopic cholecystectomy.",
+      "paragraph_ref": "7",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. Diniotis performed the surgery on August 18, 2012, and continued to monitor Mr. Okic over the next month.",
+      "paragraph_ref": "7",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "By September 22, 2012, Mr. Okic was jaundiced and bile was still collecting in a Jackson-Pratt drain left at the incision site.",
+      "paragraph_ref": "7",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "Mr. Okic was admitted to Our Lady of Resurrection Hospital for a series of diagnostic tests, which revealed that his common bile duct had been severed.",
+      "paragraph_ref": "8",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "LEGAL_FINDING",
+      "text": "The jury found against Mr. Okic and in favor of Dr. Diniotis on Mr. Okic\u2019s remaining theory of negligence.",
+      "paragraph_ref": "2",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "LEGAL_FINDING",
+      "text": "We affirm the judgment of the trial court on the jury\u2019s verdict in favor of Dr. Diniotis.",
+      "paragraph_ref": "99",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Woo testified that what happened next, including the reconstruction surgery, would still have been necessary even if the common bile duct injury had been diagnosed sooner.",
+      "paragraph_ref": "28",
+      "speaker": "Dr. Woo"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "WITNESS_STATEMENT",
+      "text": "Mr. Okic recalled that he \u201ccould not eat\u201d and \u201clost [a] substantial amount of weight\u201d during the period of time between his surgery on August 18 and his hospitalization on September 22.",
+      "paragraph_ref": "32",
+      "speaker": "Mr. Okic"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "WITNESS_STATEMENT",
+      "text": "Ms. Livadic always recorded the date, time, and amount of fluid that she emptied from Mr. Okic\u2019s Jackson-Pratt drain on a log.",
+      "paragraph_ref": "42",
+      "speaker": "Ms. Livadic"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "COURT_REASONING",
+      "text": "The trial court erred by granting Dr. Diniotis\u2019s motions in limine Nos. 24 and 25. The motions were improper and untimely dispositive motions.",
+      "paragraph_ref": "85",
+      "speaker": "Judge's analysis"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "male",
+        "relevant_social_history": "Bosnian refugee with limited English proficiency"
+      },
+      "chief_complaint": "Postoperative complications following gallbladder removal surgery",
+      "history_of_present_illness": "Mr. Okic underwent a laparoscopic cholecystectomy on August 18, 2012. Postoperatively, he experienced persistent bile drainage, jaundice, and weakness.",
+      "past_medical_history": [
+        "Gallstones"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "abdomen": "Not documented in judgment"
+        }
+      },
+      "initial_working_problem": "Postoperative bile leak",
+      "known_constraints": null,
+      "initial_differential": [
+        "Bile duct injury",
+        "Postoperative infection"
+      ],
+      "critical_findings": [
+        "Persistent bile drainage",
+        "Jaundice"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002",
+        "E003"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "Endoscopic Retrograde Cholangiopancreatography (ERCP)",
+        "description": "Diagnostic imaging to assess bile duct injury",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Revealed extrahepatic biliary obstruction due to bile duct injury",
+          "detailed_findings": null,
+          "clinical_significance": "Confirmed bile duct injury",
+          "decision_impact": "Prompted corrective surgery",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "LAB",
+        "name": "Bilirubin Level",
+        "description": "Blood test to assess liver function and bile duct obstruction",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Bilirubin level was 12.5, indicating severe jaundice",
+          "detailed_findings": null,
+          "clinical_significance": "Indicated significant bile duct obstruction",
+          "decision_impact": "Should have prompted earlier intervention",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with postoperative complications",
+        "duration": "1 month",
+        "key_events": [
+          {
+            "event": "Surgery performed",
+            "timestamp": "August 18, 2012",
+            "evidence_ids": [
+              "E002"
+            ]
+          },
+          {
+            "event": "Patient develops jaundice and persistent bile drainage",
+            "timestamp": "September 22, 2012",
+            "evidence_ids": [
+              "E003"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Diagnostic Workup",
+        "description": "Patient admitted for diagnostic tests",
+        "duration": "1 week",
+        "key_events": [
+          {
+            "event": "Admitted to hospital for diagnostic tests",
+            "timestamp": "September 22, 2012",
+            "evidence_ids": [
+              "E004"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Postoperative follow-up with persistent bile drainage",
+        "prompt": "What should be the next step in managing persistent bile drainage post-cholecystectomy?",
+        "action_type": "ORDER_TEST",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Order diagnostic imaging to assess for bile duct injury",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Persistent bile drainage and jaundice suggest possible bile duct injury requiring imaging"
+          },
+          {
+            "option_id": "B",
+            "description": "Continue monitoring without further diagnostic tests",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Assumed drainage was within expected postoperative course"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Continued monitoring without ordering diagnostic tests",
+          "reasoning_stated": "Believed drainage was not excessive",
+          "evidence_ids": [
+            "E002",
+            "E003"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Diagnostic imaging should have been ordered",
+          "standard_of_care_basis": "Expert testimony indicated imaging was necessary to diagnose bile duct injury",
+          "evidence_ids": [
+            "E004",
+            "E007"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to order imaging led to delayed diagnosis of bile duct injury",
+          "what_should_have_happened": "Imaging should have been performed to confirm bile duct injury",
+          "legal_standard_applied": "Standard of care requires prompt investigation of persistent bile drainage",
+          "evidence_ids": [
+            "E004",
+            "E007"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient experienced prolonged symptoms and required additional care",
+        "severity": "MODERATE_DISABILITY",
+        "long_term_effects": "Not documented in judgment",
+        "evidence_ids": [
+          "E003",
+          "E004"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "None",
+        "key_findings": [
+          "Jury found in favor of Dr. Diniotis",
+          "No breach of standard of care established"
+        ],
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Failure to address symptoms promptly",
+        "counterfactual": "Immediate action could have prevented complications",
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "August 18, 2012",
+        "event": "Laparoscopic cholecystectomy performed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "September 22, 2012",
+        "event": "Patient admitted to hospital with jaundice and bile drainage",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003",
+          "E004"
+        ]
+      },
+      {
+        "timestamp": "August 18, 2012",
+        "event": "Surgery performed by Dr. Diniotis",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "September 22, 2012",
+        "event": "Patient admitted for diagnostic tests",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "ERCP",
+        "date": "September 22, 2012",
+        "result": "Revealed bile duct injury",
+        "interpretation": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "test_name": "Diagnostic imaging",
+        "date": "September 22, 2012",
+        "result": "Not documented in judgment",
+        "interpretation": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Bile duct injury",
+        "when_made": "September 22, 2012",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "diagnosis": "Postoperative complications",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Corrective surgery",
+        "date": "November 16, 2012",
+        "provider": null,
+        "outcome": "Bile duct reconnected",
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "treatment": "Monitoring and diagnostic tests",
+        "date": "September 22, 2012",
+        "provider": null,
+        "outcome": "Not documented in judgment",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Jaundice",
+        "when_occurred": "September 22, 2012",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "complication": "Prolonged jaundice and symptoms",
+        "when_occurred": "Post-surgery",
+        "severity": "Moderate",
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to order timely diagnostic tests",
+        "against": "Dr. Diniotis",
+        "found_proven": false,
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      },
+      {
+        "allegation": "Failure to address postoperative symptoms promptly",
+        "against": "Dr. Diniotis",
+        "found_proven": false,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "No breach of postoperative standard of care",
+        "legal_significance": "Jury verdict in favor of defendant",
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      },
+      {
+        "finding": "No breach of standard of care",
+        "legal_significance": "Jury found in favor of Dr. Diniotis",
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.24390243902439024,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-09 16:31:07.225203",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

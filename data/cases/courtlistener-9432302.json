@@ -1,0 +1,464 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-9432302",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2023-04-27",
+  "url": "https://example.com/courtlistener-9432302",
+  "case_name": "Waetcher v. Laser Spine Inst., L.L.C.",
+  "neutral_citation": null,
+  "clinical_domain": "NEUROLOGY",
+  "outcome_severity": "PERMANENT_SEVERE_DISABILITY",
+  "summary": {
+    "brief": "Waetcher v. Laser Spine Inst., L.L.C.. Medical malpractice case involving neurology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Waechter alleged that in December 2017, Brad M. Picha, M.D. (“Dr. Picha”), an orthopedic surgeon for Laser Spine Institute, LLC (“LSI”), evaluated her, and performed a laminotomy with foraminotomy and decompression of the nerve root at C4-C5 on her right side.",
+      "paragraph_ref": "26",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Waechter alleged that she reported numbness in her left arm and left leg 15 minutes after the procedure followed by numbness and severe weakness in her left upper and lower extremities and tongue.",
+      "paragraph_ref": "31",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Patil further provided the following opinion regarding the presence of air seen in Waechter’s CT: could be caused by an operation on the right.",
+      "paragraph_ref": "161",
+      "speaker": "Dr. Patil"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "LEGAL_FINDING",
+      "text": "The jury returned a verdict in favor of the defense and the case was dismissed with prejudice.",
+      "paragraph_ref": "278",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "COURT_REASONING",
+      "text": "We find that Waechter’s counsel invited error by opening the door to Dr. Patil’s standard-of-care testimony on cross-examination and that his testimony on direct examination was not contrary to Evid.R. 601(B)(5).",
+      "paragraph_ref": "646",
+      "speaker": "Judge's analysis"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Pain on the right side of neck radiating to the right side of face and right shoulder",
+      "history_of_present_illness": "Patient reported pain on the right side of her neck radiating to the right side of her face and right shoulder. Underwent a laminotomy with foraminotomy and decompression of the nerve root at C4-C5 on her right side.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "neurological": "Numbness in left arm and left leg 15 minutes after procedure, followed by numbness and severe weakness in left upper and lower extremities and tongue"
+        }
+      },
+      "initial_working_problem": "Cervical spine issue requiring surgical intervention",
+      "known_constraints": null,
+      "initial_differential": [
+        "Cervical radiculopathy",
+        "Spinal cord injury"
+      ],
+      "critical_findings": [
+        "Numbness and weakness post-procedure"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "CT Scan",
+        "description": "CT scan of neck and brain",
+        "available_phase": "postop",
+        "reveal": {
+          "result_summary": "Presence of air in neck and brain",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates possible dural tear",
+          "decision_impact": "Supports theory of intraoperative injury",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "IMAGING",
+        "name": "MRI",
+        "description": "MRI of cervical spine",
+        "available_phase": "postop",
+        "reveal": {
+          "result_summary": "Spinal cord contusion at C4-C5",
+          "detailed_findings": null,
+          "clinical_significance": "Confirms spinal cord injury",
+          "decision_impact": "Supports need for further evaluation of surgical technique",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with neck pain",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Evaluation by Dr. Picha",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "procedure",
+        "name": "Surgical Procedure",
+        "description": "Laminotomy with foraminotomy and decompression of nerve root at C4-C5",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "LMA device insertion",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E001",
+              "E002"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "postop",
+        "name": "Postoperative Phase",
+        "description": "Patient experiences numbness and weakness",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "CT and MRI performed",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E003"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Diagnostic Workup",
+        "description": "CT scan performed to assess for complications",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "CT scan revealed free air in brain and spine",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E003"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "procedure",
+        "clinical_context": "Patient undergoing cervical spine surgery",
+        "prompt": "What precautions should be taken during the insertion of the LMA device?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Ensure neck is not hyperextended during LMA insertion",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "To prevent spinal cord injury due to hyperextension"
+          },
+          {
+            "option_id": "B",
+            "description": "Proceed with LMA insertion without specific precautions",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Believed to be safe based on training and literature"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant proceeded with LMA insertion without specific precautions",
+          "reasoning_stated": "Believed it was a safe method",
+          "evidence_ids": [
+            "E001",
+            "E002"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Neck should not have been hyperextended during LMA insertion",
+          "standard_of_care_basis": "Expert testimony indicated risk of hyperextension",
+          "evidence_ids": [
+            "E001",
+            "E002"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Based on expert testimony and standard of care",
+          "what_should_have_happened": "Neck should have been stabilized to prevent hyperextension",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E001",
+            "E002"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Neurological injury recognized as a known complication",
+        "severity": "Not documented in judgment",
+        "long_term_effects": "Not documented in judgment",
+        "evidence_ids": [
+          "E001",
+          "E003"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "None",
+        "key_findings": [
+          "Jury found in favor of the defense",
+          "Injury was a known complication and not due to negligence"
+        ],
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Not applicable",
+        "counterfactual": "Not applicable",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "December 2017",
+        "event": "Patient evaluated and surgery performed by Dr. Picha",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "15 minutes post-procedure",
+        "event": "Patient reported numbness in left arm and leg",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Patient reported numbness in left arm and leg",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "CT Scan",
+        "date": "Not documented in judgment",
+        "result": "Presence of air in neck and brain",
+        "interpretation": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "test_name": "MRI",
+        "date": "Not documented in judgment",
+        "result": "Spinal cord contusion at C4-C5",
+        "interpretation": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "test_name": "CT Scan",
+        "date": "Not documented in judgment",
+        "result": "Presence of free air in brain and spine",
+        "interpretation": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Spinal cord contusion",
+        "when_made": "Postoperative phase",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "diagnosis": "Neurological injury",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E001",
+          "E003"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Laminotomy with foraminotomy and decompression",
+        "date": "December 2017",
+        "provider": null,
+        "outcome": "Surgery completed",
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Spinal cord contusion",
+        "when_occurred": "Postoperative phase",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "complication": "Neurological injury",
+        "when_occurred": "Postoperative",
+        "severity": "Not documented in judgment",
+        "evidence_ids": [
+          "E001",
+          "E003"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to prevent hyperextension during LMA insertion",
+        "against": "CRNA Meyer",
+        "found_proven": false,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "allegation": "Intraoperative injury caused by Dr. Picha",
+        "against": "Dr. Picha",
+        "found_proven": false,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "No breach of standard of care by CRNA Meyer",
+        "legal_significance": "Defense verdict affirmed",
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "finding": "No breach of duty of care",
+        "legal_significance": "Injury was a known complication",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.007541478129713424,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-09 21:14:35.127839",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

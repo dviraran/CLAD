@@ -1,0 +1,458 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-9430891",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2023-09-21",
+  "url": "https://example.com/courtlistener-9430891",
+  "case_name": "Santamaria v. Cleveland Clinic Found.",
+  "neutral_citation": null,
+  "clinical_domain": "SURGERY_GENERAL",
+  "outcome_severity": "PERMANENT_SEVERE_DISABILITY",
+  "summary": {
+    "brief": "Santamaria v. Cleveland Clinic Found.. Medical malpractice case involving surgery general.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Santamaria was approximately 67 years old at the time and suffered diabetes, high blood pressure, and several lower urinary-tract conditions including nocturia",
+      "paragraph_ref": "18",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "The official diagnosis was benign prostatic hyperplasia (\u201cBPH\u201d), a common condition in older men in which the prostrate is enlarged and obstructs the flow of urine",
+      "paragraph_ref": "22",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. Canterbury discovered a preexisting condition at the time of the initial diagnosis, described as an extremely rare condition. Santamaria\u2019s bladder had become displaced and protruded into his scrotum.",
+      "paragraph_ref": "27",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "After the hernia surgery, sometime in mid-2018, Dr. Canterbury began discussing the next steps to treating the enlarged prostate.",
+      "paragraph_ref": "31",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "He recommended a transurethral resection of the prostrate; commonly referred to as a \u201cTURP\u201d for short.",
+      "paragraph_ref": "33",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "In executing the TURP procedure, there is no specific amount of prostatic tissue to be removed; the amount removed is case specific.",
+      "paragraph_ref": "39",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "It is undisputed that Dr. Canterbury took a limited approach in performing the TURP and removed a small amount of prostatic tissue around the bladder neck",
+      "paragraph_ref": "45",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "FACTUAL_FINDING",
+      "text": "After the procedure, however, Santamaria suffered known complications. He developed urinary tract infections and blood clots",
+      "paragraph_ref": "53",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Wright testified to finding no correlation between the amount of tissue removed and abatement of symptoms from BPH.",
+      "paragraph_ref": "104",
+      "speaker": "Dr. Wright"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Wright nonetheless concluded that Dr. Canterbury\u2019s approach met the minimum standard of care for performing the button TURP procedure.",
+      "paragraph_ref": "110",
+      "speaker": "Dr. Wright"
+    },
+    {
+      "evidence_id": "E011",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Babayan testified that in 27 percent of cases involving the TURP procedure, the patient needs to undergo a second TURP procedure to remove additional tissue.",
+      "paragraph_ref": "116",
+      "speaker": "Dr. Babayan"
+    },
+    {
+      "evidence_id": "E012",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Steinberg, \u201c[T]he standard of care is to remove the appropriate amount of tissue to relieve the obstruction so the urine will flow out at the end of the procedure.\u201d",
+      "paragraph_ref": "123",
+      "speaker": "Dr. Steinberg"
+    },
+    {
+      "evidence_id": "E013",
+      "type": "LEGAL_FINDING",
+      "text": "The jury considered that evidence and rendered a verdict in favor of Cleveland Clinic Foundation and Brian T. Canterbury, M.D.",
+      "paragraph_ref": "144",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E014",
+      "type": "COURT_REASONING",
+      "text": "The standard of care, as the jury was charged in this case, is whether the physician exercised his professional judgment in the given circumstance",
+      "paragraph_ref": "185",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E015",
+      "type": "LEGAL_FINDING",
+      "text": "The decision of the trial court is affirmed, and the jury\u2019s unanimous conclusion in favor of the Cleveland Clinic Foundation and Dr. Canterbury cannot",
+      "paragraph_ref": "238",
+      "speaker": "Court finding"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "67 years",
+        "sex": "male",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Pain and trouble urinating",
+      "history_of_present_illness": "Patient experienced nocturia and incomplete bladder emptying. Diagnosed with benign prostatic hyperplasia (BPH) and a rare condition where the bladder protruded into the scrotum.",
+      "past_medical_history": [
+        "Diabetes",
+        "High blood pressure",
+        "Lower urinary-tract conditions"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "genitourinary": "Not documented in judgment"
+        }
+      },
+      "initial_working_problem": "Benign prostatic hyperplasia with bladder herniation",
+      "known_constraints": null,
+      "initial_differential": [
+        "BPH",
+        "Bladder herniation"
+      ],
+      "critical_findings": [
+        "Bladder protrusion into scrotum"
+      ],
+      "urgency_level": "ELECTIVE",
+      "evidence_ids": [
+        "E001",
+        "E002",
+        "E003"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSULT_NOTE",
+        "name": "Urology Consultation",
+        "description": "Consultation for BPH and bladder herniation",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Recommendation for TURP procedure",
+          "detailed_findings": null,
+          "clinical_significance": "Plan to relieve urinary obstruction",
+          "decision_impact": "Proceed with TURP after hernia repair",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E004",
+          "E005"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with urinary symptoms and is diagnosed with BPH and bladder herniation",
+        "duration": "Not specified",
+        "key_events": [
+          {
+            "event": "Diagnosis of BPH and bladder herniation",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E002",
+              "E003"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "procedure",
+        "name": "TURP Procedure",
+        "description": "Transurethral resection of the prostate performed",
+        "duration": "Not specified",
+        "key_events": [
+          {
+            "event": "TURP procedure performed with limited tissue removal",
+            "timestamp": "End of 2018",
+            "evidence_ids": [
+              "E007"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "followup",
+        "name": "Post-Procedure Follow-up",
+        "description": "Patient experiences complications and seeks second opinion",
+        "duration": "9 months",
+        "key_events": [
+          {
+            "event": "Patient develops urinary tract infections and blood clots",
+            "timestamp": "Post-procedure",
+            "evidence_ids": [
+              "E008"
+            ]
+          },
+          {
+            "event": "Second TURP procedure performed",
+            "timestamp": "9 months after initial TURP",
+            "evidence_ids": [
+              "E072",
+              "E073"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "procedure",
+        "clinical_context": "Performing TURP procedure for BPH",
+        "prompt": "How much prostatic tissue should be removed during TURP?",
+        "action_type": "SELECT_TECHNIQUE",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Remove sufficient tissue to ensure unobstructed urine flow",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard of care requires removal of enough tissue to relieve obstruction"
+          },
+          {
+            "option_id": "B",
+            "description": "Remove minimal tissue around bladder neck",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Conservative approach to minimize risk of incontinence"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant removed minimal tissue around bladder neck",
+          "reasoning_stated": "Based on patient's other conditions and prior hernia repair",
+          "evidence_ids": [
+            "E007",
+            "E010"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Remove sufficient tissue to ensure unobstructed urine flow",
+          "standard_of_care_basis": "Expert testimony indicated more tissue should have been removed",
+          "evidence_ids": [
+            "E012",
+            "E013"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Insufficient tissue removal led to continued symptoms",
+          "what_should_have_happened": "More tissue should have been removed to relieve obstruction",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E012",
+            "E013",
+            "E014"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient required a second TURP procedure to relieve symptoms",
+        "severity": "MODERATE",
+        "long_term_effects": "Resolution of symptoms after second procedure",
+        "evidence_ids": [
+          "E072",
+          "E073"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "0",
+        "key_findings": [
+          "Dr. Canterbury's approach met the minimum standard of care",
+          "Jury found in favor of the Cleveland Clinic Foundation"
+        ],
+        "evidence_ids": [
+          "E013",
+          "E015"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Not applicable",
+        "counterfactual": "Not applicable",
+        "evidence_ids": [
+          "E013",
+          "E015"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "End of 2018",
+        "event": "TURP procedure performed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      {
+        "timestamp": "9 months after initial TURP",
+        "event": "Second TURP procedure performed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E072",
+          "E073"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [
+      {
+        "diagnosis": "Benign prostatic hyperplasia",
+        "when_made": "Initial presentation",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "TURP procedure",
+        "date": "End of 2018",
+        "provider": null,
+        "outcome": "Initial symptoms not fully relieved",
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      {
+        "treatment": "Second TURP procedure",
+        "date": "9 months after initial TURP",
+        "provider": null,
+        "outcome": "Complete remediation of symptoms",
+        "evidence_ids": [
+          "E072",
+          "E073"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Urinary tract infections and blood clots",
+        "when_occurred": "Post-procedure",
+        "severity": "Moderate",
+        "evidence_ids": [
+          "E008"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to remove sufficient prostatic tissue during TURP",
+        "against": "Dr. Canterbury",
+        "found_proven": false,
+        "evidence_ids": [
+          "E013"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Dr. Canterbury met the minimum standard of care",
+        "legal_significance": "No liability found",
+        "evidence_ids": [
+          "E013",
+          "E015"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.05747126436781609,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-16 16:12:20.678841",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

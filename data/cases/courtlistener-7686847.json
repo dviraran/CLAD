@@ -1,0 +1,512 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-7686847",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2017-12-01",
+  "url": "https://example.com/courtlistener-7686847",
+  "case_name": "Coleman v. Anniston HMA, LLC",
+  "neutral_citation": null,
+  "clinical_domain": "OBSTETRICS_GYNAECOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Coleman v. Anniston HMA, LLC. Medical malpractice case involving obstetrics gynaecology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Virginia Coleman was suffering from gastrointestinal bleeding, that she spent a night in the intensive-care unit of Stringfellow Memorial Hospital operated by Anniston HMA, LLC, d/b/a Stringfellow Memorial Hospital (\"the Hospital\"), and that she died the next day following surgery.",
+      "paragraph_ref": "7",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "The nurses had contacted him at 9:40 p.m. regarding Virginia's condition. He ordered tests and ordered that testing recur every two hours; if Virginia's blood levels fell below a certain value, she was to receive a transfusion.",
+      "paragraph_ref": "8",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Harry Moulis, one of Coleman's experts, opined that additional treatments were available and could have been given to Virginia had the nurses telephoned the doctor.",
+      "paragraph_ref": "8",
+      "speaker": "Dr. Harry Moulis"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. Black testified that he was \"fully aware\" of the condition that was causing the bleeding and that the records of Virginia's condition on the night in question showed no change that required the nurses to call him.",
+      "paragraph_ref": "8",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "LEGAL_FINDING",
+      "text": "The Hospital's second motion for a summary judgment, which the trial court granted.",
+      "paragraph_ref": "8",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "On March 27 at 8:30 a.m., Dr. Black examined Virginia. He recommended \"Dr. Shaikh scoping her urgently to determine the source of the bleeding.\"",
+      "paragraph_ref": "20",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "An endoscopy was performed on Virginia at 11:27 a.m. A bleeding lesion was found. It was cauterized and injected with a constricting agent, and a clip was applied.",
+      "paragraph_ref": "20",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "FACTUAL_FINDING",
+      "text": "Later that day, Virginia developed respiratory failure, was intubated, and ultimately suffered a full cardiac arrest. She was pronounced dead at 8:07 p.m. on March 27, 2009.",
+      "paragraph_ref": "20",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Moulis testified that it was his opinion that there was a delay in treatment of Virginia and that that delay caused her death.",
+      "paragraph_ref": "24",
+      "speaker": "Dr. Harry Moulis"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Henson contended that the Hospital's nursing staff had breached the standard of care because they failed to contact Virginia's physicians during the night of March 26, 2009, and early morning hours of March 27.",
+      "paragraph_ref": "23",
+      "speaker": "Lisa Henson"
+    },
+    {
+      "evidence_id": "E011",
+      "type": "LEGAL_FINDING",
+      "text": "Viewing the evidence in a light most favorable to Coleman, the nonmovant, and entertaining such reasonable inferences as a jury would have been free to draw, as we are required to do under our summary-judgment standard of review, I conclude that there is no disconnect between Henson's testimony and Dr. Moulis's testimony.",
+      "paragraph_ref": "40",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E012",
+      "type": "LEGAL_FINDING",
+      "text": "Coleman has presented substantial evidence that the Hospital breached the applicable standard of care in its treatment of Virginia.",
+      "paragraph_ref": "40",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E013",
+      "type": "LEGAL_FINDING",
+      "text": "Dr. Black's assertion that he would not have changed his course of treatment even if he had been told that Virginia's condition was worsening does not conclusively establish that the nurses' care and treatment of Virginia during the overnight hours in no way caused or contributed to her death.",
+      "paragraph_ref": "45",
+      "speaker": "Judge's analysis"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "84 years",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Vomiting blood, headaches, and abdominal pain",
+      "history_of_present_illness": "Virginia Coleman presented to the emergency department with a history of vomiting blood, headaches, and abdominal pain. She had a past medical history of a bleeding ulcer and three cardiac stents and was on anticoagulants.",
+      "past_medical_history": [
+        "Bleeding ulcer",
+        "Cardiac stents"
+      ],
+      "medications": [
+        "Anticoagulants"
+      ],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Hypotension noted",
+          "heart_rate": "Tachycardia noted",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "general": "Pale and cool skin",
+          "neurological": "Confusion noted"
+        }
+      },
+      "initial_working_problem": "Acute upper gastrointestinal bleed",
+      "known_constraints": null,
+      "initial_differential": [
+        "Upper gastrointestinal bleed",
+        "Migraine",
+        "Respiratory failure"
+      ],
+      "critical_findings": [
+        "Massive GI bleed",
+        "Decreased urine output"
+      ],
+      "urgency_level": "CRITICAL",
+      "evidence_ids": [
+        "E001",
+        "E016",
+        "E017"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "LAB",
+        "name": "Complete Blood Count",
+        "description": "To assess hemoglobin levels and overall blood loss",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not documented in judgment",
+          "detailed_findings": null,
+          "clinical_significance": "Not documented in judgment",
+          "decision_impact": "Not documented in judgment",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "IMAGING",
+        "name": "Endoscopy",
+        "description": "To identify the source of gastrointestinal bleeding",
+        "available_phase": "decision",
+        "reveal": {
+          "result_summary": "Bleeding lesion found, cauterized, and treated",
+          "detailed_findings": null,
+          "clinical_significance": "Identified source of bleeding",
+          "decision_impact": "Allowed for targeted treatment",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Emergency Presentation",
+        "description": "Patient presents to ED with acute symptoms",
+        "duration": "3 hours",
+        "key_events": [
+          {
+            "event": "Patient arrives at ED",
+            "timestamp": "26 March 2009 11:50",
+            "evidence_ids": [
+              "E016"
+            ]
+          },
+          {
+            "event": "Admitted to ICU",
+            "timestamp": "26 March 2009 14:30",
+            "evidence_ids": [
+              "E017"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "ICU Monitoring",
+        "description": "Patient monitored in ICU with ongoing GI bleed",
+        "duration": "Overnight",
+        "key_events": [
+          {
+            "event": "Nurses contact Dr. Black",
+            "timestamp": "26 March 2009 21:40",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "decision",
+        "name": "Morning Assessment",
+        "description": "Physician assesses patient in the morning",
+        "duration": "3 hours",
+        "key_events": [
+          {
+            "event": "Dr. Black examines patient",
+            "timestamp": "27 March 2009 08:30",
+            "evidence_ids": [
+              "E006"
+            ]
+          },
+          {
+            "event": "Endoscopy performed",
+            "timestamp": "27 March 2009 11:27",
+            "evidence_ids": [
+              "E007"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient in ICU with ongoing gastrointestinal bleeding",
+        "prompt": "Should the nursing staff contact the physician again during the night?",
+        "action_type": "ESCALATE_CARE",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Contact the physician to report worsening condition",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard of care requires notifying physician of significant changes"
+          },
+          {
+            "option_id": "B",
+            "description": "Do not contact the physician, continue monitoring",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Nurses believed no change required notification"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Nurses did not contact the physician during the night",
+          "reasoning_stated": "Believed no change required notification",
+          "evidence_ids": [
+            "E010",
+            "E018"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Nurses should have contacted the physician",
+          "standard_of_care_basis": "Expert testimony indicated need for physician notification",
+          "evidence_ids": [
+            "E012",
+            "E024"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to notify physician of worsening condition",
+          "what_should_have_happened": "Nurses should have escalated care by contacting the physician",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E012",
+            "E024"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient developed respiratory failure and cardiac arrest, pronounced dead",
+        "severity": "FATAL",
+        "long_term_effects": "Not applicable",
+        "evidence_ids": [
+          "E008"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "0",
+        "key_findings": [
+          "Dr. Black's testimony indicated no change in treatment would have occurred",
+          "Summary judgment granted in favor of the Hospital"
+        ],
+        "evidence_ids": [
+          "E005",
+          "E013"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Failure to notify physician",
+        "counterfactual": "Notification might not have changed outcome",
+        "evidence_ids": [
+          "E005",
+          "E013"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "26 March 2009 11:50",
+        "event": "Patient arrives at ED",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E016"
+        ]
+      },
+      {
+        "timestamp": "26 March 2009 14:30",
+        "event": "Admitted to ICU",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E017"
+        ]
+      },
+      {
+        "timestamp": "26 March 2009 21:40",
+        "event": "Nurses contact Dr. Black",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "27 March 2009 08:30",
+        "event": "Dr. Black examines patient",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "timestamp": "27 March 2009 11:27",
+        "event": "Endoscopy performed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      {
+        "timestamp": "27 March 2009 20:07",
+        "event": "Patient pronounced dead",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E008"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Endoscopy",
+        "date": "27 March 2009",
+        "result": "Bleeding lesion found and treated",
+        "interpretation": null,
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Upper gastrointestinal bleed",
+        "when_made": "26 March 2009",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E017"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Blood transfusion",
+        "date": "26 March 2009",
+        "provider": null,
+        "outcome": "Partial stabilization",
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "treatment": "Endoscopic intervention",
+        "date": "27 March 2009",
+        "provider": null,
+        "outcome": "Bleeding lesion treated",
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Respiratory failure",
+        "when_occurred": "27 March 2009",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E008"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to notify physician of worsening condition",
+        "against": "Hospital nursing staff",
+        "found_proven": false,
+        "evidence_ids": [
+          "E010"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "No breach of duty by nursing staff",
+        "legal_significance": "Summary judgment in favor of Hospital",
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.22807017543859648,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-16 15:35:08.221704",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

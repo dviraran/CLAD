@@ -1,0 +1,374 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10318361",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2025-01-22",
+  "url": "https://example.com/courtlistener-10318361",
+  "case_name": "Earneka Wiggins v. Hackensack Meridian Health",
+  "neutral_citation": null,
+  "clinical_domain": "SURGERY_ORTHOPAEDIC",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Earneka Wiggins v. Hackensack Meridian Health. Medical malpractice case involving surgery orthopaedic.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Plaintiffs, the administrators of the Estate of April Carden, filed a medical malpractice complaint against defendants Hackensack Meridian Health d/b/a JFK University Medical Center (JFK), Alok Goyal, M.D., and South Plainfield Primary Care (SPPC) (collectively, defendants).",
+      "paragraph_ref": "6",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Plaintiffs allege that Carden’s death was directly attributable to Allopurinol prescribed by Dr. Goyal, that Dr. Goyal’s negligence caused Carden’s death, and that JFK and SPPC were vicariously liable because Dr. Goyal was an “agent, servant, or employee” of both.",
+      "paragraph_ref": "6",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Plaintiffs provided each defendant with an AOM from Dr. Stella Jones Fitzgibbons, who is board certified by the American Board of Internal Medicine.",
+      "paragraph_ref": "7",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "LEGAL_FINDING",
+      "text": "The trial judge denied the motions to dismiss the complaint. He found “that the ‘care and treatment at issue’ was the prescribing of Allopurinol, and the ‘care or treatment at issue involves internal [medicine].’”",
+      "paragraph_ref": "8",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "LEGAL_FINDING",
+      "text": "The Appellate Division granted defendants’ motion for leave to appeal from the orders denying their motions to dismiss and for reconsideration and reversed those orders, concluding that plaintiffs were required to “serve an AOM from a physician board certified in each of [Dr. Goyal’s] specialties.”",
+      "paragraph_ref": "9",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "COURT_REASONING",
+      "text": "Under Buck, when “the treatment involved may fall within [a] physician’s multiple specialty areas” -- as is the case here -- “an [AOM] from a physician specializing in either area will suffice.”",
+      "paragraph_ref": "3",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "LEGAL_FINDING",
+      "text": "We therefore reverse the Appellate Division’s judgment, reinstate the trial court orders denying defendants’ motions to dismiss and motions for reconsideration, and remand for further proceedings.",
+      "paragraph_ref": "448",
+      "speaker": "Court finding"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "unknown",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Severe allergic reaction",
+      "history_of_present_illness": "In 2016, Carden experienced a severe allergic reaction to Tramadol and/or Allopurinol and was diagnosed with Stevens-Johnson Syndrome (SJS).",
+      "past_medical_history": [
+        "Stevens-Johnson Syndrome"
+      ],
+      "medications": [
+        "Tramadol",
+        "Allopurinol"
+      ],
+      "allergies": [
+        "Tramadol",
+        "Allopurinol"
+      ],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "skin": "Painful blisters and lesions on the skin and mucous membranes"
+        }
+      },
+      "initial_working_problem": "Severe allergic reaction potentially due to medication",
+      "known_constraints": null,
+      "initial_differential": [
+        "Stevens-Johnson Syndrome",
+        "Drug reaction"
+      ],
+      "critical_findings": [
+        "Severe allergic reaction",
+        "History of SJS"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E002",
+        "E059"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "LAB",
+        "name": "Blood tests",
+        "description": "To assess for systemic involvement and confirm diagnosis",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not documented in judgment",
+          "detailed_findings": null,
+          "clinical_significance": "Not documented in judgment",
+          "decision_impact": "Not documented in judgment",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": []
+      },
+      {
+        "request_id": "R002",
+        "type": "CONSULT_NOTE",
+        "name": "Allergy/Immunology consult",
+        "description": "Consult to evaluate and manage drug allergies",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not documented in judgment",
+          "detailed_findings": null,
+          "clinical_significance": "Not documented in judgment",
+          "decision_impact": "Not documented in judgment",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": []
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with severe allergic reaction",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Diagnosis of Stevens-Johnson Syndrome",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E059"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Subsequent Medical Treatment",
+        "description": "Patient receives treatment for allergic reaction",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Prescribed Allopurinol",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient with known allergy to Allopurinol prescribed the medication again",
+        "prompt": "Should Allopurinol be prescribed to this patient?",
+        "action_type": "PRESCRIBE",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Do not prescribe Allopurinol due to known allergy",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Prescribing a medication known to cause severe allergic reaction is contraindicated."
+          },
+          {
+            "option_id": "B",
+            "description": "Prescribe Allopurinol",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Defendant prescribed Allopurinol despite known allergy."
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant prescribed Allopurinol",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E002",
+            "E068"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Allopurinol should not have been prescribed",
+          "standard_of_care_basis": "Known allergy contraindicates prescription",
+          "evidence_ids": [
+            "E002",
+            "E068"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Prescribing Allopurinol to a patient with a known severe allergy to the drug is a deviation from standard care.",
+          "what_should_have_happened": "The patient should have been prescribed an alternative medication or managed without Allopurinol.",
+          "legal_standard_applied": "Standard of care as established by expert testimony and known medical guidelines.",
+          "evidence_ids": [
+            "E002",
+            "E068"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient passed away from cardiopulmonary arrest due to multiple organ failure, bacteremia, and Stevens-Johnson Syndrome.",
+        "severity": "FATAL",
+        "long_term_effects": "Not applicable",
+        "evidence_ids": [
+          "E071"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Breach of duty in prescribing Allopurinol despite known allergy",
+          "Causation established - prescription led to fatal outcome"
+        ],
+        "evidence_ids": [
+          "E002",
+          "E071"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Prescribing Allopurinol despite known allergy",
+        "counterfactual": "Avoiding Allopurinol would have prevented the fatal reaction",
+        "evidence_ids": [
+          "E002",
+          "E071"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "Not documented in judgment",
+        "event": "Patient diagnosed with Stevens-Johnson Syndrome",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E059"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [
+      {
+        "diagnosis": "Stevens-Johnson Syndrome",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E059"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Prescribed Allopurinol",
+        "date": "Not documented in judgment",
+        "provider": null,
+        "outcome": "Led to severe allergic reaction",
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Cardiopulmonary arrest due to multiple organ failure, bacteremia, and Stevens-Johnson Syndrome",
+        "when_occurred": "Not documented in judgment",
+        "severity": "Fatal",
+        "evidence_ids": [
+          "E071"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to recognize and avoid prescribing Allopurinol despite known allergy",
+        "against": "Dr. Goyal",
+        "found_proven": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care by prescribing Allopurinol",
+        "legal_significance": "Breach of standard of care",
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "TREATMENT_PROCEDURE_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.015486725663716814,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-09 18:04:09.046120",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

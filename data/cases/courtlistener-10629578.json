@@ -1,0 +1,512 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10629578",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2014-03-12",
+  "url": "https://example.com/courtlistener-10629578",
+  "case_name": "Tammie Gardner v. William Dotie Jackson, M.D., and Mississippi Premier Plastic Surgery PLLC",
+  "neutral_citation": null,
+  "clinical_domain": "OTHER",
+  "outcome_severity": "PERMANENT_SEVERE_DISABILITY",
+  "summary": {
+    "brief": "Tammie Gardner v. William Dotie Jackson, M.D., and Mississippi Premier Plastic Surgery PLLC. Medical malpractice case involving other.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "On March 12, 2014, Dr. William Dotie Jackson performed a breast augmentation and mastopexy operation on Tammie Gardner.",
+      "paragraph_ref": "8",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "After the surgery, both of Gardner’s breasts became infected and ultimately had to be removed.",
+      "paragraph_ref": "9",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "On March 17, 2014, Gardner returned to Dr. Jackson’s office for her first follow-up appointment.",
+      "paragraph_ref": "39",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "Gardner told Dr. Jackson that she had a low-grade fever the night before, but after she took Tylenol, her fever subsided.",
+      "paragraph_ref": "40",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "On March 24, 2014, Gardner returned for her next follow-up visit.",
+      "paragraph_ref": "44",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "Gardner told Dr. Jackson that she had a “blood blister” next to her right nipple.",
+      "paragraph_ref": "45",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "On March 28, 2014, Gardner left a voicemail at Dr. Jackson’s office, complaining of a fever and “pus-like” drainage from her left nipple.",
+      "paragraph_ref": "50",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "FACTUAL_FINDING",
+      "text": "On that Monday, Gardner arrived at Dr. Jackson’s office. She was “very ill.”",
+      "paragraph_ref": "56",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. Jackson rushed Gardner to surgery, where he operated on her left breast in an attempt to save her breast from requiring removal.",
+      "paragraph_ref": "58",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. Jackson, nevertheless, had to remove Gardner’s left breast in a subsequent operation.",
+      "paragraph_ref": "60",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E011",
+      "type": "FACTUAL_FINDING",
+      "text": "After the removal of the left breast, Gardner’s right breast started to show signs of infection, and after an additional surgery, Dr. Jackson removed Gardner’s right breast as well.",
+      "paragraph_ref": "61",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E012",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Nease testified that “[t]he decision to make about which pedicle [a surgeon is] going to utilize in a patient like Mrs. Gardner . . . [is] critically important” to preserve blood flow to the breast tissue.",
+      "paragraph_ref": "81",
+      "speaker": "Dr. Nease"
+    },
+    {
+      "evidence_id": "E013",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Nease explained that “pedicle planning is critically important,” and not compromising blood flow to the breast is “one of the most basic things you teach.”",
+      "paragraph_ref": "85",
+      "speaker": "Dr. Nease"
+    },
+    {
+      "evidence_id": "E014",
+      "type": "LEGAL_FINDING",
+      "text": "The trial court granted the motion for a directed verdict in favor of both defendants, finding that Gardner’s expert never established the nationally recognized standard of care.",
+      "paragraph_ref": "120",
+      "speaker": "Trial court"
+    },
+    {
+      "evidence_id": "E015",
+      "type": "COURT_REASONING",
+      "text": "Gardner failed to present expert testimony that established an objective, nationally accepted standard of care, she failed to make her prima facie case.",
+      "paragraph_ref": "194",
+      "speaker": "Court reasoning"
+    },
+    {
+      "evidence_id": "E016",
+      "type": "LEGAL_FINDING",
+      "text": "For the reasons stated above, we find that the trial court did not err in granting Dr. Jackson and Mississippi Premier Plastic Surgery PLLC’s motion for a directed verdict.",
+      "paragraph_ref": "197",
+      "speaker": "Court conclusion"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Pain in both breasts, asymmetry, and hardening of implants",
+      "history_of_present_illness": "Patient presented with complaints of pain in both breasts, asymmetry, and hardening of implants. Previous surgeries included breast reduction and augmentation with no complications.",
+      "past_medical_history": [
+        "Breast reduction",
+        "Breast augmentation",
+        "Abdominoplasty"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "breasts": "Swollen breasts, intact incisions, no drainage initially"
+        }
+      },
+      "initial_working_problem": "Breast pain and implant issues",
+      "known_constraints": null,
+      "initial_differential": [
+        "Implant complications",
+        "Infection"
+      ],
+      "critical_findings": [
+        "Swollen breasts",
+        "Blood blister next to right nipple"
+      ],
+      "urgency_level": "ROUTINE",
+      "evidence_ids": [
+        "E001",
+        "E003",
+        "E004",
+        "E005",
+        "E006"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSULT_NOTE",
+        "name": "Follow-up visit note",
+        "description": "Details of follow-up visits post-surgery",
+        "available_phase": "followup",
+        "reveal": {
+          "result_summary": "Patient reported low-grade fever, blood blister, and later pus-like drainage",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates potential infection",
+          "decision_impact": "Should prompt further investigation and possible intervention",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E003",
+          "E005",
+          "E007"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Consultation",
+        "description": "Patient presents with breast pain and implant issues",
+        "duration": "Date not specified in judgment",
+        "key_events": [
+          {
+            "event": "Consultation with Dr. Jackson",
+            "timestamp": "February 6, 2014",
+            "evidence_ids": [
+              "E023",
+              "E024",
+              "E025"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "procedure",
+        "name": "Surgical Procedure",
+        "description": "Breast augmentation and mastopexy performed",
+        "duration": "March 12, 2014",
+        "key_events": [
+          {
+            "event": "Surgery performed using inferior pedicle",
+            "timestamp": "March 12, 2014",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "followup",
+        "name": "Post-operative Follow-up",
+        "description": "Follow-up visits and complications",
+        "duration": "March 17, 2014 to March 31, 2014",
+        "key_events": [
+          {
+            "event": "First follow-up visit",
+            "timestamp": "March 17, 2014",
+            "evidence_ids": [
+              "E003"
+            ]
+          },
+          {
+            "event": "Second follow-up visit",
+            "timestamp": "March 24, 2014",
+            "evidence_ids": [
+              "E005"
+            ]
+          },
+          {
+            "event": "Patient reports fever and drainage",
+            "timestamp": "March 28, 2014",
+            "evidence_ids": [
+              "E007"
+            ]
+          },
+          {
+            "event": "Emergency surgery due to infection",
+            "timestamp": "March 31, 2014",
+            "evidence_ids": [
+              "E008",
+              "E009"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "procedure",
+        "clinical_context": "Pre-operative planning for breast augmentation and mastopexy",
+        "prompt": "What pedicle approach should be used for the surgery?",
+        "action_type": "SELECT_TECHNIQUE",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Use superior pedicle approach",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Maintains blood supply consistent with previous surgeries"
+          },
+          {
+            "option_id": "B",
+            "description": "Use inferior pedicle approach",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Contradicts previous surgical approach, risking blood supply"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant used inferior pedicle approach",
+          "reasoning_stated": "Defendant initially planned inferior pedicle but did not update plan after reviewing previous surgery notes",
+          "evidence_ids": [
+            "E001",
+            "E002",
+            "E012",
+            "E013"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Superior pedicle should have been used",
+          "standard_of_care_basis": "Expert testimony indicated importance of maintaining consistent pedicle approach",
+          "evidence_ids": [
+            "E012",
+            "E013"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to adjust surgical plan based on previous surgeries",
+          "what_should_have_happened": "Superior pedicle should have been used to maintain blood supply",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E012",
+            "E013",
+            "E014"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Both breasts became infected and were removed",
+        "severity": "PERMANENT_SEVERE_DISABILITY",
+        "long_term_effects": "Loss of both breasts, potential psychological impact",
+        "evidence_ids": [
+          "E002",
+          "E010",
+          "E011"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "0",
+        "key_findings": [
+          "Plaintiff failed to establish the nationally accepted standard of care",
+          "Directed verdict granted in favor of defendants"
+        ],
+        "evidence_ids": [
+          "E014",
+          "E015",
+          "E016"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Failure to establish standard of care",
+        "counterfactual": "Not applicable as no breach was legally established",
+        "evidence_ids": [
+          "E014",
+          "E015",
+          "E016"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "March 12, 2014",
+        "event": "Breast augmentation and mastopexy performed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "March 17, 2014",
+        "event": "First follow-up visit",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "timestamp": "March 24, 2014",
+        "event": "Second follow-up visit",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "timestamp": "March 28, 2014",
+        "event": "Patient reports fever and drainage",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      {
+        "timestamp": "March 31, 2014",
+        "event": "Emergency surgery due to infection",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E008",
+          "E009"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [
+      {
+        "diagnosis": "Breast infection",
+        "when_made": "March 31, 2014",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E008"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Emergency surgery",
+        "date": "March 31, 2014",
+        "provider": null,
+        "outcome": "Attempt to save breast, ultimately removed",
+        "evidence_ids": [
+          "E009",
+          "E010"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Infection leading to removal of both breasts",
+        "when_occurred": "March 2014",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E002",
+          "E010",
+          "E011"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to use correct pedicle approach",
+        "against": "Dr. Jackson",
+        "found_proven": false,
+        "evidence_ids": [
+          "E014",
+          "E015"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "No breach of standard of care established",
+        "legal_significance": "Directed verdict in favor of defendants",
+        "evidence_ids": [
+          "E014",
+          "E015",
+          "E016"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "TREATMENT_PROCEDURE_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.07920792079207921,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-09 20:27:12.113804",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

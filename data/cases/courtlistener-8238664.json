@@ -1,0 +1,628 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-8238664",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2012-04-17",
+  "url": "https://example.com/courtlistener-8238664",
+  "case_name": "Jandre v. Wisconsin Injured Patients & Families Compensation Fund",
+  "neutral_citation": null,
+  "clinical_domain": "PAEDIATRICS",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Jandre v. Wisconsin Injured Patients & Families Compensation Fund. Medical malpractice case involving paediatrics.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "The Jandres asserted two claims: (1) Dr. Bullis negligently diagnosed Jandre with Bell's palsy; and (2) Dr. Bullis breached her duty to inform a patient under Wis. Stat. § 448.30 (2007-08), by failing to inform Jandre of a diagnostic test (a carotid ultrasound) that was available to rule out the possibility of a stroke.",
+      "paragraph_ref": "2",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "The jury found that Dr. Bullis's diagnosis of Bell's palsy was not negligent and also found that Dr. Bullis was negligent with respect to her duty to inform the patient.",
+      "paragraph_ref": "3",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "On June 13, 2003, the coffee Jandre was drinking began coming out of his nose, and he began drooling and slurring his speech. The left side of his face drooped. He experienced about 20 minutes of dizziness and weakness in his legs.",
+      "paragraph_ref": "39",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "Jandre was evaluated at the emergency room by Dr. Bullis, who read Jandre's chart, took Jandre's medical, social, and family history, and performed a physical examination.",
+      "paragraph_ref": "41",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. Bullis's differential diagnosis included 'Bell's Palsy, stroke, TIA, all of those stroke syndromes including ischemic as well as hemorrhagic, tumors, syndromes like— things like Guillain-Barre, MS [multiple sclerosis], and multiple other things like that.'",
+      "paragraph_ref": "41",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. Bullis ordered a CT scan, which could rule out a hemorrhagic stroke and brain tumors. The results were normal. A CT scan will not detect an ischemic stroke.",
+      "paragraph_ref": "43",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. Bullís had the option of ordering a carotid ultrasound to assess the state of Jandre's carotid arteries, but she chose not to.",
+      "paragraph_ref": "46",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "FACTUAL_FINDING",
+      "text": "Three days after seeing Dr. Bullis in the emergency room, Jandre saw a family medicine physician who noted that Jandre exhibited signs of resolving Bell's palsy.",
+      "paragraph_ref": "53",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "FACTUAL_FINDING",
+      "text": "On the evening of June 24, 2003, Jandre suffered a full-blown stroke, which impaired his physical and cognitive abilities.",
+      "paragraph_ref": "54",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Two expert witnesses at trial testified that they would have ordered a carotid ultrasound for Jandre on June 13, 2003; that Jandre had experienced a TIA or RIND on that day; that a carotid ultrasound would have revealed the blockage in Jandre's carotid artery; and that surgery could have been performed, reducing the likelihood that Jandre would suffer a stroke.",
+      "paragraph_ref": "54",
+      "speaker": "Expert witnesses"
+    },
+    {
+      "evidence_id": "E011",
+      "type": "LEGAL_FINDING",
+      "text": "The jury found that Dr. Bullis's decision not to employ carotid ultrasound during her diagnosis of Mr. Jandre's ailment was not negligent.",
+      "paragraph_ref": "476",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E012",
+      "type": "LEGAL_FINDING",
+      "text": "The claim of informed consent should be dismissed. In addition, because the verdicts for Mr. Jandre's two claims are inconsistent, pursuant to our directive in Westfall, I would order a new trial on the claim of negligent care and treatment.",
+      "paragraph_ref": "479",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "unknown",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Drooling, slurred speech, and facial droop",
+      "history_of_present_illness": "On June 13, 2003, the coffee Jandre was drinking began coming out of his nose, and he began drooling and slurring his speech. The left side of his face drooped. He experienced about 20 minutes of dizziness and weakness in his legs.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "neurological": "Facial droop, slurred speech, dizziness, and leg weakness noted"
+        }
+      },
+      "initial_working_problem": "Possible neurological event",
+      "known_constraints": null,
+      "initial_differential": [
+        "Bell's Palsy",
+        "Stroke",
+        "TIA",
+        "Guillain-Barre syndrome",
+        "Multiple sclerosis"
+      ],
+      "critical_findings": [
+        "Facial droop",
+        "Slurred speech",
+        "Dizziness",
+        "Leg weakness"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E003",
+        "E004",
+        "E005"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "CT Scan",
+        "description": "CT scan to rule out hemorrhagic stroke and brain tumors",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Normal",
+          "detailed_findings": null,
+          "clinical_significance": "Ruled out hemorrhagic stroke and brain tumors",
+          "decision_impact": "Did not rule out ischemic stroke",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "IMAGING",
+        "name": "Carotid Ultrasound",
+        "description": "Non-invasive test to assess carotid artery blockage",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not performed",
+          "detailed_findings": null,
+          "clinical_significance": "Could have identified carotid artery blockage",
+          "decision_impact": "Would have prompted surgical intervention",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": [
+          "E007",
+          "E010"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Emergency Presentation",
+        "description": "Patient presents to ED with acute neurological symptoms",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Patient arrives at ED",
+            "timestamp": "June 13, 2003",
+            "evidence_ids": [
+              "E003"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Diagnostic Workup",
+        "description": "Initial diagnostic tests and evaluations",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "CT scan performed",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E006"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient in ED with symptoms suggestive of neurological event",
+        "prompt": "What additional diagnostic test should be considered?",
+        "action_type": "ORDER_TEST",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Order carotid ultrasound",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "More reliable than auscultation for detecting carotid artery blockage"
+          },
+          {
+            "option_id": "B",
+            "description": "Rely on auscultation of carotid arteries",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Auscultation is a poor screening test for carotid artery blockage"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant relied on auscultation of carotid arteries",
+          "reasoning_stated": "Defendant considered carotid ultrasound unnecessary",
+          "evidence_ids": [
+            "E045"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Carotid ultrasound should have been ordered",
+          "standard_of_care_basis": "Expert testimony indicated it was necessary to rule out ischemic stroke",
+          "evidence_ids": [
+            "E010"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Auscultation is unreliable for detecting significant carotid artery blockage",
+          "what_should_have_happened": "Carotid ultrasound should have been performed to rule out ischemic stroke",
+          "legal_standard_applied": "Reasonable patient standard",
+          "evidence_ids": [
+            "E010",
+            "E011"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient suffered a full-blown stroke",
+        "severity": "PERMANENT_SEVERE_DISABILITY",
+        "long_term_effects": "Impaired physical and cognitive function",
+        "evidence_ids": [
+          "E009"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "None",
+        "key_findings": [
+          "Dr. Bullis was not negligent in her diagnosis of Bell's palsy",
+          "Informed consent claim dismissed"
+        ],
+        "evidence_ids": [
+          "E002",
+          "E012"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Failure to order carotid ultrasound",
+        "counterfactual": "Carotid ultrasound could have identified carotid artery blockage",
+        "evidence_ids": [
+          "E010",
+          "E011"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "June 13, 2003",
+        "event": "Patient arrives at ED",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "timestamp": "June 13, 2003",
+        "event": "Patient experiences symptoms of drooling and coffee coming out of nose",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Patient evaluated by Dr. Bullis in ED",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "CT scan performed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "timestamp": "June 24, 2003",
+        "event": "Patient suffers full-blown stroke",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E009"
+        ]
+      },
+      {
+        "timestamp": "June 13, 2003",
+        "event": "Patient arrives at ED",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "timestamp": "June 13, 2003",
+        "event": "Patient experiences symptoms while drinking coffee",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Patient evaluated by Dr. Bullis in ED",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "CT Scan",
+        "date": "Not documented in judgment",
+        "result": "Normal",
+        "interpretation": null,
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "test_name": "CT Scan",
+        "date": "Not documented in judgment",
+        "result": "No hemorrhagic stroke or brain tumors",
+        "interpretation": null,
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "test_name": "CT Scan",
+        "date": "Date not specified in judgment",
+        "result": "Normal",
+        "interpretation": null,
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "test_name": "CT Scan",
+        "date": "Date not specified in judgment",
+        "result": "Not detailed in judgment",
+        "interpretation": null,
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Bell's Palsy",
+        "when_made": "June 13, 2003",
+        "made_by": null,
+        "correct": false,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "diagnosis": "Bell's palsy",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": false,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "diagnosis": "Bell's palsy",
+        "when_made": "Date not specified in judgment",
+        "made_by": null,
+        "correct": false,
+        "evidence_ids": [
+          "E004",
+          "E005"
+        ]
+      },
+      {
+        "diagnosis": "Stroke",
+        "when_made": "June 24, 2003",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E009"
+        ]
+      },
+      {
+        "diagnosis": "Bell's palsy",
+        "when_made": "Date not specified in judgment",
+        "made_by": null,
+        "correct": false,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Medication for Bell's Palsy",
+        "date": "Not documented in judgment",
+        "provider": null,
+        "outcome": "Not effective in preventing stroke",
+        "evidence_ids": [
+          "E050"
+        ]
+      },
+      {
+        "treatment": "Medications for Bell's palsy",
+        "date": "Date not specified in judgment",
+        "provider": null,
+        "outcome": "No improvement, incorrect treatment",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Full-blown stroke",
+        "when_occurred": "June 24, 2003",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E009"
+        ]
+      },
+      {
+        "complication": "Full-blown stroke",
+        "when_occurred": "June 24, 2003",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E009"
+        ]
+      },
+      {
+        "complication": "Significant stroke",
+        "when_occurred": "June 24, 2003",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E009"
+        ]
+      },
+      {
+        "complication": "Full-blown stroke",
+        "when_occurred": "June 24, 2003",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E009"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to inform about carotid ultrasound",
+        "against": "Dr. Bullis",
+        "found_proven": true,
+        "evidence_ids": [
+          "E065"
+        ]
+      },
+      {
+        "allegation": "Failure to inform about carotid ultrasound",
+        "against": "Dr. Bullis",
+        "found_proven": true,
+        "evidence_ids": [
+          "E146",
+          "E149"
+        ]
+      },
+      {
+        "allegation": "Failure to order carotid ultrasound",
+        "against": "Dr. Bullis",
+        "found_proven": true,
+        "evidence_ids": [
+          "E010",
+          "E011"
+        ]
+      },
+      {
+        "allegation": "Failure to order carotid ultrasound",
+        "against": "Dr. Bullis",
+        "found_proven": false,
+        "evidence_ids": [
+          "E011"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Breach of duty to inform",
+        "legal_significance": "Reasonable patient standard not met",
+        "evidence_ids": [
+          "E065"
+        ]
+      },
+      {
+        "finding": "Breach of duty to inform patient",
+        "legal_significance": "Reasonable patient standard not met",
+        "evidence_ids": [
+          "E146",
+          "E149"
+        ]
+      },
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Failure to inform about carotid ultrasound",
+        "evidence_ids": [
+          "E012"
+        ]
+      },
+      {
+        "finding": "Dr. Bullis was not negligent in her diagnosis",
+        "legal_significance": "No breach of standard of care",
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "INFORMED_CONSENT"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.024390243902439025,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-16 14:43:09.036218",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

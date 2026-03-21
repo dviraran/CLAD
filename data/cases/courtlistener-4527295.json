@@ -1,0 +1,461 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-4527295",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2018-08-16",
+  "url": "https://example.com/courtlistener-4527295",
+  "case_name": "Phelps v. Dr. Joseph T. West",
+  "neutral_citation": null,
+  "clinical_domain": "PAEDIATRICS",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Phelps v. Dr. Joseph T. West. Medical malpractice case involving paediatrics.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. West performed a catheterization on Mr. Phelps on August 22, 2014.",
+      "paragraph_ref": "11",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. West discovered that three of Mr. Phelps’ coronary arteries were blocked, including 95% of the right coronary artery.",
+      "paragraph_ref": "37",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. West diagnosed Mr. Phelps with multi-level coronary artery disease and determined that he needed to undergo coronary artery bypass graft (CABG) surgery.",
+      "paragraph_ref": "39",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "On August 29, 2014, Mr. Phelps met with the surgeon, Dr. Paul Davis, who agreed with Dr. West that Mr. Phelps should undergo CABG surgery.",
+      "paragraph_ref": "46",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "On September 19, 2014, before the surgery could be performed, Mr. Phelps developed an acute myocardial infarction (MI) and went into cardiac arrest.",
+      "paragraph_ref": "54",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "He died the following day, September 20, 2014.",
+      "paragraph_ref": "56",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "EXPERT_TESTIMONY",
+      "text": "It is Dr. Fifer’s opinion that Dr. West complied with the applicable standards of care at all times hereto.",
+      "paragraph_ref": "91",
+      "speaker": "Dr. Fifer"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Fifer believes that it was reasonable for Dr. West to discharge Mr. Phelps after his diagnostic catheterization based on the findings during the catheterization and Mr. Phelps’ clinical scenario.",
+      "paragraph_ref": "94",
+      "speaker": "Dr. Fifer"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Fifer will also opine that it is not the standard of care to keep patients in the hospital when they have stable angina.",
+      "paragraph_ref": "96",
+      "speaker": "Dr. Fifer"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "LEGAL_FINDING",
+      "text": "The jury found Defendants not liable. The jury awarded no damages.",
+      "paragraph_ref": "14",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E011",
+      "type": "LEGAL_FINDING",
+      "text": "NOW, THEREFORE, IT IS HEREBY ORDERED that the judgment of the Superior Court be, and the same is hereby, AFFIRMED.",
+      "paragraph_ref": "296",
+      "speaker": "Justice Valihura"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "male",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Chest pain",
+      "history_of_present_illness": "Mr. Phelps was referred by his regular cardiologist to Dr. West for further evaluation. On August 22, 2014, Dr. West performed a cardiac catheterization and discovered significant coronary artery blockages.",
+      "past_medical_history": [
+        "Coronary artery disease"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "cardiovascular": "Stable angina, no ongoing chest pain at rest"
+        }
+      },
+      "initial_working_problem": "Multi-level coronary artery disease",
+      "known_constraints": null,
+      "initial_differential": [
+        "Coronary artery disease"
+      ],
+      "critical_findings": [
+        "95% blockage of the right coronary artery"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002",
+        "E003"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "Cardiac Catheterization",
+        "description": "Diagnostic cardiac catheterization to assess coronary artery blockages",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Three coronary arteries blocked, including 95% of the right coronary artery",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates severe coronary artery disease requiring surgical intervention",
+          "decision_impact": "Should prompt consideration for immediate surgical intervention",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E001",
+          "E002"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "CONSULT_NOTE",
+        "name": "Cardiac Surgery Consultation",
+        "description": "Consultation with cardiac surgeon to discuss surgical options",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Surgery recommended, scheduled for September 11, 2014",
+          "detailed_findings": null,
+          "clinical_significance": "Confirms need for coronary artery bypass graft surgery",
+          "decision_impact": "Surgery scheduled but delayed due to patient condition and scheduling issues",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation and Workup",
+        "description": "Patient presents for cardiac evaluation and undergoes catheterization",
+        "duration": "1 day",
+        "key_events": [
+          {
+            "event": "Cardiac catheterization performed",
+            "timestamp": "August 22, 2014",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "followup",
+        "name": "Follow-up and Complications",
+        "description": "Patient discharged and scheduled for surgery, develops complications",
+        "duration": "4 weeks",
+        "key_events": [
+          {
+            "event": "Surgery scheduled for September 11, 2014",
+            "timestamp": "August 29, 2014",
+            "evidence_ids": [
+              "E004"
+            ]
+          },
+          {
+            "event": "Surgery rescheduled due to bronchitis",
+            "timestamp": "September 8, 2014",
+            "evidence_ids": [
+              "E005"
+            ]
+          },
+          {
+            "event": "Patient suffers myocardial infarction",
+            "timestamp": "September 19, 2014",
+            "evidence_ids": [
+              "E005"
+            ]
+          },
+          {
+            "event": "Patient dies",
+            "timestamp": "September 20, 2014",
+            "evidence_ids": [
+              "E006"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Post-cardiac catheterization with significant coronary artery blockages",
+        "prompt": "Should the patient be discharged or remain hospitalized for immediate surgery?",
+        "action_type": "DISCHARGE_DECISION",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Discharge the patient with instructions to follow up for surgery",
+            "is_defendant_choice": true,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Patient had stable angina and no immediate symptoms indicating unstable angina"
+          },
+          {
+            "option_id": "B",
+            "description": "Admit the patient for immediate surgery",
+            "is_defendant_choice": false,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Immediate surgery could prevent potential complications from severe blockages"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "A",
+          "description": "Patient was discharged with follow-up for surgery",
+          "reasoning_stated": "Patient had stable angina and was informed of risks and benefits",
+          "evidence_ids": [
+            "E003",
+            "E008"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "B",
+          "description": "Immediate surgery should have been considered",
+          "standard_of_care_basis": "Plaintiffs alleged immediate surgery was necessary due to severity of blockages",
+          "evidence_ids": [
+            "E013",
+            "E014"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Plaintiffs argued that immediate surgery was necessary to prevent risk of MI",
+          "what_should_have_happened": "Patient should have been admitted for immediate surgery",
+          "legal_standard_applied": "Standard of care as debated in court",
+          "evidence_ids": [
+            "E013",
+            "E014"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient suffered a myocardial infarction and died",
+        "severity": "FATAL",
+        "long_term_effects": "Not applicable",
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "0",
+        "key_findings": [
+          "Dr. West complied with the standard of care",
+          "Discharge was appropriate given stable angina"
+        ],
+        "evidence_ids": [
+          "E010",
+          "E011"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Discharge decision",
+        "counterfactual": "Immediate surgery might have prevented MI",
+        "evidence_ids": [
+          "E010",
+          "E011"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "August 22, 2014",
+        "event": "Cardiac catheterization performed by Dr. West",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "August 29, 2014",
+        "event": "Consultation with Dr. Davis, surgery scheduled",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "timestamp": "September 19, 2014",
+        "event": "Patient suffers myocardial infarction",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "timestamp": "September 20, 2014",
+        "event": "Patient dies",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Cardiac Catheterization",
+        "date": "August 22, 2014",
+        "result": "Three coronary arteries blocked, including 95% of the right coronary artery",
+        "interpretation": null,
+        "evidence_ids": [
+          "E001",
+          "E002"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Multi-level coronary artery disease",
+        "when_made": "August 22, 2014",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Discharge with follow-up for surgery",
+        "date": "August 22, 2014",
+        "provider": null,
+        "outcome": "Patient scheduled for surgery but suffered MI before it could be performed",
+        "evidence_ids": [
+          "E003",
+          "E004"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Myocardial infarction",
+        "when_occurred": "September 19, 2014",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to recommend immediate surgery",
+        "against": "Dr. West",
+        "found_proven": false,
+        "evidence_ids": [
+          "E010"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Dr. West complied with the standard of care",
+        "legal_significance": "No liability found",
+        "evidence_ids": [
+          "E010"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "INFORMED_CONSENT"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.036544850498338874,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-09 16:15:09.003607",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

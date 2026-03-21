@@ -1,0 +1,558 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-1038967",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2013-08-26",
+  "url": "https://example.com/courtlistener-1038967",
+  "case_name": "Richter v. Presbyterian Healthcare Services",
+  "neutral_citation": null,
+  "clinical_domain": "OBSTETRICS_GYNAECOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Richter v. Presbyterian Healthcare Services. Medical malpractice case involving obstetrics gynaecology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Kathryn Richter died in 2005 when she developed a heart arrhythmia during surgery intended to remove a tumor from her adrenal gland.",
+      "paragraph_ref": "1",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "The heart arrhythmia was caused by an undiagnosed condition called pheochromocytoma.",
+      "paragraph_ref": "1",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "During the course of a hospitalization in 2001, Mrs. Richter\u2019s then physicians ordered laboratory tests which were diagnostic of the condition that caused her death.",
+      "paragraph_ref": "1",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "The tests were never read or acted on by her physicians.",
+      "paragraph_ref": "1",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "LEGAL_FINDING",
+      "text": "We affirm the partial directed verdict in favor of Dr. Winterkorn primarily because Plaintiff did not present sufficient expert testimony to avoid it.",
+      "paragraph_ref": "4",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "Mrs. Richter was admitted to PHS in April 2001 for treatment and testing related to cardiac symptoms.",
+      "paragraph_ref": "7",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. Seligman, one of Mrs. Richter\u2019s physicians, ordered catecholamine and metanephrine testing on her urine to determine whether she might have an undiagnosed pheochromocytoma.",
+      "paragraph_ref": "7",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "FACTUAL_FINDING",
+      "text": "TriCore was responsible for processing the results of Mrs. Richter\u2019s urine catecholamine and metanephrine testing and delivering the Lab Results to PHS.",
+      "paragraph_ref": "7",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "FACTUAL_FINDING",
+      "text": "The first test showed catecholamine levels 150 times higher than normal.",
+      "paragraph_ref": "8",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "FACTUAL_FINDING",
+      "text": "The second test showed catecholamine metabolite levels in excess of 100 times normal.",
+      "paragraph_ref": "8",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E011",
+      "type": "FACTUAL_FINDING",
+      "text": "These levels were diagnostic of pheochromocytoma.",
+      "paragraph_ref": "8",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E012",
+      "type": "LEGAL_FINDING",
+      "text": "We conclude that certain aspects of Plaintiff\u2019s claims do not require expert testimony.",
+      "paragraph_ref": "3",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E013",
+      "type": "LEGAL_FINDING",
+      "text": "We affirm this ruling of the district court.",
+      "paragraph_ref": "5",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E014",
+      "type": "FACTUAL_FINDING",
+      "text": "Mrs. Richter was discharged from PHS at 2 p.m. on April 23, 2001.",
+      "paragraph_ref": "9",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E015",
+      "type": "FACTUAL_FINDING",
+      "text": "Her gastroenterologist referred Mrs. Richter to Dr. Lovato for surgery to remove the tumor.",
+      "paragraph_ref": "10",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E016",
+      "type": "FACTUAL_FINDING",
+      "text": "Mrs. Richter died while under the care of Drs. Lovato and Winterkorn due to complications that arose when she developed an arrhythmia during the embolectomy procedure.",
+      "paragraph_ref": "10",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E017",
+      "type": "LEGAL_FINDING",
+      "text": "It was not error for the district court to grant a partial directed verdict in favor of Dr. Winterkorn and we affirm.",
+      "paragraph_ref": "59",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E018",
+      "type": "COURT_REASONING",
+      "text": "We draw from these cases two principles. First, challenges to the timing of the delivery of laboratory reports will normally require expert testimony.",
+      "paragraph_ref": "28",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E019",
+      "type": "COURT_REASONING",
+      "text": "The district court applied a variant of this analysis when it ruled that TriCore\u2019s acts or failures to act in delivering the Lab Results were not medical but, rather, were \u201cministerial\u201d in nature.",
+      "paragraph_ref": "25",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E020",
+      "type": "LEGAL_FINDING",
+      "text": "We remand for further proceedings against TriCore and PHS consistent with this Opinion.",
+      "paragraph_ref": "63",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Cardiac symptoms",
+      "history_of_present_illness": "Mrs. Richter was admitted to PHS in April 2001 for treatment and testing related to cardiac symptoms.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "system": "Examination mentioned but findings not specified"
+        }
+      },
+      "initial_working_problem": "Cardiac symptoms requiring further investigation",
+      "known_constraints": null,
+      "initial_differential": [
+        "pheochromocytoma",
+        "other cardiac conditions"
+      ],
+      "critical_findings": [
+        "Not documented in judgment"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E006",
+        "E007"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "LAB",
+        "name": "Urine Catecholamine and Metanephrine Testing",
+        "description": "Testing to determine if pheochromocytoma is present",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Catecholamine levels 150 times higher than normal; Metanephrine levels 100 times higher than normal",
+          "detailed_findings": null,
+          "clinical_significance": "Diagnostic of pheochromocytoma",
+          "decision_impact": "Should prompt immediate follow-up and management for pheochromocytoma",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E007",
+          "E009",
+          "E010",
+          "E011"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents to PHS with cardiac symptoms",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Admission to PHS for cardiac symptoms",
+            "timestamp": "April 2001",
+            "evidence_ids": [
+              "E006"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Diagnostic Workup",
+        "description": "Laboratory tests ordered to investigate cardiac symptoms",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Urine catecholamine and metanephrine testing ordered",
+            "timestamp": "April 16, 2001",
+            "evidence_ids": [
+              "E007"
+            ]
+          },
+          {
+            "event": "Lab results received but not acted upon",
+            "timestamp": "April 21-23, 2001",
+            "evidence_ids": [
+              "E009",
+              "E010"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient admitted with cardiac symptoms, lab tests ordered",
+        "prompt": "What should be done with the lab results indicating pheochromocytoma?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Immediately inform the treating physician and initiate management for pheochromocytoma",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Timely management of pheochromocytoma is critical to prevent complications"
+          },
+          {
+            "option_id": "B",
+            "description": "Do not act on the lab results",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Failure to act on critical lab results"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "The lab results were not acted upon by the physicians",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E004"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "The lab results should have been acted upon immediately",
+          "standard_of_care_basis": "Expert evidence established that the lab results were diagnostic and required immediate action",
+          "evidence_ids": [
+            "E011"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to act on diagnostic lab results led to undiagnosed pheochromocytoma",
+          "what_should_have_happened": "Immediate management for pheochromocytoma should have been initiated",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E011"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient developed a heart arrhythmia during surgery and died",
+        "severity": "FATAL",
+        "long_term_effects": "Not applicable",
+        "evidence_ids": [
+          "E001",
+          "E016"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "PARTIAL_LIABILITY",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Failure to act on diagnostic test results",
+          "Comparative negligence considered for non-party physicians"
+        ],
+        "evidence_ids": [
+          "E005",
+          "E020"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to act on elevated catecholamine levels",
+        "counterfactual": "Appropriate management could have prevented fatal outcome",
+        "evidence_ids": [
+          "E011",
+          "E020"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "April 2001",
+        "event": "Mrs. Richter admitted to PHS for cardiac symptoms",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "timestamp": "April 16, 2001",
+        "event": "Catecholamine and metanephrine testing ordered",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      {
+        "timestamp": "April 21-23, 2001",
+        "event": "Lab results received but not acted upon",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E009",
+          "E010"
+        ]
+      },
+      {
+        "timestamp": "April 2001",
+        "event": "Mrs. Richter admitted to PHS for cardiac symptoms",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Catecholamine and metanephrine testing ordered",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Test results showed elevated levels",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E009",
+          "E010"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Urine Catecholamine and Metanephrine Testing",
+        "date": "April 16, 2001",
+        "result": "Catecholamine levels 150 times higher than normal; Metanephrine levels 100 times higher than normal",
+        "interpretation": null,
+        "evidence_ids": [
+          "E009",
+          "E010"
+        ]
+      },
+      {
+        "test_name": "Urine Catecholamine and Metanephrine Levels",
+        "date": "Date not specified in judgment",
+        "result": "Elevated levels diagnostic of pheochromocytoma",
+        "interpretation": null,
+        "evidence_ids": [
+          "E009",
+          "E010",
+          "E011"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Pheochromocytoma",
+        "when_made": "Not made until after death",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E002",
+          "E011"
+        ]
+      },
+      {
+        "diagnosis": "Pheochromocytoma",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E011"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Surgery to remove adrenal tumor",
+        "date": "2005",
+        "provider": null,
+        "outcome": "Patient developed arrhythmia and died",
+        "evidence_ids": [
+          "E001",
+          "E016"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Heart arrhythmia",
+        "when_occurred": "During surgery in 2005",
+        "severity": "Fatal",
+        "evidence_ids": [
+          "E001",
+          "E002"
+        ]
+      },
+      {
+        "complication": "Heart arrhythmia during surgery",
+        "when_occurred": "2005",
+        "severity": "Fatal",
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to act on lab results indicating pheochromocytoma",
+        "against": "PHS and TriCore",
+        "found_proven": true,
+        "evidence_ids": [
+          "E011",
+          "E013"
+        ]
+      },
+      {
+        "allegation": "Failure to act on elevated catecholamine levels",
+        "against": "Defendant physicians",
+        "found_proven": true,
+        "evidence_ids": [
+          "E004",
+          "E011"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Failure to act on diagnostic lab results",
+        "legal_significance": "Breach of duty leading to fatal outcome",
+        "evidence_ids": [
+          "E011",
+          "E013"
+        ]
+      },
+      {
+        "finding": "Failure to act on diagnostic test results",
+        "legal_significance": "Breach of standard of care",
+        "evidence_ids": [
+          "E011",
+          "E020"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.14388489208633093,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-17 07:43:42.999308",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

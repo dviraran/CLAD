@@ -1,0 +1,480 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-4524818",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2018-07-12",
+  "url": "https://example.com/courtlistener-4524818",
+  "case_name": "Cochrum v. Costa Victoria Healthcare, LLC",
+  "neutral_citation": null,
+  "clinical_domain": "PAEDIATRICS",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Cochrum v. Costa Victoria Healthcare, LLC. Medical malpractice case involving paediatrics.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "In 2012, Harvey Cohoon was at a restaurant with his niece, plaintiff Donna Cochrum, when he suddenly fell.",
+      "paragraph_ref": "11",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Cohoon was diagnosed with colon cancer. The cancer was not considered aggressive, and was at stage 2.",
+      "paragraph_ref": "11",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "When Cohoon was admitted to Victoria Center, he was malnourished, had a stage 3 pressure ulcer, and had muscle wasting.",
+      "paragraph_ref": "11",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "On the 20th day, he was observed to have difficulty swallowing thin liquids, and after an evaluation, his diet was changed.",
+      "paragraph_ref": "7",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "Less than 20 minutes after being served dinner, a nurse found him in respiratory arrest.",
+      "paragraph_ref": "7",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "The paramedics had to remove large pieces of chicken from his throat before intubating him.",
+      "paragraph_ref": "7",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "He died the following day due to complications from oxygen deprivation to his brain.",
+      "paragraph_ref": "7",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "LEGAL_FINDING",
+      "text": "A jury returned a verdict in favor of Cochrum on all causes of action.",
+      "paragraph_ref": "7",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "LEGAL_FINDING",
+      "text": "The court subsequently awarded Cochrum over $350,000 in attorney fees pursuant to the elder abuse claim.",
+      "paragraph_ref": "7",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "LEGAL_FINDING",
+      "text": "The court granted a motion for judgment notwithstanding the verdict (JNOV), finding insufficient evidence of recklessness to support the elder abuse cause of action.",
+      "paragraph_ref": "7",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E011",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Cochrum presented the testimony of a nursing expert who offered various theories of how Costa Victoria breached its duty of care.",
+      "paragraph_ref": "8",
+      "speaker": "Plaintiff's expert"
+    },
+    {
+      "evidence_id": "E012",
+      "type": "EXPERT_TESTIMONY",
+      "text": "She opined Victoria Center was inadequately staffed.",
+      "paragraph_ref": "8",
+      "speaker": "Plaintiff's expert"
+    },
+    {
+      "evidence_id": "E013",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Cochrum’s nursing expert opined there were multiple breaches of the duty of care in connection with the service of Cohoon’s final meal.",
+      "paragraph_ref": "8",
+      "speaker": "Plaintiff's expert"
+    },
+    {
+      "evidence_id": "E014",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Cochrum’s nursing expert went on to opine that Nurse Grimble breached his duty of care in failing to perform the Heimlich maneuver.",
+      "paragraph_ref": "8",
+      "speaker": "Plaintiff's expert"
+    },
+    {
+      "evidence_id": "E015",
+      "type": "LEGAL_FINDING",
+      "text": "The court acknowledged there was substantial evidence to support the findings that Cohoon was not served a mechanically soft chopped meal.",
+      "paragraph_ref": "10",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E016",
+      "type": "LEGAL_FINDING",
+      "text": "The court concluded defendants’ conduct amounted to negligence, but not recklessness as required to support a claim for elder abuse.",
+      "paragraph_ref": "10",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E017",
+      "type": "COURT_REASONING",
+      "text": "The court reasoned, “the entire episode concerning Mr. Cohoon was over in less than twelve hours, from the change in dietary plan to the choking.",
+      "paragraph_ref": "10",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E018",
+      "type": "LEGAL_FINDING",
+      "text": "The judgment is affirmed. The parties shall bear their own costs on appeal.",
+      "paragraph_ref": "40",
+      "speaker": "Court finding"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "male",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Difficulty swallowing thin liquids",
+      "history_of_present_illness": "Harvey Cohoon was admitted to Victoria Center for recovery from colon cancer treatment. On the 20th day, he was observed to have difficulty swallowing thin liquids.",
+      "past_medical_history": [
+        "Colon cancer",
+        "Type 2 diabetes",
+        "Malnourishment",
+        "Stage 3 pressure ulcer",
+        "Muscle wasting"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "general": "Patient appeared malnourished with muscle wasting",
+          "gastrointestinal": "Difficulty swallowing thin liquids"
+        }
+      },
+      "initial_working_problem": "Swallowing difficulty (dysphagia)",
+      "known_constraints": null,
+      "initial_differential": [
+        "Dysphagia due to neurological or structural cause"
+      ],
+      "critical_findings": [
+        "Difficulty swallowing thin liquids"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E003",
+        "E004"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSULT_NOTE",
+        "name": "Speech Therapist Evaluation",
+        "description": "Evaluation of swallowing ability",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Severe swallowing inability with liquids, recommended 'pudding thick' liquids and mechanical-soft diet",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates high risk of aspiration with thin liquids",
+          "decision_impact": "Diet change required to prevent aspiration",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient admitted to Victoria Center for recovery",
+        "duration": "19 days",
+        "key_events": [
+          {
+            "event": "Patient shows improvement in health",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E003"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Swallowing Evaluation",
+        "description": "Evaluation of swallowing difficulties and diet modification",
+        "duration": "1 day",
+        "key_events": [
+          {
+            "event": "Speech therapist evaluates swallowing",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E004"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "decision",
+        "name": "Dietary Management",
+        "description": "Implementation of new dietary plan",
+        "duration": "Less than 12 hours",
+        "key_events": [
+          {
+            "event": "Diet change not properly communicated",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E005"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient with severe dysphagia requiring diet modification",
+        "prompt": "How should the diet change be communicated to ensure patient safety?",
+        "action_type": "DOCUMENT_CONSENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Ensure diet change is documented in both nursing and kitchen records",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Proper documentation ensures all staff are aware of dietary restrictions"
+          },
+          {
+            "option_id": "B",
+            "description": "Document diet change only in nursing records",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Incomplete communication may lead to dietary errors"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Diet change was documented only in nursing records",
+          "reasoning_stated": "Assumed nursing documentation was sufficient",
+          "evidence_ids": [
+            "E005",
+            "E014"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Diet change should have been documented in both nursing and kitchen records",
+          "standard_of_care_basis": "Ensures comprehensive communication of dietary needs",
+          "evidence_ids": [
+            "E013",
+            "E014"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to communicate diet change to kitchen led to improper meal being served",
+          "what_should_have_happened": "Diet change should have been communicated to all relevant staff",
+          "legal_standard_applied": "Standard of care requires comprehensive communication of critical dietary changes",
+          "evidence_ids": [
+            "E013",
+            "E014"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient died due to complications from oxygen deprivation to the brain",
+        "severity": "FATAL",
+        "long_term_effects": "Not applicable",
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "320000",
+        "key_findings": [
+          "Negligence in failing to serve the proper meal",
+          "Failure to adequately monitor during meal"
+        ],
+        "evidence_ids": [
+          "E008",
+          "E010"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to communicate diet change",
+        "counterfactual": "Proper communication would have prevented choking incident",
+        "evidence_ids": [
+          "E013",
+          "E014",
+          "E015"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Patient admitted to Victoria Center",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Speech therapist evaluates swallowing",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Patient served incorrect meal",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Swallowing Evaluation",
+        "date": "Date not specified in judgment",
+        "result": "Severe dysphagia with liquids",
+        "interpretation": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Severe dysphagia",
+        "when_made": "Date not specified in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Diet modification to 'pudding thick' liquids and mechanical-soft food",
+        "date": "Date not specified in judgment",
+        "provider": null,
+        "outcome": "Not properly communicated, leading to incorrect meal",
+        "evidence_ids": [
+          "E004",
+          "E005"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Respiratory arrest due to choking",
+        "when_occurred": "Date not specified in judgment",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to communicate diet change",
+        "against": "Costa Victoria Healthcare, LLC",
+        "found_proven": true,
+        "evidence_ids": [
+          "E013",
+          "E014"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendants were negligent in failing to serve the proper meal",
+        "legal_significance": "Breach of duty of care",
+        "evidence_ids": [
+          "E010"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.32142857142857145,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-16 14:54:35.200116",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

@@ -1,0 +1,408 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10346963",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2025-01-31",
+  "url": "https://example.com/courtlistener-10346963",
+  "case_name": "Zaragoza v. Adam",
+  "neutral_citation": null,
+  "clinical_domain": "SURGERY_GENERAL",
+  "outcome_severity": "TEMPORARY_HARM",
+  "summary": {
+    "brief": "Zaragoza v. Adam. Medical malpractice case involving surgery general.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Plaintiff was admitted to Mercy Medical Center Merced complaining of abdominal pain, and she was discharged the next day. She returned to the hospital three days later complaining of abdominal pain.",
+      "paragraph_ref": "6",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "A hepatobiliary iminodiacetic acid scan indicated plaintiff had a bile leak.",
+      "paragraph_ref": "6",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Morse offered the following statements and opinions: (1) plaintiff was an appropriate candidate for the cholecystectomy performed by Dr. Adam; (2) plaintiff consented to the procedure after Dr. Adam explained the recognized risks of injury, including injury to the bowel or bile duct, with possible bile leak;",
+      "paragraph_ref": "2",
+      "speaker": "Dr. Eric Morse"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Morse concluded that the attempted ERCP by Dr. Uppal 'set off a cascade of ongoing medical complications, hospitalizations, additional surgeries, and other procedures,' and plaintiff’s resulting injuries and disabilities were caused by the bowel perforation from the ERCP, not the bile leak from Dr. Adam’s cholecystectomy.",
+      "paragraph_ref": "3",
+      "speaker": "Dr. Eric Morse"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "LEGAL_FINDING",
+      "text": "The judgment is reversed with directions to vacate the order granting summary judgment and to enter a new order denying summary judgment.",
+      "paragraph_ref": "12",
+      "speaker": "Court conclusion"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "COURT_REASONING",
+      "text": "Dr. Morse failed to support his opinions with sufficient factual detail and reasoned explanation to show the absence of a triable issue of material fact.",
+      "paragraph_ref": "8",
+      "speaker": "Court analysis"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "Plaintiff’s condition worsened, and she underwent additional surgeries to treat the bile leak and related complications, including bile peritonitis.",
+      "paragraph_ref": "6",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Morse also stated in conclusory fashion that '[s]ubsequent medical records confirmed that the attempted ERCP procedure resulted in a retroperitoneal duodenal perforation,' but he identified no specific medical records among the more than 1,000 pages he reviewed to support his conclusion.",
+      "paragraph_ref": "7",
+      "speaker": "Dr. Eric Morse"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Abdominal pain",
+      "history_of_present_illness": "Patient was admitted to Mercy Medical Center Merced complaining of abdominal pain and was discharged the next day. She returned three days later with the same complaint.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "abdomen": "Examination findings not specified in judgment"
+        }
+      },
+      "initial_working_problem": "Abdominal pain with suspected bile leak",
+      "known_constraints": null,
+      "initial_differential": [
+        "Bile leak",
+        "Perforated viscus"
+      ],
+      "critical_findings": [
+        "Bile leak indicated by scan"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "Hepatobiliary Iminodiacetic Acid Scan",
+        "description": "Scan to assess bile leak",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Indicated a bile leak",
+          "detailed_findings": null,
+          "clinical_significance": "Confirmed presence of bile leak",
+          "decision_impact": "Prompted further investigation and procedures",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "PROCEDURE_NOTE",
+        "name": "Endoscopic Retrograde Cholangiopancreatography (ERCP)",
+        "description": "Procedure to address bile leak",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Unsuccessful; unable to cannulate the common bile duct",
+          "detailed_findings": null,
+          "clinical_significance": "Failed to resolve bile leak, led to further complications",
+          "decision_impact": "Contributed to worsening condition",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with abdominal pain",
+        "duration": "1 day",
+        "key_events": [
+          {
+            "event": "Admitted to Mercy Medical Center Merced",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Diagnostic Workup",
+        "description": "Patient undergoes diagnostic procedures to identify cause of abdominal pain",
+        "duration": "3 days",
+        "key_events": [
+          {
+            "event": "Hepatobiliary scan indicates bile leak",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E002"
+            ]
+          },
+          {
+            "event": "Unsuccessful ERCP performed",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E004"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient with confirmed bile leak after cholecystectomy",
+        "prompt": "What should be the next step in managing the bile leak?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Perform a successful ERCP to place a stent",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard procedure to manage bile leaks"
+          },
+          {
+            "option_id": "B",
+            "description": "Attempt ERCP without ensuring success",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Led to further complications without resolving the issue"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Attempted ERCP was unsuccessful",
+          "reasoning_stated": "Procedure note indicated inability to complete",
+          "evidence_ids": [
+            "E004"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "A successful ERCP should have been ensured",
+          "standard_of_care_basis": "Expert evidence suggested successful ERCP is standard",
+          "evidence_ids": [
+            "E003",
+            "E004"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "The unsuccessful ERCP led to a cascade of complications",
+          "what_should_have_happened": "A successful ERCP or alternative intervention should have been performed",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E003",
+            "E004"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient developed bile peritonitis and underwent multiple surgeries",
+        "severity": "SEVERE",
+        "long_term_effects": "Ongoing medical complications",
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "None",
+        "key_findings": [
+          "Summary judgment for Dr. Adam was reversed due to insufficient expert explanation",
+          "No triable issue of fact was established against Dr. Adam"
+        ],
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Failure to provide sufficient expert explanation",
+        "counterfactual": "A more detailed expert opinion could have changed the outcome",
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Patient admitted to Mercy Medical Center Merced with abdominal pain",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Hepatobiliary scan indicates bile leak",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Unsuccessful ERCP performed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Hepatobiliary Iminodiacetic Acid Scan",
+        "date": "Date not specified in judgment",
+        "result": "Indicated bile leak",
+        "interpretation": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Bile leak",
+        "when_made": "Date not specified in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "ERCP",
+        "date": "Date not specified in judgment",
+        "provider": null,
+        "outcome": "Unsuccessful",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Bile peritonitis",
+        "when_occurred": "Date not specified in judgment",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Negligent performance of cholecystectomy",
+        "against": "Dr. Adam",
+        "found_proven": false,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Dr. Adam's summary judgment was reversed due to insufficient expert explanation",
+        "legal_significance": "No triable issue of fact was established against Dr. Adam",
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "TREATMENT_PROCEDURE_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.21052631578947367,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-09 19:42:32.590099",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

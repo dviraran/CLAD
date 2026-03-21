@@ -1,0 +1,481 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-7927743",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2012-07-03",
+  "url": "https://example.com/courtlistener-7927743",
+  "case_name": "Knight v. Roberts",
+  "neutral_citation": null,
+  "clinical_domain": "PAEDIATRICS",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Knight v. Roberts. Medical malpractice case involving paediatrics.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Mrs. Knight was bathing her dog when she suddenly began experiencing a pain in her chest. Later that evening, Mrs. Knight went to TMC\u2019s Emergency Department (\u201cER\u201d), arriving at approximately 8:00 p.m.",
+      "paragraph_ref": "1",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Mrs. Knight reported that she was 61 years old, had a history of smoking and hypertension, and was then experiencing severe chest pain that radiated down her arm, back, and neck.",
+      "paragraph_ref": "1",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. Roberts was the attending physician in the ER that evening, and he saw Mrs. Knight at 8:35 p.m., approximately 15 minutes after her initial assessment.",
+      "paragraph_ref": "1",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. Roberts made a differential diagnosis of angina, myocardial infarction, pleurisy, costochondritis, esophageal reflux, and chest wall pain.",
+      "paragraph_ref": "1",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "Mrs. Knight was not placed on a monitor until 9:20 p.m., and her medications were not given until 9:30 p.m., almost an hour after the orders were given.",
+      "paragraph_ref": "1",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "Mrs. Knight was immediately transferred to TMC\u2019s intensive care unit, and a cardiologist at St. Francis Hospital was consulted.",
+      "paragraph_ref": "1",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "The catheterization performed on February 19 revealed that Mrs. Knight had an aortic dissection, a tear in the ascending aorta above her heart, which required emergency surgery.",
+      "paragraph_ref": "1",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Guyton opined that the surgery would have been difficult since she had been given blood thinners at TMC, which increased the risk of bleeding and the risk of mortality.",
+      "paragraph_ref": "1",
+      "speaker": "Dr. Robert A. Guyton"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "LEGAL_FINDING",
+      "text": "We conclude that the evidence presents a genuine issue of material fact as to whether the negligence of Dr. Roberts, Dr. Cone, and the nursing staff proximately caused Mrs. Knight\u2019s death.",
+      "paragraph_ref": "1",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "COURT_REASONING",
+      "text": "The trial court therefore did not err in denying Dr. Cone\u2019s motion.",
+      "paragraph_ref": "2",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E011",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Knight\u2019s experts, Dr. Coule and nurse Cathleen Provins Churbock, both attested that Mrs. Knight\u2019s symptoms and condition required her to be triaged under the status of emergent pursuant to the standard of care.",
+      "paragraph_ref": "3",
+      "speaker": "Dr. Coule and Nurse Cathleen Provins Churbock"
+    },
+    {
+      "evidence_id": "E012",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Coule testified that the required medications and treatment would have controlled Mrs. Knight\u2019s blood pressure and the flow of blood going between the sections of her aorta.",
+      "paragraph_ref": "3",
+      "speaker": "Dr. Coule"
+    },
+    {
+      "evidence_id": "E013",
+      "type": "LEGAL_FINDING",
+      "text": "The trial court was therefore authorized to conclude that she was qualified to serve as an expert in this case.",
+      "paragraph_ref": "4",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E014",
+      "type": "COURT_REASONING",
+      "text": "The issue of the admissibility or exclusion of expert testimony rests in the broad discretion of the court, and consequently, the trial court\u2019s ruling thereon cannot be reversed absent an abuse of discretion.",
+      "paragraph_ref": "4",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E015",
+      "type": "LEGAL_FINDING",
+      "text": "Judgment reversed in Case No. A12A0740. Judgments affirmed in Case Nos. A12A0741 and A12A0770.",
+      "paragraph_ref": "9",
+      "speaker": "Court finding"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "61 years",
+        "sex": "female",
+        "relevant_social_history": "History of smoking"
+      },
+      "chief_complaint": "Severe chest pain radiating down arm, back, and neck",
+      "history_of_present_illness": "Mrs. Knight began experiencing chest pain while bathing her dog. She reported a pain level of 10/10.",
+      "past_medical_history": [
+        "Hypertension"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "228/104",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "chest": "Pain radiating to arm, back, and neck"
+        }
+      },
+      "initial_working_problem": "Chest pain with differential including angina, myocardial infarction, pleurisy, costochondritis, esophageal reflux, and chest wall pain",
+      "known_constraints": null,
+      "initial_differential": [
+        "angina",
+        "myocardial infarction",
+        "pleurisy",
+        "costochondritis",
+        "esophageal reflux",
+        "chest wall pain"
+      ],
+      "critical_findings": [
+        "Severe chest pain",
+        "Elevated blood pressure"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002",
+        "E003",
+        "E004"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "LAB",
+        "name": "CCU Panel",
+        "description": "Cardiac care unit panel",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Cardiac enzymes normal",
+          "detailed_findings": null,
+          "clinical_significance": "Does not indicate myocardial infarction",
+          "decision_impact": "Should prompt further investigation for other causes of chest pain",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "IMAGING",
+        "name": "Chest X-ray",
+        "description": "Radiographic imaging of the chest",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": null,
+          "detailed_findings": "Negative for acute changes",
+          "clinical_significance": "Does not rule out aortic dissection",
+          "decision_impact": "Should prompt consideration of further imaging",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "request_id": "R003",
+        "type": "IMAGING",
+        "name": "CT Scan of the Aorta",
+        "description": "Computed tomography scan to assess for aortic dissection",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": null,
+          "detailed_findings": "Not performed",
+          "clinical_significance": "Would have confirmed aortic dissection",
+          "decision_impact": "Critical for diagnosis and management",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": [
+          "E005",
+          "E011"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Emergency Presentation",
+        "description": "Patient presents to ER with acute symptoms",
+        "duration": "1 hour",
+        "key_events": [
+          {
+            "event": "Patient arrives at ER and is triaged",
+            "timestamp": "8:00 p.m.",
+            "evidence_ids": [
+              "E001",
+              "E002"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Initial Workup",
+        "description": "Initial assessment and diagnostic testing",
+        "duration": "3 hours",
+        "key_events": [
+          {
+            "event": "Dr. Roberts performs initial assessment",
+            "timestamp": "8:35 p.m.",
+            "evidence_ids": [
+              "E003",
+              "E004"
+            ]
+          },
+          {
+            "event": "Diagnostic tests ordered",
+            "timestamp": "8:35 p.m.",
+            "evidence_ids": [
+              "E004"
+            ]
+          },
+          {
+            "event": "Patient placed on monitor",
+            "timestamp": "9:20 p.m.",
+            "evidence_ids": [
+              "E005"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient in ER with severe chest pain and hypertension",
+        "prompt": "What imaging investigation should be ordered?",
+        "action_type": "ORDER_TEST",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Order CT scan of the aorta",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "CT scan is necessary to diagnose aortic dissection"
+          },
+          {
+            "option_id": "B",
+            "description": "Order chest x-ray only",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Chest x-ray does not rule out aortic dissection"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant ordered chest x-ray only",
+          "reasoning_stated": "Defendant did not consider aortic dissection",
+          "evidence_ids": [
+            "E004",
+            "E015"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "CT scan should have been ordered",
+          "standard_of_care_basis": "Expert testimony indicated CT scan was necessary",
+          "evidence_ids": [
+            "E011",
+            "E015"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to order CT scan delayed diagnosis",
+          "what_should_have_happened": "CT scan would have confirmed aortic dissection",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E011",
+            "E015"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient developed aortic dissection leading to myocardial infarction and death",
+        "severity": "FATAL",
+        "long_term_effects": "Death",
+        "evidence_ids": [
+          "E007",
+          "E009"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not specified in judgment",
+        "key_findings": [
+          "Failure to diagnose aortic dissection",
+          "Delay in treatment contributed to death"
+        ],
+        "evidence_ids": [
+          "E009",
+          "E011"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to order CT imaging",
+        "counterfactual": "CT would have shown aortic dissection",
+        "evidence_ids": [
+          "E011",
+          "E015"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "17 February 2001 8:00 p.m.",
+        "event": "Patient arrives at ER",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Chest X-ray",
+        "date": "17 February 2001",
+        "result": "Negative for acute changes",
+        "interpretation": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Aortic dissection",
+        "when_made": "19 February 2001",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Emergency surgery",
+        "date": "19 February 2001",
+        "provider": null,
+        "outcome": "Not performed due to high risk",
+        "evidence_ids": [
+          "E008"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Myocardial infarction",
+        "when_occurred": "18 February 2001",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to order CT scan",
+        "against": "Dr. Roberts",
+        "found_proven": true,
+        "evidence_ids": [
+          "E011"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Dr. Roberts breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E009"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.75,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-09 13:10:42.743140",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

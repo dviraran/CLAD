@@ -1,0 +1,432 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10019407",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2020-01-21",
+  "url": "https://example.com/courtlistener-10019407",
+  "case_name": "Hampton v. Hearn",
+  "neutral_citation": null,
+  "clinical_domain": "CARDIOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Hampton v. Hearn. Medical malpractice case involving cardiology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "On March 8, 2011, Ms. Miles was treated by Dr. Hearn at Alamance Regional Medical Center for angioplasty and stent placement in her innominate vein related to her dialysis treatments.",
+      "paragraph_ref": "21",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Three days later, on March 11, 2011, Ms. Miles needed a 'permacath placement' in her right internal jugular vein to establish new access for her ongoing dialysis.",
+      "paragraph_ref": "33",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "During the procedure, Ms. Miles experienced ventricular tachycardia.",
+      "paragraph_ref": "42",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "The Duke pathology report revealed that 'a foreign body' was found in the right ventricle. The foreign body was determined to be a 30 millimeter 'self-expanding stent which had a fracture on one portion of it.'",
+      "paragraph_ref": "47",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Dahn concluded that Dr. Hearn\u2019s placement of the stent breached the applicable standard of care.",
+      "paragraph_ref": "71",
+      "speaker": "Plaintiff's expert"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Two expert witnesses retained by Dr. Hearn, Dr. Steve Powell and Dr. Ray Workman, testified that Dr. Hearn had complied with the standard of care when he performed the angioplasty and stent placement procedures.",
+      "paragraph_ref": "75",
+      "speaker": "Defendant's experts"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "LEGAL_FINDING",
+      "text": "The trial court did not err in instructing the jury on intervening negligence.",
+      "paragraph_ref": "355",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "LEGAL_FINDING",
+      "text": "Plaintiff was not prejudiced by the admittance of Dr. Hearn\u2019s expert witness testimony.",
+      "paragraph_ref": "356",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "FACTUAL_FINDING",
+      "text": "Plaintiff alleged her disabling injuries to [Ms. Miles] as a result of injuries sustained when a stent improperly placed in [Ms. Miles\u2019] vein for better dialysis access, was broken during a subsequent procedure and went into [Ms. Miles\u2019] heart causing severe, permanent and disabling injuries.",
+      "paragraph_ref": "57",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "COURT_REASONING",
+      "text": "The trial court\u2019s instruction to the jury did not require Plaintiff to disprove superseding or intervening negligence by Onslow Urgent Care.",
+      "paragraph_ref": "208",
+      "speaker": "Judge's analysis"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Dialysis access issues",
+      "history_of_present_illness": "Ms. Miles was treated for angioplasty and stent placement in her innominate vein related to her dialysis treatments.",
+      "past_medical_history": [
+        "Dialysis-dependent renal failure"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": null,
+        "general_appearance": null,
+        "focused_exam": {
+          "system": "Examination mentioned but findings not specified"
+        }
+      },
+      "initial_working_problem": "Blocked innominate vein requiring angioplasty and stent placement",
+      "known_constraints": null,
+      "initial_differential": [
+        "Vascular obstruction due to dialysis catheter"
+      ],
+      "critical_findings": [
+        "Stent placement required for dialysis access"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "Radiological identification of stent",
+        "description": "Radiological imaging to confirm stent placement",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Stent placed at the junction of the left innominate vein and the superior vena cava",
+          "detailed_findings": null,
+          "clinical_significance": "Confirms stent location",
+          "decision_impact": "Ensures correct placement for dialysis access",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "PATHOLOGY",
+        "name": "Pathology report of foreign body",
+        "description": "Analysis of foreign body found in right ventricle",
+        "available_phase": "postop",
+        "reveal": {
+          "result_summary": "Foreign body identified as a fractured stent",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates stent migration and fracture",
+          "decision_impact": "Confirms complication from stent placement",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents for angioplasty and stent placement",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Angioplasty and stent placement performed",
+            "timestamp": "8 March 2011",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "procedure",
+        "name": "Stent Placement",
+        "description": "Stent placement in innominate vein",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Stent placed extending into superior vena cava",
+            "timestamp": "8 March 2011",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "postop",
+        "name": "Postoperative Complications",
+        "description": "Complications following stent placement",
+        "duration": "15 March 2011 to 23 March 2011",
+        "key_events": [
+          {
+            "event": "Ventricular tachycardia and foreign body discovered",
+            "timestamp": "11 March 2011",
+            "evidence_ids": [
+              "E003",
+              "E004"
+            ]
+          },
+          {
+            "event": "Foreign stent removed",
+            "timestamp": "14 March 2011",
+            "evidence_ids": [
+              "E004"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "procedure",
+        "clinical_context": "Stent placement in innominate vein for dialysis access",
+        "prompt": "What is the appropriate placement for the stent?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Place stent extending minimally into the superior vena cava",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Minimizes risk of stent migration and fracture"
+          },
+          {
+            "option_id": "B",
+            "description": "Place stent extending significantly into the superior vena cava",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Increases risk of stent migration and fracture"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant placed stent extending significantly into the superior vena cava",
+          "reasoning_stated": "Defendant believed it was acceptable practice",
+          "evidence_ids": [
+            "E005"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Stent should have been placed minimally into the superior vena cava",
+          "standard_of_care_basis": "Expert evidence established minimal extension is standard",
+          "evidence_ids": [
+            "E005"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Based on evidence E005",
+          "what_should_have_happened": "Stent should have been placed with minimal extension",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E005"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient experienced ventricular tachycardia and required removal of fractured stent",
+        "severity": "PERMANENT_MODERATE_DISABILITY",
+        "long_term_effects": "Required nursing home care",
+        "evidence_ids": [
+          "E004",
+          "E009"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "0",
+        "key_findings": [
+          "Jury found Dr. Hearn not negligent",
+          "Intervening negligence instruction upheld"
+        ],
+        "evidence_ids": [
+          "E007",
+          "E008"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Stent placement technique",
+        "counterfactual": "Proper placement would have minimized risk",
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "8 March 2011",
+        "event": "Angioplasty and stent placement performed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "11 March 2011",
+        "event": "Ventricular tachycardia and foreign body discovered",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "timestamp": "14 March 2011",
+        "event": "Foreign stent removed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Radiological imaging",
+        "date": "8 March 2011",
+        "result": "Stent placement confirmed",
+        "interpretation": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Fractured stent in right ventricle",
+        "when_made": "11 March 2011",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Stent removal",
+        "date": "14 March 2011",
+        "provider": null,
+        "outcome": "Foreign stent removed",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Ventricular tachycardia",
+        "when_occurred": "11 March 2011",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Improper stent placement",
+        "against": "Dr. Hearn",
+        "found_proven": false,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Dr. Hearn not negligent",
+        "legal_significance": "Intervening negligence instruction upheld",
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "TREATMENT_PROCEDURE_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.027855153203342618,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-16 15:36:06.669178",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

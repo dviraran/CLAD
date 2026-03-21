@@ -1,0 +1,475 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10630060",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2024-06-11",
+  "url": "https://example.com/courtlistener-10630060",
+  "case_name": "Debbie Pyzyk, Plaintiff/Respondent v. Gateway Psychiatric Group, LLC & Gordon Robinson, M.D.",
+  "neutral_citation": null,
+  "clinical_domain": "PSYCHIATRY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Debbie Pyzyk, Plaintiff/Respondent v. Gateway Psychiatric Group, LLC & Gordon Robinson, M.D.. Medical malpractice case involving oncology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. Gordon Robinson is a psychiatrist who began treating K.P. on June 25, 2013.",
+      "paragraph_ref": "17",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "K.P. suffered from various health conditions, including alcohol dependence, ADHD, amphetamine abuse, generalized anxiety disorder, bulimia nervosa, and anorexia nervosa.",
+      "paragraph_ref": "21",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. Robinson prescribed Vyvanse (Lizdexamfetamine), 1 an amphetamine.",
+      "paragraph_ref": "29",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "Initially, Dr. Robinson prescribed one dose of 50 mg per day. Dr. Robinson changed the prescription to two doses of 50 mg (a total of 100 mg) per day.",
+      "paragraph_ref": "30",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "Following the increase in dosage, K.P. lost weight and developed a picking habit.",
+      "paragraph_ref": "39",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "K.P. was abusing the Vyvanse and taking more than the prescribed amount.",
+      "paragraph_ref": "36",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "K.P.’s cause of death was an “intraventricular hemorrhage secondary to acute Lisdexamfetamine toxicity.”",
+      "paragraph_ref": "52",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Plaintiff’s standard of care expert identified as outside the standard of care Dr. Robinson’s: prescription of Vyvanse in excess of the FDA’s",
+      "paragraph_ref": "191",
+      "speaker": "Plaintiff's expert"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "LEGAL_FINDING",
+      "text": "We affirm the judgment of the trial court.",
+      "paragraph_ref": "382",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "COURT_REASONING",
+      "text": "The jury rendered a verdict in favor of Plaintiff and awarded $5 million in compensatory damages, which the trial court reduced to $801,061 pursuant to the medical malpractice liability limitations in Section 538.210.",
+      "paragraph_ref": "104",
+      "speaker": "Court finding"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "35 years",
+        "sex": "female",
+        "relevant_social_history": "History of alcohol dependence and amphetamine abuse"
+      },
+      "chief_complaint": "Seeking treatment for ADHD and alcohol dependence",
+      "history_of_present_illness": "K.P. was admitted to Harris House Treatment and Recovery Center for inpatient treatment of alcohol dependence and Adderall abuse. She had a history of abusing Adderall to continue drinking and to keep weight off.",
+      "past_medical_history": [
+        "Alcohol dependence",
+        "ADHD",
+        "Amphetamine abuse",
+        "Generalized anxiety disorder",
+        "Bulimia nervosa",
+        "Anorexia nervosa"
+      ],
+      "medications": [
+        "Strattera (previously for ADHD)",
+        "Vyvanse (prescribed by Dr. Robinson)"
+      ],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Normal per medical records",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "general": "Weight loss and picking habit developed after Vyvanse dosage increase"
+        }
+      },
+      "initial_working_problem": "ADHD and substance abuse management",
+      "known_constraints": null,
+      "initial_differential": [
+        "ADHD",
+        "Substance abuse"
+      ],
+      "critical_findings": [
+        "History of amphetamine abuse",
+        "Weight loss",
+        "Picking habit"
+      ],
+      "urgency_level": "ROUTINE",
+      "evidence_ids": [
+        "E001",
+        "E002",
+        "E003",
+        "E005"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "LAB",
+        "name": "Drug Screen",
+        "description": "Screen for amphetamines and other substances",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Positive for amphetamines",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates Vyvanse use and potential abuse",
+          "decision_impact": "Should prompt reassessment of medication management",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E237"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient admitted to Harris House for treatment",
+        "duration": "Not specified in judgment",
+        "key_events": [
+          {
+            "event": "Initial assessment and treatment plan",
+            "timestamp": "June 25, 2013",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Medication Management",
+        "description": "Prescription and adjustment of Vyvanse",
+        "duration": "Ongoing until patient's death",
+        "key_events": [
+          {
+            "event": "Vyvanse prescription increased to 100 mg per day",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E004"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "followup",
+        "name": "Follow-up and Monitoring",
+        "description": "Monitoring of patient's response to medication",
+        "duration": "Ongoing until patient's death",
+        "key_events": [
+          {
+            "event": "Signs of Vyvanse abuse observed",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E005",
+              "E006"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient with history of amphetamine abuse and current Vyvanse prescription",
+        "prompt": "What should be the approach to prescribing Vyvanse?",
+        "action_type": "PRESCRIBE",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Prescribe Vyvanse at FDA recommended maximum dosage of 70 mg per day",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Adhering to FDA guidelines minimizes risk of abuse and toxicity"
+          },
+          {
+            "option_id": "B",
+            "description": "Prescribe Vyvanse at 100 mg per day",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Higher dosage increases risk of abuse and toxicity"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant prescribed Vyvanse at 100 mg per day",
+          "reasoning_stated": "Effect of Vyvanse was wearing off in the afternoon",
+          "evidence_ids": [
+            "E004",
+            "E008"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Vyvanse should have been prescribed at or below 70 mg per day",
+          "standard_of_care_basis": "FDA guidelines and expert testimony",
+          "evidence_ids": [
+            "E008"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Prescribing above FDA recommended dosage increased risk of toxicity",
+          "what_should_have_happened": "Adherence to FDA guidelines and closer monitoring",
+          "legal_standard_applied": "Bolam test",
+          "evidence_ids": [
+            "E008"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      },
+      {
+        "decision_id": "D002",
+        "phase_id": "followup",
+        "clinical_context": "Patient on Vyvanse with signs of abuse",
+        "prompt": "How should the patient's medication management be adjusted?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Continue current Vyvanse prescription without changes",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Patient was not seen regularly, and signs of abuse were not addressed"
+          },
+          {
+            "option_id": "B",
+            "description": "Discontinue Vyvanse and consider alternative ADHD management",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Signs of abuse and potential toxicity require reevaluation of treatment"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "A",
+          "description": "Defendant continued Vyvanse prescription without changes",
+          "reasoning_stated": "Patient was not seen regularly",
+          "evidence_ids": [
+            "E036"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "B",
+          "description": "Vyvanse should have been discontinued or adjusted",
+          "standard_of_care_basis": "Expert testimony on managing amphetamine abuse",
+          "evidence_ids": [
+            "E008"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to adjust treatment despite signs of abuse",
+          "what_should_have_happened": "Discontinuation or adjustment of Vyvanse",
+          "legal_standard_applied": "Bolam test",
+          "evidence_ids": [
+            "E008"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient suffered an intraventricular hemorrhage and was declared brain dead",
+        "severity": "FATAL",
+        "long_term_effects": "Death",
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "801061",
+        "key_findings": [
+          "Breach of duty in prescribing Vyvanse above recommended dosage",
+          "Failure to monitor and adjust treatment despite signs of abuse"
+        ],
+        "evidence_ids": [
+          "E010"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to adhere to FDA guidelines and monitor patient",
+        "counterfactual": "Adherence to guidelines and monitoring could have prevented toxicity",
+        "evidence_ids": [
+          "E008",
+          "E010"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "June 25, 2013",
+        "event": "Dr. Robinson began treating K.P.",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "March 2016",
+        "event": "K.P. was declared brain dead",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Drug Screen",
+        "date": "Not specified in judgment",
+        "result": "Positive for amphetamines",
+        "interpretation": null,
+        "evidence_ids": [
+          "E237"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Intraventricular hemorrhage secondary to acute Lisdexamfetamine toxicity",
+        "when_made": "Post-mortem",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Vyvanse prescription",
+        "date": "Ongoing until patient's death",
+        "provider": null,
+        "outcome": "Contributed to toxicity and death",
+        "evidence_ids": [
+          "E003",
+          "E004"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Intraventricular hemorrhage",
+        "when_occurred": "March 2016",
+        "severity": "Fatal",
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Prescribing Vyvanse above recommended dosage",
+        "against": "Dr. Robinson",
+        "found_proven": true,
+        "evidence_ids": [
+          "E008"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E010"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.025974025974025976,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-09 13:05:42.652337",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

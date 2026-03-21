@@ -1,0 +1,415 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10727736",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2023-05-31",
+  "url": "https://example.com/courtlistener-10727736",
+  "case_name": "PREFERRED WOMEN'S HEALTHCARE LLC v. JASON A. SAIN",
+  "neutral_citation": null,
+  "clinical_domain": "OBSTETRICS_GYNAECOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "PREFERRED WOMEN'S HEALTHCARE LLC v. JASON A. SAIN. Medical malpractice case involving obstetrics gynaecology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Debbie Sain became pregnant in early 2012, when she was 36 years old. Ultrasounds performed by two different PWH sonographers on April 3, 10, and 20, 2012, revealed a mass in Debbie\u2019s right adnexa.",
+      "paragraph_ref": "19",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "On January 3, 2013, Debbie visited an emergency room, complaining of abdominal pain and a fever. When a CT scan showed a mass in her abdomen, she underwent emergency surgery performed by Dr. Dickerson.",
+      "paragraph_ref": "48",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. DeSimone and a second expert witness, James Quirk, M.D., testified that various medical professionals\u2019 failures to timely intervene when Debbie\u2019s right adnexal mass was discovered likely caused or substantially hastened her death.",
+      "paragraph_ref": "78",
+      "speaker": "Expert testimony"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "LEGAL_FINDING",
+      "text": "The jury found in favor of Jason and against the appellants and awarded Jason a total of $8,520,182.60 in damages.",
+      "paragraph_ref": "86",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "COURT_REASONING",
+      "text": "The verdict form therefore does not unequivocally establish that the jury found 'in favor of the Appellants' on Jason\u2019s wrongful death claim.",
+      "paragraph_ref": "289",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "LEGAL_FINDING",
+      "text": "Judgment affirmed. Doyle, P. J., and Gobeil, J., concur fully as to Division One, and concur in judgment only as to Division Two.",
+      "paragraph_ref": "299",
+      "speaker": "Court conclusion"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "36 years",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Abdominal pain and fever",
+      "history_of_present_illness": "Patient presented to the emergency room with abdominal pain and fever. Previous ultrasounds during pregnancy revealed a right adnexal mass.",
+      "past_medical_history": [
+        "Pregnancy"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "abdomen": "Not documented in judgment"
+        }
+      },
+      "initial_working_problem": "Abdominal mass with potential complications",
+      "known_constraints": null,
+      "initial_differential": [
+        "Dermoid cyst",
+        "Teratoma"
+      ],
+      "critical_findings": [
+        "Right adnexal mass"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "Ultrasound",
+        "description": "Ultrasound of the abdomen and pelvis",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Right adnexal mass measuring between 5.7 and 6.27 cm",
+          "detailed_findings": null,
+          "clinical_significance": "Consistent with a dermoid, which typically will not resolve on its own",
+          "decision_impact": "Should prompt further investigation and monitoring",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E001",
+          "E002"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "IMAGING",
+        "name": "CT Scan",
+        "description": "CT scan of the abdomen",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Mass in the abdomen, measuring 11 cm and ruptured",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates a significant increase in size and rupture, requiring emergency intervention",
+          "decision_impact": "Prompted emergency surgery",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with abdominal pain and fever",
+        "duration": "Not specified in judgment",
+        "key_events": [
+          {
+            "event": "Patient presents to the emergency room",
+            "timestamp": "January 3, 2013",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Diagnostic Workup",
+        "description": "Imaging and assessment of the adnexal mass",
+        "duration": "Not specified in judgment",
+        "key_events": [
+          {
+            "event": "CT scan performed revealing ruptured mass",
+            "timestamp": "January 3, 2013",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "procedure",
+        "name": "Emergency Surgery",
+        "description": "Surgical intervention to remove the ruptured mass",
+        "duration": "Not specified in judgment",
+        "key_events": [
+          {
+            "event": "Emergency surgery performed by Dr. Dickerson",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient with a known adnexal mass during pregnancy",
+        "prompt": "What should be done about the adnexal mass identified in the ultrasound?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Monitor the mass with regular follow-up and imaging",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Mass was not included in the problem list or followed up"
+          },
+          {
+            "option_id": "B",
+            "description": "Inform the patient and consider surgical intervention",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Early intervention could have prevented complications"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "A",
+          "description": "Mass was not monitored or included in the problem list",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E001",
+            "E002"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "B",
+          "description": "Patient should have been informed and mass monitored or removed",
+          "standard_of_care_basis": "Expert testimony indicated early intervention was necessary",
+          "evidence_ids": [
+            "E003"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to monitor or inform the patient about the mass led to its rupture and subsequent complications",
+          "what_should_have_happened": "The mass should have been monitored and potentially removed before it ruptured",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E003"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient developed squamous cell carcinoma from a mature teratoma and died in December 2013",
+        "severity": "FATAL",
+        "long_term_effects": "Death due to cancer progression",
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "8520182.60",
+        "key_findings": [
+          "Failure to inform and monitor the adnexal mass led to its rupture and worsened prognosis",
+          "Causation established by expert testimony"
+        ],
+        "evidence_ids": [
+          "E004",
+          "E005"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to monitor and inform about the adnexal mass",
+        "counterfactual": "Early intervention could have prevented the rupture and cancer progression",
+        "evidence_ids": [
+          "E003",
+          "E004"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "Early 2012",
+        "event": "Debbie Sain became pregnant",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "April 3, 2012",
+        "event": "Ultrasound revealed a right adnexal mass",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "January 3, 2013",
+        "event": "Debbie presented to the emergency room with abdominal pain and fever",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Ultrasound",
+        "date": "April 3, 2012",
+        "result": "Right adnexal mass",
+        "interpretation": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "test_name": "CT Scan",
+        "date": "January 3, 2013",
+        "result": "Ruptured mass",
+        "interpretation": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Squamous cell carcinoma from a mature teratoma",
+        "when_made": "Post-surgery",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Emergency surgery to remove the mass",
+        "date": "Date not specified in judgment",
+        "provider": null,
+        "outcome": "Mass removed",
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Cancer progression",
+        "when_occurred": "Post-surgery",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to monitor and inform about the adnexal mass",
+        "against": "Preferred Women's Healthcare LLC",
+        "found_proven": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendants were negligent in failing to monitor and inform about the adnexal mass",
+        "legal_significance": "Breach of standard of care",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.019933554817275746,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-09 20:32:15.231164",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

@@ -1,0 +1,414 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10671389",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2021-10-01",
+  "url": "https://example.com/courtlistener-10671389",
+  "case_name": "Sagora Senior Living, Inc., WTCG Granbury Campus, LLC D/B/A Waterview - the Cove, and Waterview the Cove Assisted Living and Memory Care v. Andrea Wood and Jamie Jackson",
+  "neutral_citation": null,
+  "clinical_domain": "PAEDIATRICS",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Sagora Senior Living, Inc., WTCG Granbury Campus, LLC D/B/A Waterview - the Cove, and Waterview the Cove Assisted Living and Memory Care v. Andrea Wood and Jamie Jackson. Medical malpractice case involving paediatrics.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Appellees’ mother Carla Strasner, who was living in one of Appellants’ assisted-living facilities at the time of her death.",
+      "paragraph_ref": "11",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "In the fall of 2021, Strasner—a 59-year-old woman with a medical history of traumatic brain injury—lived in an assisted-living facility owned by Appellants.",
+      "paragraph_ref": "18",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "Strasner had been prescribed and was taking two prescription medications with warnings against alcohol use.",
+      "paragraph_ref": "20",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "At approximately 6:40 p.m. on October 1, 2021, a nurse discovered Strasner facedown and unconscious in her apartment at the assisted-living facility.",
+      "paragraph_ref": "25",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "Emergency medical services arrived and resuscitated Strasner before transporting her to Lake Granbury Medical Center.",
+      "paragraph_ref": "26",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "Strasner arrived at Lake Granbury Medical Center with diffuse pneumonia of the lungs, most likely caused by aspiration.",
+      "paragraph_ref": "28",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "Her immediate cause of death was aspiration pneumonia, and her “sequential underlying cause of death” was alcohol intoxication.",
+      "paragraph_ref": "34",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "EXPERT_TESTIMONY",
+      "text": "It is my opinion, based on reasonable medical probability, that more likely than not the failures outlined here proximately caused Carla Strasner’s death.",
+      "paragraph_ref": "47",
+      "speaker": "Dr. Lige Rushing"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "EXPERT_TESTIMONY",
+      "text": "The standard of care for any long-term care facility, assisted living facility, or home health care require[s] that they neither accept nor retain a resident whose needs they are unable to meet.",
+      "paragraph_ref": "67",
+      "speaker": "Dr. Lige Rushing"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "EXPERT_TESTIMONY",
+      "text": "The negligence of the facility and staff during supervising Carla Strasner during her stay is a proximate cause of Carla Strasner’s death.",
+      "paragraph_ref": "71",
+      "speaker": "Dr. Lige Rushing"
+    },
+    {
+      "evidence_id": "E011",
+      "type": "LEGAL_FINDING",
+      "text": "We therefore affirm the trial court’s order.",
+      "paragraph_ref": "220",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "59 years",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Found facedown and unconscious",
+      "history_of_present_illness": "Patient with a history of traumatic brain injury was found facedown and unconscious in her apartment at the assisted-living facility.",
+      "past_medical_history": [
+        "Traumatic brain injury"
+      ],
+      "medications": [
+        "Aripiprazole",
+        "Trazadone"
+      ],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "neurological": "Unconscious, facedown position"
+        }
+      },
+      "initial_working_problem": "Unconsciousness with suspected alcohol intoxication",
+      "known_constraints": null,
+      "initial_differential": [
+        "Alcohol intoxication",
+        "Aspiration pneumonia"
+      ],
+      "critical_findings": [
+        "Unconsciousness",
+        "Facedown position"
+      ],
+      "urgency_level": "EMERGENCY",
+      "evidence_ids": [
+        "E002",
+        "E004"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "LAB",
+        "name": "Toxicology Report",
+        "description": "Blood alcohol level measurement",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Ethyl alcohol level 119 mg",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates significant alcohol intoxication",
+          "decision_impact": "Confirms suspicion of alcohol intoxication",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "IMAGING",
+        "name": "Chest X-ray",
+        "description": "Imaging to assess for pneumonia",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": null,
+          "detailed_findings": "Diffuse pneumonia of the lungs",
+          "clinical_significance": "Suggests aspiration pneumonia",
+          "decision_impact": "Supports diagnosis of aspiration pneumonia",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient found unconscious at assisted-living facility",
+        "duration": "2 hours",
+        "key_events": [
+          {
+            "event": "Patient found facedown and unconscious",
+            "timestamp": "6:40 p.m. on October 1, 2021",
+            "evidence_ids": [
+              "E004"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Emergency Medical Response",
+        "description": "EMS resuscitation and transport to hospital",
+        "duration": "1 hour",
+        "key_events": [
+          {
+            "event": "EMS resuscitated patient and transported to hospital",
+            "timestamp": "Evening of October 1, 2021",
+            "evidence_ids": [
+              "E005"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "presentation",
+        "clinical_context": "Patient found unconscious with a history of traumatic brain injury and alcohol consumption",
+        "prompt": "What immediate action should be taken to ensure patient safety?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Provide close supervision and monitor alcohol consumption",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard care for patients with CNS depressants and alcohol risk"
+          },
+          {
+            "option_id": "B",
+            "description": "Allow unsupervised access to alcohol",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Neglects the risk of alcohol interaction with medications"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant allowed unsupervised access to alcohol",
+          "reasoning_stated": "Facility failed to provide adequate supervision",
+          "evidence_ids": [
+            "E003",
+            "E010"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Close supervision and monitoring should have been provided",
+          "standard_of_care_basis": "Expert evidence established need for supervision",
+          "evidence_ids": [
+            "E009",
+            "E010"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to supervise led to alcohol intoxication and aspiration",
+          "what_should_have_happened": "Supervision to prevent alcohol intoxication",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E008",
+            "E009",
+            "E010"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient died from aspiration pneumonia",
+        "severity": "FATAL",
+        "long_term_effects": "Not applicable",
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Breach of duty in failing to supervise alcohol consumption",
+          "Causation established - supervision could have prevented death"
+        ],
+        "evidence_ids": [
+          "E010",
+          "E011"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to supervise alcohol consumption",
+        "counterfactual": "Supervision could have prevented aspiration and death",
+        "evidence_ids": [
+          "E008",
+          "E009",
+          "E010"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "October 1, 2021 18:40",
+        "event": "Patient found facedown and unconscious",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Toxicology Report",
+        "date": "October 1, 2021",
+        "result": "Ethyl alcohol level 119 mg",
+        "interpretation": null,
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Aspiration pneumonia",
+        "when_made": "October 1, 2021",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Resuscitation and transport to hospital",
+        "date": "October 1, 2021",
+        "provider": null,
+        "outcome": "Patient stabilized for transport",
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Aspiration pneumonia",
+        "when_occurred": "October 1, 2021",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to supervise alcohol consumption",
+        "against": "Assisted-living facility",
+        "found_proven": true,
+        "evidence_ids": [
+          "E010"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Facility breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E010"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.04932735426008968,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-09 15:03:52.047379",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

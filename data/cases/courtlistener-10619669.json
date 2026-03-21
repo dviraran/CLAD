@@ -1,0 +1,407 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10619669",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2025-06-26",
+  "url": "https://example.com/courtlistener-10619669",
+  "case_name": "Texas Children's Hospital v. Tarshell Scott, Individually and as Surviving Parent and Representative as a Surviving Parent and Representative of the Estate of D. S., a Minor",
+  "neutral_citation": null,
+  "clinical_domain": "OBSTETRICS_GYNAECOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Texas Children's Hospital v. Tarshell Scott, Individually and as Surviving Parent and Representative as a Surviving Parent and Representative of the Estate of D. S., a Minor. Medical malpractice case involving obstetrics gynaecology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Tarshell Scott\u2019s disabled 17-year-old daughter was discharged from Texas Children\u2019s Hospital (\u201cTCH\u201d) with a laceration to her labia that required readmittance within 24 hours.",
+      "paragraph_ref": "6",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "D.S. later died for reasons unrelated to the subject matter of the lawsuit.",
+      "paragraph_ref": "2",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "D.S. was admitted to TCH from October 11, 2021, to October 20, 2021, for increased respiratory support.",
+      "paragraph_ref": "21",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "The hospital discharged D.S. around 11:00 a.m. on October 20, 2021, and Scott noticed blood spotting in D.S.\u2019s diaper when they arrived home.",
+      "paragraph_ref": "39",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "Scott took D.S. back to TCH. D.S. had a fever when she arrived at the emergency department, and the hospital performed an infectious workup.",
+      "paragraph_ref": "42",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Carroll\u2019s report was a good faith effort with regard to the claims of negligence and gross negligence.",
+      "paragraph_ref": "9",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "LEGAL_FINDING",
+      "text": "We affirm the trial court\u2019s order.",
+      "paragraph_ref": "207",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "COURT_REASONING",
+      "text": "We conclude that the expert report informed TCH of the specific conduct Scott has called into question and provided a basis for the trial court to conclude that the claims have merit.",
+      "paragraph_ref": "203",
+      "speaker": "Judge's analysis"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "17 years",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Increased respiratory support needs",
+      "history_of_present_illness": "D.S., a 17-year-old with a history of static cerebral palsy due to neonatal HSV encephalitis and functional quadriplegia, was admitted for increased respiratory support. She was diagnosed with rhinovirus, H. Influenzae pneumonia, and a urinary tract infection.",
+      "past_medical_history": [
+        "Static cerebral palsy",
+        "Chronic lung disease",
+        "Asthma",
+        "Acute and chronic hypoxemic and hypercarbic respiratory failure"
+      ],
+      "medications": [
+        "Not documented in judgment"
+      ],
+      "allergies": [
+        "Not documented in judgment"
+      ],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "genitourinary": "No rash in the pubic area; documented as normal aside from incontinence and usage of diapers"
+        }
+      },
+      "initial_working_problem": "Respiratory infection requiring increased support",
+      "known_constraints": null,
+      "initial_differential": [
+        "Rhinovirus",
+        "H. Influenzae pneumonia",
+        "Urinary tract infection"
+      ],
+      "critical_findings": [
+        "Multiple scratch marks",
+        "Severe wound behind left ear"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E003",
+        "E004",
+        "E005"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSULT_NOTE",
+        "name": "Pediatric Gynecology Examination",
+        "description": "Examination of the vaginal area for laceration",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Healing granulation tissue indicating the injury was more than 24 hours old",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates the injury was not self-inflicted and occurred during hospitalization",
+          "decision_impact": "Prompted involvement of Child Protection Team",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E045",
+          "E046"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Hospitalization",
+        "description": "Patient admitted for increased respiratory support",
+        "duration": "9 days",
+        "key_events": [
+          {
+            "event": "Admission for respiratory support",
+            "timestamp": "October 11, 2021",
+            "evidence_ids": [
+              "E003"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Discharge and Readmission",
+        "description": "Patient discharged and readmitted with laceration",
+        "duration": "1 day",
+        "key_events": [
+          {
+            "event": "Discharge from hospital",
+            "timestamp": "October 20, 2021",
+            "evidence_ids": [
+              "E004"
+            ]
+          },
+          {
+            "event": "Readmission with fever and laceration",
+            "timestamp": "October 21, 2021",
+            "evidence_ids": [
+              "E005"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient discharged with unnoticed laceration",
+        "prompt": "What should have been done to prevent the oversight of the laceration?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Conduct thorough genitourinary examination and document findings",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard care requires thorough examination and documentation to prevent oversight of injuries"
+          },
+          {
+            "option_id": "B",
+            "description": "Rely on routine diaper changes to identify any issues",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Insufficient for identifying significant injuries"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant relied on routine diaper changes",
+          "reasoning_stated": "Not explicitly stated in judgment",
+          "evidence_ids": [
+            "E176",
+            "E177"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Thorough examination and documentation should have been conducted",
+          "standard_of_care_basis": "Expert evidence established the need for thorough examination",
+          "evidence_ids": [
+            "E193",
+            "E194"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to conduct thorough examination led to oversight of significant injury",
+          "what_should_have_happened": "Thorough examination and documentation",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E193",
+            "E194",
+            "E195"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient readmitted with significant laceration requiring treatment",
+        "severity": "MODERATE",
+        "long_term_effects": "Not documented in judgment",
+        "evidence_ids": [
+          "E005",
+          "E045"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "0",
+        "key_findings": [
+          "Expert report deemed adequate",
+          "Trial court's denial of motion to dismiss affirmed"
+        ],
+        "evidence_ids": [
+          "E007",
+          "E008"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Failure to document laceration",
+        "counterfactual": "Proper documentation could have prevented readmission",
+        "evidence_ids": [
+          "E193",
+          "E194"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "October 11, 2021",
+        "event": "D.S. admitted to TCH for increased respiratory support",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "timestamp": "October 20, 2021",
+        "event": "D.S. discharged from TCH",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "timestamp": "October 21, 2021",
+        "event": "D.S. readmitted to TCH with fever and laceration",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Genitourinary Examination",
+        "date": "October 21, 2021",
+        "result": "Healing granulation tissue found",
+        "interpretation": null,
+        "evidence_ids": [
+          "E045"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Labial laceration",
+        "when_made": "October 21, 2021",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E045"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Antibiotics and topical therapy",
+        "date": "October 21, 2021",
+        "provider": null,
+        "outcome": "Treatment to prevent infection",
+        "evidence_ids": [
+          "E048"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Fever",
+        "when_occurred": "October 21, 2021",
+        "severity": "Moderate",
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to document laceration",
+        "against": "Texas Children's Hospital",
+        "found_proven": false,
+        "evidence_ids": [
+          "E193"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Expert report adequate",
+        "legal_significance": "Trial court's denial of motion to dismiss affirmed",
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.037914691943127965,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-09 21:11:18.326763",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

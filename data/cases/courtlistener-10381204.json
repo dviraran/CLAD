@@ -1,0 +1,531 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10381204",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2025-04-18",
+  "url": "https://example.com/courtlistener-10381204",
+  "case_name": "Mario Mancini v. United States",
+  "neutral_citation": null,
+  "clinical_domain": "OBSTETRICS_GYNAECOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Mario Mancini v. United States. Medical malpractice case involving obstetrics gynaecology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Mancini, who has been incarcerated since 2002, has served his prison term at the Federal Correctional Institution at Sandstone, Minnesota (FCI Sandstone) since 2014.",
+      "paragraph_ref": "12",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "In 2014, Mancini reported a twinge in his neck causing pain and numbness in his right arm and fingers.",
+      "paragraph_ref": "12",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "On June 30, 2017, Mancini reported that he had reaggravated his neck injury while lifting a box.",
+      "paragraph_ref": "14",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "On July 5, Dr. Thomas Mayer and physician’s assistant (PA) Jenefer Southwick each examined Mancini; they each noted pain and numbness but no weakness.",
+      "paragraph_ref": "14",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "On August 7, 2017, Mancini underwent an MRI. It showed little change from the 2010 CT scan.",
+      "paragraph_ref": "17",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "On August 29, Mancini consulted with neurosurgeon Dr. Steven Broadway. Dr. Broadway recommended that Mancini undergo an anterior cervical discectomy and fusion (ACDF).",
+      "paragraph_ref": "17",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "Mancini’s surgery was scheduled for October 18, 2017.",
+      "paragraph_ref": "18",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "FACTUAL_FINDING",
+      "text": "Consequently, the surgery was rescheduled and performed on November 27, 2017.",
+      "paragraph_ref": "18",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "EXPERT_TESTIMONY",
+      "text": "In my opinion, Defendant deviated from the applicable standard of care while treating Plaintiff Mario Ferbo Mancini (“Plaintiff”) by, on multiple occasions, failing to treat Plaintiff in the appropriate amount of time.",
+      "paragraph_ref": "5",
+      "speaker": "Dr. Gary Wyard"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "EXPERT_TESTIMONY",
+      "text": "This initial undue delay in care was the first in a number of deviations from the proper standard of care in Defendant’s treatment of Plaintiff.",
+      "paragraph_ref": "8",
+      "speaker": "Dr. Gary Wyard"
+    },
+    {
+      "evidence_id": "E011",
+      "type": "LEGAL_FINDING",
+      "text": "The district court judgment ultimately agreed with the magistrate judge.",
+      "paragraph_ref": "50",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E012",
+      "type": "LEGAL_FINDING",
+      "text": "Accordingly, we affirm the judgment of the district court.",
+      "paragraph_ref": "87",
+      "speaker": "Court conclusion"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "male",
+        "relevant_social_history": "Incarcerated since 2002"
+      },
+      "chief_complaint": "Neck pain and numbness in right arm and fingers",
+      "history_of_present_illness": "Patient reported reaggravating a neck injury while lifting a box, experiencing numbness, tingling, and pain radiating from the neck into the arm and fingers.",
+      "past_medical_history": [
+        "Workplace injury in the 1990s",
+        "Cervical spondylosis with multilevel disc degeneration"
+      ],
+      "medications": [
+        "Ibuprofen"
+      ],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "neurological": "Pain and numbness noted, no initial weakness observed"
+        }
+      },
+      "initial_working_problem": "Cervical spine injury with possible nerve involvement",
+      "known_constraints": null,
+      "initial_differential": [
+        "Cervical radiculopathy",
+        "Cervical disc herniation"
+      ],
+      "critical_findings": [
+        "Numbness and tingling in right arm and fingers"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E002",
+        "E003",
+        "E004"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "MRI of Cervical Spine",
+        "description": "MRI to assess cervical spine condition",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "No cord compression or abnormal cord signal",
+          "detailed_findings": null,
+          "clinical_significance": "No significant change from previous CT scan",
+          "decision_impact": "Did not prompt immediate surgical intervention",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "CONSULT_NOTE",
+        "name": "Neurosurgery Consultation",
+        "description": "Consultation with neurosurgeon for surgical evaluation",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Recommendation for anterior cervical discectomy and fusion (ACDF)",
+          "detailed_findings": null,
+          "clinical_significance": "Surgery recommended to prevent permanent damage",
+          "decision_impact": "Surgery scheduled but delayed",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with neck pain and numbness",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Patient reports neck pain and numbness",
+            "timestamp": "June 30, 2017",
+            "evidence_ids": [
+              "E003"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Diagnostic Workup",
+        "description": "MRI and neurosurgical consultation",
+        "duration": "July 1, 2017 to August 29, 2017",
+        "key_events": [
+          {
+            "event": "MRI performed",
+            "timestamp": "August 7, 2017",
+            "evidence_ids": [
+              "E005"
+            ]
+          },
+          {
+            "event": "Neurosurgical consultation",
+            "timestamp": "August 29, 2017",
+            "evidence_ids": [
+              "E006"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "procedure",
+        "name": "Surgical Intervention",
+        "description": "ACDF surgery scheduled and performed",
+        "duration": "October 18, 2017 to November 27, 2017",
+        "key_events": [
+          {
+            "event": "Surgery initially scheduled",
+            "timestamp": "October 18, 2017",
+            "evidence_ids": [
+              "E007"
+            ]
+          },
+          {
+            "event": "Surgery performed",
+            "timestamp": "November 27, 2017",
+            "evidence_ids": [
+              "E008"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient with worsening neck pain and neurological symptoms",
+        "prompt": "When should the MRI be scheduled?",
+        "action_type": "ORDER_TEST",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Order MRI immediately",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Urgent MRI needed to assess potential nerve damage"
+          },
+          {
+            "option_id": "B",
+            "description": "Order MRI with a delay",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Delay in MRI could worsen condition"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "MRI was delayed",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E009"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "MRI should have been performed immediately",
+          "standard_of_care_basis": "Urgency due to potential nerve damage",
+          "evidence_ids": [
+            "E009"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Delay in MRI could lead to worsening of symptoms",
+          "what_should_have_happened": "Immediate MRI to assess and prevent further damage",
+          "legal_standard_applied": "Standard of care requires timely diagnostic imaging",
+          "evidence_ids": [
+            "E009"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      },
+      {
+        "decision_id": "D002",
+        "phase_id": "procedure",
+        "clinical_context": "Patient scheduled for ACDF surgery",
+        "prompt": "What preoperative preparation is required?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Ensure patient is NPO 12 hours before surgery",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard preoperative procedure to prevent aspiration"
+          },
+          {
+            "option_id": "B",
+            "description": "No specific preoperative preparation",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Failure to follow standard preoperative protocol"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Patient was not NPO before surgery",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E012"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Patient should have been NPO",
+          "standard_of_care_basis": "Standard preoperative care",
+          "evidence_ids": [
+            "E012"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to ensure NPO status led to surgery delay",
+          "what_should_have_happened": "Patient should have been NPO to proceed with surgery",
+          "legal_standard_applied": "Standard of care for preoperative preparation",
+          "evidence_ids": [
+            "E012"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient suffered permanent nerve damage, loss of strength, muscle atrophy, numbness, and pain",
+        "severity": "PERMANENT_MODERATE_DISABILITY",
+        "long_term_effects": "Chronic pain and weakness in right arm",
+        "evidence_ids": [
+          "E009",
+          "E015"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "0",
+        "key_findings": [
+          "Expert testimony deemed inadmissible",
+          "Failure to establish causation between delay and injury"
+        ],
+        "evidence_ids": [
+          "E011",
+          "E012"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Failure to establish causation",
+        "counterfactual": "Not applicable",
+        "evidence_ids": [
+          "E011",
+          "E012"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "June 30, 2017",
+        "event": "Patient reports reaggravated neck injury",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "timestamp": "August 7, 2017",
+        "event": "MRI performed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "timestamp": "August 29, 2017",
+        "event": "Neurosurgical consultation",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "timestamp": "November 27, 2017",
+        "event": "Surgery performed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E008"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "MRI of Cervical Spine",
+        "date": "August 7, 2017",
+        "result": "No cord compression or abnormal cord signal",
+        "interpretation": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Cervical spine herniation",
+        "when_made": "August 29, 2017",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Anterior cervical discectomy and fusion (ACDF)",
+        "date": "November 27, 2017",
+        "provider": null,
+        "outcome": "Surgery completed",
+        "evidence_ids": [
+          "E008"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Permanent nerve damage",
+        "when_occurred": "Post-surgery",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E009"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to timely perform MRI and surgery",
+        "against": "Defendant healthcare providers",
+        "found_proven": false,
+        "evidence_ids": [
+          "E011"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Expert testimony inadmissible",
+        "legal_significance": "Failure to establish causation",
+        "evidence_ids": [
+          "E011"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.1348314606741573,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-09 21:18:02.317332",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

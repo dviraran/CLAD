@@ -1,0 +1,372 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10774039",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2025-10-29",
+  "url": "https://example.com/courtlistener-10774039",
+  "case_name": "Estate of Athy v. Edgewood",
+  "neutral_citation": null,
+  "clinical_domain": "GERIATRICS",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Estate of Athy v. Edgewood. Medical malpractice case involving obstetrics gynaecology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Terry, who had dementia, became a resident of the Edgewood Kalispell Memory Care facility (Edgewood) in June 2021.",
+      "paragraph_ref": "33",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Terry passed away on November 23, 2021. Just shy of two years later, on November 20, 2023, Athy, individually and as personal representative for his mother’s estate, filed a complaint against Edgewood.",
+      "paragraph_ref": "35",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "Athy alleged that Terry was in a soiled diaper for days or weeks prior to hospitalization and that she died shortly after from infections and complications.",
+      "paragraph_ref": "52",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "LEGAL_FINDING",
+      "text": "We hold that Counts I-VI of Athy’s “First Amended Complaint” (FAC) were time-barred.",
+      "paragraph_ref": "24",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "LEGAL_FINDING",
+      "text": "We hold that the District Court correctly construed Counts I-VI of Athy’s FAC as medical malpractice claims subject to §§ 27-2-205(1) and 25-3-106, MCA, time limits and service of process requirements.",
+      "paragraph_ref": "562",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "LEGAL_FINDING",
+      "text": "However, we hold that Athy’s unjust enrichment and contract rescission claims were not medical malpractice claims and not subject to §§ 27-2-205(1) or 25-3-106, MCA.",
+      "paragraph_ref": "566",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "COURT_REASONING",
+      "text": "The FAC was thus a new complaint, not an amended one, and was time-barred by § 27-2-205(1), MCA.",
+      "paragraph_ref": "557",
+      "speaker": "Judge's analysis"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Abdominal pain, blood in stool, incontinence, and a large, soiled rash",
+      "history_of_present_illness": "Patient was in a soiled diaper for days or weeks prior to hospitalization",
+      "past_medical_history": [
+        "Dementia"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "abdomen": "Not documented in judgment",
+          "skin": "Large, soiled rash"
+        }
+      },
+      "initial_working_problem": "Possible infection due to prolonged exposure to soiled conditions",
+      "known_constraints": null,
+      "initial_differential": [
+        "Infection due to poor hygiene",
+        "Pressure ulcer complications"
+      ],
+      "critical_findings": [
+        "Large, soiled rash",
+        "Prolonged exposure to soiled diaper"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E003",
+        "E050"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "LAB",
+        "name": "Complete Blood Count",
+        "description": "To assess for signs of infection",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not documented in judgment",
+          "detailed_findings": null,
+          "clinical_significance": "Not documented in judgment",
+          "decision_impact": "Not documented in judgment",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": []
+      },
+      {
+        "request_id": "R002",
+        "type": "IMAGING",
+        "name": "Abdominal Imaging",
+        "description": "To assess for any internal complications",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": null,
+          "detailed_findings": "Imaging performed but findings not detailed in judgment",
+          "clinical_significance": "Not documented in judgment",
+          "decision_impact": "Not documented in judgment",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": []
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with abdominal pain and signs of infection",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Patient taken to hospital for treatment",
+            "timestamp": "Late October 2021",
+            "evidence_ids": [
+              "E050"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Hospital Workup",
+        "description": "Assessment and initial management of patient's condition",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Assessment of abdominal pain and rash",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E050"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient in memory care facility with signs of infection and poor hygiene",
+        "prompt": "What should the facility staff have done upon noticing the patient's condition?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Regularly check and change the patient's diaper and monitor skin condition",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard care for preventing infections and skin breakdown"
+          },
+          {
+            "option_id": "B",
+            "description": "Delay changing the diaper and monitoring the skin condition",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Neglectful and increases risk of infection"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Facility staff failed to regularly check and change the patient's diaper",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E003",
+            "E055"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Regular checks and changes should have been performed",
+          "standard_of_care_basis": "Expert evidence on standard care for memory care facilities",
+          "evidence_ids": [
+            "E041",
+            "E042"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to provide basic hygiene care led to infection",
+          "what_should_have_happened": "Regular monitoring and care to prevent complications",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E041",
+            "E042",
+            "E043"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient died from infections and complications",
+        "severity": "FATAL",
+        "long_term_effects": "Not applicable",
+        "evidence_ids": [
+          "E002",
+          "E050"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "None",
+        "key_findings": [
+          "Claims were time-barred",
+          "Failure to serve complaint within statutory period"
+        ],
+        "evidence_ids": [
+          "E004",
+          "E005",
+          "E006"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Failure to serve complaint in time",
+        "counterfactual": "Not applicable",
+        "evidence_ids": [
+          "E004",
+          "E005"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "June 2021",
+        "event": "Terry became a resident of Edgewood Kalispell Memory Care",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "November 23, 2021",
+        "event": "Terry passed away",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [
+      {
+        "diagnosis": "Infections and complications",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E050"
+        ]
+      }
+    ],
+    "treatments": [],
+    "complications": [
+      {
+        "complication": "Infections",
+        "when_occurred": "Prior to death",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E050"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to provide adequate care and hygiene",
+        "against": "Edgewood Kalispell Memory Care",
+        "found_proven": false,
+        "evidence_ids": [
+          "E003",
+          "E005"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Claims were time-barred",
+        "legal_significance": "Dismissal due to statute of limitations",
+        "evidence_ids": [
+          "E004",
+          "E005"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.01217391304347826,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-09 21:30:25.507123",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

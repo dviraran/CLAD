@@ -1,0 +1,503 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10807975",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2026-03-12",
+  "url": "https://example.com/courtlistener-10807975",
+  "case_name": "Kittis v. Cleveland Clinic Found.",
+  "neutral_citation": null,
+  "clinical_domain": "CARDIOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Kittis v. Cleveland Clinic Found.. Medical malpractice case involving cardiology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Geraldine Kittis (\u201cKittis\u201d), individually and as the administrator for the estate of Mr. Dennis Kittis (\u201cMr. Kittis\u201d), appeals the jury verdict in favor of the Cleveland Clinic Foundation (\u201cthe Clinic\u201d) following a trial on wrongful-death and medical-malpractice claims.",
+      "paragraph_ref": "16",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Mr. Kittis was hospitalized for a bowel obstruction and had a preexisting heart condition. He underwent surgery to remove the obstruction, during which one of the surgeons unintentionally punctured Mr. Kittis\u2019s intestines.",
+      "paragraph_ref": "38",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "One day later, Mr. Kittis began experiencing low blood pressure and high lactate levels initially thought to be caused by dehydration, which was treated with IV fluids.",
+      "paragraph_ref": "42",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Brooks testified that the three potential etiologies [causes] he would attribute to causing [Mr. Kittis\u2019s] bowel ischemia were torsion, a blood clot, or venous obstruction.",
+      "paragraph_ref": "90",
+      "speaker": "Dr. Brooks"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "LEGAL_FINDING",
+      "text": "The jury\u2019s verdict is affirmed.",
+      "paragraph_ref": "365",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "COURT_REASONING",
+      "text": "The cause of the bowel ischemia was deemed irrelevant to the question posed on proximate cause, which was the Clinic\u2019s failure to initiate the surgery earlier in the day.",
+      "paragraph_ref": "93",
+      "speaker": "Court reasoning"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "Mr. Kittis underwent a laparotomy performed by Dr. Augustin. The laparotomy was an exploratory surgery used to potentially identify the root cause of Mr. Kittis\u2019s declining condition.",
+      "paragraph_ref": "54",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Brooks\u2019s expert testimony was sufficient to establish that the Clinic\u2019s failure to recognize in a timely fashion the progressive acidosis and renal dysfunction was the proximate cause of [Mr. Kittis\u2019s] injuries and death.",
+      "paragraph_ref": "84",
+      "speaker": "Dr. Brooks"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "FACTUAL_FINDING",
+      "text": "The CT scan was cancelled by Dr. Julia Muntean, who was under the authority of Dr. Toms Augustin, Mr. Kittis\u2019s treating physician.",
+      "paragraph_ref": "47",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "LEGAL_FINDING",
+      "text": "The court finds there were reasonable grounds for this appeal.",
+      "paragraph_ref": "367",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "74 years",
+        "sex": "male",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Bowel obstruction",
+      "history_of_present_illness": "Mr. Kittis was hospitalized for a bowel obstruction and had a preexisting heart condition. He underwent surgery to remove the obstruction.",
+      "past_medical_history": [
+        "Heart condition"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Low blood pressure noted post-surgery",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "abdomen": "Not documented in judgment"
+        }
+      },
+      "initial_working_problem": "Bowel obstruction with potential ischemia",
+      "known_constraints": null,
+      "initial_differential": [
+        "Bowel ischemia",
+        "Dehydration"
+      ],
+      "critical_findings": [
+        "Low blood pressure",
+        "High lactate levels"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E002",
+        "E003"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "CT Scan",
+        "description": "CT scan to assess bowel condition",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "CT scan was cancelled",
+          "detailed_findings": null,
+          "clinical_significance": "Could have identified surgically correctable bowel ischemia",
+          "decision_impact": "Cancellation delayed potential diagnosis",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E009"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "PROCEDURE_NOTE",
+        "name": "Exploratory Laparotomy",
+        "description": "Surgical exploration of the abdomen",
+        "available_phase": "procedure",
+        "reveal": {
+          "result_summary": "Performed by Dr. Augustin",
+          "detailed_findings": null,
+          "clinical_significance": "Confirmed bowel ischemia",
+          "decision_impact": "Delayed performance contributed to adverse outcome",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Hospitalization",
+        "description": "Patient hospitalized for bowel obstruction",
+        "duration": "Not specified",
+        "key_events": [
+          {
+            "event": "Surgery to remove bowel obstruction",
+            "timestamp": "Date not specified",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Post-Surgical Complications",
+        "description": "Patient develops low blood pressure and high lactate levels",
+        "duration": "1 day",
+        "key_events": [
+          {
+            "event": "CT scan ordered and then cancelled",
+            "timestamp": "Date not specified",
+            "evidence_ids": [
+              "E009"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "decision",
+        "name": "Exploratory Surgery",
+        "description": "Exploratory laparotomy performed",
+        "duration": "Not specified",
+        "key_events": [
+          {
+            "event": "Laparotomy reveals moderately dusky bowel",
+            "timestamp": "Date not specified",
+            "evidence_ids": [
+              "E007"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "procedure",
+        "name": "Surgical Intervention",
+        "description": "Exploratory laparotomy performed",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Exploratory laparotomy performed by Dr. Augustin",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E007"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient with low blood pressure and high lactate levels post-surgery",
+        "prompt": "Should a CT scan be performed to assess for bowel ischemia?",
+        "action_type": "ORDER_TEST",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Order CT scan with IV contrast",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "CT scan could identify surgically correctable ischemia"
+          },
+          {
+            "option_id": "B",
+            "description": "Cancel CT scan due to anuria",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Concern about contrast in anuric patient"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "CT scan was cancelled",
+          "reasoning_stated": "Concern about contrast in anuric patient",
+          "evidence_ids": [
+            "E009"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "CT scan should have been performed",
+          "standard_of_care_basis": "Expert testimony indicated need for timely diagnosis",
+          "evidence_ids": [
+            "E008"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to perform CT scan delayed diagnosis of ischemia",
+          "what_should_have_happened": "CT scan should have been performed to rule out surgically correctable ischemia",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E008"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient experienced bowel ischemia and subsequent complications",
+        "severity": "Not documented in judgment",
+        "long_term_effects": "Not documented in judgment",
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "None",
+        "key_findings": [
+          "Clinic did not violate the requisite standard of care"
+        ],
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Failure to perform CT imaging",
+        "counterfactual": "CT would have shown bowel ischemia",
+        "evidence_ids": [
+          "E008"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "Date not specified",
+        "event": "Patient hospitalized for bowel obstruction",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "Date not specified",
+        "event": "CT scan ordered and then cancelled",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E009"
+        ]
+      },
+      {
+        "timestamp": "Date not specified",
+        "event": "Exploratory laparotomy performed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Mr. Kittis hospitalized for bowel obstruction",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "CT Scan",
+        "date": "Date not specified",
+        "result": "Cancelled",
+        "interpretation": null,
+        "evidence_ids": [
+          "E009"
+        ]
+      },
+      {
+        "test_name": "CT Scan",
+        "date": "Not performed",
+        "result": "Cancelled",
+        "interpretation": null,
+        "evidence_ids": [
+          "E009"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Bowel ischemia",
+        "when_made": "During exploratory surgery",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      {
+        "diagnosis": "Bowel ischemia",
+        "when_made": "During exploratory laparotomy",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Exploratory laparotomy",
+        "date": "Date not specified",
+        "provider": null,
+        "outcome": "Moderately dusky bowel observed",
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      {
+        "treatment": "Exploratory laparotomy",
+        "date": "Not documented in judgment",
+        "provider": null,
+        "outcome": "Confirmed bowel ischemia",
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Low blood pressure and high lactate levels",
+        "when_occurred": "Post-surgery",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "complication": "Bowel ischemia",
+        "when_occurred": "Not documented in judgment",
+        "severity": "Not documented in judgment",
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to perform CT scan",
+        "against": "Cleveland Clinic",
+        "found_proven": false,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "allegation": "Failure to perform CT scan",
+        "against": "Cleveland Clinic",
+        "found_proven": false,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "No breach of standard of care",
+        "legal_significance": "Jury verdict in favor of defendant",
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "finding": "Clinic did not violate the requisite standard of care",
+        "legal_significance": "No liability found",
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.013245033112582781,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-16 14:29:14.043459",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

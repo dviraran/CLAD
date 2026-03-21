@@ -1,0 +1,360 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-8641804",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2016-07-11",
+  "url": "https://example.com/courtlistener-8641804",
+  "case_name": "Riedel v. Akron Gen. Health Sys.",
+  "neutral_citation": null,
+  "clinical_domain": "PAEDIATRICS",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Riedel v. Akron Gen. Health Sys.. Medical malpractice case involving paediatrics.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Appellees complained that the untimely diagnosis of Riedel's spinal epidural abscess was the cause of Riedel's incomplete paraplegia.",
+      "paragraph_ref": "4",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. Kalapodis testified that, in spite of the presence of an active methicillin-resistant staphylococcus aureus ('MRSA') infection that was causing Riedel severe back pain, he failed to diagnose the abscess during Riedel's May 22, 2013 emergency room visit.",
+      "paragraph_ref": "4",
+      "speaker": "Dr. Kalapodis"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "LEGAL_FINDING",
+      "text": "On June 24, 2016, the jury issued a verdict against appellants, jointly and severally. Riedel was awarded $5,200,000 in economic damages, but no noneconomic damages.",
+      "paragraph_ref": "5",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "LEGAL_FINDING",
+      "text": "The trial court's order is affirmed.",
+      "paragraph_ref": "96",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Appellees' experts Darlene Carruthers ('Carruthers'), a life care plan expert, and economist John Burke, Ph.D. ('Burke'), testified to the scope and present value of the life care plan respectively.",
+      "paragraph_ref": "28",
+      "speaker": "Appellees' experts"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "Riedel testified that Lodi was close to his daughters' home and he was seeking emergency medical care.",
+      "paragraph_ref": "88",
+      "speaker": "Riedel"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "LEGAL_FINDING",
+      "text": "We find that the jury's verdict is not against the manifest weight of the evidence pursuant to Civ.R. 59(A)(6) as it is supported by competent, credible evidence.",
+      "paragraph_ref": "46",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "COURT_REASONING",
+      "text": "The jury, as the trier of fact, 'was free to accept or reject any or all of appellants' evidence relating to damages.'",
+      "paragraph_ref": "38",
+      "speaker": "Court reasoning"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Appellants' expert, John Scarbrough, Ph.D. ('Scarbrough'), provided a range of life expectancy and estimate quotes, and determined that the life care plan with a life expectancy of 78 years totaled $4,654,038.",
+      "paragraph_ref": "29",
+      "speaker": "Appellants' expert"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "LEGAL_FINDING",
+      "text": "The trial court denied appellants' motion to set-off economic damages under the ACA.",
+      "paragraph_ref": "8",
+      "speaker": "Court finding"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": "The case contains a real patient presentation with clinical facts, a clinical decision where a healthcare provider chose a course of action, and a discussion of what the standard of care required.",
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "male",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Severe back pain",
+      "history_of_present_illness": "Patient presented with severe back pain and was later found to have an active MRSA infection.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "back": "Severe pain noted, further details not specified"
+        }
+      },
+      "initial_working_problem": "Back pain with suspected infection",
+      "known_constraints": null,
+      "initial_differential": [
+        "spinal epidural abscess",
+        "musculoskeletal pain"
+      ],
+      "critical_findings": [
+        "Severe back pain",
+        "Active MRSA infection"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "MRI of the spine",
+        "description": "Imaging to evaluate for spinal epidural abscess",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not documented in judgment",
+          "detailed_findings": null,
+          "clinical_significance": "Would have identified spinal epidural abscess",
+          "decision_impact": "Critical for timely diagnosis and treatment",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": [
+          "E001",
+          "E002"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Emergency Presentation",
+        "description": "Patient presents to ED with severe back pain",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Patient arrives at ED",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E006"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Initial Workup",
+        "description": "Initial assessment and decision-making in ED",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Assessment of severe back pain",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient in ED with severe back pain and active MRSA infection",
+        "prompt": "What diagnostic test should be ordered to evaluate the cause of back pain?",
+        "action_type": "ORDER_TEST",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Order MRI of the spine",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "MRI is the standard investigation to rule out spinal epidural abscess."
+          },
+          {
+            "option_id": "B",
+            "description": "Do not order MRI, manage symptomatically",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Failed to diagnose the underlying cause of severe back pain."
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant did not order MRI",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E002"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "MRI of the spine should have been ordered",
+          "standard_of_care_basis": "Expert testimony indicated MRI was necessary to diagnose spinal epidural abscess.",
+          "evidence_ids": [
+            "E002"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to order MRI led to delayed diagnosis of spinal epidural abscess.",
+          "what_should_have_happened": "MRI should have been performed to confirm diagnosis.",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E002"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient developed incomplete paraplegia due to delayed diagnosis of spinal epidural abscess.",
+        "severity": "PERMANENT_SEVERE_DISABILITY",
+        "long_term_effects": "Incomplete paraplegia",
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "5200000",
+        "key_findings": [
+          "Breach of duty in failing to diagnose spinal epidural abscess",
+          "Causation established - delayed diagnosis led to paraplegia"
+        ],
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to order MRI imaging",
+        "counterfactual": "MRI would have shown spinal epidural abscess",
+        "evidence_ids": [
+          "E001",
+          "E002",
+          "E003"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "May 22, 2013",
+        "event": "Patient presented to ED with severe back pain",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [
+      {
+        "diagnosis": "Spinal epidural abscess",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "treatments": [],
+    "complications": [
+      {
+        "complication": "Incomplete paraplegia",
+        "when_occurred": "Not documented in judgment",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to diagnose spinal epidural abscess",
+        "against": "Dr. Kalapodis",
+        "found_proven": true,
+        "evidence_ids": [
+          "E001",
+          "E002"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Failure to diagnose spinal epidural abscess",
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.0970873786407767,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-16 16:19:01.224860",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

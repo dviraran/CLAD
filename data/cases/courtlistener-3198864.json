@@ -1,0 +1,499 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-3198864",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2016-04-28",
+  "url": "https://example.com/courtlistener-3198864",
+  "case_name": "Susan Stewart, Personal Representative of the Estate of Joanne Hatton v. Arthur Alunday, M.D.",
+  "neutral_citation": null,
+  "clinical_domain": "SURGERY_ORTHOPAEDIC",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Susan Stewart, Personal Representative of the Estate of Joanne Hatton v. Arthur Alunday, M.D.. Medical malpractice case involving surgery orthopaedic.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "In March 2008, Joanne Hatton\u2014who was eighty-five-years old with osteoporosis and scoliosis\u2014was living in a nursing home in Greensburg; Dr. Alunday was her doctor.",
+      "paragraph_ref": "23",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "On March 10, Hatton was admitted to Decatur County Memorial Hospital (\u201cthe hospital\u201d) in Greensburg with flu-like symptoms.",
+      "paragraph_ref": "26",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "Hatton\u2019s preliminary blood-culture results came back on Sunday, March 17; they showed that Hatton had a Staphylococcus (staph) infection.",
+      "paragraph_ref": "37",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "On March 16, Hatton went to the emergency room complaining of left hip and back pain.",
+      "paragraph_ref": "34",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. Alunday resumed Hatton\u2019s care on Monday. That morning, additional blood-culture results showed that Hatton\u2019s staph infection was methicillin-resistant Staphylococcus aureus (MRSA).",
+      "paragraph_ref": "41",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "Hatton underwent an MRI on March 27, and it showed scoliosis and extensive degenerative changes but no spinal-compression fracture.",
+      "paragraph_ref": "58",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "The bone scan, which was performed on April 8, showed evidence of an acute L2 compression fracture.",
+      "paragraph_ref": "70",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "FACTUAL_FINDING",
+      "text": "Although Hatton was initially stable following the procedure, by mid-May she developed a widespread MRSA infection. Hatton died on May 26.",
+      "paragraph_ref": "92",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "LEGAL_FINDING",
+      "text": "We affirm the jury\u2019s verdict in his favor.",
+      "paragraph_ref": "20",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "LEGAL_FINDING",
+      "text": "The trial court found that Dr. Alunday made a judicial admission but, concluded that the judicial admission was not conclusive and binding.",
+      "paragraph_ref": "248",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "85 years",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Flu-like symptoms",
+      "history_of_present_illness": "Patient presented with flu-like symptoms and was admitted to the hospital. She received intravenous fluids to prevent dehydration and was discharged after four days.",
+      "past_medical_history": [
+        "Osteoporosis",
+        "Scoliosis"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": null,
+        "general_appearance": null,
+        "focused_exam": {
+          "general": "Flu-like symptoms",
+          "extremities": "Red and tender area where IV was inserted"
+        }
+      },
+      "initial_working_problem": "Suspected skin infection at IV site",
+      "known_constraints": null,
+      "initial_differential": [
+        "Skin infection",
+        "Other causes of flu-like symptoms"
+      ],
+      "critical_findings": [
+        "Red and tender area at IV site"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "LAB",
+        "name": "Blood Culture",
+        "description": "Blood culture to identify infection",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Staphylococcus infection, later identified as MRSA",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates bacterial infection requiring targeted antibiotic therapy",
+          "decision_impact": "Prompted change in antibiotic treatment",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E003",
+          "E005"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "IMAGING",
+        "name": "MRI",
+        "description": "MRI of the spine to investigate back pain",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Showed scoliosis and extensive degenerative changes, no spinal-compression fracture or infection",
+          "detailed_findings": null,
+          "clinical_significance": "Helped rule out spinal compression fracture and infection",
+          "decision_impact": "Supported decision to discharge patient",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "request_id": "R003",
+        "type": "IMAGING",
+        "name": "Bone Scan",
+        "description": "Bone scan to assess for compression fracture",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Evidence of an acute L2 compression fracture",
+          "detailed_findings": null,
+          "clinical_significance": "Confirmed presence of compression fracture",
+          "decision_impact": "Led to referral for kyphoplasty",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Hospital Admission",
+        "description": "Patient admitted with flu-like symptoms",
+        "duration": "4 days",
+        "key_events": [
+          {
+            "event": "Admission to hospital",
+            "timestamp": "March 10, 2008",
+            "evidence_ids": [
+              "E002"
+            ]
+          },
+          {
+            "event": "Discharge from hospital",
+            "timestamp": "March 14, 2008",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Subsequent Hospitalization and Workup",
+        "description": "Patient readmitted with suspected infection and back pain",
+        "duration": "March 15 to April 17, 2008",
+        "key_events": [
+          {
+            "event": "Blood culture ordered",
+            "timestamp": "March 15, 2008",
+            "evidence_ids": [
+              "E003"
+            ]
+          },
+          {
+            "event": "MRI performed",
+            "timestamp": "March 27, 2008",
+            "evidence_ids": [
+              "E006"
+            ]
+          },
+          {
+            "event": "Bone scan performed",
+            "timestamp": "April 8, 2008",
+            "evidence_ids": [
+              "E007"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient with MRSA infection and back pain",
+        "prompt": "Should the possibility of MRSA seeding to the compression fracture be considered?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Consider MRSA seeding to the compression fracture",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard of care requires considering MRSA spread in such cases"
+          },
+          {
+            "option_id": "B",
+            "description": "Do not consider MRSA seeding to the compression fracture",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Defendant did not initially consider this possibility"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant did not consider MRSA seeding to the compression fracture",
+          "reasoning_stated": "Focused on osteoporosis as the cause of fracture",
+          "evidence_ids": [
+            "E126",
+            "E127"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Consideration of MRSA seeding should have been part of the differential",
+          "standard_of_care_basis": "Expert testimony indicated this was necessary",
+          "evidence_ids": [
+            "E126",
+            "E127"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to consider MRSA seeding could lead to inadequate treatment",
+          "what_should_have_happened": "MRSA seeding should have been considered and ruled out",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E126",
+            "E127"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient developed widespread MRSA infection and died",
+        "severity": "FATAL",
+        "long_term_effects": "Not applicable",
+        "evidence_ids": [
+          "E008"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "0",
+        "key_findings": [
+          "Jury found in favor of Dr. Alunday",
+          "No breach of standard of care established"
+        ],
+        "evidence_ids": [
+          "E009"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Consideration of MRSA seeding",
+        "counterfactual": "Consideration might have led to different management",
+        "evidence_ids": [
+          "E009"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "March 10, 2008",
+        "event": "Patient admitted to hospital with flu-like symptoms",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "March 15, 2008",
+        "event": "Blood culture ordered due to suspected infection",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "timestamp": "March 27, 2008",
+        "event": "MRI performed showing no infection",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "timestamp": "April 8, 2008",
+        "event": "Bone scan performed showing compression fracture",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Blood Culture",
+        "date": "March 15, 2008",
+        "result": "Staphylococcus infection, later identified as MRSA",
+        "interpretation": null,
+        "evidence_ids": [
+          "E003",
+          "E005"
+        ]
+      },
+      {
+        "test_name": "MRI",
+        "date": "March 27, 2008",
+        "result": "No spinal-compression fracture or infection",
+        "interpretation": null,
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "test_name": "Bone Scan",
+        "date": "April 8, 2008",
+        "result": "Acute L2 compression fracture",
+        "interpretation": null,
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "MRSA infection",
+        "when_made": "March 17, 2008",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "diagnosis": "Acute L2 compression fracture",
+        "when_made": "April 8, 2008",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Intravenous vancomycin",
+        "date": "March 17, 2008",
+        "provider": null,
+        "outcome": "Patient stabilized initially",
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "treatment": "Kyphoplasty",
+        "date": "April 17, 2008",
+        "provider": null,
+        "outcome": "Initially stable, later developed MRSA infection",
+        "evidence_ids": [
+          "E011"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Widespread MRSA infection",
+        "when_occurred": "Mid-May 2008",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E008"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to consider MRSA seeding to compression fracture",
+        "against": "Dr. Alunday",
+        "found_proven": false,
+        "evidence_ids": [
+          "E009"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "No breach of standard of care",
+        "legal_significance": "Jury verdict in favor of Dr. Alunday",
+        "evidence_ids": [
+          "E009"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.02865329512893983,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-16 16:31:18.590393",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

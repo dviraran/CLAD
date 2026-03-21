@@ -1,0 +1,439 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10130156",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2024-10-04",
+  "url": "https://example.com/courtlistener-10130156",
+  "case_name": "Frances Koe, M.D., and Wills Valley Family Medicine, LLC v. Donna Ratliff, as personal representative of the Estate of Rhoda Gail McBride, (Appeal from DeKalb Circuit Court: CV-18-900266).",
+  "neutral_citation": null,
+  "clinical_domain": "NEUROLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Frances Koe, M.D., and Wills Valley Family Medicine, LLC v. Donna Ratliff, as personal representative of the Estate of Rhoda Gail McBride, (Appeal from DeKalb Circuit Court: CV-18-900266).. Medical malpractice case involving neurology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "On November 3, 2016, McBride sought treatment for leg pain at a medical clinic operated by Wills Valley.",
+      "paragraph_ref": "20",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "The ultrasound revealed that McBride was suffering from a blood clot.",
+      "paragraph_ref": "34",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. Koe instructed that McBride was to be prescribed Coumadin, a blood thinner.",
+      "paragraph_ref": "36",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "Ratliff testified that she was never informed that Coumadin is a blood thinner or about the necessity for regular blood tests.",
+      "paragraph_ref": "72",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "The Coumadin prescription bottle specifically instructs users of the medication to review the medication guide.",
+      "paragraph_ref": "83",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "Ratliff acknowledged that a medication guide could have been stapled to the prescription bag, but she claimed that she did not remember seeing it.",
+      "paragraph_ref": "85",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "Ratliff testified that she had not received any results of the blood test by December 12, 2016.",
+      "paragraph_ref": "112",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "LEGAL_FINDING",
+      "text": "The trial court ordered a new trial because, it concluded, the contributory-negligence defense and the jury's verdict therefore could not be supported by the evidence.",
+      "paragraph_ref": "216",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "COURT_REASONING",
+      "text": "The Court finds this to be especially true in a matter involving complex medical knowledge not known to a reasonably prudent layperson.",
+      "paragraph_ref": "186",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "LEGAL_FINDING",
+      "text": "We reverse the trial court's judgment.",
+      "paragraph_ref": "19",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Independent until recent leg pain"
+      },
+      "chief_complaint": "Leg pain",
+      "history_of_present_illness": "Patient presented with leg pain and was referred for an ultrasound.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "system": "Examination mentioned but findings not specified"
+        }
+      },
+      "initial_working_problem": "Leg pain with suspected vascular issue",
+      "known_constraints": null,
+      "initial_differential": [
+        "Deep vein thrombosis"
+      ],
+      "critical_findings": [
+        "Blood clot identified via ultrasound"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "Ultrasound",
+        "description": "Ultrasound of the leg to check for blood clots",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Blood clot detected",
+          "detailed_findings": null,
+          "clinical_significance": "Confirms presence of a blood clot requiring anticoagulation",
+          "decision_impact": "Prompted prescription of Coumadin",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "LAB",
+        "name": "PT/INR",
+        "description": "Blood test to monitor blood thickness",
+        "available_phase": "followup",
+        "reveal": {
+          "result_summary": "Not documented in judgment",
+          "detailed_findings": null,
+          "clinical_significance": "Necessary to adjust Coumadin dosage",
+          "decision_impact": "Should have been monitored regularly",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with leg pain and is referred for an ultrasound",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Patient seen at clinic for leg pain",
+            "timestamp": "November 3, 2016",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Diagnostic Workup",
+        "description": "Ultrasound performed and blood clot diagnosed",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Ultrasound reveals blood clot",
+            "timestamp": "December 2, 2016",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "followup",
+        "name": "Follow-up Care",
+        "description": "Patient management post-diagnosis",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Patient prescribed Coumadin",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E003"
+            ]
+          },
+          {
+            "event": "Missed follow-up appointments",
+            "timestamp": "December 14 and 21, 2016",
+            "evidence_ids": [
+              "E112",
+              "E137"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient diagnosed with a blood clot and prescribed Coumadin",
+        "prompt": "What follow-up care should be arranged for a patient starting on Coumadin?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Schedule regular PT/INR tests and educate patient on Coumadin risks",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard care to prevent complications from anticoagulation therapy"
+          },
+          {
+            "option_id": "B",
+            "description": "Prescribe Coumadin without scheduling follow-up tests",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Neglects necessary monitoring for anticoagulation therapy"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant prescribed Coumadin without ensuring follow-up testing",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E003",
+            "E007"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Regular PT/INR tests should have been scheduled",
+          "standard_of_care_basis": "Expert testimony and standard anticoagulation management",
+          "evidence_ids": [
+            "E004",
+            "E005"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to ensure follow-up testing led to Coumadin toxicity",
+          "what_should_have_happened": "Regular monitoring and patient education on Coumadin",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E004",
+            "E005",
+            "E007"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient suffered a brain bleed and died",
+        "severity": "FATAL",
+        "long_term_effects": "Not applicable",
+        "evidence_ids": [
+          "E152",
+          "E153"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "None",
+        "key_findings": [
+          "Jury found sufficient evidence of contributory negligence",
+          "Trial court's order for a new trial was reversed"
+        ],
+        "evidence_ids": [
+          "E368"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Failure to ensure follow-up testing",
+        "counterfactual": "Regular testing could have prevented Coumadin toxicity",
+        "evidence_ids": [
+          "E368"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "November 3, 2016",
+        "event": "Patient presents with leg pain",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "December 2, 2016",
+        "event": "Ultrasound reveals blood clot",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "December 24, 2016",
+        "event": "Patient suffers brain bleed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E152"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Ultrasound",
+        "date": "December 2, 2016",
+        "result": "Blood clot detected",
+        "interpretation": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Blood clot",
+        "when_made": "December 2, 2016",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Coumadin prescription",
+        "date": "Date not specified in judgment",
+        "provider": null,
+        "outcome": "Not documented in judgment",
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Brain bleed",
+        "when_occurred": "December 24, 2016",
+        "severity": "Fatal",
+        "evidence_ids": [
+          "E152"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to ensure follow-up testing",
+        "against": "Defendant physician",
+        "found_proven": false,
+        "evidence_ids": [
+          "E368"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Jury's verdict supported by evidence",
+        "legal_significance": "No liability found",
+        "evidence_ids": [
+          "E368"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.01824817518248175,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-09 18:09:29.550110",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

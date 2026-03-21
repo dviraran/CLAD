@@ -1,0 +1,424 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-4766719",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2020-07-09",
+  "url": "https://example.com/courtlistener-4766719",
+  "case_name": "Cole v. Chun",
+  "neutral_citation": null,
+  "clinical_domain": "PAEDIATRICS",
+  "outcome_severity": "TEMPORARY_HARM",
+  "summary": {
+    "brief": "Cole v. Chun. Medical malpractice case involving paediatrics.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "In June 2011, plaintiff began treatment with defendant Robert A. Eden, an ophthalmologist employed by defendant Cornea Consultants of Albany, PLLC, for a change in his vision and a small white spot in his left eye.",
+      "paragraph_ref": "5",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Eden performed the procedure in August 2011 and, in doing so, placed sutures within plaintiff's left eye that would later require removal.",
+      "paragraph_ref": "5",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "Eden began removing the sutures in January 2012, and defendant Adam Chun, a first-year ophthalmology fellow employed by Cornea Consultants, removed additional sutures in July 2012 but had difficulty doing so, which resulted in Chun 'tugging' on plaintiff's eye.",
+      "paragraph_ref": "5",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "Plaintiff called Cornea Consultants for an antibiotic prescription and was advised instead to go to the hospital.",
+      "paragraph_ref": "6",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "Upon examination the following morning, Chun and Eden observed a cornea ulcer, loose stitches, an area of significant epithelial defect and a corneal melt in plaintiff's left eye.",
+      "paragraph_ref": "6",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "Later that day, the transplant 'fell apart' requiring an emergency corneal transplant.",
+      "paragraph_ref": "6",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "Plaintiff remains without visual acuity in his left eye and operates with light perception only.",
+      "paragraph_ref": "6",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "LEGAL_FINDING",
+      "text": "Supreme Court granted Albany Medical's motion in its entirety, but denied the motion made by Cornea Consultants, finding issues of fact as to both the lack of informed consent and medical malpractice causes of action.",
+      "paragraph_ref": "7",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Cykiert opined, within a reasonable degree of medical certainty, that 'there is absolutely no proximate cause between the alleged departures of . . . Chun and Eden and the injuries alleged by [plaintiff].'",
+      "paragraph_ref": "11",
+      "speaker": "Expert witness"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Klein opined, 'within a reasonable degree of medical certainty, that [Cornea Consultants] deviated from good and accepted ophthalmological practice by discharging [plaintiff] on July 31, 2012 without the necessary antibiotics.'",
+      "paragraph_ref": "12",
+      "speaker": "Expert witness"
+    },
+    {
+      "evidence_id": "E011",
+      "type": "COURT_REASONING",
+      "text": "We find that, when '[v]iewing the evidence in a light most favorable to plaintiff'... plaintiff's expert affidavit raises a question of fact as to whether Cornea Consultants' alleged deviation from acceptable medical practice proximately caused plaintiff's injuries.",
+      "paragraph_ref": "12",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E012",
+      "type": "LEGAL_FINDING",
+      "text": "ORDERED that the order is affirmed, with costs.",
+      "paragraph_ref": "14",
+      "speaker": "Court order"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "unknown",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Change in vision and a small white spot in left eye",
+      "history_of_present_illness": "Patient began treatment for vision changes and a white spot in the left eye. Underwent a full thickness corneal transplant in August 2011.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "eye": "Cornea ulcer, loose stitches, significant epithelial defect, corneal melt observed"
+        }
+      },
+      "initial_working_problem": "Corneal transplant complications",
+      "known_constraints": null,
+      "initial_differential": [
+        "Corneal ulcer",
+        "Infection",
+        "Suture-related complications"
+      ],
+      "critical_findings": [
+        "Cornea ulcer",
+        "Loose stitches",
+        "Corneal melt"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E005"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSULT_NOTE",
+        "name": "Ophthalmology Consultation",
+        "description": "Consultation with ophthalmologist for corneal transplant complications",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Cornea ulcer, loose stitches, significant epithelial defect, corneal melt",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates severe complications post-transplant",
+          "decision_impact": "Requires immediate intervention to prevent further damage",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with vision changes and a white spot in the left eye",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Initial consultation with ophthalmologist",
+            "timestamp": "June 2011",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Post-Suture Removal Complications",
+        "description": "Complications observed after suture removal",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Observation of corneal ulcer and other complications",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E005"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Post-suture removal with complications observed",
+        "prompt": "What should be the next step in management?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Administer antibiotics and monitor closely",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Antibiotics are standard to prevent infection post-suture removal"
+          },
+          {
+            "option_id": "B",
+            "description": "Discharge without antibiotics",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Failed to prevent infection, leading to severe complications"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant discharged patient without antibiotics",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E010"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Antibiotics should have been administered",
+          "standard_of_care_basis": "Expert evidence established antibiotics are necessary post-suture removal",
+          "evidence_ids": [
+            "E010",
+            "E012"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to administer antibiotics led to infection and severe complications",
+          "what_should_have_happened": "Antibiotics should have been given to prevent infection",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E010",
+            "E012"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient remains without visual acuity in left eye, operates with light perception only",
+        "severity": "PERMANENT_SEVERE_DISABILITY",
+        "long_term_effects": "Complete blindness in left eye",
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "None",
+        "key_findings": [
+          "Cornea Consultants failed to establish entitlement to summary judgment",
+          "Issues of fact regarding lack of informed consent and medical malpractice"
+        ],
+        "evidence_ids": [
+          "E008",
+          "E012"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Failure to administer antibiotics post-suture removal",
+        "counterfactual": "Antibiotics could have prevented infection",
+        "evidence_ids": [
+          "E010",
+          "E012"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "June 2011",
+        "event": "Patient began treatment with ophthalmologist",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "August 2011",
+        "event": "Full thickness corneal transplant performed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "January 2012",
+        "event": "Suture removal began",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "timestamp": "July 2012",
+        "event": "Additional sutures removed with difficulty",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Corneal ulcer and complications observed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [
+      {
+        "diagnosis": "Corneal ulcer and melt",
+        "when_made": "Date not specified in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Emergency corneal transplant",
+        "date": "Date not specified in judgment",
+        "provider": null,
+        "outcome": "Transplant fell apart, requiring emergency intervention",
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Retinal detachment",
+        "when_occurred": "Date not specified in judgment",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to administer antibiotics post-suture removal",
+        "against": "Cornea Consultants",
+        "found_proven": false,
+        "evidence_ids": [
+          "E010"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Cornea Consultants failed to establish entitlement to summary judgment",
+        "legal_significance": "Issues of fact regarding lack of informed consent and medical malpractice",
+        "evidence_ids": [
+          "E008",
+          "E012"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "TREATMENT_PROCEDURE_ERROR",
+      "INFORMED_CONSENT"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.8,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-17 08:32:10.389130",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

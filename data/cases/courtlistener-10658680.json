@@ -1,0 +1,380 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10658680",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2019-04-26",
+  "url": "https://example.com/courtlistener-10658680",
+  "case_name": "SUSAN OAKES v. MARK A. FOX, M.D.",
+  "neutral_citation": null,
+  "clinical_domain": "ONCOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "SUSAN OAKES v. MARK A. FOX, M.D.. Medical malpractice case involving oncology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "In 2018, plaintiff Susan Oakes was diagnosed with early-stage breast cancer after a mammogram and a biopsy revealed a small invasive ductal carcinoma.",
+      "paragraph_ref": "11",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Ms. Oakes, age 58 at the time, thereafter, met with Dr. Mark A. Fox, who maintains that he offered Ms. Oakes the options of: (a) lumpectomy, radiation, and sentinel lymph node biopsy (“SLNB”); or (b) mastectomy and axillary lymph node dissection (“ALND”).",
+      "paragraph_ref": "11",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Steven Efird, Plaintiffs’ expert, acknowledged in a deposition that, based upon his review of the record in the matter, he found Dr. Fox’s charting to be truthful that Ms. Oakes refused radiation.",
+      "paragraph_ref": "31",
+      "speaker": "Dr. Steven Efird"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "Ms. Oakes asserts the surgery by Dr. Fox resulted in the unnecessary removal of her breasts and caused incurable lymphedema and pain, swelling, weakness, and decreased range of motion in her arm and shoulder.",
+      "paragraph_ref": "38",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "LEGAL_FINDING",
+      "text": "The trial court granted summary judgment to the defendants. We affirm.",
+      "paragraph_ref": "6",
+      "speaker": "Court conclusion"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "COURT_REASONING",
+      "text": "The court found that Plaintiffs’ “response to the defendants’ motion for summary judgment was not timely filed and will not be considered.”",
+      "paragraph_ref": "50",
+      "speaker": "Trial court"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Efird admitted that “the way in which Dr. Fox [. . .] charted the treatment options did not cause any injury to Ms. Oakes” and that the charting “did not cause any secondary provider to take a different or adverse path in treatment.”",
+      "paragraph_ref": "88",
+      "speaker": "Dr. Steven Efird"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "LEGAL_FINDING",
+      "text": "Defendants have put forth sufficient evidence to affirmatively negate the essential elements of Plaintiffs’ claim of medical negligence arising from Dr. Fox’s performance of the double mastectomy and ALND.",
+      "paragraph_ref": "84",
+      "speaker": "Court conclusion"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "FACTUAL_FINDING",
+      "text": "On the day of the surgery, Ms. Oakes signed a consent to procedure form which reveals she expressly consented to the ALND procedure without any limitation on the number of lymph nodes to be removed.",
+      "paragraph_ref": "32",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "COURT_REASONING",
+      "text": "The Court having found that (1) Dr. Fox properly and sufficiently explained all possible surgical options for Ms. Oakes’ breast cancer, the likely outcomes and risks of each—including lymphedema—and (2) after these discussions, Ms. Oakes elected to proceed with a double mastectomy and axillary lymph node dissection (“ALND”),",
+      "paragraph_ref": "97",
+      "speaker": "Court conclusion"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "58 years",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Diagnosis of early-stage breast cancer",
+      "history_of_present_illness": "In 2018, Susan Oakes was diagnosed with early-stage breast cancer after a mammogram and biopsy revealed a small invasive ductal carcinoma.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "breast": "Not documented in judgment"
+        }
+      },
+      "initial_working_problem": "Early-stage breast cancer",
+      "known_constraints": null,
+      "initial_differential": [
+        "breast cancer"
+      ],
+      "critical_findings": [
+        "small invasive ductal carcinoma"
+      ],
+      "urgency_level": "ELECTIVE",
+      "evidence_ids": [
+        "E001"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSULT_NOTE",
+        "name": "Surgical Consultation",
+        "description": "Consultation with Dr. Mark A. Fox regarding surgical options for breast cancer treatment.",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Options discussed: lumpectomy with radiation and SLNB, or mastectomy with ALND.",
+          "detailed_findings": null,
+          "clinical_significance": "Informed consent and treatment options discussion.",
+          "decision_impact": "Patient's decision on surgical treatment.",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E002",
+          "E010"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Diagnosis",
+        "description": "Patient diagnosed with early-stage breast cancer.",
+        "duration": "Date not specified in judgment",
+        "key_events": [
+          {
+            "event": "Mammogram and biopsy performed",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "decision",
+        "name": "Surgical Decision",
+        "description": "Patient decides on surgical treatment after consultation.",
+        "duration": "Date not specified in judgment",
+        "key_events": [
+          {
+            "event": "Consultation with Dr. Fox",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "decision",
+        "clinical_context": "Patient deciding on surgical treatment for breast cancer.",
+        "prompt": "What surgical treatment should be recommended?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Recommend lumpectomy with radiation and SLNB.",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Less invasive, preserves breast, similar survival rates."
+          },
+          {
+            "option_id": "B",
+            "description": "Recommend double mastectomy with ALND.",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "More invasive, higher risk of lymphedema, unnecessary for early-stage cancer."
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant recommended double mastectomy with ALND.",
+          "reasoning_stated": "Patient was informed of options and chose mastectomy.",
+          "evidence_ids": [
+            "E002",
+            "E010"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Lumpectomy with radiation and SLNB should have been recommended.",
+          "standard_of_care_basis": "Expert testimony indicated similar survival rates with less invasive procedure.",
+          "evidence_ids": [
+            "E003",
+            "E010"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "The court found that the recommendation for mastectomy was not necessary given the early-stage diagnosis.",
+          "what_should_have_happened": "Patient should have been advised on the benefits of breast-conserving surgery.",
+          "legal_standard_applied": "Standard of care as established by expert testimony.",
+          "evidence_ids": [
+            "E003",
+            "E010"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient underwent double mastectomy and developed lymphedema.",
+        "severity": "PERMANENT_MODERATE_DISABILITY",
+        "long_term_effects": "Chronic lymphedema, pain, and decreased range of motion.",
+        "evidence_ids": [
+          "E004",
+          "E038"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "0",
+        "key_findings": [
+          "Defendants properly obtained informed consent.",
+          "No breach of standard of care found."
+        ],
+        "evidence_ids": [
+          "E005",
+          "E010"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "No failure found by court.",
+        "counterfactual": "Not applicable.",
+        "evidence_ids": [
+          "E005",
+          "E010"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Patient diagnosed with early-stage breast cancer",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Mammogram and biopsy",
+        "date": "Date not specified in judgment",
+        "result": "Small invasive ductal carcinoma",
+        "interpretation": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Early-stage breast cancer",
+        "when_made": "Date not specified in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Double mastectomy with ALND",
+        "date": "Date not specified in judgment",
+        "provider": null,
+        "outcome": "Patient developed lymphedema",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Lymphedema",
+        "when_occurred": "After surgery",
+        "severity": "Moderate",
+        "evidence_ids": [
+          "E038"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Unnecessary double mastectomy and ALND",
+        "against": "Dr. Fox",
+        "found_proven": false,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "No breach of standard of care",
+        "legal_significance": "Defendants properly obtained informed consent",
+        "evidence_ids": [
+          "E010"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "INFORMED_CONSENT"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.0970873786407767,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-09 19:38:38.104665",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

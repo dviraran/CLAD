@@ -32,15 +32,18 @@ theme_set(theme_minimal(base_size = 11) +
 # Color palette - CONSISTENT across all figures
 llm_colors <- c(
   "GPT-5.2" = "#1f77b4",
+  "GPT-5.2-Concise" = "#aec7e8",
   "GPT-4o" = "#e377c2",
   "GPT-4o Mini" = "#f7b6d2",
   "Grok 4.1" = "#ff7f0e",
+  "Claude Sonnet 4.5" = "#006400",
   "Claude Sonnet 4" = "#2ca02c",
   "Claude 3.5 Haiku" = "#98df8a",
   "Gemini 3 Pro" = "#8c564b",
   "Gemini 2.0 Flash" = "#c49c94",
   "Llama 4 Maverick" = "#d62728",
   "Llama 4 Scout" = "#ff9896",
+  "Qwen3 30B" = "#c5b0d5",
   "Qwen 2.5 72B" = "#9467bd",
   "DeepSeek R1" = "#17becf",
   "Mistral Large" = "#bcbd22"
@@ -82,16 +85,19 @@ runs_all <- runs_raw %>%
     score = coalesce(primary_score, score_0_2) / 2,
     score_avg = coalesce(mean_score, score_0_2) / 2,  # For supplementary analysis (still uses original)
     llm_display = case_when(
+      str_detect(llm_name, "gpt-5.2-concise") ~ "GPT-5.2-Concise",
       str_detect(llm_name, "gpt-5") ~ "GPT-5.2",
       str_detect(llm_name, "gpt-4o-mini") ~ "GPT-4o Mini",
       str_detect(llm_name, "gpt-4o") ~ "GPT-4o",
+      str_detect(llm_name, "claude-sonnet-4\\.5") ~ "Claude Sonnet 4.5",
       str_detect(llm_name, "claude-sonnet-4") ~ "Claude Sonnet 4",
       str_detect(llm_name, "claude-3.5-haiku") ~ "Claude 3.5 Haiku",
       str_detect(llm_name, "gemini-3-pro") ~ "Gemini 3 Pro",
       str_detect(llm_name, "gemini-2.0-flash") ~ "Gemini 2.0 Flash",
       str_detect(llm_name, "llama-4-maverick") ~ "Llama 4 Maverick",
       str_detect(llm_name, "llama-4-scout") ~ "Llama 4 Scout",
-      str_detect(llm_name, "qwen") ~ "Qwen 2.5 72B",
+      str_detect(llm_name, "qwen3") ~ "Qwen3 30B",
+      str_detect(llm_name, "qwen-2.5") ~ "Qwen 2.5 72B",
       str_detect(llm_name, "grok") ~ "Grok 4.1",
       str_detect(llm_name, "deepseek") ~ "DeepSeek R1",
       str_detect(llm_name, "mistral") ~ "Mistral Large",
@@ -173,16 +179,19 @@ cost_raw <- read_csv("../results/cost_summary.csv", show_col_types = FALSE)
 cost_data <- cost_raw %>%
   mutate(
     llm_display = case_when(
+      str_detect(llm_name, "gpt-5.2-concise") ~ "GPT-5.2-Concise",
       str_detect(llm_name, "gpt-5") ~ "GPT-5.2",
       str_detect(llm_name, "gpt-4o-mini") ~ "GPT-4o Mini",
       str_detect(llm_name, "gpt-4o") ~ "GPT-4o",
+      str_detect(llm_name, "claude-sonnet-4\\.5") ~ "Claude Sonnet 4.5",
       str_detect(llm_name, "claude-sonnet-4") ~ "Claude Sonnet 4",
       str_detect(llm_name, "claude-3.5-haiku") ~ "Claude 3.5 Haiku",
       str_detect(llm_name, "gemini-3-pro") ~ "Gemini 3 Pro",
       str_detect(llm_name, "gemini-2.0-flash") ~ "Gemini 2.0 Flash",
       str_detect(llm_name, "llama-4-maverick") ~ "Llama 4 Maverick",
       str_detect(llm_name, "llama-4-scout") ~ "Llama 4 Scout",
-      str_detect(llm_name, "qwen") ~ "Qwen 2.5 72B",
+      str_detect(llm_name, "qwen3") ~ "Qwen3 30B",
+      str_detect(llm_name, "qwen-2.5") ~ "Qwen 2.5 72B",
       str_detect(llm_name, "grok") ~ "Grok 4.1",
       str_detect(llm_name, "deepseek") ~ "DeepSeek R1",
       str_detect(llm_name, "mistral") ~ "Mistral Large",
@@ -694,9 +703,9 @@ radar_data <- llm_summary %>%
   )
 
 # Split into two groups: proprietary frontier vs open-source & mini
-proprietary_frontier <- c("GPT-5.2", "GPT-4o", "Claude Sonnet 4", "Gemini 3 Pro", "Grok 4.1")
+proprietary_frontier <- c("GPT-5.2", "GPT-5.2-Concise", "GPT-4o", "Claude Sonnet 4.5", "Claude Sonnet 4", "Gemini 3 Pro", "Grok 4.1")
 open_mini <- c("DeepSeek R1", "Mistral Large", "Llama 4 Maverick", "Llama 4 Scout",
-               "Qwen 2.5 72B", "GPT-4o Mini", "Claude 3.5 Haiku", "Gemini 2.0 Flash")
+               "Qwen3 30B", "Qwen 2.5 72B", "GPT-4o Mini", "Claude 3.5 Haiku", "Gemini 2.0 Flash")
 
 radar_data_a <- radar_data %>% filter(group %in% proprietary_frontier)
 radar_data_b <- radar_data %>% filter(group %in% open_mini)
@@ -2349,9 +2358,10 @@ proc_avg <- read.csv("../results/procedure_avg_counts.csv")
 proc_summary <- read.csv("../results/procedure_per_case_summary.csv")
 
 # Define model order by defensibility (high to low)
-model_order <- c("GPT-5.2", "Grok 4.1", "Claude Sonnet 4", "DeepSeek R1",
-                 "Mistral Large", "Gemini 3 Pro", "Claude 3.5 Haiku",
-                 "Qwen 2.5 72B", "Gemini 2.0 Flash", "Llama 4 Scout",
+model_order <- c("GPT-5.2", "GPT-5.2-Concise", "Grok 4.1", "Claude Sonnet 4.5",
+                 "Claude Sonnet 4", "DeepSeek R1", "Gemini 3 Pro",
+                 "Mistral Large", "Gemini 2.0 Flash", "Qwen3 30B",
+                 "Qwen 2.5 72B", "Claude 3.5 Haiku", "Llama 4 Scout",
                  "Llama 4 Maverick", "GPT-4o", "GPT-4o Mini")
 
 # Reshape for heatmap

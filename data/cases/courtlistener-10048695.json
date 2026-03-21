@@ -1,0 +1,468 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10048695",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2022-08-25",
+  "url": "https://example.com/courtlistener-10048695",
+  "case_name": "Frankel v. Deane",
+  "neutral_citation": null,
+  "clinical_domain": "NEUROLOGY",
+  "outcome_severity": "PERMANENT_SEVERE_DISABILITY",
+  "summary": {
+    "brief": "Frankel v. Deane. Medical malpractice case involving neurology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. Frankel performed the surgery on January 14, 2016. Ms. Deane signed consent forms and was, according to Dr. Frankel’s medical notes, 'told of possible complications, mainly pain, burning, paresthesia lower lip, chin, tongue.'",
+      "paragraph_ref": "19",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "When Ms. Deane awoke after the surgery, she was in pain and couldn’t speak or feel her tongue.",
+      "paragraph_ref": "22",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "Ms. Deane had a follow-up appointment with Dr. Frankel several days after the surgery. Dr. Frankel’s notes from the visit reflect that Ms. Deane complained of pain, paresthesia, and tingling on the front third of both sides of her tongue.",
+      "paragraph_ref": "25",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Kramer testified at his deposition that the standard of care for diagnosing nerve injuries was set forth in the 'Nerve Evaluation Protocol 2014' from the California Association of Oral and Maxillofacial Surgeons.",
+      "paragraph_ref": "77",
+      "speaker": "Dr. Kramer"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "LEGAL_FINDING",
+      "text": "Accordingly, Dr. Kotikian’s opinions as to violations of the ordinary standard of dental care as to all Defendants are not admissible in this matter, and therefore, inter alia, there is not found ultimately to exist a genuine dispute of material facts, such that Plaintiff’s claims do not survive Summary Judgment with respect to all Defendants.",
+      "paragraph_ref": "11",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "COURT_REASONING",
+      "text": "The court determined affirmatively that there was no genuine dispute of material fact that none of the three Defendants committed negligence as alleged for such a failure to so refer.",
+      "paragraph_ref": "11",
+      "speaker": "Court finding"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Pain and inability to feel tongue after wisdom teeth extraction",
+      "history_of_present_illness": "Patient underwent wisdom teeth extraction and awoke with pain and inability to feel her tongue. Symptoms persisted without improvement.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "oral": "Patient reports numbness and tingling on the front third of both sides of her tongue"
+        }
+      },
+      "initial_working_problem": "Post-operative nerve injury",
+      "known_constraints": null,
+      "initial_differential": [
+        "Lingual nerve injury",
+        "Post-operative pain"
+      ],
+      "critical_findings": [
+        "Numbness and inability to feel tongue"
+      ],
+      "urgency_level": "ROUTINE",
+      "evidence_ids": [
+        "E001",
+        "E002",
+        "E003"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSULT_NOTE",
+        "name": "Follow-up with Dr. Frankel",
+        "description": "Follow-up appointment after surgery",
+        "available_phase": "followup",
+        "reveal": {
+          "result_summary": "Patient complained of pain, paresthesia, and tingling on the front third of both sides of her tongue",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates possible nerve injury",
+          "decision_impact": "Should prompt further investigation or referral",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "CONSULT_NOTE",
+        "name": "Consult with Dr. Kim",
+        "description": "Consultation with another doctor for persistent symptoms",
+        "available_phase": "followup",
+        "reveal": {
+          "result_summary": "Patient reported numbness, but notes indicated some improvement",
+          "detailed_findings": null,
+          "clinical_significance": "Discrepancy in patient report and notes",
+          "decision_impact": "Should consider referral to a specialist",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with post-operative symptoms",
+        "duration": "Immediate post-surgery",
+        "key_events": [
+          {
+            "event": "Surgery performed",
+            "timestamp": "January 14, 2016",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "followup",
+        "name": "Follow-up Care",
+        "description": "Patient follow-up appointments and consultations",
+        "duration": "Several months post-surgery",
+        "key_events": [
+          {
+            "event": "Follow-up with Dr. Frankel",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E003"
+            ]
+          },
+          {
+            "event": "Consultation with Dr. Kim",
+            "timestamp": "April 18, 2016",
+            "evidence_ids": [
+              "E004"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "procedure",
+        "name": "Surgical Procedure",
+        "description": "Wisdom teeth extraction performed",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Surgery performed by Dr. Frankel",
+            "timestamp": "January 14, 2016",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "followup",
+        "clinical_context": "Patient with persistent numbness and pain post-surgery",
+        "prompt": "Should the patient be referred to a nerve specialist?",
+        "action_type": "REFER",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Refer to a nerve specialist immediately",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Early referral could prevent permanent damage"
+          },
+          {
+            "option_id": "B",
+            "description": "Advise patient to wait and observe",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Assumed symptoms would resolve over time"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Patient was advised to wait and observe",
+          "reasoning_stated": "Defendant believed symptoms would resolve",
+          "evidence_ids": [
+            "E003",
+            "E004"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Referral to a nerve specialist should have been made",
+          "standard_of_care_basis": "Expert testimony indicated early intervention is critical",
+          "evidence_ids": [
+            "E004",
+            "E005"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to refer led to permanent nerve damage",
+          "what_should_have_happened": "Referral to a specialist for early intervention",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E004",
+            "E005"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Permanent loss of sensation in tongue",
+        "severity": "PERMANENT_MODERATE_DISABILITY",
+        "long_term_effects": "Chronic numbness in tongue",
+        "evidence_ids": [
+          "E002",
+          "E003"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "0",
+        "key_findings": [
+          "Court found that nerve injury was a known risk of the procedure",
+          "Summary judgment was initially granted due to inadmissibility of expert testimony"
+        ],
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Failure to use protective measures during surgery",
+        "counterfactual": "Use of protective measures could have prevented nerve injury",
+        "evidence_ids": [
+          "E004",
+          "E005"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "January 14, 2016",
+        "event": "Surgery performed by Dr. Frankel",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "April 18, 2016",
+        "event": "Consultation with Dr. Kim",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "timestamp": "January 14, 2016",
+        "event": "Surgery performed by Dr. Frankel",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Neurosensory tests",
+        "date": "Date not specified in judgment",
+        "result": "No feeling in the front two-thirds of both sides of tongue",
+        "interpretation": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "test_name": "Neurosensory testing",
+        "date": "Not documented in judgment",
+        "result": "Bilateral transection of lingual nerves",
+        "interpretation": null,
+        "evidence_ids": [
+          "E002",
+          "E003"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Bilateral neurotmesis",
+        "when_made": "Two years post-surgery",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "diagnosis": "Bilateral transection of lingual nerves",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E002",
+          "E003"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Observation",
+        "date": "Post-surgery follow-up",
+        "provider": null,
+        "outcome": "No improvement",
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "treatment": "Wisdom teeth extraction",
+        "date": "January 14, 2016",
+        "provider": null,
+        "outcome": "Lingual nerve injury",
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Permanent lingual nerve damage",
+        "when_occurred": "Two years post-surgery",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "complication": "Permanent numbness in tongue",
+        "when_occurred": "Post-surgery",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E002",
+          "E003"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to refer to a nerve specialist",
+        "against": "Dr. Kim",
+        "found_proven": false,
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "allegation": "Failure to use protective measures during surgery",
+        "against": "Dr. Frankel",
+        "found_proven": false,
+        "evidence_ids": [
+          "E004",
+          "E005"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "No genuine dispute of material fact",
+        "legal_significance": "Summary judgment granted in favor of defendants",
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "finding": "Nerve injury was a known risk of the procedure",
+        "legal_significance": "No breach of standard of care",
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP",
+      "TREATMENT_PROCEDURE_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.008356545961002786,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-09 20:58:45.602590",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

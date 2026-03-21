@@ -1,0 +1,636 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10807837",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2026-03-12",
+  "url": "https://example.com/courtlistener-10807837",
+  "case_name": "Beard v. Everett Clinic, PLLC",
+  "neutral_citation": null,
+  "clinical_domain": "ONCOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Beard v. Everett Clinic, PLLC. Medical malpractice case involving oncology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Supak Beard was diagnosed with lupus in 1991. Lupus is an incurable, chronic autoimmune disease where a person\u2019s immune system attacks their own tissues and organs.",
+      "paragraph_ref": "14",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Mrs. Beard established care with Dr. Shaila Gala, a rheumatologist, in 2007. Dr. Gala managed Mrs. Beard\u2019s lupus by prescribing various medications, including prednisone.",
+      "paragraph_ref": "26",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "On February 5, 2015, Mrs. Beard went to the walk-in clinic, reporting feeling unwell and experiencing chills for 6 days.",
+      "paragraph_ref": "40",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "On March 22, Mrs. Beard had a follow-up appointment with Dr. Gala. She had a high fever and worsening symptoms.",
+      "paragraph_ref": "71",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "Mrs. Beard immediately underwent surgery. On March 24, Mrs. Beard passed away while recovering from surgery.",
+      "paragraph_ref": "77",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "LEGAL_FINDING",
+      "text": "The jury determined that Dr. Gala did not breach the standard of care and returned a defense verdict.",
+      "paragraph_ref": "99",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "COURT_REASONING",
+      "text": "The trial court acted within its discretion in giving the exercise of judgment instruction.",
+      "paragraph_ref": "437",
+      "speaker": "Judge's analysis"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Feeling unwell and experiencing chills for 6 days",
+      "history_of_present_illness": "Mrs. Beard reported feeling unwell with chills for 6 days. She had a history of lupus managed by Dr. Gala.",
+      "past_medical_history": [
+        "Lupus"
+      ],
+      "medications": [
+        "Prednisone"
+      ],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": "Not documented in judgment",
+          "temperature": "100.3\u2109 on March 1",
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "general": "Patient appeared unwell",
+          "respiratory": "No cough or difficulty breathing reported",
+          "musculoskeletal": "Minor joint pain reported"
+        }
+      },
+      "initial_working_problem": "Possible lupus flare-up with fever",
+      "known_constraints": null,
+      "initial_differential": [
+        "Lupus flare-up",
+        "Infection"
+      ],
+      "critical_findings": [
+        "Fever",
+        "Joint pain"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002",
+        "E003",
+        "E004"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "LAB",
+        "name": "Blood and Urine Tests",
+        "description": "Tests to check for infection",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Negative for infection",
+          "detailed_findings": null,
+          "clinical_significance": "Did not indicate infection",
+          "decision_impact": "Did not prompt further infectious disease workup",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E003",
+          "E004"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "IMAGING",
+        "name": "Chest X-ray",
+        "description": "Imaging to check for lung abnormalities",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": null,
+          "detailed_findings": "Abnormality in one lung, possibly atelectasis or artifact",
+          "clinical_significance": "Less likely pneumonia",
+          "decision_impact": "Recommended follow-up imaging",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "request_id": "R003",
+        "type": "IMAGING",
+        "name": "Abdominal Ultrasound",
+        "description": "Imaging to investigate abdominal symptoms",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": null,
+          "detailed_findings": "Intestinal inflammation",
+          "clinical_significance": "Indicated possible gastrointestinal issue",
+          "decision_impact": "Prompted emergency room referral",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents to walk-in clinic with symptoms",
+        "duration": "1 day",
+        "key_events": [
+          {
+            "event": "Blood and urine tests ordered",
+            "timestamp": "February 5, 2015",
+            "evidence_ids": [
+              "E003"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Follow-up and Investigation",
+        "description": "Further investigation of symptoms",
+        "duration": "March 1 to March 22, 2015",
+        "key_events": [
+          {
+            "event": "Follow-up appointment with Dr. Gala",
+            "timestamp": "March 1, 2015",
+            "evidence_ids": [
+              "E004"
+            ]
+          },
+          {
+            "event": "Abdominal ultrasound ordered",
+            "timestamp": "March 2, 2015",
+            "evidence_ids": [
+              "E004"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "decision",
+        "name": "Critical Decision Point",
+        "description": "Decision on further management",
+        "duration": "March 1 to March 2, 2015",
+        "key_events": [
+          {
+            "event": "Decision to increase prednisone and monitor",
+            "timestamp": "March 1, 2015",
+            "evidence_ids": [
+              "E004"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient with lupus presenting with fever and joint pain",
+        "prompt": "What should be the next step in management?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Urgently refer to an infectious disease specialist",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "To rule out serious infection given persistent fever"
+          },
+          {
+            "option_id": "B",
+            "description": "Increase prednisone dosage and monitor",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Assumed symptoms were due to lupus flare"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Increased prednisone dosage and monitored",
+          "reasoning_stated": "Assumed symptoms were due to lupus flare",
+          "evidence_ids": [
+            "E004",
+            "E006"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Urgent referral to infectious disease specialist",
+          "standard_of_care_basis": "Expert testimony indicated need for infectious disease evaluation",
+          "evidence_ids": [
+            "E006"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to consider infectious disease consultation despite persistent fever",
+          "what_should_have_happened": "Referral to infectious disease specialist for further evaluation",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E006"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      },
+      {
+        "decision_id": "D002",
+        "phase_id": "workup",
+        "clinical_context": "Patient with lupus flare-up and fever",
+        "prompt": "Should the patient be referred to an infectious disease specialist?",
+        "action_type": "REFER",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Refer to infectious disease specialist",
+            "is_defendant_choice": false,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "To rule out infectious causes of fever"
+          },
+          {
+            "option_id": "B",
+            "description": "Do not refer to infectious disease specialist",
+            "is_defendant_choice": true,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Negative blood and urine cultures, and symptoms consistent with lupus flare"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant did not refer to infectious disease specialist",
+          "reasoning_stated": "Negative cultures and symptoms consistent with lupus flare",
+          "evidence_ids": [
+            "E698",
+            "E699"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "B",
+          "description": "No referral required",
+          "standard_of_care_basis": "Expert testimony supported decision based on clinical findings",
+          "evidence_ids": [
+            "E699",
+            "E700"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Not applicable as the court found the decision met the standard of care",
+          "what_should_have_happened": "Not applicable",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E699",
+            "E700"
+          ]
+        },
+        "is_malpractice_point": false,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient passed away while recovering from surgery",
+        "severity": "FATAL",
+        "long_term_effects": "Not applicable",
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "None",
+        "key_findings": [
+          "Dr. Gala did not breach the standard of care",
+          "Exercise of judgment instruction was appropriate"
+        ],
+        "evidence_ids": [
+          "E006",
+          "E007"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Not applicable",
+        "counterfactual": "Not applicable",
+        "evidence_ids": [
+          "E006",
+          "E007"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "February 5, 2015",
+        "event": "Mrs. Beard visits walk-in clinic with chills",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "timestamp": "March 1, 2015",
+        "event": "Follow-up with Dr. Gala, fever noted",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "timestamp": "March 22, 2015",
+        "event": "High fever and worsening symptoms, ER referral",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "timestamp": "March 24, 2015",
+        "event": "Mrs. Beard passed away post-surgery",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "timestamp": "February 5, 2015",
+        "event": "Mrs. Beard went to the walk-in clinic",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "timestamp": "March 22, 2015",
+        "event": "Follow-up appointment with Dr. Gala",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "timestamp": "March 24, 2015",
+        "event": "Mrs. Beard passed away",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Blood and Urine Tests",
+        "date": "February 5, 2015",
+        "result": "Negative for infection",
+        "interpretation": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "test_name": "Chest X-ray",
+        "date": "February 5, 2015",
+        "result": "Abnormality noted, follow-up recommended",
+        "interpretation": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "test_name": "Abdominal Ultrasound",
+        "date": "March 2, 2015",
+        "result": "Intestinal inflammation",
+        "interpretation": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "test_name": "Blood cultures",
+        "date": "Not documented in judgment",
+        "result": "Negative",
+        "interpretation": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "test_name": "Urine cultures",
+        "date": "Not documented in judgment",
+        "result": "Negative",
+        "interpretation": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Intestinal tuberculosis",
+        "when_made": "Post-mortem",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "diagnosis": "Lupus flare-up",
+        "when_made": "March 1, 2018",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E626"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Increased prednisone dosage",
+        "date": "March 1, 2015",
+        "provider": null,
+        "outcome": "No improvement, symptoms worsened",
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "treatment": "Emergency surgery",
+        "date": "March 22, 2015",
+        "provider": null,
+        "outcome": "Patient passed away post-surgery",
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "treatment": "Increased prednisone dosage",
+        "date": "March 1, 2018",
+        "provider": null,
+        "outcome": "Attempt to control lupus flare",
+        "evidence_ids": [
+          "E626"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Intestinal perforation",
+        "when_occurred": "March 22, 2015",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "complication": "Death",
+        "when_occurred": "March 24, 2015",
+        "severity": "Fatal",
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to urgently refer to infectious disease specialist",
+        "against": "Dr. Gala",
+        "found_proven": false,
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "allegation": "Failure to order follow-up imaging",
+        "against": "Dr. Gala",
+        "found_proven": false,
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "allegation": "Failure to refer to infectious disease specialist",
+        "against": "Dr. Gala",
+        "found_proven": false,
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Dr. Gala did not breach the standard of care",
+        "legal_significance": "Jury returned a defense verdict",
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "finding": "Dr. Gala did not breach the standard of care",
+        "legal_significance": "Exercise of judgment instruction was appropriate",
+        "evidence_ids": [
+          "E006",
+          "E007"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.009421265141318977,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-16 15:33:42.526289",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

@@ -1,0 +1,446 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-7318040",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2012-06-29",
+  "url": "https://example.com/courtlistener-7318040",
+  "case_name": "Fewins v. CHS/Community Health Systems, Inc.",
+  "neutral_citation": null,
+  "clinical_domain": "PAEDIATRICS",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Fewins v. CHS/Community Health Systems, Inc.. Medical malpractice case involving paediatrics.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Plaintiff Melissa Fewins took her six-year-old son, D.A.F, to the emergency room at LGMC because he had been complaining of pain in his left leg since suffering a fall six days earlier.",
+      "paragraph_ref": "4",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. Jones ordered lab tests and a CT scan of D.A.F.\u2019s lower extremities and pelvis. The results of those tests were generally normal, except that D.A.F.\u2019s white blood cell count was elevated.",
+      "paragraph_ref": "4",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. Jones diagnosed D.A.F. with contusions on both hips and discharged the child from the LGMC emergency room with instructions that he take Tylenol with codeine for pain, and follow-up with his pediatrician on Monday, July 2.",
+      "paragraph_ref": "4",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "The next day, however, Plaintiffs took D.A.F. to the emergency room at Cook Children\u2019s Medical Center (\u201cCCMC\u201d). On arrival, D.A.F. had a fever and swelling and tenderness in his left leg.",
+      "paragraph_ref": "4",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "D.A.F. remained hospitalized from June 30 to August 10, during which time he underwent several surgeries and was treated for a methicillin-resistant staphylococcus aureus (\u201cMRSA\u201d) infection.",
+      "paragraph_ref": "4",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "LEGAL_FINDING",
+      "text": "The Court concludes, based on the factual record, that LGMC provided D.A.F. an \u201cappropriate medical screening examination,\u201d as required by EMTALA.",
+      "paragraph_ref": "13",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "LEGAL_FINDING",
+      "text": "LGMC is therefore entitled to summary judgment on Plaintiffs\u2019 stabilization claim.",
+      "paragraph_ref": "21",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "LEGAL_FINDING",
+      "text": "LGMC is therefore entitled to summary judgment on Plaintiffs\u2019 negligence claim.",
+      "paragraph_ref": "23",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "COURT_REASONING",
+      "text": "EMTALA is not a substitute for state law malpractice actions, and was not intended to guarantee a proper diagnosis or to provide a federal remedy for misdiagnosis or medical negligence.",
+      "paragraph_ref": "15",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "COURT_REASONING",
+      "text": "The \u201cwilful and wanton negligence\u201d standard is equivalent to the gross negligence standard.",
+      "paragraph_ref": "23",
+      "speaker": "Judge's analysis"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "6 years",
+        "sex": "male",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Pain in left leg",
+      "history_of_present_illness": "Patient had been complaining of pain in his left leg since suffering a fall six days earlier.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": "Not documented in judgment",
+          "temperature": "Normal",
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "lower_extremities": "Contusions on both hips"
+        }
+      },
+      "initial_working_problem": "Contusions on both hips",
+      "known_constraints": null,
+      "initial_differential": [
+        "Contusions",
+        "Possible infection"
+      ],
+      "critical_findings": [
+        "Elevated white blood cell count",
+        "Subcutaneous contusions",
+        "Hematoma/seroma on right hip"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002",
+        "E003"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "LAB",
+        "name": "Complete Blood Count",
+        "description": "Blood test to evaluate overall health and detect a variety of disorders, including infection.",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Elevated white blood cell count",
+          "detailed_findings": null,
+          "clinical_significance": "Suggests possible infection",
+          "decision_impact": "Should prompt consideration of infection and further investigation",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "IMAGING",
+        "name": "CT Scan of Lower Extremities and Pelvis",
+        "description": "Imaging to assess for injuries or abnormalities in the lower extremities and pelvis.",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": null,
+          "detailed_findings": "Subcutaneous contusions and a hematoma/seroma on the right hip",
+          "clinical_significance": "Findings consistent with trauma",
+          "decision_impact": "Did not prompt further investigation for infection",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Emergency Presentation",
+        "description": "Patient presents to LGMC with leg pain",
+        "duration": "Not specified in judgment",
+        "key_events": [
+          {
+            "event": "Triage assessment and vital signs measurement",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Initial Workup",
+        "description": "Lab tests and CT scan ordered and reviewed",
+        "duration": "Not specified in judgment",
+        "key_events": [
+          {
+            "event": "Lab tests and CT scan performed",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "decision",
+        "name": "Discharge Decision",
+        "description": "Decision to discharge patient with pain management",
+        "duration": "Not specified in judgment",
+        "key_events": [
+          {
+            "event": "Patient discharged with instructions",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E003"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient in ED with leg pain and elevated white blood cell count",
+        "prompt": "What should be the next step in management?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Administer antibiotics and consider transfer to a pediatric medical center",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Elevated white blood cell count and pain suggest possible infection requiring antibiotics"
+          },
+          {
+            "option_id": "B",
+            "description": "Discharge with pain management and follow-up instructions",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Assumed contusions were the only issue"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant discharged the patient with pain management instructions",
+          "reasoning_stated": "Defendant diagnosed contusions and did not perceive an emergency medical condition",
+          "evidence_ids": [
+            "E003"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Antibiotics should have been administered and consideration for transfer made",
+          "standard_of_care_basis": "Elevated white blood cell count and symptoms warranted further investigation for infection",
+          "evidence_ids": [
+            "E004",
+            "E005"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to consider infection despite elevated white blood cell count",
+          "what_should_have_happened": "Antibiotics and further investigation for infection",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E004",
+            "E005"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient developed a MRSA infection requiring hospitalization and surgeries",
+        "severity": "PERMANENT_MODERATE_DISABILITY",
+        "long_term_effects": "Permanent bone damage and risk for future injuries and infection",
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "0",
+        "key_findings": [
+          "LGMC provided an appropriate medical screening examination",
+          "No evidence of negligence found"
+        ],
+        "evidence_ids": [
+          "E006",
+          "E007",
+          "E008"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Failure to administer antibiotics and consider infection",
+        "counterfactual": "Antibiotics could have prevented severe infection",
+        "evidence_ids": [
+          "E004",
+          "E005"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "June 29, 2012",
+        "event": "Patient presents to LGMC with leg pain",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "June 30, 2012",
+        "event": "Patient admitted to CCMC with fever and swelling",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Complete Blood Count",
+        "date": "June 29, 2012",
+        "result": "Elevated white blood cell count",
+        "interpretation": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "test_name": "CT Scan",
+        "date": "June 29, 2012",
+        "result": "Subcutaneous contusions and hematoma/seroma",
+        "interpretation": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Contusions on both hips",
+        "when_made": "June 29, 2012",
+        "made_by": null,
+        "correct": false,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "diagnosis": "MRSA infection",
+        "when_made": "June 30, 2012",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Antibiotics and surgeries",
+        "date": "June 30, 2012 to August 10, 2012",
+        "provider": null,
+        "outcome": "Treatment for MRSA infection",
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Permanent bone damage",
+        "when_occurred": "Post-hospitalization",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to administer antibiotics and consider infection",
+        "against": "LGMC",
+        "found_proven": false,
+        "evidence_ids": [
+          "E006",
+          "E007",
+          "E008"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "LGMC provided an appropriate medical screening examination",
+        "legal_significance": "No breach of EMTALA",
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.35714285714285715,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-09 21:21:09.371458",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

@@ -1,0 +1,546 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10617850",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2025-06-26",
+  "url": "https://example.com/courtlistener-10617850",
+  "case_name": "Zainab Abbas, M.D. v. Hetep Bilal Neter-Nu",
+  "neutral_citation": null,
+  "clinical_domain": "SURGERY_ORTHOPAEDIC",
+  "outcome_severity": "TEMPORARY_HARM",
+  "summary": {
+    "brief": "Zainab Abbas, M.D. v. Hetep Bilal Neter-Nu. Medical malpractice case involving surgery orthopaedic.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Franklyn Neter-Nu was a truck driver who checked into the emergency room at Methodist Hospital in Gary, Indiana, on July 27, 2015, complaining of nausea and vomiting.",
+      "paragraph_ref": "11",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "He was given fluids and medications through an IV, but his attending nurse, Nurse Mittler, twice found the IV detached from Neter-Nu\u2019s arm.",
+      "paragraph_ref": "11",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "She then placed the IV in Neter-Nu\u2019s right foot, despite her lack of training and without a doctor\u2019s order for that placement.",
+      "paragraph_ref": "11",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "On July 28, Neter-Nu complained of pain in his right foot, so Nurse Mittler paged Dr. Abbas.",
+      "paragraph_ref": "11",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "An x-ray ordered for his foot showed no fracture or soft-tissue swelling.",
+      "paragraph_ref": "11",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "On July 30, Dr. Abbas discharged Neter-Nu. The discharge note instructed Neter-Nu to return to the emergency room if symptoms persisted or worsened.",
+      "paragraph_ref": "11",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "He then checked into Mercy Medical Center emergency/urgent care with black toes where treating physicians found no blood flow in several of his right toes.",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "FACTUAL_FINDING",
+      "text": "Concluding that the foot was \u201cunsalvageable,\u201d ER doctors referred Neter-Nu to the University of Nebraska Medical Center, where, on August 19, he underwent a below-the-knee amputation of his right leg.",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "LEGAL_FINDING",
+      "text": "We hold that the trial court erred when it denied Methodist\u2019s Trial Rule 50(A) motion for partial judgment on the evidence and when it calculated prejudgment interest.",
+      "paragraph_ref": "10",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "LEGAL_FINDING",
+      "text": "Therefore, we affirm the jury verdict but reverse and remand with instructions to grant Methodist\u2019s Rule 50(A) motion and recalculate prejudgment interest based on the Providers\u2019 statutory liability.",
+      "paragraph_ref": "10",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E011",
+      "type": "EXPERT_TESTIMONY",
+      "text": "During cross-examination of Neter-Nu\u2019s expert, Dr. Eric Tripp, the trial court denied Providers\u2019 request to use certain emails to refresh the expert\u2019s recollection or impeach him for inconsistent methodologies.",
+      "paragraph_ref": "15",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E012",
+      "type": "LEGAL_FINDING",
+      "text": "Ultimately, the jury returned an $11,000,000 verdict against all Providers, which the trial court reduced to the $1,250,000 statutory cap.",
+      "paragraph_ref": "19",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E013",
+      "type": "LEGAL_FINDING",
+      "text": "The trial court also awarded Neter-Nu $79,993.40 in prejudgment interest.",
+      "paragraph_ref": "19",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E014",
+      "type": "COURT_REASONING",
+      "text": "In malpractice cases, like other kinds of negligence actions, the plaintiff must prove (1) the defendant owed the plaintiff a duty of care, (2) the defendant breached its duty by allowing its conduct to fall below the applicable standard of care, and (3) a compensable injury proximately caused by the defendant\u2019s breach of duty.",
+      "paragraph_ref": "24",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E015",
+      "type": "COURT_REASONING",
+      "text": "Joint-and-several liability applies to negligent defendants in medical-malpractice suits.",
+      "paragraph_ref": "34",
+      "speaker": "Court finding"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "male",
+        "relevant_social_history": "Truck driver"
+      },
+      "chief_complaint": "Nausea and vomiting",
+      "history_of_present_illness": "Franklyn Neter-Nu presented to the emergency room at Methodist Hospital with complaints of nausea and vomiting.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "general": "Patient appeared unwell with nausea and vomiting",
+          "extremities": "Pain in right foot noted on July 28"
+        }
+      },
+      "initial_working_problem": "Nausea and vomiting",
+      "known_constraints": null,
+      "initial_differential": [
+        "Gastroenteritis",
+        "Dehydration"
+      ],
+      "critical_findings": [
+        "Pain in right foot after IV placement"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002",
+        "E004"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "X-ray of right foot",
+        "description": "X-ray to assess for fracture or soft-tissue swelling",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "No fracture or soft-tissue swelling",
+          "detailed_findings": null,
+          "clinical_significance": "Did not reveal cause of foot pain",
+          "decision_impact": "Did not alter management plan",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Emergency Presentation",
+        "description": "Patient presents to ED with nausea and vomiting",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "IV placed in right foot",
+            "timestamp": "July 27, 2015",
+            "evidence_ids": [
+              "E002",
+              "E003"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Initial Workup",
+        "description": "Assessment and management in ED",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "X-ray of right foot ordered",
+            "timestamp": "July 28, 2015",
+            "evidence_ids": [
+              "E005"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "followup",
+        "name": "Discharge",
+        "description": "Patient discharged with instructions",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Patient discharged with instructions to return if symptoms worsen",
+            "timestamp": "July 30, 2015",
+            "evidence_ids": [
+              "E006"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "decision",
+        "name": "Discharge Decision",
+        "description": "Patient discharged with instructions to return if symptoms worsen",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Patient discharged",
+            "timestamp": "July 30",
+            "evidence_ids": [
+              "E006"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient in ED with IV placed in right foot",
+        "prompt": "What should be done after noticing pain in the foot with IV infiltration?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Remove IV from foot and monitor for complications",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard care to prevent further complications from IV infiltration"
+          },
+          {
+            "option_id": "B",
+            "description": "Continue with IV in foot and discharge patient",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Inappropriate due to risk of complications from IV infiltration"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant continued with IV in foot and discharged patient",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E006"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Remove IV from foot and monitor for complications",
+          "standard_of_care_basis": "Expert testimony indicated this was the appropriate action",
+          "evidence_ids": [
+            "E014"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to remove IV from foot led to complications",
+          "what_should_have_happened": "IV should have been removed and foot monitored",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E014"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient developed black toes and foot was deemed unsalvageable",
+        "severity": "PERMANENT_SEVERE_DISABILITY",
+        "long_term_effects": "Loss of foot function",
+        "evidence_ids": [
+          "E007",
+          "E008"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "11000000",
+        "key_findings": [
+          "Breach of duty in failing to consult vascular surgery",
+          "Causation established - earlier intervention could have prevented loss of foot"
+        ],
+        "evidence_ids": [
+          "E012",
+          "E014"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to consult vascular surgery",
+        "counterfactual": "Consultation could have identified vascular compromise",
+        "evidence_ids": [
+          "E007",
+          "E008",
+          "E012"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "July 27, 2015",
+        "event": "Patient arrives at Methodist Hospital ED",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "July 28, 2015",
+        "event": "X-ray of right foot ordered",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "timestamp": "July 30, 2015",
+        "event": "Patient discharged from Methodist Hospital",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "timestamp": "August 19, 2015",
+        "event": "Below-the-knee amputation performed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E008"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Patient arrives at ED",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "July 30",
+        "event": "Patient discharged",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "X-ray of right foot",
+        "date": "July 28, 2015",
+        "result": "No fracture or soft-tissue swelling",
+        "interpretation": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "test_name": "X-ray of right foot",
+        "date": "Not documented in judgment",
+        "result": "No fracture or soft-tissue swelling",
+        "interpretation": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Acute limb ischemia leading to amputation",
+        "when_made": "August 19, 2015",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E008"
+        ]
+      },
+      {
+        "diagnosis": "Foot deemed unsalvageable",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E008"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Below-the-knee amputation",
+        "date": "August 19, 2015",
+        "provider": null,
+        "outcome": "Amputation performed due to unsalvageable foot",
+        "evidence_ids": [
+          "E008"
+        ]
+      },
+      {
+        "treatment": "Referral to University of Nebraska Medical Center",
+        "date": "Not documented in judgment",
+        "provider": null,
+        "outcome": "Foot deemed unsalvageable",
+        "evidence_ids": [
+          "E008"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Severe ischemia and tissue necrosis",
+        "when_occurred": "Between July 30 and August 19, 2015",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E008"
+        ]
+      },
+      {
+        "complication": "Black toes, unsalvageable foot",
+        "when_occurred": "Not documented in judgment",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E007",
+          "E008"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to properly manage IV infiltration",
+        "against": "Dr. Zainab Abbas and Nurse Morgan Mittler",
+        "found_proven": true,
+        "evidence_ids": [
+          "E014"
+        ]
+      },
+      {
+        "allegation": "Failure to consult vascular surgery",
+        "against": "Dr. Abbas",
+        "found_proven": true,
+        "evidence_ids": [
+          "E007",
+          "E008"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Breach led to severe patient outcome",
+        "evidence_ids": [
+          "E014"
+        ]
+      },
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Standard of care not met",
+        "evidence_ids": [
+          "E012"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "TREATMENT_PROCEDURE_ERROR",
+      "MONITORING_FOLLOWUP",
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.18072289156626506,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-16 14:44:39.518290",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

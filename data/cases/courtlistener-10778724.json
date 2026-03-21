@@ -1,0 +1,449 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10778724",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2026-01-23",
+  "url": "https://example.com/courtlistener-10778724",
+  "case_name": "Boggs v. Durrani",
+  "neutral_citation": null,
+  "clinical_domain": "NEUROSURGERY",
+  "outcome_severity": "PERMANENT_SEVERE_DISABILITY",
+  "summary": {
+    "brief": "Boggs v. Durrani. Medical malpractice case involving obstetrics gynaecology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "a two-week trial, the jury found in favor of plaintiffs on their claims of, inter alia, battery, negligence, fraud, and lack of informed consent regarding the surgeries",
+      "paragraph_ref": "61",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "LEGAL_FINDING",
+      "text": "Judgments Appealed From Are: Affirmed in Part, Reversed in Part, and Cause Remanded",
+      "paragraph_ref": "52",
+      "speaker": "Court conclusion"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Wilkey offered expert testimony for all three plaintiffs.",
+      "paragraph_ref": "813",
+      "speaker": "Expert witness"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "plaintiffs fell below the applicable standard of care. Dr. Wilkey also testified on the",
+      "paragraph_ref": "354",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "LEGAL_FINDING",
+      "text": "The court further orders that (1) a copy of this Judgment with a copy of the Opinion attached constitutes the mandate",
+      "paragraph_ref": "27",
+      "speaker": "Court order"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "Durrani’s finding that Ravenscraft had a prior laminectomy.",
+      "paragraph_ref": "703",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "LEGAL_FINDING",
+      "text": "prejudgment-interest award was not arbitrary, unreasonable, or",
+      "paragraph_ref": "946",
+      "speaker": "Court conclusion"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "FACTUAL_FINDING",
+      "text": "plaintiffs’ settlements with other tortfeasors.",
+      "paragraph_ref": "72",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Kaloostian emphasized that Dr. Durrani’s interpretation of MRI",
+      "paragraph_ref": "468",
+      "speaker": "Expert witness"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "FACTUAL_FINDING",
+      "text": "Boggs—$1,273.095.78 in compensatory damages and $35,774.26 in prejudgment interest",
+      "paragraph_ref": "558",
+      "speaker": "Court finding"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Teenager",
+        "sex": "female",
+        "relevant_social_history": "Cheerleader"
+      },
+      "chief_complaint": "Back pain",
+      "history_of_present_illness": "Patient reports back pain linked to physical conditioning from cheerleading. Underwent multiple surgeries by Dr. Durrani.",
+      "past_medical_history": [
+        "Previous back surgery"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": null,
+        "general_appearance": null,
+        "focused_exam": {
+          "spine": "Not documented in judgment"
+        }
+      },
+      "initial_working_problem": "Back pain with potential degenerative disc disease",
+      "known_constraints": null,
+      "initial_differential": [
+        "Degenerative disc disease",
+        "Herniated disc"
+      ],
+      "critical_findings": [],
+      "urgency_level": "EMERGENT",
+      "evidence_ids": [
+        "E001",
+        "E003",
+        "E009"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "MRI",
+        "description": "Magnetic Resonance Imaging of the spine",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "MRI findings not discussed with patient",
+          "detailed_findings": null,
+          "clinical_significance": "Important for surgical decision-making",
+          "decision_impact": "Should have been reviewed with patient",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E009"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with back pain",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Initial consultation with Dr. Durrani",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Diagnostic Workup",
+        "description": "Imaging and evaluation for surgical decision",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "MRI performed",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E009"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "decision",
+        "name": "Decision to Operate",
+        "description": "Decision made to proceed with spinal surgery",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Surgery performed by Dr. Durrani",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E010"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient with back pain considering surgery",
+        "prompt": "What should be discussed with the patient before surgery?",
+        "action_type": "DISCLOSE_ALTERNATIVES",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Discuss MRI findings and alternative treatments",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard of care requires informed consent and discussion of alternatives"
+          },
+          {
+            "option_id": "B",
+            "description": "Proceed with surgery without discussing alternatives",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Patient was not informed of alternatives"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant proceeded with surgery without discussing alternatives",
+          "reasoning_stated": "Defendant did not review MRI or discuss alternatives",
+          "evidence_ids": [
+            "E001",
+            "E009"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "MRI findings and alternatives should have been discussed",
+          "standard_of_care_basis": "Expert testimony indicated requirement for informed consent",
+          "evidence_ids": [
+            "E003",
+            "E009"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to provide informed consent and discuss alternatives",
+          "what_should_have_happened": "Patient should have been informed of MRI findings and alternative treatments",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E003",
+            "E009"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient continued to experience back pain post-surgery",
+        "severity": "ONGOING_SYMPTOMS",
+        "long_term_effects": "Continued need for medical care and potential future surgeries",
+        "evidence_ids": [
+          "E010"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "PARTIAL_LIABILITY",
+        "damages_awarded": "Not specified in judgment",
+        "key_findings": [
+          "Discrepancy in MRI interpretation not adequately addressed",
+          "Surgery proceeded without confirming necessity"
+        ],
+        "evidence_ids": [
+          "E002",
+          "E009"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to seek second opinion on MRI interpretation",
+        "counterfactual": "A second opinion could have prevented unnecessary surgery",
+        "evidence_ids": [
+          "E009",
+          "E010"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Patient presents with back pain",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Patient advised to undergo spinal surgery by Dr. Durrani",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E009"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "MRI",
+        "date": "Date not specified in judgment",
+        "result": "Findings not discussed with patient",
+        "interpretation": null,
+        "evidence_ids": [
+          "E009"
+        ]
+      },
+      {
+        "test_name": "MRI of the spine",
+        "date": "Not specified in judgment",
+        "result": "Discrepancy in interpretation",
+        "interpretation": null,
+        "evidence_ids": [
+          "E009"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Degenerative disc disease",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": false,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "diagnosis": "Chronic back pain",
+        "when_made": "Not specified in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E009"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Surgery",
+        "date": "Not documented in judgment",
+        "provider": null,
+        "outcome": "Patient continued to experience pain",
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "treatment": "Spinal surgery",
+        "date": "Not specified in judgment",
+        "provider": null,
+        "outcome": "Patient continued to experience back pain",
+        "evidence_ids": [
+          "E010"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Chronic pain",
+        "when_occurred": "Post-surgery",
+        "severity": "Moderate",
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "complication": "Continued back pain",
+        "when_occurred": "Post-surgery",
+        "severity": "Moderate",
+        "evidence_ids": [
+          "E010"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to provide informed consent",
+        "against": "Dr. Durrani",
+        "found_proven": true,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "allegation": "Failure to seek second opinion on MRI interpretation",
+        "against": "Dr. Durrani",
+        "found_proven": true,
+        "evidence_ids": [
+          "E009"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Standard of care not met",
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "finding": "Discrepancy in MRI interpretation not adequately addressed",
+        "legal_significance": "Breach of standard of care",
+        "evidence_ids": [
+          "E009"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "INFORMED_CONSENT"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.009737098344693282,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-09 17:00:55.052127",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

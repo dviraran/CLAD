@@ -1,0 +1,523 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-9441278",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2023-11-15",
+  "url": "https://example.com/courtlistener-9441278",
+  "case_name": "Abruzzi v. Maller",
+  "neutral_citation": null,
+  "clinical_domain": "OBSTETRICS_GYNAECOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Abruzzi v. Maller. Medical malpractice case involving obstetrics gynaecology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "In May 2011, Barbara Petillo sought treatment from the defendant Paul Maller, her primary care doctor, for an unexplained fever.",
+      "paragraph_ref": "9",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Maller ordered a CT scan, among other tests. Based on Petillo's history of lymphoma and the imaging results, which showed suspicious masses in her abdomen and lung, Maller referred Petillo to the defendant Alexander Hindenburg.",
+      "paragraph_ref": "9",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "Hindenburg examined Petillo and thereafter ordered a series of additional imaging tests and biopsies.",
+      "paragraph_ref": "10",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "Upon her admission to the hospital, blood cultures showed that she had a bacterial infection that developed into endocarditis, an infection affecting the heart.",
+      "paragraph_ref": "10",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "LEGAL_FINDING",
+      "text": "The judgment, upon the order, is in favor of the defendants Alexander Hindenburg and Winthrop Oncology Hematology Associates, P.C., and against the plaintiff dismissing the complaint insofar as asserted against those defendants.",
+      "paragraph_ref": "4",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Rothman opined that it was appropriate for Hindenburg 'to work up [Petillo] for a possible malignancy,' that the steps Hindenburg took to do so were proper.",
+      "paragraph_ref": "13",
+      "speaker": "Expert testimony"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Rothman opined that Hindenburg did not depart from accepted medical practice in failing to diagnose endocarditis.",
+      "paragraph_ref": "13",
+      "speaker": "Expert testimony"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "LEGAL_FINDING",
+      "text": "The Hindenburg defendants demonstrated that Hindenburg's duty of care did not extend to the departures alleged in the complaint.",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Petillo's internal medicine and infectious disease expert failed to lay the requisite foundation to render an opinion on Hindenburg's actions as a medical oncologist.",
+      "paragraph_ref": "15",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "COURT_REASONING",
+      "text": "The Hindenburg defendants demonstrated through their submissions that Hindenburg's role was limited to evaluating whether there was a recurrence of lymphoma or any other cancer.",
+      "paragraph_ref": "24",
+      "speaker": "Court reasoning"
+    },
+    {
+      "evidence_id": "E011",
+      "type": "LEGAL_FINDING",
+      "text": "Accordingly, the Supreme Court properly granted the Hindenburg defendants' motion for summary judgment dismissing the complaint insofar as asserted against them.",
+      "paragraph_ref": "25",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E012",
+      "type": "EXPERT_TESTIMONY",
+      "text": "The decedent's experts opined that the decedent's presentation was more consistent with endocarditis than with lymphoma.",
+      "paragraph_ref": "36",
+      "speaker": "Expert testimony"
+    },
+    {
+      "evidence_id": "E013",
+      "type": "EXPERT_TESTIMONY",
+      "text": "The decedent's oncology expert added that if the decedent had been experiencing recurrent lymphoma, as Hindenburg initially suspected, that condition would have weakened her immune system.",
+      "paragraph_ref": "37",
+      "speaker": "Expert testimony"
+    },
+    {
+      "evidence_id": "E014",
+      "type": "COURT_REASONING",
+      "text": "Summary judgment is not appropriate in a medical malpractice action where the parties adduce conflicting medical expert opinions.",
+      "paragraph_ref": "38",
+      "speaker": "Court reasoning"
+    },
+    {
+      "evidence_id": "E015",
+      "type": "LEGAL_FINDING",
+      "text": "I would reverse the judgment, deny the Hindenburg defendants' motion for summary judgment dismissing the complaint insofar as asserted against them, and reinstate the complaint.",
+      "paragraph_ref": "48",
+      "speaker": "Dissenting opinion"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "64 years",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Recurring fevers",
+      "history_of_present_illness": "Patient experienced fevers for two to three months, initially resolving with antibiotics but then recurring. She has a history of lymphoma treated with chemotherapy in the 1990s.",
+      "past_medical_history": [
+        "Lymphoma (treated with chemotherapy in the 1990s)"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "general": "Patient had recurring fevers",
+          "abdomen": "Palpable lymphadenopathy and a small palpable questionable nodule in the left lower quadrant"
+        }
+      },
+      "initial_working_problem": "Fever of unknown origin with history of lymphoma",
+      "known_constraints": null,
+      "initial_differential": [
+        "Recurrence of lymphoma",
+        "Infectious process such as endocarditis"
+      ],
+      "critical_findings": [
+        "Recurring fevers",
+        "History of lymphoma",
+        "Abdominal mass"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002",
+        "E003",
+        "E004"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "CT scan",
+        "description": "CT scan of the abdomen and chest",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Suspicious masses in abdomen and lung",
+          "detailed_findings": null,
+          "clinical_significance": "Suggestive of possible malignancy",
+          "decision_impact": "Prompted referral to oncologist",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "LAB",
+        "name": "Blood culture",
+        "description": "Blood culture to check for bacterial infection",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not performed initially",
+          "detailed_findings": null,
+          "clinical_significance": "Could have identified bacterial infection leading to endocarditis",
+          "decision_impact": "Failure to perform delayed diagnosis of endocarditis",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": [
+          "E004",
+          "E012"
+        ]
+      },
+      {
+        "request_id": "R003",
+        "type": "CONSULT_NOTE",
+        "name": "Oncology consultation",
+        "description": "Consultation with oncologist to rule out lymphoma",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Oncologist unable to definitively diagnose or rule out malignancy",
+          "detailed_findings": null,
+          "clinical_significance": "Led to further imaging and biopsy",
+          "decision_impact": "Did not address potential infectious causes",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E003",
+          "E010"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with recurring fevers",
+        "duration": "2-3 months",
+        "key_events": [
+          {
+            "event": "Initial consultation with primary care doctor",
+            "timestamp": "May 2011",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Diagnostic Workup",
+        "description": "Imaging and specialist consultations",
+        "duration": "July 2011 - November 2011",
+        "key_events": [
+          {
+            "event": "CT scan ordered and performed",
+            "timestamp": "July 1, 2011",
+            "evidence_ids": [
+              "E002"
+            ]
+          },
+          {
+            "event": "Oncology consultation and follow-up visits",
+            "timestamp": "July 19, 2011, September 6, 2011, November 8, 2011",
+            "evidence_ids": [
+              "E003"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "decision",
+        "name": "Hospital Admission",
+        "description": "Patient admitted with severe symptoms",
+        "duration": "December 5, 2011",
+        "key_events": [
+          {
+            "event": "Blood culture performed, revealing bacterial infection",
+            "timestamp": "December 5, 2011",
+            "evidence_ids": [
+              "E004"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient with recurring fevers and history of lymphoma",
+        "prompt": "Should a blood culture be ordered to investigate the cause of the fevers?",
+        "action_type": "ORDER_TEST",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Order blood culture to check for bacterial infection",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard practice to rule out infectious causes of fever"
+          },
+          {
+            "option_id": "B",
+            "description": "Do not order blood culture, focus on ruling out malignancy",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Focused on oncological assessment due to history of lymphoma"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant did not order blood culture",
+          "reasoning_stated": "Focused on ruling out malignancy",
+          "evidence_ids": [
+            "E003",
+            "E010"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Blood culture should have been ordered",
+          "standard_of_care_basis": "Expert evidence suggested need to rule out infection",
+          "evidence_ids": [
+            "E012",
+            "E013"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to order blood culture delayed diagnosis of endocarditis",
+          "what_should_have_happened": "Blood culture would have identified bacterial infection",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E012",
+            "E013",
+            "E014"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient developed endocarditis and suffered a stroke",
+        "severity": "PERMANENT_SEVERE_DISABILITY",
+        "long_term_effects": "Stroke-related disabilities",
+        "evidence_ids": [
+          "E004",
+          "E012"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "0",
+        "key_findings": [
+          "Hindenburg's duty was limited to oncological assessment",
+          "No breach of standard of care in failing to diagnose endocarditis"
+        ],
+        "evidence_ids": [
+          "E005",
+          "E011"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Failure to order blood culture",
+        "counterfactual": "Blood culture could have led to earlier diagnosis of endocarditis",
+        "evidence_ids": [
+          "E012",
+          "E013",
+          "E014"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "May 2011",
+        "event": "Patient sought treatment for unexplained fever",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "July 1, 2011",
+        "event": "CT scan performed showing suspicious masses",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "July 19, 2011",
+        "event": "First oncology consultation",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "timestamp": "December 5, 2011",
+        "event": "Patient admitted to hospital, blood culture performed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "CT scan",
+        "date": "July 1, 2011",
+        "result": "Suspicious masses in abdomen and lung",
+        "interpretation": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "test_name": "Blood culture",
+        "date": "December 5, 2011",
+        "result": "Bacterial infection identified",
+        "interpretation": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Endocarditis",
+        "when_made": "December 5, 2011",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Hospitalization and treatment for endocarditis",
+        "date": "December 5, 2011",
+        "provider": null,
+        "outcome": "Patient suffered a stroke",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Stroke",
+        "when_occurred": "December 10, 2011",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to order blood culture",
+        "against": "Defendant oncologist",
+        "found_proven": false,
+        "evidence_ids": [
+          "E011"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "No breach of duty by oncologist",
+        "legal_significance": "Duty limited to oncological assessment",
+        "evidence_ids": [
+          "E011"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.29411764705882354,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-17 07:25:06.217986",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

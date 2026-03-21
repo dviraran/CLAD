@@ -1,0 +1,409 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10778707",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2026-01-23",
+  "url": "https://example.com/courtlistener-10778707",
+  "case_name": "Schilling v. Quincy Physicians & Surgeons Clinic, S.C.",
+  "neutral_citation": null,
+  "clinical_domain": "SURGERY_ORTHOPAEDIC",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Schilling v. Quincy Physicians & Surgeons Clinic, S.C.. Medical malpractice case involving surgery orthopaedic.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Plaintiff went to a podiatrist on January 30, 2017, and described his ongoing symptoms. The podiatrist ordered X-rays of the foot.",
+      "paragraph_ref": "11",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Those X-rays showed a complete dislocated fracture of the first metatarsal and minimally displaced complete transverse fractures of the base of the second and third metatarsals.",
+      "paragraph_ref": "11",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "Plaintiff had surgery on his foot in March 2017. Plaintiff later developed an infection and had a second surgery in October 2017.",
+      "paragraph_ref": "12",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "Plaintiff ultimately had his left leg amputated just below the knee.",
+      "paragraph_ref": "12",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "Plaintiff’s complaint alleged that Dr. Love had misdiagnosed a fracture in plaintiff’s foot as an infection.",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "LEGAL_FINDING",
+      "text": "Following a jury trial in the circuit court of Adams County, a verdict was returned in favor of defendants.",
+      "paragraph_ref": "8",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "LEGAL_FINDING",
+      "text": "The Appellate Court, Fourth District, affirmed the trial court.",
+      "paragraph_ref": "8",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "COURT_REASONING",
+      "text": "The appellate court concluded that the trial court did not abuse its discretion in denying plaintiff’s motions for a mistrial.",
+      "paragraph_ref": "36",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "COURT_REASONING",
+      "text": "The appellate court also rejected plaintiff’s claim that the Prim instruction was coercive.",
+      "paragraph_ref": "37",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "COURT_REASONING",
+      "text": "The trial court’s denial of plaintiff’s motion for a mistrial was not arbitrary or fanciful.",
+      "paragraph_ref": "49",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E011",
+      "type": "LEGAL_FINDING",
+      "text": "We affirm the judgment of the appellate court, which affirmed the judgment of the circuit court.",
+      "paragraph_ref": "89",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "unknown",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Difficulty walking on left foot with pain",
+      "history_of_present_illness": "Patient reported pain began a week prior after injuring left ankle and foot. Complained of increased redness and swelling into ankles and lower extremities with increased pain in and along the bottom of the foot.",
+      "past_medical_history": [
+        "Type 1 diabetes"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "foot": "Painful to walk, unable to put pressure on the upper part of the foot"
+        }
+      },
+      "initial_working_problem": "Left foot edema and potential cellulitis",
+      "known_constraints": null,
+      "initial_differential": [
+        "cellulitis",
+        "fracture"
+      ],
+      "critical_findings": [
+        "Increased redness and swelling",
+        "Excruciating pain"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E005"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "X-ray of the foot",
+        "description": "X-ray to assess for fractures or dislocations",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Complete dislocated fracture of the first metatarsal and minimally displaced complete transverse fractures of the base of the second and third metatarsals",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates significant fracture requiring orthopedic intervention",
+          "decision_impact": "Should prompt referral to orthopedic surgeon",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with foot pain and difficulty walking",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Examination by Dr. Love",
+            "timestamp": "January 12, 2017",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Follow-up and Diagnosis",
+        "description": "Patient returns with worsening symptoms",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Follow-up visit and continued diagnosis of cellulitis",
+            "timestamp": "January 26, 2017",
+            "evidence_ids": [
+              "E001"
+            ]
+          },
+          {
+            "event": "Referral to podiatrist and X-ray ordered",
+            "timestamp": "January 30, 2017",
+            "evidence_ids": [
+              "E001",
+              "E002"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient with ongoing foot pain and swelling, initially diagnosed with cellulitis",
+        "prompt": "What should be the next step in management?",
+        "action_type": "ORDER_TEST",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Order X-ray of the foot",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Necessary to rule out fracture given the patient's symptoms and history of injury"
+          },
+          {
+            "option_id": "B",
+            "description": "Continue with antibiotics for cellulitis",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Assumed infection without ruling out fracture"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant continued with antibiotics for cellulitis",
+          "reasoning_stated": "Defendant diagnosed cellulitis and prescribed antibiotics",
+          "evidence_ids": [
+            "E005"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "X-ray should have been ordered to rule out fracture",
+          "standard_of_care_basis": "Expert evidence indicated that imaging was necessary given the symptoms",
+          "evidence_ids": [
+            "E002"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to order imaging led to misdiagnosis and inappropriate treatment",
+          "what_should_have_happened": "X-ray should have been ordered to confirm or rule out fracture",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E002",
+            "E005"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient developed an infection and had a second surgery, ultimately leading to amputation below the knee",
+        "severity": "PERMANENT_SEVERE_DISABILITY",
+        "long_term_effects": "Loss of limb, requiring prosthetic and rehabilitation",
+        "evidence_ids": [
+          "E003",
+          "E004"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "None",
+        "key_findings": [
+          "Jury found in favor of defendants",
+          "Appellate court affirmed the trial court's decision"
+        ],
+        "evidence_ids": [
+          "E006",
+          "E007"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Failure to order appropriate imaging initially",
+        "counterfactual": "Early imaging could have prevented further injury and amputation",
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "January 12, 2017",
+        "event": "Patient examined by Dr. Love at QMC",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "January 30, 2017",
+        "event": "X-ray ordered by podiatrist",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "X-ray of the foot",
+        "date": "January 30, 2017",
+        "result": "Complete dislocated fracture of the first metatarsal and minimally displaced complete transverse fractures of the base of the second and third metatarsals",
+        "interpretation": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Fracture of the foot",
+        "when_made": "January 30, 2017",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Surgery on foot",
+        "date": "March 2017",
+        "provider": null,
+        "outcome": "Not documented in judgment",
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Infection and subsequent amputation",
+        "when_occurred": "October 2017",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E003",
+          "E004"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Misdiagnosis of fracture as infection",
+        "against": "Dr. Love",
+        "found_proven": false,
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "No liability found for defendants",
+        "legal_significance": "Jury verdict in favor of defendants affirmed by appellate court",
+        "evidence_ids": [
+          "E006",
+          "E007"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.12087912087912088,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-09 20:29:06.264280",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

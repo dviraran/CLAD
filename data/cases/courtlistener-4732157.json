@@ -1,0 +1,449 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-4732157",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2020-03-10",
+  "url": "https://example.com/courtlistener-4732157",
+  "case_name": "Kos v. Lawrence + Memorial Hospital",
+  "neutral_citation": null,
+  "clinical_domain": "OBSTETRICS_GYNAECOLOGY",
+  "outcome_severity": "TEMPORARY_HARM",
+  "summary": {
+    "brief": "Kos v. Lawrence + Memorial Hospital. Medical malpractice case involving obstetrics gynaecology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "The plaintiffs, K and her husband, sought to recover damages from the defendants, G, a physician, and G’s medical practice, for personal injuries that K had suffered in connection with G’s alleged negligence in, inter alia, failing to perform a proper and adequate episiotomy repair after the birth of the plaintiffs’ son.",
+      "paragraph_ref": "4",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "G had performed an episiotomy to facilitate the delivery of the plaintiffs’ son. After the delivery, G evaluated K and diagnosed her with a third degree episiotomy extension, which G repaired.",
+      "paragraph_ref": "4",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "EXPERT_TESTIMONY",
+      "text": "At trial, the plaintiffs’ expert witness, Y, testified that the standard of care requires that a physician, after performing an episiotomy, correctly diagnose and repair the episiotomy and any extension thereof, which must involve a thorough rectal examination before the repair.",
+      "paragraph_ref": "4",
+      "speaker": "Plaintiffs' expert witness"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "EXPERT_TESTIMONY",
+      "text": "According to the defendants’ expert, L, G complied with the standard of care, which required that the rectal exam be performed after rather than before the episiotomy repair.",
+      "paragraph_ref": "4",
+      "speaker": "Defendants' expert witness"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "LEGAL_FINDING",
+      "text": "The jury returned a verdict in favor of the defendants, finding that the plaintiffs had sustained their burden of establishing the standard of care but failed to sustain their burden of establishing that G breached the standard of care.",
+      "paragraph_ref": "4",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "COURT_REASONING",
+      "text": "Although the trial court improperly instructed the jury on the acceptable alternatives doctrine, that charge was harmless under the circumstances of the present case, and this court declined the plaintiffs’ request to abolish that doctrine.",
+      "paragraph_ref": "1",
+      "speaker": "Judge's analysis"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Labor and delivery",
+      "history_of_present_illness": "Patient was in labor and had been pushing for approximately two hours. Physician decided to use a vacuum to assist in delivery, which was unsuccessful, leading to the performance of a median episiotomy.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "perineum": "Episiotomy performed, inspection for extension required"
+        }
+      },
+      "initial_working_problem": "Labor with potential episiotomy extension",
+      "known_constraints": null,
+      "initial_differential": [
+        "Third degree episiotomy extension",
+        "Fourth degree episiotomy extension"
+      ],
+      "critical_findings": [
+        "Episiotomy extension through anal sphincter"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E002",
+        "E004"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSULT_NOTE",
+        "name": "Post-delivery examination",
+        "description": "Examination of the episiotomy site and rectal mucosa",
+        "available_phase": "postop",
+        "reveal": {
+          "result_summary": "No breaks or defects in rectal mucosa initially noted",
+          "detailed_findings": null,
+          "clinical_significance": "Initial examination did not reveal a fourth degree extension",
+          "decision_impact": "Influenced decision to diagnose as third degree extension",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "CONSULT_NOTE",
+        "name": "Expert Testimony - Ling",
+        "description": "Testimony regarding standard of care for episiotomy examination",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Postrepair examination preferred to avoid contamination",
+          "detailed_findings": null,
+          "clinical_significance": "Prone to infection if prerepair exam is done",
+          "decision_impact": "Supports postrepair examination as standard",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Labor and Delivery",
+        "description": "Patient in labor, episiotomy performed",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Episiotomy performed",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "procedure",
+        "name": "Episiotomy Repair",
+        "description": "Repair of episiotomy and examination",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Digital rectal examination performed after repair",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "postop",
+        "name": "Post-Delivery Follow-Up",
+        "description": "Patient follow-up and complication development",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Patient reports complications including pain and fistula",
+            "timestamp": "September 1, 2011",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Post-Delivery Examination",
+        "description": "Examination of episiotomy extension",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Digital rectal exam performed postrepair",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E004"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "procedure",
+        "clinical_context": "Post-episiotomy repair examination",
+        "prompt": "When should the digital rectal examination be performed?",
+        "action_type": "ORDER_TEST",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Perform digital rectal examination before episiotomy repair",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Ensures accurate diagnosis of the degree of extension"
+          },
+          {
+            "option_id": "B",
+            "description": "Perform digital rectal examination after episiotomy repair",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Reduces risk of contamination but may miss fourth degree extension"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant performed digital rectal examination after repair",
+          "reasoning_stated": "To prevent contamination of the open wound",
+          "evidence_ids": [
+            "E002",
+            "E004"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Digital rectal examination should have been performed before repair",
+          "standard_of_care_basis": "Expert evidence established pre-repair examination as standard",
+          "evidence_ids": [
+            "E003"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to perform pre-repair examination led to misdiagnosis",
+          "what_should_have_happened": "Pre-repair examination would have identified fourth degree extension",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E003",
+            "E004"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "No fourth degree extension diagnosed",
+        "severity": "No permanent disability",
+        "long_term_effects": "Not documented in judgment",
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "None",
+        "key_findings": [
+          "Jury found no breach of standard of care",
+          "No fourth degree extension existed"
+        ],
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Not applicable",
+        "counterfactual": "Not applicable",
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "August 19, 2011",
+        "event": "Patient gave birth at Lawrence + Memorial Hospital",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Episiotomy performed during delivery",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Digital rectal examination",
+        "date": "Not specified in judgment",
+        "result": "No breaks or defects in rectal mucosa initially noted",
+        "interpretation": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "test_name": "Digital Rectal Exam",
+        "date": "Date not specified in judgment",
+        "result": "Performed postrepair",
+        "interpretation": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Third degree episiotomy extension",
+        "when_made": "Not specified in judgment",
+        "made_by": null,
+        "correct": false,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "diagnosis": "Third degree episiotomy extension",
+        "when_made": "Date not specified in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Episiotomy repair",
+        "date": "Not specified in judgment",
+        "provider": null,
+        "outcome": "Initial repair appeared intact",
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "treatment": "Episiotomy repair",
+        "date": "Date not specified in judgment",
+        "provider": null,
+        "outcome": "No fourth degree extension found",
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Rectovaginal fistula",
+        "when_occurred": "September 1, 2011",
+        "severity": "Moderate",
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to identify a fourth degree extension",
+        "against": "Defendant physician",
+        "found_proven": false,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "allegation": "Failure to perform prerepair digital rectal exam",
+        "against": "Defendant physician",
+        "found_proven": false,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "No breach of standard of care",
+        "legal_significance": "Plaintiffs failed to prove breach",
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "finding": "No breach of standard of care",
+        "legal_significance": "Jury found no fourth degree extension",
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.5454545454545454,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-17 08:13:25.614153",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

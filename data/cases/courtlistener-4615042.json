@@ -1,0 +1,540 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-4615042",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2016-12-21",
+  "url": "https://example.com/courtlistener-4615042",
+  "case_name": "Ned O. Kronfol v. Barbara S. Johnson",
+  "neutral_citation": null,
+  "clinical_domain": "PAEDIATRICS",
+  "outcome_severity": "PERMANENT_SEVERE_DISABILITY",
+  "summary": {
+    "brief": "Ned O. Kronfol v. Barbara S. Johnson. Medical malpractice case involving paediatrics.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "In 2007, Johnson was diagnosed with kidney failure.",
+      "paragraph_ref": "14",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "On May 2, 2013, Johnson presented to the emergency room (ER) at Delta Regional Medical Center complaining of lower back pain.",
+      "paragraph_ref": "3",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "On May 6, 2013, after receiving dialysis at the Fresenius Clinic, Johnson presented to the emergency room (ER) at Delta Regional Medical Center complaining of severe pain and swelling in her face.",
+      "paragraph_ref": "40",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "Johnson was treated by Dr. Xander Buenafe, a nephrologist, who diagnosed her with sepsis with tachycardia arising from an infected hemodialysis catheter in her internal jugular (neck).",
+      "paragraph_ref": "42",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Gutierrez opined at trial that Dr. Kronfol breached the standard of care in his treatment of Johnson.",
+      "paragraph_ref": "217",
+      "speaker": "Dr. Gutierrez"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Specifically, Dr. Gutierrez stated that Dr. Kronfol breached the standard of care by allowing Johnson\u2019s temporary catheter to be in for more than one week.",
+      "paragraph_ref": "219",
+      "speaker": "Dr. Gutierrez"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "LEGAL_FINDING",
+      "text": "The jury found that Dr. Kronfol was 100% responsible for Johnson\u2019s injuries.",
+      "paragraph_ref": "77",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "LEGAL_FINDING",
+      "text": "We therefore find no abuse of discretion by the trial judge in denying Dr. Kronfol\u2019s motion for a new trial.",
+      "paragraph_ref": "1057",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "COURT_REASONING",
+      "text": "A jury\u2019s verdict is given great deference by this Court, and conflicts of evidence presented at trial are to be resolved by the jury.",
+      "paragraph_ref": "1050",
+      "speaker": "Court reasoning"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "FACTUAL_FINDING",
+      "text": "Johnson received dialysis through a port in her right arm, and later left arm, approximately three times a week at Fresenius Clinic.",
+      "paragraph_ref": "21",
+      "speaker": "Court finding"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Severe pain and swelling in face",
+      "history_of_present_illness": "Johnson presented to the ER after receiving dialysis, complaining of severe pain and swelling in her face.",
+      "past_medical_history": [
+        "Kidney failure",
+        "Dialysis access issues"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Tachycardic per judgment, exact rate not stated",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "general": "Severe facial swelling",
+          "neck": "Signs of infection at catheter site"
+        }
+      },
+      "initial_working_problem": "Suspected sepsis from infected catheter",
+      "known_constraints": null,
+      "initial_differential": [
+        "Sepsis",
+        "Catheter-related infection"
+      ],
+      "critical_findings": [
+        "Infected hemodialysis catheter",
+        "Tachycardia"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E003",
+        "E004"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "LAB",
+        "name": "Blood Culture",
+        "description": "To identify the presence of infection and causative organism",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "MRSA identified",
+          "detailed_findings": null,
+          "clinical_significance": "Confirms bacterial infection",
+          "decision_impact": "Guides antibiotic therapy",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "IMAGING",
+        "name": "Fistulogram",
+        "description": "Imaging to assess fistula patency",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": null,
+          "detailed_findings": "Procedure unsuccessful in restoring flow",
+          "clinical_significance": "Indicates need for alternative dialysis access",
+          "decision_impact": "Led to creation of new fistula",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Emergency Presentation",
+        "description": "Patient presents to ER with acute symptoms",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Patient presents with severe facial swelling and pain",
+            "timestamp": "May 6, 2013",
+            "evidence_ids": [
+              "E003"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Diagnostic Workup",
+        "description": "Assessment and diagnosis of infection",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Diagnosis of sepsis with tachycardia",
+            "timestamp": "Not documented in judgment",
+            "evidence_ids": [
+              "E004"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient with temporary catheter presenting with signs of infection",
+        "prompt": "How should the temporary catheter be managed?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Remove temporary catheter and replace with permanent catheter",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Temporary catheters should not remain in place for more than one week due to high infection risk"
+          },
+          {
+            "option_id": "B",
+            "description": "Continue using temporary catheter",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Increased risk of infection with prolonged use"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant allowed temporary catheter to remain in place",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E006"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Temporary catheter should have been replaced with a permanent one",
+          "standard_of_care_basis": "Expert testimony and guidelines",
+          "evidence_ids": [
+            "E005",
+            "E006"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Prolonged use of temporary catheter led to infection",
+          "what_should_have_happened": "Catheter should have been replaced within one week",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E005",
+            "E006"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient developed sepsis due to catheter-related infection",
+        "severity": "SEVERE",
+        "long_term_effects": "Not documented in judgment",
+        "evidence_ids": [
+          "E004",
+          "E007"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Breach of duty in leaving temporary catheter in place",
+          "Causation established - catheter was proximate cause of infection"
+        ],
+        "evidence_ids": [
+          "E007",
+          "E008"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to remove temporary catheter",
+        "counterfactual": "Removal of catheter would have prevented infection",
+        "evidence_ids": [
+          "E005",
+          "E006",
+          "E007"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "May 6, 2013",
+        "event": "Patient presents to ER with severe facial swelling and pain",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "timestamp": "May 2, 2013",
+        "event": "Johnson presented to the ER with symptoms of sepsis",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "May 6, 2013",
+        "event": "Johnson presented again to the ER after dialysis",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "timestamp": "May 2, 2013",
+        "event": "Johnson presented to the ER with lower back pain",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "May 6, 2013",
+        "event": "Johnson presented to the ER with signs of infection",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Blood Culture",
+        "date": "Not documented in judgment",
+        "result": "MRSA identified",
+        "interpretation": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "test_name": "Blood cultures",
+        "date": "Not documented in judgment",
+        "result": "Not documented in judgment",
+        "interpretation": null,
+        "evidence_ids": []
+      },
+      {
+        "test_name": "Blood Culture",
+        "date": "Not documented in judgment",
+        "result": "Not documented in judgment",
+        "interpretation": null,
+        "evidence_ids": []
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Sepsis from MRSA infection",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "diagnosis": "Sepsis",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "diagnosis": "Sepsis and MRSA infection",
+        "when_made": "May 6, 2013",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Antibiotic therapy",
+        "date": "Not documented in judgment",
+        "provider": null,
+        "outcome": "Not documented in judgment",
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "treatment": "Dialysis",
+        "date": "Regularly scheduled",
+        "provider": null,
+        "outcome": "Continued dialysis treatment",
+        "evidence_ids": [
+          "E010"
+        ]
+      },
+      {
+        "treatment": "Removal of temporary catheter and insertion of permanent catheter",
+        "date": "May 6, 2013",
+        "provider": null,
+        "outcome": "Not documented in judgment",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Sepsis",
+        "when_occurred": "Not documented in judgment",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "complication": "Sepsis",
+        "when_occurred": "Following catheter use",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "complication": "Sepsis",
+        "when_occurred": "May 6, 2013",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to replace temporary catheter",
+        "against": "Dr. Ned Kronfol",
+        "found_proven": true,
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      },
+      {
+        "allegation": "Failure to remove temporary catheter",
+        "against": "Dr. Kronfol",
+        "found_proven": true,
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      },
+      {
+        "allegation": "Failure to remove temporary catheter",
+        "against": "Dr. Kronfol",
+        "found_proven": true,
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Breach led to infection and sepsis",
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      {
+        "finding": "Dr. Kronfol breached duty of care",
+        "legal_significance": "Breach led to sepsis",
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      {
+        "finding": "Dr. Kronfol breached duty of care",
+        "legal_significance": "Breach of standard of care established",
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.00942507068803016,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-16 16:37:58.727460",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

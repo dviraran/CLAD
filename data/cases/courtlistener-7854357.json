@@ -1,0 +1,533 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-7854357",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2022-03-01",
+  "url": "https://example.com/courtlistener-7854357",
+  "case_name": "RIVES, M.D. v. FARRIS C/W 81052",
+  "neutral_citation": null,
+  "clinical_domain": "SURGERY_GENERAL",
+  "outcome_severity": "TEMPORARY_HARM",
+  "summary": {
+    "brief": "RIVES, M.D. v. FARRIS C/W 81052. Medical malpractice case involving surgery general.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Respondent Titina Farris suffered from back pain with pain and burning in her feet. She was diagnosed with uncontrolled diabetes causing neuropathy.",
+      "paragraph_ref": "8",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Rives diagnosed Farris with a hernia, which he surgically repaired on two occasions, first in 2014 and second in 2015.",
+      "paragraph_ref": "8",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "During the second surgery, Rives noticed that part of Ferris's colon was stuck in the mesh from the 2014 surgery.",
+      "paragraph_ref": "8",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "Rives freed the colon from the mesh; however, he caused two small holes in the colon, which he repaired with a stapling device.",
+      "paragraph_ref": "8",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "Farris had several problems following the 2015 surgery, including sepsis.",
+      "paragraph_ref": "8",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "Although a CT scan on July 5 and an x-ray on July 12 showed no signs of a leak in Farris's colon, a CT scan on July 15 showed a leak, which another surgeon corrected.",
+      "paragraph_ref": "8",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "Farris's sepsis continued, and she eventually developed drop foot in both feet, hindering her ability to walk unassisted.",
+      "paragraph_ref": "8",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "LEGAL_FINDING",
+      "text": "The district court abused its discretion by admitting evidence of another medical malpractice case against appellant Barry James Rives, M.D.",
+      "paragraph_ref": "8",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "LEGAL_FINDING",
+      "text": "We reverse the judgment, vacate the attorney fees and costs order, and remand for a new trial.",
+      "paragraph_ref": "8",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "COURT_REASONING",
+      "text": "The plain language of our jurisdictional rules confirms that appellants are not required to file a motion for a new trial in district court to preserve their ability to request a new trial on appeal.",
+      "paragraph_ref": "8",
+      "speaker": "Judge's analysis"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Swelling in upper abdomen",
+      "history_of_present_illness": "Patient presented with swelling in the upper abdomen. Previously diagnosed with uncontrolled diabetes causing neuropathy, experiencing back pain with pain and burning in her feet.",
+      "past_medical_history": [
+        "Uncontrolled diabetes",
+        "Neuropathy"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "abdomen": "Not documented in judgment"
+        }
+      },
+      "initial_working_problem": "Hernia",
+      "known_constraints": null,
+      "initial_differential": [
+        "Hernia"
+      ],
+      "critical_findings": [
+        "Swelling in upper abdomen"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "CT Scan",
+        "description": "CT scan to check for leaks in the colon",
+        "available_phase": "postop",
+        "reveal": {
+          "result_summary": "CT scan on July 5 and x-ray on July 12 showed no signs of a leak; CT scan on July 15 showed a leak",
+          "detailed_findings": null,
+          "clinical_significance": "Indicated a leak in the colon post-surgery",
+          "decision_impact": "Prompted surgical intervention to correct the leak",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "IMAGING",
+        "name": "X-ray",
+        "description": "X-ray to check for complications post-surgery",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "No signs of a leak in the colon",
+          "detailed_findings": null,
+          "clinical_significance": "No immediate surgical complications detected",
+          "decision_impact": "Continued monitoring required",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with swelling in the upper abdomen",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Diagnosis of hernia",
+            "timestamp": "2014",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "procedure",
+        "name": "Second Hernia Repair Surgery",
+        "description": "Surgery to repair hernia and address complications from previous surgery",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Colon freed from mesh, two holes repaired",
+            "timestamp": "2015",
+            "evidence_ids": [
+              "E004"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "postop",
+        "name": "Postoperative Complications",
+        "description": "Patient develops sepsis and other complications",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "CT scan shows leak in colon",
+            "timestamp": "July 15, 2015",
+            "evidence_ids": [
+              "E006"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "procedure",
+        "clinical_context": "During the second hernia repair surgery",
+        "prompt": "How should the surgeon handle the colon stuck in the mesh?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Carefully free the colon and inspect for any damage",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard practice to ensure no damage occurs during freeing of the colon"
+          },
+          {
+            "option_id": "B",
+            "description": "Free the colon and repair any damage with a stapling device",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Risk of causing further damage or not adequately repairing the colon"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant freed the colon and repaired two small holes with a stapling device",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E004"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Careful inspection and management to prevent damage",
+          "standard_of_care_basis": "Expert testimony on standard surgical practices",
+          "evidence_ids": [
+            "E004"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Caused two small holes in the colon during the procedure",
+          "what_should_have_happened": "Careful inspection and management to prevent damage",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E004"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient developed sepsis and drop foot in both feet",
+        "severity": "PERMANENT_MODERATE_DISABILITY",
+        "long_term_effects": "Hindered ability to walk",
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "Not applicable",
+        "key_findings": [
+          "District court abused discretion by admitting irrelevant evidence",
+          "Case remanded for a new trial"
+        ],
+        "evidence_ids": [
+          "E009"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Admissibility of evidence, not clinical decision",
+        "counterfactual": "Not applicable",
+        "evidence_ids": [
+          "E009"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "2014",
+        "event": "Patient diagnosed with hernia and first surgery performed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "2015",
+        "event": "Second hernia repair surgery performed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "July 15, 2015",
+        "event": "CT scan shows leak in colon",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Patient presents with back pain and burning in feet",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Hernia repair surgery performed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Development of sepsis post-surgery",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "CT Scan",
+        "date": "July 15, 2015",
+        "result": "Leak in colon detected",
+        "interpretation": null,
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "test_name": "CT Scan",
+        "date": "July 5",
+        "result": "No signs of a leak in the colon",
+        "interpretation": null,
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "test_name": "X-ray",
+        "date": "July 12",
+        "result": "No signs of a leak in the colon",
+        "interpretation": null,
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Hernia",
+        "when_made": "2014",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "diagnosis": "Sepsis",
+        "when_made": "Post-surgery",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Hernia repair surgery",
+        "date": "2015",
+        "provider": null,
+        "outcome": "Complications including sepsis",
+        "evidence_ids": [
+          "E004",
+          "E005"
+        ]
+      },
+      {
+        "treatment": "Surgical repair of colon",
+        "date": "Not documented in judgment",
+        "provider": null,
+        "outcome": "Two small holes repaired",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Sepsis",
+        "when_occurred": "Post-2015 surgery",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "complication": "Drop foot",
+        "when_occurred": "Post-2015 surgery",
+        "severity": "Moderate",
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      {
+        "complication": "Sepsis",
+        "when_occurred": "Post-surgery",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "complication": "Drop foot in both feet",
+        "when_occurred": "Post-surgery",
+        "severity": "Moderate",
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to properly manage the colon during surgery",
+        "against": "Defendant surgeon",
+        "found_proven": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "allegation": "Failure to properly manage surgical complications",
+        "against": "Defendant surgeon",
+        "found_proven": false,
+        "evidence_ids": [
+          "E009"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Standard of care not met during surgery",
+        "evidence_ids": [
+          "E009"
+        ]
+      },
+      {
+        "finding": "District court abused discretion by admitting irrelevant evidence",
+        "legal_significance": "Case remanded for a new trial",
+        "evidence_ids": [
+          "E009"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "TREATMENT_PROCEDURE_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.10101010101010101,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-09 17:56:07.497283",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

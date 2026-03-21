@@ -1,0 +1,398 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-4468614",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2018-02-16",
+  "url": "https://example.com/courtlistener-4468614",
+  "case_name": "ARMANDO PAYAS v. ADVENTIST HEALTH SYSTEM",
+  "neutral_citation": null,
+  "clinical_domain": "CARDIOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "ARMANDO PAYAS v. ADVENTIST HEALTH SYSTEM. Medical malpractice case involving cardiology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "In July 2009, Dr. Parra-Davila performed a paraesophageal hernia repair surgery on Mr. Galarza using a surgical robot.",
+      "paragraph_ref": "24",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "During the surgery, part of the surgical robot detached and became embedded in Mr. Galarza's esophagus.",
+      "paragraph_ref": "27",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "A second surgery was performed by a different surgeon at Tampa General Hospital in July 2012 to determine the cause of his worsening symptoms, but the surgery was unsuccessful.",
+      "paragraph_ref": "29",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "In January 2013, a third, exploratory surgery was performed at Tampa General Hospital. During that surgery, Mr. Galarza's vena cava vein was ruptured, causing considerable blood loss, cardiac arrest, and ultimately his death.",
+      "paragraph_ref": "32",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "An autopsy revealed the presence of a thin, coiled band encircling the gastroesophageal junction.",
+      "paragraph_ref": "34",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "Payas alleged that this foreign object was part of the surgical robot that became detached during the first surgery in July 2009.",
+      "paragraph_ref": "35",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "LEGAL_FINDING",
+      "text": "The trial court erred in dismissing the fourth complaint against Celebration Health with prejudice because it contains sufficient allegations for causes of action for vicarious liability, breach of a nondelegable duty, and negligence.",
+      "paragraph_ref": "20",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "LEGAL_FINDING",
+      "text": "We reverse the order dismissing counts I, II, IV, and V with prejudice and remand for further proceedings consistent with this opinion.",
+      "paragraph_ref": "232",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "male",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Complications following paraesophageal hernia repair surgery",
+      "history_of_present_illness": "Mr. Galarza underwent paraesophageal hernia repair surgery using a surgical robot. During the surgery, part of the robot detached and became embedded in his esophagus, leading to complications.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "abdomen": "Not documented in judgment"
+        }
+      },
+      "initial_working_problem": "Complications from surgical procedure",
+      "known_constraints": null,
+      "initial_differential": [
+        "Foreign object complication",
+        "Surgical site infection"
+      ],
+      "critical_findings": [
+        "Foreign object embedded in esophagus"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "CT Scan",
+        "description": "CT scan of the abdomen and thorax",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Foreign object observed in the esophagus",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates presence of a foreign object that may be causing complications",
+          "decision_impact": "Should prompt surgical intervention to remove the object",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Surgery",
+        "description": "Paraesophageal hernia repair surgery using a surgical robot",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Surgical robot part detached and embedded in esophagus",
+            "timestamp": "July 2009",
+            "evidence_ids": [
+              "E001",
+              "E002"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Post-Surgical Complications",
+        "description": "Patient experiences complications and undergoes further evaluation",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "CT scan reveals foreign object",
+            "timestamp": "April 2012",
+            "evidence_ids": [
+              "E006"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "decision",
+        "name": "Management Decision",
+        "description": "Decision on how to manage the detected foreign object",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Decision to monitor rather than remove foreign object",
+            "timestamp": "Not documented in judgment",
+            "evidence_ids": [
+              "E003"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Post-surgical complications with foreign object detected",
+        "prompt": "What should be the next step in management?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Perform exploratory surgery to remove the foreign object",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Necessary to remove the foreign object and prevent further complications"
+          },
+          {
+            "option_id": "B",
+            "description": "Monitor the patient and manage symptoms conservatively",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Inadequate as it does not address the underlying issue of the foreign object"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant chose to monitor the patient",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E003"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Exploratory surgery should have been performed",
+          "standard_of_care_basis": "Expert evidence established the need for surgical intervention",
+          "evidence_ids": [
+            "E004"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to remove the foreign object led to further complications",
+          "what_should_have_happened": "Surgical removal of the foreign object",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E004",
+            "E005"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient suffered cardiac arrest and died following complications from the foreign object",
+        "severity": "FATAL",
+        "long_term_effects": "Death",
+        "evidence_ids": [
+          "E004",
+          "E005"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "Not applicable",
+        "key_findings": [
+          "Court reversed the dismissal of the complaint, allowing further proceedings"
+        ],
+        "evidence_ids": [
+          "E008"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Failure to remove foreign object",
+        "counterfactual": "Removal of the object could have prevented complications",
+        "evidence_ids": [
+          "E004",
+          "E005"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "July 2009",
+        "event": "Paraesophageal hernia repair surgery performed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "April 2012",
+        "event": "CT scan reveals foreign object",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "timestamp": "January 2013",
+        "event": "Exploratory surgery performed, patient suffers cardiac arrest",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "CT Scan",
+        "date": "April 2012",
+        "result": "Foreign object observed",
+        "interpretation": null,
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Foreign object complication",
+        "when_made": "April 2012",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Exploratory surgery",
+        "date": "January 2013",
+        "provider": null,
+        "outcome": "Patient suffered cardiac arrest",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Cardiac arrest",
+        "when_occurred": "January 2013",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to remove foreign object",
+        "against": "Celebration Health",
+        "found_proven": false,
+        "evidence_ids": [
+          "E008"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Reversal of dismissal, allowing further proceedings",
+        "legal_significance": "Complaint was not defective",
+        "evidence_ids": [
+          "E008"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "TREATMENT_PROCEDURE_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.03389830508474576,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-09 20:24:27.248953",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

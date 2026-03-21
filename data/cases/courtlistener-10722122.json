@@ -1,0 +1,444 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10722122",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2014-03-18",
+  "url": "https://example.com/courtlistener-10722122",
+  "case_name": "Herbert Moore v. Sonu G. Singh",
+  "neutral_citation": null,
+  "clinical_domain": "SURGERY_ORTHOPAEDIC",
+  "outcome_severity": "TEMPORARY_HARM",
+  "summary": {
+    "brief": "Herbert Moore v. Sonu G. Singh. Medical malpractice case involving surgery orthopaedic.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Rosemary Moore, who as a result of her diabetes had end-stage renal disease, was transported by ambulance to Henry Medical Center Emergency Department",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Rosemary was diagnosed with a left ankle sprain and left knee contusion and discharged from the hospital that same day",
+      "paragraph_ref": "18",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Stephan Borkan provided expert testimony that a nephrologist examining Rosemary would have been concentrating on the status of her bones",
+      "paragraph_ref": "41",
+      "speaker": "Dr. Stephan Borkan"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Orcutt testified that when he first saw Rosemary in late March 2009, the fracture was at the least six weeks old",
+      "paragraph_ref": "82",
+      "speaker": "Dr. Daniel Orcutt"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "LEGAL_FINDING",
+      "text": "Accordingly, the trial court erred by granting the motion for directed verdict.",
+      "paragraph_ref": "155",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "COURT_REASONING",
+      "text": "Moore presented evidence creating a jury issue as to whether Dr. Singh would have discovered the fracture if she had properly complied with the standard of care",
+      "paragraph_ref": "120",
+      "speaker": "Court reasoning"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Orcutt testified that if the fracture had been detected while it was non-displaced, then it could have been treated without surgical intervention",
+      "paragraph_ref": "96",
+      "speaker": "Dr. Daniel Orcutt"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "FACTUAL_FINDING",
+      "text": "Rosemary continued to experience issues with her leg and was unable to bear weight on it.",
+      "paragraph_ref": "32",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "LEGAL_FINDING",
+      "text": "Judgment reversed. McFadden and Boggs, JJ., concur.",
+      "paragraph_ref": "182",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Unable to put weight on left leg after a fall",
+      "history_of_present_illness": "Rosemary Moore, with end-stage renal disease due to diabetes, fell at home on December 23, 2008, hitting her left knee on a door frame. She was transported to the emergency department.",
+      "past_medical_history": [
+        "End-stage renal disease",
+        "Diabetes"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "lower_extremity": "Tenderness and swelling in the left leg, particularly around the knee"
+        }
+      },
+      "initial_working_problem": "Left ankle sprain and left knee contusion",
+      "known_constraints": null,
+      "initial_differential": [
+        "Sprain",
+        "Contusion",
+        "Fracture"
+      ],
+      "critical_findings": [
+        "Unable to bear weight",
+        "Pain in left leg"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "X-ray of left knee",
+        "description": "Radiographic imaging of the left knee to assess for fractures",
+        "available_phase": "presentation",
+        "reveal": {
+          "result_summary": "No fracture detected",
+          "detailed_findings": null,
+          "clinical_significance": "Initial assessment did not reveal fracture, but fracture could be occult",
+          "decision_impact": "Further imaging or follow-up required if symptoms persist",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "IMAGING",
+        "name": "CT scan or MRI of left leg",
+        "description": "Advanced imaging to detect occult fractures",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not performed",
+          "detailed_findings": null,
+          "clinical_significance": "Could have detected nondisplaced fracture",
+          "decision_impact": "Would have prompted early intervention",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": [
+          "E003",
+          "E007"
+        ]
+      },
+      {
+        "request_id": "R003",
+        "type": "CONSULT_NOTE",
+        "name": "Orthopedic consultation",
+        "description": "Consultation with an orthopedic specialist to evaluate leg pain",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not performed",
+          "detailed_findings": null,
+          "clinical_significance": "Could have led to diagnosis of fracture",
+          "decision_impact": "Would have guided appropriate management",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": [
+          "E003",
+          "E007"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents to ED after fall with leg pain",
+        "duration": "1 day",
+        "key_events": [
+          {
+            "event": "X-ray performed, no fracture detected",
+            "timestamp": "23 December 2008",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Hospitalization and Follow-up",
+        "description": "Patient hospitalized for further assessment and management",
+        "duration": "13 days",
+        "key_events": [
+          {
+            "event": "Patient complains of persistent leg pain",
+            "timestamp": "24 December 2008",
+            "evidence_ids": [
+              "E003"
+            ]
+          },
+          {
+            "event": "Physical therapy consult localizes pain",
+            "timestamp": "29 December 2008",
+            "evidence_ids": [
+              "E003"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient with persistent left leg pain and inability to bear weight",
+        "prompt": "What further investigations should be ordered to assess the cause of leg pain?",
+        "action_type": "ORDER_TEST",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Order CT scan or MRI of the left leg",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Advanced imaging is necessary to detect occult fractures not visible on X-ray"
+          },
+          {
+            "option_id": "B",
+            "description": "Continue with conservative management without further imaging",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Assumed initial X-ray was sufficient"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant did not order further imaging",
+          "reasoning_stated": "Assumed initial X-ray was sufficient",
+          "evidence_ids": [
+            "E003",
+            "E006"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "CT scan or MRI should have been ordered",
+          "standard_of_care_basis": "Expert testimony indicated advanced imaging was necessary",
+          "evidence_ids": [
+            "E003",
+            "E007"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to order further imaging led to missed diagnosis of fracture",
+          "what_should_have_happened": "Advanced imaging would have detected the fracture",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E003",
+            "E007"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient required surgery for displaced fracture",
+        "severity": "PERMANENT_MODERATE_DISABILITY",
+        "long_term_effects": "Complicated recovery due to delayed diagnosis",
+        "evidence_ids": [
+          "E004",
+          "E007"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "0",
+        "key_findings": [
+          "Directed verdict initially granted for defendant",
+          "Appeal found jury issue on causation, reversed directed verdict"
+        ],
+        "evidence_ids": [
+          "E005",
+          "E009"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": false,
+        "point_of_failure": "Failure to order CT or MRI",
+        "counterfactual": "Advanced imaging would have detected fracture",
+        "evidence_ids": [
+          "E003",
+          "E007"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "23 December 2008",
+        "event": "Patient falls and injures left knee",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "24 December 2008",
+        "event": "Patient hospitalized with leg pain",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "timestamp": "29 December 2008",
+        "event": "Physical therapy consult localizes pain",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "X-ray of left knee",
+        "date": "23 December 2008",
+        "result": "No fracture detected",
+        "interpretation": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Displaced fracture of tibia",
+        "when_made": "Late March 2009",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Surgery to correct displaced fracture",
+        "date": "2 April 2009",
+        "provider": null,
+        "outcome": "Fracture set with pins",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Delayed diagnosis leading to complicated surgery",
+        "when_occurred": "April 2009",
+        "severity": "Moderate",
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to order CT or MRI",
+        "against": "Dr. Singh",
+        "found_proven": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Directed verdict reversed on appeal",
+        "legal_significance": "Jury issue on causation",
+        "evidence_ids": [
+          "E009"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.04891304347826087,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-17 07:45:07.902165",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

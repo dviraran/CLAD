@@ -1,0 +1,359 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-9495339",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2024-04-16",
+  "url": "https://example.com/courtlistener-9495339",
+  "case_name": "Gary Horndeski M.D. v. Cheryl Price",
+  "neutral_citation": null,
+  "clinical_domain": "ONCOLOGY",
+  "outcome_severity": "TEMPORARY_HARM",
+  "summary": {
+    "brief": "Gary Horndeski M.D. v. Cheryl Price. Medical malpractice case involving oncology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Appellee Cheryl Price sued Appellant Gary Horndeski M.D. for negligence arising from the breast reconstruction surgery he performed on her.",
+      "paragraph_ref": "8",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "On January 4, 2021, Price filed a health care liability suit against Dr. Horndeski alleging he 'was negligent in providing appropriate and timely medical care and treatment to [her] while she was his patient and breached his duty to provide the standard of care in restoring and treating [her].'",
+      "paragraph_ref": "32",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "EXPERT_TESTIMONY",
+      "text": "In my opinion, the procedure recommended and carried out by Dr. Horndeski on March 5, 2019 departed from and was below the accepted standard of care in the following respects.",
+      "paragraph_ref": "61",
+      "speaker": "Expert testimony"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Based upon my experience, training, practice and review of literature, the accepted standard of care for a plastic surgeon presented with the history and examination of Cheryl Price as set forth within Dr. Horndeski\u2019s records is to perform no reconstructive procedure whatsoever.",
+      "paragraph_ref": "288",
+      "speaker": "Expert testimony"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "LEGAL_FINDING",
+      "text": "We affirm the trial court\u2019s order denying Dr. Horndeski\u2019s motion to dismiss with prejudice Price\u2019s negligence claim.",
+      "paragraph_ref": "579",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "COURT_REASONING",
+      "text": "Although the Amended Report could have provided a more robust discussion of Dr. Lapuerta\u2019s opinion on the causal relationship between Dr. Horndeski\u2019s breach and Price\u2019s harm, we nevertheless consider it sufficient.",
+      "paragraph_ref": "574",
+      "speaker": "Judge's analysis"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Patient presented for care and treatment to remove excess skin under each arm after breast cancer surgery",
+      "history_of_present_illness": "Patient presented for care and treatment to remove excess skin under each arm after breast cancer surgery. (E002, E003)",
+      "past_medical_history": [
+        "Left breast cancer in 1995",
+        "Bilateral mastectomies followed by delayed breast cancer reconstruction with implants in 1999",
+        "Developed exposure and had bilateral implants removed"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": null,
+        "general_appearance": null,
+        "focused_exam": null
+      },
+      "initial_working_problem": "Not documented in judgment",
+      "known_constraints": null,
+      "initial_differential": [],
+      "critical_findings": [],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002",
+        "E003"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSULT_NOTE",
+        "name": "Surgical Consultation",
+        "description": "Consultation regarding the suitability of the Bellasoma procedure for breast reconstruction.",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Bellasoma procedure recommended despite contraindications",
+          "detailed_findings": null,
+          "clinical_significance": "Procedure was contraindicated due to patient's medical history",
+          "decision_impact": "Should have prompted reconsideration of surgical approach",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E003",
+          "E480"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "workup",
+        "name": "Pre-Surgical Evaluation",
+        "description": "Evaluation and decision-making regarding breast reconstruction surgery",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Consultation with Dr. Horndeski",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E480"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "procedure",
+        "name": "Bellasoma Procedure",
+        "description": "Execution of the Bellasoma breast reconstruction surgery",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Bellasoma procedure performed",
+            "timestamp": "March 5, 2019",
+            "evidence_ids": [
+              "E003"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "postop",
+        "name": "Post-Operative Complications",
+        "description": "Management of complications following the Bellasoma procedure",
+        "duration": "Seven months",
+        "key_events": [
+          {
+            "event": "Development of severe complications",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E486",
+              "E487"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient with a history of severe post-surgical complications seeking breast reconstruction",
+        "prompt": "Should the Bellasoma procedure be performed?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Proceed with Bellasoma procedure",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Procedure was contraindicated due to patient's history"
+          },
+          {
+            "option_id": "B",
+            "description": "Refrain from performing any breast reconstruction surgery",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Patient's history of complications contraindicates further surgery"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "A",
+          "description": "Defendant proceeded with Bellasoma procedure",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E003",
+            "E480"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "B",
+          "description": "Surgery should not have been performed",
+          "standard_of_care_basis": "Expert evidence established surgery was contraindicated",
+          "evidence_ids": [
+            "E004",
+            "E480"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Based on evidence E003-E004, the procedure was contraindicated",
+          "what_should_have_happened": "Surgery should have been avoided due to patient's history",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E003",
+            "E004",
+            "E480"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient developed severe complications including abscess formation and bilateral open breast wounds",
+        "severity": "PERMANENT_MODERATE_DISABILITY",
+        "long_term_effects": "Multiple surgeries and prolonged recovery",
+        "evidence_ids": [
+          "E486",
+          "E487",
+          "E488"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Breach of duty in performing contraindicated surgery",
+          "Causation established - surgery led to severe complications"
+        ],
+        "evidence_ids": [
+          "E005",
+          "E480"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Performance of contraindicated Bellasoma procedure",
+        "counterfactual": "Avoiding surgery would have prevented complications",
+        "evidence_ids": [
+          "E480",
+          "E481",
+          "E482"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "March 5, 2019",
+        "event": "Bellasoma procedure performed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [
+      {
+        "diagnosis": "Severe post-surgical complications",
+        "when_made": "Post-surgery",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E486",
+          "E487"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Multiple surgeries and oral antibiotics",
+        "date": "Post-surgery",
+        "provider": null,
+        "outcome": "Management of complications",
+        "evidence_ids": [
+          "E487",
+          "E488"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Abscess formation, bilateral open breast wounds",
+        "when_occurred": "Post-surgery",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E486",
+          "E487"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Performance of contraindicated surgery",
+        "against": "Dr. Horndeski",
+        "found_proven": true,
+        "evidence_ids": [
+          "E480"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E005",
+          "E480"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "TREATMENT_PROCEDURE_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.010291595197255575,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-09 14:42:25.946814",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

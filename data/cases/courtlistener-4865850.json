@@ -1,0 +1,468 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-4865850",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2021-03-19",
+  "url": "https://example.com/courtlistener-4865850",
+  "case_name": "Povrzenich, L. v. Ripepi, J.",
+  "neutral_citation": null,
+  "clinical_domain": "PAEDIATRICS",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Povrzenich, L. v. Ripepi, J.. Medical malpractice case involving paediatrics.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Lacey was born on January 31, 1996, with a cleft palate for which she underwent several surgeries.",
+      "paragraph_ref": "23",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "From 1997 to 2007, Lacey was treated for five urinary tract infections (“UTI”) by her pediatrician, Dr. McCracken.",
+      "paragraph_ref": "24",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "In 2008, Lacey changed primary care providers and came under the care of pediatrician Jennifer Ripepi. M.D.",
+      "paragraph_ref": "26",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "A urine screen at that time revealed a UTI, as well as high creatinine levels.",
+      "paragraph_ref": "29",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "Lacey was diagnosed with end-stage renal disease secondary to severe reflux nephropathy.",
+      "paragraph_ref": "42",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "In 2015, Lacey underwent a kidney transplant with a kidney donated by her mother.",
+      "paragraph_ref": "45",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "LEGAL_FINDING",
+      "text": "Judgment affirmed in part and vacated in part. Orders vacated denying post-trial motion for limited new trial and assessing delay damages.",
+      "paragraph_ref": "526",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "COURT_REASONING",
+      "text": "We conclude that the trial court abused its discretion in excluding Nurse Bissontz’s testimony.",
+      "paragraph_ref": "355",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "FACTUAL_FINDING",
+      "text": "The jury attributed eighty-five percent of the negligence to Dr. McCracken, and fifteen percent to MVCHS.",
+      "paragraph_ref": "79",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "LEGAL_FINDING",
+      "text": "Case remanded for a limited new trial as to future medical expenses and reassessment of delay damages.",
+      "paragraph_ref": "528",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "12 years",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Left-sided abdominal pain occurring daily and lasting several hours",
+      "history_of_present_illness": "Lacey presented with complaints of left-sided abdominal pain. She had a history of urinary tract infections and was previously treated with antibiotics.",
+      "past_medical_history": [
+        "Cleft palate",
+        "Recurrent urinary tract infections"
+      ],
+      "medications": [
+        "Antibiotics (specific type not documented in judgment)"
+      ],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Elevated on multiple occasions",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "abdomen": "Not documented in judgment"
+        }
+      },
+      "initial_working_problem": "Recurrent urinary tract infections with abdominal pain",
+      "known_constraints": null,
+      "initial_differential": [
+        "Urinary tract infection",
+        "Reflux nephropathy"
+      ],
+      "critical_findings": [
+        "Elevated blood pressure",
+        "High creatinine levels"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E002",
+        "E004",
+        "E005"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "LAB",
+        "name": "Urine Culture",
+        "description": "Culture to identify urinary tract infection",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "UTI confirmed",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates bacterial infection",
+          "decision_impact": "Should prompt further investigation of renal function",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "LAB",
+        "name": "Serum Creatinine",
+        "description": "Measurement of kidney function",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "High creatinine levels",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates impaired kidney function",
+          "decision_impact": "Should prompt referral to nephrology",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "request_id": "R003",
+        "type": "IMAGING",
+        "name": "CT Scan of Pelvis",
+        "description": "Imaging to assess abdominal and pelvic organs",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": null,
+          "detailed_findings": "Interpreted as normal",
+          "clinical_significance": "No abnormalities reported",
+          "decision_impact": "Did not prompt further investigation",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with abdominal pain and history of UTIs",
+        "duration": "Not specified in judgment",
+        "key_events": [
+          {
+            "event": "Initial consultation with Dr. Ripepi",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E003"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Diagnostic Workup",
+        "description": "Laboratory and imaging tests conducted",
+        "duration": "Not specified in judgment",
+        "key_events": [
+          {
+            "event": "Urine culture and serum creatinine test",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E004"
+            ]
+          },
+          {
+            "event": "CT scan of pelvis",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E004"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient with recurrent UTIs and elevated creatinine levels",
+        "prompt": "What should be the next step in management?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Refer to nephrology for further evaluation",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Referral to a specialist is warranted due to abnormal renal function tests"
+          },
+          {
+            "option_id": "B",
+            "description": "Continue antibiotics and monitor",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Failed to address underlying renal issues"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Continued antibiotics without specialist referral",
+          "reasoning_stated": "Defendant believed antibiotics were sufficient",
+          "evidence_ids": [
+            "E003",
+            "E004"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Referral to nephrology should have been made",
+          "standard_of_care_basis": "Expert testimony indicated need for specialist evaluation",
+          "evidence_ids": [
+            "E005"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to refer to a specialist led to delayed diagnosis of renal disease",
+          "what_should_have_happened": "Referral to nephrology for further evaluation of renal function",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E005"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient developed end-stage renal disease requiring kidney transplant",
+        "severity": "PERMANENT_SEVERE_DISABILITY",
+        "long_term_effects": "Chronic kidney disease, dialysis, potential need for second transplant",
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "4,245,573.28",
+        "key_findings": [
+          "Negligence in failing to refer to a specialist and follow up on abnormal labs",
+          "Causation established - earlier intervention could have prevented progression to end-stage renal disease"
+        ],
+        "evidence_ids": [
+          "E009",
+          "E010"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to refer to nephrology and follow up on abnormal labs",
+        "counterfactual": "Specialist referral could have led to earlier diagnosis and treatment",
+        "evidence_ids": [
+          "E005",
+          "E009"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "2008",
+        "event": "Lacey treated for UTI and high creatinine levels",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "timestamp": "May 18, 2010",
+        "event": "Lacey diagnosed with end-stage renal disease",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "timestamp": "2015",
+        "event": "Lacey underwent kidney transplant",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Urine Culture",
+        "date": "2008",
+        "result": "UTI confirmed",
+        "interpretation": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "test_name": "Serum Creatinine",
+        "date": "2008",
+        "result": "High creatinine levels",
+        "interpretation": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "test_name": "CT Scan of Pelvis",
+        "date": "2008",
+        "result": "Interpreted as normal",
+        "interpretation": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "End-stage renal disease",
+        "when_made": "May 18, 2010",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Kidney transplant",
+        "date": "2015",
+        "provider": null,
+        "outcome": "Kidney donated by mother",
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Signs of transplant rejection",
+        "when_occurred": "Post-2015",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to refer to nephrology and follow up on abnormal labs",
+        "against": "Dr. Ripepi",
+        "found_proven": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Failure to meet standard of care",
+        "evidence_ids": [
+          "E009"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.01876172607879925,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-17 08:34:55.099207",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

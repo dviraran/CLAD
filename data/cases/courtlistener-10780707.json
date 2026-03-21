@@ -1,0 +1,612 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10780707",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2024-10-15",
+  "url": "https://example.com/courtlistener-10780707",
+  "case_name": "Booth v. Lazzara",
+  "neutral_citation": null,
+  "clinical_domain": "EMERGENCY_MEDICINE",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Booth v. Lazzara. Medical malpractice case involving emergency medicine.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "On October 15, 2024, Brandi filed a negligence, wrongful death, and survivorship action against Dr. Lazzara.",
+      "paragraph_ref": "18",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Dustin was later transferred to the behavioral health unit at Atrium Medical Center, where he remained until he was discharged on February 7, 2022.",
+      "paragraph_ref": "41",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. Lazzara diagnosed Dustin with Bipolar Disorder I with mania and began Dustin on various medications.",
+      "paragraph_ref": "44",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "Upon his discharge from the hospital, Dustin returned home where he resumed use of his vape pen and, according to Dustin's mother and Brandi, his behavior quickly deteriorated.",
+      "paragraph_ref": "51",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "On February 11, 2022, police responded to a call from Brandi that Dustin was behaving strangely.",
+      "paragraph_ref": "53",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "Dustin engaged in a stand-off with law enforcement officers, who ultimately shot Dustin several times.",
+      "paragraph_ref": "54",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "EXPERT_TESTIMONY",
+      "text": "It is my opinion, with reasonable medical certainty, that Dr. Lazzara deviated from the standard of care while treating Dustin Booth as an inpatient psychiatric patient.",
+      "paragraph_ref": "83",
+      "speaker": "Dr. Thatcher"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "LEGAL_FINDING",
+      "text": "The trial court found that, '[u]pon review of all the evidence . . . [Dr. Lazzara] acted in good faith.'",
+      "paragraph_ref": "100",
+      "speaker": "Trial court"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "LEGAL_FINDING",
+      "text": "Dr. Lazzara was entitled to statutory immunity pursuant to R.C. 5122.34.",
+      "paragraph_ref": "97",
+      "speaker": "Trial court"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "COURT_REASONING",
+      "text": "The trial court's grant of summary judgment in favor of Dr. Lazzara should be reversed.",
+      "paragraph_ref": "1204",
+      "speaker": "Court of Appeals"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "male",
+        "relevant_social_history": "Increased use of vape pen and cannabis products"
+      },
+      "chief_complaint": "Behavioral changes and erratic behavior",
+      "history_of_present_illness": "Dustin Booth exhibited low amounts of sleep, sudden weight loss, increased motivation to complete projects, heightened interest in odd topics, and increased use of vape pen and cannabis products. Family noticed these changes in mid-January 2022.",
+      "past_medical_history": [
+        "Not documented in judgment"
+      ],
+      "medications": [
+        "Not documented in judgment"
+      ],
+      "allergies": [
+        "Not documented in judgment"
+      ],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "mental_status": "Behavioral changes noted, specifics not documented in judgment"
+        }
+      },
+      "initial_working_problem": "Suspected mental health disorder",
+      "known_constraints": null,
+      "initial_differential": [
+        "Bipolar Disorder I with mania",
+        "Substance use disorder"
+      ],
+      "critical_findings": [
+        "Behavioral changes",
+        "Increased substance use"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E002",
+        "E005"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSULT_NOTE",
+        "name": "Psychiatric Evaluation",
+        "description": "Initial psychiatric evaluation by Dr. Lazzara",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Diagnosed with Bipolar Disorder I with mania",
+          "detailed_findings": null,
+          "clinical_significance": "Guided treatment plan with medications",
+          "decision_impact": "Led to discharge plan without addressing substance use",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with behavioral changes and is admitted to behavioral health unit",
+        "duration": "6 days",
+        "key_events": [
+          {
+            "event": "Emergency admission via 'pink slip' process",
+            "timestamp": "February 1, 2022",
+            "evidence_ids": [
+              "E002",
+              "E005"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Inpatient Treatment",
+        "description": "Patient receives psychiatric evaluation and treatment",
+        "duration": "6 days",
+        "key_events": [
+          {
+            "event": "Diagnosis of Bipolar Disorder I with mania",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E003"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "followup",
+        "name": "Discharge Planning",
+        "description": "Patient discharged from behavioral health unit",
+        "duration": "1 day",
+        "key_events": [
+          {
+            "event": "Patient discharged with focus on bipolar disorder management",
+            "timestamp": "February 7, 2022",
+            "evidence_ids": [
+              "E004"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "decision",
+        "name": "Discharge Decision",
+        "description": "Decision to discharge patient from behavioral health unit",
+        "duration": "February 7, 2022",
+        "key_events": [
+          {
+            "event": "Patient discharged without comprehensive plan",
+            "timestamp": "February 7, 2022",
+            "evidence_ids": [
+              "E004"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient admitted to behavioral health unit with suspected mental health disorder",
+        "prompt": "What should be included in the diagnostic workup?",
+        "action_type": "ORDER_TEST",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Include assessment for substance use disorders",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Substance use was a significant part of the patient's presentation"
+          },
+          {
+            "option_id": "B",
+            "description": "Focus solely on bipolar disorder diagnosis",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Overlooked potential substance use disorder"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Focused on bipolar disorder diagnosis",
+          "reasoning_stated": "Believed mania was not attributed to substance use",
+          "evidence_ids": [
+            "E003",
+            "E007"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Assessment for substance use disorders should have been included",
+          "standard_of_care_basis": "Expert opinion indicated failure to diagnose substance use disorders",
+          "evidence_ids": [
+            "E007",
+            "E008"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failed to diagnose substance use disorders",
+          "what_should_have_happened": "Comprehensive assessment including substance use",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E007",
+            "E008"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      },
+      {
+        "decision_id": "D002",
+        "phase_id": "followup",
+        "clinical_context": "Patient ready for discharge from behavioral health unit",
+        "prompt": "What should be included in the discharge plan?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Include follow-up for substance use and community safety plan",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Ensures comprehensive care and safety"
+          },
+          {
+            "option_id": "B",
+            "description": "Discharge with focus on bipolar disorder management",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Did not address substance use or community safety"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Discharged with focus on bipolar disorder management",
+          "reasoning_stated": "Observed improvement in bipolar symptoms",
+          "evidence_ids": [
+            "E004",
+            "E007"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Discharge plan should have included substance use follow-up and safety plan",
+          "standard_of_care_basis": "Expert opinion indicated failure to ensure safety",
+          "evidence_ids": [
+            "E007",
+            "E008"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Discharged without addressing substance use or safety",
+          "what_should_have_happened": "Comprehensive discharge plan including substance use follow-up",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E007",
+            "E008"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient engaged in a stand-off with law enforcement and was shot",
+        "severity": "SEVERE",
+        "long_term_effects": "Not documented in judgment",
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "None",
+        "key_findings": [
+          "Dr. Lazzara acted in good faith and was entitled to statutory immunity"
+        ],
+        "evidence_ids": [
+          "E008",
+          "E009"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Discharge decision without thorough evaluation",
+        "counterfactual": "Thorough evaluation could have prevented adverse outcome",
+        "evidence_ids": [
+          "E007",
+          "E009"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "February 1, 2022",
+        "event": "Dustin admitted to behavioral health unit",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002",
+          "E005"
+        ]
+      },
+      {
+        "timestamp": "February 7, 2022",
+        "event": "Dustin discharged from behavioral health unit",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "timestamp": "February 11, 2022",
+        "event": "Dustin engaged in stand-off with law enforcement",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "timestamp": "February 1, 2022",
+        "event": "Emergency admission via 'pink slip' process",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "timestamp": "February 7, 2022",
+        "event": "Patient discharged from behavioral health unit",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "timestamp": "February 11, 2022",
+        "event": "Patient engaged in a stand-off with law enforcement",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "timestamp": "February 11, 2022",
+        "event": "Police responded to a call from Brandi about Dustin's behavior",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Psychiatric Evaluation",
+        "date": "Not documented in judgment",
+        "result": "Diagnosed with Bipolar Disorder I with mania",
+        "interpretation": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Bipolar Disorder I with mania",
+        "when_made": "During hospitalization",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "diagnosis": "Bipolar Disorder I with mania",
+        "when_made": "During hospitalization",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "diagnosis": "Bipolar Disorder I with mania",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Psychiatric medications",
+        "date": "During hospitalization",
+        "provider": null,
+        "outcome": "Observed improvement",
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "treatment": "Medication for Bipolar Disorder I",
+        "date": "During hospitalization",
+        "provider": null,
+        "outcome": "Improvement noted",
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Fatal injuries from law enforcement shooting",
+        "when_occurred": "February 11, 2022",
+        "severity": "Fatal",
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "complication": "Fatal shooting by law enforcement",
+        "when_occurred": "February 11, 2022",
+        "severity": "Fatal",
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "complication": "Stand-off with law enforcement",
+        "when_occurred": "February 11, 2022",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to diagnose substance use disorders",
+        "against": "Dr. Lazzara",
+        "found_proven": false,
+        "evidence_ids": [
+          "E007",
+          "E008"
+        ]
+      },
+      {
+        "allegation": "Failure to create and implement a safe discharge plan",
+        "against": "Dr. Lazzara",
+        "found_proven": false,
+        "evidence_ids": [
+          "E007",
+          "E008"
+        ]
+      },
+      {
+        "allegation": "Failure to conduct thorough evaluation before discharge",
+        "against": "Dr. Lazzara",
+        "found_proven": false,
+        "evidence_ids": [
+          "E007",
+          "E008"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Dr. Lazzara acted in good faith",
+        "legal_significance": "Entitled to statutory immunity",
+        "evidence_ids": [
+          "E008",
+          "E009"
+        ]
+      },
+      {
+        "finding": "Dr. Lazzara acted in good faith and was entitled to statutory immunity",
+        "legal_significance": "No liability found",
+        "evidence_ids": [
+          "E008",
+          "E009"
+        ]
+      },
+      {
+        "finding": "Dr. Lazzara acted in good faith and was entitled to statutory immunity",
+        "legal_significance": "No liability found",
+        "evidence_ids": [
+          "E008",
+          "E009"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.00825082508250825,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-09 17:10:44.551841",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

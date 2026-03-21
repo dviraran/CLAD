@@ -1,0 +1,720 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtliste-10381483-bianco-brain-and-spine-pllc-and-nikhil-kanti",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2025-04-17",
+  "url": "https://example.com/courtliste-10381483-bianco-brain-and-spine-pllc-and-nikhil-kanti",
+  "case_name": "Bianco Brain and Spine, PLLC and Nikhil Kanti Patel, M.D. v. Larry Jones and Shelley Jones",
+  "neutral_citation": null,
+  "clinical_domain": "NEUROSURGERY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Bianco Brain and Spine, PLLC and Nikhil Kanti Patel, M.D. v. Larry Jones and Shelley Jones. Medical malpractice case involving paediatrics.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. Patel’s medical negligence was a proximate cause of an injury to Mr. Jones",
+      "paragraph_ref": "9",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "LEGAL_FINDING",
+      "text": "We conclude that the evidence is legally and factually sufficient to prove that at least one of the multiple standard-of-care breaches alleged by Mr. Jones caused his injury.",
+      "paragraph_ref": "19",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "LEGAL_FINDING",
+      "text": "We reverse the part of the judgment imposing liability on Bianco, and we render judgment that the Joneses take nothing from Bianco.",
+      "paragraph_ref": "24",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "Mr. Jones now suffers weakness in his lower extremities that leaves him largely confined to a wheelchair.",
+      "paragraph_ref": "78",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "EXPERT_TESTIMONY",
+      "text": "An injury happened at a segmental -- at a level in the spinal cord that completely explains his postoperative neurological examination and the timing of the events.",
+      "paragraph_ref": "141",
+      "speaker": "Plaintiff's Expert"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Plaintiff’s Expert opined that an anterolisthesis caused the injury.",
+      "paragraph_ref": "627",
+      "speaker": "Plaintiff's Expert"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "The neuromonitoring process for this surgery was being observed by both a technician in the operating room and a neurophysiologist who monitored from a location outside the operating room.",
+      "paragraph_ref": "67",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "LEGAL_FINDING",
+      "text": "We affirm the judgment as to Dr. Patel, but we reverse the trial court’s judgment that Bianco is jointly and severally liable for the Joneses’ damages.",
+      "paragraph_ref": "1669",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "FACTUAL_FINDING",
+      "text": "Mr. Jones presented evidence that his future medical care will cost millions of dollars.",
+      "paragraph_ref": "89",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Plaintiff’s Expert concluded that because Dr. Patel did not accept what the neuromonitoring signal had revealed a real finding of a neurological loss.",
+      "paragraph_ref": "885",
+      "speaker": "Plaintiff's Expert"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "47 years",
+        "sex": "male",
+        "relevant_social_history": "Works as a machinist, participates in outdoor hobbies"
+      },
+      "chief_complaint": "Severe low back pain with bilateral lower extremity pain",
+      "history_of_present_illness": "Mr. Jones experienced leg pains down into his groin, right leg, and left foot. He had a history of prior spinal surgeries.",
+      "past_medical_history": [
+        "Previous spinal surgeries at L4-L5 and L5-S1"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "spine": "Pain and instability noted, specific findings not detailed in judgment"
+        }
+      },
+      "initial_working_problem": "Spinal stenosis at L3-L4 with potential instability",
+      "known_constraints": null,
+      "initial_differential": [
+        "Spinal stenosis",
+        "Instability due to prior surgeries"
+      ],
+      "critical_findings": [
+        "Severe compression at L3-L4",
+        "Potential instability"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E004",
+        "E005",
+        "E006"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "CT/Myelogram",
+        "description": "Imaging to assess spinal stenosis and compression",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Severe compression at L3-L4",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates need for surgical intervention",
+          "decision_impact": "Supports decision to perform surgery",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "IMAGING",
+        "name": "Flexion/Extension X-rays",
+        "description": "X-rays to assess spinal stability",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not performed preoperatively by Dr. Patel",
+          "detailed_findings": null,
+          "clinical_significance": "Could have indicated instability",
+          "decision_impact": "Might have altered surgical approach",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": [
+          "E006",
+          "E010"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Mr. Jones presents with severe back and leg pain",
+        "duration": "Not specified in judgment",
+        "key_events": [
+          {
+            "event": "Consultation with Dr. Patel",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E006"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Preoperative Workup",
+        "description": "Diagnostic imaging and surgical planning",
+        "duration": "Not specified in judgment",
+        "key_events": [
+          {
+            "event": "CT/Myelogram performed",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E006"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "procedure",
+        "name": "Surgical Procedure",
+        "description": "Laminectomy and fusion at L3-L4",
+        "duration": "Not specified in judgment",
+        "key_events": [
+          {
+            "event": "Loss of neuromonitoring signal",
+            "timestamp": "During surgery",
+            "evidence_ids": [
+              "E007"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Preoperative Planning",
+        "description": "Planning phase before spinal surgery",
+        "duration": "Not specified in judgment",
+        "key_events": [
+          {
+            "event": "Decision to proceed with surgery without additional imaging",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E109",
+              "E110"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "procedure",
+        "name": "Intraoperative Phase",
+        "description": "During spinal surgery",
+        "duration": "Not specified in judgment",
+        "key_events": [
+          {
+            "event": "Loss of neuromonitoring signal",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E109",
+              "E110"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "decision",
+        "name": "Postoperative Care",
+        "description": "Care following surgery",
+        "duration": "9 days in hospital",
+        "key_events": [
+          {
+            "event": "Postoperative consultations and imaging",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E892",
+              "E923"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Preoperative planning for spinal surgery",
+        "prompt": "Should flexion/extension X-rays be ordered to assess spinal stability?",
+        "action_type": "ORDER_TEST",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Order flexion/extension X-rays",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Necessary to assess potential instability"
+          },
+          {
+            "option_id": "B",
+            "description": "Proceed without additional imaging",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Assumed stability based on prior imaging"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Did not order flexion/extension X-rays",
+          "reasoning_stated": "No suspicion of instability",
+          "evidence_ids": [
+            "E006",
+            "E010"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Flexion/extension X-rays should have been ordered",
+          "standard_of_care_basis": "Expert testimony indicated necessity",
+          "evidence_ids": [
+            "E006",
+            "E010"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to assess potential instability",
+          "what_should_have_happened": "X-rays could have informed surgical approach",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E006",
+            "E010"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      },
+      {
+        "decision_id": "D002",
+        "phase_id": "procedure",
+        "clinical_context": "Intraoperative decision during spinal surgery",
+        "prompt": "Should the existing hardware be removed before performing the laminectomy?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Remove existing hardware before laminectomy",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Believed to not affect stability"
+          },
+          {
+            "option_id": "B",
+            "description": "Leave hardware in place to maintain stability",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Maintains stability during surgery"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "A",
+          "description": "Removed hardware before laminectomy",
+          "reasoning_stated": "Assumed stability was maintained",
+          "evidence_ids": [
+            "E006",
+            "E010"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "B",
+          "description": "Hardware should have been left in place",
+          "standard_of_care_basis": "Expert testimony indicated risk of instability",
+          "evidence_ids": [
+            "E006",
+            "E010"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Removal increased risk of instability",
+          "what_should_have_happened": "Hardware should have been retained",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E006",
+            "E010"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Mr. Jones suffers from weakness in lower extremities, largely confined to a wheelchair",
+        "severity": "PERMANENT_MODERATE_DISABILITY",
+        "long_term_effects": "Chronic weakness, limited mobility",
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Breach of duty in failing to stabilize L3-L4 before laminectomy",
+          "Causation established - failure to act on neuromonitoring signal led to injury"
+        ],
+        "evidence_ids": [
+          "E001",
+          "E002"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to stabilize spine and act on neuromonitoring signal",
+        "counterfactual": "Proper stabilization and response to signal could have prevented injury",
+        "evidence_ids": [
+          "E001",
+          "E010"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "2017",
+        "event": "Mr. Jones undergoes surgery with Dr. Patel",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "timestamp": "Date not specified",
+        "event": "Patient presents with severe back pain and weakness",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004",
+          "E005"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Mr. Jones underwent spinal surgery",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Mr. Jones undergoes spinal surgery",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "CT/Myelogram",
+        "date": "Not specified in judgment",
+        "result": "Severe compression at L3-L4",
+        "interpretation": null,
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "test_name": "Neuromonitoring",
+        "date": "During surgery",
+        "result": "Loss of signals",
+        "interpretation": null,
+        "evidence_ids": [
+          "E010",
+          "E561"
+        ]
+      },
+      {
+        "test_name": "Neuromonitoring",
+        "date": "During surgery",
+        "result": "Loss of signal",
+        "interpretation": null,
+        "evidence_ids": [
+          "E109",
+          "E110"
+        ]
+      },
+      {
+        "test_name": "Intraoperative X-rays",
+        "date": "Date not specified in judgment",
+        "result": "No anterolisthesis observed",
+        "interpretation": null,
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Spinal stenosis at L3-L4",
+        "when_made": "Pre-surgery",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "diagnosis": "Cauda equina syndrome",
+        "when_made": "Post-surgery",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E004",
+          "E005"
+        ]
+      },
+      {
+        "diagnosis": "Spinal instability and nerve compression",
+        "when_made": "Postoperative period",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E004",
+          "E005"
+        ]
+      },
+      {
+        "diagnosis": "Compression injury due to anterolisthesis",
+        "when_made": "During surgery",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Laminectomy and fusion at L3-L4",
+        "date": "During surgery",
+        "provider": null,
+        "outcome": "Loss of neuromonitoring signal, postoperative deficits",
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      {
+        "treatment": "Spinal decompression surgery",
+        "date": "Date not specified",
+        "provider": null,
+        "outcome": "Exacerbated nerve injury",
+        "evidence_ids": [
+          "E760",
+          "E761"
+        ]
+      },
+      {
+        "treatment": "Spinal surgery with decompression",
+        "date": "Date not specified in judgment",
+        "provider": null,
+        "outcome": "Postoperative weakness in lower extremities",
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "treatment": "Spinal surgery",
+        "date": "Date not specified in judgment",
+        "provider": null,
+        "outcome": "Weakness in lower extremities",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Weakness in lower extremities, incontinence, bowel issues, sexual dysfunction",
+        "when_occurred": "Post-surgery",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E004",
+          "E005"
+        ]
+      },
+      {
+        "complication": "Permanent weakness in lower extremities",
+        "when_occurred": "Post-surgery",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "complication": "Weakness in lower extremities",
+        "when_occurred": "Postoperative period",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E004",
+          "E005"
+        ]
+      },
+      {
+        "complication": "Weakness in lower extremities",
+        "when_occurred": "Post-surgery",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to order flexion/extension X-rays",
+        "against": "Dr. Patel",
+        "found_proven": true,
+        "evidence_ids": [
+          "E010"
+        ]
+      },
+      {
+        "allegation": "Failure to respond to neuromonitoring signal loss",
+        "against": "Dr. Patel",
+        "found_proven": true,
+        "evidence_ids": [
+          "E001",
+          "E010"
+        ]
+      },
+      {
+        "allegation": "Failure to obtain necessary preoperative imaging",
+        "against": "Dr. Patel",
+        "found_proven": true,
+        "evidence_ids": [
+          "E001",
+          "E002"
+        ]
+      },
+      {
+        "allegation": "Failure to stabilize spine and act on neuromonitoring signal",
+        "against": "Dr. Patel",
+        "found_proven": true,
+        "evidence_ids": [
+          "E001",
+          "E010"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Dr. Patel breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E001",
+          "E002"
+        ]
+      },
+      {
+        "finding": "Defendant breached duty of care by not responding to signal loss",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E001",
+          "E002"
+        ]
+      },
+      {
+        "finding": "Dr. Patel breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E001",
+          "E002"
+        ]
+      },
+      {
+        "finding": "Dr. Patel breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "TREATMENT_PROCEDURE_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.005963029218843173,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-09 13:23:34.387369",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

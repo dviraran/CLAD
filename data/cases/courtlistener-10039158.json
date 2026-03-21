@@ -1,0 +1,386 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10039158",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2024-08-07",
+  "url": "https://example.com/courtlistener-10039158",
+  "case_name": "Choice Clinical Lab, LLC D/B/A Greenleaves Diagnostics Laboratories, LLC v. Olga Roman Roberts, Individually and as Independent of the Estate of Aubrey Roberts, and Grace Robinson, Abigail Roberts and Aubrey Roberts, III Individually",
+  "neutral_citation": null,
+  "clinical_domain": "ONCOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Choice Clinical Lab, LLC D/B/A Greenleaves Diagnostics Laboratories, LLC v. Olga Roman Roberts, Individually and as Independent of the Estate of Aubrey Roberts, and Grace Robinson, Abigail Roberts and Aubrey Roberts, III Individually. Medical malpractice case involving oncology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "On March 8, 2022, Aubrey Roberts was admitted to Methodist Stone Oak Hospital to treat injuries after a fall. He underwent surgery to repair an 'acute right femoral neck fracture.'",
+      "paragraph_ref": "20",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "At the time of his admission to Coronado, he had been diagnosed with unspecified dementia, allergic rhinitis, vitamin deficiency, history of falls, insomnia, shortness of breath, flaccid neuropathic bladder, mild protein-calorie malnutrition, Alzheimer\u2019s disease, retention of urine, dysphagia, COPD, constipation, and recent fracture of femur.",
+      "paragraph_ref": "23",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "The staff at Coronado took urine and blood samples from Aubrey Roberts and sent them to Choice Clinical for testing.",
+      "paragraph_ref": "28",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "Roberts died on April 16, 2022.",
+      "paragraph_ref": "33",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Saba\u2019s expert report further states how the breaches of care by Coronado and Choice Clinical caused Aubrey Roberts\u2019s death: As a result of the breaches of the standard of care as described above[,] Mr. Roberts suffered from choking, over medication, and UTI, which was allowed to fester without sufficient care and treatment until it resulted in septic shock and his subsequent cardiac arrest, hypotensive state, and death.",
+      "paragraph_ref": "185",
+      "speaker": "Dr. Saba"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "LEGAL_FINDING",
+      "text": "We therefore conclude the trial court did not abuse its discretion in determining that Dr. Saba was qualified to give his expert opinion regarding the standard of care applicable to Choice Clinical.",
+      "paragraph_ref": "208",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "COURT_REASONING",
+      "text": "Because the expert report sufficiently showed Dr. Saba was qualified to give his expert opinion regarding the standard of care applicable to Choice Clinical, we hold the trial court did not abuse its discretion in overruling Choice Clinical\u2019s objections to Dr. Saba\u2019s expert report.",
+      "paragraph_ref": "217",
+      "speaker": "Judge's analysis"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "male",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Injuries after a fall",
+      "history_of_present_illness": "Aubrey Roberts was admitted to Methodist Stone Oak Hospital on March 8, 2022, to treat injuries after a fall, including an acute right femoral neck fracture. He underwent surgery and was discharged to Coronado for rehabilitation and therapy on March 11, 2022.",
+      "past_medical_history": [
+        "Unspecified dementia",
+        "Allergic rhinitis",
+        "Vitamin deficiency",
+        "History of falls",
+        "Insomnia",
+        "Shortness of breath",
+        "Flaccid neuropathic bladder",
+        "Mild protein-calorie malnutrition",
+        "Alzheimer\u2019s disease",
+        "Retention of urine",
+        "Dysphagia",
+        "COPD",
+        "Constipation",
+        "Recent fracture of femur"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": null,
+        "general_appearance": null,
+        "focused_exam": {
+          "system": "Examination mentioned but findings not specified"
+        }
+      },
+      "initial_working_problem": "Rehabilitation post-surgery for femoral neck fracture",
+      "known_constraints": null,
+      "initial_differential": [],
+      "critical_findings": [],
+      "urgency_level": "EMERGENT",
+      "evidence_ids": [
+        "E001",
+        "E002"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "LAB",
+        "name": "Urine and Blood Samples",
+        "description": "Samples taken to identify infection",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Presence of Morganella Morganii bacteria",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates bacterial infection requiring specific antibiotics",
+          "decision_impact": "Should prompt immediate communication to healthcare provider",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E003",
+          "E031"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Hospital Admission",
+        "description": "Patient admitted to hospital for fall-related injuries",
+        "duration": "3 days",
+        "key_events": [
+          {
+            "event": "Surgery for femoral neck fracture",
+            "timestamp": "March 8, 2022",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Rehabilitation at Coronado",
+        "description": "Patient transferred to Coronado for rehabilitation",
+        "duration": "Ongoing until April 16, 2022",
+        "key_events": [
+          {
+            "event": "Development of UTI",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E002"
+            ]
+          },
+          {
+            "event": "Lab samples sent to Choice Clinical",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E003"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient at Coronado with suspected UTI",
+        "prompt": "When should lab results be communicated to the healthcare provider?",
+        "action_type": "ORDER_TEST",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Communicate lab results immediately upon receipt",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Timely communication is critical for appropriate treatment"
+          },
+          {
+            "option_id": "B",
+            "description": "Delay communication of lab results",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Delay can lead to inappropriate treatment and worsening of condition"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant delayed communication of lab results until April 13, 2022",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E031"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Lab results should have been communicated immediately upon receipt on April 8, 2022",
+          "standard_of_care_basis": "Expert evidence established immediate communication is standard",
+          "evidence_ids": [
+            "E005"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Delay in communication led to a significant delay in appropriate treatment",
+          "what_should_have_happened": "Lab results should have been communicated immediately to allow for correct treatment",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E005",
+            "E031"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient developed septic shock and died",
+        "severity": "FATAL",
+        "long_term_effects": "Not applicable",
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Breach of duty in failing to timely communicate lab results",
+          "Causation established - delay in communication led to inappropriate treatment and death"
+        ],
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to timely communicate lab results",
+        "counterfactual": "Immediate communication would have allowed for correct treatment",
+        "evidence_ids": [
+          "E005",
+          "E031"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "March 8, 2022",
+        "event": "Aubrey Roberts admitted to Methodist Stone Oak Hospital",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "April 13, 2022",
+        "event": "Lab results communicated to Coronado",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E031"
+        ]
+      },
+      {
+        "timestamp": "April 16, 2022",
+        "event": "Aubrey Roberts died",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Urine and Blood Samples",
+        "date": "Not documented in judgment",
+        "result": "Presence of Morganella Morganii bacteria",
+        "interpretation": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Septic shock secondary to UTI",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Antibiotics",
+        "date": "April 14, 2022",
+        "provider": null,
+        "outcome": "Ineffective due to delay",
+        "evidence_ids": [
+          "E031"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Septic shock",
+        "when_occurred": "Not documented in judgment",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to timely communicate lab results",
+        "against": "Choice Clinical",
+        "found_proven": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Choice Clinical breached duty of care",
+        "legal_significance": "Breach led to delay in treatment and death",
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.03153153153153153,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-09 21:40:36.186458",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

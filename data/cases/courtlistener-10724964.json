@@ -1,0 +1,402 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10724964",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2018-11-01",
+  "url": "https://example.com/courtlistener-10724964",
+  "case_name": "Fritz Swint v. Paul Alphonse, Jr.",
+  "neutral_citation": null,
+  "clinical_domain": "SURGERY_ORTHOPAEDIC",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Fritz Swint v. Paul Alphonse, Jr.. Medical malpractice case involving surgery orthopaedic.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "During a prolonged surgical procedure, Fritz F. Swint suffered an injury that left him with nerve damage and limited use of his right hand.",
+      "paragraph_ref": "6",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "The surgery, conducted by Dr. Alphonse, lasted approximately 9 hours and 21 minutes.",
+      "paragraph_ref": "32",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "Mr. Swint was diagnosed with compartment syndrome in his right arm the following day, and underwent surgery to relieve the pressure.",
+      "paragraph_ref": "35",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Palese testified repeatedly that when a patient is placed in the lithotomy in the steep Trendelenburg position for a lengthy surgery, the standard of care requires the physician to give the patient a positional holiday.",
+      "paragraph_ref": "54",
+      "speaker": "Dr. Michael A. Palese"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Palese opined that the standard of care was breached in this case somewhere between the four and five hour mark of the surgery.",
+      "paragraph_ref": "66",
+      "speaker": "Dr. Michael A. Palese"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "LEGAL_FINDING",
+      "text": "We reverse the order of the trial court granting summary judgment in favor of Dr. Alphonse and Midtown Urology and against Fritz and Melissa Swint.",
+      "paragraph_ref": "298",
+      "speaker": "Court conclusion"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "COURT_REASONING",
+      "text": "The trial court\u2019s finding regarding the Swints\u2019 insufficient evidence of causation appears to be based on two factors.",
+      "paragraph_ref": "189",
+      "speaker": "Court analysis"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Palese further stated, however, that in his opinion, it was more likely than not that Mr. Swint would not have suffered such a significant injury had he been given a positional holiday between the four and five hour mark of surgery.",
+      "paragraph_ref": "87",
+      "speaker": "Dr. Michael A. Palese"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "FACTUAL_FINDING",
+      "text": "The Swints alleged that Dr. Alphonse committed medical malpractice by failing to reposition him during the surgery.",
+      "paragraph_ref": "37",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "LEGAL_FINDING",
+      "text": "The trial court summarily found Dr. Collier\u2019s opinion was not based on scientific principles.",
+      "paragraph_ref": "204",
+      "speaker": "Court conclusion"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "male",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Undergoing robotic-assisted laparoscopic prostatectomy",
+      "history_of_present_illness": "Patient undergoing a scheduled robotic-assisted laparoscopic prostatectomy (RALP) procedure.",
+      "past_medical_history": [
+        "Not documented in judgment"
+      ],
+      "medications": [
+        "Not documented in judgment"
+      ],
+      "allergies": [
+        "Not documented in judgment"
+      ],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "system": "Pre-operative examination not detailed in judgment"
+        }
+      },
+      "initial_working_problem": "Prostate cancer requiring surgical intervention",
+      "known_constraints": null,
+      "initial_differential": [
+        "Not applicable - surgical procedure"
+      ],
+      "critical_findings": [
+        "Positioning in lithotomy with steep Trendelenburg"
+      ],
+      "urgency_level": "ELECTIVE",
+      "evidence_ids": [
+        "E002",
+        "E009"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSULT_NOTE",
+        "name": "Surgical Consultation",
+        "description": "Pre-operative surgical consultation for RALP",
+        "available_phase": "presentation",
+        "reveal": {
+          "result_summary": "Patient scheduled for robotic-assisted laparoscopic prostatectomy",
+          "detailed_findings": null,
+          "clinical_significance": "Indication for surgery",
+          "decision_impact": "Proceed with surgical planning",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Pre-operative Assessment",
+        "description": "Patient assessed and prepared for robotic-assisted laparoscopic prostatectomy",
+        "duration": "Not specified in judgment",
+        "key_events": [
+          {
+            "event": "Patient scheduled for RALP",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "procedure",
+        "name": "Surgical Procedure",
+        "description": "Robotic-assisted laparoscopic prostatectomy performed",
+        "duration": "9 hours and 21 minutes",
+        "key_events": [
+          {
+            "event": "Patient positioned in lithotomy with steep Trendelenburg",
+            "timestamp": "During surgery",
+            "evidence_ids": [
+              "E002",
+              "E009"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "postop",
+        "name": "Post-operative Recovery",
+        "description": "Patient experiences complications post-surgery",
+        "duration": "Following day",
+        "key_events": [
+          {
+            "event": "Diagnosis of compartment syndrome in right arm",
+            "timestamp": "Following day after surgery",
+            "evidence_ids": [
+              "E003"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "procedure",
+        "clinical_context": "Patient in lithotomy with steep Trendelenburg position during prolonged surgery",
+        "prompt": "When should the patient be repositioned during the surgery?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Reposition patient between the fourth and fifth hour of surgery",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard of care requires a positional holiday to prevent complications"
+          },
+          {
+            "option_id": "B",
+            "description": "Do not reposition patient until surgery is completed",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Prolonged positioning increases risk of compartment syndrome"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant did not reposition patient during the 9-hour surgery",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E002",
+            "E009"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Patient should have been repositioned between the fourth and fifth hour",
+          "standard_of_care_basis": "Expert testimony established this as standard practice",
+          "evidence_ids": [
+            "E005",
+            "E066"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to reposition led to compartment syndrome",
+          "what_should_have_happened": "Patient should have been given a positional holiday",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E005",
+            "E066"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient developed compartment syndrome requiring additional surgery",
+        "severity": "PERMANENT_MODERATE_DISABILITY",
+        "long_term_effects": "Limited use of right hand",
+        "evidence_ids": [
+          "E001",
+          "E003"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Breach of duty in failing to reposition patient during surgery",
+          "Causation established - failure to reposition led to compartment syndrome"
+        ],
+        "evidence_ids": [
+          "E006",
+          "E007"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to reposition during prolonged surgery",
+        "counterfactual": "Repositioning would have prevented or lessened compartment syndrome",
+        "evidence_ids": [
+          "E005",
+          "E008"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "3 December 2009",
+        "event": "Patient underwent robotic-assisted laparoscopic prostatectomy",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "Following day",
+        "event": "Patient diagnosed with compartment syndrome",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [
+      {
+        "diagnosis": "Compartment syndrome",
+        "when_made": "Following day after surgery",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Surgery to relieve compartment syndrome",
+        "date": "Following day after diagnosis",
+        "provider": null,
+        "outcome": "Not documented in judgment",
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Nerve damage and limited use of right hand",
+        "when_occurred": "Post-surgery",
+        "severity": "Permanent",
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to reposition during surgery",
+        "against": "Dr. Alphonse",
+        "found_proven": true,
+        "evidence_ids": [
+          "E009"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Standard of care not met",
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "TREATMENT_PROCEDURE_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.033112582781456956,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-17 07:38:43.669216",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

@@ -1,0 +1,396 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-4341503",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2011-04-29",
+  "url": "https://example.com/courtlistener-4341503",
+  "case_name": "Simon Dockswell v. Bethesda Memorial Hospital, Inc., etc.",
+  "neutral_citation": null,
+  "clinical_domain": "ONCOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Simon Dockswell v. Bethesda Memorial Hospital, Inc., etc.. Medical malpractice case involving oncology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "On April 29, 2011, Simon Dockswell was admitted to Respondent\u2019s Bethesda Memorial Hospital for a 'colon resection due to cancerous polyps.'",
+      "paragraph_ref": "7",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "A nurse removed the drainage tube. Evidence identifies Nurse Porges as the nurse who removed the drainage tube.",
+      "paragraph_ref": "8",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "Mr. Dockswell experienced no immediate discomfort, but a 4.25-inch section of the tube was unknowingly left inside him.",
+      "paragraph_ref": "8",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "LEGAL_FINDING",
+      "text": "The foreign-body presumption of negligence set forth in section 766.102(3)(b) is mandatory when a foreign body is found inside the patient\u2019s body.",
+      "paragraph_ref": "5",
+      "speaker": "Court conclusion"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "LEGAL_FINDING",
+      "text": "The trial court ultimately denied the Dockswells\u2019 request for Instruction 402.4c, reasoning that the Dockswells\u2019 ability to identify Nurse Porges as the person who removed the drainage tube rendered the Instruction inapplicable.",
+      "paragraph_ref": "14",
+      "speaker": "Trial court reasoning"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "LEGAL_FINDING",
+      "text": "The jury returned a verdict for Bethesda Memorial Hospital, and the trial court entered judgment consistent with the verdict.",
+      "paragraph_ref": "15",
+      "speaker": "Trial court conclusion"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "COURT_REASONING",
+      "text": "We conclude that the presence of the drainage tube fragment in Mr. Dockswell\u2019s body following discharge from Bethesda Memorial Hospital entitled the Dockswells to the benefit of the foreign-body presumption.",
+      "paragraph_ref": "21",
+      "speaker": "Court reasoning"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "COURT_REASONING",
+      "text": "The trial court\u2019s failure to properly place the burden on Bethesda Memorial Hospital to disprove negligence and the verdict at trial in the hospital\u2019s favor, we conclude that harmful error occurred.",
+      "paragraph_ref": "57",
+      "speaker": "Court reasoning"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "LEGAL_FINDING",
+      "text": "Accordingly, we approve of the Third District\u2019s decision in Kenyon v. Miller, 756 So.2d 133 (Fla. 3d DCA 2000), quash the Fourth District\u2019s decision in Dockswell, and remand with instructions that a new trial be ordered.",
+      "paragraph_ref": "61",
+      "speaker": "Court conclusion"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "male",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Postoperative care following colon resection",
+      "history_of_present_illness": "Admitted for colon resection due to cancerous polyps. Postoperative care involved insertion of a drainage tube.",
+      "past_medical_history": [
+        "Colon cancer"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": null,
+        "general_appearance": null,
+        "focused_exam": {
+          "abdomen": "Not documented in judgment"
+        }
+      },
+      "initial_working_problem": "Postoperative management following colon resection",
+      "known_constraints": null,
+      "initial_differential": [
+        "Postoperative recovery"
+      ],
+      "critical_findings": [
+        "Drainage tube inserted postoperatively"
+      ],
+      "urgency_level": "ROUTINE",
+      "evidence_ids": [
+        "E001"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "Postoperative CT scan",
+        "description": "CT scan ordered after patient complained of lingering abdominal pain",
+        "available_phase": "followup",
+        "reveal": {
+          "result_summary": "4.25-inch section of drainage tube left inside",
+          "detailed_findings": null,
+          "clinical_significance": "Foreign body left inside patient",
+          "decision_impact": "Should prompt consideration of foreign-body presumption of negligence",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E056"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Hospital Admission",
+        "description": "Patient admitted for colon resection due to cancerous polyps",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Admission to hospital",
+            "timestamp": "April 29, 2011",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "postop",
+        "name": "Postoperative Care",
+        "description": "Postoperative management including drainage tube insertion and removal",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Drainage tube inserted postoperatively",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E001"
+            ]
+          },
+          {
+            "event": "Drainage tube removed by Nurse Porges",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "followup",
+        "name": "Follow-up and Discovery",
+        "description": "Discovery of retained foreign body during follow-up",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "CT scan reveals retained drainage tube fragment",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E056"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "postop",
+        "clinical_context": "Postoperative care following colon resection",
+        "prompt": "What should be done to ensure the drainage tube is completely removed?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Ensure complete removal of the drainage tube with verification",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard practice to verify complete removal of medical devices"
+          },
+          {
+            "option_id": "B",
+            "description": "Remove drainage tube without verification",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Failed to ensure complete removal, leading to retained foreign body"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Nurse removed drainage tube without verification",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E002",
+            "E003"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Complete removal of drainage tube should have been verified",
+          "standard_of_care_basis": "Standard practice to prevent retained foreign bodies",
+          "evidence_ids": [
+            "E007"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to verify complete removal led to retained foreign body",
+          "what_should_have_happened": "Verification of complete removal should have been performed",
+          "legal_standard_applied": "Foreign-body presumption of negligence",
+          "evidence_ids": [
+            "E004",
+            "E007"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Retained drainage tube fragment discovered post-discharge",
+        "severity": "Not documented in judgment",
+        "long_term_effects": "Not documented in judgment",
+        "evidence_ids": [
+          "E003",
+          "E007"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "None",
+        "key_findings": [
+          "Jury found no negligence on the part of Bethesda Memorial Hospital",
+          "Trial court's failure to instruct on foreign-body presumption was harmful error"
+        ],
+        "evidence_ids": [
+          "E006",
+          "E057"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Failure to verify complete removal of drainage tube",
+        "counterfactual": "Verification would have prevented retained foreign body",
+        "evidence_ids": [
+          "E004",
+          "E007"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "April 29, 2011",
+        "event": "Patient admitted for colon resection",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Drainage tube removed by Nurse Porges",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "CT scan reveals retained drainage tube fragment",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E056"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "CT scan",
+        "date": "Date not specified in judgment",
+        "result": "4.25-inch section of drainage tube left inside",
+        "interpretation": null,
+        "evidence_ids": [
+          "E056"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Retained foreign body (drainage tube fragment)",
+        "when_made": "Date not specified in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E056"
+        ]
+      }
+    ],
+    "treatments": [],
+    "complications": [
+      {
+        "complication": "Retained foreign body",
+        "when_occurred": "Date not specified in judgment",
+        "severity": "Not documented in judgment",
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to verify complete removal of drainage tube",
+        "against": "Bethesda Memorial Hospital",
+        "found_proven": false,
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "No negligence found by jury",
+        "legal_significance": "Foreign-body presumption not applied",
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "TREATMENT_PROCEDURE_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.11842105263157894,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-09 21:34:51.288417",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

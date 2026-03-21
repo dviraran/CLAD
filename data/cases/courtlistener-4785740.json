@@ -1,0 +1,408 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-4785740",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2020-09-16",
+  "url": "https://example.com/courtlistener-4785740",
+  "case_name": "Rosario v. Our Lady of Consolation Nursing & Rehabilitation Care Ctr.",
+  "neutral_citation": null,
+  "clinical_domain": "OBSTETRICS_GYNAECOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Rosario v. Our Lady of Consolation Nursing & Rehabilitation Care Ctr.. Medical malpractice case involving obstetrics gynaecology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Weinstein found a superficial bullae, a fluid-filled blister, which had no pus, was slightly warm to the touch, and also slightly tender.",
+      "paragraph_ref": "14",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Yurberg acknowledged that upon the decedent's admission to OLOC on May 11, 2009, it was noted that she had, inter alia, a stage II ulcer between the 4th and 5th toes on her left foot and cellulitis on her lower left extremity.",
+      "paragraph_ref": "16",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "The hospital's admission notes on May 30, 2009, reflect that the decedent's chief complaints, as relayed by her daughter, were that she 'developed a fever today while at nursing home,' and had a change of mental status earlier that day.",
+      "paragraph_ref": "18",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Yurberg's careful parsing of the 'reasonable' and 'fair' standards of medical certainty does not appear to be accidental.",
+      "paragraph_ref": "19",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "LEGAL_FINDING",
+      "text": "DiLorenzo's consistent findings that Khokhar did not depart from accepted medical practices or that any alleged departures were not the proximate cause of the decedent's injuries or death, to a reasonable degree of medical certainty.",
+      "paragraph_ref": "19",
+      "speaker": "Court finding"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "70 years",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Fall at home resulting in neck trauma",
+      "history_of_present_illness": "Patient admitted to Good Samaritan Hospital on April 30, 2009, after a fall at home. Developed swelling and redness in the left lower extremity during hospitalization.",
+      "past_medical_history": [
+        "Coronary artery disease",
+        "Hypertension"
+      ],
+      "medications": [
+        "Clindamycin",
+        "Bacid"
+      ],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "skin": "Superficial bullae on left lower extremity, slightly warm and tender",
+          "neurological": "Oriented x 3 during examination by Khokhar"
+        }
+      },
+      "initial_working_problem": "Neck trauma and potential infection in left lower extremity",
+      "known_constraints": null,
+      "initial_differential": [
+        "Cellulitis",
+        "Pressure ulcers"
+      ],
+      "critical_findings": [
+        "Superficial bullae",
+        "Swelling and redness in left lower extremity"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "LAB",
+        "name": "Complete Blood Count (CBC)",
+        "description": "Blood test to evaluate overall health and detect a variety of disorders",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Normal white blood cell count",
+          "detailed_findings": null,
+          "clinical_significance": "No signs of infection",
+          "decision_impact": "Did not prompt further investigation for infection",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "IMAGING",
+        "name": "Cervical Spine and Rib X-rays",
+        "description": "Imaging to assess neck and rib pain",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": null,
+          "detailed_findings": "Negative results",
+          "clinical_significance": "No fractures or acute findings",
+          "decision_impact": "No further action required based on imaging",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Hospital Admission",
+        "description": "Patient admitted to Good Samaritan Hospital after fall",
+        "duration": "11 days",
+        "key_events": [
+          {
+            "event": "Admission and initial treatment for neck trauma and cellulitis",
+            "timestamp": "April 30, 2009",
+            "evidence_ids": [
+              "E001",
+              "E002"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "OLOC Admission and Care",
+        "description": "Patient admitted to OLOC for rehabilitation",
+        "duration": "19 days",
+        "key_events": [
+          {
+            "event": "Patient seen by Khokhar for neck and rib pain",
+            "timestamp": "May 27, 2009",
+            "evidence_ids": [
+              "E005"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient at OLOC with complaints of neck and rib pain",
+        "prompt": "What additional assessments should be conducted given the patient's condition?",
+        "action_type": "ORDER_TEST",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Order comprehensive skin assessment and nutritional evaluation",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Given the patient's risk for pressure ulcers and nutritional deficits, a comprehensive assessment is warranted."
+          },
+          {
+            "option_id": "B",
+            "description": "Focus only on neck and rib pain with x-rays and CBC",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Limited assessment focusing on immediate complaints without addressing underlying risks."
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant focused on neck and rib pain with x-rays and CBC",
+          "reasoning_stated": "Defendant addressed immediate complaints as requested by family",
+          "evidence_ids": [
+            "E005"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Comprehensive assessment should have been conducted",
+          "standard_of_care_basis": "Expert testimony indicated need for broader assessment given patient's condition",
+          "evidence_ids": [
+            "E004"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to conduct comprehensive assessment led to missed opportunities for early intervention",
+          "what_should_have_happened": "Comprehensive assessment could have identified and mitigated risks for pressure ulcers and nutritional deficits",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E004",
+            "E005"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient developed multiple complications including pressure ulcers, sepsis, and pneumonia, leading to death",
+        "severity": "FATAL",
+        "long_term_effects": "Not applicable",
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "None",
+        "key_findings": [
+          "Khokhar's limited role did not constitute a breach of duty",
+          "No proximate cause established between Khokhar's actions and patient's death"
+        ],
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Failure to conduct comprehensive assessment",
+        "counterfactual": "Comprehensive assessment could have mitigated risks",
+        "evidence_ids": [
+          "E004",
+          "E005"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "April 30, 2009",
+        "event": "Patient admitted to Good Samaritan Hospital after fall",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001",
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "May 11, 2009",
+        "event": "Patient transferred to OLOC for rehabilitation",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "May 27, 2009",
+        "event": "Patient seen by Khokhar for neck and rib pain",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "timestamp": "May 30, 2009",
+        "event": "Patient transferred back to hospital with multiple complications",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "CBC",
+        "date": "May 27, 2009",
+        "result": "Normal white blood cell count",
+        "interpretation": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "test_name": "Cervical Spine and Rib X-rays",
+        "date": "May 27, 2009",
+        "result": "Negative",
+        "interpretation": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Pressure ulcers, sepsis, pneumonia",
+        "when_made": "May 30, 2009",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Antibiotics and wound care",
+        "date": "During OLOC stay",
+        "provider": null,
+        "outcome": "Not effective in preventing deterioration",
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Sepsis, pneumonia, pressure ulcers",
+        "when_occurred": "May 30, 2009",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to conduct comprehensive assessment",
+        "against": "Khokhar",
+        "found_proven": false,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "No breach of duty by Khokhar",
+        "legal_significance": "No liability found",
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.23809523809523808,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-09 16:17:22.212137",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

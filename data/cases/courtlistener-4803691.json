@@ -1,0 +1,533 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-4803691",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2020-11-05",
+  "url": "https://example.com/courtlistener-4803691",
+  "case_name": "Kerry Davis v. Garrettson Ellis, MD",
+  "neutral_citation": null,
+  "clinical_domain": "CARDIOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Kerry Davis v. Garrettson Ellis, MD. Medical malpractice case involving cardiology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "On January 18, 2011, 40-year-old Sylvia Davis was admitted to the emergency room at Methodist Hospital-Germantown complaining of a cough, fever, and shortness of breath.",
+      "paragraph_ref": "11",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "She was diagnosed with multilobar, community-acquired pneumonia and was admitted to a medical floor.",
+      "paragraph_ref": "11",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "On the afternoon of January 19, 2011, at approximately 4:00 p.m., Dr. Garrettson Ellis (\u201cAppellee\u201d), the on-call intensivist, performed a pulmonary consult.",
+      "paragraph_ref": "12",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. Ellis noted that Mrs. Davis\u2019 respiratory condition had \u201cprogressively worsened over the past 24 hours.\u201d",
+      "paragraph_ref": "12",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. Ellis did not order intubation at that time but referred Mrs. Davis to the ICU for observation.",
+      "paragraph_ref": "14",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "At 11:00 p.m., her oxygen level dropped to 74%; at that time, she was in acute respiratory distress and failure.",
+      "paragraph_ref": "15",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "Mrs. Davis was successfully intubated by an anesthesiologist at 11:36 p.m.",
+      "paragraph_ref": "15",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "FACTUAL_FINDING",
+      "text": "Unfortunately, on January 20, 2011, at approximately 5:23 a.m., Mrs. Davis coded. She was pronounced dead at 5:40 a.m.",
+      "paragraph_ref": "15",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "LEGAL_FINDING",
+      "text": "The trial court granted summary judgment in favor of Appellee/doctor finding that Appellant\u2019s expert witness failed to connect the decedent\u2019s death to Appellee\u2019s alleged deviation from the standard of care.",
+      "paragraph_ref": "5",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "LEGAL_FINDING",
+      "text": "We reverse the trial court\u2019s grant of summary judgment.",
+      "paragraph_ref": "92",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E011",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Gunnerson is unequivocal that [Dr. Ellis] deviated from the standard of care not because he failed to intubate Mrs. Davis but because, in Dr. Gunnerson\u2019s opinion, [he] failed to have a plan to address Mrs. Davis\u2019 condition.",
+      "paragraph_ref": "25",
+      "speaker": "Dr. Gunnerson"
+    },
+    {
+      "evidence_id": "E012",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Gunnerson explained that, with timely treatment, Mrs. Davis\u2019 chance of death was 25-40%.",
+      "paragraph_ref": "82",
+      "speaker": "Dr. Gunnerson"
+    },
+    {
+      "evidence_id": "E013",
+      "type": "EXPERT_TESTIMONY",
+      "text": "According to Dr. Gunnerson, earlier treatment would have prevented Mrs. Davis from becoming more hypoxemic and bradycardic and from falling into respiratory distress.",
+      "paragraph_ref": "83",
+      "speaker": "Dr. Gunnerson"
+    },
+    {
+      "evidence_id": "E014",
+      "type": "COURT_REASONING",
+      "text": "Viewing Dr. Gunnerson\u2019s statements in the light most favorable to Appellant, we conclude that there are unresolved issues of material fact that preclude summary judgment.",
+      "paragraph_ref": "85",
+      "speaker": "Judge's analysis"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "40 years",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Cough, fever, and shortness of breath",
+      "history_of_present_illness": "Patient presented with symptoms consistent with pneumonia and was diagnosed with multilobar, community-acquired pneumonia.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": "Not documented in judgment",
+          "temperature": "Febrile per judgment, exact temperature not stated",
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "respiratory": "Progressively worsening respiratory condition with hypoxemia"
+        }
+      },
+      "initial_working_problem": "Multilobar, community-acquired pneumonia",
+      "known_constraints": null,
+      "initial_differential": [
+        "pneumonia",
+        "acute respiratory distress syndrome"
+      ],
+      "critical_findings": [
+        "Hypoxemia",
+        "Progressive respiratory decline"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002",
+        "E004"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSULT_NOTE",
+        "name": "Pulmonary Consult",
+        "description": "Consultation by Dr. Garrettson Ellis",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Patient's respiratory condition progressively worsened over 24 hours; oxygen saturation at 93% on 100% nonrebreather mask.",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates severe hypoxemia and potential need for intubation.",
+          "decision_impact": "Should prompt consideration of intubation or a clear treatment plan.",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E003",
+          "E004"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Emergency Presentation",
+        "description": "Patient presents to ED with acute symptoms",
+        "duration": "Not specified in judgment",
+        "key_events": [
+          {
+            "event": "Patient admitted to the emergency room",
+            "timestamp": "January 18, 2011",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Pulmonary Consultation",
+        "description": "Consultation by Dr. Ellis and decision to transfer to ICU",
+        "duration": "2 hours",
+        "key_events": [
+          {
+            "event": "Pulmonary consult by Dr. Ellis",
+            "timestamp": "January 19, 2011, 4:00 p.m.",
+            "evidence_ids": [
+              "E003"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "decision",
+        "name": "ICU Observation",
+        "description": "Patient observed in ICU without immediate intervention",
+        "duration": "7 hours",
+        "key_events": [
+          {
+            "event": "Patient's oxygen saturation drops significantly",
+            "timestamp": "January 19, 2011, 11:00 p.m.",
+            "evidence_ids": [
+              "E006"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient in ICU with worsening respiratory status",
+        "prompt": "What should be the immediate management plan for a patient with severe hypoxemia and risk of respiratory failure?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Intubate the patient immediately",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Immediate intubation is necessary to prevent further respiratory decline."
+          },
+          {
+            "option_id": "B",
+            "description": "Transfer to ICU for observation without immediate intervention",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Observation without intervention does not address the immediate risk of respiratory failure."
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant referred patient to ICU for observation without immediate intubation",
+          "reasoning_stated": "Defendant anticipated the need for intubation but chose to observe.",
+          "evidence_ids": [
+            "E005"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Immediate intubation should have been performed",
+          "standard_of_care_basis": "Expert testimony indicated that immediate intervention was necessary to prevent respiratory failure.",
+          "evidence_ids": [
+            "E011",
+            "E013"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to intubate or establish a clear treatment plan led to further deterioration.",
+          "what_should_have_happened": "Immediate intubation or a clear plan for intervention should have been established.",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E011",
+            "E013",
+            "E014"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient developed acute respiratory distress and was intubated but later coded and died",
+        "severity": "FATAL",
+        "long_term_effects": "Not applicable",
+        "evidence_ids": [
+          "E008"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "0",
+        "key_findings": [
+          "Trial court initially found no liability due to lack of expert evidence",
+          "Appellate court reversed summary judgment, indicating potential breach of standard of care"
+        ],
+        "evidence_ids": [
+          "E009",
+          "E010"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Failure to intubate in a timely manner",
+        "counterfactual": "Timely intubation could have improved outcome",
+        "evidence_ids": [
+          "E011",
+          "E012",
+          "E013"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "January 18, 2011",
+        "event": "Patient admitted to the emergency room",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "January 19, 2011, 4:00 p.m.",
+        "event": "Pulmonary consult by Dr. Ellis",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "timestamp": "January 19, 2011, 11:00 p.m.",
+        "event": "Patient's oxygen saturation drops to 74%",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "timestamp": "January 20, 2011, 5:23 a.m.",
+        "event": "Patient coded and was pronounced dead",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E008"
+        ]
+      },
+      {
+        "timestamp": "18 January 2011",
+        "event": "Patient admitted to emergency room",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "19 January 2011, 4:00 p.m.",
+        "event": "Referred to ICU for observation",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "timestamp": "19 January 2011, 11:00 p.m.",
+        "event": "Oxygen level dropped to 74%",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "timestamp": "19 January 2011, 11:36 p.m.",
+        "event": "Intubation performed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      {
+        "timestamp": "20 January 2011, 5:23 a.m.",
+        "event": "Patient coded and was pronounced dead",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E008"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [
+      {
+        "diagnosis": "Multilobar, community-acquired pneumonia",
+        "when_made": "January 18, 2011",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "diagnosis": "Multilobar, community-acquired pneumonia",
+        "when_made": "18 January 2011",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Intubation",
+        "date": "January 19, 2011",
+        "provider": null,
+        "outcome": "Performed after respiratory distress",
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      {
+        "treatment": "Intubation",
+        "date": "19 January 2011",
+        "provider": null,
+        "outcome": "Performed successfully",
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Acute respiratory distress",
+        "when_occurred": "January 19, 2011",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "complication": "Acute respiratory distress",
+        "when_occurred": "19 January 2011",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to intubate or establish a treatment plan",
+        "against": "Dr. Garrettson Ellis",
+        "found_proven": false,
+        "evidence_ids": [
+          "E009",
+          "E010"
+        ]
+      },
+      {
+        "allegation": "Failure to intubate in a timely manner",
+        "against": "Dr. Garrettson Ellis",
+        "found_proven": false,
+        "evidence_ids": [
+          "E009",
+          "E010"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Appellate court found unresolved factual disputes regarding standard of care and causation",
+        "legal_significance": "Reversed summary judgment",
+        "evidence_ids": [
+          "E010"
+        ]
+      },
+      {
+        "finding": "Appellate court reversed summary judgment, indicating potential breach of standard of care",
+        "legal_significance": "Case remanded for further proceedings",
+        "evidence_ids": [
+          "E010"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.14893617021276595,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-17 07:41:03.770456",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

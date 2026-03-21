@@ -1,0 +1,602 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10739077",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2025-11-19",
+  "url": "https://example.com/courtlistener-10739077",
+  "case_name": "Martin v. Layman",
+  "neutral_citation": null,
+  "clinical_domain": "OBSTETRICS_GYNAECOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Martin v. Layman. Medical malpractice case involving obstetrics gynaecology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "In July 2015, Rhonda McKinnie presented to the SwedishAmerican Hospital (SAH) emergency department with a set of symptoms that included blurred vision, hand and lip numbness, and a headache.",
+      "paragraph_ref": "5",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "MEDICAL_RECORD",
+      "text": "Upon arrival, Rhonda signed a hospital consent form intended to notify her that all emergency department physicians and physician assistants (PAs) were independent contractors and not employees of the hospital.",
+      "paragraph_ref": "7",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "Joseph Gaziano, a PA, diagnosed Rhonda with an anxiety reaction and acute headache, treated her symptoms, and discharged her from the hospital without consulting Dr. Jason Layman, his supervising physician in the SAH emergency department.",
+      "paragraph_ref": "10",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "Approximately 10 hours later, Rhonda returned to the emergency department in an ambulance, generally unresponsive after having suffered a stroke.",
+      "paragraph_ref": "12",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Plaintiff’s neurological expert, Dr. Jonathan Edlow, opined that Rhonda presented with a transient ischemic attack (TIA) related to a left carotid artery event.",
+      "paragraph_ref": "100",
+      "speaker": "Dr. Jonathan Edlow"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "LEGAL_FINDING",
+      "text": "The trial court granted summary judgment for Layman and Infinity, ruling that neither Layman nor Gaziano were actual agents of the hospital.",
+      "paragraph_ref": "129",
+      "speaker": "Trial court"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "COURT_REASONING",
+      "text": "The court found that because Infinity’s contract with SAH’s policies met the standard of care, Infinity had effectively adopted adequate policies and thus did not breach its duty.",
+      "paragraph_ref": "674",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "LEGAL_FINDING",
+      "text": "We affirm the trial court’s grant of Infinity’s motions for summary judgment, reverse its grant of summary judgment in favor of SAH regarding apparent agency, and remand for further proceedings.",
+      "paragraph_ref": "278",
+      "speaker": "Appellate court"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "37 years",
+        "sex": "female",
+        "relevant_social_history": "Smoker, on disability due to back problems"
+      },
+      "chief_complaint": "Severe headache, blurred vision, numbness in right hand and lip",
+      "history_of_present_illness": "Patient woke up with a severe headache, tingling and numbness in her right lip and hand, and blurred vision in her left eye. She had a history of anxiety and depression, and was on Xanax.",
+      "past_medical_history": [
+        "Sleep apnea",
+        "Anxiety",
+        "Depression"
+      ],
+      "medications": [
+        "Xanax"
+      ],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "neurological": "Sensation deficit to the right hand, right lower lip, and right side of the tongue. Normal memory, normal mentation, and 'grossly normal' cranial nerves."
+        }
+      },
+      "initial_working_problem": "Anxiety reaction and acute headache",
+      "known_constraints": null,
+      "initial_differential": [
+        "Anxiety reaction",
+        "Acute headache",
+        "Transient ischemic attack (TIA)"
+      ],
+      "critical_findings": [
+        "Sensation deficit",
+        "Severe headache",
+        "Blurred vision"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E003",
+        "E005"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "Noncontrast CT scan",
+        "description": "CT scan of the head to rule out stroke",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not performed",
+          "detailed_findings": null,
+          "clinical_significance": "Could have identified ischemic changes",
+          "decision_impact": "Should have been ordered to rule out stroke",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": [
+          "E005",
+          "E020"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "IMAGING",
+        "name": "CT Scan of the Head",
+        "description": "Imaging to rule out intracranial pathology",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": null,
+          "detailed_findings": "Imaging performed but findings not detailed in judgment",
+          "clinical_significance": "Could identify stroke or other intracranial issues",
+          "decision_impact": "Should have been ordered to rule out stroke",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents to ED with acute symptoms",
+        "duration": "2 hours",
+        "key_events": [
+          {
+            "event": "Patient evaluated by PA",
+            "timestamp": "July 24, 2015 12:49",
+            "evidence_ids": [
+              "E001",
+              "E003"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Workup and Discharge",
+        "description": "Patient evaluated and discharged with diagnosis of anxiety reaction",
+        "duration": "1 hour",
+        "key_events": [
+          {
+            "event": "Discharge with resolved symptoms",
+            "timestamp": "July 24, 2015 15:38",
+            "evidence_ids": [
+              "E003"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "followup",
+        "name": "Return to ED",
+        "description": "Patient returns to ED with stroke symptoms",
+        "duration": "10 hours later",
+        "key_events": [
+          {
+            "event": "Patient returns unresponsive",
+            "timestamp": "July 25, 2015",
+            "evidence_ids": [
+              "E004"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient in ED with acute neurological symptoms",
+        "prompt": "What should be the next step in management?",
+        "action_type": "ORDER_TEST",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Order noncontrast CT scan of the head",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard of care for suspected TIA or stroke"
+          },
+          {
+            "option_id": "B",
+            "description": "Discharge with diagnosis of anxiety reaction",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Symptoms resolved, attributed to anxiety"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant discharged patient with diagnosis of anxiety reaction",
+          "reasoning_stated": "Symptoms resolved, attributed to anxiety",
+          "evidence_ids": [
+            "E003",
+            "E005"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "CT scan should have been ordered",
+          "standard_of_care_basis": "Expert testimony indicated CT was necessary",
+          "evidence_ids": [
+            "E005",
+            "E020"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to order CT scan led to missed diagnosis of TIA",
+          "what_should_have_happened": "CT scan should have been performed to rule out stroke",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E005",
+            "E020"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient returned to the emergency department with worsened condition",
+        "severity": "Not documented in judgment",
+        "long_term_effects": "Not documented in judgment",
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "PARTIAL_LIABILITY",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Breach of duty in failing to investigate potential transient ischemic attack",
+          "Causation not fully established due to lack of evidence on subsequent harm"
+        ],
+        "evidence_ids": [
+          "E008"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": false,
+        "point_of_failure": "Failure to order appropriate imaging",
+        "counterfactual": "Imaging could have identified a transient ischemic attack",
+        "evidence_ids": [
+          "E005",
+          "E008"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "July 24, 2015 12:49",
+        "event": "Patient arrives at ED",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "July 24, 2015 15:38",
+        "event": "Patient discharged from ED",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "timestamp": "July 25, 2015",
+        "event": "Patient returns to ED with stroke symptoms",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "timestamp": "July 2015",
+        "event": "Patient presents to SAH ED",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "10 hours later",
+        "event": "Patient returns to ED with severe symptoms",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "timestamp": "July 2015",
+        "event": "Rhonda McKinnie presented to the emergency department",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "July 2015",
+        "event": "Patient presents to the emergency department",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "None documented",
+        "date": "Not documented in judgment",
+        "result": "Not documented in judgment",
+        "interpretation": null,
+        "evidence_ids": []
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Anxiety reaction and acute headache",
+        "when_made": "July 24, 2015",
+        "made_by": null,
+        "correct": false,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "diagnosis": "Ischemic stroke",
+        "when_made": "July 25, 2015",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "diagnosis": "Anxiety reaction",
+        "when_made": "Initial presentation",
+        "made_by": null,
+        "correct": false,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "diagnosis": "Severe stroke",
+        "when_made": "After readmission",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "diagnosis": "Anxiety reaction and acute headache",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": false,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "diagnosis": "Anxiety reaction and acute headache",
+        "when_made": "July 2015",
+        "made_by": null,
+        "correct": false,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Symptomatic treatment for headache and anxiety",
+        "date": "July 24, 2015",
+        "provider": null,
+        "outcome": "Symptoms initially resolved",
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "treatment": "Symptomatic treatment for anxiety",
+        "date": "Not documented in judgment",
+        "provider": null,
+        "outcome": "Not documented in judgment",
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "treatment": "Symptomatic treatment for anxiety",
+        "date": "July 2015",
+        "provider": null,
+        "outcome": "Patient discharged",
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Ischemic stroke",
+        "when_occurred": "July 25, 2015",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "complication": "Severe stroke",
+        "when_occurred": "After discharge",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "complication": "Stroke",
+        "when_occurred": "Not documented in judgment",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E004",
+          "E005"
+        ]
+      },
+      {
+        "complication": "Worsened condition upon return to ED",
+        "when_occurred": "Not documented in judgment",
+        "severity": "Not documented in judgment",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to order CT scan",
+        "against": "Joseph Gaziano, PA",
+        "found_proven": false,
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      },
+      {
+        "allegation": "Failure to order CT scan",
+        "against": "Defendant PA",
+        "found_proven": false,
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "allegation": "Failure to order CT scan",
+        "against": "Defendant PA",
+        "found_proven": false,
+        "evidence_ids": [
+          "E006",
+          "E007"
+        ]
+      },
+      {
+        "allegation": "Failure to order appropriate imaging",
+        "against": "Defendant PA",
+        "found_proven": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "No duty owed by Layman",
+        "legal_significance": "Summary judgment granted",
+        "evidence_ids": [
+          "E006",
+          "E007"
+        ]
+      },
+      {
+        "finding": "No liability due to lack of physician-patient relationship",
+        "legal_significance": "No duty of care established",
+        "evidence_ids": [
+          "E006",
+          "E007"
+        ]
+      },
+      {
+        "finding": "No breach of duty of care",
+        "legal_significance": "Summary judgment for defendants",
+        "evidence_ids": [
+          "E006",
+          "E007",
+          "E008"
+        ]
+      },
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Failure to investigate potential transient ischemic attack",
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.004592422502870264,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-09 20:16:51.081732",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

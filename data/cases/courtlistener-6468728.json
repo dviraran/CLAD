@@ -1,0 +1,395 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-6468728",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2012-03-01",
+  "url": "https://example.com/courtlistener-6468728",
+  "case_name": "Pediatrics Cool Care v. Ginger Thompson, Individually and as the Representative of the Estate of A.W.(deceased), and Brad Washington",
+  "neutral_citation": null,
+  "clinical_domain": "PAEDIATRICS",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Pediatrics Cool Care v. Ginger Thompson, Individually and as the Representative of the Estate of A.W.(deceased), and Brad Washington. Medical malpractice case involving paediatrics.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "It is undisputed that a thirteen-year-old girl (A.W.) showed up with her mother (Mother) at the Pediatrics Cool Care clinic on March 1, 2012, seeking help for 'severe depression,' an inability to 'control her feelings,' and feeling 'stressed out' and 'sad all the time.'",
+      "paragraph_ref": "6",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "The physician assistant failed to perform a psychiatric work-up, failed to utilize a standard questionnaire for assessing depression in adolescents, failed to adequately interview A.W., failed to attempt to talk to her without Mother present, and failed to ask her to promise that she would tell someone if she ever felt like hurting herself.",
+      "paragraph_ref": "6",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "A.W. returned to the clinic complaining of migraines on April 17, 2012, and was seen only by a nurse practitioner.",
+      "paragraph_ref": "2",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Moss then explained that the physician assistant\u2019s failure to appropriately and adequately evaluate A.W.\u2019s condition and its causes prevented the defendants from identifying the treatment options they should have pursued.",
+      "paragraph_ref": "4",
+      "speaker": "Dr. Fred Moss"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "LEGAL_FINDING",
+      "text": "The Court agrees, but I do not.",
+      "paragraph_ref": "3",
+      "speaker": "Justice Boyd dissenting"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "COURT_REASONING",
+      "text": "The Court first concludes that the court of appeals erred by requiring only that the defendants\u2019 negligence was a 'substantial factor' in causing A.W.\u2019s suicide when it should have required the evidence to also show that A.W. would not have committed suicide 'but for' the defendants\u2019 negligence.",
+      "paragraph_ref": "2",
+      "speaker": "Court"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Moss testified that, based on reasonable medical probability, the defendants\u2019 actions\u2014and more importantly, their failures to take actions they should have taken\u2014created a 'cluster of factors' that more likely than not caused A.W. to commit suicide.",
+      "paragraph_ref": "8",
+      "speaker": "Dr. Fred Moss"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Moss then concluded his direct examination by repeating his 'firm opinion,' based on reasonable medical probability, that the defendants\u2019 failures to adequately interview, evaluate, and follow up with A.W. more likely than not caused A.W.\u2019s suicide.",
+      "paragraph_ref": "13",
+      "speaker": "Dr. Fred Moss"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "LEGAL_FINDING",
+      "text": "The defendants complain\u2014and the Court agrees\u2014that Dr. Moss\u2019s testimony was insufficient because he could not identify exactly what information the defendants would have obtained from A.W. had they properly interviewed, evaluated, and followed up with her.",
+      "paragraph_ref": "25",
+      "speaker": "Court"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "COURT_REASONING",
+      "text": "The Court, however, concludes that the record contains legally insufficient evidence because Dr. Moss\u2019s testimony was conclusory and mere 'speculation' based on numerous 'ifs.'",
+      "paragraph_ref": "26",
+      "speaker": "Court"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "13 years",
+        "sex": "female",
+        "relevant_social_history": "Family history of depression and bipolar disorder"
+      },
+      "chief_complaint": "Severe depression, inability to control feelings, feeling stressed out and sad all the time",
+      "history_of_present_illness": "Patient has been depressed for some time, with a family history of depression and bipolar disorder. Mother is taking Celexa for depression.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "psychiatric": "Examination mentioned but findings not specified"
+        }
+      },
+      "initial_working_problem": "Depression",
+      "known_constraints": null,
+      "initial_differential": [
+        "Depression",
+        "Bipolar disorder"
+      ],
+      "critical_findings": [
+        "Family history of depression and bipolar disorder"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSULT_NOTE",
+        "name": "Psychiatric Evaluation",
+        "description": "Comprehensive psychiatric work-up including standard questionnaire for depression",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not performed",
+          "detailed_findings": null,
+          "clinical_significance": "Failure to perform psychiatric evaluation",
+          "decision_impact": "Missed opportunity to assess severity and risk of self-harm",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents to clinic with severe depression",
+        "duration": "5 minutes",
+        "key_events": [
+          {
+            "event": "Brief consultation with physician assistant",
+            "timestamp": "March 1, 2012",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "followup",
+        "name": "Follow-up Visit",
+        "description": "Patient returns with migraines, mood reportedly improved",
+        "duration": "Not specified",
+        "key_events": [
+          {
+            "event": "Seen by nurse practitioner, Celexa continued",
+            "timestamp": "April 17, 2012",
+            "evidence_ids": [
+              "E003"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient presenting with severe depression",
+        "prompt": "What should be the initial management plan for a 13-year-old with severe depression?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Conduct a thorough psychiatric evaluation and refer to a mental health specialist",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard care for severe depression includes comprehensive evaluation and specialist referral"
+          },
+          {
+            "option_id": "B",
+            "description": "Prescribe Celexa without further evaluation",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Inadequate assessment and management for severe depression"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Prescribed Celexa without further evaluation",
+          "reasoning_stated": "Physician assistant did not perform a psychiatric work-up",
+          "evidence_ids": [
+            "E002",
+            "E004"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Conduct a thorough psychiatric evaluation and refer to a mental health specialist",
+          "standard_of_care_basis": "Expert evidence established need for comprehensive evaluation",
+          "evidence_ids": [
+            "E004",
+            "E007"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to perform psychiatric evaluation and refer to specialist",
+          "what_should_have_happened": "Comprehensive evaluation and referral to mental health services",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E004",
+            "E007"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient died by suicide",
+        "severity": "FATAL",
+        "long_term_effects": "Not applicable",
+        "evidence_ids": [
+          "E001",
+          "E007"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not specified",
+        "key_findings": [
+          "Breach of duty in failing to perform psychiatric evaluation",
+          "Causation established - failure to follow up and evaluate contributed to suicide"
+        ],
+        "evidence_ids": [
+          "E007",
+          "E008"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to perform psychiatric evaluation and follow-up",
+        "counterfactual": "Proper evaluation and follow-up could have prevented suicide",
+        "evidence_ids": [
+          "E007",
+          "E008"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "March 1, 2012",
+        "event": "Patient presents to clinic with severe depression",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "April 17, 2012",
+        "event": "Patient returns with migraines, mood reportedly improved",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "timestamp": "August 14, 2012",
+        "event": "Patient died by suicide",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001",
+          "E007"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [
+      {
+        "diagnosis": "Depression",
+        "when_made": "March 1, 2012",
+        "made_by": null,
+        "correct": false,
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Celexa prescription",
+        "date": "March 1, 2012",
+        "provider": null,
+        "outcome": "Continued without proper evaluation",
+        "evidence_ids": [
+          "E001",
+          "E002"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Suicide",
+        "when_occurred": "August 14, 2012",
+        "severity": "Fatal",
+        "evidence_ids": [
+          "E001",
+          "E007"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to perform psychiatric evaluation and follow-up",
+        "against": "Defendant clinic and staff",
+        "found_proven": true,
+        "evidence_ids": [
+          "E007",
+          "E008"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendants breached duty of care",
+        "legal_significance": "Failure to perform psychiatric evaluation and follow-up",
+        "evidence_ids": [
+          "E007",
+          "E008"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.07194244604316546,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-16 16:13:33.095487",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

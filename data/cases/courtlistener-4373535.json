@@ -1,0 +1,557 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-4373535",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2017-01-26",
+  "url": "https://example.com/courtlistener-4373535",
+  "case_name": "Estrada v. Univ. of Toledo Med. Ctr.",
+  "neutral_citation": null,
+  "clinical_domain": "OBSTETRICS_GYNAECOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Estrada v. Univ. of Toledo Med. Ctr.. Medical malpractice case involving obstetrics gynaecology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. Geisler testified that he first saw Mrs. Becerra on September 9, 2010. Dr. Geisler testified that Mrs. Becerra, who was 62 years old at the time, was referred to him based upon concerns about intermittent post-menopausal bleeding over the prior two years.",
+      "paragraph_ref": "6",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "The surgery was performed on September 20, 2010, Dr. Geisler stated, and assisting him were resident physicians Drs. Kathleen Rinkes and Megan Lutz.",
+      "paragraph_ref": "7",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Geisler testified that during the operation a coagulant was administered because a significant amount of bleeding occurred, especially from the back of the vaginal cuff, and it was the kind of diffuse 'oozing' that is seen in patients with cirrhosis of the liver.",
+      "paragraph_ref": "7",
+      "speaker": "Dr. Geisler"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. Geisler stated that he did not see Mrs. Becerra on the third day after the operation, on September 23, 2010, but that Dr. Manahan did, and the records show that a CT scan was performed that day which was interpreted by the radiologist as depicting a large ventral hernia.",
+      "paragraph_ref": "9",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Manahan testified that Mrs. Becerra’s condition on September 23, 2010, did not constitute a surgical emergency.",
+      "paragraph_ref": "13",
+      "speaker": "Dr. Manahan"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "WITNESS_STATEMENT",
+      "text": "Estrada testified that she came to the hospital to visit on the day of the surgery, and the next day as well, and nothing seemed out of the ordinary to her.",
+      "paragraph_ref": "14",
+      "speaker": "Rosa Estrada"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "LEGAL_FINDING",
+      "text": "Based on the foregoing, the magistrate finds that plaintiff did not prove her claim by a preponderance of the evidence. Accordingly, judgment is recommended in favor of defendant.",
+      "paragraph_ref": "75",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "62 years",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Intermittent post-menopausal bleeding",
+      "history_of_present_illness": "Patient referred due to concerns about intermittent post-menopausal bleeding over the prior two years. Found to have complex hyperplasia with atypia.",
+      "past_medical_history": [
+        "Morbid obesity",
+        "History of multiple surgeries including hernia repair"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "abdomen": "Not documented in judgment"
+        }
+      },
+      "initial_working_problem": "Complex hyperplasia with atypia, possible endometrial cancer",
+      "known_constraints": null,
+      "initial_differential": [
+        "Endometrial cancer",
+        "Complex hyperplasia with atypia"
+      ],
+      "critical_findings": [
+        "Complex hyperplasia with atypia"
+      ],
+      "urgency_level": "ELECTIVE",
+      "evidence_ids": [
+        "E001",
+        "E003"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "CT scan",
+        "description": "CT scan of the abdomen",
+        "available_phase": "postop",
+        "reveal": {
+          "result_summary": "Large ventral hernia without evidence of strangulation or obstruction",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates fascial dehiscence",
+          "decision_impact": "Should prompt consideration of surgical intervention",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E004",
+          "E005"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "IMAGING",
+        "name": "CT Scan",
+        "description": "CT scan to assess for bowel obstruction or other abnormalities",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": null,
+          "detailed_findings": "Indicated ileus and large ventral hernia, no bowel obstruction",
+          "clinical_significance": "No surgical emergency indicated",
+          "decision_impact": "Supports decision not to operate",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E067"
+        ]
+      },
+      {
+        "request_id": "R003",
+        "type": "LAB",
+        "name": "Blood Gas Test",
+        "description": "Blood gas test to assess pH level and tissue perfusion",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Normal pH level",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates normal tissue perfusion",
+          "decision_impact": "Supports decision not to operate",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Consultation",
+        "description": "Patient referred for evaluation of post-menopausal bleeding",
+        "duration": "Date not specified in judgment",
+        "key_events": [
+          {
+            "event": "Consultation with Dr. Geisler",
+            "timestamp": "September 9, 2010",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "procedure",
+        "name": "Surgical Procedure",
+        "description": "Total hysterectomy with bilateral salpingo-oophorectomy and lymph node removal",
+        "duration": "September 20, 2010",
+        "key_events": [
+          {
+            "event": "Surgery performed",
+            "timestamp": "September 20, 2010",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "postop",
+        "name": "Postoperative Course",
+        "description": "Postoperative management and complications",
+        "duration": "September 21-27, 2010",
+        "key_events": [
+          {
+            "event": "CT scan performed showing large ventral hernia",
+            "timestamp": "September 23, 2010",
+            "evidence_ids": [
+              "E004"
+            ]
+          },
+          {
+            "event": "Patient experienced cardiac arrest after vomiting",
+            "timestamp": "September 25, 2010",
+            "evidence_ids": [
+              "E006"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Diagnostic Workup",
+        "description": "Diagnostic tests performed to assess patient's condition",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "CT scan performed",
+            "timestamp": "September 23, 2010",
+            "evidence_ids": [
+              "E067"
+            ]
+          },
+          {
+            "event": "Blood gas test performed",
+            "timestamp": "September 24, 2010",
+            "evidence_ids": [
+              "E005"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "postop",
+        "clinical_context": "Patient post-hysterectomy with abdominal firmness and no bowel movement",
+        "prompt": "Should surgical intervention be performed based on CT findings?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Perform surgical intervention to address fascial dehiscence",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Immediate surgical intervention required to prevent bowel ischemia"
+          },
+          {
+            "option_id": "B",
+            "description": "Continue observation and manage conservatively",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Belief that large hernia does not pose immediate risk"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Continued observation without surgical intervention",
+          "reasoning_stated": "Belief that large hernia does not pose immediate risk",
+          "evidence_ids": [
+            "E004",
+            "E005"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Surgical intervention should have been performed",
+          "standard_of_care_basis": "Expert testimony indicated need for immediate intervention",
+          "evidence_ids": [
+            "E040",
+            "E041"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to recognize surgical emergency from CT findings",
+          "what_should_have_happened": "Immediate surgical intervention to prevent bowel ischemia",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E040",
+            "E041"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient experienced cardiac arrest and multiple organ failure",
+        "severity": "FATAL",
+        "long_term_effects": "Death",
+        "evidence_ids": [
+          "E071"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "0",
+        "key_findings": [
+          "Care and treatment complied with the standard of care",
+          "No breach in standard of care established"
+        ],
+        "evidence_ids": [
+          "E075"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Not applicable",
+        "counterfactual": "Not applicable",
+        "evidence_ids": [
+          "E075"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "September 9, 2010",
+        "event": "Initial consultation with Dr. Geisler",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "September 20, 2010",
+        "event": "Surgery performed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "September 23, 2010",
+        "event": "CT scan performed showing large ventral hernia",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "timestamp": "September 25, 2010",
+        "event": "Patient experienced cardiac arrest after vomiting",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "timestamp": "September 20, 2010",
+        "event": "Surgery performed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "September 23, 2010",
+        "event": "Patient develops confusion and lethargy",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "timestamp": "September 25, 2010",
+        "event": "Patient experiences cardiac arrest",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E071"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "CT scan",
+        "date": "September 23, 2010",
+        "result": "Large ventral hernia without evidence of strangulation or obstruction",
+        "interpretation": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "test_name": "CT Scan",
+        "date": "September 23, 2010",
+        "result": "Ileus and large ventral hernia, no bowel obstruction",
+        "interpretation": null,
+        "evidence_ids": [
+          "E067"
+        ]
+      },
+      {
+        "test_name": "Blood Gas Test",
+        "date": "September 24, 2010",
+        "result": "Normal pH level",
+        "interpretation": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Complex hyperplasia with atypia",
+        "when_made": "September 9, 2010",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "diagnosis": "Hepatic encephalopathy",
+        "when_made": "September 23, 2010",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Total hysterectomy with bilateral salpingo-oophorectomy",
+        "date": "September 20, 2010",
+        "provider": null,
+        "outcome": "Surgery completed with complications",
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "treatment": "Lactulose administration",
+        "date": "September 23, 2010",
+        "provider": null,
+        "outcome": "Treatment for elevated ammonia level",
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Cardiac arrest following aspiration",
+        "when_occurred": "September 25, 2010",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "complication": "Cardiac arrest",
+        "when_occurred": "September 25, 2010",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E071"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to recognize surgical emergency",
+        "against": "Dr. Geisler",
+        "found_proven": false,
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      {
+        "allegation": "Failure to diagnose bowel obstruction",
+        "against": "Defendant medical team",
+        "found_proven": false,
+        "evidence_ids": [
+          "E075"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Plaintiff did not prove claim by a preponderance of the evidence",
+        "legal_significance": "No liability found",
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      {
+        "finding": "Care and treatment complied with the standard of care",
+        "legal_significance": "No breach in standard of care",
+        "evidence_ids": [
+          "E075"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.17073170731707318,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-09 16:45:51.384401",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

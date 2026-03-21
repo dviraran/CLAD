@@ -1,0 +1,522 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-9998011",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2024-07-02",
+  "url": "https://example.com/courtlistener-9998011",
+  "case_name": "Raouf Hanna, DDS and Hanna Dental Implants, LLLP v. Thomas Neil Turner",
+  "neutral_citation": null,
+  "clinical_domain": "NEUROLOGY",
+  "outcome_severity": "PERMANENT_SEVERE_DISABILITY",
+  "summary": {
+    "brief": "Raouf Hanna, DDS and Hanna Dental Implants, LLLP v. Thomas Neil Turner. Medical malpractice case involving neurology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Turner alleges that Hanna assured him he was a good candidate for dental implants after performing a single, limited evaluation.",
+      "paragraph_ref": "16",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Hanna extracted all of Turner\u2019s remaining teeth, 27 in total, and installed several implants.",
+      "paragraph_ref": "17",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "Turner reported that his lip sometimes tingled and some liquids ran out of his nose when he drank.",
+      "paragraph_ref": "18",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "Turner learned for the first time that dental screws implanted in his jaw by Hanna were protruding into his nasal passageway and his left maxillary sinus.",
+      "paragraph_ref": "28",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Rosenfeld concludes that Hanna violated the standard of care in several ways.",
+      "paragraph_ref": "104",
+      "speaker": "Expert witness"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Rosenfeld opines that the standard of care required Hanna to use full-mouth periapical x-rays and three-dimensional imaging.",
+      "paragraph_ref": "108",
+      "speaker": "Expert witness"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Rosenfeld further opines that the standard of care required Hanna to vigilantly monitor Turner for nasal and sinus perforations.",
+      "paragraph_ref": "114",
+      "speaker": "Expert witness"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "LEGAL_FINDING",
+      "text": "We hold that the trial court did not abuse its discretion in concluding that Rosenfeld\u2019s supplemental expert report is adequate with respect to causation.",
+      "paragraph_ref": "341",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "COURT_REASONING",
+      "text": "Rosenfeld\u2019s expert report is adequate as to the standard of care and its breach.",
+      "paragraph_ref": "278",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "FACTUAL_FINDING",
+      "text": "Turner has continued to experience problems afterward and has required additional treatment for a reoccurring sinus infection and sinus inflammation.",
+      "paragraph_ref": "102",
+      "speaker": "Court finding"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Early 60s",
+        "sex": "male",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Desire for a permanent solution to dental issues",
+      "history_of_present_illness": "Turner sought treatment for past dental work issues and was assured by Hanna that he was a good candidate for dental implants after a limited evaluation.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "oral": "Limited evaluation performed, single panoramic x-ray taken"
+        }
+      },
+      "initial_working_problem": "Dental issues requiring permanent solution",
+      "known_constraints": null,
+      "initial_differential": [
+        "Dental implant candidacy"
+      ],
+      "critical_findings": [
+        "Limited evaluation",
+        "Single panoramic x-ray"
+      ],
+      "urgency_level": "ELECTIVE",
+      "evidence_ids": [
+        "E001",
+        "E002",
+        "E003"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "Full-mouth periapical x-rays",
+        "description": "X-rays that image the entire tooth and supporting bone",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not performed",
+          "detailed_findings": null,
+          "clinical_significance": "Would have assessed jawbone integrity and implant suitability",
+          "decision_impact": "Failure to perform contributed to complications",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": [
+          "E006",
+          "E009"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "IMAGING",
+        "name": "Three-dimensional imaging",
+        "description": "Imaging to assess bone structure and implant placement",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not performed",
+          "detailed_findings": null,
+          "clinical_significance": "Would have identified complications such as nasal and sinus perforations",
+          "decision_impact": "Failure to perform led to undiagnosed complications",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": [
+          "E006",
+          "E009"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "decision",
+        "name": "Initial Evaluation and Planning",
+        "description": "Patient evaluated for dental implant candidacy",
+        "duration": "1 month",
+        "key_events": [
+          {
+            "event": "Limited evaluation and single panoramic x-ray performed",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E001",
+              "E006"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "procedure",
+        "name": "Dental Implant Procedure",
+        "description": "Extraction of teeth and placement of implants",
+        "duration": "1 day",
+        "key_events": [
+          {
+            "event": "Extraction of 27 teeth and placement of 9 implants",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "decision",
+        "name": "Follow-up and Monitoring",
+        "description": "Patient follow-up visits and monitoring",
+        "duration": "3 years",
+        "key_events": [
+          {
+            "event": "Patient reports symptoms, reassured by provider",
+            "timestamp": "Within a month after procedure",
+            "evidence_ids": [
+              "E003"
+            ]
+          },
+          {
+            "event": "Emergency treatment for complications",
+            "timestamp": "Just over three years after initial procedure",
+            "evidence_ids": [
+              "E004",
+              "E010"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "decision",
+        "clinical_context": "Initial evaluation for dental implant candidacy",
+        "prompt": "What diagnostic imaging should be performed before proceeding with dental implants?",
+        "action_type": "ORDER_TEST",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Order full-mouth periapical x-rays and three-dimensional imaging",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard of care requires comprehensive imaging to assess bone integrity and implant suitability"
+          },
+          {
+            "option_id": "B",
+            "description": "Proceed with single panoramic x-ray only",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Insufficient for assessing detailed bone structure and potential complications"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant performed a single panoramic x-ray",
+          "reasoning_stated": "Limited evaluation deemed sufficient",
+          "evidence_ids": [
+            "E001",
+            "E006"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Full-mouth periapical x-rays and three-dimensional imaging should have been ordered",
+          "standard_of_care_basis": "Expert evidence established comprehensive imaging as standard",
+          "evidence_ids": [
+            "E006",
+            "E009"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to perform comprehensive imaging led to undiagnosed complications",
+          "what_should_have_happened": "Comprehensive imaging would have identified bone deficiencies and potential complications",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E006",
+            "E009"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      },
+      {
+        "decision_id": "D002",
+        "phase_id": "decision",
+        "clinical_context": "Follow-up after dental implant placement",
+        "prompt": "How should the patient be monitored for complications after implant placement?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Vigilantly monitor for nasal and sinus perforations and nerve injuries",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard of care requires monitoring for complications to prevent permanent damage"
+          },
+          {
+            "option_id": "B",
+            "description": "Reassure patient and attribute symptoms to normal healing",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Failed to address and investigate reported symptoms"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant reassured patient without further investigation",
+          "reasoning_stated": "Symptoms attributed to normal healing process",
+          "evidence_ids": [
+            "E003",
+            "E007"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Patient should have been monitored for complications",
+          "standard_of_care_basis": "Expert evidence established need for vigilant monitoring",
+          "evidence_ids": [
+            "E007",
+            "E009"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to monitor led to prolonged and exacerbated injuries",
+          "what_should_have_happened": "Monitoring would have allowed for timely intervention",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E007",
+            "E009"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient developed nasal and sinus perforations, nerve damage, and required removal of implants",
+        "severity": "PERMANENT_SEVERE_DISABILITY",
+        "long_term_effects": "Chronic sinus infections, impaired chewing, permanent nerve damage",
+        "evidence_ids": [
+          "E004",
+          "E010"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not specified in judgment",
+        "key_findings": [
+          "Breach of duty in failing to perform comprehensive imaging",
+          "Causation established - earlier intervention would have prevented complications"
+        ],
+        "evidence_ids": [
+          "E005",
+          "E009"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to perform comprehensive imaging and monitoring",
+        "counterfactual": "Comprehensive imaging and monitoring would have identified and addressed complications",
+        "evidence_ids": [
+          "E006",
+          "E007",
+          "E009"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Initial evaluation with limited assessment and single panoramic x-ray",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001",
+          "E006"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Extraction of 27 teeth and placement of 9 implants",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "Within a month after procedure",
+        "event": "Patient reports symptoms, reassured by provider",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "timestamp": "Just over three years after initial procedure",
+        "event": "Emergency treatment for complications",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004",
+          "E010"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Panoramic x-ray",
+        "date": "Date not specified in judgment",
+        "result": "Limited evaluation",
+        "interpretation": null,
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Nasal and sinus perforations, nerve damage",
+        "when_made": "Just over three years after initial procedure",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E004",
+          "E010"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Removal of upper jaw implants",
+        "date": "Date not specified in judgment",
+        "provider": null,
+        "outcome": "Implants removed, complications addressed",
+        "evidence_ids": [
+          "E010"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Nasal and sinus perforations, nerve damage",
+        "when_occurred": "Post-procedure",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E004",
+          "E010"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to perform comprehensive imaging and monitoring",
+        "against": "Raouf Hanna, DDS",
+        "found_proven": true,
+        "evidence_ids": [
+          "E005",
+          "E009"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E005",
+          "E009"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.028735632183908046,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-09 15:06:32.447912",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

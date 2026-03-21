@@ -1,0 +1,410 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-4580071",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2019-01-08",
+  "url": "https://example.com/courtlistener-4580071",
+  "case_name": "Leslie Coleman v. United States",
+  "neutral_citation": null,
+  "clinical_domain": "SURGERY_GENERAL",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Leslie Coleman v. United States. Medical malpractice case involving surgery general.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Coleman was in the Air Force from 1999 to 2005. In 2005, she had a laparoscopic gastric band ('lap band') inserted by a private medical facility.",
+      "paragraph_ref": "9",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "In April 2014, Coleman went to the Audie L. Murphy Memorial VA Hospital in San Antonio (VAH-SA), where she complained of daily vomiting and reflux.",
+      "paragraph_ref": "9",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "In March 2016, a VAH-SA physician surgically removed the lap band.",
+      "paragraph_ref": "9",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "In May 2016, a SAMMC physician attempted to perform the sleeve gastrectomy, but aborted the procedure mid-surgery after concluding that the risk of post-operative complications was too high.",
+      "paragraph_ref": "11",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "In July 2016, Coleman went to a private medical facility where the sleeve gastrectomy was ultimately performed.",
+      "paragraph_ref": "11",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "EXPERT_TESTIMONY",
+      "text": "To support some of her medical malpractice claims, Coleman offered reports from two medical experts, Dr. Saini and Dr. Flancbaum.",
+      "paragraph_ref": "15",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "LEGAL_FINDING",
+      "text": "The district court held that she could not meet her threshold burden for establishing the relevant standard of care, and consequently the court granted summary judgment to the government on Coleman's FTCA medical malpractice claim.",
+      "paragraph_ref": "15",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "LEGAL_FINDING",
+      "text": "The district court determined that Coleman had not produced sufficient evidence that the alleged disclosures were harmful or willful.",
+      "paragraph_ref": "18",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "LEGAL_FINDING",
+      "text": "The district court's summary judgment for the government on the three privacy-related claims that were reached on their merits is AFFIRMED.",
+      "paragraph_ref": "53",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "COURT_REASONING",
+      "text": "The district court was correct in its determination that Federal Rule of Evidence 601 requires that Coleman's proffered expert witness must satisfy the state law standards for expert witness competency.",
+      "paragraph_ref": "53",
+      "speaker": "Court finding"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Daily vomiting and reflux",
+      "history_of_present_illness": "Patient reports daily vomiting and reflux, seeking removal of lap band and revision to sleeve gastrectomy.",
+      "past_medical_history": [
+        "Laparoscopic gastric band insertion in 2005"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "abdomen": "Not documented in judgment"
+        }
+      },
+      "initial_working_problem": "Complications from lap band",
+      "known_constraints": null,
+      "initial_differential": [
+        "Slipped lap band",
+        "Gastroesophageal reflux disease"
+      ],
+      "critical_findings": [
+        "Daily vomiting",
+        "Reflux"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E002"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "Upper Endoscopy",
+        "description": "Endoscopic examination to assess lap band position",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "No evidence of lap band slipping",
+          "detailed_findings": null,
+          "clinical_significance": "Decision to leave lap band in place",
+          "decision_impact": "Led to continued symptoms and delayed removal",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with symptoms related to lap band",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Patient reports daily vomiting and reflux",
+            "timestamp": "April 2014",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Diagnostic Workup",
+        "description": "Endoscopy performed to assess lap band",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Upper endoscopy performed",
+            "timestamp": "November 2015",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient with daily vomiting and reflux, suspected lap band complication",
+        "prompt": "Should the lap band be removed based on symptoms?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Proceed with lap band removal",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Symptoms suggestive of lap band complication warrant removal"
+          },
+          {
+            "option_id": "B",
+            "description": "Leave lap band in place based on endoscopy findings",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Endoscopy showed no slipping, but symptoms persisted"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant left lap band in place",
+          "reasoning_stated": "Endoscopy findings did not show slipping",
+          "evidence_ids": [
+            "E002"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Lap band should have been removed",
+          "standard_of_care_basis": "Persistent symptoms despite endoscopy findings",
+          "evidence_ids": [
+            "E002",
+            "E003"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Persistent symptoms indicated a need for removal despite endoscopy results",
+          "what_should_have_happened": "Lap band removal should have been prioritized",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E002",
+            "E003"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Lap band eventually removed, sleeve gastrectomy performed at private facility",
+        "severity": "Not documented in judgment",
+        "long_term_effects": "Not documented in judgment",
+        "evidence_ids": [
+          "E003",
+          "E005"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "None",
+        "key_findings": [
+          "Plaintiff could not establish the relevant standard of care due to lack of expert testimony"
+        ],
+        "evidence_ids": [
+          "E007",
+          "E008"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Failure to remove lap band despite symptoms",
+        "counterfactual": "Removal could have alleviated symptoms earlier",
+        "evidence_ids": [
+          "E007",
+          "E008"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "April 2014",
+        "event": "Patient presents with daily vomiting and reflux",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "November 2015",
+        "event": "Upper endoscopy performed, lap band not removed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "March 2016",
+        "event": "Lap band surgically removed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "timestamp": "July 2016",
+        "event": "Sleeve gastrectomy performed at private facility",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Upper Endoscopy",
+        "date": "November 2015",
+        "result": "No evidence of lap band slipping",
+        "interpretation": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Slipped lap band",
+        "when_made": "February 2016",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Lap band removal",
+        "date": "March 2016",
+        "provider": null,
+        "outcome": "Lap band removed",
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "treatment": "Sleeve gastrectomy",
+        "date": "July 2016",
+        "provider": null,
+        "outcome": "Procedure completed at private facility",
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "complications": [],
+    "allegations": [
+      {
+        "allegation": "Negligence in treating slipped lap band",
+        "against": "VA Hospital",
+        "found_proven": false,
+        "evidence_ids": [
+          "E007",
+          "E008"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Plaintiff could not establish the relevant standard of care",
+        "legal_significance": "Summary judgment for the government",
+        "evidence_ids": [
+          "E007",
+          "E008"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.18518518518518517,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-09 21:04:36.311963",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

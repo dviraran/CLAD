@@ -1,0 +1,449 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-4464160",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2018-02-01",
+  "url": "https://example.com/courtlistener-4464160",
+  "case_name": "Butler v. Cayuga Med. Ctr.",
+  "neutral_citation": null,
+  "clinical_domain": "NEUROLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Butler v. Cayuga Med. Ctr.. Medical malpractice case involving neurology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "At around 1:00 p.m. on the afternoon of September 22, 2009, Ian Butler (hereinafter Butler), accompanied by his mother, Carol Butler (hereinafter decedent), sought treatment at Convenient Care at Ithaca (hereinafter CCI), an urgent care facility owned by defendant Cayuga Medical Center (hereinafter CMC).",
+      "paragraph_ref": "6",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Defendant Eva Briggs, the physician who examined Butler at CCI, recommended that he be transported by ambulance to the CMC emergency department (hereinafter CMC-ED) to obtain a mental health evaluation and to complete certain blood work.",
+      "paragraph_ref": "6",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "Although there is some discrepancy regarding timing, it is not disputed that Butler and decedent left the CMC-ED after they had waited for at least two hours.",
+      "paragraph_ref": "6",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "Tragically, early in the morning of September 23, 2009, decedent was found dead in her home, and Butler was arrested for having caused her death.",
+      "paragraph_ref": "7",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Baum opined that Briggs timely and thoroughly examined Butler and reasonably determined that he needed a mental health evaluation and the specialized blood work \u2014 resources that were not available at CCI.",
+      "paragraph_ref": "14",
+      "speaker": "Expert testimony"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Johnson opined that Briggs did not have a medical or legal basis to physically prevent Butler from leaving CCI to go to the CMC-ED.",
+      "paragraph_ref": "14",
+      "speaker": "Expert testimony"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Katz opined that the medical care provided by Briggs, Koch and the triage staff at the CMC-ED 'deviated from accepted practice.'",
+      "paragraph_ref": "19",
+      "speaker": "Expert testimony"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "LEGAL_FINDING",
+      "text": "Having found that plaintiffs failed to raise a triable issue of fact, Supreme Court properly granted defendants' motions for summary judgment dismissing the complaints.",
+      "paragraph_ref": "22",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "COURT_REASONING",
+      "text": "Liability will not arise from 'a mere error in professional judgment,' and where, as here, the alleged malpractice involves mental health treatment, 'it must be shown that the treatment decisions represented something less than a professional medical determination.'",
+      "paragraph_ref": "9",
+      "speaker": "Judge's analysis"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "male",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Nausea, status post seizure",
+      "history_of_present_illness": "Patient had two grand mal seizures, complaining of blurred vision, headache, confusion. Mother states patient not compliant with anti-seizure meds.",
+      "past_medical_history": [
+        "Epilepsy",
+        "Seizures",
+        "Psychotic episodes"
+      ],
+      "medications": [
+        "Anti-seizure medication"
+      ],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": null,
+        "general_appearance": null,
+        "focused_exam": {
+          "general": "Well-appearing, in no pain or distress, alert but tangential"
+        }
+      },
+      "initial_working_problem": "Possible acute psychosis",
+      "known_constraints": null,
+      "initial_differential": [
+        "Metabolic disorder/hypoglycemia",
+        "Injury",
+        "Seizure/post-ictal",
+        "Intracranial bleed",
+        "Psychosis"
+      ],
+      "critical_findings": [
+        "Tangential thinking",
+        "Recent depression",
+        "Confusion"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E010"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "LAB",
+        "name": "Blood work",
+        "description": "Check levels of anti-seizure medication",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not documented in judgment",
+          "detailed_findings": null,
+          "clinical_significance": "Needed to assess medication compliance",
+          "decision_impact": "Should guide further management",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": [
+          "E002",
+          "E011"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "CONSULT_NOTE",
+        "name": "Mental health evaluation",
+        "description": "Evaluation for acute psychosis",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not documented in judgment",
+          "detailed_findings": null,
+          "clinical_significance": "Needed to assess mental health status",
+          "decision_impact": "Should guide further management",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": [
+          "E002",
+          "E011"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation at CCI",
+        "description": "Patient presents with seizures and psychotic symptoms",
+        "duration": "1 hour",
+        "key_events": [
+          {
+            "event": "Patient evaluated by nurse and Dr. Briggs",
+            "timestamp": "22 September 2009 13:00",
+            "evidence_ids": [
+              "E001",
+              "E010"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Arrival at CMC-ED",
+        "description": "Patient arrives at CMC-ED for further evaluation",
+        "duration": "2 hours",
+        "key_events": [
+          {
+            "event": "Patient triaged by nurse McDonald",
+            "timestamp": "22 September 2009 14:15",
+            "evidence_ids": [
+              "E012"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient at CCI with acute psychosis symptoms",
+        "prompt": "Should the patient be transported by ambulance to the CMC-ED?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Transport by ambulance to CMC-ED",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Ensures safe arrival and timely evaluation"
+          },
+          {
+            "option_id": "B",
+            "description": "Allow patient to refuse ambulance transport",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Patient's autonomy respected, but risk not mitigated"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant allowed patient to refuse ambulance transport",
+          "reasoning_stated": "Patient signed form refusing transport",
+          "evidence_ids": [
+            "E002",
+            "E010"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Patient should have been transported by ambulance",
+          "standard_of_care_basis": "Expert evidence suggested need for safe transport",
+          "evidence_ids": [
+            "E007",
+            "E009"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to ensure safe transport led to delayed care",
+          "what_should_have_happened": "Patient should have been transported by ambulance",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E007",
+            "E009"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      },
+      {
+        "decision_id": "D002",
+        "phase_id": "workup",
+        "clinical_context": "Patient at CMC-ED awaiting evaluation",
+        "prompt": "What triage level should be assigned to the patient?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Assign ESI level 2",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "High-risk situation requiring prompt evaluation"
+          },
+          {
+            "option_id": "B",
+            "description": "Assign ESI level 3",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Less acute, based on available information"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Patient assigned ESI level 3",
+          "reasoning_stated": "Based on patient's presentation and triage assessment",
+          "evidence_ids": [
+            "E012",
+            "E016"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Patient should have been assigned ESI level 2",
+          "standard_of_care_basis": "Expert evidence suggested higher risk due to psychosis",
+          "evidence_ids": [
+            "E007",
+            "E022"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Patient's risk level underestimated, leading to delayed care",
+          "what_should_have_happened": "Patient should have been prioritized for evaluation",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E007",
+            "E022"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient's mother found dead, patient arrested",
+        "severity": "SEVERE",
+        "long_term_effects": "Patient civilly committed",
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "0",
+        "key_findings": [
+          "Defendants met standard of care",
+          "No causation established between alleged malpractice and outcome"
+        ],
+        "evidence_ids": [
+          "E008",
+          "E018"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Not applicable",
+        "counterfactual": "Not applicable",
+        "evidence_ids": [
+          "E008",
+          "E018"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "22 September 2009 13:00",
+        "event": "Patient arrives at CCI",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "22 September 2009 14:15",
+        "event": "Patient arrives at CMC-ED",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E012"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [
+      {
+        "diagnosis": "Acute psychosis",
+        "when_made": "22 September 2009",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E010"
+        ]
+      }
+    ],
+    "treatments": [],
+    "complications": [
+      {
+        "complication": "Death of patient's mother",
+        "when_occurred": "23 September 2009",
+        "severity": "Fatal",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to ensure safe transport and timely evaluation",
+        "against": "Defendant physicians and CMC",
+        "found_proven": false,
+        "evidence_ids": [
+          "E008"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendants met standard of care",
+        "legal_significance": "No liability found",
+        "evidence_ids": [
+          "E008"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.34615384615384615,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-16 14:29:49.319397",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

@@ -1,0 +1,534 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-9436443",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2023-10-24",
+  "url": "https://example.com/courtlistener-9436443",
+  "case_name": "Emily Abney-Acosta v. Robert Santaella, M.D.",
+  "neutral_citation": null,
+  "clinical_domain": "PAEDIATRICS",
+  "outcome_severity": "TEMPORARY_HARM",
+  "summary": {
+    "brief": "Emily Abney-Acosta v. Robert Santaella, M.D.. Medical malpractice case involving paediatrics.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Abney-Acosta\u2019s abdomen, and a sponge remained in her abdominal cavity after the surgery.",
+      "paragraph_ref": "12",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "During the months following the surgery, Santaella and other physicians aspirated a seroma that developed at the surgical site but did not identify the retained sponge.",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "Approximately seven months after the surgery and after the wound had healed, Abney-Acosta experienced abdominal pain and Santaella ordered a new CT scan.",
+      "paragraph_ref": "16",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "The new doctor identified the retained sponge and surgically removed it, thus resolving Abney-Acosta\u2019s symptoms.",
+      "paragraph_ref": "18",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "LEGAL_FINDING",
+      "text": "The jury found Santaella was not negligent in his treatment of Abney-Acosta.",
+      "paragraph_ref": "7",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Mayer testified Santaella continued falling below the standard of care in his post-operative care.",
+      "paragraph_ref": "220",
+      "speaker": "Expert witness"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Clifford believed Bailey and Magras failed to meet the standard of care and their negligence caused the retained sponge.",
+      "paragraph_ref": "248",
+      "speaker": "Expert witness"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "FACTUAL_FINDING",
+      "text": "Santaella testified surgeons do not participate in counting sponges before or after the surgery, and he 'definitely depends on' the sponge count.",
+      "paragraph_ref": "70",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "FACTUAL_FINDING",
+      "text": "Bailey testified he is responsible for ensuring the sponge count is correct, and stated: 'I should have done a better job.'",
+      "paragraph_ref": "64",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "LEGAL_FINDING",
+      "text": "We affirm the trial court\u2019s judgment.",
+      "paragraph_ref": "358",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Abdominal pain and a palpable mass",
+      "history_of_present_illness": "Patient reports feeling a small mass in her abdomen and experiencing abdominal pain rated as an eight on a ten-point scale.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "abdomen": "Not documented in judgment"
+        }
+      },
+      "initial_working_problem": "Abdominal mass with pain",
+      "known_constraints": null,
+      "initial_differential": [
+        "Abdominal mass",
+        "Other causes of abdominal pain"
+      ],
+      "critical_findings": [
+        "Palpable abdominal mass"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002",
+        "E003"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "CT scan of the abdomen",
+        "description": "CT scan to evaluate the abdominal mass",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Confirmed presence of abdominal mass",
+          "detailed_findings": null,
+          "clinical_significance": "Indicated need for surgical intervention",
+          "decision_impact": "Led to decision to surgically remove the mass",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "IMAGING",
+        "name": "Post-operative CT scan",
+        "description": "CT scan performed post-operatively to assess complications",
+        "available_phase": "postop",
+        "reveal": {
+          "result_summary": "Serpiginous metallic density noted, indicating possible retained foreign object",
+          "detailed_findings": null,
+          "clinical_significance": "Should have prompted further investigation for retained surgical items",
+          "decision_impact": "Missed opportunity to identify retained sponge",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E002",
+          "E003"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with abdominal pain and mass",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Consultation with Dr. Santaella",
+            "timestamp": "August 2018",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "procedure",
+        "name": "Surgical Procedure",
+        "description": "Surgery to remove abdominal mass",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Surgical removal of mass",
+            "timestamp": "September 21, 2018",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "postop",
+        "name": "Post-Operative Care",
+        "description": "Care following surgery, including management of complications",
+        "duration": "Several months",
+        "key_events": [
+          {
+            "event": "CT scan performed showing metallic density",
+            "timestamp": "September 29, 2018",
+            "evidence_ids": [
+              "E002"
+            ]
+          },
+          {
+            "event": "Seroma aspiration",
+            "timestamp": "October 1, 2018",
+            "evidence_ids": [
+              "E002"
+            ]
+          },
+          {
+            "event": "Wound packing due to leakage",
+            "timestamp": "October 5, 2018",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "procedure",
+        "clinical_context": "During surgery to remove abdominal mass",
+        "prompt": "How should the surgical team ensure no foreign objects are retained?",
+        "action_type": "ORDER_TEST",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Perform a thorough manual inspection and confirm sponge count",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard practice to prevent retained surgical items"
+          },
+          {
+            "option_id": "B",
+            "description": "Rely solely on the sponge count provided by the surgical team",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Insufficient to prevent retained items"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant relied on the sponge count provided by the surgical team",
+          "reasoning_stated": "Defendant stated reliance on team for sponge count",
+          "evidence_ids": [
+            "E008",
+            "E009"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Perform a thorough manual inspection and confirm sponge count",
+          "standard_of_care_basis": "Expert testimony indicated this is the standard of care",
+          "evidence_ids": [
+            "E006",
+            "E007"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to perform adequate inspection led to retained sponge",
+          "what_should_have_happened": "Manual inspection and confirmation of sponge count",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E006",
+            "E007"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      },
+      {
+        "decision_id": "D002",
+        "phase_id": "postop",
+        "clinical_context": "Post-operative care following abdominal surgery",
+        "prompt": "What should be done when post-operative imaging shows unexpected findings?",
+        "action_type": "ORDER_TEST",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Review the CT scan and report to identify any retained foreign objects",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Essential to identify and address complications"
+          },
+          {
+            "option_id": "B",
+            "description": "Rely on verbal reports from other physicians without reviewing imaging",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Misses critical information that could indicate complications"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant relied on verbal reports and did not review the CT scan",
+          "reasoning_stated": "Defendant believed verbal reports were sufficient",
+          "evidence_ids": [
+            "E005",
+            "E010"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Review the CT scan and report to identify any retained foreign objects",
+          "standard_of_care_basis": "Expert testimony indicated this is the standard of care",
+          "evidence_ids": [
+            "E006"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to review imaging led to delayed identification of retained sponge",
+          "what_should_have_happened": "Review of imaging would have identified the issue",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E006"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Retained sponge identified and removed, resolving symptoms",
+        "severity": "TEMPORARY_MODERATE_DISABILITY",
+        "long_term_effects": "No long-term effects documented",
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "0",
+        "key_findings": [
+          "Jury found Santaella was not negligent",
+          "Negligence attributed to surgical team members"
+        ],
+        "evidence_ids": [
+          "E005",
+          "E010"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Sponge count and post-operative imaging review",
+        "counterfactual": "Review of imaging would have identified retained sponge",
+        "evidence_ids": [
+          "E005",
+          "E010"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "August 2018",
+        "event": "Patient consults Dr. Santaella for abdominal mass",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "September 21, 2018",
+        "event": "Surgical removal of abdominal mass",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "September 29, 2018",
+        "event": "CT scan performed showing metallic density",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "October 1, 2018",
+        "event": "Seroma aspiration in Santaella's office",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "October 5, 2018",
+        "event": "Wound leakage and packing",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "June 17, 2019",
+        "event": "Retained sponge surgically removed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "CT scan",
+        "date": "September 29, 2018",
+        "result": "Serpiginous metallic density noted",
+        "interpretation": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Retained surgical sponge",
+        "when_made": "June 17, 2019",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Surgical removal of retained sponge",
+        "date": "June 17, 2019",
+        "provider": null,
+        "outcome": "Resolution of symptoms",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Seroma",
+        "when_occurred": "Post-surgery",
+        "severity": "Moderate",
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to ensure no retained surgical items",
+        "against": "Dr. Santaella",
+        "found_proven": false,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Santaella was not negligent",
+        "legal_significance": "Jury found no breach of standard of care",
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.0273972602739726,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-09 21:10:43.082332",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

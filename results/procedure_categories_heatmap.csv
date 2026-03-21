@@ -1,29 +1,65 @@
-model,model_display,procedure_type,cases_with_type,total_cases,proportion,avg_count
-openai/gpt-5.2,GPT-5.2,lab,189,234,0.8076923076923077,5.14957264957265
-openai/gpt-5.2,GPT-5.2,imaging,191,234,0.8162393162393162,2.282051282051282
-openai/gpt-5.2,GPT-5.2,consultation,128,234,0.5470085470085471,0.8846153846153846
-openai/gpt-5.2,GPT-5.2,procedure,126,234,0.5384615384615384,1.0384615384615385
-openai/gpt-4o,GPT-4o,lab,53,240,0.22083333333333333,0.31666666666666665
-openai/gpt-4o,GPT-4o,imaging,89,240,0.37083333333333335,0.475
-openai/gpt-4o,GPT-4o,consultation,79,240,0.32916666666666666,0.45
-openai/gpt-4o,GPT-4o,procedure,34,240,0.14166666666666666,0.15833333333333333
-openrouter/anthropic/claude-sonnet-4,Claude Sonnet 4,lab,124,220,0.5636363636363636,1.6181818181818182
-openrouter/anthropic/claude-sonnet-4,Claude Sonnet 4,imaging,132,220,0.6,0.8772727272727273
-openrouter/anthropic/claude-sonnet-4,Claude Sonnet 4,consultation,103,220,0.4681818181818182,0.6681818181818182
-openrouter/anthropic/claude-sonnet-4,Claude Sonnet 4,procedure,56,220,0.2545454545454545,0.36363636363636365
-openrouter/x-ai/grok-4.1-fast,Grok 4.1,lab,176,220,0.8,3.331818181818182
-openrouter/x-ai/grok-4.1-fast,Grok 4.1,imaging,184,220,0.8363636363636363,1.6318181818181818
-openrouter/x-ai/grok-4.1-fast,Grok 4.1,consultation,177,220,0.8045454545454546,1.4227272727272726
-openrouter/x-ai/grok-4.1-fast,Grok 4.1,procedure,84,220,0.38181818181818183,0.6136363636363636
-openrouter/meta-llama/llama-4-maverick,Llama 4,lab,79,242,0.32644628099173556,0.6322314049586777
-openrouter/meta-llama/llama-4-maverick,Llama 4,imaging,107,242,0.44214876033057854,0.6322314049586777
-openrouter/meta-llama/llama-4-maverick,Llama 4,consultation,112,242,0.4628099173553719,0.6900826446280992
-openrouter/meta-llama/llama-4-maverick,Llama 4,procedure,43,242,0.17768595041322313,0.23140495867768596
-openrouter/qwen/qwen-2.5-72b-instruct,Qwen 2.5 72B,lab,111,218,0.5091743119266054,1.1055045871559632
-openrouter/qwen/qwen-2.5-72b-instruct,Qwen 2.5 72B,imaging,121,218,0.555045871559633,0.7981651376146789
-openrouter/qwen/qwen-2.5-72b-instruct,Qwen 2.5 72B,consultation,107,218,0.4908256880733945,0.7844036697247706
-openrouter/qwen/qwen-2.5-72b-instruct,Qwen 2.5 72B,procedure,39,218,0.17889908256880735,0.2018348623853211
-openrouter/google/gemini-3-pro-preview,Gemini 3 Pro,lab,73,145,0.503448275862069,1.4344827586206896
-openrouter/google/gemini-3-pro-preview,Gemini 3 Pro,imaging,90,145,0.6206896551724138,0.9655172413793104
-openrouter/google/gemini-3-pro-preview,Gemini 3 Pro,consultation,54,145,0.3724137931034483,0.4896551724137931
-openrouter/google/gemini-3-pro-preview,Gemini 3 Pro,procedure,40,145,0.27586206896551724,0.4068965517241379
+model,model_display,category,proportion
+openai/gpt-4o,GPT-4o,lab,0.1934
+openai/gpt-4o,GPT-4o,imaging,0.3849
+openai/gpt-4o,GPT-4o,consultation,0.3133
+openai/gpt-4o,GPT-4o,procedure,0.1354
+openai/gpt-4o-mini,GPT-4o Mini,lab,0.2805
+openai/gpt-4o-mini,GPT-4o Mini,imaging,0.5145
+openai/gpt-4o-mini,GPT-4o Mini,consultation,0.4004
+openai/gpt-4o-mini,GPT-4o Mini,procedure,0.1335
+openai/gpt-5.2,GPT-5.2,lab,0.8217
+openai/gpt-5.2,GPT-5.2,imaging,0.8721
+openai/gpt-5.2,GPT-5.2,consultation,0.562
+openai/gpt-5.2,GPT-5.2,procedure,0.5814
+openai/gpt-5.2-concise,GPT-5.2-Concise,lab,0.756
+openai/gpt-5.2-concise,GPT-5.2-Concise,imaging,0.8254
+openai/gpt-5.2-concise,GPT-5.2-Concise,consultation,0.5873
+openai/gpt-5.2-concise,GPT-5.2-Concise,procedure,0.5139
+openrouter/anthropic/claude-3.5-haiku,Claude 3.5 Haiku,lab,0.4425
+openrouter/anthropic/claude-3.5-haiku,Claude 3.5 Haiku,imaging,0.5326
+openrouter/anthropic/claude-3.5-haiku,Claude 3.5 Haiku,consultation,0.6494
+openrouter/anthropic/claude-3.5-haiku,Claude 3.5 Haiku,procedure,0.2835
+openrouter/anthropic/claude-sonnet-4,Claude Sonnet 4,lab,0.6093
+openrouter/anthropic/claude-sonnet-4,Claude Sonnet 4,imaging,0.6393
+openrouter/anthropic/claude-sonnet-4,Claude Sonnet 4,consultation,0.5271
+openrouter/anthropic/claude-sonnet-4,Claude Sonnet 4,procedure,0.3121
+openrouter/anthropic/claude-sonnet-4.5,Claude Sonnet 4.5,lab,0.6829
+openrouter/anthropic/claude-sonnet-4.5,Claude Sonnet 4.5,imaging,0.7621
+openrouter/anthropic/claude-sonnet-4.5,Claude Sonnet 4.5,consultation,0.5473
+openrouter/anthropic/claude-sonnet-4.5,Claude Sonnet 4.5,procedure,0.4271
+openrouter/deepseek/deepseek-r1,DeepSeek R1,lab,0.6152
+openrouter/deepseek/deepseek-r1,DeepSeek R1,imaging,0.7505
+openrouter/deepseek/deepseek-r1,DeepSeek R1,consultation,0.6438
+openrouter/deepseek/deepseek-r1,DeepSeek R1,procedure,0.4476
+openrouter/google/gemini-2.0-flash-001,Gemini 2.0 Flash,lab,0.5914
+openrouter/google/gemini-2.0-flash-001,Gemini 2.0 Flash,imaging,0.681
+openrouter/google/gemini-2.0-flash-001,Gemini 2.0 Flash,consultation,0.4496
+openrouter/google/gemini-2.0-flash-001,Gemini 2.0 Flash,procedure,0.2556
+openrouter/google/gemini-3-pro-preview,Gemini 3 Pro,lab,0.6184
+openrouter/google/gemini-3-pro-preview,Gemini 3 Pro,imaging,0.7339
+openrouter/google/gemini-3-pro-preview,Gemini 3 Pro,consultation,0.4873
+openrouter/google/gemini-3-pro-preview,Gemini 3 Pro,procedure,0.3405
+openrouter/meta-llama/llama-4-maverick,Llama 4 Maverick,lab,0.3064
+openrouter/meta-llama/llama-4-maverick,Llama 4 Maverick,imaging,0.4759
+openrouter/meta-llama/llama-4-maverick,Llama 4 Maverick,consultation,0.4605
+openrouter/meta-llama/llama-4-maverick,Llama 4 Maverick,procedure,0.2042
+openrouter/meta-llama/llama-4-scout,Llama 4 Scout,lab,0.3703
+openrouter/meta-llama/llama-4-scout,Llama 4 Scout,imaging,0.5658
+openrouter/meta-llama/llama-4-scout,Llama 4 Scout,consultation,0.5207
+openrouter/meta-llama/llama-4-scout,Llama 4 Scout,procedure,0.2594
+openrouter/mistralai/mistral-large,Mistral Large,lab,0.4514
+openrouter/mistralai/mistral-large,Mistral Large,imaging,0.6848
+openrouter/mistralai/mistral-large,Mistral Large,consultation,0.5233
+openrouter/mistralai/mistral-large,Mistral Large,procedure,0.3463
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen 2.5 72B,lab,0.454
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen 2.5 72B,imaging,0.6023
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen 2.5 72B,consultation,0.4916
+openrouter/qwen/qwen-2.5-72b-instruct,Qwen 2.5 72B,procedure,0.2083
+openrouter/qwen/qwen3-30b-a3b,Qwen3 30B,lab,0.3036
+openrouter/qwen/qwen3-30b-a3b,Qwen3 30B,imaging,0.4921
+openrouter/qwen/qwen3-30b-a3b,Qwen3 30B,consultation,0.5675
+openrouter/qwen/qwen3-30b-a3b,Qwen3 30B,procedure,0.256
+openrouter/x-ai/grok-4.1-fast,Grok 4.1,lab,0.7854
+openrouter/x-ai/grok-4.1-fast,Grok 4.1,imaging,0.8659
+openrouter/x-ai/grok-4.1-fast,Grok 4.1,consultation,0.8238
+openrouter/x-ai/grok-4.1-fast,Grok 4.1,procedure,0.4119

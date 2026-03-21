@@ -1,0 +1,499 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-5300182",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2021-11-23",
+  "url": "https://example.com/courtlistener-5300182",
+  "case_name": "Zaw v. Birusingh",
+  "neutral_citation": null,
+  "clinical_domain": "OBSTETRICS_GYNAECOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Zaw v. Birusingh. Medical malpractice case involving obstetrics gynaecology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Zaw was referred by his primary care physician to The Iowa Clinic, P.C. for a circumcision.",
+      "paragraph_ref": "21",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "At The Iowa Clinic, Zaw met with Dr. Kevin Birusingh. An interpreter hired by the clinic through LANGUAGEtech, Inc. attended the initial appointment.",
+      "paragraph_ref": "22",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "At the second appointment, at which Dr. Birusingh performed a vasectomy\u2014not a circumcision\u2014on Zaw.",
+      "paragraph_ref": "25",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "Zaw and Siama were given a 'consent for sterilization' form, which included language about how it was the patient\u2019s decision to be sterilized.",
+      "paragraph_ref": "66",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "The form mentioned 'bilateral vasectomy' at least twice.",
+      "paragraph_ref": "71",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "Zaw was given a 'No-Scalpel Vasectomy' brochure to take with him when he left.",
+      "paragraph_ref": "75",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "The jury awarded Zaw $500,000 for past loss of bodily function; $250,000 for future loss of bodily function.",
+      "paragraph_ref": "38",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "FACTUAL_FINDING",
+      "text": "The jury awarded Zaw $1,000,000 for past physical and mental pain and suffering; and $250,000 for future physical and mental pain and suffering.",
+      "paragraph_ref": "40",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "LEGAL_FINDING",
+      "text": "The jury concluded both that Dr. Birusingh was negligent and caused damage to Zaw and that Zaw was negligent or failed to mitigate his damages.",
+      "paragraph_ref": "35",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "LEGAL_FINDING",
+      "text": "It assigned 70% of the fault to Dr. Birusingh, and 30% to Zaw.",
+      "paragraph_ref": "36",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E011",
+      "type": "LEGAL_FINDING",
+      "text": "REVERSED AND REMANDED FOR NEW TRIAL.",
+      "paragraph_ref": "875",
+      "speaker": "Court conclusion"
+    },
+    {
+      "evidence_id": "E012",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Busky summarized his opinions during this exchange: Q: In terms of wrapping this up, insofar as your\u2014any criticism that you intend to offer of Dr. Birusingh at trial in this matter.",
+      "paragraph_ref": "7",
+      "speaker": "Expert witness"
+    },
+    {
+      "evidence_id": "E013",
+      "type": "EXPERT_TESTIMONY",
+      "text": "A. That\u2019s fair. Q. And when you say he didn\u2019t effectively communicate what he was going to do, that\u2019s based on the fact\u2014 A. Yeah.",
+      "paragraph_ref": "7",
+      "speaker": "Expert witness"
+    },
+    {
+      "evidence_id": "E014",
+      "type": "COURT_REASONING",
+      "text": "Because of the errors outlined above, we reverse the judgment and remand for a new trial on the informed-consent claim with all parties.",
+      "paragraph_ref": "873",
+      "speaker": "Judge's analysis"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "37 years",
+        "sex": "male",
+        "relevant_social_history": "Immigrant from Burma, first language is Burmese"
+      },
+      "chief_complaint": "Trouble urinating",
+      "history_of_present_illness": "Patient reports difficulty retracting foreskin and presence of a small bead under the skin on the dorsal shaft of the penis.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "genitalia": "Difficulty retracting foreskin, small bead under the skin on the dorsal shaft of the penis"
+        }
+      },
+      "initial_working_problem": "Phimosis with possible need for circumcision",
+      "known_constraints": null,
+      "initial_differential": [
+        "Phimosis",
+        "Foreign body under foreskin"
+      ],
+      "critical_findings": [
+        "Difficulty retracting foreskin",
+        "Presence of bead under skin"
+      ],
+      "urgency_level": "ROUTINE",
+      "evidence_ids": [
+        "E001",
+        "E046",
+        "E047"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSULT_NOTE",
+        "name": "Urology Consultation",
+        "description": "Consultation with urologist for circumcision evaluation",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Patient seen for vasectomy consult instead of circumcision",
+          "detailed_findings": null,
+          "clinical_significance": "Miscommunication regarding the intended procedure",
+          "decision_impact": "Led to incorrect procedure being performed",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E002",
+          "E003"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents to primary care physician with urinary issues",
+        "duration": "1 day",
+        "key_events": [
+          {
+            "event": "Referral to urologist for circumcision",
+            "timestamp": "22 December 2015",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Urology Consultation",
+        "description": "Patient seen by urologist for consultation",
+        "duration": "1 day",
+        "key_events": [
+          {
+            "event": "Consultation for vasectomy instead of circumcision",
+            "timestamp": "23 December 2015",
+            "evidence_ids": [
+              "E002",
+              "E003"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "procedure",
+        "name": "Vasectomy Procedure",
+        "description": "Vasectomy performed instead of circumcision",
+        "duration": "1 day",
+        "key_events": [
+          {
+            "event": "Vasectomy performed",
+            "timestamp": "29 January 2016",
+            "evidence_ids": [
+              "E003"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "decision",
+        "name": "Procedure Decision",
+        "description": "Decision and consent for procedure",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Consent form for vasectomy signed",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E004",
+              "E005"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient referred for circumcision but seen for vasectomy consult",
+        "prompt": "What should the physician confirm before proceeding with the procedure?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Confirm the intended procedure with the patient using an interpreter",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Ensures patient understanding and consent for the correct procedure"
+          },
+          {
+            "option_id": "B",
+            "description": "Proceed with vasectomy based on initial consultation notes",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Assumes patient understanding without direct confirmation"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant proceeded with vasectomy without confirming intended procedure",
+          "reasoning_stated": "Assumed patient consent based on consultation notes",
+          "evidence_ids": [
+            "E003",
+            "E004"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Physician should have confirmed the intended procedure with the patient",
+          "standard_of_care_basis": "Expert testimony emphasized the need for clear communication and confirmation",
+          "evidence_ids": [
+            "E012",
+            "E013"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to confirm the intended procedure led to performing an unwanted vasectomy",
+          "what_should_have_happened": "The physician should have used an interpreter to confirm the patient's understanding and consent for the correct procedure",
+          "legal_standard_applied": "Standard of care requires clear communication and informed consent",
+          "evidence_ids": [
+            "E012",
+            "E013",
+            "E014"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient underwent vasectomy instead of circumcision",
+        "severity": "PERMANENT_MODERATE_DISABILITY",
+        "long_term_effects": "Loss of bodily function related to sterilization",
+        "evidence_ids": [
+          "E007",
+          "E008"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "2000000",
+        "key_findings": [
+          "Breach of duty in failing to obtain informed consent for the correct procedure",
+          "Causation established - incorrect procedure performed"
+        ],
+        "evidence_ids": [
+          "E009",
+          "E010"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to confirm and perform the correct procedure",
+        "counterfactual": "Proper confirmation would have led to circumcision",
+        "evidence_ids": [
+          "E009",
+          "E010"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "22 December 2015",
+        "event": "Patient referred for circumcision",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "23 December 2015",
+        "event": "Consultation for vasectomy instead of circumcision",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002",
+          "E003"
+        ]
+      },
+      {
+        "timestamp": "29 January 2016",
+        "event": "Vasectomy performed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Patient referred for circumcision",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Consent form for vasectomy signed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004",
+          "E005"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [
+      {
+        "diagnosis": "Unintended sterilization",
+        "when_made": "Post-procedure",
+        "made_by": null,
+        "correct": false,
+        "evidence_ids": [
+          "E009"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Vasectomy",
+        "date": "29 January 2016",
+        "provider": null,
+        "outcome": "Unintended sterilization",
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "treatment": "Vasectomy",
+        "date": "Not documented in judgment",
+        "provider": null,
+        "outcome": "Performed instead of circumcision",
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Emotional distress",
+        "when_occurred": "Post-procedure",
+        "severity": "Moderate",
+        "evidence_ids": [
+          "E008"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to obtain informed consent",
+        "against": "Dr. Kevin Birusingh",
+        "found_proven": true,
+        "evidence_ids": [
+          "E009"
+        ]
+      },
+      {
+        "allegation": "Failure to obtain informed consent for the correct procedure",
+        "against": "Dr. Birusingh",
+        "found_proven": true,
+        "evidence_ids": [
+          "E009"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Failure to obtain informed consent",
+        "evidence_ids": [
+          "E009",
+          "E010"
+        ]
+      },
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Performed incorrect procedure without informed consent",
+        "evidence_ids": [
+          "E009"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "INFORMED_CONSENT",
+      "SYSTEM_COMMUNICATION"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.01598173515981735,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-17 07:30:59.951769",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

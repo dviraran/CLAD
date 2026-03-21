@@ -1,0 +1,636 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-2717314",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2014-08-12",
+  "url": "https://example.com/courtlistener-2717314",
+  "case_name": "Michael L. Mackey v. Steven B. Smith, M.D.",
+  "neutral_citation": null,
+  "clinical_domain": "NEUROLOGY",
+  "outcome_severity": "TEMPORARY_HARM",
+  "summary": {
+    "brief": "Michael L. Mackey v. Steven B. Smith, M.D.. Medical malpractice case involving neurology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "On September 17, 2007, DiStefano performed a total hip replacement on Mr. Mackey at St. Francis Hospital in Maryville, Missouri.",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "DiStefano placed a prosthetic hip stem into the canal of Mr. Mackey\u201fs femur.",
+      "paragraph_ref": "14",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "During the operation, a fluoroscopy-type x-ray was performed, reflecting that the prosthetic stem was placed at a varus (outward) angle in the canal of the femur.",
+      "paragraph_ref": "16",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "DiStefano did not take any post-operative x-rays after the surgery although he had been trained to do so.",
+      "paragraph_ref": "19",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "On October 1, 2007, Mr. Mackey was evaluated at DiStefano\u201fs office and Mr. Mackey reported at that time that he was doing well with his walker, but that he experienced pain when he attempted to walk with a cane.",
+      "paragraph_ref": "22",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "At the hospital, x-rays confirmed that Mr. Mackey had suffered a severely comminuted fracture of his femur.",
+      "paragraph_ref": "32",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "Smith performed the hip revision surgery on October 3, 2007.",
+      "paragraph_ref": "38",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "FACTUAL_FINDING",
+      "text": "The culture indicated heavy growth of the bacteria methicillin resistant staphylococcus aureus (MRSA).",
+      "paragraph_ref": "50",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "FACTUAL_FINDING",
+      "text": "Mackey was left on the doxycycline, and prosthetic removal surgery was scheduled for February 27, 2008.",
+      "paragraph_ref": "64",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "FACTUAL_FINDING",
+      "text": "Mackey underwent amputation of his right leg at the hip on August 12, 2008.",
+      "paragraph_ref": "71",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E011",
+      "type": "LEGAL_FINDING",
+      "text": "The jury found in favor of the Mackeys against both DiStefano and Smith, itemizing past and future economic and non-economic damages against DiStefano in the amount of $1,773,500 and against Smith in the amount of $1,684,000.",
+      "paragraph_ref": "86",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E012",
+      "type": "COURT_REASONING",
+      "text": "As long as nine jurors agree to liability and the amount of damages, a different nine jurors may apportion the damages between two defendants.",
+      "paragraph_ref": "185",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E013",
+      "type": "LEGAL_FINDING",
+      "text": "We affirm the judgment of the trial court in all respects.",
+      "paragraph_ref": "484",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "male",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Right hip pain and difficulty walking post-surgery",
+      "history_of_present_illness": "Patient underwent total hip replacement on September 17, 2007. Post-operatively, patient was allowed to bear weight as tolerated. On October 1, 2007, patient reported pain when walking with a cane.",
+      "past_medical_history": [
+        "Total hip replacement"
+      ],
+      "medications": [
+        "Not documented in judgment"
+      ],
+      "allergies": [
+        "Not documented in judgment"
+      ],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "musculoskeletal": "Pain in right hip when walking with a cane"
+        }
+      },
+      "initial_working_problem": "Post-operative hip pain",
+      "known_constraints": null,
+      "initial_differential": [
+        "Prosthetic misalignment",
+        "Post-operative infection"
+      ],
+      "critical_findings": [
+        "Pain with weight-bearing"
+      ],
+      "urgency_level": "ROUTINE",
+      "evidence_ids": [
+        "E001",
+        "E005"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "Post-operative X-ray",
+        "description": "X-ray to assess the position of the prosthetic hip",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not performed post-operatively",
+          "detailed_findings": null,
+          "clinical_significance": "Could have identified prosthetic misalignment",
+          "decision_impact": "Would have informed weight-bearing instructions",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "LAB",
+        "name": "Wound culture",
+        "description": "Culture of wound drainage to identify infection",
+        "available_phase": "followup",
+        "reveal": {
+          "result_summary": "Heavy growth of MRSA",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates presence of infection",
+          "decision_impact": "Should prompt consultation with infectious disease specialist",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E008"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents post-operatively with hip pain",
+        "duration": "2 weeks post-surgery",
+        "key_events": [
+          {
+            "event": "Patient reports pain with cane use",
+            "timestamp": "October 1, 2007",
+            "evidence_ids": [
+              "E005"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "followup",
+        "name": "Follow-up and Complications",
+        "description": "Patient develops complications post-surgery",
+        "duration": "Several months",
+        "key_events": [
+          {
+            "event": "MRSA infection identified",
+            "timestamp": "October 11, 2007",
+            "evidence_ids": [
+              "E008"
+            ]
+          },
+          {
+            "event": "Amputation performed",
+            "timestamp": "August 12, 2008",
+            "evidence_ids": [
+              "E010"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Post-operative Evaluation",
+        "description": "Evaluation of post-operative complications",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Positive MRSA culture identified",
+            "timestamp": "October 2007",
+            "evidence_ids": [
+              "E008"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Post-operative management of hip replacement",
+        "prompt": "Should post-operative X-rays be ordered?",
+        "action_type": "ORDER_TEST",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Order post-operative X-rays",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard practice to assess prosthetic alignment"
+          },
+          {
+            "option_id": "B",
+            "description": "Do not order post-operative X-rays",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Assumed alignment was adequate"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Did not order post-operative X-rays",
+          "reasoning_stated": "Considered alignment to be adequate",
+          "evidence_ids": [
+            "E004"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Post-operative X-rays should have been ordered",
+          "standard_of_care_basis": "Expert testimony indicated necessity for post-operative imaging",
+          "evidence_ids": [
+            "E004"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to order X-rays led to undetected misalignment",
+          "what_should_have_happened": "Post-operative X-rays would have informed proper management",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E004"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      },
+      {
+        "decision_id": "D002",
+        "phase_id": "followup",
+        "clinical_context": "Management of post-operative infection",
+        "prompt": "How should the MRSA infection be managed?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Consult infectious disease specialist and initiate IV antibiotics",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard care for deep-wound infections"
+          },
+          {
+            "option_id": "B",
+            "description": "Continue oral doxycycline",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Inadequate for deep-wound infection"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Continued oral doxycycline",
+          "reasoning_stated": "Believed it was sufficient",
+          "evidence_ids": [
+            "E059"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Consultation and IV antibiotics were necessary",
+          "standard_of_care_basis": "Expert testimony indicated need for aggressive infection management",
+          "evidence_ids": [
+            "E059"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Oral antibiotics were insufficient for MRSA",
+          "what_should_have_happened": "IV antibiotics and specialist consultation",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E059"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient underwent amputation of the right leg at the hip",
+        "severity": "PERMANENT_SEVERE_DISABILITY",
+        "long_term_effects": "Loss of limb, significant impact on quality of life",
+        "evidence_ids": [
+          "E010"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Failure to consult an infectious disease specialist",
+          "Causation established - earlier intervention could have prevented amputation"
+        ],
+        "evidence_ids": [
+          "E011",
+          "E013"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to consult an infectious disease specialist",
+        "counterfactual": "Consultation could have led to effective management of the infection",
+        "evidence_ids": [
+          "E008",
+          "E009",
+          "E011"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "September 17, 2007",
+        "event": "Total hip replacement performed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "October 1, 2007",
+        "event": "Patient reports pain with cane use",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "timestamp": "October 11, 2007",
+        "event": "MRSA infection identified",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E008"
+        ]
+      },
+      {
+        "timestamp": "August 12, 2008",
+        "event": "Amputation performed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E010"
+        ]
+      },
+      {
+        "timestamp": "September 17, 2007",
+        "event": "Total hip replacement surgery performed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "October 2007",
+        "event": "Positive MRSA culture identified",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E008"
+        ]
+      },
+      {
+        "timestamp": "August 12, 2008",
+        "event": "Amputation of right leg at the hip",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E010"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Wound culture",
+        "date": "October 11, 2007",
+        "result": "Heavy growth of MRSA",
+        "interpretation": null,
+        "evidence_ids": [
+          "E008"
+        ]
+      },
+      {
+        "test_name": "MRSA culture",
+        "date": "October 2007",
+        "result": "Positive",
+        "interpretation": null,
+        "evidence_ids": [
+          "E008"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "MRSA infection",
+        "when_made": "October 11, 2007",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E008"
+        ]
+      },
+      {
+        "diagnosis": "MRSA infection",
+        "when_made": "October 2007",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E008"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Oral doxycycline",
+        "date": "October 8, 2007",
+        "provider": null,
+        "outcome": "Inadequate for deep-wound infection",
+        "evidence_ids": [
+          "E045"
+        ]
+      },
+      {
+        "treatment": "Amputation of right leg",
+        "date": "August 12, 2008",
+        "provider": null,
+        "outcome": "Loss of limb",
+        "evidence_ids": [
+          "E010"
+        ]
+      },
+      {
+        "treatment": "Antibiotic therapy with doxycycline",
+        "date": "Not documented in judgment",
+        "provider": null,
+        "outcome": "Inadequate control of infection",
+        "evidence_ids": [
+          "E009"
+        ]
+      },
+      {
+        "treatment": "Amputation of right leg at the hip",
+        "date": "August 12, 2008",
+        "provider": null,
+        "outcome": "Loss of limb",
+        "evidence_ids": [
+          "E010"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "MRSA infection",
+        "when_occurred": "October 11, 2007",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E008"
+        ]
+      },
+      {
+        "complication": "MRSA infection",
+        "when_occurred": "October 2007",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E008"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to order post-operative X-rays",
+        "against": "Dr. DiStefano",
+        "found_proven": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "allegation": "Inadequate management of MRSA infection",
+        "against": "Dr. Smith",
+        "found_proven": true,
+        "evidence_ids": [
+          "E059"
+        ]
+      },
+      {
+        "allegation": "Failure to consult an infectious disease specialist",
+        "against": "Dr. Smith",
+        "found_proven": true,
+        "evidence_ids": [
+          "E008",
+          "E009"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendants breached duty of care",
+        "legal_significance": "Standard of care not met",
+        "evidence_ids": [
+          "E011"
+        ]
+      },
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Failure to meet standard of care",
+        "evidence_ids": [
+          "E011"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "TREATMENT_PROCEDURE_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.026694045174537988,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-16 16:28:18.896901",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

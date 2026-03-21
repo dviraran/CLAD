@@ -1,0 +1,466 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-4799738",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2020-10-23",
+  "url": "https://example.com/courtlistener-4799738",
+  "case_name": "Fisk v. McDonald",
+  "neutral_citation": null,
+  "clinical_domain": "OBSTETRICS_GYNAECOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Fisk v. McDonald. Medical malpractice case involving obstetrics gynaecology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "On March 10, 2015, McDonald performed an outpatient cervical spinal fusion surgery on Mrs. Fisk at the Hospital\u2019s facility.",
+      "paragraph_ref": "7",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "At approximately 12:45 p.m., before she could be discharged, Mrs. Fisk began suffering abdominal pain and nausea.",
+      "paragraph_ref": "7",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "At about 3:00 p.m., Mrs. Fisk experienced a large emesis (vomiting), which was reported to Sholtz.",
+      "paragraph_ref": "7",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "During the night, at 1:26 a.m., Mrs. Fisk told nursing staff that her stomach hurt and that she felt like she was dying.",
+      "paragraph_ref": "7",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "Pennings discovered that Mrs. Fisk had developed mesenteric artery ischemia, which is 'a loss of blood supply to the small intestines [sic] leading to end-organ loss.'",
+      "paragraph_ref": "7",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "EXPERT_TESTIMONY",
+      "text": "The Fisks retained Vernon R. Kubiak to provide an expert opinion as to the community standard of care applicable to nurses.",
+      "paragraph_ref": "7",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "EXPERT_TESTIMONY",
+      "text": "The Fisks retained Dr. Robert Y. Uyeda primarily to provide an expert opinion as to the element of causation.",
+      "paragraph_ref": "11",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "LEGAL_FINDING",
+      "text": "The district court did not err in initially granting summary judgment in favor of McDonald and the Hospital.",
+      "paragraph_ref": "30",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "LEGAL_FINDING",
+      "text": "The district court erred in denying the Fisks\u2019 motions for reconsideration.",
+      "paragraph_ref": "30",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "COURT_REASONING",
+      "text": "The district court erred in determining that the Fisks were required to plead a specific agency theory of liability.",
+      "paragraph_ref": "30",
+      "speaker": "Judge's analysis"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Abdominal pain and nausea",
+      "history_of_present_illness": "Post-operative day following cervical spinal fusion surgery, patient developed abdominal pain and nausea before discharge.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "abdomen": "Firm and distended abdomen with severe pain rated ten-out-of-ten"
+        }
+      },
+      "initial_working_problem": "Post-operative abdominal pain",
+      "known_constraints": null,
+      "initial_differential": [
+        "Post-operative ileus",
+        "Mesenteric ischemia",
+        "Gastrointestinal bleed"
+      ],
+      "critical_findings": [
+        "Coffee-ground emesis",
+        "Severe abdominal pain",
+        "Firm and distended abdomen"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002",
+        "E003",
+        "E004"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSULT_NOTE",
+        "name": "Intensivist Consultation",
+        "description": "Consultation with on-call intensivist for gastrointestinal evaluation",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Recommended transfer for gastrointestinal consult and possible endoscopy",
+          "detailed_findings": null,
+          "clinical_significance": "Indicated need for further evaluation of gastrointestinal symptoms",
+          "decision_impact": "Should have prompted immediate transfer for further evaluation",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Post-operative Presentation",
+        "description": "Patient develops symptoms post-surgery",
+        "duration": "12 hours",
+        "key_events": [
+          {
+            "event": "Patient experiences abdominal pain and nausea",
+            "timestamp": "March 11, 2015 12:45",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Symptom Escalation",
+        "description": "Symptoms worsen, requiring further evaluation",
+        "duration": "12 hours",
+        "key_events": [
+          {
+            "event": "Patient experiences coffee-ground emesis",
+            "timestamp": "March 12, 2015 01:26",
+            "evidence_ids": [
+              "E004"
+            ]
+          },
+          {
+            "event": "Intensivist recommends transfer",
+            "timestamp": "March 12, 2015 02:30",
+            "evidence_ids": [
+              "E005"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient with severe abdominal pain and coffee-ground emesis post-surgery",
+        "prompt": "Should the patient be transferred for further evaluation?",
+        "action_type": "ESCALATE_CARE",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Transfer patient to Kootenai Medical Center for gastrointestinal consult",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Urgent need for evaluation of potential gastrointestinal bleed or ischemia"
+          },
+          {
+            "option_id": "B",
+            "description": "Prepare patient for possible scope at current facility",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Delayed appropriate care for critical condition"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant chose to prepare for possible scope instead of immediate transfer",
+          "reasoning_stated": "Decision to manage at current facility",
+          "evidence_ids": [
+            "E005"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Immediate transfer for gastrointestinal consult should have been done",
+          "standard_of_care_basis": "Expert evidence indicated need for urgent transfer",
+          "evidence_ids": [
+            "E005"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to transfer delayed critical care",
+          "what_should_have_happened": "Immediate transfer for further evaluation",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E005"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient developed mesenteric artery ischemia",
+        "severity": "SEVERE",
+        "long_term_effects": "Not documented in judgment",
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "0",
+        "key_findings": [
+          "Summary judgment granted due to lack of expert testimony on standard of care"
+        ],
+        "evidence_ids": [
+          "E008",
+          "E009"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Failure to order imaging",
+        "counterfactual": "Imaging could have identified ischemia earlier",
+        "evidence_ids": [
+          "E006",
+          "E007"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "March 10, 2015",
+        "event": "Cervical spinal fusion surgery performed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "March 11, 2015 12:45",
+        "event": "Patient experiences abdominal pain and nausea",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "March 12, 2015 01:26",
+        "event": "Patient reports severe abdominal pain and coffee-ground emesis",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "timestamp": "March 12, 2015 02:30",
+        "event": "Intensivist recommends transfer for further evaluation",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "timestamp": "March 10, 2015",
+        "event": "Cervical spinal fusion surgery performed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "March 10, 2015 12:45 p.m.",
+        "event": "Patient reports abdominal pain",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "March 10, 2015 3:00 p.m.",
+        "event": "Patient experiences large emesis",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [
+      {
+        "diagnosis": "Mesenteric artery ischemia",
+        "when_made": "March 12, 2015",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "diagnosis": "Mesenteric artery ischemia",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Exploratory laparotomy and bowel resection",
+        "date": "March 12, 2015",
+        "provider": null,
+        "outcome": "Significant bowel resection",
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Mesenteric artery ischemia",
+        "when_occurred": "March 12, 2015",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "complication": "Mesenteric artery ischemia",
+        "when_occurred": "Not documented in judgment",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to transfer for urgent care",
+        "against": "Hospital and staff",
+        "found_proven": false,
+        "evidence_ids": [
+          "E008"
+        ]
+      },
+      {
+        "allegation": "Failure to order imaging",
+        "against": "Defendant surgeon",
+        "found_proven": false,
+        "evidence_ids": [
+          "E008"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Failure to establish community standard of care",
+        "legal_significance": "Summary judgment for defendants",
+        "evidence_ids": [
+          "E008"
+        ]
+      },
+      {
+        "finding": "Summary judgment granted due to lack of expert testimony on standard of care",
+        "legal_significance": "Plaintiff failed to establish standard of care",
+        "evidence_ids": [
+          "E008",
+          "E009"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.35714285714285715,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-09 16:04:12.725986",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

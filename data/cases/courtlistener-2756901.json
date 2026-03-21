@@ -1,0 +1,538 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-2756901",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2014-12-02",
+  "url": "https://example.com/courtlistener-2756901",
+  "case_name": "Elher v. Misra",
+  "neutral_citation": null,
+  "clinical_domain": "PAEDIATRICS",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Elher v. Misra. Medical malpractice case involving paediatrics.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Defendant Dwijen Misra, Jr., a general surgeon, clipped the wrong bile duct during plaintiff Paulette Elher\u2019s laparoscopic gallbladder surgery.",
+      "paragraph_ref": "39",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Plaintiff\u2019s expert, a general surgeon with extensive experience in the procedure, testified that clipping a patient\u2019s common bile duct during an otherwise uncomplicated operation is a breach of the standard of care.",
+      "paragraph_ref": "39",
+      "speaker": "Plaintiff's expert"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Defendants\u2019 expert opined that bile duct injuries frequently occur even absent professional negligence.",
+      "paragraph_ref": "39",
+      "speaker": "Defendant's expert"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "LEGAL_FINDING",
+      "text": "The trial court incorrectly applied MRE 702 and abused its discretion by excluding the testimony of plaintiff\u2019s expert witness, Dr. Paul Priebe.",
+      "paragraph_ref": "40",
+      "speaker": "Court conclusion"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "Approximately nine weeks after the operation, Elher presented at a hospital with abdominal pain, nausea, vomiting, and jaundice.",
+      "paragraph_ref": "45",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Priebe, an associate professor of surgery at Case Western Reserve University, performs 50 to 80 laparoscopic gallbladder surgeries each year and has done so since learning the technique in 1990.",
+      "paragraph_ref": "58",
+      "speaker": "Plaintiff's expert"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Misra has performed approximately 3,000 to 5,000 such procedures and twice clipped the wrong duct, Elher\u2019s surgery included.",
+      "paragraph_ref": "57",
+      "speaker": "Defendant"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "LEGAL_FINDING",
+      "text": "The trial court correctly concluded that the res ipsa loquitur doctrine does not apply to Elher\u2019s medical malpractice claims.",
+      "paragraph_ref": "173",
+      "speaker": "Court conclusion"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "COURT_REASONING",
+      "text": "The manner in which a surgeon laparoscopically removes a gallbladder falls far outside the common knowledge of a layperson.",
+      "paragraph_ref": "181",
+      "speaker": "Court reasoning"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Abdominal pain, nausea, vomiting, and jaundice",
+      "history_of_present_illness": "Approximately nine weeks after laparoscopic cholecystectomy, patient presented with symptoms indicating possible bile duct obstruction.",
+      "past_medical_history": [
+        "Laparoscopic cholecystectomy"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "abdomen": "Examination mentioned but findings not specified"
+        }
+      },
+      "initial_working_problem": "Suspected bile duct obstruction",
+      "known_constraints": null,
+      "initial_differential": [
+        "Bile duct injury",
+        "Post-surgical complication"
+      ],
+      "critical_findings": [
+        "Jaundice",
+        "Abdominal pain"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E005"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "ERCP",
+        "description": "Endoscopic retrograde cholangiopancreatography to assess bile duct obstruction",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Clip obstructing the common hepatic duct",
+          "detailed_findings": null,
+          "clinical_significance": "Confirms bile duct obstruction due to surgical clip",
+          "decision_impact": "Necessitated surgical intervention to remove clip and reconstruct biliary drainage",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with symptoms of bile duct obstruction",
+        "duration": "Not specified in judgment",
+        "key_events": [
+          {
+            "event": "Patient presents with abdominal pain, nausea, vomiting, and jaundice",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E005"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Diagnostic Workup",
+        "description": "ERCP performed to assess bile duct obstruction",
+        "duration": "Not specified in judgment",
+        "key_events": [
+          {
+            "event": "ERCP reveals clip obstructing common hepatic duct",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E005"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "procedure",
+        "name": "Surgical Procedure",
+        "description": "Laparoscopic cholecystectomy performed",
+        "duration": "Not specified in judgment",
+        "key_events": [
+          {
+            "event": "Common bile duct clipped during surgery",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "procedure",
+        "clinical_context": "During laparoscopic cholecystectomy",
+        "prompt": "What should the surgeon do to ensure correct identification of the cystic duct?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Convert to open procedure if anatomical structures are not clearly identified",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Ensures accurate identification of biliary anatomy, reducing risk of injury"
+          },
+          {
+            "option_id": "B",
+            "description": "Proceed with clipping based on laparoscopic view",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Risk of optical illusions leading to misidentification of ducts"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant proceeded with clipping based on laparoscopic view",
+          "reasoning_stated": "Defendant stated that injuries can occur even with due care",
+          "evidence_ids": [
+            "E001",
+            "E003"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Convert to open procedure if anatomical structures are not clearly identified",
+          "standard_of_care_basis": "Expert testimony indicated this as standard practice to avoid duct injury",
+          "evidence_ids": [
+            "E002"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to ensure clear identification of biliary anatomy led to duct injury",
+          "what_should_have_happened": "Conversion to open procedure should have been considered",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E002",
+            "E004"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient experienced complications from bile duct injury",
+        "severity": "Not documented in judgment",
+        "long_term_effects": "Not documented in judgment",
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "Not applicable",
+        "key_findings": [
+          "Court found that bile duct injuries can occur even with standard care",
+          "Expert testimony was excluded, affecting the plaintiff's case"
+        ],
+        "evidence_ids": [
+          "E003",
+          "E004",
+          "E182"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Failure to confirm duct anatomy",
+        "counterfactual": "Use of intraoperative cholangiography could have prevented the injury",
+        "evidence_ids": [
+          "E002",
+          "E155"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Patient presents with abdominal pain, nausea, vomiting, and jaundice",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Patient presents with abdominal pain, nausea, and vomiting",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Patient presents with abdominal pain, nausea, vomiting, and jaundice",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Patient presents with abdominal pain, nausea, and vomiting",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "ERCP",
+        "date": "Date not specified in judgment",
+        "result": "Clip obstructing common hepatic duct",
+        "interpretation": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "test_name": "ERCP",
+        "date": "Date not specified in judgment",
+        "result": "Clip obstructing common hepatic duct",
+        "interpretation": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Bile duct obstruction due to surgical clip",
+        "when_made": "Date not specified in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "diagnosis": "Bile duct injury",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "diagnosis": "Bile duct obstruction due to surgical clip",
+        "when_made": "Date not specified in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Surgery to remove clip and reconstruct biliary drainage",
+        "date": "Date not specified in judgment",
+        "provider": null,
+        "outcome": "Clip removed, biliary drainage reconstructed",
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "treatment": "Extensive repair surgery",
+        "date": "Not documented in judgment",
+        "provider": null,
+        "outcome": "Repair of bile duct injury",
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "treatment": "Surgery to remove clip and reconstruct biliary drainage",
+        "date": "Date not specified in judgment",
+        "provider": null,
+        "outcome": "Successful removal and reconstruction",
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Bile duct obstruction",
+        "when_occurred": "Approximately nine weeks post-surgery",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "complication": "Bile duct injury",
+        "when_occurred": "During laparoscopic cholecystectomy",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "complication": "Bile duct injury",
+        "when_occurred": "During initial surgery",
+        "severity": "Moderate",
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "complication": "Bile duct injury",
+        "when_occurred": "During laparoscopic cholecystectomy",
+        "severity": "Not documented in judgment",
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to ensure correct identification of biliary anatomy",
+        "against": "Defendant surgeon",
+        "found_proven": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "allegation": "Failure to convert to open procedure",
+        "against": "Defendant surgeon",
+        "found_proven": true,
+        "evidence_ids": [
+          "E001",
+          "E002"
+        ]
+      },
+      {
+        "allegation": "Failure to refrain from clipping the common bile duct",
+        "against": "Defendant surgeon",
+        "found_proven": false,
+        "evidence_ids": [
+          "E004",
+          "E040"
+        ]
+      },
+      {
+        "allegation": "Failure to confirm duct anatomy",
+        "against": "Defendant surgeon",
+        "found_proven": false,
+        "evidence_ids": [
+          "E002",
+          "E155"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Standard of care not met",
+        "evidence_ids": [
+          "E002",
+          "E004"
+        ]
+      },
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Standard of care not met",
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "finding": "Trial court incorrectly excluded expert testimony",
+        "legal_significance": "Case dismissed due to lack of admissible expert testimony",
+        "evidence_ids": [
+          "E004",
+          "E040"
+        ]
+      },
+      {
+        "finding": "Bile duct injuries can occur even with standard care",
+        "legal_significance": "No liability found",
+        "evidence_ids": [
+          "E003",
+          "E182"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "TREATMENT_PROCEDURE_ERROR",
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.04712041884816754,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-09 18:55:22.440136",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

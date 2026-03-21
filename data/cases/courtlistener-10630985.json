@@ -1,0 +1,606 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10630985",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2022-12-27",
+  "url": "https://example.com/courtlistener-10630985",
+  "case_name": "Arlene Wickham v. Jean Hummel",
+  "neutral_citation": null,
+  "clinical_domain": "SURGERY_ORTHOPAEDIC",
+  "outcome_severity": "PERMANENT_SEVERE_DISABILITY",
+  "summary": {
+    "brief": "Arlene Wickham v. Jean Hummel. Medical malpractice case involving paediatrics.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Wickham ultimately underwent a below-the-knee amputation following her knee replacement surgery.",
+      "paragraph_ref": "8",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "The jury found Hummel, a registered nurse, 100% at fault for injuries Wickham sustained.",
+      "paragraph_ref": "6",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "Wickham underwent left knee replacement surgery at North Kansas City Hospital on February 17, 2016.",
+      "paragraph_ref": "16",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. Smith performed the surgery, which concluded at 12:39 p.m.",
+      "paragraph_ref": "17",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. Smith inadvertently cut Wickham’s anterior tibial artery, which runs behind the knee joint.",
+      "paragraph_ref": "18",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "The bleeding caused by this cut went undetected and untreated for approximately two days.",
+      "paragraph_ref": "19",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "Wickham required emergency surgery to repair the cut in an attempt to save the function of her leg.",
+      "paragraph_ref": "20",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "FACTUAL_FINDING",
+      "text": "After ten months of extensive rehabilitation efforts, which were unable to restore full function to her leg, Wickham underwent a left below-the-knee amputation in December 2016.",
+      "paragraph_ref": "22",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. Smith wrote an order that nurses were to perform neurovascular assessments every four hours for 24-hours following surgery.",
+      "paragraph_ref": "26",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "FACTUAL_FINDING",
+      "text": "Hummel was a nurse at North Kansas City Hospital who worked the day shift, 7:00 a.m. to 7:00 p.m., on February 18, 2016.",
+      "paragraph_ref": "32",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E011",
+      "type": "FACTUAL_FINDING",
+      "text": "Hummel assessed Wickham’s dorsiflexion and plantar flexion, which test certain nerve function, as “poor.”",
+      "paragraph_ref": "48",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E012",
+      "type": "FACTUAL_FINDING",
+      "text": "Hummel did not report Wickham’s status to Dr. Smith.",
+      "paragraph_ref": "49",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E013",
+      "type": "FACTUAL_FINDING",
+      "text": "The physical therapist noted Wickham was experiencing calf soreness, which is a possible sign of a blood clot.",
+      "paragraph_ref": "52",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E014",
+      "type": "FACTUAL_FINDING",
+      "text": "Calf pain is not expected after a total knee replacement.",
+      "paragraph_ref": "54",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E015",
+      "type": "FACTUAL_FINDING",
+      "text": "Wickham’s reported pain increased throughout the morning. Wickham rated her pain as a “2” on a 10-point scale at 6:10 a.m., “9” at 8:28 a.m. and 11:38 a.m., and “10” at 12:18 p.m.",
+      "paragraph_ref": "56",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E016",
+      "type": "FACTUAL_FINDING",
+      "text": "Hummel did not notify Dr. Smith of Wickham’s increased pain.",
+      "paragraph_ref": "58",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E017",
+      "type": "FACTUAL_FINDING",
+      "text": "Hummel claims that she spoke with a receptionist from Dr. Smith’s office for approval to get an ultrasound but did not speak with Dr. Smith directly.",
+      "paragraph_ref": "59",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E018",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. Smith denies having knowledge of any call from Hummel, and Hummel did not document the call in Wickham’s chart.",
+      "paragraph_ref": "61",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E019",
+      "type": "FACTUAL_FINDING",
+      "text": "Hummel did not document performing any neurovascular assessments in the morning after 8:00 a.m. throughout the afternoon.",
+      "paragraph_ref": "67",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E020",
+      "type": "FACTUAL_FINDING",
+      "text": "Hummel was concerned about Wickham’s condition throughout the day, and at 5:55 p.m., Hummel contacted the “STAT team” because Wickham had decreased urine output and had not voided during the entirety of Hummel’s shift.",
+      "paragraph_ref": "71",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E021",
+      "type": "FACTUAL_FINDING",
+      "text": "Hummel called Dr. Smith around 6:30 p.m., the first recorded time she contacted him all day.",
+      "paragraph_ref": "80",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E022",
+      "type": "FACTUAL_FINDING",
+      "text": "Hummel’s charting on February 18 was so deficient that when she came in for her shift on February 19, her supervisor told her to get her charts up-to-date.",
+      "paragraph_ref": "91",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E023",
+      "type": "LEGAL_FINDING",
+      "text": "The trial court’s amended judgment is affirmed.",
+      "paragraph_ref": "656",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Postoperative care following left knee replacement surgery",
+      "history_of_present_illness": "Patient underwent left knee replacement surgery on February 17, 2016. Post-surgery, the anterior tibial artery was inadvertently cut, leading to undetected bleeding.",
+      "past_medical_history": [
+        "Not documented in judgment"
+      ],
+      "medications": [
+        "Not documented in judgment"
+      ],
+      "allergies": [
+        "Not documented in judgment"
+      ],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "neurovascular": "Poor dorsiflexion and plantar flexion noted at 8:00 a.m. on February 18, 2016"
+        }
+      },
+      "initial_working_problem": "Postoperative monitoring following knee replacement",
+      "known_constraints": null,
+      "initial_differential": [
+        "Postoperative bleeding",
+        "Blood clot"
+      ],
+      "critical_findings": [
+        "Increased pain",
+        "Calf soreness",
+        "Poor neurovascular function"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E003",
+        "E005",
+        "E011",
+        "E013"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "Ultrasound",
+        "description": "Ultrasound to assess for blood clots or bleeding",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not documented in judgment",
+          "detailed_findings": null,
+          "clinical_significance": "Could identify bleeding or clot",
+          "decision_impact": "Should prompt further intervention",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E017",
+          "E018"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "IMAGING",
+        "name": "Ultrasound of Lower Extremity",
+        "description": "Ultrasound to assess for vascular injury",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not documented in judgment",
+          "detailed_findings": null,
+          "clinical_significance": "Could identify vascular compromise",
+          "decision_impact": "Should prompt surgical intervention",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": [
+          "E017",
+          "E018"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Postoperative Monitoring",
+        "description": "Initial postoperative period following knee replacement",
+        "duration": "24 hours",
+        "key_events": [
+          {
+            "event": "Surgery completed",
+            "timestamp": "February 17, 2016 12:39 p.m.",
+            "evidence_ids": [
+              "E004"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Day After Surgery",
+        "description": "Monitoring and assessment on February 18, 2016",
+        "duration": "12 hours",
+        "key_events": [
+          {
+            "event": "Neurovascular assessment at 8:00 a.m.",
+            "timestamp": "February 18, 2016 8:00 a.m.",
+            "evidence_ids": [
+              "E011"
+            ]
+          },
+          {
+            "event": "Physical therapy session",
+            "timestamp": "February 18, 2016 8:30 a.m.",
+            "evidence_ids": [
+              "E013"
+            ]
+          },
+          {
+            "event": "Increased pain reported",
+            "timestamp": "February 18, 2016 12:18 p.m.",
+            "evidence_ids": [
+              "E015"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient showing signs of neurovascular compromise post-surgery",
+        "prompt": "What should the nurse do upon noticing poor neurovascular function?",
+        "action_type": "ESCALATE_CARE",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Notify Dr. Smith immediately",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Timely notification could prevent further complications"
+          },
+          {
+            "option_id": "B",
+            "description": "Monitor and reassess later",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Delay in notification can lead to worsening condition"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Nurse did not notify Dr. Smith immediately",
+          "reasoning_stated": "Nurse did not perceive immediate need",
+          "evidence_ids": [
+            "E012",
+            "E016"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Immediate notification to Dr. Smith was required",
+          "standard_of_care_basis": "Expert testimony and hospital policy",
+          "evidence_ids": [
+            "E009",
+            "E265"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to notify led to delayed intervention",
+          "what_should_have_happened": "Immediate notification and intervention",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E265",
+            "E266"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient underwent below-the-knee amputation following complications",
+        "severity": "PERMANENT_SEVERE_DISABILITY",
+        "long_term_effects": "Loss of limb, extensive rehabilitation required",
+        "evidence_ids": [
+          "E001",
+          "E008"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not specified in judgment",
+        "key_findings": [
+          "Nurse Hummel found 100% at fault for failing to notify physician",
+          "Causation established - earlier intervention could have prevented amputation"
+        ],
+        "evidence_ids": [
+          "E002",
+          "E023"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to notify physician and perform necessary imaging",
+        "counterfactual": "Timely intervention could have preserved limb function",
+        "evidence_ids": [
+          "E002",
+          "E013",
+          "E016"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "February 17, 2016 12:39 p.m.",
+        "event": "Surgery completed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "timestamp": "February 18, 2016 8:00 a.m.",
+        "event": "Neurovascular assessment performed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E011"
+        ]
+      },
+      {
+        "timestamp": "February 18, 2016 8:30 a.m.",
+        "event": "Physical therapy session",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E013"
+        ]
+      },
+      {
+        "timestamp": "February 18, 2016 12:18 p.m.",
+        "event": "Increased pain reported",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E015"
+        ]
+      },
+      {
+        "timestamp": "February 17, 2016 12:39",
+        "event": "Surgery completed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Neurovascular assessments ordered",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E009"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Ultrasound",
+        "date": "February 18, 2016",
+        "result": "Not documented in judgment",
+        "interpretation": null,
+        "evidence_ids": [
+          "E017"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Postoperative bleeding",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "diagnosis": "Vascular injury post knee replacement",
+        "when_made": "Not specified in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Emergency surgery to repair artery",
+        "date": "Not documented in judgment",
+        "provider": null,
+        "outcome": "Attempt to save leg function",
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      {
+        "treatment": "Emergency surgery to repair artery",
+        "date": "Not specified in judgment",
+        "provider": null,
+        "outcome": "Attempt to save leg function",
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Below-the-knee amputation",
+        "when_occurred": "December 2016",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "complication": "Below-the-knee amputation",
+        "when_occurred": "Not specified in judgment",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to notify physician of deteriorating condition",
+        "against": "Nurse Jean Hummel",
+        "found_proven": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "allegation": "Failure to notify physician of deteriorating condition",
+        "against": "Nurse Hummel",
+        "found_proven": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Nurse breached standard of care by failing to notify physician",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E444"
+        ]
+      },
+      {
+        "finding": "Nurse Hummel breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "MONITORING_FOLLOWUP",
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.03484848484848485,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-09 14:07:19.067777",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

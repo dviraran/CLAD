@@ -1,0 +1,461 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10796440",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2026-01-16",
+  "url": "https://example.com/courtlistener-10796440",
+  "case_name": "James Willey v. Phoenix Rehabilitation and Health Services, Inc.",
+  "neutral_citation": null,
+  "clinical_domain": "PAEDIATRICS",
+  "outcome_severity": "TEMPORARY_HARM",
+  "summary": {
+    "brief": "James Willey v. Phoenix Rehabilitation and Health Services, Inc.. Medical malpractice case involving paediatrics.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Nearly four weeks after undergoing a microdiscectomy at L4-5, plaintiff James Willey sought the services of Phoenix Rehabilitation and Health Services, Inc.",
+      "paragraph_ref": "8",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Despite Willey informing Phoenix Rehabilitation of this restriction, during an initial evaluation the therapist instructed Willey to bend.",
+      "paragraph_ref": "12",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "An MRI later revealed that the disk that required his first surgery had re-herniated, and as a result, Willey needed a second surgery.",
+      "paragraph_ref": "14",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "LEGAL_FINDING",
+      "text": "Phoenix Rehabilitation is entitled to summary judgment on punitive damages.",
+      "paragraph_ref": "1",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "LEGAL_FINDING",
+      "text": "Willey is entitled to summary judgment on Phoenix Rehabilitation’s fourth and eighth Affirmative Defenses.",
+      "paragraph_ref": "2",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "On August 23, 2021, Dr. Justin Tortolani performed a Right L4-L5 microdiscectomy on Willey to repair disk herniation.",
+      "paragraph_ref": "35",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "Willey was diagnosed with Deep Vein Thrombosis shortly after the surgery.",
+      "paragraph_ref": "37",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "FACTUAL_FINDING",
+      "text": "On September 7, 2021, at Willey’s post-op appointment, Dr. Tortolani recommended that Willey continue to be mindful of waist bending and heavy lifting or twisting.",
+      "paragraph_ref": "39",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "FACTUAL_FINDING",
+      "text": "Willey presented to Phoenix Rehabilitation for an initial evaluation and treatment plan.",
+      "paragraph_ref": "46",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. Policare discussed with Willey his background, pain and discomfort levels, and his current activity level.",
+      "paragraph_ref": "49",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E011",
+      "type": "FACTUAL_FINDING",
+      "text": "Willey presented with pain and stiffness in the low back, tenderness to palpation, decreased range of motion, an antalgic gait, and was relatively sedentary post-surgery.",
+      "paragraph_ref": "51",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E012",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. Policare did not discuss any restrictions imposed by Dr. Tortolani.",
+      "paragraph_ref": "54",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E013",
+      "type": "FACTUAL_FINDING",
+      "text": "A September 17, 2021, MRI revealed that the same disk (L4-L5) herniated again.",
+      "paragraph_ref": "75",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E014",
+      "type": "LEGAL_FINDING",
+      "text": "Punitive damages are available only upon a showing of willful or wanton conduct.",
+      "paragraph_ref": "232",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E015",
+      "type": "LEGAL_FINDING",
+      "text": "Phoenix Rehabilitation’s Motion is GRANTED.",
+      "paragraph_ref": "236",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "male",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Low back pain and stiffness",
+      "history_of_present_illness": "Nearly four weeks post-microdiscectomy at L4-5, patient sought physical therapy services. He was under a physician's restriction to avoid bending at the waist.",
+      "past_medical_history": [
+        "L4-L5 microdiscectomy",
+        "Deep Vein Thrombosis"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "spine": "Pain and stiffness in the low back, tenderness to palpation, decreased range of motion, antalgic gait"
+        }
+      },
+      "initial_working_problem": "Post-operative rehabilitation following microdiscectomy",
+      "known_constraints": null,
+      "initial_differential": [
+        "Post-surgical recovery",
+        "Re-herniation of disk"
+      ],
+      "critical_findings": [
+        "Pain upon bending",
+        "Restriction against bending"
+      ],
+      "urgency_level": "ROUTINE",
+      "evidence_ids": [
+        "E001",
+        "E008",
+        "E011"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "MRI of lumbar spine",
+        "description": "MRI to assess the status of the L4-L5 disk post-surgery",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Re-herniation of the L4-L5 disk",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates need for further surgical intervention",
+          "decision_impact": "Confirms re-herniation, necessitating a second surgery",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E003",
+          "E013"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation to Physical Therapy",
+        "description": "Patient presents for initial evaluation post-microdiscectomy",
+        "duration": "1 hour",
+        "key_events": [
+          {
+            "event": "Discussion of pain and activity level",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E010"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Physical Therapy Evaluation",
+        "description": "Evaluation of patient's range of motion and physical condition",
+        "duration": "1 hour",
+        "key_events": [
+          {
+            "event": "Instruction to bend forward",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E063"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient in physical therapy post-microdiscectomy",
+        "prompt": "Should the physical therapist instruct the patient to bend forward?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Instruct patient to avoid bending and follow physician's restrictions",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Adhering to post-operative restrictions to prevent re-injury"
+          },
+          {
+            "option_id": "B",
+            "description": "Instruct patient to bend forward to assess range of motion",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Assessment of range of motion despite known restrictions"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant instructed patient to bend forward",
+          "reasoning_stated": "To evaluate range of motion",
+          "evidence_ids": [
+            "E002",
+            "E063"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Patient should not have been instructed to bend",
+          "standard_of_care_basis": "Physician's post-operative restrictions should be followed",
+          "evidence_ids": [
+            "E008",
+            "E118"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Ignoring physician's restrictions led to re-injury",
+          "what_should_have_happened": "Patient should have been advised to avoid bending",
+          "legal_standard_applied": "Standard of care requires adherence to physician's post-operative instructions",
+          "evidence_ids": [
+            "E118",
+            "E119"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient experienced re-herniation of the L4-L5 disk, requiring a second surgery",
+        "severity": "MODERATE_TEMPORARY_DISABILITY",
+        "long_term_effects": "Potential for chronic back pain and further complications",
+        "evidence_ids": [
+          "E003",
+          "E075"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "0",
+        "key_findings": [
+          "No willful or wanton conduct found",
+          "Summary judgment granted for defendant on punitive damages"
+        ],
+        "evidence_ids": [
+          "E004",
+          "E015"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Failure to adhere to post-operative restrictions",
+        "counterfactual": "Adherence to restrictions could have prevented re-herniation",
+        "evidence_ids": [
+          "E118",
+          "E119"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "August 23, 2021",
+        "event": "Right L4-L5 microdiscectomy performed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "timestamp": "September 7, 2021",
+        "event": "Post-op appointment with Dr. Tortolani",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E008"
+        ]
+      },
+      {
+        "timestamp": "September 16, 2021",
+        "event": "Initial evaluation at Phoenix Rehabilitation",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E009"
+        ]
+      },
+      {
+        "timestamp": "September 17, 2021",
+        "event": "MRI reveals re-herniation of L4-L5 disk",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E013"
+        ]
+      },
+      {
+        "timestamp": "September 27, 2021",
+        "event": "Second surgery performed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E075"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "MRI of lumbar spine",
+        "date": "September 17, 2021",
+        "result": "Re-herniation of L4-L5 disk",
+        "interpretation": null,
+        "evidence_ids": [
+          "E013"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Re-herniation of L4-L5 disk",
+        "when_made": "September 17, 2021",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E013"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Second surgery for disk herniation",
+        "date": "September 27, 2021",
+        "provider": null,
+        "outcome": "Surgical intervention required",
+        "evidence_ids": [
+          "E075"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Re-herniation of disk",
+        "when_occurred": "September 17, 2021",
+        "severity": "Moderate",
+        "evidence_ids": [
+          "E013"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to adhere to post-operative restrictions",
+        "against": "Phoenix Rehabilitation",
+        "found_proven": false,
+        "evidence_ids": [
+          "E004",
+          "E015"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "No willful or wanton conduct by Phoenix Rehabilitation",
+        "legal_significance": "No punitive damages awarded",
+        "evidence_ids": [
+          "E004",
+          "E015"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.061224489795918366,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-09 16:22:58.434127",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

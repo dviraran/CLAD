@@ -1,0 +1,423 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-4762357",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2020-06-19",
+  "url": "https://example.com/courtlistener-4762357",
+  "case_name": "Hoke v. Miami Valley Hosp.",
+  "neutral_citation": null,
+  "clinical_domain": "OBSTETRICS_GYNAECOLOGY",
+  "outcome_severity": "PERMANENT_SEVERE_DISABILITY",
+  "summary": {
+    "brief": "Hoke v. Miami Valley Hosp.. Medical malpractice case involving obstetrics gynaecology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "In November 2012, on a referral from her gynecologist, Jacqueline Hoke was seen by Debra Miller, M.D., a surgeon board-certified in obstetrics and gynecology and in the sub-specialty of female pelvic medicine and reconstructive surgery.",
+      "paragraph_ref": "20",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "The April 1, 2013 surgery began with Dr. Miller robotically performing the sacrocolpopexy procedure.",
+      "paragraph_ref": "38",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "She encountered bleeding. She tied the stitch down to see if what she described in her operation note as 'copious venous bleeding' would resolve. It did not.",
+      "paragraph_ref": "42",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "Subsequent to the surgery, Mrs. Hoke developed deep vein thrombosis (DVT) and a post-thrombotic syndrome.",
+      "paragraph_ref": "60",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Earle M. Pescatore, Jr. is a urogynecologist and a gynecologist practicing in Iowa. Dr. Pescatore testified that it was below the standard of care to fail to identify anatomical 'landmarks' and to have damaged the iliac vein in this surgery.",
+      "paragraph_ref": "116",
+      "speaker": "Dr. Earle M. Pescatore, Jr."
+    },
+    {
+      "evidence_id": "E006",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Steven McCarus distinguished a surgical 'complication' from a breach of the standard of care.",
+      "paragraph_ref": "133",
+      "speaker": "Dr. Steven McCarus"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "LEGAL_FINDING",
+      "text": "The jury returned general verdicts for the defendants. For an interrogatory questioning whether they found Dr. Miller to be negligent, they answered 'no.'",
+      "paragraph_ref": "105",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "LEGAL_FINDING",
+      "text": "We affirm the judgment of the Montgomery County Common Pleas Court.",
+      "paragraph_ref": "824",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Urinary stress incontinence and symptoms of vaginal prolapse",
+      "history_of_present_illness": "Patient had previous surgery for hysterectomy and anterior vaginal repair of a cystocele in 2009. Symptoms returned, and she complained of urinary stress incontinence.",
+      "past_medical_history": [
+        "Hysterectomy",
+        "Anterior vaginal repair of cystocele"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": null,
+        "general_appearance": null,
+        "focused_exam": {
+          "pelvic": "Vaginal vault prolapse, cystocele, rectocele, and urinary stress incontinence diagnosed"
+        }
+      },
+      "initial_working_problem": "Vaginal vault prolapse with associated cystocele and rectocele",
+      "known_constraints": null,
+      "initial_differential": [
+        "Vaginal vault prolapse",
+        "Cystocele",
+        "Rectocele",
+        "Urinary stress incontinence"
+      ],
+      "critical_findings": [
+        "Vaginal vault prolapse",
+        "Cystocele",
+        "Rectocele"
+      ],
+      "urgency_level": "ELECTIVE",
+      "evidence_ids": [
+        "E001",
+        "E002"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "OP_NOTE",
+        "name": "Operation Note",
+        "description": "Detailed operation note from the April 1, 2013 surgery",
+        "available_phase": "procedure",
+        "reveal": {
+          "result_summary": "Encountered copious venous bleeding during sacrocolpopexy",
+          "detailed_findings": null,
+          "clinical_significance": "Significant intraoperative bleeding requiring intervention",
+          "decision_impact": "Required additional surgical intervention and consultation",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E002",
+          "E003"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with symptoms of vaginal prolapse and urinary incontinence",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Consultation with Dr. Miller",
+            "timestamp": "November 2012",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "procedure",
+        "name": "Surgical Procedure",
+        "description": "Robotic sacrocolpopexy and associated procedures",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Encountered bleeding during sacrocolpopexy",
+            "timestamp": "April 1, 2013",
+            "evidence_ids": [
+              "E002",
+              "E003"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "procedure",
+        "clinical_context": "Intraoperative bleeding encountered during sacrocolpopexy",
+        "prompt": "How should the intraoperative bleeding be managed?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Immediately consult a vascular surgeon",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Immediate consultation could have addressed the bleeding more effectively"
+          },
+          {
+            "option_id": "B",
+            "description": "Apply pressure and continue with non-robotic portions of surgery",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Delayed addressing the bleeding, which was not resolved"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant applied pressure and continued with other parts of the surgery",
+          "reasoning_stated": "Pressure was applied to control bleeding while completing other procedures",
+          "evidence_ids": [
+            "E003",
+            "E004"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Immediate consultation with a vascular surgeon should have been sought",
+          "standard_of_care_basis": "Expert testimony indicated immediate consultation was necessary",
+          "evidence_ids": [
+            "E005",
+            "E006"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to address bleeding promptly led to complications",
+          "what_should_have_happened": "Immediate vascular consultation was needed",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E005",
+            "E006"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient developed deep vein thrombosis (DVT) and post-thrombotic syndrome",
+        "severity": "PERMANENT_MODERATE_DISABILITY",
+        "long_term_effects": "Chronic complications related to DVT",
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "0",
+        "key_findings": [
+          "Jury found no negligence by Dr. Miller or MVH",
+          "Standard of care was met according to expert testimony"
+        ],
+        "evidence_ids": [
+          "E007",
+          "E008"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Not applicable as no breach was found",
+        "counterfactual": "Not applicable as no breach was found",
+        "evidence_ids": [
+          "E007",
+          "E008"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "November 2012",
+        "event": "Patient seen by Dr. Miller for symptoms of vaginal prolapse",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "April 1, 2013",
+        "event": "Surgery performed by Dr. Miller",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "November 2012",
+        "event": "Patient referred to Dr. Miller",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "April 1, 2013",
+        "event": "Sacrocolpopexy procedure performed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [
+      {
+        "diagnosis": "Vaginal vault prolapse, cystocele, rectocele, urinary stress incontinence",
+        "when_made": "November 2012",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Robotic sacrocolpopexy and associated procedures",
+        "date": "April 1, 2013",
+        "provider": null,
+        "outcome": "Complications with bleeding encountered",
+        "evidence_ids": [
+          "E002",
+          "E003"
+        ]
+      },
+      {
+        "treatment": "Sacrocolpopexy",
+        "date": "April 1, 2013",
+        "provider": null,
+        "outcome": "Bleeding encountered",
+        "evidence_ids": [
+          "E002",
+          "E003"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Deep vein thrombosis and post-thrombotic syndrome",
+        "when_occurred": "Post-surgery",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "complication": "Deep vein thrombosis (DVT)",
+        "when_occurred": "Post-surgery",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to manage intraoperative bleeding appropriately",
+        "against": "Dr. Miller",
+        "found_proven": false,
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      {
+        "allegation": "Failure to manage surgical bleeding appropriately",
+        "against": "Dr. Miller",
+        "found_proven": false,
+        "evidence_ids": [
+          "E007",
+          "E008"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "No negligence found",
+        "legal_significance": "Jury verdict for defendants",
+        "evidence_ids": [
+          "E007",
+          "E008"
+        ]
+      },
+      {
+        "finding": "No breach of standard of care",
+        "legal_significance": "Jury found in favor of defendants",
+        "evidence_ids": [
+          "E007",
+          "E008"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "TREATMENT_PROCEDURE_ERROR",
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.00963855421686747,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-09 16:20:36.867076",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

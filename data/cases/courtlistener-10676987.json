@@ -1,0 +1,384 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10676987",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2025-08-29",
+  "url": "https://example.com/courtlistener-10676987",
+  "case_name": "Fardjallah v. Christiana Hospital",
+  "neutral_citation": null,
+  "clinical_domain": "SURGERY_ORTHOPAEDIC",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Fardjallah v. Christiana Hospital. Medical malpractice case involving surgery orthopaedic.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Mr. Fardjallah was admitted to Christiana Hospital for approximately twelve days in 2021 for COVID-19 acquired pneumonia and acute hypoxic respiratory failure.",
+      "paragraph_ref": "1",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "During his hospitalization, hospital staff inserted an IV in the flexor region of his right hand and wrist.",
+      "paragraph_ref": "1",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "His attending physician, Dr. Maria Shah, discharged him on November 3, 2021.",
+      "paragraph_ref": "1",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "Mr. Schuh examined, treated, and discharged him with the diagnosis of right-hand cellulitis and prescribed him oral antibiotics.",
+      "paragraph_ref": "1",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "EXPERT_TESTIMONY",
+      "text": "The reports contain no opinion that any specific medical provider or entity breached the standard of care.",
+      "paragraph_ref": "6",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Olewiler\u2019s reports frame his opinion in terms of possible, rather than probable, outcomes.",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "LEGAL_FINDING",
+      "text": "The summary judgment record contains no likely admissible expert medical testimony to support his medical negligence claims.",
+      "paragraph_ref": "15",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "COURT_REASONING",
+      "text": "Temporal circumstances cannot overcome the deficiencies in the record given the Medical Negligence Act\u2019s requirements.",
+      "paragraph_ref": "13",
+      "speaker": "Court reasoning"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "unknown",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Pain and swelling at IV insertion site",
+      "history_of_present_illness": "Mr. Fardjallah was admitted for COVID-19 acquired pneumonia and acute hypoxic respiratory failure. During hospitalization, an IV was inserted in the flexor region of his right hand and wrist, leading to pain and swelling.",
+      "past_medical_history": [
+        "COVID-19 acquired pneumonia",
+        "acute hypoxic respiratory failure"
+      ],
+      "medications": [
+        "Zinc topical cream prescribed at discharge"
+      ],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "hand": "Pain and swelling at IV insertion site"
+        }
+      },
+      "initial_working_problem": "Right-hand cellulitis",
+      "known_constraints": null,
+      "initial_differential": [
+        "Cellulitis",
+        "IV site infection"
+      ],
+      "critical_findings": [
+        "Pain and swelling at IV site"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002",
+        "E003"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSULT_NOTE",
+        "name": "Emergency Room Visit",
+        "description": "Consultation with Michael Schuh, PA, for right-hand cellulitis",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Diagnosis of right-hand cellulitis, prescribed oral antibiotics",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates treatment plan for cellulitis",
+          "decision_impact": "Should have prompted further investigation if condition worsened",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Hospitalization",
+        "description": "Patient admitted for COVID-19 complications",
+        "duration": "12 days",
+        "key_events": [
+          {
+            "event": "IV insertion in right hand",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Emergency Room Visit",
+        "description": "Follow-up visit for right-hand cellulitis",
+        "duration": "1 day",
+        "key_events": [
+          {
+            "event": "Diagnosis of cellulitis and prescription of antibiotics",
+            "timestamp": "November 6, 2021",
+            "evidence_ids": [
+              "E004"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient presented with pain and swelling at IV site",
+        "prompt": "What should be the next step in management?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Prescribe oral antibiotics and discharge",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Initial management for cellulitis but requires follow-up if no improvement"
+          },
+          {
+            "option_id": "B",
+            "description": "Order imaging to assess for deeper infection",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Necessary to rule out deeper infection or abscess"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "A",
+          "description": "Prescribed oral antibiotics and discharged",
+          "reasoning_stated": "Defendant believed it was appropriate for cellulitis",
+          "evidence_ids": [
+            "E004"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "B",
+          "description": "Imaging should have been ordered to assess for deeper infection",
+          "standard_of_care_basis": "Expert evidence suggested further investigation was necessary",
+          "evidence_ids": [
+            "E005",
+            "E006"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to investigate further when condition worsened",
+          "what_should_have_happened": "Imaging to rule out deeper infection",
+          "legal_standard_applied": "Standard of care requires thorough investigation of worsening symptoms",
+          "evidence_ids": [
+            "E005",
+            "E006",
+            "E007"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Condition worsened, requiring further treatment",
+        "severity": "PERMANENT_MODERATE_DISABILITY",
+        "long_term_effects": "Potential loss of function in right hand",
+        "evidence_ids": [
+          "E003",
+          "E004"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "0",
+        "key_findings": [
+          "No admissible expert testimony to support breach of standard of care",
+          "Expert reports did not identify specific breaches by defendants"
+        ],
+        "evidence_ids": [
+          "E005",
+          "E007"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Lack of further investigation when condition worsened",
+        "counterfactual": "Imaging could have identified deeper infection",
+        "evidence_ids": [
+          "E005",
+          "E006",
+          "E007"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "2021",
+        "event": "Patient admitted for COVID-19 complications",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "November 3, 2021",
+        "event": "Discharged with zinc topical cream",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "timestamp": "November 6, 2021",
+        "event": "Emergency room visit for right-hand cellulitis",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [
+      {
+        "diagnosis": "Right-hand cellulitis",
+        "when_made": "November 6, 2021",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Oral antibiotics",
+        "date": "November 6, 2021",
+        "provider": null,
+        "outcome": "Condition worsened",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Worsening of hand condition",
+        "when_occurred": "After November 6, 2021",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to properly treat IV site infection",
+        "against": "Christiana Hospital and staff",
+        "found_proven": false,
+        "evidence_ids": [
+          "E005",
+          "E007"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "No breach of standard of care proven",
+        "legal_significance": "Summary judgment granted for defendants",
+        "evidence_ids": [
+          "E005",
+          "E007"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.4444444444444444,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-09 21:41:16.166558",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

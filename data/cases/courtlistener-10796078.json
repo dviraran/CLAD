@@ -1,0 +1,454 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10796078",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2025-12-02",
+  "url": "https://example.com/courtlistener-10796078",
+  "case_name": "Sylvia Pearson, Personal Representative, Estate of Barry Michael Pearson and Individually v. Medstar Washington Hospital Center",
+  "neutral_citation": null,
+  "clinical_domain": "CARDIOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Sylvia Pearson, Personal Representative, Estate of Barry Michael Pearson and Individually v. Medstar Washington Hospital Center. Medical malpractice case involving cardiology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Barry Michael Pearson, a Kaiser Permanente patient, was admitted to MedStar Washington Hospital Center in late September",
+      "paragraph_ref": "14",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "after suffering chest pains. He never left the hospital and died three months later.",
+      "paragraph_ref": "2019",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "At the time of death, he had a 'large deep sacral ulcer (15x14 cm, 2.3 cm in depth).'",
+      "paragraph_ref": "17",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Ms. Pearson\u2019s experts, Dr. Salvador R. Guerrero and Nurse Thureiyya K. Rodriguez, did not create a triable res ipsa loquitur case.",
+      "paragraph_ref": "118",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "LEGAL_FINDING",
+      "text": "Accordingly we affirm the Superior Court\u2019s grant of summary judgment to MedStar and Kaiser.",
+      "paragraph_ref": "70",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "COURT_REASONING",
+      "text": "The Superior Court\u2019s statements at the hearing explaining why it thought summary judgment could be granted on the claims of res ipsa loquitur and lack of informed consent were only slightly less opaque than its expert testimony ruling.",
+      "paragraph_ref": "5",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Osman explained that at the time Mr. Pearson was admitted to the hospital on September 19, 2019, he already had a 'significant' medical history",
+      "paragraph_ref": "136",
+      "speaker": "Expert testimony"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "FACTUAL_FINDING",
+      "text": "Mr. Pearson undisputedly had multiple serious comorbidities that specifically diminished the health of his skin.",
+      "paragraph_ref": "119",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "LEGAL_FINDING",
+      "text": "The doctrine of res ipsa loquitur is a rule of evidence that allows a plaintiff in a negligence suit to ask the factfinder to infer negligence based on the mere occurrence of an adverse event.",
+      "paragraph_ref": "73",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "COURT_REASONING",
+      "text": "We conclude for the foregoing reasons that it was not error for the Superior Court not to allow the case to proceed under the res ipsa doctrine.",
+      "paragraph_ref": "568",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "male",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Chest pains",
+      "history_of_present_illness": "Barry Michael Pearson was admitted to MedStar Washington Hospital Center after suffering chest pains. He had a significant medical history including asthma/COPD, heart failure, atrial fibrillation, anemia, pulmonary fibrosis, pulmonary hypertension, and end-stage renal disease requiring hemodialysis.",
+      "past_medical_history": [
+        "Asthma/COPD",
+        "Heart failure with preserved ejection fraction",
+        "Paroxysmal atrial fibrillation",
+        "Anemia",
+        "Pulmonary fibrosis",
+        "Pulmonary hypertension",
+        "End-stage renal disease"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "general": "Patient appeared to be in poor medical condition with multiple comorbidities."
+        }
+      },
+      "initial_working_problem": "Chest pain with multiple comorbidities",
+      "known_constraints": null,
+      "initial_differential": [
+        "NSTEMI",
+        "Heart failure exacerbation",
+        "Pulmonary embolism"
+      ],
+      "critical_findings": [
+        "Multiple comorbidities affecting overall health"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E007",
+        "E008"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSULT_NOTE",
+        "name": "Wound Care Consultation",
+        "description": "Consultation by wound care specialist to assess and manage pressure ulcers.",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Stage 2 pressure injury on sacrum identified, later developed into Stage 4.",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates need for aggressive wound management and pressure relief strategies.",
+          "decision_impact": "Should prompt regular repositioning and specialized wound care.",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E158",
+          "E160"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Hospital Admission",
+        "description": "Patient admitted to hospital with chest pains and multiple comorbidities.",
+        "duration": "Initial days of hospitalization",
+        "key_events": [
+          {
+            "event": "Admission to hospital",
+            "timestamp": "September 19, 2019",
+            "evidence_ids": [
+              "E007"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Development of Pressure Ulcer",
+        "description": "Patient develops a pressure ulcer during hospitalization.",
+        "duration": "October 6, 2019 to December 10, 2019",
+        "key_events": [
+          {
+            "event": "Stage 2 pressure ulcer identified",
+            "timestamp": "October 6, 2019",
+            "evidence_ids": [
+              "E160"
+            ]
+          },
+          {
+            "event": "Ulcer progresses to Stage 4",
+            "timestamp": "December 10, 2019",
+            "evidence_ids": [
+              "E160"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient with multiple comorbidities and identified pressure ulcer.",
+        "prompt": "What should be the management plan for the identified pressure ulcer?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Implement regular repositioning and use pressure relief devices.",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard care for preventing progression of pressure ulcers."
+          },
+          {
+            "option_id": "B",
+            "description": "Continue current care without additional interventions.",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Neglects the need for pressure relief in high-risk patients."
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant did not implement adequate repositioning or pressure relief.",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E448",
+            "E449"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Regular repositioning and pressure relief should have been implemented.",
+          "standard_of_care_basis": "Expert testimony and standard wound care guidelines.",
+          "evidence_ids": [
+            "E471",
+            "E472"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to provide adequate pressure relief led to ulcer progression.",
+          "what_should_have_happened": "Regular repositioning and use of pressure relief devices.",
+          "legal_standard_applied": "Standard of care as established by expert testimony.",
+          "evidence_ids": [
+            "E471",
+            "E472",
+            "E473"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient developed a large deep sacral ulcer (15x14 cm, 2.3 cm in depth) and died three months later",
+        "severity": "SEVERE",
+        "long_term_effects": "Not applicable due to death",
+        "evidence_ids": [
+          "E002",
+          "E003"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "None",
+        "key_findings": [
+          "Summary judgment granted to MedStar and Kaiser",
+          "Insufficient evidence to prove negligence or causation"
+        ],
+        "evidence_ids": [
+          "E005",
+          "E006",
+          "E568"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Failure to implement timely pressure ulcer prevention strategies",
+        "counterfactual": "Timely prevention could have potentially avoided ulcer development",
+        "evidence_ids": [
+          "E004",
+          "E555",
+          "E556"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "September 19, 2019",
+        "event": "Patient admitted to hospital with chest pains",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      {
+        "timestamp": "October 6, 2019",
+        "event": "Stage 2 pressure ulcer identified",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E160"
+        ]
+      },
+      {
+        "timestamp": "December 10, 2019",
+        "event": "Ulcer progresses to Stage 4",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E160"
+        ]
+      },
+      {
+        "timestamp": "December 24, 2019",
+        "event": "Patient died in hospital",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Patient admitted to MedStar Washington Hospital Center",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001",
+          "E002"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [
+      {
+        "diagnosis": "Stage 4 sacral ulcer",
+        "when_made": "December 10, 2019",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E160"
+        ]
+      },
+      {
+        "diagnosis": "Large deep sacral ulcer",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "treatments": [],
+    "complications": [
+      {
+        "complication": "Stage 4 sacral ulcer",
+        "when_occurred": "December 10, 2019",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E160"
+        ]
+      },
+      {
+        "complication": "Large deep sacral ulcer",
+        "when_occurred": "Not documented in judgment",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to provide adequate turning and repositioning",
+        "against": "MedStar Washington Hospital Center",
+        "found_proven": false,
+        "evidence_ids": [
+          "E448",
+          "E449"
+        ]
+      },
+      {
+        "allegation": "Failure to implement timely pressure ulcer prevention strategies",
+        "against": "MedStar Washington Hospital Center",
+        "found_proven": false,
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "No breach of duty of care",
+        "legal_significance": "Summary judgment for defendants",
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "finding": "Summary judgment granted to MedStar and Kaiser",
+        "legal_significance": "Insufficient evidence to prove negligence or causation",
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.017513134851138354,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-09 20:34:03.394431",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

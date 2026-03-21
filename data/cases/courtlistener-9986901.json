@@ -1,0 +1,441 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-9986901",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2022-06-14",
+  "url": "https://example.com/courtlistener-9986901",
+  "case_name": "Hargrove v. Medstar Washington Hospital Center",
+  "neutral_citation": null,
+  "clinical_domain": "OBSTETRICS_GYNAECOLOGY",
+  "outcome_severity": "PERMANENT_SEVERE_DISABILITY",
+  "summary": {
+    "brief": "Hargrove v. Medstar Washington Hospital Center. Medical malpractice case involving obstetrics gynaecology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "On June 14, 2022, Kevin Welch began experiencing extreme chest pains upon returning to Maryland from a road trip to Atlanta.",
+      "paragraph_ref": "6",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "The medical staff at MedStar originally suspected that Welch\u2019s symptoms may have been due to 'caffeine toxicity' and lack of sleep, but upon consulting with a cardiac surgeon, the medical staff diagnosed Welch with an 'ascending aortic dissection.'",
+      "paragraph_ref": "7",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "The operation was performed 'without any complication,' and following the procedure, Welch was intubated and transferred to the ICU.",
+      "paragraph_ref": "7",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "When Welch was extubated on June 15, 2022, the day after the surgery, he was 'confused,' 'restless and agitated,' and 'was not aware of place or time and did not know why he was in the hospital.'",
+      "paragraph_ref": "7",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "On June 16, 2022, the ICU doctors noted a 'concern for possible encephalopathy,' or brain dysfunction, due to the 'lack of improvement in delirium.'",
+      "paragraph_ref": "7",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "On June 22, 2022, an MRI was performed on Welch\u2019s brain and cervical spine, which indicated that Welch had suffered a stroke.",
+      "paragraph_ref": "10",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "LEGAL_FINDING",
+      "text": "The Court will GRANT defendants\u2019 Motion to Dismiss Count II on the ground that plaintiff has failed to state a claim under the CPPA.",
+      "paragraph_ref": "4",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "LEGAL_FINDING",
+      "text": "The case will proceed with respect to the remaining count for medical malpractice (Count I).",
+      "paragraph_ref": "50",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "unknown",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Extreme chest pains",
+      "history_of_present_illness": "Kevin Welch began experiencing extreme chest pains upon returning to Maryland from a road trip to Atlanta. He reported taking an energy drink and no meal for about twenty-four hours during the trip.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "neurological": "Alert, responsive, and had characteristics of clear speech prior to surgery"
+        }
+      },
+      "initial_working_problem": "Suspected caffeine toxicity and lack of sleep, later diagnosed with ascending aortic dissection",
+      "known_constraints": null,
+      "initial_differential": [
+        "caffeine toxicity",
+        "lack of sleep",
+        "ascending aortic dissection"
+      ],
+      "critical_findings": [
+        "Extreme chest pains",
+        "Ascending aortic dissection"
+      ],
+      "urgency_level": "EMERGENCY",
+      "evidence_ids": [
+        "E001",
+        "E002"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "MRI of brain and cervical spine",
+        "description": "MRI to assess for possible spinal cord infarct or stroke",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Indicated that Welch had suffered a stroke",
+          "detailed_findings": null,
+          "clinical_significance": "Confirmed neurological injury",
+          "decision_impact": "Should have prompted earlier intervention to mitigate neurological damage",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "CONSULT_NOTE",
+        "name": "Neurology consultation",
+        "description": "Consultation to evaluate neurological symptoms",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Concern for spinal cord infarct",
+          "detailed_findings": null,
+          "clinical_significance": "Suggested need for MRI",
+          "decision_impact": "Should have led to immediate MRI",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Emergency Presentation",
+        "description": "Patient presents with extreme chest pain and is transferred to MedStar",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Patient arrives at Southern Maryland Hospital Center",
+            "timestamp": "June 14, 2022",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "ICU Care and Neurological Assessment",
+        "description": "Patient is in ICU post-surgery, exhibiting neurological symptoms",
+        "duration": "June 15, 2022 to June 22, 2022",
+        "key_events": [
+          {
+            "event": "Patient extubated and shows confusion and disorientation",
+            "timestamp": "June 15, 2022",
+            "evidence_ids": [
+              "E004"
+            ]
+          },
+          {
+            "event": "Concern for encephalopathy noted",
+            "timestamp": "June 16, 2022",
+            "evidence_ids": [
+              "E005"
+            ]
+          },
+          {
+            "event": "Neurology consultation performed",
+            "timestamp": "June 17, 2022",
+            "evidence_ids": [
+              "E005"
+            ]
+          },
+          {
+            "event": "MRI performed, confirming stroke",
+            "timestamp": "June 22, 2022",
+            "evidence_ids": [
+              "E006"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient in ICU with neurological symptoms post-surgery",
+        "prompt": "Should an MRI be performed immediately to assess neurological symptoms?",
+        "action_type": "ORDER_TEST",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Order MRI immediately",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Timely MRI could identify and mitigate neurological damage"
+          },
+          {
+            "option_id": "B",
+            "description": "Defer MRI for safety reasons",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Defendant believed MRI could be deferred due to improved exam"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "MRI was deferred for safety reasons",
+          "reasoning_stated": "Defendant thought MRI could be deferred with improved exam",
+          "evidence_ids": [
+            "E005"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "MRI should have been performed immediately",
+          "standard_of_care_basis": "Expert evidence suggested immediate MRI was necessary",
+          "evidence_ids": [
+            "E006"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Delay in MRI led to missed opportunity to mitigate neurological damage",
+          "what_should_have_happened": "Immediate MRI could have identified stroke earlier",
+          "legal_standard_applied": "Standard of care required timely investigation of neurological symptoms",
+          "evidence_ids": [
+            "E006"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient suffered a stroke, leading to long-term neurological impairments",
+        "severity": "PERMANENT_MODERATE_DISABILITY",
+        "long_term_effects": "Struggles with executive functioning, plans for disability retirement",
+        "evidence_ids": [
+          "E006",
+          "E008"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Defendants were negligent in delaying MRI",
+          "Causation established - earlier MRI could have mitigated neurological damage"
+        ],
+        "evidence_ids": [
+          "E008"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to order timely MRI",
+        "counterfactual": "Immediate MRI could have identified stroke earlier",
+        "evidence_ids": [
+          "E008"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "June 14, 2022",
+        "event": "Patient experiences extreme chest pain and is transferred to MedStar",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "June 15, 2022",
+        "event": "Patient extubated and shows confusion and disorientation",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "timestamp": "June 16, 2022",
+        "event": "Concern for encephalopathy noted",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "timestamp": "June 17, 2022",
+        "event": "Neurology consultation performed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "timestamp": "June 22, 2022",
+        "event": "MRI performed, confirming stroke",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "MRI of brain and cervical spine",
+        "date": "June 22, 2022",
+        "result": "Confirmed stroke",
+        "interpretation": null,
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Stroke",
+        "when_made": "June 22, 2022",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Emergency operation to repair aortic dissection",
+        "date": "June 14, 2022",
+        "provider": null,
+        "outcome": "Performed without complication",
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Stroke",
+        "when_occurred": "June 22, 2022",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to order timely MRI",
+        "against": "Defendant doctors",
+        "found_proven": true,
+        "evidence_ids": [
+          "E008"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendants were negligent in delaying MRI",
+        "legal_significance": "Breach of standard of care",
+        "evidence_ids": [
+          "E008"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.14814814814814814,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-09 20:40:51.798650",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

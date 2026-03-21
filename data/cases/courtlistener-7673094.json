@@ -1,0 +1,418 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-7673094",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2017-03-17",
+  "url": "https://example.com/courtlistener-7673094",
+  "case_name": "Payas v. Adventist Health Sys./Sunbelt, Inc.",
+  "neutral_citation": null,
+  "clinical_domain": "CARDIOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Payas v. Adventist Health Sys./Sunbelt, Inc.. Medical malpractice case involving cardiology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "In July 2009, Dr. Parra-Davila performed a paraesophageal hernia repair surgery on Mr. Galarza using a surgical robot.",
+      "paragraph_ref": "2",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "During the surgery, part of the surgical robot detached and became embedded in Mr. Galarza's esophagus.",
+      "paragraph_ref": "2",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "A second surgery was performed by a different surgeon at Tampa General Hospital in July 2012 to determine the cause of his worsening symptoms, but the surgery was unsuccessful.",
+      "paragraph_ref": "2",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "In January 2013, a third, exploratory surgery was performed at Tampa General Hospital. During that surgery, Mr. Galarza's vena cava vein was ruptured, causing considerable blood loss, cardiac arrest, and ultimately his death.",
+      "paragraph_ref": "2",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "An autopsy revealed the presence of a thin, coiled band encircling the gastroesophageal junction.",
+      "paragraph_ref": "2",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "LEGAL_FINDING",
+      "text": "We agree and reverse the decision of the trial court.",
+      "paragraph_ref": "1",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "LEGAL_FINDING",
+      "text": "Counts IV and V sufficiently charged the vicarious liability of Celebration Health, and thus the trial court erred in dismissing counts IV and V.",
+      "paragraph_ref": "12",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "LEGAL_FINDING",
+      "text": "Payas's allegations were sufficient to state a claim that Celebration Health had a nondelegable duty when it provided the robotic surgery to Mr. Galarza, and the trial court erred in dismissing count I with prejudice.",
+      "paragraph_ref": "19",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "LEGAL_FINDING",
+      "text": "We express no opinion on whether Payas will be able to prove this claim, or any other claim, against Celebration Health.",
+      "paragraph_ref": "19",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "LEGAL_FINDING",
+      "text": "Accordingly, we reverse the order dismissing counts I, II, IV, and V with prejudice and remand for further proceedings consistent with this opinion.",
+      "paragraph_ref": "26",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "male",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Paraesophageal hernia requiring surgical repair",
+      "history_of_present_illness": "Mr. Galarza presented for surgical repair of a paraesophageal hernia. The surgery was performed using a surgical robot.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "abdomen": "Not documented in judgment"
+        }
+      },
+      "initial_working_problem": "Paraesophageal hernia requiring surgical intervention",
+      "known_constraints": null,
+      "initial_differential": [
+        "Paraesophageal hernia"
+      ],
+      "critical_findings": [
+        "Not documented in judgment"
+      ],
+      "urgency_level": "ELECTIVE",
+      "evidence_ids": [
+        "E001"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "CT scan",
+        "description": "CT scan performed prior to second surgery",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Foreign object observed",
+          "detailed_findings": null,
+          "clinical_significance": "Indicated presence of a foreign object potentially related to surgical complications",
+          "decision_impact": "Should have prompted further investigation and patient notification",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents for elective paraesophageal hernia repair",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Patient scheduled for surgery",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "procedure",
+        "name": "Surgical Procedure",
+        "description": "Paraesophageal hernia repair using surgical robot",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Surgical robot part detaches and embeds in esophagus",
+            "timestamp": "July 2009",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "followup",
+        "name": "Post-Surgical Complications",
+        "description": "Patient experiences complications leading to further surgeries",
+        "duration": "2009-2013",
+        "key_events": [
+          {
+            "event": "Second surgery to investigate symptoms",
+            "timestamp": "July 2012",
+            "evidence_ids": [
+              "E003"
+            ]
+          },
+          {
+            "event": "Third exploratory surgery resulting in vena cava rupture",
+            "timestamp": "January 2013",
+            "evidence_ids": [
+              "E004"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "procedure",
+        "clinical_context": "During the paraesophageal hernia repair surgery",
+        "prompt": "What should be done to ensure no foreign objects remain in the patient post-surgery?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Conduct a thorough count and inspection of all surgical instruments and materials",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard practice to prevent retained foreign objects"
+          },
+          {
+            "option_id": "B",
+            "description": "Proceed without verifying all instruments and materials are accounted for",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Neglecting this step increases risk of retained foreign objects"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant did not ensure all surgical materials were accounted for",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E002"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Ensure all surgical materials are accounted for",
+          "standard_of_care_basis": "Standard surgical protocol",
+          "evidence_ids": [
+            "E002"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to account for all surgical materials led to retained foreign object",
+          "what_should_have_happened": "A thorough count and inspection should have been conducted",
+          "legal_standard_applied": "Standard of care as established by surgical protocols",
+          "evidence_ids": [
+            "E002"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient died following complications from multiple surgeries",
+        "severity": "FATAL",
+        "long_term_effects": "Not applicable",
+        "evidence_ids": [
+          "E004",
+          "E005"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "Not applicable",
+        "key_findings": [
+          "Reversal of trial court's dismissal of claims",
+          "Sufficient allegations for vicarious liability and negligence"
+        ],
+        "evidence_ids": [
+          "E006",
+          "E007",
+          "E008"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Failure to account for surgical materials",
+        "counterfactual": "Proper accounting could have prevented retained foreign object",
+        "evidence_ids": [
+          "E002",
+          "E009"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "July 2009",
+        "event": "Paraesophageal hernia repair surgery performed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "July 2012",
+        "event": "Second surgery performed at Tampa General Hospital",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "timestamp": "January 2013",
+        "event": "Third exploratory surgery performed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "CT scan",
+        "date": "April 2012",
+        "result": "Foreign object observed",
+        "interpretation": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Complications from retained foreign object",
+        "when_made": "Post-surgery",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Exploratory surgery",
+        "date": "January 2013",
+        "provider": null,
+        "outcome": "Vena cava rupture and death",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Retained foreign object",
+        "when_occurred": "July 2009",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Negligence in surgical procedure",
+        "against": "Dr. Parra-Davila and Celebration Health",
+        "found_proven": false,
+        "evidence_ids": [
+          "E009"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Reversal of trial court's dismissal",
+        "legal_significance": "Sufficient allegations for vicarious liability",
+        "evidence_ids": [
+          "E006",
+          "E007"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "TREATMENT_PROCEDURE_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.3448275862068966,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-09 19:30:36.117104",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

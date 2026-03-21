@@ -1,0 +1,413 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-4449381",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2016-10-04",
+  "url": "https://example.com/courtlistener-4449381",
+  "case_name": "D.Y. Ex Rel. DeShawn Y. v. Catskill Regional Medical Center",
+  "neutral_citation": null,
+  "clinical_domain": "PAEDIATRICS",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "D.Y. Ex Rel. DeShawn Y. v. Catskill Regional Medical Center. Medical malpractice case involving paediatrics.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "On October 18, 2011, defendant Amarjit Gill (hereinafter defendant), a pediatrician, examined his nine-year-old patient, plaintiff D.Y. (hereinafter the child), in connection with complaints of vomiting, diarrhea, the presence of blood in his urine and his inability to keep fluids down over a three-day period.",
+      "paragraph_ref": "2",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Defendant diagnosed the child with acute gastroenteritis and severe dehydration, ordered a stool study and requested a surgical consult.",
+      "paragraph_ref": "3",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "The CT scan revealed a large abscess in the child\u2019s pelvis caused by a ruptured appendix.",
+      "paragraph_ref": "4",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Plaintiffs\u2019 expert testified that the child\u2019s medical records reflected that he repeatedly complained of abdominal pain over the period of October 18, 2011 through October 21, 2011, and that the child had an increasingly elevated and abnormal white blood cell band count.",
+      "paragraph_ref": "7",
+      "speaker": "Plaintiffs' expert"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "LEGAL_FINDING",
+      "text": "Accordingly, we find that Supreme Court properly denied defendant\u2019s CPLR 4401 motion for a directed verdict.",
+      "paragraph_ref": "8",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "COURT_REASONING",
+      "text": "Viewing the evidence in the light most favorable to plaintiffs, a juror could rationally conclude that defendant\u2019s failure to expand his diagnosis and order a CT scan on or before October 21, 2011 caused the child\u2019s underlying condition to remain undetected and unnecessarily worsen.",
+      "paragraph_ref": "8",
+      "speaker": "Judge's analysis"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "9 years",
+        "sex": "male",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Vomiting, diarrhea, blood in urine, inability to keep fluids down",
+      "history_of_present_illness": "Symptoms present for three days, severe dehydration noted",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "abdomen": "Abdominal pain noted, profuse watery diarrhea"
+        }
+      },
+      "initial_working_problem": "Acute gastroenteritis and severe dehydration",
+      "known_constraints": null,
+      "initial_differential": [
+        "gastroenteritis",
+        "Clostridium difficile infection"
+      ],
+      "critical_findings": [
+        "Severe dehydration",
+        "Abdominal pain"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "LAB",
+        "name": "Stool Study",
+        "description": "Stool study to check for infections",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Positive for Clostridium difficile",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates possible infection",
+          "decision_impact": "Led to treatment for Clostridium difficile infection",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "IMAGING",
+        "name": "CT Scan of Abdomen and Pelvis",
+        "description": "CT scan to evaluate abdominal pain",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Large abscess in pelvis due to ruptured appendix",
+          "detailed_findings": null,
+          "clinical_significance": "Confirms diagnosis of ruptured appendix",
+          "decision_impact": "Prompted transfer for surgical intervention",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Child presents with vomiting, diarrhea, and dehydration",
+        "duration": "3 days",
+        "key_events": [
+          {
+            "event": "Examination by pediatrician",
+            "timestamp": "October 18, 2011",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Hospital Admission and Workup",
+        "description": "Child admitted to hospital, initial diagnosis and treatment",
+        "duration": "6 days",
+        "key_events": [
+          {
+            "event": "Diagnosis of gastroenteritis and dehydration",
+            "timestamp": "October 18, 2011",
+            "evidence_ids": [
+              "E002"
+            ]
+          },
+          {
+            "event": "Stool study ordered",
+            "timestamp": "October 19, 2011",
+            "evidence_ids": [
+              "E002"
+            ]
+          },
+          {
+            "event": "CT scan ordered",
+            "timestamp": "October 24, 2011",
+            "evidence_ids": [
+              "E003"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Child with persistent abdominal pain and elevated white blood cell count",
+        "prompt": "Should a CT scan be ordered to investigate the cause of abdominal pain?",
+        "action_type": "ORDER_TEST",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Order CT scan of abdomen and pelvis",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Necessary to rule out appendicitis or other serious conditions"
+          },
+          {
+            "option_id": "B",
+            "description": "Continue monitoring without CT scan",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Assumed gastroenteritis and treated for Clostridium difficile"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant did not order CT scan until October 24, 2011",
+          "reasoning_stated": "Focused on treating for Clostridium difficile infection",
+          "evidence_ids": [
+            "E002",
+            "E004"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "CT scan should have been ordered earlier",
+          "standard_of_care_basis": "Expert testimony indicated earlier CT scan was necessary",
+          "evidence_ids": [
+            "E004"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to order CT scan led to delayed diagnosis of ruptured appendix",
+          "what_should_have_happened": "CT scan should have been ordered by October 21, 2011",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E004",
+            "E006"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Child developed a large abscess due to ruptured appendix",
+        "severity": "SEVERE",
+        "long_term_effects": "Required surgical intervention and prolonged antibiotic treatment",
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "None",
+        "key_findings": [
+          "Failure to order CT scan earlier was not proven to be a substantial factor in causing injury"
+        ],
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Failure to order CT imaging earlier",
+        "counterfactual": "Earlier CT could have identified appendicitis sooner",
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "October 18, 2011",
+        "event": "Child examined by pediatrician for vomiting and diarrhea",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "October 24, 2011",
+        "event": "CT scan reveals ruptured appendix",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Stool Study",
+        "date": "October 19, 2011",
+        "result": "Positive for Clostridium difficile",
+        "interpretation": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "test_name": "CT Scan",
+        "date": "October 24, 2011",
+        "result": "Large abscess in pelvis",
+        "interpretation": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Ruptured appendix",
+        "when_made": "October 24, 2011",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Antibiotics for Clostridium difficile",
+        "date": "October 20, 2011",
+        "provider": null,
+        "outcome": "Not effective for underlying condition",
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "treatment": "Surgical intervention for abscess",
+        "date": "October 24, 2011",
+        "provider": null,
+        "outcome": "Abscess drained, antibiotics administered",
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Abscess due to ruptured appendix",
+        "when_occurred": "October 24, 2011",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to order CT scan earlier",
+        "against": "Defendant pediatrician",
+        "found_proven": false,
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "No liability found for delayed CT scan",
+        "legal_significance": "Plaintiffs failed to establish causation",
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.5,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-17 07:46:05.980412",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

@@ -1,0 +1,514 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10603657",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2025-06-12",
+  "url": "https://example.com/courtlistener-10603657",
+  "case_name": "BOURNE v. VALDES, M.D.",
+  "neutral_citation": null,
+  "clinical_domain": "PAEDIATRICS",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "BOURNE v. VALDES, M.D.. Medical malpractice case involving paediatrics.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Respondent Dr. Zidrieck Valdes diagnosed his patient, David Bourne, with chronic anxiety, major depressive disorder, and chronic low back pain in 2015.",
+      "paragraph_ref": "9",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Valdes prescribed Bourne two medications: Klonopin (a benzodiazepine) and an opioid.",
+      "paragraph_ref": "9",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "In May 2019, Valdes informed Bourne that a new Center for Disease Control guideline recommended that a patient not be prescribed benzodiazepines and opioids concurrently.",
+      "paragraph_ref": "9",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "Valdes took Bourne off Klonopin and prescribed Bourne Buspar, an anti-anxiety medication.",
+      "paragraph_ref": "9",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "Bourne's wife overheard Bourne inform Valdes that he was having withdrawal symptoms as a result of being taken off Klonopin.",
+      "paragraph_ref": "9",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "Valdes then referred Bourne to an in-patient drug treatment facility, but Bourne refused to go.",
+      "paragraph_ref": "9",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "In August 2019, Bourne reported to Valdes that he was experiencing 'unbearable' work-related stress.",
+      "paragraph_ref": "9",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "FACTUAL_FINDING",
+      "text": "Valdes gave Bourne a half-dose emergency prescription of Klonopin.",
+      "paragraph_ref": "9",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "FACTUAL_FINDING",
+      "text": "Medical notes reflect that Bourne 'displayed no physical or mental symptoms of withdrawal arising from the Klonopin.'",
+      "paragraph_ref": "9",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "FACTUAL_FINDING",
+      "text": "Bourne 'exhibited no signs or symptoms of being depressed or suicidal.'",
+      "paragraph_ref": "9",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E011",
+      "type": "FACTUAL_FINDING",
+      "text": "In November 2019, shortly after one of his medical visits with Valdes, Bourne died by suicide.",
+      "paragraph_ref": "9",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E012",
+      "type": "FACTUAL_FINDING",
+      "text": "In his suicide note, Bourne wrote, 'my mind is gone all from being prescribed a drug I didn't even need ... the Dr. stopped prescribing without tapering . . . .'",
+      "paragraph_ref": "9",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E013",
+      "type": "FACTUAL_FINDING",
+      "text": "At the time of his death, Bourne had therapeutic levels of both Xanax and an opioid in his system.",
+      "paragraph_ref": "9",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E014",
+      "type": "FACTUAL_FINDING",
+      "text": "Valdes had not prescribed Bourne Xanax and was unaware that Bourne was taking it.",
+      "paragraph_ref": "9",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E015",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Appellants' medical expert, Dr. Donald A. Misch, opined inter alia that Valdes deviated from the standard of care when he simultaneously prescribed an opioid and a benzodiazepine, and when he took Bourne off Klonopin without tapering the dosage.",
+      "paragraph_ref": "13",
+      "speaker": "Dr. Donald A. Misch"
+    },
+    {
+      "evidence_id": "E016",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Misch further opined that Valdes' actions contributed to Bourne's suicide.",
+      "paragraph_ref": "13",
+      "speaker": "Dr. Donald A. Misch"
+    },
+    {
+      "evidence_id": "E017",
+      "type": "LEGAL_FINDING",
+      "text": "We decline to adopt a rule that a patient's suicide relieves a medical provider of liability for the patient's death.",
+      "paragraph_ref": "9",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E018",
+      "type": "LEGAL_FINDING",
+      "text": "We instead hold that the determination as to whether a medical provider is liable for a patient's injuries must be resolved under established medical malpractice law.",
+      "paragraph_ref": "9",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E019",
+      "type": "COURT_REASONING",
+      "text": "The district court erroneously found as a matter of law that Valdes could not be liable for Bourne's death by suicide because Valdes did not have control or custody over Bourne and therefore could not have stopped the suicide.",
+      "paragraph_ref": "19",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E020",
+      "type": "COURT_REASONING",
+      "text": "Because appellants established a prima facie medical malpractice claim, summary judgment was improper without further analysis of whether there was a genuine issue of material fact regarding the suicide's foreseeability.",
+      "paragraph_ref": "19",
+      "speaker": "Court finding"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "male",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Chronic anxiety, major depressive disorder, and chronic low back pain",
+      "history_of_present_illness": "Patient diagnosed with chronic anxiety, major depressive disorder, and chronic low back pain in 2015. Prescribed Klonopin and an opioid. In May 2019, informed about new CDC guidelines and taken off Klonopin, prescribed Buspar instead.",
+      "past_medical_history": [
+        "Chronic anxiety",
+        "Major depressive disorder",
+        "Chronic low back pain"
+      ],
+      "medications": [
+        "Klonopin",
+        "Opioid",
+        "Buspar"
+      ],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "mental_status": "No physical or mental symptoms of withdrawal or suicidal ideation noted"
+        }
+      },
+      "initial_working_problem": "Management of chronic anxiety and depressive disorder",
+      "known_constraints": null,
+      "initial_differential": [
+        "Chronic anxiety",
+        "Major depressive disorder"
+      ],
+      "critical_findings": [
+        "Withdrawal symptoms reported by patient"
+      ],
+      "urgency_level": "ROUTINE",
+      "evidence_ids": [
+        "E001",
+        "E002",
+        "E003",
+        "E004",
+        "E005",
+        "E009",
+        "E010"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSULT_NOTE",
+        "name": "Psychiatric Evaluation",
+        "description": "Evaluation of mental health status and medication management",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Patient reported no suicidal ideation, Buspar effective for anxiety",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates current management is effective",
+          "decision_impact": "Supports continuation of current medication regimen",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E009",
+          "E010"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Diagnosis and Treatment",
+        "description": "Patient diagnosed and treated with Klonopin and opioid",
+        "duration": "2015 to May 2019",
+        "key_events": [
+          {
+            "event": "Diagnosis of chronic anxiety and depressive disorder",
+            "timestamp": "2015",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Medication Adjustment",
+        "description": "Adjustment of medication following CDC guidelines",
+        "duration": "May 2019",
+        "key_events": [
+          {
+            "event": "Klonopin stopped, Buspar prescribed",
+            "timestamp": "May 2019",
+            "evidence_ids": [
+              "E004"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "decision",
+        "name": "Subsequent Management",
+        "description": "Management of reported stress and withdrawal symptoms",
+        "duration": "August 2019 to November 2019",
+        "key_events": [
+          {
+            "event": "Emergency prescription of Klonopin",
+            "timestamp": "August 2019",
+            "evidence_ids": [
+              "E008"
+            ]
+          },
+          {
+            "event": "Patient reported no suicidal ideation",
+            "timestamp": "September 2019",
+            "evidence_ids": [
+              "E009",
+              "E010"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient with chronic anxiety and depressive disorder on Klonopin and opioid",
+        "prompt": "How should the medication regimen be adjusted in light of new CDC guidelines?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Taper off Klonopin gradually while monitoring for withdrawal symptoms",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Gradual tapering reduces withdrawal risk"
+          },
+          {
+            "option_id": "B",
+            "description": "Immediately stop Klonopin and switch to Buspar",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Abrupt cessation can lead to withdrawal symptoms"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant stopped Klonopin and prescribed Buspar",
+          "reasoning_stated": "Compliance with CDC guidelines",
+          "evidence_ids": [
+            "E004"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Klonopin should have been tapered",
+          "standard_of_care_basis": "Expert evidence indicated tapering is standard",
+          "evidence_ids": [
+            "E015"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Abrupt cessation led to withdrawal symptoms",
+          "what_should_have_happened": "Gradual tapering with monitoring",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E015",
+            "E016"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient died by suicide",
+        "severity": "FATAL",
+        "long_term_effects": "Not applicable",
+        "evidence_ids": [
+          "E011",
+          "E012"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "UNKNOWN",
+        "damages_awarded": "Not applicable",
+        "key_findings": [
+          "District court's summary judgment reversed",
+          "Case remanded for further proceedings"
+        ],
+        "evidence_ids": [
+          "E019",
+          "E020"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Failure to taper Klonopin",
+        "counterfactual": "Tapering could have prevented withdrawal symptoms",
+        "evidence_ids": [
+          "E015",
+          "E016"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "2015",
+        "event": "Patient diagnosed with chronic anxiety and depressive disorder",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "May 2019",
+        "event": "Klonopin stopped, Buspar prescribed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "timestamp": "August 2019",
+        "event": "Emergency prescription of Klonopin",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E008"
+        ]
+      },
+      {
+        "timestamp": "November 2019",
+        "event": "Patient died by suicide",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E011"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [
+      {
+        "diagnosis": "Chronic anxiety and major depressive disorder",
+        "when_made": "2015",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Prescribed Klonopin and opioid",
+        "date": "2015",
+        "provider": null,
+        "outcome": "Initial management of symptoms",
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "treatment": "Prescribed Buspar",
+        "date": "May 2019",
+        "provider": null,
+        "outcome": "Management of anxiety",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Withdrawal symptoms",
+        "when_occurred": "After May 2019",
+        "severity": "Moderate",
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to taper Klonopin",
+        "against": "Dr. Valdes",
+        "found_proven": false,
+        "evidence_ids": [
+          "E015"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Summary judgment reversed",
+        "legal_significance": "Case remanded for further proceedings",
+        "evidence_ids": [
+          "E019",
+          "E020"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "TREATMENT_PROCEDURE_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.5555555555555556,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-17 08:31:28.092523",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

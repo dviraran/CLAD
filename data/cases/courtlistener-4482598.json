@@ -1,0 +1,469 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-4482598",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2018-01-05",
+  "url": "https://example.com/courtlistener-4482598",
+  "case_name": "Rodriguez v. Surgical Assocs.",
+  "neutral_citation": null,
+  "clinical_domain": "CARDIOLOGY",
+  "outcome_severity": "PERMANENT_SEVERE_DISABILITY",
+  "summary": {
+    "brief": "Rodriguez v. Surgical Assocs.. Medical malpractice case involving cardiology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "On April 16, 2012, Rodriguez was referred to a hospital in Lincoln, Nebraska, due to stomach pains, fever, and nausea.",
+      "paragraph_ref": "16",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Upon examining Rodriguez, Fitzke determined that she needed an immediate cholecystectomy, a surgical procedure to remove her gallbladder.",
+      "paragraph_ref": "16",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "While her gallbladder was being removed, it ruptured and released stones and purulent material, or pus, into Rodriguez’ abdominal cavity—an unavoidable risk of the surgery.",
+      "paragraph_ref": "16",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "Rodriguez began experiencing significant pain and her status changed from outpatient to inpatient.",
+      "paragraph_ref": "17",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "EXPERT_TESTIMONY",
+      "text": "The surgical expert testified that Fitzke breached the standard of care in three instances: (1) by failing to follow the three-step protocol for treating septic shock, (2) by failing to create and follow a reasonable surgical differential diagnosis, and (3) by canceling the CT scan that had been ordered for Rodriguez on April 18, 2012.",
+      "paragraph_ref": "22",
+      "speaker": "Rodriguez's surgical expert"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "EXPERT_TESTIMONY",
+      "text": "The critical care physician also testified that Fitzke’s canceling the CT scan and failing to timely treat the source of Rodriguez’ infections were a breach of the standard of care.",
+      "paragraph_ref": "22",
+      "speaker": "Rodriguez's critical care physician"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "Ultimately, Rodriguez had eight additional operations during the subsequent 11⁄2 months and remained hospitalized until July, with numerous complications.",
+      "paragraph_ref": "22",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "LEGAL_FINDING",
+      "text": "Because we do not find merit in Rodriguez’ claims, we affirm.",
+      "paragraph_ref": "16",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "COURT_REASONING",
+      "text": "We presume that the jury found for appellees on all issues presented to it.",
+      "paragraph_ref": "13",
+      "speaker": "Judge's analysis"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Stomach pains, fever, and nausea",
+      "history_of_present_illness": "Patient referred to hospital due to stomach pains, fever, and nausea. Examination revealed need for immediate cholecystectomy.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "abdomen": "Soft, tender, and distended; no signs of peritonitis initially"
+        }
+      },
+      "initial_working_problem": "Acute cholecystitis with gangrenous gallbladder",
+      "known_constraints": null,
+      "initial_differential": [
+        "Acute cholecystitis",
+        "Gangrenous gallbladder"
+      ],
+      "critical_findings": [
+        "Gangrenous gallbladder attached to other organs"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "CT scan of abdomen",
+        "description": "CT scan with unspecified contrast to evaluate abdominal pain and hypotension",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "CT scan was canceled; no results available",
+          "detailed_findings": null,
+          "clinical_significance": "Could have identified intestinal perforation",
+          "decision_impact": "Cancellation delayed diagnosis and treatment",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": [
+          "E006",
+          "E019"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "IMAGING",
+        "name": "X-ray of abdomen",
+        "description": "X-ray to check for free air and lung infiltrates",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Free air in abdomen and new developing lobe infiltrates in left lower lung",
+          "detailed_findings": null,
+          "clinical_significance": "Suggested development of pneumonia",
+          "decision_impact": "Contributed to decision against immediate surgery",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E019"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with stomach pains, fever, and nausea",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Referral to hospital",
+            "timestamp": "April 16, 2012",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Post-Surgical Decline",
+        "description": "Patient experiences significant decline post-surgery",
+        "duration": "April 17-19, 2012",
+        "key_events": [
+          {
+            "event": "Patient becomes hypotensive and tachycardic",
+            "timestamp": "April 17, 2012",
+            "evidence_ids": [
+              "E004"
+            ]
+          },
+          {
+            "event": "CT scan canceled",
+            "timestamp": "April 18, 2012",
+            "evidence_ids": [
+              "E019"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "postop",
+        "name": "Postoperative Management",
+        "description": "Patient experiences significant pain, status changes to inpatient",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Patient status changes to inpatient",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E004"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient with declining condition post-cholecystectomy",
+        "prompt": "Should the CT scan be performed to investigate the cause of the patient's symptoms?",
+        "action_type": "ORDER_TEST",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Proceed with CT scan of abdomen",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "CT scan could identify complications such as intestinal perforation"
+          },
+          {
+            "option_id": "B",
+            "description": "Cancel CT scan and continue with current treatment",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Concerns about kidney function and pneumonia; CT scan deemed low yield"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant canceled CT scan",
+          "reasoning_stated": "Risk of contrast due to kidney function and pneumonia; low yield expected",
+          "evidence_ids": [
+            "E019"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "CT scan should have been performed",
+          "standard_of_care_basis": "Expert testimony indicated CT scan was necessary to identify complications",
+          "evidence_ids": [
+            "E005",
+            "E006"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to perform CT scan delayed diagnosis of intestinal perforation",
+          "what_should_have_happened": "CT scan would have identified the perforation earlier",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E005",
+            "E006"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient required eight additional operations and remained hospitalized for 1.5 months",
+        "severity": "SEVERE",
+        "long_term_effects": "Extended hospitalization and multiple surgeries",
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "None",
+        "key_findings": [
+          "Court found no merit in Rodriguez’ claims",
+          "Jury found for appellees on all issues"
+        ],
+        "evidence_ids": [
+          "E008",
+          "E009"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Failure to order CT imaging",
+        "counterfactual": "CT could have identified complications earlier",
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "April 16, 2012",
+        "event": "Patient referred to hospital with stomach pains, fever, and nausea",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "April 18, 2012",
+        "event": "CT scan canceled",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E019"
+        ]
+      },
+      {
+        "timestamp": "April 16, 2012",
+        "event": "Patient referred to hospital due to stomach pains",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "X-ray",
+        "date": "April 18, 2012",
+        "result": "Free air in abdomen, lung infiltrates",
+        "interpretation": null,
+        "evidence_ids": [
+          "E019"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Intestinal perforation",
+        "when_made": "April 20, 2012",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E021"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Exploratory laparotomy and anastomosis",
+        "date": "April 20, 2012",
+        "provider": null,
+        "outcome": "Perforation repaired, bilious fluid removed",
+        "evidence_ids": [
+          "E021"
+        ]
+      },
+      {
+        "treatment": "Cholecystectomy",
+        "date": "Date not specified in judgment",
+        "provider": null,
+        "outcome": "Gallbladder removed, complications occurred",
+        "evidence_ids": [
+          "E002",
+          "E003"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Septic shock",
+        "when_occurred": "April 19, 2012",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E020"
+        ]
+      },
+      {
+        "complication": "Rupture of gallbladder during surgery",
+        "when_occurred": "During cholecystectomy",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to perform CT scan",
+        "against": "Defendant surgeon",
+        "found_proven": false,
+        "evidence_ids": [
+          "E008",
+          "E009"
+        ]
+      },
+      {
+        "allegation": "Failure to order CT scan",
+        "against": "Defendant surgeon",
+        "found_proven": false,
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "No breach of duty by defendant",
+        "legal_significance": "Jury found for appellees on all issues",
+        "evidence_ids": [
+          "E008",
+          "E009"
+        ]
+      },
+      {
+        "finding": "No merit in Rodriguez’ claims",
+        "legal_significance": "Jury found for appellees",
+        "evidence_ids": [
+          "E008",
+          "E009"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.16071428571428573,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-09 17:19:40.371790",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

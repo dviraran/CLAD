@@ -1,0 +1,478 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10771751",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2025-12-31",
+  "url": "https://example.com/courtlistener-10771751",
+  "case_name": "Smith v. Zama",
+  "neutral_citation": null,
+  "clinical_domain": "CARDIOLOGY",
+  "outcome_severity": "PERMANENT_SEVERE_DISABILITY",
+  "summary": {
+    "brief": "Smith v. Zama. Medical malpractice case involving cardiology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "On November 20, 2018, plaintiff Lucas Smith (hereinafter Smith) presented to defendant Arnot Ogden Medical Center (hereinafter AOMC) with various complaints, including intermittent chest pain and shortness of breath.",
+      "paragraph_ref": "7",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "A CT pulmonary angiogram revealed a massive 9.8-centimeter ascending aortic aneurysm, and additional testing led to a diagnosis of atrial fibrillation and atrial flutter.",
+      "paragraph_ref": "7",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "Defendant Nche Zama, a cardiothoracic surgeon, performed the surgical repair of Smith's ascending aortic aneurysm on November 26, 2018.",
+      "paragraph_ref": "7",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "On November 30, 2018, he was discharged by McField under the care of Zama with certain medications, including an antiarrhythmic (Amiodarone 200 mg) and an antiplatelet (Aspirin 81 mg).",
+      "paragraph_ref": "7",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "Smith returned to AOMC on December 2, 2018, experiencing shortness of breath, increased abdominal pain and distention, and diarrhea.",
+      "paragraph_ref": "8",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Grossi opined that defendants appropriately converted Smith from atrial fibrillation to a normal sinus rhythm by virtue of the successful aneurysm repair.",
+      "paragraph_ref": "11",
+      "speaker": "Defendant's expert"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "EXPERT_TESTIMONY",
+      "text": "The expert further explained that anticoagulants given to patients with intermittent atrial fibrillation can decrease the risk of embolic events post-cardiac surgery.",
+      "paragraph_ref": "12",
+      "speaker": "Plaintiff's expert"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "LEGAL_FINDING",
+      "text": "Supreme Court granted defendants' motions for summary judgment and dismissed the complaint.",
+      "paragraph_ref": "9",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "COURT_REASONING",
+      "text": "Accordingly, when giving plaintiffs the benefit of all reasonable inferences as the nonmoving parties, Supreme Court should have denied defendants' motions for summary judgment.",
+      "paragraph_ref": "13",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "LEGAL_FINDING",
+      "text": "ORDERED that the order is reversed, on the law, with costs, and motions denied.",
+      "paragraph_ref": "15",
+      "speaker": "Court order"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "unknown",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Intermittent chest pain and shortness of breath",
+      "history_of_present_illness": "Patient presented with intermittent chest pain and shortness of breath. Initial diagnostic testing revealed a rapid, irregular heart rate and high blood pressure.",
+      "past_medical_history": [
+        "Atrial fibrillation",
+        "Atrial flutter"
+      ],
+      "medications": [
+        "Not documented in judgment"
+      ],
+      "allergies": [
+        "Not documented in judgment"
+      ],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "High blood pressure",
+          "heart_rate": "Rapid, irregular heart rate",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "cardiovascular": "Not documented in judgment"
+        }
+      },
+      "initial_working_problem": "Massive ascending aortic aneurysm with atrial fibrillation",
+      "known_constraints": null,
+      "initial_differential": [
+        "Aortic aneurysm",
+        "Atrial fibrillation"
+      ],
+      "critical_findings": [
+        "9.8-centimeter ascending aortic aneurysm"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "CT Pulmonary Angiogram",
+        "description": "CT scan to evaluate the pulmonary arteries and aorta",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Massive 9.8-centimeter ascending aortic aneurysm",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates need for surgical intervention",
+          "decision_impact": "Prompted surgical repair of the aneurysm",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "LAB",
+        "name": "INR",
+        "description": "International Normalized Ratio to assess anticoagulation status",
+        "available_phase": "postop",
+        "reveal": {
+          "result_summary": "INR of 1.6",
+          "detailed_findings": null,
+          "clinical_significance": "Considered inadequately anticoagulated by plaintiff's expert",
+          "decision_impact": "Contributed to decision not to prescribe anticoagulants",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E011"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents to AOMC with chest pain and shortness of breath",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "CT pulmonary angiogram performed",
+            "timestamp": "November 20, 2018",
+            "evidence_ids": [
+              "E001",
+              "E002"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "postop",
+        "name": "Postoperative Care",
+        "description": "Post-surgical management after aortic aneurysm repair",
+        "duration": "4 days",
+        "key_events": [
+          {
+            "event": "Patient discharged with Amiodarone and Aspirin",
+            "timestamp": "November 30, 2018",
+            "evidence_ids": [
+              "E004"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "decision",
+        "name": "Readmission",
+        "description": "Patient readmitted with complications",
+        "duration": "2 days",
+        "key_events": [
+          {
+            "event": "Patient readmitted with shortness of breath and abdominal pain",
+            "timestamp": "December 2, 2018",
+            "evidence_ids": [
+              "E005"
+            ]
+          },
+          {
+            "event": "Exploratory laparotomy performed",
+            "timestamp": "December 3, 2018",
+            "evidence_ids": [
+              "E005"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "followup",
+        "clinical_context": "Postoperative management after aortic aneurysm repair",
+        "prompt": "What medications should be prescribed at discharge?",
+        "action_type": "PRESCRIBE",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Prescribe beta blockers and anticoagulants",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "To manage atrial fibrillation risk and prevent embolic events"
+          },
+          {
+            "option_id": "B",
+            "description": "Prescribe Amiodarone and Aspirin only",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Believed to be sufficient for anticoagulation and rhythm control"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant prescribed Amiodarone and Aspirin only",
+          "reasoning_stated": "Defendant believed aspirin was adequate for anticoagulation",
+          "evidence_ids": [
+            "E004",
+            "E011"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Beta blockers and anticoagulants should have been prescribed",
+          "standard_of_care_basis": "Expert testimony indicated increased risk of embolic events without anticoagulation",
+          "evidence_ids": [
+            "E012",
+            "E013"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to prescribe adequate anticoagulation led to embolic events",
+          "what_should_have_happened": "Beta blockers and anticoagulants should have been prescribed to prevent embolic complications",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E012",
+            "E013",
+            "E014"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient developed ischemic bowel requiring extensive resection",
+        "severity": "PERMANENT_SEVERE_DISABILITY",
+        "long_term_effects": "Significant bowel resection and associated complications",
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "None",
+        "key_findings": [
+          "Defendants' care was not a departure from the accepted standard of care",
+          "Plaintiffs' opposition was deemed conclusory"
+        ],
+        "evidence_ids": [
+          "E008",
+          "E009"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Failure to prescribe adequate anticoagulation",
+        "counterfactual": "Adequate anticoagulation could have prevented embolic events",
+        "evidence_ids": [
+          "E012",
+          "E013"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "November 20, 2018",
+        "event": "Patient presents to AOMC with chest pain and shortness of breath",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "November 26, 2018",
+        "event": "Surgical repair of ascending aortic aneurysm performed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "timestamp": "November 30, 2018",
+        "event": "Patient discharged with Amiodarone and Aspirin",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "timestamp": "December 2, 2018",
+        "event": "Patient readmitted with complications",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "timestamp": "December 3, 2018",
+        "event": "Exploratory laparotomy performed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "CT Pulmonary Angiogram",
+        "date": "November 20, 2018",
+        "result": "Massive 9.8-centimeter ascending aortic aneurysm",
+        "interpretation": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Ischemic bowel secondary to embolic event",
+        "when_made": "December 3, 2018",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Surgical repair of ascending aortic aneurysm",
+        "date": "November 26, 2018",
+        "provider": null,
+        "outcome": "Successful repair",
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "treatment": "Exploratory laparotomy and bowel resection",
+        "date": "December 3, 2018",
+        "provider": null,
+        "outcome": "Resection of gangrenous bowel",
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Ischemic bowel",
+        "when_occurred": "December 3, 2018",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to prescribe beta blockers and anticoagulants",
+        "against": "Defendant Zama and others",
+        "found_proven": false,
+        "evidence_ids": [
+          "E008",
+          "E009"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendants' care was not a departure from the accepted standard of care",
+        "legal_significance": "Summary judgment granted for defendants",
+        "evidence_ids": [
+          "E008",
+          "E009"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "TREATMENT_PROCEDURE_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.3125,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-09 20:15:07.042556",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

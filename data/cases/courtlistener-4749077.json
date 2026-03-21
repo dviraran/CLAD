@@ -1,0 +1,499 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-4749077",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2018-11-13",
+  "url": "https://example.com/courtlistener-4749077",
+  "case_name": "Rolon, F. v. Davies, T.",
+  "neutral_citation": null,
+  "clinical_domain": "ONCOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Rolon, F. v. Davies, T.. Medical malpractice case involving oncology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "On April 30, 2010, Dr. Voystock, of Appellee Surgical Specialists of Lancaster, performed a hemicolectomy on Maria Sanchez-Rodriguez",
+      "paragraph_ref": "15",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "The hemicolectomy was an emergency surgery to address a bowel perforation that occurred during a routine colonoscopy.",
+      "paragraph_ref": "18",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "On May 19, 2010, Decedent went to the LGH emergency room (\u201cER\u201d) complaining of pain in her right lower back, right hip, and right leg.",
+      "paragraph_ref": "19",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "The leg was swollen and blue. Appellee Trystan Davies, M.D., of Appellee Lancaster Emergency Associates, Ltd., examined Decedent in the ER.",
+      "paragraph_ref": "21",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. Davies ordered an ultrasound to check for a blood clot, i.e. deep vein thrombosis (\u201cDVT\u201d), in Decedent\u2019s lower leg.",
+      "paragraph_ref": "24",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "Appellee Matthew Wiggins, M.D., of Appellee Lancaster Radiology Associates, Ltd. interpreted the results of the ultrasound to reveal no DVT in the lower right leg, but slow blood flow in some of the veins.",
+      "paragraph_ref": "27",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. Voystock ordered an arterial study, and it revealed no evidence of arterial blockage.",
+      "paragraph_ref": "32",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "FACTUAL_FINDING",
+      "text": "Within one hour of discharge, Decedent collapsed in the elevator of her apartment building and was returned to the ER via ambulance.",
+      "paragraph_ref": "35",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "FACTUAL_FINDING",
+      "text": "An autopsy revealed Decedent, age 61, died from a pulmonary embolism.",
+      "paragraph_ref": "38",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Q. Okay. Doctor, based on your review of the records and the deposition of Dr. Voystock and the other depositions in this case, did you come to an opinion to within a reasonable degree of medical certainty as to whether or not Dr. Voystock violated the standard of care in his care and treatment of this patient?",
+      "paragraph_ref": "161",
+      "speaker": "Expert witness"
+    },
+    {
+      "evidence_id": "E011",
+      "type": "EXPERT_TESTIMONY",
+      "text": "testified that, had Dr. Voystock adhered to the standard of care, Decedent\u2019s",
+      "paragraph_ref": "188",
+      "speaker": "Expert witness"
+    },
+    {
+      "evidence_id": "E012",
+      "type": "LEGAL_FINDING",
+      "text": "For all of these reasons, we will vacate the judgment in favor of Dr. Voystock and Surgical Specialists of Lancaster, P.C. and award Appellant a new trial against those parties only.",
+      "paragraph_ref": "408",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E013",
+      "type": "LEGAL_FINDING",
+      "text": "We affirm the judgment in favor of all other defendants.",
+      "paragraph_ref": "409",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "61 years",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Pain in right lower back, right hip, and right leg",
+      "history_of_present_illness": "Patient presented to the emergency room with pain in her right lower back, right hip, and right leg. The leg was swollen and blue.",
+      "past_medical_history": [
+        "Recent hemicolectomy for bowel perforation"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "right_leg": "Swollen, blue, colder, and weaker pulse compared to the left leg"
+        }
+      },
+      "initial_working_problem": "Possible deep vein thrombosis (DVT)",
+      "known_constraints": null,
+      "initial_differential": [
+        "DVT",
+        "Arterial blockage"
+      ],
+      "critical_findings": [
+        "Swollen and blue right leg",
+        "Colder and weaker pulse in right leg"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E003",
+        "E004"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "Ultrasound of lower leg",
+        "description": "Ultrasound to check for DVT in the lower leg",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "No DVT in lower right leg, but slow blood flow in some veins",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates possible issue higher up in the venous system",
+          "decision_impact": "Should prompt further testing to rule out pelvic DVT",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "IMAGING",
+        "name": "Arterial study",
+        "description": "Study to check for arterial blockage",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "No evidence of arterial blockage",
+          "detailed_findings": null,
+          "clinical_significance": "Rules out arterial cause for symptoms",
+          "decision_impact": "Should have prompted consideration of venous issues",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Emergency Presentation",
+        "description": "Patient presents to ER with acute symptoms",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Patient examined by Dr. Davies",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E004"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Diagnostic Workup",
+        "description": "Initial tests and consultations conducted",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Ultrasound performed and interpreted",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E005",
+              "E006"
+            ]
+          },
+          {
+            "event": "Arterial study ordered and interpreted",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E007"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "decision",
+        "name": "Discharge Decision",
+        "description": "Decision made to discharge patient",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Patient discharged from hospital",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E033",
+              "E034"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient in ER with symptoms suggestive of DVT",
+        "prompt": "What further investigation should be conducted after the ultrasound?",
+        "action_type": "ORDER_TEST",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Order further imaging to check for pelvic DVT",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Symptoms and ultrasound findings suggest a possible pelvic DVT, which is more dangerous."
+          },
+          {
+            "option_id": "B",
+            "description": "Discharge patient with no further testing",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Improvement in symptoms during bedrest was misinterpreted as readiness for discharge."
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Patient was discharged without further testing",
+          "reasoning_stated": "Improvement in symptoms during bedrest",
+          "evidence_ids": [
+            "E033",
+            "E034"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Further imaging should have been ordered to rule out pelvic DVT",
+          "standard_of_care_basis": "Expert testimony indicated the need to rule out pelvic DVT",
+          "evidence_ids": [
+            "E010",
+            "E011"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to rule out pelvic DVT despite suggestive symptoms and ultrasound findings",
+          "what_should_have_happened": "Further imaging to confirm or rule out pelvic DVT",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E010",
+            "E011"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient collapsed and died from a pulmonary embolism shortly after discharge",
+        "severity": "FATAL",
+        "long_term_effects": "Not applicable",
+        "evidence_ids": [
+          "E008",
+          "E009"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "None",
+        "key_findings": [
+          "Jury found in favor of defendants",
+          "Nonsuit granted for Dr. Voystock and Surgical Specialists of Lancaster"
+        ],
+        "evidence_ids": [
+          "E012",
+          "E013"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Failure to order further imaging for pelvic DVT",
+        "counterfactual": "Further imaging could have identified a pelvic DVT",
+        "evidence_ids": [
+          "E010",
+          "E011"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "April 30, 2010",
+        "event": "Hemicolectomy performed by Dr. Voystock",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "May 19, 2010",
+        "event": "Patient presented to ER with leg pain and swelling",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Ultrasound performed and interpreted",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Arterial study ordered and interpreted",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Patient discharged from hospital",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E033",
+          "E034"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Patient collapsed and died from pulmonary embolism",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E008",
+          "E009"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Ultrasound of lower leg",
+        "date": "Date not specified in judgment",
+        "result": "No DVT, slow blood flow in some veins",
+        "interpretation": null,
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      },
+      {
+        "test_name": "Arterial study",
+        "date": "Date not specified in judgment",
+        "result": "No arterial blockage",
+        "interpretation": null,
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Pulmonary embolism",
+        "when_made": "Post-mortem",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E009"
+        ]
+      }
+    ],
+    "treatments": [],
+    "complications": [
+      {
+        "complication": "Pulmonary embolism",
+        "when_occurred": "Shortly after discharge",
+        "severity": "Fatal",
+        "evidence_ids": [
+          "E009"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to diagnose and treat DVT",
+        "against": "Dr. Voystock",
+        "found_proven": false,
+        "evidence_ids": [
+          "E012",
+          "E013"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "No liability found for remaining defendants",
+        "legal_significance": "Jury verdict in favor of defendants",
+        "evidence_ids": [
+          "E012",
+          "E013"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.031026252983293555,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-09 17:48:46.774715",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

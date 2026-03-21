@@ -1,0 +1,390 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-9988146",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2024-06-28",
+  "url": "https://example.com/courtlistener-9988146",
+  "case_name": "John Armour, Individually and as Personal Representative of the Estate of Judith Armour v. David Bader, M.D.",
+  "neutral_citation": null,
+  "clinical_domain": "OBSTETRICS_GYNAECOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "John Armour, Individually and as Personal Representative of the Estate of Judith Armour v. David Bader, M.D.. Medical malpractice case involving obstetrics gynaecology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "On November 8, 2016, Judith Armour (Mrs. Armour or the decedent) arrived at South County Cardiology for a stress echocardiogram",
+      "paragraph_ref": "28",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "The results of Mrs. Armour\u2019s echocardiogram were \u201cmarkedly abnormal\u201d and indicated that she \u201cmay have significant coronary [artery] disease.\u201d",
+      "paragraph_ref": "33",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "Tragically, the next day, Mrs. Armour died from a heart attack.",
+      "paragraph_ref": "36",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Doctor Bouchard testified that Mrs. Armour was referred for a stress test by her primary-care physician because \u201cshe was having issues with shortness of breath",
+      "paragraph_ref": "84",
+      "speaker": "Plaintiff's expert"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Doctor Bouchard testified that the changes in Mrs. Armour\u2019s EKG levels were concerning and the fact that it took over seventeen minutes for these changes to resolve was another \u201cred-flag thing[]",
+      "paragraph_ref": "93",
+      "speaker": "Plaintiff's expert"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "LEGAL_FINDING",
+      "text": "For the foregoing reasons, the judgment of the Superior Court is vacated. The papers of the case are remanded to the Superior Court for a new trial.",
+      "paragraph_ref": "487",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Shortness of breath",
+      "history_of_present_illness": "Referred for a stress test due to issues with shortness of breath and potential coronary blockage.",
+      "past_medical_history": [
+        "Hypertension",
+        "Hypercholesteremia"
+      ],
+      "medications": [
+        "Not documented in judgment"
+      ],
+      "allergies": [
+        "Not documented in judgment"
+      ],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Baseline 78, peak 136 during stress test",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "cardiovascular": "Shortness of breath during stress test, no chest pain reported"
+        }
+      },
+      "initial_working_problem": "Potential coronary artery disease",
+      "known_constraints": null,
+      "initial_differential": [
+        "Coronary artery disease"
+      ],
+      "critical_findings": [
+        "Markedly abnormal echocardiogram",
+        "Shortness of breath during stress test"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002",
+        "E004",
+        "E005"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "Stress Echocardiogram",
+        "description": "Echocardiogram performed during exercise to assess heart function",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Markedly abnormal, indicating potential significant coronary artery disease",
+          "detailed_findings": null,
+          "clinical_significance": "Suggests high risk of coronary artery disease",
+          "decision_impact": "Should prompt immediate further evaluation or emergency care",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "CONSULT_NOTE",
+        "name": "Cardiology Consultation",
+        "description": "Consultation with cardiologist following stress test",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Patient was sent home after being deemed stable",
+          "detailed_findings": null,
+          "clinical_significance": "Decision to send home despite abnormal test results",
+          "decision_impact": "Contributed to lack of immediate intervention",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E001",
+          "E002"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents for stress test due to shortness of breath",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Patient arrives at South County Cardiology",
+            "timestamp": "November 8, 2016",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Stress Test and Evaluation",
+        "description": "Stress echocardiogram performed and evaluated",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Stress test performed, results markedly abnormal",
+            "timestamp": "November 8, 2016",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient with abnormal stress test results",
+        "prompt": "What should be the next step in management after an abnormal stress test?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Send patient to the emergency room for further evaluation",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard of care for high-risk stress test results"
+          },
+          {
+            "option_id": "B",
+            "description": "Send patient home with instructions to follow up",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Patient was deemed stable at the time"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant sent patient home",
+          "reasoning_stated": "Patient returned to baseline and was stable",
+          "evidence_ids": [
+            "E001",
+            "E002"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Patient should have been sent to the emergency room",
+          "standard_of_care_basis": "Expert testimony indicated this was the standard of care",
+          "evidence_ids": [
+            "E005",
+            "E006"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to act on high-risk stress test results",
+          "what_should_have_happened": "Immediate referral to emergency care",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E005",
+            "E006"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient died from a heart attack the day after the stress test",
+        "severity": "FATAL",
+        "long_term_effects": "Not applicable",
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "0",
+        "key_findings": [
+          "Defendants were found not liable by the jury",
+          "Judgment vacated and remanded for a new trial"
+        ],
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Failure to send patient to emergency room",
+        "counterfactual": "Immediate intervention could have prevented cardiac arrest",
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "November 8, 2016",
+        "event": "Patient arrives at South County Cardiology for stress test",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "November 9, 2016",
+        "event": "Patient dies from a heart attack",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Stress Echocardiogram",
+        "date": "November 8, 2016",
+        "result": "Markedly abnormal",
+        "interpretation": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Significant coronary artery disease",
+        "when_made": "November 8, 2016",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Nitroglycerin administration",
+        "date": "November 8, 2016",
+        "provider": null,
+        "outcome": "EKG levels returned to baseline",
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Heart attack",
+        "when_occurred": "November 9, 2016",
+        "severity": "Fatal",
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to perform adequate follow-up after stress test",
+        "against": "Dr. Bader and Dr. Brandon",
+        "found_proven": false,
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendants not liable",
+        "legal_significance": "Judgment vacated for a new trial",
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.011976047904191617,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-09 16:11:37.531764",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

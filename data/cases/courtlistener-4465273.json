@@ -1,0 +1,456 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-4465273",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2018-02-06",
+  "url": "https://example.com/courtlistener-4465273",
+  "case_name": "Hernandez v. Barthold",
+  "neutral_citation": null,
+  "clinical_domain": "EMERGENCY_MEDICINE",
+  "outcome_severity": "PERMANENT_SEVERE_DISABILITY",
+  "summary": {
+    "brief": "Hernandez v. Barthold. Medical malpractice case involving emergency medicine.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Hernandez alleged that the defendants failed to adequately assess him for appendicitis, hospitalize him or seek a surgical consultation prior to discharge, properly interpret the testing ordered by the previous emergency room physician, and give adequate discharge instructions.",
+      "paragraph_ref": "10",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "On March 17, 2011, Hernandez presented to the emergency room with complaints of abdominal pain that began three weeks prior as sharp pain located 'in the left upper quadrant.'",
+      "paragraph_ref": "10",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "Hernandez was originally seen by staff physician Lamberty and the resident working with him, Dr. Bhargava Mullapudi.",
+      "paragraph_ref": "10",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "An abdominal CT scan was ordered, which was initially read by resident radiologist Dr. Joel Brink.",
+      "paragraph_ref": "10",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "Hernandez\u2019 white blood cell count was 13,700; the medical record shows that the normal range is 4,000 to 11,000.",
+      "paragraph_ref": "10",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "When Lamberty\u2019s shift ended, Barthold took over as Hernandez\u2019s attending physician.",
+      "paragraph_ref": "11",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "Barthold diagnosed Hernandez with epigastric pain, dyspepsia and abdominal pain.",
+      "paragraph_ref": "11",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "FACTUAL_FINDING",
+      "text": "Hernandez returned to the emergency room on March 19, 2011, with a ruptured appendix.",
+      "paragraph_ref": "11",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Schurgin also opined that if the standard of care had been met, Hernandez would have most likely undergone a laparoscopic appendectomy.",
+      "paragraph_ref": "11",
+      "speaker": "Dr. Schurgin"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "EXPERT_TESTIMONY",
+      "text": "In contrast, Barthold\u2019s expert, Cunningham, opined that Barthold met the standard of care.",
+      "paragraph_ref": "11",
+      "speaker": "Dr. Cunningham"
+    },
+    {
+      "evidence_id": "E011",
+      "type": "LEGAL_FINDING",
+      "text": "The jury returned a general verdict in favor of Barthold.",
+      "paragraph_ref": "11",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E012",
+      "type": "COURT_REASONING",
+      "text": "We conclude that the district court did not err with regard to the instructions given to the jury or in its evidentiary ruling during cross-examination of Barthold.",
+      "paragraph_ref": "24",
+      "speaker": "Court conclusion"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "male",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Abdominal pain",
+      "history_of_present_illness": "Patient presented with abdominal pain that began three weeks prior as sharp pain in the left upper quadrant, with nausea and vomiting after eating tacos. By March 17, the pain was new on the right side near the belt area and was severe.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "abdomen": "Diffuse middle abdominal pain"
+        }
+      },
+      "initial_working_problem": "Abdominal pain with suspicion of appendicitis",
+      "known_constraints": null,
+      "initial_differential": [
+        "appendicitis",
+        "dyspepsia",
+        "epigastric pain"
+      ],
+      "critical_findings": [
+        "Severe abdominal pain",
+        "WBC count elevated"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E002",
+        "E003",
+        "E005"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "CT Abdomen",
+        "description": "CT scan of the abdomen to evaluate for appendicitis",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Appendix slightly enlarged at 1.1 cm, no wall thickening or inflammatory changes",
+          "detailed_findings": null,
+          "clinical_significance": "May be normal variant, but requires close follow-up in context of abdominal pain",
+          "decision_impact": "Should prompt consideration of appendicitis and surgical consult",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "LAB",
+        "name": "White Blood Cell Count",
+        "description": "Complete blood count to assess for infection",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "WBC 13,700 (elevated)",
+          "detailed_findings": null,
+          "clinical_significance": "Suggestive of infection",
+          "decision_impact": "Supports suspicion of appendicitis",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents to ED with abdominal pain",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Patient triaged and initial assessment performed",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Diagnostic Workup",
+        "description": "CT scan and lab tests performed",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "CT scan ordered and interpreted",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E004"
+            ]
+          },
+          {
+            "event": "WBC count obtained",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E005"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "decision",
+        "name": "Clinical Decision",
+        "description": "Decision made to discharge patient",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Patient discharged with instructions",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E007"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient in ED with severe abdominal pain and elevated WBC",
+        "prompt": "What should be the next step in management?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Admit patient for observation and surgical consult",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard care for suspected appendicitis with elevated WBC and CT findings"
+          },
+          {
+            "option_id": "B",
+            "description": "Discharge patient with instructions to return if symptoms worsen",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Inadequate given the suspicion of appendicitis"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Patient was discharged with instructions to return if symptoms worsened",
+          "reasoning_stated": "Defendant relied on initial CT interpretation and patient's reported improvement",
+          "evidence_ids": [
+            "E007"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Patient should have been admitted for observation and surgical consult",
+          "standard_of_care_basis": "Expert testimony indicated this was the standard of care",
+          "evidence_ids": [
+            "E009"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to admit and consult surgery given clinical presentation and test results",
+          "what_should_have_happened": "Patient should have been admitted for further evaluation",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E009",
+            "E010"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient returned with ruptured appendix requiring emergency surgery",
+        "severity": "PERMANENT_MODERATE_DISABILITY",
+        "long_term_effects": "Increased scarring and recovery time due to open surgery",
+        "evidence_ids": [
+          "E008",
+          "E009"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "0",
+        "key_findings": [
+          "Jury found no negligence by Barthold",
+          "Standard of care was met according to defense expert"
+        ],
+        "evidence_ids": [
+          "E011",
+          "E010"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Failure to admit and consult surgery",
+        "counterfactual": "Admitting patient could have prevented rupture",
+        "evidence_ids": [
+          "E009",
+          "E010"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "March 17, 2011",
+        "event": "Patient presents to ED with abdominal pain",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "March 19, 2011",
+        "event": "Patient returns to ED with ruptured appendix",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E008"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "CT Abdomen",
+        "date": "March 17, 2011",
+        "result": "Appendix slightly enlarged, no wall thickening",
+        "interpretation": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "test_name": "White Blood Cell Count",
+        "date": "March 17, 2011",
+        "result": "13,700 (elevated)",
+        "interpretation": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Ruptured appendicitis",
+        "when_made": "March 19, 2011",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E008"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Emergency open appendectomy",
+        "date": "March 19, 2011",
+        "provider": null,
+        "outcome": "Appendix removed, increased recovery time",
+        "evidence_ids": [
+          "E008"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Ruptured appendix",
+        "when_occurred": "March 19, 2011",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E008"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to adequately assess and manage suspected appendicitis",
+        "against": "Dr. Claudia L. Barthold",
+        "found_proven": false,
+        "evidence_ids": [
+          "E001",
+          "E011"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "No negligence by Barthold",
+        "legal_significance": "Jury verdict in favor of Barthold",
+        "evidence_ids": [
+          "E011"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.48,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-16 15:37:13.714246",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

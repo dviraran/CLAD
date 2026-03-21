@@ -1,0 +1,543 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-9431125",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2023-07-28",
+  "url": "https://example.com/courtlistener-9431125",
+  "case_name": "Bandaru v. Ohio State Univ. Wexner Med. Ctr.",
+  "neutral_citation": null,
+  "clinical_domain": "OBSTETRICS_GYNAECOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Bandaru v. Ohio State Univ. Wexner Med. Ctr.. Medical malpractice case involving obstetrics gynaecology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Bandaru, at the age of 37, was admitted to OSUWMC on January 10, 2018 for chemotherapy treatment for Acute Lymphoblastic Leukemia (ALL).",
+      "paragraph_ref": "3",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "The permanence of Bandaru’s disabilities prevented him from testifying himself.",
+      "paragraph_ref": "1",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "MEDICAL_RECORD",
+      "text": "Bandaru did not have any focal deficits, his pupils were equally round and reactive to light, and no signs or symptoms of stroke were noted.",
+      "paragraph_ref": "11",
+      "speaker": "Medical record"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "WITNESS_STATEMENT",
+      "text": "While she was on her errand, she testified that Bandaru called her to ask her when she would be back. She said that he explained that he was very weak.",
+      "paragraph_ref": "8",
+      "speaker": "Kumchala"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "EXPERT_TESTIMONY",
+      "text": "There is a consensus among healthcare providers that PEG-asparaginase increases a patient’s risk of developing a blood clot.",
+      "paragraph_ref": "4",
+      "speaker": "Expert testimony"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "LEGAL_FINDING",
+      "text": "The Court enters judgment in favor of Defendant.",
+      "paragraph_ref": "2",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "COURT_REASONING",
+      "text": "The main reason for this finding is that there was a verified report of only one possible stroke symptom at that time: numbness and tingling diffusely.",
+      "paragraph_ref": "34",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "FACTUAL_FINDING",
+      "text": "At 12:25 p.m., Bandaru was given assistance when he was repositioned in his bed.",
+      "paragraph_ref": "20",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "MEDICAL_RECORD",
+      "text": "Pt c/o numbness and tingling throughout entire body. Continues to c/o of dizziness with activity.",
+      "paragraph_ref": "21",
+      "speaker": "Medical record"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "LEGAL_FINDING",
+      "text": "The negligence of Defendant was not the proximate cause of this terrible ending.",
+      "paragraph_ref": "73",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "37 years",
+        "sex": "male",
+        "relevant_social_history": "Generally healthy and active before cancer diagnosis"
+      },
+      "chief_complaint": "Admitted for chemotherapy treatment",
+      "history_of_present_illness": "Patient admitted for chemotherapy for Acute Lymphoblastic Leukemia (ALL). On January 27, 2018, patient reported feeling weak and had difficulty balancing.",
+      "past_medical_history": [
+        "Acute Lymphoblastic Leukemia"
+      ],
+      "medications": [
+        "Chemotherapy regimen including PEG-asparaginase"
+      ],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "neurological": "No focal deficits, pupils equally round and reactive to light, no signs or symptoms of stroke noted at 8:42 a.m. on January 27, 2018"
+        }
+      },
+      "initial_working_problem": "Monitoring during chemotherapy treatment",
+      "known_constraints": null,
+      "initial_differential": [
+        "Chemotherapy side effects",
+        "Potential stroke due to PEG-asparaginase"
+      ],
+      "critical_findings": [
+        "Numbness and tingling throughout body",
+        "Dizziness with activity"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E003",
+        "E005",
+        "E009"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "CT Angio Brain/Neck",
+        "description": "CT angiography of the brain and neck to assess for thrombosis",
+        "available_phase": "decision",
+        "reveal": {
+          "result_summary": "Complete thrombosis of one of the dominant cortical veins along the left parietal convexity",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates cerebral venous sinus thrombosis",
+          "decision_impact": "Should prompt immediate anticoagulation treatment",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E022"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "IMAGING",
+        "name": "MRI Brain",
+        "description": "MRI of the brain to assess for ischemic changes",
+        "available_phase": "decision",
+        "reveal": {
+          "result_summary": "No acute intracranial hemorrhage noted",
+          "detailed_findings": null,
+          "clinical_significance": "Confirms presence of thrombosis without hemorrhage",
+          "decision_impact": "Supports need for anticoagulation",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E022"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Hospital Admission",
+        "description": "Patient admitted for chemotherapy treatment",
+        "duration": "17 days",
+        "key_events": [
+          {
+            "event": "Admitted to hospital for chemotherapy",
+            "timestamp": "January 10, 2018",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "decision",
+        "name": "Symptom Onset and Response",
+        "description": "Patient exhibits symptoms consistent with stroke",
+        "duration": "6 hours",
+        "key_events": [
+          {
+            "event": "Patient reports weakness and dizziness",
+            "timestamp": "January 27, 2018, 1:07 p.m.",
+            "evidence_ids": [
+              "E009",
+              "E013"
+            ]
+          },
+          {
+            "event": "No neurological assessment performed",
+            "timestamp": "January 27, 2018, 1:07 p.m.",
+            "evidence_ids": [
+              "E013"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Diagnostic Workup",
+        "description": "Imaging and assessments conducted",
+        "duration": "Several hours",
+        "key_events": [
+          {
+            "event": "CT Angio Brain/Neck ordered",
+            "timestamp": "1:31 p.m.",
+            "evidence_ids": [
+              "E001"
+            ]
+          },
+          {
+            "event": "MRI ordered",
+            "timestamp": "2:05 p.m.",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "decision",
+        "clinical_context": "Patient in hospital with reported weakness and dizziness",
+        "prompt": "Should a neurological assessment be performed at 1:07 p.m.?",
+        "action_type": "ORDER_TEST",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Perform a neurological assessment",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Change in baseline condition warrants further evaluation"
+          },
+          {
+            "option_id": "B",
+            "description": "Do not perform a neurological assessment",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Assumed symptoms were due to chemotherapy side effects"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "No neurological assessment was performed",
+          "reasoning_stated": "Symptoms were attributed to chemotherapy side effects",
+          "evidence_ids": [
+            "E009",
+            "E013"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "A neurological assessment should have been performed",
+          "standard_of_care_basis": "Change in baseline condition required further evaluation",
+          "evidence_ids": [
+            "E013",
+            "E014"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to assess neurological status despite change in condition",
+          "what_should_have_happened": "Neurological assessment should have been conducted to rule out stroke",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E013",
+            "E014"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient developed significant cerebral edema and hemorrhage",
+        "severity": "PERMANENT_SEVERE_DISABILITY",
+        "long_term_effects": "Severe neurological impairment",
+        "evidence_ids": [
+          "E002",
+          "E010"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "0",
+        "key_findings": [
+          "Defendant's actions were not the proximate cause of harm",
+          "Heparin administration timing did not alter outcome"
+        ],
+        "evidence_ids": [
+          "E006",
+          "E010"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Timing of heparin administration",
+        "counterfactual": "Earlier heparin might have reduced clot progression",
+        "evidence_ids": [
+          "E010"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "January 10, 2018",
+        "event": "Patient admitted for chemotherapy",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "January 27, 2018, 1:07 p.m.",
+        "event": "Patient reports weakness and dizziness",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E009",
+          "E013"
+        ]
+      },
+      {
+        "timestamp": "January 10, 2018",
+        "event": "Patient admitted for chemotherapy",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "1:31 p.m.",
+        "event": "CT Angio Brain/Neck ordered",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "2:05 p.m.",
+        "event": "MRI ordered",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "CT Angio Brain/Neck",
+        "date": "January 27, 2018",
+        "result": "Complete thrombosis of one of the dominant cortical veins",
+        "interpretation": null,
+        "evidence_ids": [
+          "E022"
+        ]
+      },
+      {
+        "test_name": "MRI Brain",
+        "date": "January 27, 2018",
+        "result": "No acute intracranial hemorrhage",
+        "interpretation": null,
+        "evidence_ids": [
+          "E022"
+        ]
+      },
+      {
+        "test_name": "CT Angio Brain/Neck",
+        "date": "Not specified in judgment",
+        "result": "Suspicious for venous thrombosis",
+        "interpretation": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "test_name": "MRI Brain",
+        "date": "Not specified in judgment",
+        "result": "Suggestive of venous infarct",
+        "interpretation": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Cerebral venous sinus thrombosis",
+        "when_made": "January 27, 2018",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E022"
+        ]
+      },
+      {
+        "diagnosis": "Cerebral venous sinus thrombosis (CVST)",
+        "when_made": "Not specified in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Heparin administration",
+        "date": "January 27, 2018",
+        "provider": null,
+        "outcome": "Administered too late to prevent damage",
+        "evidence_ids": [
+          "E022"
+        ]
+      },
+      {
+        "treatment": "Heparin administration",
+        "date": "Not specified in judgment",
+        "provider": null,
+        "outcome": "Delayed administration, limited effect",
+        "evidence_ids": [
+          "E010"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Permanent brain damage",
+        "when_occurred": "January 28, 2018",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "complication": "Cerebral edema and hemorrhage",
+        "when_occurred": "Not specified in judgment",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E010"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to perform neurological assessment",
+        "against": "Defendant medical staff",
+        "found_proven": true,
+        "evidence_ids": [
+          "E013"
+        ]
+      },
+      {
+        "allegation": "Delay in heparin administration",
+        "against": "Defendant medical center",
+        "found_proven": false,
+        "evidence_ids": [
+          "E010"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "No liability due to lack of causation",
+        "legal_significance": "Failure to act did not change outcome",
+        "evidence_ids": [
+          "E010"
+        ]
+      },
+      {
+        "finding": "Defendant's actions were not the proximate cause of harm",
+        "legal_significance": "No liability found",
+        "evidence_ids": [
+          "E010"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP",
+      "TREATMENT_PROCEDURE_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.16393442622950818,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-09 21:02:43.453865",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

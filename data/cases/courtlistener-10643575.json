@@ -1,0 +1,592 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10643575",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2021-09-07",
+  "url": "https://example.com/courtlistener-10643575",
+  "case_name": "Canton Harbor Healthcare v. Robinson",
+  "neutral_citation": null,
+  "clinical_domain": "PAEDIATRICS",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Canton Harbor Healthcare v. Robinson. Medical malpractice case involving paediatrics.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Everett Robinson was transferred to Canton Harbor Healthcare Center, Inc. d/b/a FutureCare-Canton Harbor (“Canton Harbor”), for inpatient follow-up care.",
+      "paragraph_ref": "21",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "During his stay at Canton Harbor, Mr. Robinson developed pressure ulcers, also known as decubitus ulcers or, in more common parlance, bedsores.",
+      "paragraph_ref": "24",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Nurse Jones-Singh attested that Canton Harbor “breached the standard of care and the breach was the proximate cause of … the development of [Mr. Robinson’s] pressure ulcers.”",
+      "paragraph_ref": "34",
+      "speaker": "Nurse Jones-Singh"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "LEGAL_FINDING",
+      "text": "The circuit court granted Canton Harbor’s motion to dismiss the Complaint on the ground that, as a registered nurse, Nurse Jones-Singh is not qualified to attest to the proximate cause of Mr. Robinson’s pressure ulcers.",
+      "paragraph_ref": "40",
+      "speaker": "Circuit court"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "COURT_REASONING",
+      "text": "The Appellate Court vacated the order of dismissal and remanded the case to the circuit court for further proceedings.",
+      "paragraph_ref": "47",
+      "speaker": "Appellate Court"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "LEGAL_FINDING",
+      "text": "We affirm the judgment of the Appellate Court.",
+      "paragraph_ref": "49",
+      "speaker": "Supreme Court"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "EXPERT_TESTIMONY",
+      "text": "According to Nurse Jones-Singh, an SDTI is damage to underlying skin “only caused by friction and/or shearing.",
+      "paragraph_ref": "202",
+      "speaker": "Nurse Jones-Singh"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "LEGAL_FINDING",
+      "text": "Mrs. Robinson’s negligence claim may go forward.",
+      "paragraph_ref": "413",
+      "speaker": "Supreme Court"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "male",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Follow-up care after stroke",
+      "history_of_present_illness": "Mr. Robinson was transferred to Canton Harbor Healthcare Center for inpatient follow-up care after treatment for a stroke. He was completely dependent for care and unable to communicate effectively.",
+      "past_medical_history": [
+        "Stroke",
+        "Acute embolism",
+        "Atherosclerotic heart disease",
+        "Cerebral infarction",
+        "Cerebrovascular disease",
+        "Hypertension",
+        "Hemiplegia",
+        "Hyperlipidemia",
+        "Seizures",
+        "Tachycardia"
+      ],
+      "medications": [
+        "Not documented in judgment"
+      ],
+      "allergies": [
+        "Not documented in judgment"
+      ],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "skin": "No pressure ulcers on admission, high risk for developing pressure ulcers per Braden scale score of 11"
+        }
+      },
+      "initial_working_problem": "High risk for pressure ulcers",
+      "known_constraints": null,
+      "initial_differential": [
+        "Pressure ulcers",
+        "Incontinence-associated dermatitis"
+      ],
+      "critical_findings": [
+        "High Braden scale score indicating risk for pressure ulcers"
+      ],
+      "urgency_level": "ROUTINE",
+      "evidence_ids": [
+        "E001",
+        "E002",
+        "E003"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "LAB",
+        "name": "Nutritional assessment",
+        "description": "Assessment of nutritional status and needs",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Hypoalbuminemia indicative of malnutrition",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates need for specific protein and calorie intake",
+          "decision_impact": "Should prompt nutritional intervention",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E210"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "CONSULT_NOTE",
+        "name": "Wound care assessment",
+        "description": "Evaluation of skin integrity and pressure ulcer risk",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Initial assessment showed no pressure ulcers, high risk per Braden scale",
+          "detailed_findings": null,
+          "clinical_significance": "High risk for pressure ulcers requires preventive measures",
+          "decision_impact": "Should prompt implementation of preventive care plan",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E183",
+          "E184"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Admission to Canton Harbor",
+        "description": "Patient admitted for follow-up care after stroke",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Initial assessment conducted",
+            "timestamp": "16 August 2018",
+            "evidence_ids": [
+              "E183"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Development of Pressure Ulcers",
+        "description": "Patient developed pressure ulcers during stay",
+        "duration": "August 16, 2018 - January 5, 2019",
+        "key_events": [
+          {
+            "event": "Pressure ulcers first noted",
+            "timestamp": "20 August 2018",
+            "evidence_ids": [
+              "E193"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient at high risk for pressure ulcers",
+        "prompt": "What preventive measures should be implemented for a high-risk patient?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Implement comprehensive skin care and repositioning plan",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard care for high-risk patients to prevent pressure ulcers"
+          },
+          {
+            "option_id": "B",
+            "description": "Minimal intervention with periodic checks",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Insufficient for high-risk patients, leads to ulcer development"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Minimal intervention with periodic checks",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E002",
+            "E003"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Implement comprehensive skin care and repositioning plan",
+          "standard_of_care_basis": "Expert evidence and federal regulations",
+          "evidence_ids": [
+            "E003",
+            "E228"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to implement adequate preventive measures led to pressure ulcers",
+          "what_should_have_happened": "Comprehensive care plan should have been implemented",
+          "legal_standard_applied": "Standard of care as established by expert testimony and federal regulations",
+          "evidence_ids": [
+            "E003",
+            "E228"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Development of pressure ulcers with potential complications",
+        "severity": "MODERATE",
+        "long_term_effects": "Potential for chronic skin issues",
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "None",
+        "key_findings": [
+          "Nurse's certificate insufficient to establish causation",
+          "Court found that proximate cause involves medical diagnosis"
+        ],
+        "evidence_ids": [
+          "E004",
+          "E005",
+          "E006"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Failure to conduct comprehensive assessment",
+        "counterfactual": "Comprehensive assessment could have identified all contributing factors",
+        "evidence_ids": [
+          "E003",
+          "E004"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "16 August 2018",
+        "event": "Mr. Robinson admitted to Canton Harbor",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E183"
+        ]
+      },
+      {
+        "timestamp": "20 August 2018",
+        "event": "Pressure ulcers first noted",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E193"
+        ]
+      },
+      {
+        "timestamp": "August 2018",
+        "event": "Patient transferred to Canton Harbor Healthcare Center",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "August 20, 2018",
+        "event": "Development of sacral ulcer",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Patient admitted to Canton Harbor Healthcare Center",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Pressure ulcers identified",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Mr. Robinson developed pressure ulcers during stay",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Braden scale assessment",
+        "date": "16 August 2018",
+        "result": "High risk for pressure ulcers",
+        "interpretation": null,
+        "evidence_ids": [
+          "E188"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Pressure ulcers",
+        "when_made": "20 August 2018",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E193"
+        ]
+      },
+      {
+        "diagnosis": "Pressure ulcers",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "diagnosis": "Pressure ulcers",
+        "when_made": "During stay at Canton Harbor",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "diagnosis": "Pressure ulcers",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "diagnosis": "Pressure ulcers",
+        "when_made": "During stay at Canton Harbor",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Topical debriding agent (Santyl)",
+        "date": "Not documented in judgment",
+        "provider": null,
+        "outcome": "Not documented in judgment",
+        "evidence_ids": [
+          "E197"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Sepsis",
+        "when_occurred": "Not documented in judgment",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E152"
+        ]
+      },
+      {
+        "complication": "Sepsis from infected pressure ulcers",
+        "when_occurred": "Not documented in judgment",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "complication": "Sepsis",
+        "when_occurred": "Not documented in judgment",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "complication": "Severe pressure ulcers",
+        "when_occurred": "Not documented in judgment",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "complication": "Pressure ulcers",
+        "when_occurred": "During stay at Canton Harbor",
+        "severity": "Moderate",
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to prevent pressure ulcers",
+        "against": "Canton Harbor",
+        "found_proven": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "allegation": "Failure to prevent and treat pressure ulcers",
+        "against": "Canton Harbor Healthcare Center",
+        "found_proven": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "allegation": "Failure to prevent pressure ulcers",
+        "against": "Canton Harbor",
+        "found_proven": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "allegation": "Failure to implement preventive measures for pressure ulcers",
+        "against": "Canton Harbor Healthcare Center",
+        "found_proven": true,
+        "evidence_ids": [
+          "E003",
+          "E008"
+        ]
+      },
+      {
+        "allegation": "Failure to properly assess and manage pressure ulcers",
+        "against": "Canton Harbor Healthcare",
+        "found_proven": false,
+        "evidence_ids": [
+          "E004",
+          "E005"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Canton Harbor breached duty of care",
+        "legal_significance": "Breach led to development of pressure ulcers",
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Failure to meet standard of care for pressure ulcer management",
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Standard of care not met",
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Standard of care not met",
+        "evidence_ids": [
+          "E003",
+          "E008"
+        ]
+      },
+      {
+        "finding": "Nurse's certificate insufficient to establish causation",
+        "legal_significance": "Proximate cause involves medical diagnosis",
+        "evidence_ids": [
+          "E004",
+          "E005",
+          "E006"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "MONITORING_FOLLOWUP",
+      "TREATMENT_PROCEDURE_ERROR",
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.004610951008645533,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-09 20:55:01.316477",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

@@ -1,0 +1,652 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10641466",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2025-07-25",
+  "url": "https://example.com/courtlistener-10641466",
+  "case_name": "Martin v. Toledo Clinic, Inc.",
+  "neutral_citation": null,
+  "clinical_domain": "SURGERY_ORTHOPAEDIC",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Martin v. Toledo Clinic, Inc.. Medical malpractice case involving cardiology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Halter’s complaint alleges that she sustained an injury to her left leg on June 24, 2021. She presented to the Flower Hospital emergency department (“ED”) two days later, at which time x-rays showed that she had suffered a nondisplaced fracture of her left tibia.",
+      "paragraph_ref": "38",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Halter saw Dr. Boggus on June 30, 2021. He placed her in a short walking cast and told her to follow up in four weeks.",
+      "paragraph_ref": "42",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "On July 13, 2021, Halter presented to Toledo Hospital ED with shortness of breath. She was diagnosed with bilateral pulmonary emboli, complete arterial occlusion from deep vein thrombosis, and compartment syndrome in her right leg.",
+      "paragraph_ref": "44",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "Halter alleged that Dr. Boggus noted her new fracture but did not address weight-bearing status, did not offer surgery, and did not remove the cast to check her.",
+      "paragraph_ref": "49",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "On July 19, 2021, Halter sought a second opinion from Dr. Tank. He replaced her short walking cast with a long leg cast.",
+      "paragraph_ref": "52",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "Halter developed an open infected wound on her ankle. She saw Dr. Tank on September 23, 2021, and he ordered an MRI and lab tests, but did not otherwise treat the wound.",
+      "paragraph_ref": "54",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "Halter’s leg pain intensified and she again presented to the Toledo Hospital ED. She was diagnosed with osteomyelitis of her left tibia and fibula and significant varus deformity.",
+      "paragraph_ref": "56",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "FACTUAL_FINDING",
+      "text": "Halter underwent a below-the-knee amputation of her left leg on October 6, 2021.",
+      "paragraph_ref": "60",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Kabaei opined that the standard of care required Dr. Boggus to instruct Halter to stay off of her injured leg.",
+      "paragraph_ref": "294",
+      "speaker": "Dr. Kabaei"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "LEGAL_FINDING",
+      "text": "The trial court granted summary judgment in favor of Drs. Boggus and Tank.",
+      "paragraph_ref": "606",
+      "speaker": "Trial court"
+    },
+    {
+      "evidence_id": "E011",
+      "type": "COURT_REASONING",
+      "text": "The court concluded that Dr. Kabaei’s opinions were speculative and failed to establish that Dr. Boggus’s actions proximately caused harm to Halter.",
+      "paragraph_ref": "619",
+      "speaker": "Court"
+    },
+    {
+      "evidence_id": "E012",
+      "type": "LEGAL_FINDING",
+      "text": "The trial court did not err when it granted summary judgment to Dr. Tank and ProMedica.",
+      "paragraph_ref": "979",
+      "speaker": "Court"
+    },
+    {
+      "evidence_id": "E013",
+      "type": "LEGAL_FINDING",
+      "text": "We affirm, in part, and reverse, in part, the November 12, 2024 judgment of the Lucas County Court of Common Pleas.",
+      "paragraph_ref": "981",
+      "speaker": "Court"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "History of smoking, diabetes"
+      },
+      "chief_complaint": "Left leg pain and swelling",
+      "history_of_present_illness": "Patient sustained an injury to her left leg on June 24, 2021, and presented to the Flower Hospital ED two days later. X-rays showed a nondisplaced fracture of her left tibia.",
+      "past_medical_history": [
+        "Diabetes",
+        "History of DVTs",
+        "Pulmonary embolism",
+        "Splenectomy"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "lower_extremity": "Swollen left leg, nondisplaced tibial fracture on x-ray"
+        }
+      },
+      "initial_working_problem": "Nondisplaced tibial fracture",
+      "known_constraints": null,
+      "initial_differential": [
+        "Nondisplaced tibial fracture",
+        "Potential for DVT"
+      ],
+      "critical_findings": [
+        "Nondisplaced tibial fracture"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "X-ray of left leg",
+        "description": "X-ray to assess fracture status",
+        "available_phase": "presentation",
+        "reveal": {
+          "result_summary": "Nondisplaced fracture of left tibia",
+          "detailed_findings": null,
+          "clinical_significance": "Confirms fracture, requires immobilization",
+          "decision_impact": "Guides immobilization strategy",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "LAB",
+        "name": "DVT Prophylaxis Consideration",
+        "description": "Consideration for DVT prophylaxis due to history of DVTs and immobilization",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not documented in judgment",
+          "detailed_findings": null,
+          "clinical_significance": "High risk for DVT due to history and current condition",
+          "decision_impact": "Should prompt prophylactic measures",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": [
+          "E009"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents to ED with leg injury",
+        "duration": "2 days post-injury",
+        "key_events": [
+          {
+            "event": "X-ray confirms nondisplaced tibial fracture",
+            "timestamp": "June 26, 2021",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Orthopedic Consultation",
+        "description": "Patient sees orthopedic surgeon for fracture management",
+        "duration": "June 30, 2021",
+        "key_events": [
+          {
+            "event": "Patient placed in walking cast",
+            "timestamp": "June 30, 2021",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "decision",
+        "name": "Complication Development",
+        "description": "Patient develops complications from initial treatment",
+        "duration": "July 13, 2021",
+        "key_events": [
+          {
+            "event": "Patient presents to ED with shortness of breath, diagnosed with pulmonary emboli",
+            "timestamp": "July 13, 2021",
+            "evidence_ids": [
+              "E003"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "followup",
+        "name": "Follow-up and Complications",
+        "description": "Patient develops complications and seeks further care",
+        "duration": "July 13, 2021 to October 6, 2021",
+        "key_events": [
+          {
+            "event": "Patient presents to ED with shortness of breath",
+            "timestamp": "July 13, 2021",
+            "evidence_ids": [
+              "E003"
+            ]
+          },
+          {
+            "event": "Patient undergoes below-the-knee amputation",
+            "timestamp": "October 6, 2021",
+            "evidence_ids": [
+              "E008"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient with nondisplaced tibial fracture and history of DVTs",
+        "prompt": "What immobilization strategy should be used?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Place in non-weight-bearing splint",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Prevents further injury and reduces risk of DVT"
+          },
+          {
+            "option_id": "B",
+            "description": "Place in walking cast",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Inappropriate given fracture type and patient history"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant placed patient in a walking cast",
+          "reasoning_stated": "Defendant claimed it was appropriate",
+          "evidence_ids": [
+            "E002",
+            "E004"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Non-weight-bearing splint should have been used",
+          "standard_of_care_basis": "Expert testimony indicated this was the standard of care",
+          "evidence_ids": [
+            "E009"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Walking cast increased risk of further injury and DVT",
+          "what_should_have_happened": "Non-weight-bearing splint should have been used",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E009",
+            "E011"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      },
+      {
+        "decision_id": "D002",
+        "phase_id": "workup",
+        "clinical_context": "Patient with history of DVTs and current immobilization",
+        "prompt": "Should DVT prophylaxis be initiated?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Initiate DVT prophylaxis",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "High risk of DVT due to history and immobilization"
+          },
+          {
+            "option_id": "B",
+            "description": "Do not initiate DVT prophylaxis",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Failed to address high risk of DVT"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant did not initiate DVT prophylaxis",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E009"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "DVT prophylaxis should have been initiated",
+          "standard_of_care_basis": "Expert testimony indicated this was necessary",
+          "evidence_ids": [
+            "E009"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Increased risk of DVT not mitigated",
+          "what_should_have_happened": "DVT prophylaxis should have been initiated",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E009",
+            "E011"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient underwent below-the-knee amputation",
+        "severity": "PERMANENT_SEVERE_DISABILITY",
+        "long_term_effects": "Loss of limb, potential mobility issues",
+        "evidence_ids": [
+          "E008"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "PARTIAL_LIABILITY",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Failure to instruct non-weight-bearing and prescribe DVT prophylaxis",
+          "Causation not established for Dr. Tank's actions"
+        ],
+        "evidence_ids": [
+          "E013"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to instruct non-weight-bearing and prescribe DVT prophylaxis",
+        "counterfactual": "Non-weight-bearing and DVT prophylaxis could have prevented complications",
+        "evidence_ids": [
+          "E009",
+          "E011"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "June 24, 2021",
+        "event": "Patient sustains left leg injury",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "June 26, 2021",
+        "event": "Patient presents to ED, x-ray shows nondisplaced tibial fracture",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "June 30, 2021",
+        "event": "Patient sees Dr. Boggus, placed in walking cast",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "July 13, 2021",
+        "event": "Patient presents to ED with shortness of breath, diagnosed with pulmonary emboli",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "timestamp": "October 6, 2021",
+        "event": "Patient undergoes below-the-knee amputation",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E008"
+        ]
+      },
+      {
+        "timestamp": "June 30, 2021",
+        "event": "Patient seen by Dr. Boggus and placed in a walking cast",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "July 13, 2021",
+        "event": "Patient presents to ED with shortness of breath, diagnosed with DVT",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "timestamp": "October 6, 2021",
+        "event": "Patient undergoes below-the-knee amputation",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E008"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "X-ray",
+        "date": "June 26, 2021",
+        "result": "Nondisplaced tibial fracture",
+        "interpretation": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "test_name": "X-ray of left leg",
+        "date": "June 30, 2021",
+        "result": "Pathological atypical distal third transverse tibial fracture",
+        "interpretation": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Nondisplaced tibial fracture",
+        "when_made": "June 26, 2021",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "diagnosis": "Pulmonary emboli",
+        "when_made": "July 13, 2021",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "diagnosis": "Deep vein thrombosis",
+        "when_made": "July 13, 2021",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Walking cast",
+        "date": "June 30, 2021",
+        "provider": null,
+        "outcome": "Inappropriate for fracture type",
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "treatment": "Below-the-knee amputation",
+        "date": "October 6, 2021",
+        "provider": null,
+        "outcome": "Loss of limb",
+        "evidence_ids": [
+          "E008"
+        ]
+      },
+      {
+        "treatment": "Walking cast applied",
+        "date": "June 30, 2021",
+        "provider": null,
+        "outcome": "Inadequate management for fracture",
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Pulmonary emboli",
+        "when_occurred": "July 13, 2021",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "complication": "Displacement of fracture",
+        "when_occurred": "Between June 26 and July 13, 2021",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to initiate DVT prophylaxis",
+        "against": "Dr. Boggus",
+        "found_proven": false,
+        "evidence_ids": [
+          "E009",
+          "E011"
+        ]
+      },
+      {
+        "allegation": "Failure to instruct non-weight-bearing and prescribe DVT prophylaxis",
+        "against": "Dr. Boggus",
+        "found_proven": true,
+        "evidence_ids": [
+          "E009"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Summary judgment granted in favor of defendants",
+        "legal_significance": "Expert testimony deemed speculative",
+        "evidence_ids": [
+          "E010",
+          "E011"
+        ]
+      },
+      {
+        "finding": "Dr. Boggus breached the standard of care",
+        "legal_significance": "Proximate cause established for fracture displacement",
+        "evidence_ids": [
+          "E013"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.013118062563067608,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-09 19:15:48.581698",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

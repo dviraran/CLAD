@@ -1,0 +1,399 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10766484",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2025-12-30",
+  "url": "https://example.com/courtlistener-10766484",
+  "case_name": "Cothran v. Jauregui",
+  "neutral_citation": null,
+  "clinical_domain": "OBSTETRICS_GYNAECOLOGY",
+  "outcome_severity": "TEMPORARY_HARM",
+  "summary": {
+    "brief": "Cothran v. Jauregui. Medical malpractice case involving obstetrics gynaecology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "On June 30, 2021, Renee Jauregui (\u201cJauregui\u201d) filed a complaint asserting a medical malpractice claim against Dr. Cothran.",
+      "paragraph_ref": "8",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Jauregui alleged that, during at least four of the appointments, she informed Dr. Cothran of a lump she had discovered in her breast.",
+      "paragraph_ref": "11",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "In August 2019, Jauregui returned to Dr. Cothran for a follow up on the breast lump and subsequent testing revealed that the lump was breast cancer.",
+      "paragraph_ref": "14",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "LEGAL_FINDING",
+      "text": "The Court of Appeals, however, concluded that the trial court erred because it misinterpreted the continuing treatment rule.",
+      "paragraph_ref": "146",
+      "speaker": "Court of Appeals"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "LEGAL_FINDING",
+      "text": "For the foregoing reasons, we will reverse the decision of the Court of Appeals and reinstate the trial court\u2019s decision sustaining Dr. Cothran\u2019s plea in bar.",
+      "paragraph_ref": "187",
+      "speaker": "Supreme Court"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "WITNESS_STATEMENT",
+      "text": "Jauregui testified that she first informed Dr. Cothran of the lump during a May 2018 visit and that Dr. Cothran examined the lump and diagnosed it as a clogged milk duct.",
+      "paragraph_ref": "21",
+      "speaker": "Jauregui"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "WITNESS_STATEMENT",
+      "text": "Dr. Cothran testified that Jauregui never complained about the lump during any of the 2018 visits and that she never examined Jauregui\u2019s breast.",
+      "paragraph_ref": "31",
+      "speaker": "Dr. Cothran"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "COURT_REASONING",
+      "text": "The trial court sustained Dr. Cothran\u2019s plea in bar. It explained: In the case before me today there\u2019s no medical treatment at all.",
+      "paragraph_ref": "37",
+      "speaker": "Trial court"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "COURT_REASONING",
+      "text": "The Court of Appeals explained that the trial court misinterpreted the continuing treatment rule to require the existence of a specific treatment.",
+      "paragraph_ref": "46",
+      "speaker": "Court of Appeals"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "COURT_REASONING",
+      "text": "Viewed in this context, we are persuaded by the trial court\u2019s rationale that a substantial interruption occurred.",
+      "paragraph_ref": "172",
+      "speaker": "Supreme Court"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Breast lump",
+      "history_of_present_illness": "Patient reports discovering a lump in her breast during pregnancy and informed her OB/GYN during multiple visits.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "breast": "Patient reported a lump; examination findings not detailed in judgment"
+        }
+      },
+      "initial_working_problem": "Breast lump during pregnancy",
+      "known_constraints": null,
+      "initial_differential": [
+        "Clogged milk duct",
+        "Breast cancer"
+      ],
+      "critical_findings": [
+        "Breast lump"
+      ],
+      "urgency_level": "ROUTINE",
+      "evidence_ids": [
+        "E002",
+        "E006"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "Breast Ultrasound",
+        "description": "Ultrasound of the breast to evaluate the lump",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not documented in judgment",
+          "detailed_findings": null,
+          "clinical_significance": "Could help differentiate between benign and malignant causes",
+          "decision_impact": "Should have been considered to rule out malignancy",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": [
+          "E002",
+          "E003"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "IMAGING",
+        "name": "Mammogram",
+        "description": "Mammogram to assess the breast lump",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not documented in judgment",
+          "detailed_findings": null,
+          "clinical_significance": "Standard imaging for breast lump evaluation",
+          "decision_impact": "Should have been considered to rule out malignancy",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": [
+          "E002",
+          "E003"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with a breast lump during pregnancy",
+        "duration": "May 2018 to October 2018",
+        "key_events": [
+          {
+            "event": "Patient reports breast lump to Dr. Cothran",
+            "timestamp": "May 2018",
+            "evidence_ids": [
+              "E006"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Follow-up and Diagnosis",
+        "description": "Patient returns for follow-up and is diagnosed with breast cancer",
+        "duration": "August 2019",
+        "key_events": [
+          {
+            "event": "Patient returns with changes in breast lump",
+            "timestamp": "August 2019",
+            "evidence_ids": [
+              "E003"
+            ]
+          },
+          {
+            "event": "Breast cancer diagnosed",
+            "timestamp": "August 2019",
+            "evidence_ids": [
+              "E003"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient presents with a breast lump during pregnancy",
+        "prompt": "What should be the next step in managing the breast lump?",
+        "action_type": "ORDER_TEST",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Order breast ultrasound",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Ultrasound is a non-invasive method to evaluate breast lumps, especially during pregnancy."
+          },
+          {
+            "option_id": "B",
+            "description": "Reassure patient and advise monitoring",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Reassurance without further investigation may delay diagnosis of serious conditions like cancer."
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant reassured patient and advised monitoring",
+          "reasoning_stated": "Defendant believed the lump was a normal part of pregnancy",
+          "evidence_ids": [
+            "E002",
+            "E006"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Breast ultrasound should have been ordered",
+          "standard_of_care_basis": "Expert evidence suggests imaging is necessary to rule out malignancy",
+          "evidence_ids": [
+            "E002",
+            "E003"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to investigate the lump with imaging delayed the diagnosis of breast cancer.",
+          "what_should_have_happened": "Imaging should have been performed to evaluate the lump.",
+          "legal_standard_applied": "Standard of care requires investigation of breast lumps to rule out cancer.",
+          "evidence_ids": [
+            "E002",
+            "E003"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient diagnosed with metastatic breast cancer",
+        "severity": "SEVERE",
+        "long_term_effects": "Not documented in judgment",
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "None",
+        "key_findings": [
+          "Court found no continuous and uninterrupted course of examination or treatment",
+          "Statute of limitations barred the claim"
+        ],
+        "evidence_ids": [
+          "E008",
+          "E010"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Failure to order imaging for breast lump",
+        "counterfactual": "Imaging could have led to earlier diagnosis",
+        "evidence_ids": [
+          "E008",
+          "E010"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "May 2018",
+        "event": "Patient reports breast lump to Dr. Cothran",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "timestamp": "August 2019",
+        "event": "Patient returns with changes in breast lump",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "timestamp": "August 2019",
+        "event": "Breast cancer diagnosed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [
+      {
+        "diagnosis": "Metastatic breast cancer",
+        "when_made": "August 2019",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "treatments": [],
+    "complications": [],
+    "allegations": [
+      {
+        "allegation": "Failure to order imaging for breast lump",
+        "against": "Dr. Cothran",
+        "found_proven": false,
+        "evidence_ids": [
+          "E008",
+          "E010"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "No continuous and uninterrupted course of examination or treatment",
+        "legal_significance": "Statute of limitations barred the claim",
+        "evidence_ids": [
+          "E008",
+          "E010"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.05235602094240838,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-09 21:03:51.957637",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

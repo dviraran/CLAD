@@ -1,0 +1,378 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-2816542",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2015-07-13",
+  "url": "https://example.com/courtlistener-2816542",
+  "case_name": "Dubois v. Brantley",
+  "neutral_citation": null,
+  "clinical_domain": "CARDIOLOGY",
+  "outcome_severity": "TEMPORARY_HARM",
+  "summary": {
+    "brief": "Dubois v. Brantley. Medical malpractice case involving cardiology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "David Dubois was diagnosed with an umbilical hernia, and in March 2011, he underwent a laparoscopic procedure to repair it.",
+      "paragraph_ref": "21",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Dubois returned to the hospital with a fever and other symptoms, and he soon was diagnosed with acute pancreatitis.",
+      "paragraph_ref": "23",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "An exploratory laparotomy revealed that his pancreas had been punctured, which was the likely cause of the pancreatitis.",
+      "paragraph_ref": "25",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "Dubois survived these complications, but he spent several days in a coma, was hospitalized in intensive care for almost a month, and had to undergo a number of additional surgeries to repair the damage to his pancreas.",
+      "paragraph_ref": "28",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Swartz faults Dr. Brantley not for choosing to use a laparoscopic procedure on Dubois, but instead for the way in which Dr. Brantley inserted a trocar in the upper abdomen to begin the procedure.",
+      "paragraph_ref": "2",
+      "speaker": "Dr. Swartz"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Swartz opined that, if performed within the applicable standard of medical care, no abdominal laparoscopic procedure \u2014 whether to repair an umbilical hernia or for any other purpose \u2014 should involve a trocar puncturing the pancreas unless the pancreas is located unusually, anatomically speaking.",
+      "paragraph_ref": "50",
+      "speaker": "Dr. Swartz"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "LEGAL_FINDING",
+      "text": "The Court of Appeals erred when it concluded otherwise, and we reverse its judgment.",
+      "paragraph_ref": "387",
+      "speaker": "Supreme Court of Georgia"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "COURT_REASONING",
+      "text": "The trial court properly could have concluded that Dr. Swartz has experience enough to establish a reliable basis for the opinions that he proposes to render.",
+      "paragraph_ref": "382",
+      "speaker": "Supreme Court of Georgia"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "male",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Fever and other symptoms post-surgery",
+      "history_of_present_illness": "David Dubois was diagnosed with an umbilical hernia and underwent a laparoscopic procedure to repair it. Within hours, he was discharged. A couple of days later, he returned to the hospital with a fever and other symptoms.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "abdomen": "Not documented in judgment"
+        }
+      },
+      "initial_working_problem": "Post-operative complications",
+      "known_constraints": null,
+      "initial_differential": [
+        "Acute pancreatitis",
+        "Infection"
+      ],
+      "critical_findings": [
+        "Fever",
+        "Symptoms post-surgery"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "Exploratory Laparotomy",
+        "description": "Surgical exploration to identify cause of symptoms",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Pancreas punctured",
+          "detailed_findings": null,
+          "clinical_significance": "Likely cause of pancreatitis",
+          "decision_impact": "Identified surgical complication",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with post-operative symptoms",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Patient returns to hospital with fever",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Diagnostic Workup",
+        "description": "Exploratory laparotomy performed",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Exploratory laparotomy reveals pancreas puncture",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E003"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "procedure",
+        "clinical_context": "During laparoscopic procedure to repair umbilical hernia",
+        "prompt": "How should the primary trocar be inserted?",
+        "action_type": "SELECT_TECHNIQUE",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Insert trocar with careful anatomical consideration",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard practice to avoid organ injury"
+          },
+          {
+            "option_id": "B",
+            "description": "Insert trocar without sufficient anatomical consideration",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Risk of organ injury if not careful"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant inserted trocar without sufficient anatomical consideration",
+          "reasoning_stated": "Defendant stated it was a reasonable hypothesis for the puncture",
+          "evidence_ids": [
+            "E005",
+            "E006"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Trocar should have been inserted with careful anatomical consideration",
+          "standard_of_care_basis": "Expert evidence established careful insertion is standard",
+          "evidence_ids": [
+            "E005",
+            "E006"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Based on evidence E005-E006",
+          "what_should_have_happened": "Based on court's findings",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E005",
+            "E006"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient developed pancreatitis, respiratory failure, acute renal failure, and sepsis",
+        "severity": "SEVERE",
+        "long_term_effects": "Spent several days in a coma, hospitalized in intensive care for almost a month, underwent additional surgeries",
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Breach of duty in the insertion of the primary trocar",
+          "Causation established - puncture led to pancreatitis"
+        ],
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to insert trocar with sufficient anatomical consideration",
+        "counterfactual": "Proper insertion would have avoided pancreas puncture",
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "March 2011",
+        "event": "Patient underwent laparoscopic procedure for umbilical hernia",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Patient returned to hospital with fever and symptoms",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Exploratory Laparotomy",
+        "date": "Date not specified in judgment",
+        "result": "Pancreas punctured",
+        "interpretation": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Acute pancreatitis",
+        "when_made": "Date not specified in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Additional surgeries to repair pancreas",
+        "date": "Date not specified in judgment",
+        "provider": null,
+        "outcome": "Patient survived but with complications",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Respiratory failure, acute renal failure, sepsis",
+        "when_occurred": "Date not specified in judgment",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Negligent insertion of trocar",
+        "against": "Dr. Brantley",
+        "found_proven": true,
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "TREATMENT_PROCEDURE_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.020512820512820513,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-09 14:37:07.302804",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

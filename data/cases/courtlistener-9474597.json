@@ -1,0 +1,492 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-9474597",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2024-02-13",
+  "url": "https://example.com/courtlistener-9474597",
+  "case_name": "Wilcox v. Advocate Condell Medical Center",
+  "neutral_citation": null,
+  "clinical_domain": "PAEDIATRICS",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Wilcox v. Advocate Condell Medical Center. Medical malpractice case involving paediatrics.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Scott Wilcox suffered an injury in a skiing accident at age 26 that rendered him paralyzed from the armpits down.",
+      "paragraph_ref": "18",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "A pump was implanted into his abdomen that administered the antispasmodic drug baclofen into the intrathecal space of his spinal canal via a catheter.",
+      "paragraph_ref": "20",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "In the late afternoon of Friday, July 28, 2017, Scott saw Dr. Richard Senno, the physical medicine and rehabilitation physician who treated his muscle spasticity and managed his baclofen pump.",
+      "paragraph_ref": "35",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. Senno wanted him to be admitted to a hospital so that he could be monitored for symptoms of baclofen withdrawal until his pump could be surgically replaced.",
+      "paragraph_ref": "40",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "Scott drove with his caretaker to Advocate Condell, and he was admitted that evening.",
+      "paragraph_ref": "56",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "Scott was being admitted due to the malfunction of his baclofen pump and concern of the potential for baclofen withdrawal.",
+      "paragraph_ref": "59",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "Scott was assigned a hospitalist, Dr. Eric Chuang, and a pain management physician, Dr. Yulia Kin-Kartsimas.",
+      "paragraph_ref": "67",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "FACTUAL_FINDING",
+      "text": "Jim testified that, when they saw Scott early on Saturday afternoon, he appeared normal.",
+      "paragraph_ref": "84",
+      "speaker": "Witness statement"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "LEGAL_FINDING",
+      "text": "The jury returned a verdict in favor of the plaintiff and against Advocate on both the institutional negligence and vicarious liability claims.",
+      "paragraph_ref": "280",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "LEGAL_FINDING",
+      "text": "The judgment of the trial court is affirmed.",
+      "paragraph_ref": "122",
+      "speaker": "Court conclusion"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "male",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Malfunctioning baclofen pump with risk of withdrawal",
+      "history_of_present_illness": "Scott Wilcox, who is paralyzed from the armpits down due to a past skiing accident, presented with a malfunctioning baclofen pump. The pump alarm had sounded, indicating it was not working, and there was concern for baclofen withdrawal.",
+      "past_medical_history": [
+        "Paralysis from skiing accident",
+        "History of baclofen pump replacements"
+      ],
+      "medications": [
+        "Baclofen via intrathecal pump"
+      ],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "neurological": "Slight spasms noted, otherwise appeared well"
+        }
+      },
+      "initial_working_problem": "Baclofen pump malfunction with risk of withdrawal",
+      "known_constraints": null,
+      "initial_differential": [
+        "Baclofen withdrawal"
+      ],
+      "critical_findings": [
+        "Malfunctioning baclofen pump",
+        "Risk of withdrawal symptoms"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002",
+        "E003",
+        "E004",
+        "E005",
+        "E006"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSULT_NOTE",
+        "name": "Neurology Consult",
+        "description": "Consultation to manage spasticity and monitor for withdrawal symptoms",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Neurologist noted increased muscle spasms, no mental status deficits",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates progression towards withdrawal",
+          "decision_impact": "Should prompt urgent surgical intervention",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E127",
+          "E128",
+          "E129"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents to hospital with malfunctioning baclofen pump",
+        "duration": "Evening of July 28, 2017",
+        "key_events": [
+          {
+            "event": "Patient admitted to hospital",
+            "timestamp": "Evening of July 28, 2017",
+            "evidence_ids": [
+              "E005"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Monitoring and Assessment",
+        "description": "Patient monitored for withdrawal symptoms over the weekend",
+        "duration": "July 29-30, 2017",
+        "key_events": [
+          {
+            "event": "Neurology consult requested",
+            "timestamp": "July 29, 2017",
+            "evidence_ids": [
+              "E127",
+              "E128"
+            ]
+          },
+          {
+            "event": "Patient's condition worsens",
+            "timestamp": "July 30, 2017",
+            "evidence_ids": [
+              "E141",
+              "E142"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient admitted with malfunctioning baclofen pump",
+        "prompt": "What should be the immediate management plan?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Schedule immediate surgery for pump replacement",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Immediate replacement needed to prevent withdrawal"
+          },
+          {
+            "option_id": "B",
+            "description": "Monitor patient and schedule surgery for next week",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Delay increases risk of withdrawal complications"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Surgery was scheduled for Monday or Tuesday, not immediately",
+          "reasoning_stated": "Non-emergency status initially perceived",
+          "evidence_ids": [
+            "E046",
+            "E047"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Immediate surgery should have been scheduled",
+          "standard_of_care_basis": "Expert testimony indicated urgency due to withdrawal risk",
+          "evidence_ids": [
+            "E051",
+            "E052"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Delay in surgery led to withdrawal symptoms and complications",
+          "what_should_have_happened": "Immediate surgical intervention to replace pump",
+          "legal_standard_applied": "Standard of care for managing baclofen withdrawal risk",
+          "evidence_ids": [
+            "E051",
+            "E052",
+            "E053"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient experienced baclofen withdrawal symptoms",
+        "severity": "Not documented in judgment",
+        "long_term_effects": "Not documented in judgment",
+        "evidence_ids": [
+          "E009"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Breach of duty in failing to provide continuous monitoring",
+          "Causation established - inadequate monitoring led to withdrawal symptoms"
+        ],
+        "evidence_ids": [
+          "E009"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to provide continuous monitoring",
+        "counterfactual": "Continuous monitoring would have detected withdrawal symptoms earlier",
+        "evidence_ids": [
+          "E009"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "July 28, 2017",
+        "event": "Patient admitted to hospital with malfunctioning baclofen pump",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "timestamp": "July 30, 2017",
+        "event": "Patient's condition worsens with withdrawal symptoms",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E141",
+          "E142"
+        ]
+      },
+      {
+        "timestamp": "August 13, 2017",
+        "event": "Patient passed away after being on life support",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E251"
+        ]
+      },
+      {
+        "timestamp": "Evening of July 28, 2017",
+        "event": "Patient admitted to hospital",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "timestamp": "Evening of July 28, 2017",
+        "event": "Patient admitted to Advocate Condell",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [
+      {
+        "diagnosis": "Baclofen withdrawal",
+        "when_made": "July 30, 2017",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E141",
+          "E142"
+        ]
+      },
+      {
+        "diagnosis": "Baclofen withdrawal",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "diagnosis": "Baclofen withdrawal",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E009"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Pump replacement surgery",
+        "date": "July 31, 2017",
+        "provider": null,
+        "outcome": "No complications with surgery, but patient did not recover",
+        "evidence_ids": [
+          "E247",
+          "E248"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Multiorgan failure due to baclofen withdrawal",
+        "when_occurred": "July 30, 2017",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E241",
+          "E242"
+        ]
+      },
+      {
+        "complication": "Delayed surgery",
+        "when_occurred": "July 31, 2017",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E009",
+          "E010"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to promptly replace malfunctioning baclofen pump",
+        "against": "Advocate Condell Medical Center",
+        "found_proven": true,
+        "evidence_ids": [
+          "E281",
+          "E282"
+        ]
+      },
+      {
+        "allegation": "Failure to ensure effective communication",
+        "against": "Advocate Condell Medical Center",
+        "found_proven": true,
+        "evidence_ids": [
+          "E009",
+          "E010"
+        ]
+      },
+      {
+        "allegation": "Failure to provide continuous monitoring",
+        "against": "Advocate Condell Medical Center",
+        "found_proven": true,
+        "evidence_ids": [
+          "E009"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Institutional negligence due to systems failure and communication breakdown",
+        "legal_significance": "Breach of duty leading to patient's death",
+        "evidence_ids": [
+          "E281",
+          "E282"
+        ]
+      },
+      {
+        "finding": "Institutional negligence due to communication failures",
+        "legal_significance": "Breach of standard of care",
+        "evidence_ids": [
+          "E009",
+          "E010"
+        ]
+      },
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Standard of care not met",
+        "evidence_ids": [
+          "E009"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "SYSTEM_COMMUNICATION",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.009066183136899365,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-17 07:44:34.897403",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

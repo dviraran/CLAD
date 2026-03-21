@@ -1,0 +1,500 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-4859927",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2020-10-05",
+  "url": "https://example.com/courtlistener-4859927",
+  "case_name": "Doull v. Foster",
+  "neutral_citation": null,
+  "clinical_domain": "PAEDIATRICS",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Doull v. Foster. Medical malpractice case involving paediatrics.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Between 2008 and 2011, Laura Doull was a patient of Anna C. Foster, a nurse practitioner, and her supervisor, Dr. Richard J. Miller",
+      "paragraph_ref": "36",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "In August 2008, Doull had an appointment with Foster to seek advice regarding perimenopause-related symptoms.",
+      "paragraph_ref": "41",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "Foster prescribed Doull a topically applied, naturally derived progesterone cream to treat the symptoms.",
+      "paragraph_ref": "43",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "Doull continued to use the progesterone cream through the spring of 2011.",
+      "paragraph_ref": "52",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "In May 2011, Doull had a 'seizure-like event' and was transported to the hospital.",
+      "paragraph_ref": "62",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "At the hospital, she was diagnosed with a pulmonary embolism.",
+      "paragraph_ref": "63",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "In 2015, Doull died from complications arising from CTEPH.",
+      "paragraph_ref": "77",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Paul Genecin, a primary care internal medicine physician and the plaintiffs' expert witness, testified that natural progesterone was not any safer than synthetic derivations of the hormone.",
+      "paragraph_ref": "94",
+      "speaker": "Dr. Paul Genecin"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Nicholas S. Hill, a pulmonologist and an expert for the defense, testified that there was 'no evidence anywhere that indicates that progesterone cream applied to the skin increases the risk of clotting.'",
+      "paragraph_ref": "106",
+      "speaker": "Dr. Nicholas S. Hill"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "LEGAL_FINDING",
+      "text": "The jury returned a verdict for the defendants and answered various special questions.",
+      "paragraph_ref": "117",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E011",
+      "type": "LEGAL_FINDING",
+      "text": "The jury did find that Foster negligently failed to diagnose Doull's pulmonary embolism, they found that this negligence was not the cause of either the harms suffered by Doull after her seizure-like event in 2011 or her death in 2015.",
+      "paragraph_ref": "122",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E012",
+      "type": "COURT_REASONING",
+      "text": "We conclude that the but-for standard was the appropriate standard for factual causation.",
+      "paragraph_ref": "171",
+      "speaker": "Judge's analysis"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "43 years",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Shortness of breath",
+      "history_of_present_illness": "Patient had a history of asthma and allergies. She visited the medical practice on three occasions in spring 2011 complaining of shortness of breath.",
+      "past_medical_history": [
+        "Asthma",
+        "Allergies"
+      ],
+      "medications": [
+        "Progesterone cream"
+      ],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "respiratory": "Examination findings not specified, but shortness of breath was noted"
+        }
+      },
+      "initial_working_problem": "Shortness of breath attributed to asthma and allergies",
+      "known_constraints": null,
+      "initial_differential": [
+        "Asthma exacerbation",
+        "Allergic reaction"
+      ],
+      "critical_findings": [
+        "Shortness of breath"
+      ],
+      "urgency_level": "Not documented in judgment",
+      "evidence_ids": [
+        "E002",
+        "E005",
+        "E006"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "LAB",
+        "name": "Blood tests",
+        "description": "Routine blood tests to check for clotting disorders",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not documented in judgment",
+          "detailed_findings": null,
+          "clinical_significance": "Could indicate clotting issues",
+          "decision_impact": "May prompt further investigation for pulmonary embolism",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": []
+      },
+      {
+        "request_id": "R002",
+        "type": "IMAGING",
+        "name": "Lung scan",
+        "description": "Imaging to check for pulmonary embolism",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Chronic blood clots in lungs",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates pulmonary embolism",
+          "decision_impact": "Confirms diagnosis of pulmonary embolism",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E070"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with shortness of breath",
+        "duration": "Spring 2011",
+        "key_events": [
+          {
+            "event": "Patient visits medical practice three times for shortness of breath",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E005"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Hospitalization and Diagnosis",
+        "description": "Patient experiences seizure-like event and is hospitalized",
+        "duration": "May 2011",
+        "key_events": [
+          {
+            "event": "Patient diagnosed with pulmonary embolism",
+            "timestamp": "May 2011",
+            "evidence_ids": [
+              "E006"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "decision",
+        "name": "Acute Event",
+        "description": "Patient experiences a seizure-like event",
+        "duration": "May 2011",
+        "key_events": [
+          {
+            "event": "Seizure-like event and hospital transport",
+            "timestamp": "May 2011",
+            "evidence_ids": [
+              "E005"
+            ]
+          },
+          {
+            "event": "Diagnosis of pulmonary embolism",
+            "timestamp": "May 2011",
+            "evidence_ids": [
+              "E006"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient presenting with shortness of breath",
+        "prompt": "What should be the next step in managing this patient's shortness of breath?",
+        "action_type": "ORDER_TEST",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Order a lung scan to check for pulmonary embolism",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Shortness of breath could be due to a pulmonary embolism, especially given the chronic nature of symptoms."
+          },
+          {
+            "option_id": "B",
+            "description": "Continue treating for asthma and allergies",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Assumed shortness of breath was due to existing asthma and allergies."
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant continued treating for asthma and allergies",
+          "reasoning_stated": "Attributed symptoms to known conditions",
+          "evidence_ids": [
+            "E005",
+            "E006"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "A lung scan should have been ordered",
+          "standard_of_care_basis": "Expert testimony indicated that a lung scan was necessary to rule out pulmonary embolism",
+          "evidence_ids": [
+            "E008",
+            "E009"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to investigate potential pulmonary embolism despite symptoms",
+          "what_should_have_happened": "A lung scan should have been performed to diagnose or rule out pulmonary embolism",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E008",
+            "E009"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient developed CTEPH and died from complications",
+        "severity": "FATAL",
+        "long_term_effects": "Not applicable",
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "0",
+        "key_findings": [
+          "Jury found negligence in failure to diagnose but no causation",
+          "Verdict for defendants"
+        ],
+        "evidence_ids": [
+          "E010",
+          "E011"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": false,
+        "point_of_failure": "Failure to diagnose pulmonary embolism",
+        "counterfactual": "Not applicable as causation was not established",
+        "evidence_ids": [
+          "E011"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "Spring 2011",
+        "event": "Patient visits medical practice for shortness of breath",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "timestamp": "May 2011",
+        "event": "Patient diagnosed with pulmonary embolism",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "timestamp": "August 2008",
+        "event": "Patient consults with Foster for perimenopause symptoms",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "May 2011",
+        "event": "Patient experiences seizure-like event and is diagnosed with pulmonary embolism",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Lung scan",
+        "date": "May 2011",
+        "result": "Chronic blood clots in lungs",
+        "interpretation": null,
+        "evidence_ids": [
+          "E070"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Pulmonary embolism",
+        "when_made": "May 2011",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "diagnosis": "Pulmonary embolism",
+        "when_made": "May 2011",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Surgery to remove lung blockage",
+        "date": "November 2011",
+        "provider": null,
+        "outcome": "Unsuccessful",
+        "evidence_ids": [
+          "E072"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "CTEPH",
+        "when_occurred": "May 2011",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E067"
+        ]
+      },
+      {
+        "complication": "CTEPH",
+        "when_occurred": "2015",
+        "severity": "Fatal",
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to diagnose pulmonary embolism",
+        "against": "Anna C. Foster",
+        "found_proven": true,
+        "evidence_ids": [
+          "E011"
+        ]
+      },
+      {
+        "allegation": "Failure to diagnose pulmonary embolism",
+        "against": "Anna C. Foster",
+        "found_proven": true,
+        "evidence_ids": [
+          "E011"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant negligently failed to diagnose pulmonary embolism, but this was not the cause of the harm",
+        "legal_significance": "No causation established",
+        "evidence_ids": [
+          "E011"
+        ]
+      },
+      {
+        "finding": "No causation established despite finding of negligence",
+        "legal_significance": "Verdict for defendants",
+        "evidence_ids": [
+          "E010",
+          "E011"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "INFORMED_CONSENT"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.01251303441084463,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-16 14:32:51.446574",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

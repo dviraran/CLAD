@@ -1,0 +1,576 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10760794",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2020-10-28",
+  "url": "https://example.com/courtlistener-10760794",
+  "case_name": "Hollie Jackson, as Administrator of the Estate of Emma Hayes, and on Behalf of the Wrongful Death Beneficiaries of Emma Hayes v. Mayfield Ky Opco, LLC D/B/A Mayfield Health and Rehabilitation",
+  "neutral_citation": null,
+  "clinical_domain": "OBSTETRICS_GYNAECOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Hollie Jackson, as Administrator of the Estate of Emma Hayes, and on Behalf of the Wrongful Death Beneficiaries of Emma Hayes v. Mayfield Ky Opco, LLC D/B/A Mayfield Health and Rehabilitation. Medical malpractice case involving obstetrics gynaecology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "On February 6, 2018, then-eighty-five-year-old Emma Hayes was admitted to Mayfield, a nursing home. Emma required twenty-four-hour monitoring and assistance with all aspects of daily life due to being wheelchair bound, her advanced age, and her numerous health conditions",
+      "paragraph_ref": "20",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Mayfield’s staff attempted to rouse Emma in order to administer her numerous medications but were unable to. Abandoning that effort, Mayfield’s staff took no action until nearly five hours later at 1:45 p.m. when they took her vitals.",
+      "paragraph_ref": "36",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "Emma was accordingly transported by ambulance to Jackson Purchase Medical Center (JPMC), a local hospital. The ambulance’s patient care record stated that Emma’s level of distress was 'severe.'",
+      "paragraph_ref": "41",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "The emergency room records from JPMC indicate that Emma was in respiratory distress when she arrived at 2:38 p.m., that she was intubated at 2:58 p.m., and that she passed away at 3:40 p.m.",
+      "paragraph_ref": "48",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "LEGAL_FINDING",
+      "text": "The circuit court erred by granting summary judgment. We accordingly reverse the Court of Appeals’ decision, vacate the circuit court’s summary judgment order, and remand for further proceedings consistent with this Opinion.",
+      "paragraph_ref": "17",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "Mayfield asserted, and the circuit court found in its order granting summary judgment, that Mayfield took Emma’s vitals at 9:51 a.m. on December 3 and found them to be normal. There is no evidence that this ever occurred based on any of Emma’s medical records that are now before this Court.",
+      "paragraph_ref": "54",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "LEGAL_FINDING",
+      "text": "The court dismissed all of Jackson’s claims with prejudice.",
+      "paragraph_ref": "303",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "COURT_REASONING",
+      "text": "The circuit court erred in granting summary judgment.",
+      "paragraph_ref": "348",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "FACTUAL_FINDING",
+      "text": "Jackson’s complaint asserted that Mayfield knew Emma was dependent upon it for twenty-four-hour care and that due to its ongoing and routine indifference for her basic care and needs she suffered respiratory failure, significant pain that went untreated, the accelerated deterioration of her health, unplanned weight loss and malnutrition, violations of her dignity, and death.",
+      "paragraph_ref": "67",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "FACTUAL_FINDING",
+      "text": "Jackson filed the lawsuit at issue herein on November 9, 2021.",
+      "paragraph_ref": "62",
+      "speaker": "Court finding"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "85 years",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Difficulty breathing and altered mental status",
+      "history_of_present_illness": "Emma Hayes, an 85-year-old female with multiple comorbidities, was found unresponsive at a nursing home. She had tested positive for COVID-19 a week prior and was transferred to a dedicated COVID unit.",
+      "past_medical_history": [
+        "Congestive heart failure",
+        "Non-Alzheimer’s dementia",
+        "Epilepsy",
+        "Syncope",
+        "Chronic obstructive pulmonary disease",
+        "Osteoarthritis",
+        "Arteriosclerotic heart disease",
+        "Diabetes",
+        "Cholelithiasis",
+        "Arteriosclerotic peripheral vascular disease",
+        "Arteriosclerotic cerebrovascular disease",
+        "Pulmonary hypertension"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "160/75",
+          "heart_rate": "44 beats per minute",
+          "respiratory_rate": null,
+          "temperature": "99.6°F",
+          "oxygen_saturation": "87%",
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "general": "Unresponsive with jerking/twitching of upper extremities and head"
+        }
+      },
+      "initial_working_problem": "Respiratory distress and altered mental status in a patient with multiple comorbidities",
+      "known_constraints": null,
+      "initial_differential": [
+        "COVID-19 related complications",
+        "Congestive heart failure exacerbation",
+        "COPD exacerbation"
+      ],
+      "critical_findings": [
+        "Severe respiratory distress",
+        "Altered mental status",
+        "Low oxygen saturation"
+      ],
+      "urgency_level": "EMERGENCY",
+      "evidence_ids": [
+        "E001",
+        "E002",
+        "E003",
+        "E004"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "Chest X-ray",
+        "description": "Chest X-ray to assess for acute cardiopulmonary disease",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not documented in judgment",
+          "detailed_findings": null,
+          "clinical_significance": "Imaging performed but findings not detailed in judgment",
+          "decision_impact": "Could help identify causes of respiratory distress",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E054"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Nursing Home Presentation",
+        "description": "Patient found unresponsive at nursing home",
+        "duration": "5 hours",
+        "key_events": [
+          {
+            "event": "Attempt to rouse patient failed",
+            "timestamp": "8:51 a.m.",
+            "evidence_ids": [
+              "E002"
+            ]
+          },
+          {
+            "event": "Vitals taken",
+            "timestamp": "1:45 p.m.",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Emergency Department Workup",
+        "description": "Patient transported to hospital and assessed",
+        "duration": "1 hour",
+        "key_events": [
+          {
+            "event": "Patient arrived at hospital",
+            "timestamp": "2:38 p.m.",
+            "evidence_ids": [
+              "E003"
+            ]
+          },
+          {
+            "event": "Patient intubated",
+            "timestamp": "2:58 p.m.",
+            "evidence_ids": [
+              "E004"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient found unresponsive with severe respiratory distress",
+        "prompt": "What immediate actions should be taken upon finding the patient unresponsive?",
+        "action_type": "ESCALATE_CARE",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Immediately notify physician and transfer to hospital",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard care for significant change in condition"
+          },
+          {
+            "option_id": "B",
+            "description": "Delay action and reassess later",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Inappropriate delay in care for critical condition"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Delayed action and reassessed later",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E002",
+            "E036"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Immediate notification and transfer to hospital",
+          "standard_of_care_basis": "Expert testimony and standard emergency protocols",
+          "evidence_ids": [
+            "E186",
+            "E191"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Delay in care led to worsening of condition",
+          "what_should_have_happened": "Immediate transfer to hospital for critical care",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E186",
+            "E191"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient passed away shortly after hospital transfer",
+        "severity": "FATAL",
+        "long_term_effects": "Not applicable",
+        "evidence_ids": [
+          "E842",
+          "E843"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "0",
+        "key_findings": [
+          "Summary judgment was vacated and remanded for further proceedings",
+          "Material issues of fact regarding gross negligence"
+        ],
+        "evidence_ids": [
+          "E683",
+          "E684",
+          "E685"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Delay in escalating care",
+        "counterfactual": "Immediate transfer could have altered outcome",
+        "evidence_ids": [
+          "E643",
+          "E644",
+          "E645"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "February 6, 2018",
+        "event": "Emma Hayes admitted to Mayfield nursing home",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "November 26, 2020",
+        "event": "Emma tested positive for COVID-19",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E031"
+        ]
+      },
+      {
+        "timestamp": "December 3, 2020 8:51 a.m.",
+        "event": "Staff attempted to rouse Emma, found unresponsive",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "December 3, 2020 1:45 p.m.",
+        "event": "Vitals taken, patient in severe distress",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "December 3, 2020 2:38 p.m.",
+        "event": "Patient arrived at hospital",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "timestamp": "December 3, 2020 2:58 p.m.",
+        "event": "Patient intubated",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "timestamp": "December 3, 2020 3:40 p.m.",
+        "event": "Patient passed away",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "timestamp": "February 6, 2018",
+        "event": "Emma Hayes admitted to Mayfield Health and Rehabilitation",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "December 3, 2020 8:51 a.m.",
+        "event": "Emma Hayes found unresponsive and unable to take medication",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E827"
+        ]
+      },
+      {
+        "timestamp": "December 3, 2020 1:45 p.m.",
+        "event": "Emma Hayes' condition deteriorated significantly",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E833",
+          "E834"
+        ]
+      },
+      {
+        "timestamp": "December 3, 2020 2:00 p.m.",
+        "event": "Emma Hayes transferred to hospital",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E839"
+        ]
+      },
+      {
+        "timestamp": "December 3, 2020 3:40 p.m.",
+        "event": "Emma Hayes passed away",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E842",
+          "E843"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Chest X-ray",
+        "date": "December 2, 2020",
+        "result": "No acute cardiopulmonary disease",
+        "interpretation": null,
+        "evidence_ids": [
+          "E054"
+        ]
+      },
+      {
+        "test_name": "Chest X-ray",
+        "date": "November 26, 2020",
+        "result": "No acute cardiopulmonary disease",
+        "interpretation": null,
+        "evidence_ids": [
+          "E824"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Acute respiratory distress",
+        "when_made": "December 3, 2020",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "diagnosis": "Acute respiratory distress",
+        "when_made": "December 3, 2020",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E700",
+          "E701"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Intubation",
+        "date": "December 3, 2020",
+        "provider": null,
+        "outcome": "Patient passed away",
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "treatment": "Intubation and mechanical ventilation",
+        "date": "December 3, 2020",
+        "provider": null,
+        "outcome": "Patient passed away",
+        "evidence_ids": [
+          "E840",
+          "E841"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Death",
+        "when_occurred": "December 3, 2020",
+        "severity": "Fatal",
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "complication": "Death",
+        "when_occurred": "December 3, 2020",
+        "severity": "Fatal",
+        "evidence_ids": [
+          "E842",
+          "E843"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to timely transfer to hospital",
+        "against": "Mayfield nursing home",
+        "found_proven": false,
+        "evidence_ids": [
+          "E186",
+          "E191"
+        ]
+      },
+      {
+        "allegation": "Failure to timely escalate care",
+        "against": "Mayfield Health and Rehabilitation",
+        "found_proven": false,
+        "evidence_ids": [
+          "E643",
+          "E644"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "No gross negligence found",
+        "legal_significance": "Immunity under COVID statute incorrectly applied",
+        "evidence_ids": [
+          "E005",
+          "E006",
+          "E007"
+        ]
+      },
+      {
+        "finding": "Material issues of fact regarding gross negligence",
+        "legal_significance": "Summary judgment vacated and remanded",
+        "evidence_ids": [
+          "E683",
+          "E684",
+          "E685"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "MONITORING_FOLLOWUP",
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.009652509652509652,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-09 19:24:11.366800",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

@@ -1,0 +1,527 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-3159017",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2015-12-01",
+  "url": "https://example.com/courtlistener-3159017",
+  "case_name": "Clark v. Grant Med. Ctr.",
+  "neutral_citation": null,
+  "clinical_domain": "CARDIOLOGY",
+  "outcome_severity": "TEMPORARY_HARM",
+  "summary": {
+    "brief": "Clark v. Grant Med. Ctr.. Medical malpractice case involving cardiology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Catherine, who was 62 years old by the time of trial and suffered from rheumatoid arthritis, intended to undergo hip replacement surgery on October 29, 2010.",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Tierney made the first attempt to intubate Catherine in order to administer anesthesia but was unsuccessful.",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. Blair then made several attempts of his own using a laryngoscope but was not able to successfully intubate Catherine either.",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "Catherine underwent a CAT scan that revealed a perforation of the right pyriform sinus, which is very near the entrance to the esophagus.",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Connell testified via deposition in his capacity both as a physician who participated in Catherine's care and as an expert witness.",
+      "paragraph_ref": "14",
+      "speaker": "Dr. Connell"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Schrenzel said the fact that Catherine sustained a perforation is proof of excessive force, and if Dr. Blair had used the appropriate amount of force, 'a tear will not occur.'",
+      "paragraph_ref": "19",
+      "speaker": "Dr. Schrenzel"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "MEDICAL_RECORD",
+      "text": "Dr. Schrenzel also reviewed the consent form for anesthesia that Catherine signed prior to her planned hip replacement surgery.",
+      "paragraph_ref": "12",
+      "speaker": "Dr. Schrenzel"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "WITNESS_STATEMENT",
+      "text": "Catherine testified that she has had rheumatoid arthritis since approximately 1975 and first started using a wheelchair in 2010.",
+      "paragraph_ref": "24",
+      "speaker": "Catherine Clark"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "LEGAL_FINDING",
+      "text": "Following deliberations, the jury returned a verdict in favor of the Clarks, awarding them $500,000 in damages.",
+      "paragraph_ref": "32",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "COURT_REASONING",
+      "text": "The trial court instructed the jury that '[a] physician is negligent if the physician fails to meet the required standard of care.'",
+      "paragraph_ref": "53",
+      "speaker": "Court instruction"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "62 years",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Scheduled for hip replacement surgery",
+      "history_of_present_illness": "Patient with rheumatoid arthritis, scheduled for hip replacement surgery. Complained of stiff neck and difficulty opening mouth during preoperative assessment.",
+      "past_medical_history": [
+        "Rheumatoid arthritis"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "airway": "Limited jaw range of motion, difficulty opening mouth, stiff neck"
+        }
+      },
+      "initial_working_problem": "Preparation for anesthesia for hip replacement",
+      "known_constraints": null,
+      "initial_differential": [
+        "Difficult airway due to rheumatoid arthritis"
+      ],
+      "critical_findings": [
+        "Limited neck mobility",
+        "Difficulty opening mouth"
+      ],
+      "urgency_level": "ELECTIVE",
+      "evidence_ids": [
+        "E001",
+        "E008",
+        "E029"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "CAT scan",
+        "description": "Imaging to assess throat pain and swallowing difficulty",
+        "available_phase": "postop",
+        "reveal": {
+          "result_summary": "Perforation of the right pyriform sinus",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates injury during intubation attempts",
+          "decision_impact": "Required emergency surgery to repair perforation",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Preoperative Assessment",
+        "description": "Patient assessed for anesthesia prior to hip replacement surgery",
+        "duration": "1 day",
+        "key_events": [
+          {
+            "event": "Preoperative assessment noting stiff neck and limited mouth opening",
+            "timestamp": "October 18, 2010",
+            "evidence_ids": [
+              "E029"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "procedure",
+        "name": "Attempted Intubation",
+        "description": "Attempts to intubate patient for anesthesia",
+        "duration": "1 hour",
+        "key_events": [
+          {
+            "event": "Multiple unsuccessful intubation attempts",
+            "timestamp": "October 29, 2010",
+            "evidence_ids": [
+              "E002",
+              "E003"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "postop",
+        "name": "Postoperative Complications",
+        "description": "Patient experiences complications following intubation attempts",
+        "duration": "2 days",
+        "key_events": [
+          {
+            "event": "Patient experiences throat pain and difficulty swallowing",
+            "timestamp": "October 31, 2010",
+            "evidence_ids": [
+              "E004"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "decision",
+        "name": "Intubation Attempt",
+        "description": "Attempts to intubate the patient for anesthesia",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "First intubation attempt by Tierney",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E002"
+            ]
+          },
+          {
+            "event": "Subsequent attempts by Dr. Blair",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E003"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "decision",
+        "name": "Post-Intubation Assessment",
+        "description": "Assessment following intubation attempts",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "CAT scan performed",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E004"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "procedure",
+        "clinical_context": "Patient in operating room for hip replacement surgery",
+        "prompt": "What intubation technique should be used given the patient's medical history?",
+        "action_type": "ORDER_TEST",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Perform awake fiber-optic intubation",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Recommended for patients with difficult airway due to rheumatoid arthritis"
+          },
+          {
+            "option_id": "B",
+            "description": "Proceed with direct laryngoscopy",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Attempted despite known difficult airway conditions"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant attempted direct laryngoscopy",
+          "reasoning_stated": "Believed airway was manageable with direct laryngoscopy",
+          "evidence_ids": [
+            "E002",
+            "E003",
+            "E021"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Awake fiber-optic intubation should have been performed",
+          "standard_of_care_basis": "Expert testimony indicated this was the appropriate method",
+          "evidence_ids": [
+            "E005",
+            "E009"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to perform awake fiber-optic intubation led to perforation",
+          "what_should_have_happened": "Awake fiber-optic intubation would have minimized risk",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E005",
+            "E009",
+            "E010"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient sustained a perforation of the right pyriform sinus",
+        "severity": "PERMANENT_MODERATE_DISABILITY",
+        "long_term_effects": "Not documented in judgment",
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "500000",
+        "key_findings": [
+          "Breach of duty in excessive force during intubation",
+          "Causation established - perforation due to intubation attempts"
+        ],
+        "evidence_ids": [
+          "E009",
+          "E010"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Excessive force during intubation",
+        "counterfactual": "Gentle technique would have prevented perforation",
+        "evidence_ids": [
+          "E006",
+          "E010"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "October 18, 2010",
+        "event": "Preoperative assessment noting stiff neck and limited mouth opening",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E029"
+        ]
+      },
+      {
+        "timestamp": "October 29, 2010",
+        "event": "Multiple unsuccessful intubation attempts",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002",
+          "E003"
+        ]
+      },
+      {
+        "timestamp": "October 31, 2010",
+        "event": "Patient experiences throat pain and difficulty swallowing",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "First intubation attempt by Tierney",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Subsequent attempts by Dr. Blair",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "CAT scan performed revealing perforation",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "CAT scan",
+        "date": "October 31, 2010",
+        "result": "Perforation of the right pyriform sinus",
+        "interpretation": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "test_name": "CAT scan",
+        "date": "Date not specified in judgment",
+        "result": "Perforation of the right pyriform sinus",
+        "interpretation": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Perforation of the right pyriform sinus",
+        "when_made": "October 31, 2010",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "diagnosis": "Perforation of the right pyriform sinus",
+        "when_made": "Date not specified in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Emergency surgery to repair perforation",
+        "date": "Date not specified in judgment",
+        "provider": null,
+        "outcome": "Perforation repaired",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Throat perforation",
+        "when_occurred": "October 29, 2010",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "complication": "Perforation of the right pyriform sinus",
+        "when_occurred": "During intubation attempts",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to perform appropriate intubation technique",
+        "against": "Dr. Blair",
+        "found_proven": true,
+        "evidence_ids": [
+          "E009",
+          "E010"
+        ]
+      },
+      {
+        "allegation": "Excessive force during intubation",
+        "against": "Dr. Blair",
+        "found_proven": true,
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Standard of care not met",
+        "evidence_ids": [
+          "E010"
+        ]
+      },
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Standard of care not met",
+        "evidence_ids": [
+          "E010"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "TREATMENT_PROCEDURE_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.15873015873015872,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-16 14:19:57.622232",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

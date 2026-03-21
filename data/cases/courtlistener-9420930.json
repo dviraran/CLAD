@@ -1,0 +1,480 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-9420930",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2023-08-17",
+  "url": "https://example.com/courtlistener-9420930",
+  "case_name": "Davis v. Mercy Medical Center",
+  "neutral_citation": null,
+  "clinical_domain": "EMERGENCY_MEDICINE",
+  "outcome_severity": "PERMANENT_SEVERE_DISABILITY",
+  "summary": {
+    "brief": "Davis v. Mercy Medical Center. Medical malpractice case involving emergency medicine.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "In February 2016, Michael Davis visited CHI in Williston. Cherise Norby, N.P., treated Davis for flu-like symptoms.",
+      "paragraph_ref": "14",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Davis returned to Norby in October 2016, complaining of frothy urine. Blood and urine tests showed Davis had an elevated white blood cell count and protein and blood in his urine.",
+      "paragraph_ref": "14",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "In June 2017, Davis followed up with Norby. Davis\u2019 lab results showed the blood and protein levels in his urine had tripled since the earlier tests.",
+      "paragraph_ref": "15",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "On September 14, 2017, Davis went to the emergency room at Holy Rosary Healthcare in Miles City, MT, complaining of hand and leg pain.",
+      "paragraph_ref": "16",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "On March 29, 2018, Davis had a renal biopsy at Mayo Clinic. The biopsy demonstrated Davis was in kidney failure because of a kidney disease known as IgA nephropathy.",
+      "paragraph_ref": "20",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Denker testified IgA nephropathy is treatable, and the earlier you treat it, the better.",
+      "paragraph_ref": "22",
+      "speaker": "Dr. Bradley Denker"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Denker testified that if Davis\u2019 kidney disease was treated earlier, his kidney failure could have been delayed by approximately 15 years.",
+      "paragraph_ref": "22",
+      "speaker": "Dr. Bradley Denker"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "LEGAL_FINDING",
+      "text": "The jury found Norby was not at fault in her treatment of Michael Davis. The jury found Dr. Keene was at fault in his treatment of Davis, and Dr. Keene\u2019s fault was a proximate cause of the Davises\u2019 injuries.",
+      "paragraph_ref": "23",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "LEGAL_FINDING",
+      "text": "The district court denied the motion and upheld the jury\u2019s verdict.",
+      "paragraph_ref": "24",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "COURT_REASONING",
+      "text": "Viewing the evidence in the light most favorable to the verdict, a jury could have found Dr. Keene\u2019s failure to refer Michael Davis to a nephrologist was the proximate cause of Davis\u2019 injuries.",
+      "paragraph_ref": "41",
+      "speaker": "Court reasoning"
+    },
+    {
+      "evidence_id": "E011",
+      "type": "MEDICAL_RECORD",
+      "text": "Davis authenticated the medical bills and payment summaries sufficient for the district court to determine the jury could find the documents reflected what Davis purported them to be\u2014documents showing his medical expenses.",
+      "paragraph_ref": "47",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E012",
+      "type": "LEGAL_FINDING",
+      "text": "We remand for an appropriate reduction of the jury\u2019s award of past economic damages to Michael Davis.",
+      "paragraph_ref": "51",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E013",
+      "type": "LEGAL_FINDING",
+      "text": "The jury awarded Michael Davis $1,100,000 in future economic damages.",
+      "paragraph_ref": "53",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E014",
+      "type": "LEGAL_FINDING",
+      "text": "The court abused its discretion. We reverse the Davises\u2019 award of disbursements and costs and remand for further proceedings.",
+      "paragraph_ref": "63",
+      "speaker": "Court finding"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "40 years",
+        "sex": "male",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Frothy urine and elevated white blood cell count",
+      "history_of_present_illness": "Patient initially presented with flu-like symptoms in February 2016. In October 2016, he complained of frothy urine. Blood and urine tests showed elevated white blood cell count and protein and blood in urine.",
+      "past_medical_history": [
+        "Not documented in judgment"
+      ],
+      "medications": [
+        "Not documented in judgment"
+      ],
+      "allergies": [
+        "Not documented in judgment"
+      ],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "general": "Flu-like symptoms initially, later frothy urine"
+        }
+      },
+      "initial_working_problem": "Possible kidney disease",
+      "known_constraints": null,
+      "initial_differential": [
+        "IgA nephropathy",
+        "Other kidney diseases"
+      ],
+      "critical_findings": [
+        "Elevated white blood cell count",
+        "Protein and blood in urine"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "LAB",
+        "name": "Blood and Urine Tests",
+        "description": "Tests showing elevated white blood cell count, protein, and blood in urine",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Elevated white blood cell count, protein, and blood in urine",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates possible kidney disease",
+          "decision_impact": "Should prompt referral to nephrologist",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "CONSULT_NOTE",
+        "name": "Urologist Consultation",
+        "description": "Consultation with urologist who found no urological explanation",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "No urological explanation for abnormal test results",
+          "detailed_findings": null,
+          "clinical_significance": "Suggests need for nephrology referral",
+          "decision_impact": "Should have led to nephrology referral",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E002",
+          "E003"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with flu-like symptoms and later with frothy urine",
+        "duration": "February 2016 to October 2016",
+        "key_events": [
+          {
+            "event": "Initial treatment for flu-like symptoms",
+            "timestamp": "February 2016",
+            "evidence_ids": [
+              "E001"
+            ]
+          },
+          {
+            "event": "Follow-up with frothy urine and abnormal tests",
+            "timestamp": "October 2016",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Further Evaluation",
+        "description": "Patient undergoes further testing and consultations",
+        "duration": "October 2016 to September 2017",
+        "key_events": [
+          {
+            "event": "Urologist consultation with no findings",
+            "timestamp": "January 2017",
+            "evidence_ids": [
+              "E002"
+            ]
+          },
+          {
+            "event": "Emergency room visit with abnormal labs",
+            "timestamp": "September 14, 2017",
+            "evidence_ids": [
+              "E004"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient with abnormal blood and urine tests",
+        "prompt": "Should the patient be referred to a nephrologist?",
+        "action_type": "REFER",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Refer to nephrologist",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Abnormal test results indicate possible kidney disease requiring specialist evaluation"
+          },
+          {
+            "option_id": "B",
+            "description": "Continue monitoring without referral",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Defendant did not refer despite abnormal results"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant did not refer to nephrologist",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E004",
+            "E005"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Referral to nephrologist should have been made",
+          "standard_of_care_basis": "Expert testimony indicated early referral is critical",
+          "evidence_ids": [
+            "E006",
+            "E007"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to refer led to delayed diagnosis and treatment",
+          "what_should_have_happened": "Referral to nephrologist for early intervention",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E006",
+            "E007",
+            "E008"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient developed kidney failure and required a transplant",
+        "severity": "PERMANENT_SEVERE_DISABILITY",
+        "long_term_effects": "Chronic kidney disease requiring lifelong management",
+        "evidence_ids": [
+          "E005",
+          "E007"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "1660000",
+        "key_findings": [
+          "Breach of duty in failing to refer to nephrologist",
+          "Causation established - earlier referral could have delayed kidney failure"
+        ],
+        "evidence_ids": [
+          "E008",
+          "E010"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to refer to nephrologist",
+        "counterfactual": "Early referral could have delayed kidney failure",
+        "evidence_ids": [
+          "E006",
+          "E007",
+          "E008"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "February 2016",
+        "event": "Patient treated for flu-like symptoms",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "October 2016",
+        "event": "Patient presented with frothy urine and abnormal tests",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "September 14, 2017",
+        "event": "Patient visited ER with hand and leg pain",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "timestamp": "March 29, 2018",
+        "event": "Renal biopsy confirmed IgA nephropathy",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Blood and Urine Tests",
+        "date": "October 2016",
+        "result": "Elevated white blood cell count, protein, and blood in urine",
+        "interpretation": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "IgA nephropathy",
+        "when_made": "March 29, 2018",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Kidney transplant",
+        "date": "March 4, 2020",
+        "provider": null,
+        "outcome": "Successful transplant",
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Kidney failure",
+        "when_occurred": "Prior to March 2018",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to refer to nephrologist",
+        "against": "Dr. Keene",
+        "found_proven": true,
+        "evidence_ids": [
+          "E008"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Dr. Keene breached duty of care",
+        "legal_significance": "Proximate cause of kidney failure",
+        "evidence_ids": [
+          "E008"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.208955223880597,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-16 16:21:06.099792",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

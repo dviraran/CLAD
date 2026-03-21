@@ -1,0 +1,418 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-4336549",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2016-10-14",
+  "url": "https://example.com/courtlistener-4336549",
+  "case_name": "Morrisroe v. Pantano",
+  "neutral_citation": null,
+  "clinical_domain": "PAEDIATRICS",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Morrisroe v. Pantano. Medical malpractice case involving paediatrics.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "In 1999, Viola was diagnosed with chronic obstructive pulmonary disease (COPD) and emphysema by pulmonologist Dr. Edward Diamond",
+      "paragraph_ref": "11",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "On September 29, 2009, Viola was admitted to the emergency room for stomach pain and shortness of breath.",
+      "paragraph_ref": "5",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "On October 1, 2009, Dr. Pantano performed the bronchoscopy with Viola under conscious sedation.",
+      "paragraph_ref": "6",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "Viola’s lung began to rebleed. As a result, she developed progressive respiratory failure and cardiac arrest, which lead to her death.",
+      "paragraph_ref": "14",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Grodzin testified that Dr. Pantano deviated from the standard of care by proceeding with the bronchoscopy and performing the biopsies.",
+      "paragraph_ref": "14",
+      "speaker": "Dr. Grodzin"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Grodzin opined that the bronchoscopy was not warranted because the September scan demonstrated that the mass was 'relatively stable, if not slightly smaller.'",
+      "paragraph_ref": "14",
+      "speaker": "Dr. Grodzin"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Grodzin opined that 'a reasonable and careful physician would have informed [Viola] of the risks of the procedure including the risk of dying,'",
+      "paragraph_ref": "17",
+      "speaker": "Dr. Grodzin"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. Pantano testified that he discussed performing a bronchoscopy with Viola.",
+      "paragraph_ref": "26",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "LEGAL_FINDING",
+      "text": "The judgment of the circuit court of Cook County is affirmed.",
+      "paragraph_ref": "52",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "COURT_REASONING",
+      "text": "Plaintiff’s counsel’s statements to the jury implied that the proper legal standard was what Viola would have done had she been informed of the risk of death and, therefore, were misleading.",
+      "paragraph_ref": "50",
+      "speaker": "Court reasoning"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Former smoker, COPD and emphysema history"
+      },
+      "chief_complaint": "Stomach pain and shortness of breath",
+      "history_of_present_illness": "Patient with a history of COPD and emphysema presented with stomach pain and shortness of breath. Previous CT scans indicated a mass in the upper right lobe of the lung.",
+      "past_medical_history": [
+        "Chronic obstructive pulmonary disease (COPD)",
+        "Emphysema"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "respiratory": "Shortness of breath noted"
+        }
+      },
+      "initial_working_problem": "Mass in the lung with differential including possible cancer",
+      "known_constraints": null,
+      "initial_differential": [
+        "Lung cancer",
+        "Benign mass"
+      ],
+      "critical_findings": [
+        "Mass in the upper right lobe of the lung"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E002",
+        "E003"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "CT Scan",
+        "description": "CT scan of the lungs",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Mass in the upper right lobe, size increase noted",
+          "detailed_findings": null,
+          "clinical_significance": "Potential malignancy",
+          "decision_impact": "Prompted recommendation for bronchoscopy",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E002",
+          "E003"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "PROCEDURE_NOTE",
+        "name": "Bronchoscopy",
+        "description": "Bronchoscopy with biopsy",
+        "available_phase": "procedure",
+        "reveal": {
+          "result_summary": "Bleeding occurred during biopsy",
+          "detailed_findings": null,
+          "clinical_significance": "Complication leading to respiratory failure",
+          "decision_impact": "Contributed to patient's deterioration",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E003",
+          "E004"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Emergency Presentation",
+        "description": "Patient presents to ED with acute symptoms",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Patient admitted for stomach pain and shortness of breath",
+            "timestamp": "September 29, 2009",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "procedure",
+        "name": "Bronchoscopy Procedure",
+        "description": "Bronchoscopy performed with complications",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Bronchoscopy performed, bleeding occurred",
+            "timestamp": "October 1, 2009",
+            "evidence_ids": [
+              "E003",
+              "E004"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient with a lung mass and declining respiratory function",
+        "prompt": "Should a bronchoscopy be performed?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Proceed with bronchoscopy and biopsy",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Mass appeared to increase in size, potential malignancy"
+          },
+          {
+            "option_id": "B",
+            "description": "Monitor with follow-up imaging",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Mass was stable, bronchoscopy not warranted"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "A",
+          "description": "Defendant proceeded with bronchoscopy",
+          "reasoning_stated": "Believed mass had increased in size",
+          "evidence_ids": [
+            "E003",
+            "E005"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "B",
+          "description": "Bronchoscopy should not have been performed",
+          "standard_of_care_basis": "Expert testimony indicated mass was stable",
+          "evidence_ids": [
+            "E005",
+            "E006"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Mass was stable, bronchoscopy posed unnecessary risk",
+          "what_should_have_happened": "Monitoring with follow-up imaging",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E005",
+            "E006"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient developed respiratory failure and cardiac arrest, leading to death",
+        "severity": "FATAL",
+        "long_term_effects": "Not applicable",
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "None",
+        "key_findings": [
+          "Court found no breach of standard of care",
+          "Bronchoscopy was deemed reasonable given clinical context"
+        ],
+        "evidence_ids": [
+          "E009"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Decision to perform bronchoscopy",
+        "counterfactual": "Monitoring could have avoided procedure risks",
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "September 29, 2009",
+        "event": "Patient admitted to ED with stomach pain and shortness of breath",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "October 1, 2009",
+        "event": "Bronchoscopy performed, bleeding occurred",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003",
+          "E004"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "CT Scan",
+        "date": "September 29, 2009",
+        "result": "Mass in upper right lobe, size increase noted",
+        "interpretation": null,
+        "evidence_ids": [
+          "E002",
+          "E003"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Mass in lung",
+        "when_made": "February 2009",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Bronchoscopy with biopsy",
+        "date": "October 1, 2009",
+        "provider": null,
+        "outcome": "Bleeding occurred, leading to complications",
+        "evidence_ids": [
+          "E003",
+          "E004"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Respiratory failure and cardiac arrest",
+        "when_occurred": "October 1, 2009",
+        "severity": "Fatal",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to provide proper informed consent",
+        "against": "Dr. Pantano",
+        "found_proven": false,
+        "evidence_ids": [
+          "E007",
+          "E009"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "No breach of standard of care",
+        "legal_significance": "Bronchoscopy was reasonable given clinical context",
+        "evidence_ids": [
+          "E009"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "INFORMED_CONSENT"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.3125,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-16 14:33:56.932620",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

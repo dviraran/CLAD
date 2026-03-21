@@ -1,0 +1,464 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-9475341",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2023-09-06",
+  "url": "https://example.com/courtlistener-9475341",
+  "case_name": "Peng v. Meeks",
+  "neutral_citation": null,
+  "clinical_domain": "PAEDIATRICS",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Peng v. Meeks. Medical malpractice case involving paediatrics.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "This medical malpractice case stems from the withdrawal of life-sustaining treatment that resulted in the death of Lillian Birt.",
+      "paragraph_ref": "10",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "While Ms. Birt was in the intensive care unit (ICU), her children decided to discontinue life support based on their understanding of conversations they had with their mother\u2019s treating doctors about her condition.",
+      "paragraph_ref": "10",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "In fact, their mother\u2019s condition was not terminal; there was a high likelihood that she would have recovered if treatment had been continued.",
+      "paragraph_ref": "11",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "LEGAL_FINDING",
+      "text": "The jury ultimately found that the doctors acted negligently in connection with the withdrawal of care and awarded damages to the heirs on the wrongful death claim and to the estate on the survival claim.",
+      "paragraph_ref": "4",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "LEGAL_FINDING",
+      "text": "We hold that the district court correctly instructed the jury that Ms. Meeks had the burden of proving the standard of care to establish medical malpractice.",
+      "paragraph_ref": "6",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "LEGAL_FINDING",
+      "text": "But we hold that the court erred in denying the doctors\u2019 motion for judgment as a matter of law on the survival claim.",
+      "paragraph_ref": "6",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "After experiencing complications from a surgery performed by Dr. Christina Richards, Lillian Birt was diagnosed with pneumonia and sepsis and was placed on life support.",
+      "paragraph_ref": "8",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "FACTUAL_FINDING",
+      "text": "A few days before Ms. Birt\u2019s death, the hospital staff conducted 'weaning trials' to determine whether Ms. Birt could be taken off the ventilator.",
+      "paragraph_ref": "10",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "WITNESS_STATEMENT",
+      "text": "Ms. Meeks testified that during the weaning trials, the medical staff 'had to take her [mother] off what was keeping her asleep or not in pain.'",
+      "paragraph_ref": "10",
+      "speaker": "Ms. Meeks"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Peng testified that she 'had a very good chance to return to another care facility if we [had kept] going.'",
+      "paragraph_ref": "11",
+      "speaker": "Dr. Peng"
+    },
+    {
+      "evidence_id": "E011",
+      "type": "MEDICAL_RECORD",
+      "text": "Dr. Peng gave Ms. Meeks a form to sign indicating that Ms. Birt\u2019s condition was 'terminal' and that '[t]o continue providing life-saving procedures would only serve to unnaturally prolong the moment of death.'",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E012",
+      "type": "LEGAL_FINDING",
+      "text": "We affirm in part and reverse in part.",
+      "paragraph_ref": "7",
+      "speaker": "Court finding"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Complications following surgery",
+      "history_of_present_illness": "Lillian Birt experienced complications from a surgery performed by Dr. Christina Richards, leading to pneumonia and sepsis. She was placed on life support and later admitted to the ICU.",
+      "past_medical_history": [
+        "Pneumonia",
+        "Sepsis"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "respiratory": "Respiratory failure, requiring ventilator support"
+        }
+      },
+      "initial_working_problem": "Respiratory failure and septic shock",
+      "known_constraints": null,
+      "initial_differential": [
+        "Respiratory failure",
+        "Septic shock"
+      ],
+      "critical_findings": [
+        "Respiratory failure",
+        "Septic shock",
+        "Decreased heart function"
+      ],
+      "urgency_level": "CRITICAL",
+      "evidence_ids": [
+        "E007",
+        "E008"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSULT_NOTE",
+        "name": "ICU Consultation",
+        "description": "Consultation note from ICU admission",
+        "available_phase": "presentation",
+        "reveal": {
+          "result_summary": "Patient admitted to ICU with respiratory failure and septic shock",
+          "detailed_findings": null,
+          "clinical_significance": "Critical condition requiring life support",
+          "decision_impact": "Initiation of life-sustaining treatment",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "CONSENT_DISCUSSION",
+        "name": "Family Meeting",
+        "description": "Discussion with family regarding patient's prognosis and treatment options",
+        "available_phase": "decision",
+        "reveal": {
+          "result_summary": "Family informed of terminal condition, consent obtained for withdrawal of care",
+          "detailed_findings": null,
+          "clinical_significance": "Informed consent for withdrawal of life support",
+          "decision_impact": "Led to withdrawal of life-sustaining treatment",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E011",
+          "E012"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "ICU Admission",
+        "description": "Patient admitted to ICU with complications from surgery",
+        "duration": "Several days",
+        "key_events": [
+          {
+            "event": "Patient placed on life support",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E007"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "decision",
+        "name": "Decision to Withdraw Care",
+        "description": "Family informed of prognosis and consent obtained for withdrawal of life support",
+        "duration": "Not specified in judgment",
+        "key_events": [
+          {
+            "event": "Family consented to withdrawal of life support",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E011",
+              "E012"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "decision",
+        "clinical_context": "Patient in ICU with life support",
+        "prompt": "What information should be provided to the family regarding the patient's prognosis?",
+        "action_type": "DISCLOSE_ALTERNATIVES",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Inform family of high likelihood of recovery and potential for meaningful recovery",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Accurate prognosis should be communicated to ensure informed decision-making"
+          },
+          {
+            "option_id": "B",
+            "description": "Inform family that patient's condition is terminal and recommend withdrawal of care",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Misleading information led to premature withdrawal of care"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant informed family of terminal condition and obtained consent for withdrawal",
+          "reasoning_stated": "Defendant stated it was to respect family's wishes",
+          "evidence_ids": [
+            "E011",
+            "E012"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Family should have been informed of the high likelihood of recovery",
+          "standard_of_care_basis": "Expert evidence established that accurate prognosis communication is standard",
+          "evidence_ids": [
+            "E010",
+            "E011"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Based on evidence E010-E012",
+          "what_should_have_happened": "Family should have been informed of recovery potential",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E010",
+            "E011",
+            "E012"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient died following withdrawal of life-sustaining treatment",
+        "severity": "FATAL",
+        "long_term_effects": "Not applicable",
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Breach of duty in withdrawing life-sustaining treatment",
+          "Causation established - withdrawal led to patient's death"
+        ],
+        "evidence_ids": [
+          "E004",
+          "E006"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Incorrect assessment of patient's condition as terminal",
+        "counterfactual": "Continued treatment would have allowed recovery",
+        "evidence_ids": [
+          "E003",
+          "E010"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Patient admitted to ICU with complications from surgery",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Patient admitted to ICU",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Withdrawal of life-sustaining treatment",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [
+      {
+        "diagnosis": "Pneumonia and sepsis",
+        "when_made": "Not specified in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      {
+        "diagnosis": "Incorrectly assessed as terminal",
+        "when_made": "Date not specified in judgment",
+        "made_by": null,
+        "correct": false,
+        "evidence_ids": [
+          "E011"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Life support",
+        "date": "Not specified in judgment",
+        "provider": null,
+        "outcome": "Patient remained on life support",
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      {
+        "treatment": "Withdrawal of life-sustaining treatment",
+        "date": "Date not specified in judgment",
+        "provider": null,
+        "outcome": "Patient died",
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Death following withdrawal of life support",
+        "when_occurred": "Not specified in judgment",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to inform family of recovery potential",
+        "against": "Defendant doctors",
+        "found_proven": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "allegation": "Incorrect withdrawal of life-sustaining treatment",
+        "against": "Defendant doctors",
+        "found_proven": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Standard of care not met",
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Breach of standard of care in assessing patient's condition",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "INFORMED_CONSENT",
+      "DIAGNOSIS_ERROR",
+      "TREATMENT_PROCEDURE_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.2,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-17 07:25:52.877791",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

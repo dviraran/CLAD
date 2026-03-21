@@ -1,0 +1,406 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10310251",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2025-01-02",
+  "url": "https://example.com/courtlistener-10310251",
+  "case_name": "Bon Secours-DePaul Medical Center v. Rogakos-Russell",
+  "neutral_citation": null,
+  "clinical_domain": "NEUROLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Bon Secours-DePaul Medical Center v. Rogakos-Russell. Medical malpractice case involving neurology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Father Constantine P. Rogakos, a retired Greek-Orthodox priest, checked in at Bon Secours hospital for an outpatient abdominal ultrasound.",
+      "paragraph_ref": "14",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "He walked with a 'quad' cane. His wife described him as having a 'shuffled gait.'",
+      "paragraph_ref": "17",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "Regan informed Father Rogakos that he should 'remove [his] clothing from the waist up' and put on a medical gown that was laid out for him on a wheeled hospital stretcher.",
+      "paragraph_ref": "30",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "Regan left the room while Father Rogakos changed.",
+      "paragraph_ref": "33",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "He suffered a laceration on his head, a right periorbital hematoma, and an intracranial hemorrhage.",
+      "paragraph_ref": "42",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "After ten days, his family decided to withdraw life support, and he passed away.",
+      "paragraph_ref": "50",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Two experts testified for the Plaintiff concerning the standard of care. They opined that the standard of care required Hospital personnel to assess Father Rogakos for the risk that he might fall.",
+      "paragraph_ref": "85",
+      "speaker": "Plaintiff's experts"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "EXPERT_TESTIMONY",
+      "text": "The Hospital\u2019s standard of care experts testified that the Hospital complied with the standard of care in leaving Father Rogakos alone in the room to change.",
+      "paragraph_ref": "93",
+      "speaker": "Hospital's experts"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "WITNESS_STATEMENT",
+      "text": "He stated that he leaned on the wheeled hospital stretcher while he was changing, the stretcher moved, and he lost his balance and fell.",
+      "paragraph_ref": "45",
+      "speaker": "Father Rogakos"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "LEGAL_FINDING",
+      "text": "The judgment of the Court of Appeals is affirmed.",
+      "paragraph_ref": "306",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E011",
+      "type": "COURT_REASONING",
+      "text": "The jury could properly conclude on this evidence that Father Rogakos\u2019 fall would not have occurred absent the Hospital\u2019s negligence.",
+      "paragraph_ref": "302",
+      "speaker": "Judge's analysis"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "86 years",
+        "sex": "male",
+        "relevant_social_history": "Retired Greek-Orthodox priest, uses a quad cane, shuffled gait"
+      },
+      "chief_complaint": "Bloating and abdominal pain",
+      "history_of_present_illness": "Father Constantine P. Rogakos presented for an outpatient abdominal ultrasound to diagnose bloating and abdominal pain.",
+      "past_medical_history": [
+        "Not documented in judgment"
+      ],
+      "medications": [
+        "Not documented in judgment"
+      ],
+      "allergies": [
+        "Not documented in judgment"
+      ],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "general": "Walks with a quad cane, shuffled gait"
+        }
+      },
+      "initial_working_problem": "Abdominal pain - differential includes gastrointestinal issues",
+      "known_constraints": null,
+      "initial_differential": [
+        "Gastrointestinal issues"
+      ],
+      "critical_findings": [
+        "Shuffled gait",
+        "Use of quad cane"
+      ],
+      "urgency_level": "ROUTINE",
+      "evidence_ids": [
+        "E001",
+        "E002"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "Abdominal Ultrasound",
+        "description": "Ultrasound to assess abdominal pain and bloating",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not documented in judgment",
+          "detailed_findings": null,
+          "clinical_significance": "Not documented in judgment",
+          "decision_impact": "Not documented in judgment",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Hospital Presentation",
+        "description": "Patient arrives at hospital for scheduled ultrasound",
+        "duration": "1 hour",
+        "key_events": [
+          {
+            "event": "Patient checked in and taken to ultrasound room",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E001",
+              "E023"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Ultrasound Preparation",
+        "description": "Patient instructed to change into a gown",
+        "duration": "30 minutes",
+        "key_events": [
+          {
+            "event": "Patient left alone to change, fall occurs",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E003",
+              "E004"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient in ultrasound room, instructed to change into a gown",
+        "prompt": "What precautions should be taken to ensure patient safety while changing?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Ensure stretcher wheels are locked and assist patient while changing",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard care for fall risk patients"
+          },
+          {
+            "option_id": "B",
+            "description": "Leave patient alone to change without checking stretcher wheels",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Neglects fall risk precautions"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant left patient alone without checking stretcher wheels",
+          "reasoning_stated": "Defendant did not perceive patient as needing assistance",
+          "evidence_ids": [
+            "E003",
+            "E004"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Ensure stretcher wheels are locked and assist patient",
+          "standard_of_care_basis": "Expert testimony on fall risk management",
+          "evidence_ids": [
+            "E007"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to assess and mitigate fall risk",
+          "what_should_have_happened": "Patient should have been assisted and stretcher secured",
+          "legal_standard_applied": "Bolam test",
+          "evidence_ids": [
+            "E007",
+            "E011"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient suffered a fall resulting in a head injury and intracranial hemorrhage",
+        "severity": "FATAL",
+        "long_term_effects": "Patient passed away after life support was withdrawn",
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "2000000",
+        "key_findings": [
+          "Failure to monitor and assist patient",
+          "Failure to ensure stretcher wheels were locked"
+        ],
+        "evidence_ids": [
+          "E011",
+          "E115"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to ensure patient safety during changing",
+        "counterfactual": "Assistance and secured stretcher would have prevented fall",
+        "evidence_ids": [
+          "E011",
+          "E115"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Patient arrives at hospital for ultrasound",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Patient falls while changing",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003",
+          "E004"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Abdominal Ultrasound",
+        "date": "Date not specified in judgment",
+        "result": "Not documented in judgment",
+        "interpretation": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Intracranial hemorrhage",
+        "when_made": "After fall",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Emergency care post-fall",
+        "date": "Date not specified in judgment",
+        "provider": null,
+        "outcome": "Patient did not recover",
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Intracranial hemorrhage",
+        "when_occurred": "After fall",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to monitor and assist patient",
+        "against": "Hospital staff",
+        "found_proven": true,
+        "evidence_ids": [
+          "E011"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Bolam test not satisfied",
+        "evidence_ids": [
+          "E011"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.035830618892508145,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-09 14:58:10.294431",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

@@ -1,0 +1,459 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-7860624",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2019-04-17",
+  "url": "https://example.com/courtlistener-7860624",
+  "case_name": "Herrick v. Zaghlool",
+  "neutral_citation": null,
+  "clinical_domain": "OBSTETRICS_GYNAECOLOGY",
+  "outcome_severity": "TEMPORARY_HARM",
+  "summary": {
+    "brief": "Herrick v. Zaghlool. Medical malpractice case involving obstetrics gynaecology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "This case stems from Herrick’s allegation that Dr. Zaghlool improperly performed an excision of a lymph node on June 13, 2017, causing pain and other symptoms to his left arm and shoulder.",
+      "paragraph_ref": "19",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Herrick had two post-operative appointments with Dr. Zaghlool—June 19 and 26, 2017—during which Herrick relayed to Dr. Zaghlool his worsening symptoms.",
+      "paragraph_ref": "21",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "Herrick pursued an appointment with his primary care provider and was seen by Charlie Davis, PA-C (“Davis”) in his primary-care-provider’s office on July 28, 2017.",
+      "paragraph_ref": "35",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. Randall saw Herrick on August 7 and 28, and September 6, 2017. Based on his examination of Herrick, Dr. Randall ordered a MRI, a MRI (with contrast), and an EMG.",
+      "paragraph_ref": "43",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "Herrick consulted Steven Shook, M.D. (“Dr. Shook”) of the Cleveland Clinic on November 16, 2017, who told Herrick that he sustained an injury to his spinal accessory nerve as a result of the surgery performed by Dr. Zaghlool.",
+      "paragraph_ref": "56",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "LEGAL_FINDING",
+      "text": "Therefore, because Herrick failed to timely file his suit against defendants, summary judgment in favor of defendants was appropriate.",
+      "paragraph_ref": "300",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "COURT_REASONING",
+      "text": "Summary judgment is proper where there is no genuine issue of material fact, the moving party is entitled to judgment as a matter of law, and reasonable minds can reach but one conclusion when viewing the evidence in favor of the non-moving party, and the conclusion is adverse to the non-moving party.",
+      "paragraph_ref": "85",
+      "speaker": "Court reasoning"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "male",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Pain and other symptoms in left arm and shoulder",
+      "history_of_present_illness": "Patient underwent excision of a lymph node on June 13, 2017, and experienced worsening symptoms post-operatively.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "musculoskeletal": "Collapsing trapezius muscle, scapula winging, unable to raise arm"
+        }
+      },
+      "initial_working_problem": "Post-operative complications following lymph node excision",
+      "known_constraints": null,
+      "initial_differential": [
+        "Surgical complication",
+        "Nerve injury"
+      ],
+      "critical_findings": [
+        "Collapsing trapezius muscle",
+        "Scapula winging"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002",
+        "E003"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "MRI",
+        "description": "MRI of the shoulder",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not documented in judgment",
+          "detailed_findings": null,
+          "clinical_significance": "Not documented in judgment",
+          "decision_impact": "Not documented in judgment",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "IMAGING",
+        "name": "MRI with contrast",
+        "description": "MRI of the shoulder with contrast",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not documented in judgment",
+          "detailed_findings": null,
+          "clinical_significance": "Not documented in judgment",
+          "decision_impact": "Not documented in judgment",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "request_id": "R003",
+        "type": "LAB",
+        "name": "EMG",
+        "description": "Electromyography",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not documented in judgment",
+          "detailed_findings": null,
+          "clinical_significance": "Not documented in judgment",
+          "decision_impact": "Not documented in judgment",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with post-operative symptoms",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Post-operative appointments with Dr. Zaghlool",
+            "timestamp": "June 19 and 26, 2017",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Further Evaluation",
+        "description": "Patient seeks further evaluation due to worsening symptoms",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Consultation with primary care provider and referral to orthopedic surgeon",
+            "timestamp": "July 28, 2017",
+            "evidence_ids": [
+              "E003"
+            ]
+          },
+          {
+            "event": "Consultation with Dr. Randall and diagnostic tests ordered",
+            "timestamp": "August 7, 2017",
+            "evidence_ids": [
+              "E004"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "postop",
+        "clinical_context": "Patient experiencing worsening symptoms post-surgery",
+        "prompt": "What should have been done after the patient reported worsening symptoms?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Re-evaluate the patient and consider further diagnostic testing",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard practice to investigate unexplained post-operative symptoms"
+          },
+          {
+            "option_id": "B",
+            "description": "Advise patient to wait for symptoms to resolve over time",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Patient's symptoms were not improving, indicating further evaluation was necessary"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant advised patient to wait for symptoms to resolve",
+          "reasoning_stated": "Defendant stated it would take a month or two to get back to normal",
+          "evidence_ids": [
+            "E002"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Re-evaluate the patient and consider further diagnostic testing",
+          "standard_of_care_basis": "Expert evidence suggested further investigation was warranted",
+          "evidence_ids": [
+            "E005"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Based on evidence E005, further investigation was necessary",
+          "what_should_have_happened": "Patient should have been re-evaluated and further tests ordered",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E005"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient diagnosed with scapula winging, torn labrum, and brachial-plexus injury",
+        "severity": "PERMANENT_MODERATE_DISABILITY",
+        "long_term_effects": "Chronic pain and functional impairment",
+        "evidence_ids": [
+          "E004",
+          "E005"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "0",
+        "key_findings": [
+          "Summary judgment granted due to statute of limitations",
+          "No genuine issue of material fact regarding timely filing"
+        ],
+        "evidence_ids": [
+          "E006",
+          "E007"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Failure to timely file suit",
+        "counterfactual": "Timely filing could have allowed for case evaluation",
+        "evidence_ids": [
+          "E006",
+          "E007"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "June 13, 2017",
+        "event": "Excision of lymph node performed by Dr. Zaghlool",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "June 19 and 26, 2017",
+        "event": "Post-operative appointments with Dr. Zaghlool",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "July 28, 2017",
+        "event": "Consultation with primary care provider and referral to orthopedic surgeon",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "timestamp": "August 7, 2017",
+        "event": "Consultation with Dr. Randall and diagnostic tests ordered",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "timestamp": "November 16, 2017",
+        "event": "Consultation with Dr. Shook and diagnosis of spinal accessory nerve injury",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "MRI",
+        "date": "August 7, 2017",
+        "result": "Not documented in judgment",
+        "interpretation": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "test_name": "MRI with contrast",
+        "date": "August 7, 2017",
+        "result": "Not documented in judgment",
+        "interpretation": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "test_name": "EMG",
+        "date": "August 7, 2017",
+        "result": "Not documented in judgment",
+        "interpretation": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Spinal accessory nerve injury",
+        "when_made": "November 16, 2017",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Arm sling and referral to pain management",
+        "date": "Not documented in judgment",
+        "provider": null,
+        "outcome": "Not documented in judgment",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Scapula winging, torn labrum, brachial-plexus injury",
+        "when_occurred": "Not documented in judgment",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Improper performance of lymph node excision",
+        "against": "Dr. Zaghlool",
+        "found_proven": false,
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Summary judgment granted due to statute of limitations",
+        "legal_significance": "No genuine issue of material fact regarding timely filing",
+        "evidence_ids": [
+          "E006",
+          "E007"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.02287581699346405,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-09 18:15:43.797690",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

@@ -1,0 +1,377 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-4639416",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2019-07-15",
+  "url": "https://example.com/courtlistener-4639416",
+  "case_name": "Specialty Hospital-Gainesville, Inc. v. Charles Barth",
+  "neutral_citation": null,
+  "clinical_domain": "PAEDIATRICS",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Specialty Hospital-Gainesville, Inc. v. Charles Barth. Medical malpractice case involving paediatrics.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "After suffering paralysis during an aortic-aneurism operation at Shands Teaching Hospital and Clinics, Inc., Mr. Barth was transferred to Select Specialty Hospital-Gainesville, a long-term acute-care facility which provides medical treatment to wean patients off breathing ventilators and wound care.",
+      "paragraph_ref": "9",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Mr. Barth developed a Stage II deep-tissue sacral bedsore at Specialty\u2019s facility.",
+      "paragraph_ref": "9",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Joyce Black, Ph.D., an expert on deep-tissue injury, opined that Specialty failed to prevent Mr. Barth\u2019s deep-tissue pressure ulcer which manifested in their care.",
+      "paragraph_ref": "9",
+      "speaker": "Joyce Black, Ph.D."
+    },
+    {
+      "evidence_id": "E004",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Christopher Davey, an expert in wound care, testified that Mr. Barth developed a preventable deep-tissue sacral injury at Specialty\u2019s facility.",
+      "paragraph_ref": "9",
+      "speaker": "Dr. Christopher Davey"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "LEGAL_FINDING",
+      "text": "We therefore reverse and remand with direction that Heartland be removed from the verdict and final judgment as a non-party and that all damages be assessed against Specialty.",
+      "paragraph_ref": "19",
+      "speaker": "Court conclusion"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "COURT_REASONING",
+      "text": "The principle established in Stuart remains the law: an alleged independent and subsequent tortfeasor\u2019s negligence does not diminish the liability of the original tortfeasor who caused the injury to occur.",
+      "paragraph_ref": "18",
+      "speaker": "Court reasoning"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "Mr. Barth testified by video deposition that he was admitted to Shands for aortic-aneurism repair but was rendered a paraplegic during the procedure.",
+      "paragraph_ref": "9",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "WITNESS_STATEMENT",
+      "text": "Mr. Barth\u2019s first concrete memory of Specialty\u2019s facility was of his arms being tied down to the sides of the bed with a breathing tube in his neck.",
+      "paragraph_ref": "9",
+      "speaker": "Mr. Barth"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Shahrzad Grey, MD, a treating physician at Heartland, testified by deposition that Mr. Barth arrived at Heartland on June 1, 2012 and stayed there until August 13.",
+      "paragraph_ref": "9",
+      "speaker": "Dr. Shahrzad Grey, MD"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "LEGAL_FINDING",
+      "text": "The jury found Specialty liable for medical malpractice and awarded damages in the amount of $561,748.13 for present and future medical costs and pain and suffering.",
+      "paragraph_ref": "9",
+      "speaker": "Court finding"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "male",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Paralysis following aortic-aneurism operation",
+      "history_of_present_illness": "Mr. Barth was admitted to Shands for aortic-aneurism repair but was rendered a paraplegic during the procedure. He was then transferred to Specialty Hospital-Gainesville for long-term acute care.",
+      "past_medical_history": [
+        "Paraplegia post-surgery"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "neurological": "Paraplegia noted post-surgery",
+          "skin": "Stage II deep-tissue sacral bedsore developed at Specialty\u2019s facility"
+        }
+      },
+      "initial_working_problem": "Management of paraplegia and prevention of pressure ulcers",
+      "known_constraints": null,
+      "initial_differential": [
+        "Pressure ulcer prevention",
+        "Respiratory support"
+      ],
+      "critical_findings": [
+        "Stage II sacral bedsore"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002",
+        "E007"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSULT_NOTE",
+        "name": "Wound Care Consultation",
+        "description": "Assessment and management plan for pressure ulcer",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Stage II deep-tissue sacral bedsore noted",
+          "detailed_findings": null,
+          "clinical_significance": "Requires regular repositioning and wound care",
+          "decision_impact": "Should prompt regular assessment and repositioning",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E002",
+          "E003"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient transferred to Specialty Hospital post-surgery",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Admission to Specialty Hospital",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Development of Pressure Ulcer",
+        "description": "Patient develops a Stage II sacral bedsore",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Development of Stage II bedsore",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient at Specialty Hospital with risk of pressure ulcers",
+        "prompt": "What measures should be taken to prevent pressure ulcers?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Regular repositioning and use of specialty mattress",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard care to prevent pressure ulcers in high-risk patients"
+          },
+          {
+            "option_id": "B",
+            "description": "Use of restraints without regular repositioning",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Increases risk of pressure ulcers"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant failed to regularly reposition Mr. Barth",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E003",
+            "E004"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Regular repositioning should have been performed",
+          "standard_of_care_basis": "Expert evidence established repositioning as standard",
+          "evidence_ids": [
+            "E003",
+            "E004"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to reposition led to progression of pressure ulcer",
+          "what_should_have_happened": "Regular repositioning and monitoring",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E003",
+            "E004"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient developed a Stage IV pressure ulcer requiring multiple surgeries",
+        "severity": "PERMANENT_MODERATE_DISABILITY",
+        "long_term_effects": "Chronic wound management and potential complications",
+        "evidence_ids": [
+          "E002",
+          "E004"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "561748.13",
+        "key_findings": [
+          "Breach of duty in failing to prevent pressure ulcers",
+          "Causation established - negligence led to progression of ulcer"
+        ],
+        "evidence_ids": [
+          "E010"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to reposition and prevent pressure ulcers",
+        "counterfactual": "Regular repositioning would have prevented ulcer progression",
+        "evidence_ids": [
+          "E003",
+          "E004",
+          "E010"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Patient transferred to Specialty Hospital",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Development of Stage II sacral bedsore",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [
+      {
+        "diagnosis": "Stage II sacral bedsore",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "treatments": [],
+    "complications": [
+      {
+        "complication": "Progression to Stage IV pressure ulcer",
+        "when_occurred": "Not documented in judgment",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to prevent pressure ulcers",
+        "against": "Specialty Hospital",
+        "found_proven": true,
+        "evidence_ids": [
+          "E003",
+          "E004"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Standard of care not met",
+        "evidence_ids": [
+          "E010"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.2564102564102564,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-16 14:27:22.798116",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

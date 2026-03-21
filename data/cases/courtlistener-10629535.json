@@ -1,0 +1,406 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10629535",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2014-10-30",
+  "url": "https://example.com/courtlistener-10629535",
+  "case_name": "Daphane Fonville, as Parent and Natural Guardian of Derek Fonville, a Minor v. Louay Zeid, M.D. and Usha J. Mehta, M.D., P.A., a Mississippi Corporation",
+  "neutral_citation": null,
+  "clinical_domain": "OBSTETRICS_GYNAECOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Daphane Fonville, as Parent and Natural Guardian of Derek Fonville, a Minor v. Louay Zeid, M.D. and Usha J. Mehta, M.D., P.A., a Mississippi Corporation. Medical malpractice case involving obstetrics gynaecology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "On the evening of October 30, 2014, Daphane was admitted to Baptist Memorial Hospital in Southaven, Mississippi, for labor induction after being diagnosed with severe preeclampsia.",
+      "paragraph_ref": "19",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Daphane’s labor progressed slowly; when it came time for her to push, she was too tired. At that point, Dr. Zeid informed her that he could either use the vacuum to facilitate delivery, or he could perform a caesarean section.",
+      "paragraph_ref": "22",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "Derek had a limp arm as well as bruising on his neck and shoulder. He was later diagnosed with a brachial plexus injury, which causes weakness or paralysis in parts of the arm.",
+      "paragraph_ref": "30",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "EXPERT_TESTIMONY",
+      "text": "In the Defendants’ initial designation of expert witnesses, both doctors indicated reliance on the ACOG monograph, which discusses maternal forces of labor as a potential cause of transient brachial plexus injuries.",
+      "paragraph_ref": "6",
+      "speaker": "Defense expert"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "LEGAL_FINDING",
+      "text": "The jury returned a verdict for the Defendants. Daphane filed a motion for judgment notwithstanding the verdict or, alternatively, for a new trial. The circuit court denied Daphane’s motion.",
+      "paragraph_ref": "10",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "COURT_REASONING",
+      "text": "In conclusion, there was no trial by ambush. Daphane was aware of the defense experts’ supplemental opinions and had the opportunity to depose them for a second time.",
+      "paragraph_ref": "508",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "LEGAL_FINDING",
+      "text": "Accordingly, this Court affirms the circuit court’s order denying the post-trial motion and entry of judgment for the Defendants.",
+      "paragraph_ref": "514",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Labor induction due to severe preeclampsia",
+      "history_of_present_illness": "Daphane was admitted for labor induction after being diagnosed with severe preeclampsia.",
+      "past_medical_history": [
+        "Severe preeclampsia"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "system": "Examination mentioned but findings not specified"
+        }
+      },
+      "initial_working_problem": "Labor induction due to severe preeclampsia",
+      "known_constraints": null,
+      "initial_differential": [
+        "Not documented in judgment"
+      ],
+      "critical_findings": [
+        "Severe preeclampsia"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSULT_NOTE",
+        "name": "Obstetrician Consultation",
+        "description": "Consultation with Dr. Zeid regarding labor induction and delivery options",
+        "available_phase": "presentation",
+        "reveal": {
+          "result_summary": "Options for delivery included vacuum-assisted delivery or caesarean section",
+          "detailed_findings": null,
+          "clinical_significance": "Important for determining delivery method",
+          "decision_impact": "Influenced decision to proceed with vacuum delivery",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Hospital Admission",
+        "description": "Patient admitted for labor induction due to severe preeclampsia",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Admission to hospital",
+            "timestamp": "Evening of October 30, 2014",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "decision",
+        "name": "Delivery Decision",
+        "description": "Decision on method of delivery during labor",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Decision to use vacuum-assisted delivery",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Labor Progression",
+        "description": "Monitoring and management of labor",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Labor progressed slowly",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "decision",
+        "clinical_context": "Patient in labor with severe preeclampsia, decision on delivery method",
+        "prompt": "What delivery method should be chosen given the patient's condition?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Proceed with caesarean section",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Caesarean section may reduce risk of complications in severe preeclampsia"
+          },
+          {
+            "option_id": "B",
+            "description": "Proceed with vacuum-assisted delivery",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Chosen due to patient's fatigue and slow labor progression"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant proceeded with vacuum-assisted delivery",
+          "reasoning_stated": "Patient was too tired to push, and vacuum was used to facilitate delivery",
+          "evidence_ids": [
+            "E002"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Caesarean section should have been considered",
+          "standard_of_care_basis": "Expert testimony suggested caesarean section as a safer option",
+          "evidence_ids": [
+            "E004"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Based on expert testimony, caesarean section was a safer option given the patient's condition",
+          "what_should_have_happened": "Caesarean section should have been performed to avoid complications",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E004"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Derek was born with a limp arm and bruising, later diagnosed with brachial plexus injury",
+        "severity": "PERMANENT_MODERATE_DISABILITY",
+        "long_term_effects": "Potential long-term disability due to brachial plexus injury",
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "0",
+        "key_findings": [
+          "Defendants were not found liable",
+          "Court affirmed the decision for the defendants"
+        ],
+        "evidence_ids": [
+          "E005",
+          "E007"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Failure to perform cesarean section",
+        "counterfactual": "Cesarean section could have prevented brachial plexus injury",
+        "evidence_ids": [
+          "E005",
+          "E007"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "Evening of October 30, 2014",
+        "event": "Daphane admitted to hospital for labor induction",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "Evening of October 30, 2014",
+        "event": "Patient admitted to hospital for labor",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [
+      {
+        "diagnosis": "Brachial plexus injury",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "diagnosis": "Brachial plexus injury",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Vacuum-assisted delivery",
+        "date": "Not documented in judgment",
+        "provider": null,
+        "outcome": "Derek delivered with shoulder dystocia",
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Permanent brachial plexus injury",
+        "when_occurred": "At birth",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "complication": "Brachial plexus injury",
+        "when_occurred": "At birth",
+        "severity": "Moderate",
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to comply with standard of care during delivery",
+        "against": "Dr. Louay Zeid",
+        "found_proven": false,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "allegation": "Failure to perform cesarean section",
+        "against": "Dr. Zeid",
+        "found_proven": false,
+        "evidence_ids": [
+          "E005",
+          "E007"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "No breach of duty of care",
+        "legal_significance": "Jury verdict for Defendants affirmed",
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      {
+        "finding": "Defendants not liable",
+        "legal_significance": "Court affirmed the decision for the defendants",
+        "evidence_ids": [
+          "E005",
+          "E007"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "TREATMENT_PROCEDURE_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.013513513513513514,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-09 18:47:09.271429",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

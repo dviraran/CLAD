@@ -1,0 +1,766 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-9439129",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2020-03-21",
+  "url": "https://example.com/courtlistener-9439129",
+  "case_name": "Mills v. Hartford HealthCare Corp.",
+  "neutral_citation": null,
+  "clinical_domain": "CARDIOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Mills v. Hartford HealthCare Corp.. Medical malpractice case involving cardiology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "In March, 2020, shortly after the onset of the COVID-19 pandemic, C went to the emergency room at a hospital in Norwich complaining of a sore throat and a headache.",
+      "paragraph_ref": "4",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "The emergency room staff suspected that C was experiencing a myocardial infarction.",
+      "paragraph_ref": "4",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "C was transferred to Hartford Hospital, where such facilities are available.",
+      "paragraph_ref": "4",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "R was concerned that C could have COVID-19 and doubted that she was suffering from a myocardial infarction.",
+      "paragraph_ref": "4",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "A COVID-19 diagnostic test was administered on March 21, 2020.",
+      "paragraph_ref": "4",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "On March 24, 2020, C’s test result came back as negative.",
+      "paragraph_ref": "4",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "On March 25, 2020, F ordered that C undergo a coronary angiogram in the hospital’s catheterization lab, but C died of a myocardial infarction before the procedure was administered.",
+      "paragraph_ref": "4",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "LEGAL_FINDING",
+      "text": "The trial court ultimately granted the motions to dismiss with respect to the claims directed at the defendant physicians’ acts or omissions that occurred before the receipt of C’s negative COVID-19 test result on March 24, 2020, but denied one of the motions to dismiss with respect to claims directed at acts or omissions occurring after that time.",
+      "paragraph_ref": "4",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "COURT_REASONING",
+      "text": "The trial court correctly determined that, under Executive Order No. 7V, the defendants were immune for any negligent acts or omissions occurring before, but not after, the receipt of C’s negative COVID-19 test result.",
+      "paragraph_ref": "1",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "LEGAL_FINDING",
+      "text": "The trial court incorrectly concluded that, under the federal PREP Act, the defendants were immune from suit and liability for their allegedly negligent and grossly negligent acts or omissions occurring before the receipt of C’s negative COVID-19 test result.",
+      "paragraph_ref": "2",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E011",
+      "type": "COURT_REASONING",
+      "text": "The immunity conferred by the PREP Act is different from—and much narrower than—that conferred by Executive Order No. 7V and does not cover the claims presently under consideration.",
+      "paragraph_ref": "II",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E012",
+      "type": "COURT_REASONING",
+      "text": "The receipt of C’s negative test result broke any meaningful connection between F’s treatment of C and his provision of health care services in support of the state’s COVID-19 response.",
+      "paragraph_ref": "16",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E013",
+      "type": "LEGAL_FINDING",
+      "text": "Accordingly, the plaintiff was entitled to proceed on the counts of her complaint alleging gross negligence as to all of the defendants and the counts of her complaint alleging negligence as to F and H Co.",
+      "paragraph_ref": "31",
+      "speaker": "Court finding"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Sore throat and headache",
+      "history_of_present_illness": "In March 2020, shortly after the onset of the COVID-19 pandemic, the patient presented to the emergency room with a sore throat and headache. The emergency room staff suspected a myocardial infarction.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "system": "Examination mentioned but findings not specified"
+        }
+      },
+      "initial_working_problem": "Suspected myocardial infarction",
+      "known_constraints": null,
+      "initial_differential": [
+        "myocardial infarction",
+        "COVID-19 induced myocarditis",
+        "myopericarditis"
+      ],
+      "critical_findings": [
+        "Sore throat",
+        "Headache"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002",
+        "E004"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "LAB",
+        "name": "COVID-19 Diagnostic Test",
+        "description": "Test to determine COVID-19 infection status",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Negative on March 24, 2020",
+          "detailed_findings": null,
+          "clinical_significance": "Ruled out COVID-19 as a cause of symptoms",
+          "decision_impact": "Should have prompted immediate cardiac intervention",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "IMAGING",
+        "name": "Coronary Angiogram",
+        "description": "Imaging to assess coronary arteries",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not performed before patient's death",
+          "detailed_findings": null,
+          "clinical_significance": "Could have identified myocardial infarction",
+          "decision_impact": "Delay in performing contributed to adverse outcome",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      {
+        "request_id": "R003",
+        "type": "LAB",
+        "name": "COVID-19 Test",
+        "description": "Diagnostic test for COVID-19",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Negative",
+          "detailed_findings": null,
+          "clinical_significance": "COVID-19 ruled out",
+          "decision_impact": "Should have prompted immediate cardiac intervention",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Emergency Presentation",
+        "description": "Patient presents to ED with symptoms",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Patient arrives at ED",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Initial Workup",
+        "description": "Initial assessment and testing",
+        "duration": "March 21, 2020 to March 24, 2020",
+        "key_events": [
+          {
+            "event": "COVID-19 test administered",
+            "timestamp": "March 21, 2020",
+            "evidence_ids": [
+              "E005"
+            ]
+          },
+          {
+            "event": "COVID-19 test result received",
+            "timestamp": "March 24, 2020",
+            "evidence_ids": [
+              "E006"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "decision",
+        "name": "Post-Negative COVID-19 Test Management",
+        "description": "Management after COVID-19 ruled out",
+        "duration": "March 24, 2020 to March 25, 2020",
+        "key_events": [
+          {
+            "event": "Coronary angiogram ordered",
+            "timestamp": "March 25, 2020",
+            "evidence_ids": [
+              "E007"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "decision",
+        "name": "Decision Making",
+        "description": "Decisions regarding patient management",
+        "duration": "2 days",
+        "key_events": [
+          {
+            "event": "COVID-19 test result returned negative",
+            "timestamp": "March 24, 2020, 19:40",
+            "evidence_ids": [
+              "E006"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient in hospital with suspected myocardial infarction",
+        "prompt": "What should be the immediate management for suspected myocardial infarction?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Immediate admission to cardiac catheterization lab",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard care for suspected myocardial infarction"
+          },
+          {
+            "option_id": "B",
+            "description": "Defer admission pending COVID-19 test result",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Based on provisional COVID-19 diagnosis"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant deferred admission pending COVID-19 test result",
+          "reasoning_stated": "Concern for COVID-19 induced myocarditis",
+          "evidence_ids": [
+            "E004"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Immediate admission to cardiac catheterization lab",
+          "standard_of_care_basis": "Expert evidence established immediate intervention is standard",
+          "evidence_ids": [
+            "E013"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Delay in treatment due to waiting for COVID-19 test result",
+          "what_should_have_happened": "Immediate cardiac intervention should have been performed",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E013"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient's condition worsened due to delayed cardiac intervention",
+        "severity": "SEVERE",
+        "long_term_effects": "Not documented in judgment",
+        "evidence_ids": [
+          "E012"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "Not documented in judgment",
+        "key_findings": [
+          "Failure to timely diagnose and treat myocardial infarction",
+          "Delay in treatment not justified by COVID-19 testing"
+        ],
+        "evidence_ids": [
+          "E013"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Delay in cardiac intervention due to COVID-19 test",
+        "counterfactual": "Immediate intervention could have prevented deterioration",
+        "evidence_ids": [
+          "E013"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "March 2020",
+        "event": "Patient presents to emergency room",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "March 21, 2020",
+        "event": "COVID-19 test administered",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "timestamp": "March 24, 2020",
+        "event": "COVID-19 test result negative",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "timestamp": "March 25, 2020",
+        "event": "Coronary angiogram ordered",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      {
+        "timestamp": "March 21, 2020, 12:00",
+        "event": "Patient arrives at ED",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "March 21, 2020, 12:08",
+        "event": "ECG performed showing ST elevation",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "March 21, 2020, 17:18",
+        "event": "COVID-19 test administered",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "timestamp": "March 24, 2020, 19:40",
+        "event": "COVID-19 test result returned negative",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "timestamp": "March 21, 2020",
+        "event": "COVID-19 test administered",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "timestamp": "March 24, 2020",
+        "event": "COVID-19 test result returned negative",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "timestamp": "March 25, 2020",
+        "event": "Coronary angiogram ordered",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      {
+        "timestamp": "March 21, 2020",
+        "event": "COVID-19 test administered",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "timestamp": "March 24, 2020",
+        "event": "COVID-19 test result returned negative",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "timestamp": "March 25, 2020",
+        "event": "Coronary angiogram ordered",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "COVID-19 Diagnostic Test",
+        "date": "March 21, 2020",
+        "result": "Negative",
+        "interpretation": null,
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      },
+      {
+        "test_name": "ECG",
+        "date": "March 21, 2020",
+        "result": "ST elevation",
+        "interpretation": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "test_name": "Troponin levels",
+        "date": "March 21, 2020",
+        "result": "8.6 ng/mL",
+        "interpretation": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "test_name": "COVID-19 Test",
+        "date": "March 21, 2020",
+        "result": "Negative",
+        "interpretation": null,
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "test_name": "COVID-19 Diagnostic Test",
+        "date": "March 21, 2020",
+        "result": "Negative",
+        "interpretation": null,
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      },
+      {
+        "test_name": "COVID-19 Diagnostic Test",
+        "date": "March 21, 2020",
+        "result": "Negative",
+        "interpretation": null,
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Myocardial infarction",
+        "when_made": "Posthumously",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      {
+        "diagnosis": "STEMI",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "diagnosis": "Suspected myocardial infarction",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "diagnosis": "Suspected myocardial infarction",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Coronary angiogram",
+        "date": "Not performed",
+        "provider": null,
+        "outcome": "Not applicable",
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      {
+        "treatment": "Planned coronary angiogram",
+        "date": "March 25, 2020",
+        "provider": null,
+        "outcome": "Not performed due to cardiac arrest",
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      {
+        "treatment": "Coronary angiogram",
+        "date": "March 25, 2020",
+        "provider": null,
+        "outcome": "Not documented in judgment",
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      {
+        "treatment": "Coronary angiogram",
+        "date": "March 25, 2020",
+        "provider": null,
+        "outcome": "Not documented in judgment",
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Death",
+        "when_occurred": "March 25, 2020",
+        "severity": "Fatal",
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      {
+        "complication": "Cardiac arrest",
+        "when_occurred": "March 25, 2020",
+        "severity": "Fatal",
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      {
+        "complication": "Delayed cardiac treatment",
+        "when_occurred": "Not documented in judgment",
+        "severity": "Not documented in judgment",
+        "evidence_ids": [
+          "E013"
+        ]
+      },
+      {
+        "complication": "Worsening of condition due to delayed treatment",
+        "when_occurred": "Not documented in judgment",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E012"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to diagnose myocardial infarction",
+        "against": "Defendant physicians",
+        "found_proven": true,
+        "evidence_ids": [
+          "E013"
+        ]
+      },
+      {
+        "allegation": "Failure to provide timely cardiac intervention",
+        "against": "Defendant physicians",
+        "found_proven": true,
+        "evidence_ids": [
+          "E013"
+        ]
+      },
+      {
+        "allegation": "Failure to prioritize cardiac care after negative COVID-19 test",
+        "against": "Defendant physician",
+        "found_proven": true,
+        "evidence_ids": [
+          "E013"
+        ]
+      },
+      {
+        "allegation": "Failure to timely diagnose and treat myocardial infarction",
+        "against": "Defendant physicians",
+        "found_proven": true,
+        "evidence_ids": [
+          "E013"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Failure to provide timely cardiac intervention",
+        "evidence_ids": [
+          "E013"
+        ]
+      },
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Failure to provide timely intervention for STEMI",
+        "evidence_ids": [
+          "E013"
+        ]
+      },
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Standard of care not met",
+        "evidence_ids": [
+          "E013"
+        ]
+      },
+      {
+        "finding": "Defendants were grossly negligent in delaying treatment",
+        "legal_significance": "Breach of standard of care",
+        "evidence_ids": [
+          "E013"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "TREATMENT_PROCEDURE_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.35135135135135137,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-09 19:04:40.841641",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

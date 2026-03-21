@@ -1,0 +1,472 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-6457018",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2022-04-01",
+  "url": "https://example.com/courtlistener-6457018",
+  "case_name": "Gibson v. Soin",
+  "neutral_citation": null,
+  "clinical_domain": "CARDIOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Gibson v. Soin. Medical malpractice case involving cardiology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Diane Gibson had a history of back pain. In September 2015, she sought treatment from Dr. Soin, a pain management specialist who was employed by Ohio Pain Clinic.",
+      "paragraph_ref": "20",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. Soin implanted a temporary spinal cord stimulator to alleviate Mrs. Gibson’s back pain. That device was replaced by a Stage II Spinal Cord Stimulator (SCS) on December 31, 2015.",
+      "paragraph_ref": "22",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "In January and February 2016, Mrs. Gibson underwent additional surgical procedures due to an infection at the surgical site and exposed wires from the stimulator.",
+      "paragraph_ref": "25",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "On April 21, 2016, Dr. Soin re-implanted the SCS in Mrs. Gibson’s back. Prior to conducting the procedure, he ordered a blood test and an electrocardiogram (EKG).",
+      "paragraph_ref": "28",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "The bloodwork indicated that Mrs. Gibson had low potassium, and her EKG showed abnormal T waves and prolonged Q waves.",
+      "paragraph_ref": "31",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "Two days later, on April 23, 2016, Mrs. Gibson died at home at the age of 64.",
+      "paragraph_ref": "34",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "The coroner concluded that the cause of death was arteriosclerotic cardiovascular disease with bronchopneumonia contributing.",
+      "paragraph_ref": "36",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Utlak testified that he was familiar with the standard of care in the pain management surgical field with respect to presurgical cardiac screenings.",
+      "paragraph_ref": "99",
+      "speaker": "Dr. Utlak"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "LEGAL_FINDING",
+      "text": "The trial court did not abuse its discretion in concluding, pursuant to Civ.R. 601, that Dr. Utlak was not competent to give expert testimony as to the Defendants’ standard of care in this particular case.",
+      "paragraph_ref": "348",
+      "speaker": "Court conclusion"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "LEGAL_FINDING",
+      "text": "The trial court’s judgments will be affirmed.",
+      "paragraph_ref": "352",
+      "speaker": "Court conclusion"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "64 years",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Back pain",
+      "history_of_present_illness": "Diane Gibson had a history of back pain and sought treatment from Dr. Soin, a pain management specialist, in September 2015.",
+      "past_medical_history": [
+        "History of back pain"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "system": "Examination mentioned but findings not specified"
+        }
+      },
+      "initial_working_problem": "Chronic back pain",
+      "known_constraints": null,
+      "initial_differential": [
+        "Chronic back pain"
+      ],
+      "critical_findings": [],
+      "urgency_level": "ROUTINE",
+      "evidence_ids": [
+        "E001"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "LAB",
+        "name": "Blood Test",
+        "description": "Pre-surgical blood test to assess patient's readiness for surgery",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Low potassium",
+          "detailed_findings": null,
+          "clinical_significance": "Increased risk of complications during surgery",
+          "decision_impact": "Should prompt correction of electrolyte imbalance before proceeding with surgery",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "IMAGING",
+        "name": "EKG",
+        "description": "Pre-surgical electrocardiogram to assess cardiac function",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Abnormal T waves and prolonged Q waves",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates potential cardiac risk",
+          "decision_impact": "Should prompt cardiology consultation before proceeding with surgery",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with chronic back pain",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Consultation with Dr. Soin",
+            "timestamp": "September 2015",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Pre-Surgical Workup",
+        "description": "Pre-surgical testing conducted before re-implantation of spinal cord stimulator",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Blood test and EKG performed",
+            "timestamp": "April 21, 2016",
+            "evidence_ids": [
+              "E004",
+              "E005"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "procedure",
+        "name": "Surgical Procedure",
+        "description": "Re-implantation of spinal cord stimulator",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Surgery performed",
+            "timestamp": "April 21, 2016",
+            "evidence_ids": [
+              "E004"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "postop",
+        "name": "Postoperative Period",
+        "description": "Patient discharged home after surgery",
+        "duration": "2 days",
+        "key_events": [
+          {
+            "event": "Patient discharged",
+            "timestamp": "April 21, 2016",
+            "evidence_ids": [
+              "E004"
+            ]
+          },
+          {
+            "event": "Patient died at home",
+            "timestamp": "April 23, 2016",
+            "evidence_ids": [
+              "E006"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient scheduled for re-implantation of spinal cord stimulator",
+        "prompt": "Should the surgery proceed given the abnormal pre-surgical test results?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Proceed with surgery without further intervention",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Defendant proceeded despite abnormal test results"
+          },
+          {
+            "option_id": "B",
+            "description": "Consult cardiologist and correct electrolyte imbalance before surgery",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard of care requires addressing potential cardiac risks before surgery"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "A",
+          "description": "Defendant proceeded with surgery without addressing abnormal test results",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E004",
+            "E005"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "B",
+          "description": "Consult cardiologist and correct electrolyte imbalance before surgery",
+          "standard_of_care_basis": "Expert testimony indicated this was the standard of care",
+          "evidence_ids": [
+            "E008"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Proceeding with surgery without addressing abnormal test results increased risk of complications",
+          "what_should_have_happened": "Consultation with a cardiologist and correction of electrolyte imbalance",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E008",
+            "E009"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient died at home two days after surgery",
+        "severity": "FATAL",
+        "long_term_effects": "Not applicable",
+        "evidence_ids": [
+          "E006",
+          "E007"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "0",
+        "key_findings": [
+          "Directed verdict in favor of defendants",
+          "Court found expert testimony insufficient to establish breach of standard of care"
+        ],
+        "evidence_ids": [
+          "E010"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Failure to consult cardiologist and correct electrolyte imbalance",
+        "counterfactual": "Consultation and correction could have mitigated risk",
+        "evidence_ids": [
+          "E008",
+          "E009"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "September 2015",
+        "event": "Patient sought treatment from Dr. Soin for back pain",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "April 21, 2016",
+        "event": "Pre-surgical blood test and EKG performed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004",
+          "E005"
+        ]
+      },
+      {
+        "timestamp": "April 21, 2016",
+        "event": "Re-implantation of spinal cord stimulator",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "timestamp": "April 23, 2016",
+        "event": "Patient died at home",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Blood Test",
+        "date": "April 21, 2016",
+        "result": "Low potassium",
+        "interpretation": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "test_name": "EKG",
+        "date": "April 21, 2016",
+        "result": "Abnormal T waves and prolonged Q waves",
+        "interpretation": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Arteriosclerotic cardiovascular disease with bronchopneumonia",
+        "when_made": "Post-mortem",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Re-implantation of spinal cord stimulator",
+        "date": "April 21, 2016",
+        "provider": null,
+        "outcome": "Surgery completed",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Death",
+        "when_occurred": "April 23, 2016",
+        "severity": "Fatal",
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to review and properly evaluate presurgical testing",
+        "against": "Dr. Soin and Dr. Pappenfus",
+        "found_proven": false,
+        "evidence_ids": [
+          "E010"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Directed verdict in favor of defendants",
+        "legal_significance": "Expert testimony insufficient to establish breach of standard of care",
+        "evidence_ids": [
+          "E010"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.028011204481792718,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-09 20:19:56.847050",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

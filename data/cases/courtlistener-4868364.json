@@ -1,0 +1,403 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-4868364",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2021-03-26",
+  "url": "https://example.com/courtlistener-4868364",
+  "case_name": "Ghostanyans v. Goodwin",
+  "neutral_citation": null,
+  "clinical_domain": "OBSTETRICS_GYNAECOLOGY",
+  "outcome_severity": "PERMANENT_SEVERE_DISABILITY",
+  "summary": {
+    "brief": "Ghostanyans v. Goodwin. Medical malpractice case involving obstetrics gynaecology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Plaintiffs Christine Ghostanyans and Tadeh Ghostanyans, individually and as parents and next friends of Landon Ghostanyans, a minor, appeal a judgment following a jury trial for defendants Pamela Goodwin, M.D., and Northshore Associates in Gynecology & Obstetrics, S.C.",
+      "paragraph_ref": "5",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "This is a medical malpractice case regarding the August 24, 2012, birth of Landon Ghostanyans to plaintiffs, delivered by physicians, including Goodwin and Loren Hutter, M.D., at a hospital of Northshore University Health System (System).",
+      "paragraph_ref": "24",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "During Landon’s birth, Goodwin diagnosed a shoulder dystocia, which occurs when a fetus’s shoulder gets blocked by or caught upon the mother’s pubic bone during birth.",
+      "paragraph_ref": "28",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "Landon suffered an avulsion of his C8 nerve root, brachial plexus palsy, injury to his phrenic nerve, and diaphragmatic palsy at the time of his delivery.",
+      "paragraph_ref": "46",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Gubernick opined that Goodwin deviated from the standard of care for a reasonably careful obstetrician during Landon’s delivery.",
+      "paragraph_ref": "281",
+      "speaker": "Expert witness"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "LEGAL_FINDING",
+      "text": "The judgment in favor of Goodwin and Associates is affirmed.",
+      "paragraph_ref": "96",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "COURT_REASONING",
+      "text": "We find that there was evidence that, if believed by the jury, would reasonably cause it to conclude that Hutter applied excessive traction and Goodwin did not, so that Goodwin did not cause Landon’s permanent brachial plexus injury.",
+      "paragraph_ref": "835",
+      "speaker": "Judge's analysis"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Newborn",
+        "sex": "male",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Shoulder dystocia during delivery",
+      "history_of_present_illness": "During the delivery of Landon Ghostanyans on August 24, 2012, shoulder dystocia was diagnosed by Dr. Goodwin.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "musculoskeletal": "Brachial plexus palsy noted post-delivery"
+        }
+      },
+      "initial_working_problem": "Shoulder dystocia during delivery",
+      "known_constraints": null,
+      "initial_differential": [
+        "Shoulder dystocia"
+      ],
+      "critical_findings": [
+        "Turtle sign indicating possible shoulder dystocia"
+      ],
+      "urgency_level": "EMERGENCY",
+      "evidence_ids": [
+        "E002",
+        "E003"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSULT_NOTE",
+        "name": "Obstetrician Consultation",
+        "description": "Consultation with obstetrician regarding delivery complications",
+        "available_phase": "presentation",
+        "reveal": {
+          "result_summary": "Diagnosis of shoulder dystocia confirmed",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates need for immediate intervention",
+          "decision_impact": "Guides delivery maneuvers",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Labor and Delivery Presentation",
+        "description": "Patient Christine Ghostanyans in labor at hospital",
+        "duration": "Not specified in judgment",
+        "key_events": [
+          {
+            "event": "Diagnosis of shoulder dystocia",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E003"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "procedure",
+        "name": "Delivery Procedure",
+        "description": "Attempt to relieve shoulder dystocia during delivery",
+        "duration": "Approximately 4 minutes",
+        "key_events": [
+          {
+            "event": "Application of downward traction",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E003",
+              "E005"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "procedure",
+        "clinical_context": "During delivery with diagnosed shoulder dystocia",
+        "prompt": "What maneuver should be used to relieve shoulder dystocia?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Apply gentle traction and perform McRoberts maneuver",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard practice to relieve shoulder dystocia without excessive force"
+          },
+          {
+            "option_id": "B",
+            "description": "Apply downward traction",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Excessive traction can cause brachial plexus injury"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant applied downward traction",
+          "reasoning_stated": "Believed to be necessary to relieve dystocia",
+          "evidence_ids": [
+            "E003",
+            "E005"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Gentle traction with appropriate maneuvers should have been used",
+          "standard_of_care_basis": "Expert testimony indicated excessive traction is a deviation from standard care",
+          "evidence_ids": [
+            "E005"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Excessive traction is known to cause brachial plexus injuries",
+          "what_should_have_happened": "Gentle traction with maneuvers like McRoberts should have been used",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E005"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Landon suffered a brachial plexus injury",
+        "severity": "PERMANENT_MODERATE_DISABILITY",
+        "long_term_effects": "Potential limitations in upper limb function",
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "None",
+        "key_findings": [
+          "Goodwin did not apply excessive traction",
+          "Hutter's actions were considered the sole proximate cause"
+        ],
+        "evidence_ids": [
+          "E006",
+          "E007"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Not applicable",
+        "counterfactual": "Not applicable",
+        "evidence_ids": [
+          "E006",
+          "E007"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "August 24, 2012",
+        "event": "Landon Ghostanyans born with shoulder dystocia",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Diagnosis of shoulder dystocia during delivery",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [
+      {
+        "diagnosis": "Brachial plexus palsy",
+        "when_made": "Post-delivery",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "diagnosis": "Brachial plexus injury",
+        "when_made": "Post-delivery",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Nerve transfer surgery",
+        "date": "Not specified in judgment",
+        "provider": null,
+        "outcome": "Partial improvement in arm function",
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "treatment": "Gentle traction and rotational maneuvers",
+        "date": "During delivery",
+        "provider": null,
+        "outcome": "Delivery of Landon",
+        "evidence_ids": [
+          "E003",
+          "E005"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Permanent brachial plexus injury",
+        "when_occurred": "At birth",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "complication": "Brachial plexus injury",
+        "when_occurred": "During delivery",
+        "severity": "Permanent",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to use appropriate maneuvers for shoulder dystocia",
+        "against": "Dr. Goodwin",
+        "found_proven": false,
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      },
+      {
+        "allegation": "Excessive traction causing brachial plexus injury",
+        "against": "Goodwin",
+        "found_proven": false,
+        "evidence_ids": [
+          "E006",
+          "E007"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "No liability found for Dr. Goodwin",
+        "legal_significance": "Jury found another person was the sole proximate cause",
+        "evidence_ids": [
+          "E006",
+          "E007"
+        ]
+      },
+      {
+        "finding": "Goodwin did not apply excessive traction",
+        "legal_significance": "No breach of standard of care",
+        "evidence_ids": [
+          "E006",
+          "E007"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "TREATMENT_PROCEDURE_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.008244994110718492,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-16 14:36:53.049253",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

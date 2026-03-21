@@ -1,0 +1,467 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-5307438",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2021-01-14",
+  "url": "https://example.com/courtlistener-5307438",
+  "case_name": "Kevin Clanton v. United States",
+  "neutral_citation": null,
+  "clinical_domain": "ONCOLOGY",
+  "outcome_severity": "TEMPORARY_HARM",
+  "summary": {
+    "brief": "Kevin Clanton v. United States. Medical malpractice case involving oncology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Clanton alleged that nurse practitioner Denise Jordan, an employee of the U.S. Public Health Service, failed to educate him about his severe hypertension or to monitor its advancement, and as a result of that negligent care his hypertension developed into Stage V kidney disease.",
+      "paragraph_ref": "5",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Clanton required dialysis and, at the age of 35, a kidney transplant, and is expected to endure further cycles of dialysis and another transplant in the future.",
+      "paragraph_ref": "6",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "LEGAL_FINDING",
+      "text": "Following a five-day bench trial, the district court found the United States liable, rejected the government\u2019s comparative-negligence argument as to Clanton, and awarded Clanton nearly $30 million in damages.",
+      "paragraph_ref": "6",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "EXPERT_TESTIMONY",
+      "text": "That included testimony from three expert witnesses, establishing: that patients often feel well when they have high blood pressure, which provides 'misinformation' to them as to whether they are ill; that it is common for people to think that if they do not feel sick there is no need for treatment; that high blood pressure is a silent killer, and that patient education is absolutely essential to controlling it especially in a young person who is facing something that does not produce any symptoms which would let him know what is happening.",
+      "paragraph_ref": "13",
+      "speaker": "Expert witnesses"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "Clanton began undergoing hemodialysis in March 2013 and received a kidney transplant in November 2015.",
+      "paragraph_ref": "10",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "LEGAL_FINDING",
+      "text": "The district court held that under that reasonable-person standard, Clanton was not comparatively negligent.",
+      "paragraph_ref": "12",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "COURT_REASONING",
+      "text": "The court considered not only what Clanton knew or would conclude as a result of his medical interactions, but what a reasonable person would conclude.",
+      "paragraph_ref": "17",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "FACTUAL_FINDING",
+      "text": "During Clanton\u2019s final visit in October 2012, Jordan again ordered lab work, which revealed extensive kidney damage.",
+      "paragraph_ref": "2008",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "LEGAL_FINDING",
+      "text": "The decision of the district court is AFFIRMED.",
+      "paragraph_ref": "27",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "35 years",
+        "sex": "male",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "High blood pressure noted during pre-employment physical",
+      "history_of_present_illness": "Patient was informed of high blood pressure during a pre-employment physical in June 2008 and sought care at Quick Care Clinic.",
+      "past_medical_history": [
+        "Hypertension",
+        "Obesity"
+      ],
+      "medications": [
+        "Clonidine (administered in office)",
+        "Sample blood pressure medications"
+      ],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "210/170 initially, reduced to 200/130 after Clonidine",
+          "heart_rate": null,
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "general": "No acute distress noted"
+        }
+      },
+      "initial_working_problem": "Hypertension",
+      "known_constraints": null,
+      "initial_differential": [
+        "Essential hypertension"
+      ],
+      "critical_findings": [
+        "Severely elevated blood pressure"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E004"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "LAB",
+        "name": "Routine lab work",
+        "description": "Lab work ordered to assess general health status",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not documented in judgment",
+          "detailed_findings": null,
+          "clinical_significance": "Not documented in judgment",
+          "decision_impact": "Not documented in judgment",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E008"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "LAB",
+        "name": "Kidney function tests",
+        "description": "Lab tests to assess kidney function",
+        "available_phase": "followup",
+        "reveal": {
+          "result_summary": "Signs of kidney disease in 2011, extensive kidney damage in 2012",
+          "detailed_findings": null,
+          "clinical_significance": "Indicated progression to chronic kidney disease",
+          "decision_impact": "Should have prompted referral to nephrologist",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E008"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with high blood pressure during pre-employment physical",
+        "duration": "1 day",
+        "key_events": [
+          {
+            "event": "Blood pressure measured at 210/170",
+            "timestamp": "June 2008",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "followup",
+        "name": "Follow-up and Monitoring",
+        "description": "Patient returns for follow-up visits over several years",
+        "duration": "4 years",
+        "key_events": [
+          {
+            "event": "Lab tests ordered revealing kidney disease",
+            "timestamp": "July 2011",
+            "evidence_ids": [
+              "E008"
+            ]
+          },
+          {
+            "event": "Extensive kidney damage revealed in lab tests",
+            "timestamp": "October 2012",
+            "evidence_ids": [
+              "E008"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "followup",
+        "clinical_context": "Patient with hypertension and lab results indicating kidney disease",
+        "prompt": "What should be the next step in management after receiving lab results indicating kidney disease?",
+        "action_type": "REFER",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Refer to nephrologist for further evaluation",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Referral to a specialist is standard when lab results indicate kidney disease"
+          },
+          {
+            "option_id": "B",
+            "description": "Continue current management without specialist referral",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Failed to address the progression of kidney disease"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant did not refer to nephrologist despite lab results",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E008"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Referral to nephrologist should have been made",
+          "standard_of_care_basis": "Expert testimony indicated referral was necessary",
+          "evidence_ids": [
+            "E004"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to act on lab results indicating kidney disease",
+          "what_should_have_happened": "Referral to nephrologist for specialized care",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E004",
+            "E008"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient developed Stage V kidney disease requiring dialysis and kidney transplant",
+        "severity": "PERMANENT_SEVERE_DISABILITY",
+        "long_term_effects": "Chronic kidney disease requiring ongoing treatment",
+        "evidence_ids": [
+          "E002",
+          "E005"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "29700000",
+        "key_findings": [
+          "Failure to educate patient about hypertension and its risks",
+          "Failure to act on lab results indicating kidney disease"
+        ],
+        "evidence_ids": [
+          "E003",
+          "E006"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to refer to nephrologist and educate patient",
+        "counterfactual": "Referral and education could have prevented progression to Stage V kidney disease",
+        "evidence_ids": [
+          "E003",
+          "E004",
+          "E008"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "June 2008",
+        "event": "Patient informed of high blood pressure during pre-employment physical",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "July 2011",
+        "event": "Lab tests ordered revealing signs of kidney disease",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E008"
+        ]
+      },
+      {
+        "timestamp": "October 2012",
+        "event": "Lab tests revealed extensive kidney damage",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E008"
+        ]
+      },
+      {
+        "timestamp": "March 2013",
+        "event": "Patient began hemodialysis",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "timestamp": "November 2015",
+        "event": "Patient received a kidney transplant",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Kidney function tests",
+        "date": "July 2011",
+        "result": "Signs of kidney disease",
+        "interpretation": null,
+        "evidence_ids": [
+          "E008"
+        ]
+      },
+      {
+        "test_name": "Kidney function tests",
+        "date": "October 2012",
+        "result": "Extensive kidney damage",
+        "interpretation": null,
+        "evidence_ids": [
+          "E008"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Stage V kidney disease",
+        "when_made": "February 2013",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Hemodialysis",
+        "date": "March 2013",
+        "provider": null,
+        "outcome": "Ongoing treatment for kidney failure",
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "treatment": "Kidney transplant",
+        "date": "November 2015",
+        "provider": null,
+        "outcome": "Successful transplant",
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Chronic kidney disease progression",
+        "when_occurred": "October 2012",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E008"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to educate patient about hypertension",
+        "against": "Nurse practitioner Denise Jordan",
+        "found_proven": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "allegation": "Failure to act on lab results indicating kidney disease",
+        "against": "Nurse practitioner Denise Jordan",
+        "found_proven": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Failure to educate and refer patient",
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.32142857142857145,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-16 16:23:05.271134",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

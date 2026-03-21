@@ -1,0 +1,576 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10655460",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2024-11-01",
+  "url": "https://example.com/courtlistener-10655460",
+  "case_name": "Manuel Moreno v. Carol Bosholm",
+  "neutral_citation": null,
+  "clinical_domain": "INFECTIOUS_DISEASE",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Manuel Moreno v. Carol Bosholm. Medical malpractice case involving cardiology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Moreno reported to the medical facility at Scotland Correctional Institute (SCI), a state prison where he was incarcerated.",
+      "paragraph_ref": "40",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "He complained that 'he had been sick for three to five days,' with symptoms that included a 'sore throat, body aches, sinus pain and pressure, and coughing up green sputum.'",
+      "paragraph_ref": "42",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. Bosholm was the physician on duty at the time. She did not personally examine Moreno, but after reviewing Nurse Sullivan’s notes, she assessed that Moreno had sinus congestion and acute pharyngitis (sore throat), and prescribed amoxicillin.",
+      "paragraph_ref": "49",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "Several inmates tested positive for the flu (Moreno was not tested for it).",
+      "paragraph_ref": "54",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "By Monday afternoon, Moreno’s condition had sharply deteriorated. He complained of a headache and vomiting.",
+      "paragraph_ref": "81",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "Shortly after he arrived at the hospital, Moreno suffered a generalized grand mal seizure that led to him being in a coma for over a month.",
+      "paragraph_ref": "87",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "Moreno was tested and confirmed positive for influenza H1N1 (swine flu) and also diagnosed with 'severe sepsis' and MSSA pneumonia ('a bacterial superinfection').",
+      "paragraph_ref": "89",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "LEGAL_FINDING",
+      "text": "We affirm the judgment of the district court.",
+      "paragraph_ref": "989",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "unknown",
+        "relevant_social_history": "Incarcerated at Scotland Correctional Institute"
+      },
+      "chief_complaint": "Sore throat, body aches, sinus pain and pressure, coughing up green sputum",
+      "history_of_present_illness": "Patient reported being sick for three to five days with the above symptoms",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": "No fever",
+          "oxygen_saturation": "Stable and within normal range",
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "respiratory": "Coughing up green sputum"
+        }
+      },
+      "initial_working_problem": "Sinus congestion and acute pharyngitis",
+      "known_constraints": null,
+      "initial_differential": [
+        "Influenza",
+        "Bacterial infection"
+      ],
+      "critical_findings": [
+        "Elevated respiration rate",
+        "Coughing up green sputum"
+      ],
+      "urgency_level": "ROUTINE",
+      "evidence_ids": [
+        "E001",
+        "E002",
+        "E003"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "LAB",
+        "name": "Influenza Test",
+        "description": "Test for influenza virus",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not performed for Moreno",
+          "detailed_findings": null,
+          "clinical_significance": "Could have confirmed influenza diagnosis",
+          "decision_impact": "Would have guided appropriate antiviral treatment",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents to prison medical facility with symptoms",
+        "duration": "Afternoon of February 26, 2016",
+        "key_events": [
+          {
+            "event": "Patient examined by nurse, symptoms recorded",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E001",
+              "E002"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Initial Assessment and Quarantine",
+        "description": "Patient assessed and quarantined with other inmates",
+        "duration": "February 26, 2016",
+        "key_events": [
+          {
+            "event": "Patient quarantined with other symptomatic inmates",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E054",
+              "E055"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "decision",
+        "name": "Condition Deterioration",
+        "description": "Patient's condition worsens over the weekend",
+        "duration": "February 27-29, 2016",
+        "key_events": [
+          {
+            "event": "Patient's condition deteriorates, no specific monitoring recorded",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E079",
+              "E080"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "decision",
+        "name": "Hospital Transfer",
+        "description": "Patient transferred to hospital after deterioration",
+        "duration": "February 29, 2016",
+        "key_events": [
+          {
+            "event": "Patient transferred to hospital after examination by Dr. Bosholm",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E085",
+              "E086"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "decision",
+        "name": "Hospitalization",
+        "description": "Patient was hospitalized and diagnosed with influenza H1N1 and severe pneumonia",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Patient suffered a generalized grand mal seizure",
+            "timestamp": "Shortly after hospital arrival",
+            "evidence_ids": [
+              "E006"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient in prison medical facility with flu-like symptoms",
+        "prompt": "What monitoring instructions should be given for the weekend?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Instruct staff to monitor oxygen saturation and respiration rates",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Monitoring would detect deterioration early"
+          },
+          {
+            "option_id": "B",
+            "description": "General instructions to monitor without specific parameters",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Lack of specific monitoring could miss deterioration"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "General monitoring instructions given",
+          "reasoning_stated": "Concern for infectious disease but no specific monitoring ordered",
+          "evidence_ids": [
+            "E061",
+            "E067"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Specific monitoring of oxygen saturation and respiration rates should have been ordered",
+          "standard_of_care_basis": "Expert testimony indicated need for specific monitoring",
+          "evidence_ids": [
+            "E141",
+            "E159"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to provide specific monitoring instructions led to delayed detection of deterioration",
+          "what_should_have_happened": "Specific monitoring could have prompted earlier intervention",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E141",
+            "E159",
+            "E169"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient diagnosed with severe pneumonia and influenza H1N1",
+        "severity": "SEVERE",
+        "long_term_effects": "Not documented in judgment",
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "None",
+        "key_findings": [
+          "Dr. Bosholm's actions did not constitute gross negligence",
+          "No deliberate indifference found"
+        ],
+        "evidence_ids": [
+          "E008"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Failure to order influenza test",
+        "counterfactual": "Testing could have confirmed diagnosis earlier",
+        "evidence_ids": [
+          "E004",
+          "E008"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "February 26, 2016",
+        "event": "Patient reported to prison medical facility with symptoms",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "February 29, 2016",
+        "event": "Patient transferred to hospital after deterioration",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E085"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Patient reported symptoms to medical facility",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001",
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "Monday afternoon",
+        "event": "Patient complained of headache and vomiting",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "timestamp": "Shortly after hospital arrival",
+        "event": "Patient suffered a generalized grand mal seizure",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Patient reports symptoms to medical facility",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001",
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "Monday afternoon",
+        "event": "Patient's condition deteriorates with headache and vomiting",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "timestamp": "Shortly after arrival at hospital",
+        "event": "Patient suffers seizure and is hospitalized",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Influenza Test",
+        "date": "After hospital transfer",
+        "result": "Positive for influenza H1N1",
+        "interpretation": null,
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      {
+        "test_name": "Influenza Test",
+        "date": "Not documented in judgment",
+        "result": "Positive for influenza H1N1",
+        "interpretation": null,
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      {
+        "test_name": "Influenza Test",
+        "date": "Not performed initially",
+        "result": "Positive for influenza H1N1",
+        "interpretation": null,
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Influenza H1N1, severe sepsis, MSSA pneumonia",
+        "when_made": "After hospital transfer",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      {
+        "diagnosis": "Influenza H1N1 and severe pneumonia",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      {
+        "diagnosis": "Severe pneumonia and influenza H1N1",
+        "when_made": "After hospitalization",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Hospitalization and supportive care",
+        "date": "After February 29, 2016",
+        "provider": null,
+        "outcome": "Patient survived but with severe complications",
+        "evidence_ids": [
+          "E087"
+        ]
+      },
+      {
+        "treatment": "Hospitalization and supportive care",
+        "date": "After seizure",
+        "provider": null,
+        "outcome": "Not documented in judgment",
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Generalized grand mal seizure, coma, multiple organ damage",
+        "when_occurred": "After hospital transfer",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E087"
+        ]
+      },
+      {
+        "complication": "Generalized grand mal seizure",
+        "when_occurred": "Shortly after hospital arrival",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "complication": "Seizure",
+        "when_occurred": "Shortly after arrival at hospital",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to provide adequate monitoring instructions",
+        "against": "Dr. Carol Bosholm",
+        "found_proven": false,
+        "evidence_ids": [
+          "E180"
+        ]
+      },
+      {
+        "allegation": "Failure to provide specific monitoring instructions",
+        "against": "Dr. Bosholm",
+        "found_proven": false,
+        "evidence_ids": [
+          "E005",
+          "E740"
+        ]
+      },
+      {
+        "allegation": "Failure to order influenza test",
+        "against": "Dr. Bosholm",
+        "found_proven": false,
+        "evidence_ids": [
+          "E008"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "No breach of standard of care established",
+        "legal_significance": "Insufficient evidence of causation",
+        "evidence_ids": [
+          "E180"
+        ]
+      },
+      {
+        "finding": "Lack of competent testimony establishing the standard of care or its breach",
+        "legal_significance": "District court's judgment in favor of Dr. Bosholm affirmed",
+        "evidence_ids": [
+          "E008",
+          "E740"
+        ]
+      },
+      {
+        "finding": "No gross negligence or deliberate indifference",
+        "legal_significance": "Standard of care not breached",
+        "evidence_ids": [
+          "E008"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "MONITORING_FOLLOWUP",
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.008072653884964682,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-09 19:17:19.293061",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

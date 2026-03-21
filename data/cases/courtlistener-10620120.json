@@ -1,0 +1,382 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10620120",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2020-08-12",
+  "url": "https://example.com/courtlistener-10620120",
+  "case_name": "Marci Peterhans, V. University Of Washington, Et Ano",
+  "neutral_citation": null,
+  "clinical_domain": "PAEDIATRICS",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Medical malpractice case involving paediatrics.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Colin was admitted to Harborview for involuntary treatment under the ITA after overdosing on lithium medication.",
+      "paragraph_ref": "21",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Colin has an 'extensive psychiatric history,' which includes a history of suicide attempts.",
+      "paragraph_ref": "23",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "Colin 'seriously assaulted' a Harborview staff member and was placed in seclusion.",
+      "paragraph_ref": "27",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "Colin left Harborview at approximately 4 p.m. He was given one week of medication.",
+      "paragraph_ref": "41",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "Colin jumped from his fifth-floor apartment window.",
+      "paragraph_ref": "45",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "LEGAL_FINDING",
+      "text": "The trial court did not err in granting summary judgment dismissing Peterhans\u2019 cause of action for gross negligence.",
+      "paragraph_ref": "300",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "EXPERT_TESTIMONY",
+      "text": "The decision to discharge him fell significantly below the standard of care for reasonably prudent psychiatrists.",
+      "paragraph_ref": "226",
+      "speaker": "Expert witness"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "COURT_REASONING",
+      "text": "The Court finds that reasonable minds could not differ about the fact that UW Defendants certainly exercised at least slight care.",
+      "paragraph_ref": "157",
+      "speaker": "Judge's analysis"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "male",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Overdose on lithium medication",
+      "history_of_present_illness": "Colin was admitted for involuntary treatment under the ITA after overdosing on lithium. He has an extensive psychiatric history, including suicide attempts and psychotic symptoms.",
+      "past_medical_history": [
+        "Extensive psychiatric history",
+        "History of suicide attempts"
+      ],
+      "medications": [
+        "Lithium"
+      ],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "psychiatric": "Frankly psychotic upon admission"
+        }
+      },
+      "initial_working_problem": "Psychiatric crisis following lithium overdose",
+      "known_constraints": null,
+      "initial_differential": [
+        "Suicidal ideation",
+        "Psychotic disorder"
+      ],
+      "critical_findings": [
+        "Psychotic symptoms",
+        "History of self-harm"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSULT_NOTE",
+        "name": "Psychiatric Evaluation",
+        "description": "Evaluation by psychiatrist upon admission",
+        "available_phase": "presentation",
+        "reveal": {
+          "result_summary": "Patient is frankly psychotic with a history of self-harm",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates need for continued inpatient psychiatric care",
+          "decision_impact": "Supports decision to maintain involuntary commitment",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E001",
+          "E002"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Admission",
+        "description": "Patient admitted for involuntary treatment after lithium overdose",
+        "duration": "6 weeks",
+        "key_events": [
+          {
+            "event": "Admission under ITA",
+            "timestamp": "August 12, 2020",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "decision",
+        "name": "Discharge Decision",
+        "description": "Decision to discharge patient from psychiatric facility",
+        "duration": "1 day",
+        "key_events": [
+          {
+            "event": "Discharge from Harborview",
+            "timestamp": "September 28, 2020",
+            "evidence_ids": [
+              "E004"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "decision",
+        "clinical_context": "Patient in psychiatric ward with recent history of self-harm and psychotic symptoms",
+        "prompt": "Should the patient be discharged from the psychiatric facility?",
+        "action_type": "DISCHARGE_DECISION",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Discharge patient with outpatient follow-up",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Patient was not benefiting from hospitalization"
+          },
+          {
+            "option_id": "B",
+            "description": "Continue involuntary commitment until stable",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Patient still poses a risk to himself and others"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "A",
+          "description": "Patient was discharged with a one-week supply of medication",
+          "reasoning_stated": "Belief that patient was not benefiting from hospitalization",
+          "evidence_ids": [
+            "E004",
+            "E007"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "B",
+          "description": "Patient should have remained under involuntary commitment",
+          "standard_of_care_basis": "Expert testimony indicated discharge was below standard of care",
+          "evidence_ids": [
+            "E007"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Discharge decision did not consider ongoing risk factors",
+          "what_should_have_happened": "Patient should have been kept under involuntary commitment",
+          "legal_standard_applied": "Standard of care for psychiatric discharge decisions",
+          "evidence_ids": [
+            "E007"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient attempted suicide by jumping from a window, resulting in permanent brain injury",
+        "severity": "PERMANENT_SEVERE_DISABILITY",
+        "long_term_effects": "Coma-like state",
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "0",
+        "key_findings": [
+          "Court found no gross negligence in discharge decision",
+          "Defendants exercised at least slight care"
+        ],
+        "evidence_ids": [
+          "E006",
+          "E008"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Discharge decision",
+        "counterfactual": "Patient should have remained under involuntary commitment",
+        "evidence_ids": [
+          "E007",
+          "E008"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "August 12, 2020",
+        "event": "Patient admitted to Harborview for involuntary treatment",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "September 28, 2020",
+        "event": "Patient discharged from Harborview",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "timestamp": "September 28, 2020",
+        "event": "Patient attempted suicide by jumping from window",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [
+      {
+        "diagnosis": "Psychotic disorder",
+        "when_made": "Upon admission",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Involuntary psychiatric treatment",
+        "date": "August 12, 2020",
+        "provider": null,
+        "outcome": "Patient discharged",
+        "evidence_ids": [
+          "E001",
+          "E004"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Permanent brain injury",
+        "when_occurred": "September 28, 2020",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Negligent discharge from psychiatric facility",
+        "against": "Dr. Sharon Romm",
+        "found_proven": false,
+        "evidence_ids": [
+          "E007",
+          "E008"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "No gross negligence in discharge decision",
+        "legal_significance": "Defendants exercised at least slight care",
+        "evidence_ids": [
+          "E008"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.026402640264026403,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-09 16:41:45.713176",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

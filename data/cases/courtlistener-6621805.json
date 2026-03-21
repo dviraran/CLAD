@@ -1,0 +1,428 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-6621805",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2022-06-24",
+  "url": "https://example.com/courtlistener-6621805",
+  "case_name": "Magallanes de Valle v. Doctors Medical Center of Modesto",
+  "neutral_citation": null,
+  "clinical_domain": "OBSTETRICS_GYNAECOLOGY",
+  "outcome_severity": "TEMPORARY_HARM",
+  "summary": {
+    "brief": "Magallanes de Valle v. Doctors Medical Center of Modesto. Medical malpractice case involving obstetrics gynaecology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "On June 27, 2016, Magallanes initialed and signed DMC’s Conditions of Service form.",
+      "paragraph_ref": "3",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "On June 28, 2016, Dr. Brock assessed Magallanes. Magallanes reported being dizzy and tired.",
+      "paragraph_ref": "3",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "On June 29, 2016, Dr. Gina Quaid conducted an exploratory laparotomy, colectomy, and colostomy.",
+      "paragraph_ref": "3",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. Brock was an employee of GVHC (she was not an employee of DMC).",
+      "paragraph_ref": "3",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "LEGAL_FINDING",
+      "text": "The trial court granted summary judgment in favor of Doctors Medical Center of Modesto.",
+      "paragraph_ref": "7",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "On May 16, 2016, Magallanes presented to GVHC for treatment by Dr. Brock.",
+      "paragraph_ref": "7",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "On May 31, 2016, Magallanes presented to GVHC for treatment by Dr. Brock.",
+      "paragraph_ref": "7",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "FACTUAL_FINDING",
+      "text": "On June 21, 2016, Magallanes presented to GVHC to have a preoperative evaluation with Dr. Brock.",
+      "paragraph_ref": "2",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "LEGAL_FINDING",
+      "text": "The trial court correctly determined the undisputed facts established, as a matter of law, that Magallanes reasonably should have known that Dr. Brock was not DMC’s agent.",
+      "paragraph_ref": "10",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "COURT_REASONING",
+      "text": "The trial court evaluated the relevant record and determined it was indisputable that 'Plaintiff knew or should have known that Dr. Brock was not employed by Defendant.'",
+      "paragraph_ref": "11",
+      "speaker": "Judge's analysis"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Pelvic pain and abnormal bleeding",
+      "history_of_present_illness": "Magallanes presented with worsening pelvic pain, abnormal bleeding, dizziness, decreased appetite, dysuria, hematuria, and urinary frequency.",
+      "past_medical_history": [
+        "Ovarian cyst",
+        "Anemia"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "pelvic": "Not documented in judgment"
+        }
+      },
+      "initial_working_problem": "Chronic pelvic pain with menorrhagia",
+      "known_constraints": null,
+      "initial_differential": [
+        "Menorrhagia",
+        "Dysmenorrhea",
+        "Chronic pelvic pain"
+      ],
+      "critical_findings": [
+        "Pelvic pain",
+        "Abnormal bleeding"
+      ],
+      "urgency_level": "ELECTIVE",
+      "evidence_ids": [
+        "E006",
+        "E007"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "CONSENT_DISCUSSION",
+        "name": "Informed Consent for Hysterectomy",
+        "description": "Discussion of risks and benefits of hysterectomy",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Patient informed of risks including injury to bladder, infection, hemorrhage, injury to bowel, and anesthesia risks.",
+          "detailed_findings": null,
+          "clinical_significance": "Patient consented to procedure understanding the risks.",
+          "decision_impact": "Informed consent obtained, patient opted to proceed with surgery.",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E008"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with pelvic pain and abnormal bleeding.",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Presentation to GVHC for treatment by Dr. Brock",
+            "timestamp": "May 16, 2016",
+            "evidence_ids": [
+              "E006"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Preoperative Evaluation",
+        "description": "Preoperative evaluation and consent discussion.",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Preoperative evaluation with Dr. Brock",
+            "timestamp": "June 21, 2016",
+            "evidence_ids": [
+              "E008"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "procedure",
+        "name": "Surgical Procedure",
+        "description": "Total vaginal hysterectomy performed.",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Hysterectomy performed by Dr. Brock",
+            "timestamp": "June 27, 2016",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "postop",
+        "name": "Postoperative Complications",
+        "description": "Postoperative assessment and complications.",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Patient reports dizziness and tiredness post-surgery",
+            "timestamp": "June 28, 2016",
+            "evidence_ids": [
+              "E002"
+            ]
+          },
+          {
+            "event": "Emergency department visit for suspected colon injury",
+            "timestamp": "June 29, 2016",
+            "evidence_ids": [
+              "E003"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "procedure",
+        "clinical_context": "During the total vaginal hysterectomy procedure",
+        "prompt": "What precautions should be taken to avoid injury to the colon during hysterectomy?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Ensure clear visualization and careful dissection around the colon",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard surgical practice to prevent injury to adjacent organs."
+          },
+          {
+            "option_id": "B",
+            "description": "Proceed with standard technique without additional precautions",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Inadequate precaution leading to potential injury."
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Standard technique used without additional precautions",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E003"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Ensure clear visualization and careful dissection around the colon",
+          "standard_of_care_basis": "Expert evidence established need for careful dissection to prevent injury.",
+          "evidence_ids": [
+            "E003"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to take adequate precautions led to colon injury.",
+          "what_should_have_happened": "Clear visualization and careful dissection should have been ensured.",
+          "legal_standard_applied": "Standard of care as established by expert testimony.",
+          "evidence_ids": [
+            "E003"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient developed a colon injury requiring additional surgery.",
+        "severity": "PERMANENT_MODERATE_DISABILITY",
+        "long_term_effects": "Fitted with a colostomy bag due to rectal injury.",
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "0",
+        "key_findings": [
+          "Dr. Brock was not an agent of DMC.",
+          "Ostensible agency theory not applicable."
+        ],
+        "evidence_ids": [
+          "E005",
+          "E009"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Not applicable",
+        "counterfactual": "Not applicable",
+        "evidence_ids": [
+          "E005",
+          "E009"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "May 16, 2016",
+        "event": "Magallanes presented to GVHC for treatment by Dr. Brock",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E006"
+        ]
+      },
+      {
+        "timestamp": "June 27, 2016",
+        "event": "Hysterectomy performed by Dr. Brock at DMC",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "June 29, 2016",
+        "event": "Emergency department visit for suspected colon injury",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "tests_performed": [],
+    "diagnoses": [
+      {
+        "diagnosis": "Colon injury",
+        "when_made": "June 29, 2016",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Exploratory laparotomy, colectomy, and colostomy",
+        "date": "June 29, 2016",
+        "provider": null,
+        "outcome": "Colostomy bag fitted",
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Colon injury",
+        "when_occurred": "During hysterectomy",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Negligent performance of hysterectomy",
+        "against": "Dr. Brock",
+        "found_proven": false,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Dr. Brock was not an agent of DMC",
+        "legal_significance": "Ostensible agency theory not applicable",
+        "evidence_ids": [
+          "E005",
+          "E009"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.3225806451612903,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-09 21:35:37.891420",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

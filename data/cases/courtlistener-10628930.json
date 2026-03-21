@@ -1,0 +1,431 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10628930",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2018-12-04",
+  "url": "https://example.com/courtlistener-10628930",
+  "case_name": "Debra Hogan and David Hogan v. Hattiesburg Clinic, P.A.",
+  "neutral_citation": null,
+  "clinical_domain": "ONCOLOGY",
+  "outcome_severity": "TEMPORARY_HARM",
+  "summary": {
+    "brief": "Debra Hogan and David Hogan v. Hattiesburg Clinic, P.A.. Medical malpractice case involving oncology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Debra suffered serious medical complications following a brain biopsy Dr. Brent performed.",
+      "paragraph_ref": "10",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Debra was admitted with complaints of gastrointestinal distress, lethargy, slurred speech, nausea, vomiting, anorexia, dizziness, and weakness.",
+      "paragraph_ref": "2",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "On December 4, 2018, Debra was seen by oncologist Dr. John Hrom with Hattiesburg Clinic, who reviewed her imaging studies and pathology report.",
+      "paragraph_ref": "33",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "Debra unfortunately suffered 'an acute ischemic event' during the procedure, which resulted in 'right hemiparesis' and required her to receive neurological rehabilitation therapy.",
+      "paragraph_ref": "39",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Phillip J. Beron, has opined that Dr. Hrom deviated from the standard of care in allegedly discouraging a second opinion.",
+      "paragraph_ref": "77",
+      "speaker": "Dr. Phillip J. Beron"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "LEGAL_FINDING",
+      "text": "The circuit court dismissed Hattiesburg Clinic as a defendant, finding: ... the affidavit is silent as to how that alleged deviation caused injury or damages to the Plaintiffs.",
+      "paragraph_ref": "77",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "COURT_REASONING",
+      "text": "The Hogans’ Rule 56(f) motion made no mention regarding a need to obtain additional expert opinions; it merely asserted that the Hogans needed to obtain documentation from Hattiesburg Clinic.",
+      "paragraph_ref": "103",
+      "speaker": "Court reasoning"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "LEGAL_FINDING",
+      "text": "AFFIRMED.",
+      "paragraph_ref": "132",
+      "speaker": "Court conclusion"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Gastrointestinal distress, lethargy, slurred speech, nausea, vomiting, anorexia, dizziness, and weakness",
+      "history_of_present_illness": "Debra Hogan was admitted to Forrest General Hospital with the above symptoms. Multiple MRI studies revealed two potentially cancerous lesions in her brain.",
+      "past_medical_history": [],
+      "medications": [
+        "Dexamethasone"
+      ],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "neurological": "Not documented in judgment"
+        }
+      },
+      "initial_working_problem": "Potential brain cancer with lesions identified on MRI",
+      "known_constraints": null,
+      "initial_differential": [
+        "Primary brain cancer",
+        "Metastatic brain lesions"
+      ],
+      "critical_findings": [
+        "Two potentially cancerous brain lesions on MRI"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E002",
+        "E003"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "MRI Brain",
+        "description": "MRI studies to identify brain lesions",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Two potentially cancerous lesions identified",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates possible primary or metastatic brain cancer",
+          "decision_impact": "Prompted consultation with neurosurgeon",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E002",
+          "E003"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "CONSULT_NOTE",
+        "name": "Oncology Consultation",
+        "description": "Consultation with Dr. John Hrom regarding brain lesions",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Recommendation for brain biopsy to determine nature of lesions",
+          "detailed_findings": null,
+          "clinical_significance": "Concern for second primary cancer",
+          "decision_impact": "Led to scheduling of brain biopsy",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Hospital Presentation",
+        "description": "Patient presents with multiple symptoms leading to hospital admission",
+        "duration": "4 days",
+        "key_events": [
+          {
+            "event": "Admission to Forrest General Hospital",
+            "timestamp": "November 26, 2018",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Diagnostic Workup",
+        "description": "Imaging and consultations to determine the nature of brain lesions",
+        "duration": "1 week",
+        "key_events": [
+          {
+            "event": "MRI studies conducted",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E002"
+            ]
+          },
+          {
+            "event": "Consultation with Dr. John Hrom",
+            "timestamp": "December 4, 2018",
+            "evidence_ids": [
+              "E003"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "procedure",
+        "name": "Brain Biopsy Procedure",
+        "description": "Patient undergoes brain biopsy",
+        "duration": "1 day",
+        "key_events": [
+          {
+            "event": "Brain biopsy performed by Dr. Brent",
+            "timestamp": "December 7, 2018",
+            "evidence_ids": [
+              "E001",
+              "E004"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient with brain lesions identified on MRI, considering further diagnostic steps",
+        "prompt": "Should the patient proceed with a brain biopsy or seek a second opinion first?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Proceed with brain biopsy immediately",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Immediate biopsy to determine nature of lesions"
+          },
+          {
+            "option_id": "B",
+            "description": "Encourage seeking a second opinion before proceeding",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Given the risks, a second opinion could provide additional insights or alternative approaches"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "A",
+          "description": "Defendant recommended proceeding with the brain biopsy",
+          "reasoning_stated": "Concern for second primary cancer",
+          "evidence_ids": [
+            "E003",
+            "E005"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "B",
+          "description": "Encouragement to seek a second opinion should have been given",
+          "standard_of_care_basis": "Expert testimony suggested deviation from standard care by not encouraging a second opinion",
+          "evidence_ids": [
+            "E005"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "The expert opined that discouraging a second opinion was a deviation from the standard of care",
+          "what_should_have_happened": "The patient should have been encouraged to seek a second opinion before proceeding with invasive procedures",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E005"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient suffered an acute ischemic event during the brain biopsy resulting in right hemiparesis",
+        "severity": "PERMANENT_MODERATE_DISABILITY",
+        "long_term_effects": "Required neurological rehabilitation therapy",
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "None",
+        "key_findings": [
+          "Causation not established against Hattiesburg Clinic",
+          "Dr. Hrom did not participate in the surgical procedure"
+        ],
+        "evidence_ids": [
+          "E006",
+          "E008"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Failure to encourage a second opinion",
+        "counterfactual": "A second opinion might have altered the decision to proceed with the biopsy",
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "November 26, 2018",
+        "event": "Patient admitted to Forrest General Hospital",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "December 4, 2018",
+        "event": "Consultation with Dr. John Hrom",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "timestamp": "December 7, 2018",
+        "event": "Brain biopsy performed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001",
+          "E004"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "MRI Brain",
+        "date": "Not specified in judgment",
+        "result": "Two potentially cancerous lesions",
+        "interpretation": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "B-cell non-Hodgkin’s lymphoma, grade I follicular lymphoma",
+        "when_made": "Not specified in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Brain biopsy",
+        "date": "December 7, 2018",
+        "provider": null,
+        "outcome": "Acute ischemic event resulting in right hemiparesis",
+        "evidence_ids": [
+          "E001",
+          "E004"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Acute ischemic event",
+        "when_occurred": "During brain biopsy",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to encourage a second opinion",
+        "against": "Dr. John Hrom",
+        "found_proven": false,
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "No causation established against Hattiesburg Clinic",
+        "legal_significance": "Summary judgment affirmed",
+        "evidence_ids": [
+          "E006",
+          "E008"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.05970149253731343,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-09 19:34:54.821777",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

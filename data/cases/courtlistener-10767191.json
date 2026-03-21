@@ -1,0 +1,629 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10767191",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2025-10-10",
+  "url": "https://example.com/courtlistener-10767191",
+  "case_name": "Blackshear, Jr., M. D., P. A., Blackshear, M. D. v. Haynes",
+  "neutral_citation": null,
+  "clinical_domain": "NEUROLOGY",
+  "outcome_severity": "PERMANENT_SEVERE_DISABILITY",
+  "summary": {
+    "brief": "Blackshear, Jr., M. D., P. A., Blackshear, M. D. v. Haynes. Medical malpractice case involving neurology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "William Blackshear, M.D., and his medical practice (collectively Blackshear) seek a new trial after a jury found that Dr. Blackshear committed medical negligence and ordered unnecessary diagnostic tests, causing $175,000 in damages to Betty Haynes.",
+      "paragraph_ref": "19",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "In early 2010, Ms. Haynes' primary care physician referred her to Dr. Blackshear to treat a bruit (a 'whooshing' sound possibly caused by narrowing or obstruction) in her carotid artery.",
+      "paragraph_ref": "19",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "Over the course of several months, the following tests and procedures were performed on Ms. Haynes: ultrasound of the carotids; computed tomography angiography (CTA) with contrast dye on January 29, 2010, that showed stenosis of the right carotid suggestive of FMD; carotid arteriogram on February 15, which found stenosis of the right carotid artery with an appearance suggesting FMD; and a renal vein renin assay procedure on March 10, which indicated FMD in both kidneys.",
+      "paragraph_ref": "19",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "On April 13, 2010, Dr. Blackshear and Ms. Haynes discussed the results of the March 10 renal vein renin assay procedure and moving forward with an angioplasty on the right artery with an examination of the left artery.",
+      "paragraph_ref": "19",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "Hours after the angioplasty, Dr. Blackshear was called back to the hospital due to Ms. Haynes' complaints of back pain. Dr. Blackshear ordered a blood transfusion and CTA upon learning that Ms. Haynes' blood pressure was low.",
+      "paragraph_ref": "19",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Ms. Haynes presented expert testimony from vascular surgeon Dr. Timothy Harward, who testified that the February 15 carotid arteriogram was unnecessary because Dr. Blackshear had 'already made his diagnosis' from the earlier CTA, which indicated FMD.",
+      "paragraph_ref": "3",
+      "speaker": "Dr. Timothy Harward"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Harward also opined that the March 10 renal vein renin assay was unnecessary because tests indicated that Ms. Haynes' kidney function was normal and her blood pressure was being controlled with medication.",
+      "paragraph_ref": "3",
+      "speaker": "Dr. Timothy Harward"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Ms. Haynes also presented expert testimony from nephrologist Dr. Harold Helderman, who provided testimony as to both the alleged medically unnecessary tests and medical negligence counts.",
+      "paragraph_ref": "3",
+      "speaker": "Dr. Harold Helderman"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "LEGAL_FINDING",
+      "text": "The trial court abused its discretion in allowing Dr. Helderman, a nephrologist, to testify on the standard of care for a vascular surgeon.",
+      "paragraph_ref": "IV",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "COURT_REASONING",
+      "text": "Because the determination of whether the decision to perform a procedure turns on what is 'customary' in a given field, Jackson, 469 F. Supp. 2d at 1082, Dr. Helderman's testimony that he would not have ordered the testing Dr. Blackshear ordered was a direct comment on the 'prevailing professional standard of care' for a health care provider engaged in Dr. Blackshear's specialty.",
+      "paragraph_ref": "9",
+      "speaker": "Judge's analysis"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Bruit in carotid artery",
+      "history_of_present_illness": "Referred to Dr. Blackshear for treatment of a bruit in the carotid artery, suspected to be caused by stenosis due to fibromuscular dysplasia (FMD).",
+      "past_medical_history": [
+        "Essential hypertension"
+      ],
+      "medications": [
+        "ACE inhibitor",
+        "Diuretic"
+      ],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "carotid": "Bruit noted"
+        }
+      },
+      "initial_working_problem": "Suspected carotid artery stenosis due to FMD",
+      "known_constraints": null,
+      "initial_differential": [
+        "Fibromuscular dysplasia",
+        "Atherosclerosis"
+      ],
+      "critical_findings": [
+        "Bruit in carotid artery"
+      ],
+      "urgency_level": "ROUTINE",
+      "evidence_ids": [
+        "E002",
+        "E003"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "Carotid Ultrasound",
+        "description": "Ultrasound of the carotid arteries",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not documented in judgment",
+          "detailed_findings": null,
+          "clinical_significance": "Initial assessment of carotid artery stenosis",
+          "decision_impact": "Prompted further imaging",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "IMAGING",
+        "name": "CT Angiography",
+        "description": "CT angiography with contrast dye",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Stenosis of the right carotid suggestive of FMD",
+          "detailed_findings": null,
+          "clinical_significance": "Indicated possible FMD",
+          "decision_impact": "Led to further invasive testing",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "request_id": "R003",
+        "type": "IMAGING",
+        "name": "Carotid Arteriogram",
+        "description": "Arteriogram of the carotid artery",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Stenosis of the right carotid artery with appearance suggesting FMD",
+          "detailed_findings": null,
+          "clinical_significance": "Confirmed stenosis",
+          "decision_impact": "Considered unnecessary by expert testimony",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E003",
+          "E006"
+        ]
+      },
+      {
+        "request_id": "R004",
+        "type": "LAB",
+        "name": "Renal Vein Renin Assay",
+        "description": "Renin assay to assess renal artery function",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Indicated FMD in both kidneys",
+          "detailed_findings": null,
+          "clinical_significance": "Used to justify angioplasty",
+          "decision_impact": "Considered unnecessary by expert testimony",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E003",
+          "E007"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient referred to Dr. Blackshear for bruit in carotid artery",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "Referral to Dr. Blackshear",
+            "timestamp": "Early 2010",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Diagnostic Workup",
+        "description": "Series of tests and procedures ordered to diagnose and treat suspected FMD",
+        "duration": "Several months",
+        "key_events": [
+          {
+            "event": "CT Angiography performed",
+            "timestamp": "January 29, 2010",
+            "evidence_ids": [
+              "E003"
+            ]
+          },
+          {
+            "event": "Carotid Arteriogram performed",
+            "timestamp": "February 15, 2010",
+            "evidence_ids": [
+              "E003"
+            ]
+          },
+          {
+            "event": "Renal Vein Renin Assay performed",
+            "timestamp": "March 10, 2010",
+            "evidence_ids": [
+              "E003"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "procedure",
+        "name": "Angioplasty Procedure",
+        "description": "Angioplasty performed on right renal artery",
+        "duration": "April 28, 2010",
+        "key_events": [
+          {
+            "event": "Angioplasty and stent placement",
+            "timestamp": "April 28, 2010",
+            "evidence_ids": [
+              "E004"
+            ]
+          },
+          {
+            "event": "Post-procedure complications",
+            "timestamp": "Hours after angioplasty",
+            "evidence_ids": [
+              "E005"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "followup",
+        "name": "Follow-up and Outcome",
+        "description": "Follow-up care and eventual diagnosis of kidney atrophy",
+        "duration": "Several months to December 2010",
+        "key_events": [
+          {
+            "event": "Doppler ultrasound shows right kidney atrophy",
+            "timestamp": "December 2010",
+            "evidence_ids": [
+              "E003"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient with suspected carotid artery stenosis",
+        "prompt": "Should a carotid arteriogram be ordered?",
+        "action_type": "ORDER_TEST",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Order carotid arteriogram",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Defendant believed it was necessary to confirm diagnosis"
+          },
+          {
+            "option_id": "B",
+            "description": "Rely on CT angiography results",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Expert testimony indicated prior imaging was sufficient"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "A",
+          "description": "Defendant ordered carotid arteriogram",
+          "reasoning_stated": "To confirm stenosis",
+          "evidence_ids": [
+            "E003",
+            "E006"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "B",
+          "description": "Should have relied on CT angiography results",
+          "standard_of_care_basis": "Expert evidence indicated unnecessary duplication of tests",
+          "evidence_ids": [
+            "E006"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Based on expert testimony that the arteriogram was unnecessary",
+          "what_should_have_happened": "CT angiography should have been sufficient for diagnosis",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E006"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      },
+      {
+        "decision_id": "D002",
+        "phase_id": "workup",
+        "clinical_context": "Patient with suspected renal artery FMD",
+        "prompt": "Should a renal vein renin assay be ordered?",
+        "action_type": "ORDER_TEST",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Order renal vein renin assay",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Defendant believed it would confirm FMD"
+          },
+          {
+            "option_id": "B",
+            "description": "Do not order renal vein renin assay",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Expert testimony indicated it was unnecessary given normal kidney function"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "A",
+          "description": "Defendant ordered renal vein renin assay",
+          "reasoning_stated": "To confirm FMD",
+          "evidence_ids": [
+            "E003",
+            "E007"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "B",
+          "description": "Should not have ordered the assay",
+          "standard_of_care_basis": "Expert evidence indicated it was unnecessary",
+          "evidence_ids": [
+            "E007"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Based on expert testimony that the assay was unnecessary",
+          "what_should_have_happened": "Should have relied on existing tests and patient condition",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E007"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Right kidney atrophied to nearly half the size of the left",
+        "severity": "PERMANENT_MODERATE_DISABILITY",
+        "long_term_effects": "Chronic kidney issues",
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "175000",
+        "key_findings": [
+          "Breach of duty in ordering unnecessary tests",
+          "Causation established - unnecessary tests led to kidney damage"
+        ],
+        "evidence_ids": [
+          "E001",
+          "E006",
+          "E007"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Ordering unnecessary diagnostic tests",
+        "counterfactual": "Tests were not clinically indicated and should not have been performed",
+        "evidence_ids": [
+          "E006",
+          "E007"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "Early 2010",
+        "event": "Patient referred to Dr. Blackshear for bruit in carotid artery",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "January 29, 2010",
+        "event": "CT Angiography performed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "timestamp": "February 15, 2010",
+        "event": "Carotid Arteriogram performed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "timestamp": "March 10, 2010",
+        "event": "Renal Vein Renin Assay performed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "timestamp": "April 28, 2010",
+        "event": "Angioplasty and stent placement",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "timestamp": "Hours after angioplasty",
+        "event": "Post-procedure complications",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "timestamp": "December 2010",
+        "event": "Doppler ultrasound shows right kidney atrophy",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "CT Angiography",
+        "date": "January 29, 2010",
+        "result": "Stenosis of the right carotid suggestive of FMD",
+        "interpretation": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "test_name": "Carotid Arteriogram",
+        "date": "February 15, 2010",
+        "result": "Stenosis of the right carotid artery with appearance suggesting FMD",
+        "interpretation": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "test_name": "Renal Vein Renin Assay",
+        "date": "March 10, 2010",
+        "result": "Indicated FMD in both kidneys",
+        "interpretation": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Fibromuscular dysplasia",
+        "when_made": "Not documented in judgment",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Angioplasty and stent placement",
+        "date": "April 28, 2010",
+        "provider": null,
+        "outcome": "Stent placed in right main renal artery area",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Right kidney atrophy",
+        "when_occurred": "December 2010",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Ordering unnecessary diagnostic tests",
+        "against": "Dr. Blackshear",
+        "found_proven": true,
+        "evidence_ids": [
+          "E001",
+          "E006",
+          "E007"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care by ordering unnecessary tests",
+        "legal_significance": "Standard of care not met",
+        "evidence_ids": [
+          "E001",
+          "E006",
+          "E007"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.3125,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-09 20:37:51.266153",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

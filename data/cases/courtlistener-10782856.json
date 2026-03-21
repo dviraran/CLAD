@@ -1,0 +1,436 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10782856",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2026-02-02",
+  "url": "https://example.com/courtlistener-10782856",
+  "case_name": "Deanna McKeehan v. Delaware Neurosurgical Group",
+  "neutral_citation": null,
+  "clinical_domain": "NEUROLOGY",
+  "outcome_severity": "TEMPORARY_HARM",
+  "summary": {
+    "brief": "Deanna McKeehan v. Delaware Neurosurgical Group. Medical malpractice case involving neurology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "In August 2019, an ambulance transported McKeehan, who had been involved in a motor vehicle collision, to Christiana Care Hospital.",
+      "paragraph_ref": "16",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "The scan revealed two unruptured brain aneurysms—one in her middle cerebral artery and the other in her internal carotid artery bifurcation.",
+      "paragraph_ref": "17",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. Boulos recommended that McKeehan undergo an aneurysm clipping procedure, which involved placing small ligation clips across the entry point of each aneurysm to block blood flow.",
+      "paragraph_ref": "23",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "In September 2019, Dr. Boulos performed the procedure.",
+      "paragraph_ref": "28",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "During the exam, Dr. Boulos discovered that McKeehan’s body was impaired—she could not bend her left arm or left leg.",
+      "paragraph_ref": "30",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "Several hours after the surgery, a physician’s assistant ordered a CT scan for McKeehan, and the results evidenced signs of a stroke.",
+      "paragraph_ref": "35",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "EXPERT_TESTIMONY",
+      "text": "McKeehan’s neurosurgical expert, Dr. John Diaz-Day, testified on cross-examination that a stroke is a 'known complication' of the surgery.",
+      "paragraph_ref": "50",
+      "speaker": "Dr. John Diaz-Day"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Defense neurological expert, Dr. Owen B. Samuels, testified that a stroke is a 'routine' complication of the surgery due to the 'nature of neurosurgery and aneurysms and neurosurgical-related issues.'",
+      "paragraph_ref": "56",
+      "speaker": "Dr. Owen B. Samuels"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "LEGAL_FINDING",
+      "text": "The judgment of the Superior Court is AFFIRMED.",
+      "paragraph_ref": "120",
+      "speaker": "Court conclusion"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "COURT_REASONING",
+      "text": "The jury was instructed on Elements of Medical Negligence, Burden of Proof by a Preponderance of the Evidence, Definition of Medical Negligence, and Proximate Cause.",
+      "paragraph_ref": "105",
+      "speaker": "Court finding"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Involved in a motor vehicle collision",
+      "history_of_present_illness": "Patient was transported by ambulance to the hospital following a motor vehicle collision. A CT scan revealed two unruptured brain aneurysms.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "neurological": "Impairment noted post-surgery; patient could not bend left arm or leg"
+        }
+      },
+      "initial_working_problem": "Unruptured brain aneurysms",
+      "known_constraints": null,
+      "initial_differential": [
+        "Unruptured brain aneurysms"
+      ],
+      "critical_findings": [
+        "Two unruptured brain aneurysms"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "CT Scan",
+        "description": "CT scan of the brain to assess for aneurysms",
+        "available_phase": "presentation",
+        "reveal": {
+          "result_summary": "Two unruptured brain aneurysms identified",
+          "detailed_findings": null,
+          "clinical_significance": "Requires surgical intervention to prevent rupture",
+          "decision_impact": "Led to recommendation for aneurysm clipping procedure",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "IMAGING",
+        "name": "Post-operative CT Scan",
+        "description": "CT scan ordered post-surgery to assess for complications",
+        "available_phase": "postop",
+        "reveal": {
+          "result_summary": "Signs of a stroke evident",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates post-surgical complication",
+          "decision_impact": "Should have prompted immediate intervention",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents to hospital following a motor vehicle collision",
+        "duration": "Not specified in judgment",
+        "key_events": [
+          {
+            "event": "CT scan performed revealing aneurysms",
+            "timestamp": "August 2019",
+            "evidence_ids": [
+              "E001",
+              "E002"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "procedure",
+        "name": "Aneurysm Clipping Procedure",
+        "description": "Surgical procedure to clip aneurysms",
+        "duration": "Not specified in judgment",
+        "key_events": [
+          {
+            "event": "Procedure performed by Dr. Boulos",
+            "timestamp": "September 2019",
+            "evidence_ids": [
+              "E004"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "postop",
+        "name": "Post-operative Care",
+        "description": "Post-surgical monitoring and care",
+        "duration": "Several hours",
+        "key_events": [
+          {
+            "event": "Post-operative CT scan ordered showing stroke",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E006"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "procedure",
+        "clinical_context": "During aneurysm clipping procedure",
+        "prompt": "How should the surgeon respond to reduced blood flow to the brain?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Adjust the ligation clip to restore blood flow",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Restoring blood flow is critical to prevent ischemic complications"
+          },
+          {
+            "option_id": "B",
+            "description": "Do not adjust the ligation clip",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Believed stroke was a known complication and did not act"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant did not adjust the ligation clip",
+          "reasoning_stated": "Believed stroke was a known complication",
+          "evidence_ids": [
+            "E005",
+            "E008"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Adjust the ligation clip to restore blood flow",
+          "standard_of_care_basis": "Expert testimony indicated this was necessary to prevent stroke",
+          "evidence_ids": [
+            "E007",
+            "E012"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to adjust the clip led to reduced blood flow and stroke",
+          "what_should_have_happened": "Clip should have been adjusted to restore blood flow",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E007",
+            "E012"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient suffered a stroke post-surgery",
+        "severity": "PERMANENT_MODERATE_DISABILITY",
+        "long_term_effects": "Impairment in left arm and leg movement",
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "None",
+        "key_findings": [
+          "Stroke was a known complication of the procedure",
+          "No deviation from standard of care found"
+        ],
+        "evidence_ids": [
+          "E009",
+          "E010"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Failure to adjust ligation clip",
+        "counterfactual": "Adjusting the clip could have prevented the stroke",
+        "evidence_ids": [
+          "E007",
+          "E008"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "August 2019",
+        "event": "Patient transported to hospital and CT scan performed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001",
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "September 2019",
+        "event": "Aneurysm clipping procedure performed",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "CT Scan",
+        "date": "August 2019",
+        "result": "Two unruptured brain aneurysms",
+        "interpretation": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "test_name": "Post-operative CT Scan",
+        "date": "Date not specified in judgment",
+        "result": "Signs of stroke",
+        "interpretation": null,
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Stroke",
+        "when_made": "Post-operative period",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Aneurysm clipping procedure",
+        "date": "September 2019",
+        "provider": null,
+        "outcome": "Procedure completed",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Stroke",
+        "when_occurred": "Post-operative period",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to adjust ligation clip",
+        "against": "Dr. Boulos",
+        "found_proven": false,
+        "evidence_ids": [
+          "E005",
+          "E008"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "No deviation from standard of care",
+        "legal_significance": "Stroke was a known complication",
+        "evidence_ids": [
+          "E009",
+          "E010"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.08064516129032258,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-09 21:07:03.723712",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

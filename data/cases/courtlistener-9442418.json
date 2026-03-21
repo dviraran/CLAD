@@ -1,0 +1,439 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-9442418",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2023-11-17",
+  "url": "https://example.com/courtlistener-9442418",
+  "case_name": "Mobile Infirmary Association d/b/a Mobile Infirmary Medical Center and Gulf Health Hospitals, Inc., d/b/a Thomas Hospital v. Wayne Fagerstrom, individually and as administrator of the Estate of Sylvia Fagerstrom, (Appeal from Baldwin Circuit Court: CV-20-900001).",
+  "neutral_citation": null,
+  "clinical_domain": "ONCOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Mobile Infirmary Association d/b/a Mobile Infirmary Medical Center and Gulf Health Hospitals, Inc., d/b/a Thomas Hospital v. Wayne Fagerstrom, individually and as administrator of the Estate of Sylvia Fagerstrom, (Appeal from Baldwin Circuit Court: CV-20-900001).. Medical malpractice case involving oncology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Sylvia was 85 years old when doctors discovered a tumor on her brain. In October 2018, a surgeon at MIMC extracted the tumor, but Sylvia did not recover as hoped.",
+      "paragraph_ref": "23",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Sylvia developed a pressure injury on her sacrum while at MIMC. Sylvia's injury began as a small 'tear' but later progressed to a Stage 3 pressure ulcer during Sylvia's stay at MIMC.",
+      "paragraph_ref": "32",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "EXPERT_TESTIMONY",
+      "text": "The plaintiff's expert witness, Dr. David Seignious, testified that Sylvia's ulcer became infected and led to a bone infection, which caused sepsis that resulted in Sylvia's death.",
+      "paragraph_ref": "50",
+      "speaker": "Dr. David Seignious"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Other medical experts, including Dr. Donald Plummer, an infectious-disease specialist who personally treated Sylvia, testified that Sylvia's vital signs leading up to her death did not indicate that she had sepsis when she died.",
+      "paragraph_ref": "120",
+      "speaker": "Dr. Donald Plummer"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "LEGAL_FINDING",
+      "text": "We reverse the trial court's judgment and remand this matter for the entry of a judgment as a matter of law in favor of the defendants.",
+      "paragraph_ref": "212",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "COURT_REASONING",
+      "text": "The defendants assert that Dr. Seignious's opinion that Sylvia died from sepsis was based on mere speculation instead of 'objective data' obtained from medical testing.",
+      "paragraph_ref": "79",
+      "speaker": "Court analysis"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "MEDICAL_RECORD",
+      "text": "There is no mention on the death certificate of Sylvia's ulcer or sepsis, and Dr. Adkisson testified that, based on Sylvia's medical records, she was in fact not septic when she died.",
+      "paragraph_ref": "128",
+      "speaker": "Dr. Jimmy Adkisson"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "85 years",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Brain tumor discovered",
+      "history_of_present_illness": "Sylvia was 85 years old when doctors discovered a tumor on her brain. In October 2018, a surgeon at MIMC extracted the tumor, but Sylvia did not recover as hoped. She became malnourished and lethargic, had trouble speaking, and developed high blood pressure and a blood clot. She also suffered from chest pain, nausea, swelling in her lower extremities, toxic metabolic encephalopathy, and a recurring urinary-tract infection that was particularly resistant to antibiotics.",
+      "past_medical_history": [
+        "Brain tumor",
+        "Malnutrition",
+        "Lethargy",
+        "High blood pressure",
+        "Blood clot",
+        "Chest pain",
+        "Nausea",
+        "Swelling in lower extremities",
+        "Toxic metabolic encephalopathy",
+        "Recurring urinary-tract infection"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "general": "Lethargic, malnourished",
+          "neurological": "Trouble speaking",
+          "cardiovascular": "High blood pressure, blood clot",
+          "abdomen": "Not documented in judgment",
+          "extremities": "Swelling in lower extremities"
+        }
+      },
+      "initial_working_problem": "Post-operative complications following brain tumor extraction",
+      "known_constraints": null,
+      "initial_differential": [
+        "Post-operative complications",
+        "Infection",
+        "Pressure ulcer"
+      ],
+      "critical_findings": [
+        "Pressure injury on sacrum"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "LAB",
+        "name": "White Blood Cell Count",
+        "description": "Blood test to check for infection",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Increasing white-blood-cell count indicating unspecified infection",
+          "detailed_findings": null,
+          "clinical_significance": "Suggests infection but not specific to sepsis",
+          "decision_impact": "Should prompt further investigation into source of infection",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E195",
+          "E196",
+          "E197"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "CONSULT_NOTE",
+        "name": "Infectious Disease Consultation",
+        "description": "Consult with infectious disease specialist",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Consultation with Dr. Donald Plummer, indicating no signs of sepsis",
+          "detailed_findings": null,
+          "clinical_significance": "Vital signs did not indicate sepsis",
+          "decision_impact": "Supports decision against sepsis diagnosis",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E004",
+          "E120",
+          "E121"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Hospitalization",
+        "description": "Patient admitted for brain tumor surgery",
+        "duration": "Not specified in judgment",
+        "key_events": [
+          {
+            "event": "Brain tumor surgery performed",
+            "timestamp": "October 2018",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Development of Pressure Ulcer",
+        "description": "Patient develops pressure ulcer during hospital stay",
+        "duration": "Not specified in judgment",
+        "key_events": [
+          {
+            "event": "Pressure ulcer progresses to Stage 3",
+            "timestamp": "Not specified in judgment",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "decision",
+        "name": "Transfer and Further Deterioration",
+        "description": "Patient transferred to nursing home and then to Thomas Hospital",
+        "duration": "Not specified in judgment",
+        "key_events": [
+          {
+            "event": "Ulcer progresses to Stage 4 at Thomas Hospital",
+            "timestamp": "Not specified in judgment",
+            "evidence_ids": [
+              "E038",
+              "E039"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient developed a pressure ulcer while at MIMC",
+        "prompt": "How should the pressure ulcer be managed to prevent progression?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Implement frequent repositioning and pressure relief measures",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard care to prevent pressure ulcer progression"
+          },
+          {
+            "option_id": "B",
+            "description": "Continue current care without changes",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Insufficient to prevent ulcer progression"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant did not implement adequate repositioning",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E002",
+            "E035"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Frequent repositioning should have been implemented",
+          "standard_of_care_basis": "Expert evidence established repositioning as standard",
+          "evidence_ids": [
+            "E003",
+            "E004"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to prevent ulcer progression",
+          "what_should_have_happened": "Frequent repositioning and pressure relief",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E003",
+            "E004"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient died approximately three and one-half months after brain surgery",
+        "severity": "DEATH",
+        "long_term_effects": "Not applicable",
+        "evidence_ids": [
+          "E048",
+          "E049"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "0",
+        "key_findings": [
+          "Insufficient evidence of sepsis as cause of death",
+          "Reversal of trial court's judgment"
+        ],
+        "evidence_ids": [
+          "E005",
+          "E212"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Failure to establish sepsis as cause of death",
+        "counterfactual": "Objective data did not support sepsis diagnosis",
+        "evidence_ids": [
+          "E005",
+          "E212"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "October 2018",
+        "event": "Brain tumor surgery performed at MIMC",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "Not specified in judgment",
+        "event": "Pressure ulcer progresses to Stage 3",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "Not specified in judgment",
+        "event": "Ulcer progresses to Stage 4 at Thomas Hospital",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E038",
+          "E039"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "White Blood Cell Count",
+        "date": "Not specified in judgment",
+        "result": "Increasing count indicating unspecified infection",
+        "interpretation": null,
+        "evidence_ids": [
+          "E195",
+          "E196",
+          "E197"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Pressure ulcer",
+        "when_made": "During hospital stay",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Pressure ulcer management",
+        "date": "Not specified in judgment",
+        "provider": null,
+        "outcome": "Progression to Stage 4",
+        "evidence_ids": [
+          "E038",
+          "E039"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Pressure ulcer infection",
+        "when_occurred": "Not specified in judgment",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to prevent pressure ulcer progression",
+        "against": "MIMC and Thomas Hospital",
+        "found_proven": false,
+        "evidence_ids": [
+          "E005",
+          "E212"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Insufficient evidence of sepsis as cause of death",
+        "legal_significance": "Reversal of trial court's judgment",
+        "evidence_ids": [
+          "E005",
+          "E212"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.03153153153153153,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-16 14:30:31.105517",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

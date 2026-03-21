@@ -1,0 +1,403 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-10748251",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2025-12-05",
+  "url": "https://example.com/courtlistener-10748251",
+  "case_name": "Ira Weissman v. Sean Li, M.D.",
+  "neutral_citation": null,
+  "clinical_domain": "OBSTETRICS_GYNAECOLOGY",
+  "outcome_severity": "TEMPORARY_HARM",
+  "summary": {
+    "brief": "Ira Weissman v. Sean Li, M.D.. Medical malpractice case involving obstetrics gynaecology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "In August 2019, plaintiff Ira Weissman underwent a spinal surgical procedure known as minimally invasive lumbar decompression ('MILD').",
+      "paragraph_ref": "42",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Within two days after undergoing the surgery, plaintiff began to experience debilitating pain in both his right leg and foot.",
+      "paragraph_ref": "44",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Defendants retained two experts to rebut plaintiff's malpractice claims: a physician who is board-certified in anesthesiology and pain management, and a neurologist.",
+      "paragraph_ref": "56",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "EXPERT_TESTIMONY",
+      "text": "The defense expert in neurology, meanwhile, opined that the MILD procedure did not cause plaintiff's leg and foot problems, mainly because there was no evidence that the surgery penetrated the thecal sac, which contains the S1 nerve root.",
+      "paragraph_ref": "64",
+      "speaker": "Defense expert"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "LEGAL_FINDING",
+      "text": "The trial court appropriately granted defendants' motion for summary judgment.",
+      "paragraph_ref": "295",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "COURT_REASONING",
+      "text": "The court did not abuse its discretion in excluding Dr. Gerges's net opinion addressing causation.",
+      "paragraph_ref": "291",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Gerges testified that nerve injury is a recognized risk of the MILD procedure and emphasized the timing component.",
+      "paragraph_ref": "129",
+      "speaker": "Plaintiff's expert"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "FACTUAL_FINDING",
+      "text": "Plaintiff had further surgery in December 2021 that improved his condition, but continued to need a cane to walk.",
+      "paragraph_ref": "51",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Gerges has considerable training and experience in the fields of anesthesia and pain management.",
+      "paragraph_ref": "109",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "LEGAL_FINDING",
+      "text": "The court did not abuse its discretion in excluding the expert's assertions about causation.",
+      "paragraph_ref": "29",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "unknown",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Debilitating pain in right leg and foot",
+      "history_of_present_illness": "Within two days after undergoing minimally invasive lumbar decompression (MILD) surgery, the patient began to experience debilitating pain in both his right leg and foot.",
+      "past_medical_history": [
+        "Extensive spinal and neurological abnormalities"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "neurological": "Pain in right leg and foot, specific findings not detailed in judgment"
+        }
+      },
+      "initial_working_problem": "Post-operative pain following spinal surgery",
+      "known_constraints": null,
+      "initial_differential": [
+        "Nerve injury",
+        "Post-surgical inflammation"
+      ],
+      "critical_findings": [
+        "Debilitating pain in right leg and foot"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E002",
+        "E004"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "Electromyography (EMG)",
+        "description": "EMG of the right lower extremity",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Chronic Right L5 and acute superimposed on a chronic S1 radiculopathy",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates nerve irritation and potential injury",
+          "decision_impact": "Supports investigation into surgical cause",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E002",
+          "E242"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents with post-operative pain following spinal surgery",
+        "duration": "2 days post-surgery",
+        "key_events": [
+          {
+            "event": "Patient reports debilitating pain in right leg and foot",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Diagnostic Workup",
+        "description": "Evaluation of post-operative symptoms",
+        "duration": "Not specified in judgment",
+        "key_events": [
+          {
+            "event": "EMG performed showing S1 radiculopathy",
+            "timestamp": "10/16/2019",
+            "evidence_ids": [
+              "E242"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "procedure",
+        "clinical_context": "During MILD surgery, decision to operate at L5-S1 level",
+        "prompt": "Should the surgeon operate at the L5-S1 level without explicit consent?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Operate only on the consented L4-5 level",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Operating only on consented levels avoids potential legal and ethical issues."
+          },
+          {
+            "option_id": "B",
+            "description": "Operate on both L4-5 and L5-S1 levels",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Operating on unconsented levels can lead to complications and legal issues."
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant operated on both L4-5 and L5-S1 levels",
+          "reasoning_stated": "Defendant believed it was within the standard of care to modify the method based on intraoperative imaging.",
+          "evidence_ids": [
+            "E047",
+            "E059"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Should have operated only on the consented L4-5 level",
+          "standard_of_care_basis": "Consent and standard surgical protocols",
+          "evidence_ids": [
+            "E047",
+            "E059"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Operating on unconsented levels without clear indication or consent is a deviation from standard care.",
+          "what_should_have_happened": "The surgery should have been limited to the consented level unless further consent was obtained.",
+          "legal_standard_applied": "Standard of care as established by expert testimony and informed consent requirements.",
+          "evidence_ids": [
+            "E047",
+            "E059"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient continued to experience pain and required further surgery in December 2021",
+        "severity": "Chronic pain requiring cane for ambulation",
+        "long_term_effects": "Continued need for a cane to walk",
+        "evidence_ids": [
+          "E008"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "None",
+        "key_findings": [
+          "Plaintiff's expert testimony on causation was excluded as a net opinion",
+          "Summary judgment granted to defendants due to lack of admissible causation evidence"
+        ],
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Failure to provide admissible causation evidence",
+        "counterfactual": "Not applicable as no liability was found",
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "August 2019",
+        "event": "Patient underwent MILD procedure",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "Two days post-surgery",
+        "event": "Patient experienced debilitating pain in right leg and foot",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "10/16/2019",
+        "event": "EMG performed showing S1 radiculopathy",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E242"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "EMG",
+        "date": "10/16/2019",
+        "result": "Chronic Right L5 and acute superimposed on a chronic S1 radiculopathy",
+        "interpretation": null,
+        "evidence_ids": [
+          "E242"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "S1 radiculopathy",
+        "when_made": "10/16/2019",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E242"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Further surgery",
+        "date": "December 2021",
+        "provider": null,
+        "outcome": "Improved condition but continued need for a cane",
+        "evidence_ids": [
+          "E008"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Chronic pain in right leg and foot",
+        "when_occurred": "Post-surgery",
+        "severity": "Chronic",
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to obtain consent for L5-S1 surgery",
+        "against": "Dr. Sean Li",
+        "found_proven": false,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Plaintiff's expert testimony on causation was excluded as a net opinion",
+        "legal_significance": "Summary judgment granted to defendants",
+        "evidence_ids": [
+          "E005",
+          "E006"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "INFORMED_CONSENT"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.03322259136212625,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-09 19:36:43.819871",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

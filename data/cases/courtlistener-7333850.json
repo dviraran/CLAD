@@ -1,0 +1,499 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-7333850",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2014-11-05",
+  "url": "https://example.com/courtlistener-7333850",
+  "case_name": "Palmer v. Shawnee Mission Med. Ctr., Inc.",
+  "neutral_citation": null,
+  "clinical_domain": "OBSTETRICS_GYNAECOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Palmer v. Shawnee Mission Med. Ctr., Inc.. Medical malpractice case involving obstetrics gynaecology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Ms. Palmer's husband testified that he bases his intentional infliction of emotional distress claim on the misdiagnosis of false labor by the medical providers who treated Ms. Palmer.",
+      "paragraph_ref": "1",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "LEGAL_FINDING",
+      "text": "The court grants summary judgment against the intentional infliction of emotional distress claim asserted against defendant MAPS.",
+      "paragraph_ref": "1",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "LEGAL_FINDING",
+      "text": "The court grants summary judgment against plaintiffs' intentional infliction of emotional distress claim asserted against both defendants SMMC and MAPS because the summary judgment facts-viewed in plaintiffs' favor-present no triable issue whether defendants engaged in extreme and outrageous conduct.",
+      "paragraph_ref": "2",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "Viewing the summary judgment facts in plaintiffs' favor, they establish that SMMC staff diagnosed Ms. Palmer as having false labor and discharged her from the hospital. Less than two hours later, Ms. Palmer delivered her baby at home.",
+      "paragraph_ref": "2",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "LEGAL_FINDING",
+      "text": "The court also grants summary judgment against plaintiffs' intentional infliction of emotional distress claim for another, independent reason. Plaintiffs have failed to adduce any evidence that would permit a reasonable jury to find that any of the four plaintiffs sustained extreme and severe mental distress.",
+      "paragraph_ref": "3",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "Ms. Palmer concedes that she sustained no physical injuries whatsoever from giving birth to her son at home on November 5, 2014.",
+      "paragraph_ref": "3",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "Ms. Palmer testified that her son is normal and healthy.",
+      "paragraph_ref": "3",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "FACTUAL_FINDING",
+      "text": "Ms. Palmer has not sought any medical or psychological treatment as a result of the events of November 5, 2014.",
+      "paragraph_ref": "3",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "LEGAL_FINDING",
+      "text": "The court thus grants summary judgment against plaintiffs' intentional infliction of emotional distress claim for this second, independent reason.",
+      "paragraph_ref": "3",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "LEGAL_FINDING",
+      "text": "The court denies plaintiffs' summary judgment motion seeking judgment in their favor on their intentional infliction of emotional distress claim.",
+      "paragraph_ref": "3",
+      "speaker": "Judge's conclusion"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Cramps, vaginal bleeding, and pinkish fluid discharge",
+      "history_of_present_illness": "Ms. Palmer, 36.2 weeks pregnant, presented to SMMC's Birth Center with cramping, vaginal bleeding, and pinkish fluid discharge.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "obstetric": "Cervix dilated to fingertip width, 100% effaced, baby's head at -2 station"
+        }
+      },
+      "initial_working_problem": "Possible labor",
+      "known_constraints": null,
+      "initial_differential": [
+        "True labor",
+        "False labor"
+      ],
+      "critical_findings": [
+        "Pinkish fluid discharge",
+        "Cervical effacement"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E004",
+        "E010"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "LAB",
+        "name": "Fern and Nitrazine tests",
+        "description": "Tests to check for the presence of amniotic fluid",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Negative results",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates no rupture of membranes",
+          "decision_impact": "Contributed to diagnosis of false labor",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "IMAGING",
+        "name": "Ultrasound",
+        "description": "Ultrasound to assess fluid levels around the baby",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not performed",
+          "detailed_findings": null,
+          "clinical_significance": "Could have provided additional information on fetal status",
+          "decision_impact": "Potentially could have influenced diagnosis",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents to SMMC's Birth Center with symptoms",
+        "duration": "4 hours",
+        "key_events": [
+          {
+            "event": "Patient admitted for observation and assessment",
+            "timestamp": "2:26 a.m.",
+            "evidence_ids": [
+              "E004"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Assessment and Monitoring",
+        "description": "Patient monitored and assessed for labor",
+        "duration": "5 hours",
+        "key_events": [
+          {
+            "event": "Vital signs and vaginal exams performed",
+            "timestamp": "Throughout stay",
+            "evidence_ids": [
+              "E004"
+            ]
+          },
+          {
+            "event": "Fern and Nitrazine tests conducted",
+            "timestamp": "During assessment",
+            "evidence_ids": [
+              "E004"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "decision",
+        "name": "Discharge Decision",
+        "description": "Decision made to discharge patient",
+        "duration": "1 hour",
+        "key_events": [
+          {
+            "event": "Patient discharged with instructions",
+            "timestamp": "7:38 a.m.",
+            "evidence_ids": [
+              "E004"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient in Birth Center with symptoms suggestive of labor",
+        "prompt": "What should be the next step in management?",
+        "action_type": "ORDER_TEST",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Perform an ultrasound to assess fetal status",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Ultrasound could provide crucial information on fetal well-being and fluid levels"
+          },
+          {
+            "option_id": "B",
+            "description": "Rely on Fern and Nitrazine tests and discharge if negative",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Tests were deemed sufficient by staff, but may not fully assess labor status"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant relied on Fern and Nitrazine tests and discharged patient",
+          "reasoning_stated": "Tests indicated no rupture of membranes",
+          "evidence_ids": [
+            "E004"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "An ultrasound should have been performed",
+          "standard_of_care_basis": "Would provide a more comprehensive assessment of labor status",
+          "evidence_ids": [
+            "E004"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to perform ultrasound may have led to misdiagnosis of labor status",
+          "what_should_have_happened": "Ultrasound should have been used to confirm labor status",
+          "legal_standard_applied": "Standard of care requires comprehensive assessment in suspected labor",
+          "evidence_ids": [
+            "E004"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient delivered baby at home less than two hours after discharge",
+        "severity": "No physical injuries reported",
+        "long_term_effects": "None reported",
+        "evidence_ids": [
+          "E006",
+          "E007"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "None",
+        "key_findings": [
+          "No expert testimony to establish deviation from standard of care",
+          "No evidence of extreme and outrageous conduct"
+        ],
+        "evidence_ids": [
+          "E004",
+          "E006"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Failure to admit for observation",
+        "counterfactual": "Admitting for observation could have prevented home delivery",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "5 November 2014 2:26 a.m.",
+        "event": "Patient admitted to SMMC's Birth Center",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Patient presents with symptoms suggestive of preterm labor",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Nitrazine and Fern tests conducted",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Patient discharged with diagnosis of false labor",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Patient delivered baby at home",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Fern and Nitrazine tests",
+        "date": "5 November 2014",
+        "result": "Negative",
+        "interpretation": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "test_name": "Nitrazine test",
+        "date": "Date not specified in judgment",
+        "result": "Negative",
+        "interpretation": null,
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      {
+        "test_name": "Fern test",
+        "date": "Date not specified in judgment",
+        "result": "Negative",
+        "interpretation": null,
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "False labor",
+        "when_made": "5 November 2014",
+        "made_by": null,
+        "correct": false,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "diagnosis": "False labor",
+        "when_made": "Date not specified in judgment",
+        "made_by": null,
+        "correct": false,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Discharge with instructions",
+        "date": "5 November 2014",
+        "provider": null,
+        "outcome": "Patient discharged",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "None",
+        "when_occurred": "Not applicable",
+        "severity": "None",
+        "evidence_ids": [
+          "E006",
+          "E007"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to provide appropriate medical screening",
+        "against": "SMMC",
+        "found_proven": false,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "allegation": "Failure to admit for observation",
+        "against": "SMMC",
+        "found_proven": false,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "No EMTALA violation",
+        "legal_significance": "SMMC followed its protocol",
+        "evidence_ids": [
+          "E004",
+          "E010"
+        ]
+      },
+      {
+        "finding": "No extreme and outrageous conduct",
+        "legal_significance": "No liability for intentional infliction of emotional distress",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.8333333333333334,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-09 16:25:10.204328",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

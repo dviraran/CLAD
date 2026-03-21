@@ -1,0 +1,562 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-9506740",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2024-05-23",
+  "url": "https://example.com/courtlistener-9506740",
+  "case_name": "Estate of Crnjak v. Lake Hosp. Sys. Inc.",
+  "neutral_citation": null,
+  "clinical_domain": "PAEDIATRICS",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Estate of Crnjak v. Lake Hosp. Sys. Inc.. Medical malpractice case involving paediatrics.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "In November 2018, Rose Crnjak (\u201cRose\u201d) was a 68-year-old woman living alone in Eastlake, Ohio.",
+      "paragraph_ref": "22",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "On the night of Saturday, November 10, 2018, Rose called her primary care doctor, Dr. Winston Ho (\u201cDr. Ho\u201d) complaining of a possible urinary tract infection (\u201cUTI\u201d), left flank pain, and a fever.",
+      "paragraph_ref": "24",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "Rose was admitted to the ER at 7:33 p.m. on Saturday, November 10, 2018.",
+      "paragraph_ref": "27",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "Rose was diagnosed with a UTI and sent home with a prescription for oral antibiotics and instructions to follow up with Dr. Ho.",
+      "paragraph_ref": "29",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "Nine hours later, on Sunday afternoon, hospital staff at Lake West received the results of Rose\u2019s blood test and learned that Rose had a blood infection.",
+      "paragraph_ref": "33",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "No one contacted Rose to inform her that she had a blood infection or otherwise instruct her.",
+      "paragraph_ref": "35",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "Four days later, Rose was discovered dead in her bed at home, having died from sepsis as a result of her blood infection.",
+      "paragraph_ref": "36",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "LEGAL_FINDING",
+      "text": "The jury returned a verdict in favor of Crnjak against Dr. Adolph and his employer, Emergency Medicine Physicians of Lake County, Inc., finding that Dr. Adolph\u2019s \u201cfailure to notify of test results\u201d proximately caused Rose\u2019s death.",
+      "paragraph_ref": "362",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "LEGAL_FINDING",
+      "text": "The jury also returned a verdict against Lake Hospital, finding that Lake Hospital was negligent.",
+      "paragraph_ref": "365",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "LEGAL_FINDING",
+      "text": "The jury awarded Crnjak a verdict of $6 million and apportioned fault 50% to Dr. Adolph and 50% to Lake Hospital.",
+      "paragraph_ref": "371",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E011",
+      "type": "COURT_REASONING",
+      "text": "Based on the foregoing, we conclude that Crnjak had standing to commence this action.",
+      "paragraph_ref": "606",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E012",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Barlotta testified that the fact that no one followed up with Rose regarding these results constituted a breach in the standard of care.",
+      "paragraph_ref": "249",
+      "speaker": "Expert witness"
+    },
+    {
+      "evidence_id": "E013",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Barlotta presented expert testimony as to the relevant standard of care for Lake Hospital, as well as testimony that Lake Hospital breached this standard of care.",
+      "paragraph_ref": "715",
+      "speaker": "Expert witness"
+    },
+    {
+      "evidence_id": "E014",
+      "type": "LEGAL_FINDING",
+      "text": "Judgment affirmed.",
+      "paragraph_ref": "818",
+      "speaker": "Court conclusion"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "68 years",
+        "sex": "female",
+        "relevant_social_history": "Living alone in Eastlake, Ohio"
+      },
+      "chief_complaint": "Possible urinary tract infection, left flank pain, and fever",
+      "history_of_present_illness": "Patient called primary care doctor complaining of symptoms and was advised to go to the hospital.",
+      "past_medical_history": [
+        "Kidney infection in September 2018"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "abdomen": "Not documented in judgment"
+        }
+      },
+      "initial_working_problem": "Possible urinary tract infection",
+      "known_constraints": null,
+      "initial_differential": [
+        "UTI",
+        "Pyelonephritis"
+      ],
+      "critical_findings": [
+        "Left flank pain",
+        "Fever"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002",
+        "E003"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "LAB",
+        "name": "Blood Culture",
+        "description": "Blood test to check for infection",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Blood infection detected",
+          "detailed_findings": null,
+          "clinical_significance": "Indicates presence of sepsis",
+          "decision_impact": "Should prompt immediate notification and treatment",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "IMAGING",
+        "name": "CT Scan",
+        "description": "CT scan to check for kidney stones",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not performed",
+          "detailed_findings": null,
+          "clinical_significance": "Would have identified obstructive uropathy",
+          "decision_impact": "Could have altered management plan",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": [
+          "E012",
+          "E013"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Emergency Presentation",
+        "description": "Patient presents to ER with symptoms",
+        "duration": "7 hours",
+        "key_events": [
+          {
+            "event": "Patient admitted to ER",
+            "timestamp": "7:33 p.m. on November 10, 2018",
+            "evidence_ids": [
+              "E003"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Initial Workup",
+        "description": "Diagnostic tests and initial treatment",
+        "duration": "7 hours",
+        "key_events": [
+          {
+            "event": "Blood and urine samples taken",
+            "timestamp": "Evening of November 10, 2018",
+            "evidence_ids": [
+              "E003"
+            ]
+          },
+          {
+            "event": "Patient discharged with antibiotics",
+            "timestamp": "2:59 a.m. on November 11, 2018",
+            "evidence_ids": [
+              "E004"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "followup",
+        "name": "Post-Discharge Follow-up",
+        "description": "Critical lab results received but no follow-up action taken",
+        "duration": "4 days",
+        "key_events": [
+          {
+            "event": "Critical lab results received",
+            "timestamp": "Sunday afternoon, November 11, 2018",
+            "evidence_ids": [
+              "E005"
+            ]
+          },
+          {
+            "event": "Patient found deceased",
+            "timestamp": "November 15, 2018",
+            "evidence_ids": [
+              "E007"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient in ER with suspected UTI and sepsis",
+        "prompt": "What should be done after receiving critical lab results indicating a blood infection?",
+        "action_type": "ESCALATE_CARE",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Contact patient immediately and advise return to hospital",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard of care requires notifying patient of critical results"
+          },
+          {
+            "option_id": "B",
+            "description": "Do not contact patient and assume follow-up will occur",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Failure to notify patient of critical condition"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "No contact made with patient after critical results",
+          "reasoning_stated": "Assumed follow-up would occur",
+          "evidence_ids": [
+            "E006",
+            "E007"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Patient should have been contacted and advised to return",
+          "standard_of_care_basis": "Expert testimony on standard of care",
+          "evidence_ids": [
+            "E012",
+            "E013"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to notify patient of critical lab results",
+          "what_should_have_happened": "Patient should have been contacted immediately",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E012",
+            "E013"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient died from sepsis at home",
+        "severity": "FATAL",
+        "long_term_effects": "Not applicable",
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "6000000",
+        "key_findings": [
+          "Failure to notify patient of critical lab results",
+          "Causation established - lack of notification led to untreated sepsis"
+        ],
+        "evidence_ids": [
+          "E008",
+          "E009",
+          "E010"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to notify patient of positive blood culture",
+        "counterfactual": "Notification and treatment could have prevented sepsis",
+        "evidence_ids": [
+          "E012",
+          "E013"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "November 10, 2018 19:33",
+        "event": "Patient admitted to ER",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "timestamp": "November 11, 2018 02:59",
+        "event": "Patient discharged from ER",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "timestamp": "November 11, 2018",
+        "event": "Critical lab results received",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "timestamp": "November 15, 2018",
+        "event": "Patient found deceased",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      {
+        "timestamp": "November 10, 2018 19:33",
+        "event": "Patient admitted to ER",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Blood culture results received",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Blood Culture",
+        "date": "November 10, 2018",
+        "result": "Blood infection detected",
+        "interpretation": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "test_name": "Blood culture",
+        "date": "Date not specified in judgment",
+        "result": "Positive for blood infection",
+        "interpretation": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Blood infection",
+        "when_made": "November 11, 2018",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "diagnosis": "Urinary tract infection",
+        "when_made": "Date not specified in judgment",
+        "made_by": null,
+        "correct": false,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Oral antibiotics",
+        "date": "November 11, 2018",
+        "provider": null,
+        "outcome": "Ineffective due to lack of follow-up",
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "treatment": "Oral antibiotics",
+        "date": "Date not specified in judgment",
+        "provider": null,
+        "outcome": "Ineffective due to underlying sepsis",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Sepsis",
+        "when_occurred": "November 15, 2018",
+        "severity": "Fatal",
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      {
+        "complication": "Sepsis",
+        "when_occurred": "Date not specified in judgment",
+        "severity": "Fatal",
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to notify patient of critical lab results",
+        "against": "Lake Hospital and Dr. Adolph",
+        "found_proven": true,
+        "evidence_ids": [
+          "E008",
+          "E009"
+        ]
+      },
+      {
+        "allegation": "Failure to notify patient of positive blood culture",
+        "against": "Lake Hospital",
+        "found_proven": true,
+        "evidence_ids": [
+          "E008",
+          "E009"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Defendant breached duty of care",
+        "legal_significance": "Failure to notify patient of critical lab results",
+        "evidence_ids": [
+          "E012",
+          "E013"
+        ]
+      },
+      {
+        "finding": "Lake Hospital breached duty of care",
+        "legal_significance": "Failure to notify patient of critical lab results",
+        "evidence_ids": [
+          "E012",
+          "E013"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.016928657799274487,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-16 14:39:04.341960",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

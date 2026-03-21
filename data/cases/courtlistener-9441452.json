@@ -1,0 +1,476 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-9441452",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2023-11-16",
+  "url": "https://example.com/courtlistener-9441452",
+  "case_name": "Chance Gresser, individually and as parent, natural guardian, next of friendand on behalf of his daughter, C.G., and Erin Gresser, individually and asparent, natural guardian, next of friend and on behalf of her daughter, C.G. v. Banner Health, d/b/a North Colorado Medical Center",
+  "neutral_citation": null,
+  "clinical_domain": "OBSTETRICS_GYNAECOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Chance Gresser, individually and as parent, natural guardian, next of friendand on behalf of his daughter, C.G., and Erin Gresser, individually and asparent, natural guardian, next of friend and on behalf of her daughter, C.G. v. Banner Health, d/b/a North Colorado Medical Center. Medical malpractice case involving obstetrics gynaecology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "C.G. was born at Banner Health. Late on the second day of her life, C.G. was transferred to the neonatal intensive care unit (NICU), where she received antibiotics to treat a possible infection.",
+      "paragraph_ref": "84",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "The following morning, lab results confirmed that C.G. had an E. coli infection. By that time, C.G. had developed sepsis.",
+      "paragraph_ref": "87",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "As a result of the sepsis, she suffered irreversible neurological injuries, including cerebral palsy and cognitive and developmental delays.",
+      "paragraph_ref": "89",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "LEGAL_FINDING",
+      "text": "The jury found that Banner Health was negligent and that its negligence was the proximate cause of C.G.\u2019s injuries.",
+      "paragraph_ref": "95",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "LEGAL_FINDING",
+      "text": "The judgment is affirmed.",
+      "paragraph_ref": "1185",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Rimawi testified that he is qualified to offer expert testimony on causation.",
+      "paragraph_ref": "534",
+      "speaker": "Expert witness"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "COURT_REASONING",
+      "text": "The court did not abuse its discretion by finding that the Gressers had shown good cause for future economic damages.",
+      "paragraph_ref": "323",
+      "speaker": "Judge's analysis"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "FACTUAL_FINDING",
+      "text": "The jury awarded the Gressers damages totaling $27,647,274.23.",
+      "paragraph_ref": "97",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "FACTUAL_FINDING",
+      "text": "The court entered judgment in their favor in the amount of $39,845,196.83.",
+      "paragraph_ref": "62",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "COURT_REASONING",
+      "text": "The court properly applied the good cause and unfairness analysis when deciding to lift the cap.",
+      "paragraph_ref": "141",
+      "speaker": "Judge's analysis"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "2 days",
+        "sex": "female",
+        "relevant_social_history": "Not applicable for neonate"
+      },
+      "chief_complaint": "Signs of possible infection",
+      "history_of_present_illness": "C.G. was born at Banner Health and transferred to the NICU late on the second day of her life due to signs of possible infection.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Tachycardic per judgment, exact rate not stated",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "general": "Grunting and tachycardic, indicating distress"
+        }
+      },
+      "initial_working_problem": "Possible neonatal sepsis",
+      "known_constraints": null,
+      "initial_differential": [
+        "neonatal sepsis",
+        "other neonatal infections"
+      ],
+      "critical_findings": [
+        "Tachycardia",
+        "Grunting"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "LAB",
+        "name": "Blood Culture",
+        "description": "To identify bacterial infection",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "E. coli infection confirmed",
+          "detailed_findings": null,
+          "clinical_significance": "Confirms bacterial sepsis",
+          "decision_impact": "Should prompt immediate antibiotic treatment",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "CONSULT_NOTE",
+        "name": "Infectious Disease Consult",
+        "description": "Consult with infectious disease specialist",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not documented in judgment",
+          "detailed_findings": null,
+          "clinical_significance": "Would guide appropriate antibiotic therapy",
+          "decision_impact": "Could have led to timely treatment",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": []
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "C.G. presents with signs of infection",
+        "duration": "Late on the second day of life",
+        "key_events": [
+          {
+            "event": "Transfer to NICU",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Diagnostic Workup",
+        "description": "Lab tests and clinical assessment",
+        "duration": "Following morning",
+        "key_events": [
+          {
+            "event": "Lab results confirm E. coli infection",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "C.G. in NICU with signs of sepsis",
+        "prompt": "What should be the immediate management step?",
+        "action_type": "CHOOSE_MANAGEMENT",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Administer broad-spectrum antibiotics immediately",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard care for suspected neonatal sepsis"
+          },
+          {
+            "option_id": "B",
+            "description": "Monitor and wait for lab results before starting antibiotics",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Delay in treatment can worsen outcomes"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Delayed administration of antibiotics",
+          "reasoning_stated": "Defendant did not act on early signs of sepsis",
+          "evidence_ids": [
+            "E002",
+            "E004"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Immediate administration of antibiotics",
+          "standard_of_care_basis": "Expert testimony and standard neonatal care guidelines",
+          "evidence_ids": [
+            "E006"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Delay in treatment led to progression of sepsis",
+          "what_should_have_happened": "Immediate antibiotic treatment should have been initiated",
+          "legal_standard_applied": "Bolam/Bolitho test",
+          "evidence_ids": [
+            "E004",
+            "E006"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "C.G. suffered irreversible neurological injuries, including cerebral palsy, due to delayed treatment of sepsis.",
+        "severity": "PERMANENT_SEVERE_DISABILITY",
+        "long_term_effects": "Cerebral palsy, requiring lifelong care",
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "LIABILITY_FOUND",
+        "damages_awarded": "27647274.23",
+        "key_findings": [
+          "Breach of duty in failing to administer antibiotics timely",
+          "Causation established - earlier treatment would have prevented neurological damage"
+        ],
+        "evidence_ids": [
+          "E004",
+          "E008"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": true,
+        "causation_established": true,
+        "point_of_failure": "Failure to administer antibiotics within critical time window",
+        "counterfactual": "Timely antibiotics would have prevented complications",
+        "evidence_ids": [
+          "E004",
+          "E006"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "C.G. transferred to NICU",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "Date not specified in judgment",
+        "event": "Lab results confirm E. coli infection",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "8:30 p.m. on the second day",
+        "event": "C.G. shows signs of sepsis",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "Following morning",
+        "event": "Lab results confirm E. coli infection",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Blood Culture",
+        "date": "Date not specified in judgment",
+        "result": "E. coli infection confirmed",
+        "interpretation": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "test_name": "Blood culture",
+        "date": "Following morning",
+        "result": "E. coli infection confirmed",
+        "interpretation": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Neonatal sepsis",
+        "when_made": "Following morning after NICU transfer",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "diagnosis": "Neonatal sepsis",
+        "when_made": "Following morning",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Antibiotics",
+        "date": "Delayed",
+        "provider": null,
+        "outcome": "Neurological damage due to delay",
+        "evidence_ids": [
+          "E002",
+          "E003"
+        ]
+      },
+      {
+        "treatment": "Antibiotics",
+        "date": "After NICU admission",
+        "provider": null,
+        "outcome": "Delayed treatment led to complications",
+        "evidence_ids": [
+          "E002"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Irreversible neurological injuries",
+        "when_occurred": "Following sepsis",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "complication": "Irreversible neurological injuries",
+        "when_occurred": "Following delayed treatment",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E003"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to timely recognize and treat sepsis",
+        "against": "Banner Health",
+        "found_proven": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "allegation": "Failure to timely administer antibiotics",
+        "against": "Banner Health",
+        "found_proven": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "Banner Health was negligent",
+        "legal_significance": "Breach of duty and causation established",
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "finding": "Banner Health was negligent",
+        "legal_significance": "Causation established by expert testimony",
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR",
+      "MONITORING_FOLLOWUP"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.008424599831508003,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-09 14:23:37.623958",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

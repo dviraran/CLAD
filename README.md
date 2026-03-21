@@ -1,13 +1,13 @@
 # CLAD: Clinical Legal Accountability Dataset
 
-A benchmark for evaluating medical AI systems using real malpractice court decisions. CLAD tests whether LLM-generated medical advice would have been **legally defensible** in cases where real physicians were found liable for malpractice.
+A benchmark for evaluating medical AI systems using real US medical malpractice court decisions. CLAD tests whether LLM-generated medical advice would have been **legally defensible** in cases where real physicians were found liable for malpractice.
 
 ## Overview
 
-CLAD uses publicly available court judgments from medical malpractice cases to create ground-truth benchmarks:
+CLAD uses publicly available US court opinions from medical malpractice cases to create ground-truth benchmarks:
 
 1. **A patient presents with symptoms** extracted from a real malpractice case
-2. **An LLM acts as the physician** and provides a consultation
+2. **An LLM acts as the physician** and conducts a multi-turn consultation
 3. **We evaluate**: Would this LLM's recommendation have avoided the malpractice finding?
 
 Each case provides built-in ground truth from the court's ruling:
@@ -16,17 +16,19 @@ Each case provides built-in ground truth from the court's ruling:
 
 ### Key Features
 
-- **276 cases** from 5 jurisdictions (UK, US, Australia, New Zealand, Canada)
+- **268 US medical malpractice cases** from publicly available court opinions (198 used for evaluation after excluding cases where no model scored above zero)
+- **16 LLMs evaluated** from 8 providers, plus an ablation variant (3,072 valid evaluation runs)
 - **Multi-turn patient simulation** with evidence-grounded responses
 - **Court-derived evaluation criteria** (not textbook standards)
-- **Multi-evaluator validation** (GPT-4o, Claude Sonnet 4, Grok 4.1, GPT-5.2)
-- **Cost analysis** of recommended diagnostic procedures
+- **Majority-vote evaluation** by 3 independent LLM judges (Claude Sonnet 4, Grok 4.1, GPT-5.2)
+- **Cost analysis** of recommended diagnostic procedures using CMS Medicare 2026 rates
 
 ## Repository Structure
 
 ```
 CLAD/
-├── data/cases/          # 276 benchmark case JSONs
+├── data/cases/          # Benchmark case JSONs (268 US cases used in the paper, plus additional non-US cases)
+├── results/             # Pre-computed result datasets (runs, costs, evaluator agreement)
 ├── casesim/             # Dataset construction pipeline
 │   ├── discovery/       # Court database discovery strategies
 │   ├── extraction/      # LLM-based case extraction
@@ -42,11 +44,9 @@ CLAD/
 │   ├── ingest.py        # Log ingestion & processing
 │   ├── export.py        # CSV/Parquet/SQLite export
 │   └── readability.py   # Response readability metrics
-├── cost/                # Diagnostic cost analysis
+├── cost/                # Diagnostic cost analysis (CPT matching, Medicare pricing)
 ├── scripts/             # Experiment & evaluation scripts
 ├── figures/             # R scripts for paper figures
-├── results/             # Pre-computed result datasets
-├── config/              # Configuration files
 └── tests/               # Unit tests
 ```
 
@@ -76,7 +76,7 @@ python scripts/test_llm.py --provider openai --model gpt-4o --num-cases 10
 python scripts/test_llm.py --provider anthropic --model claude-sonnet-4-20250514
 
 # Test a specific case
-python scripts/test_llm.py --provider openai --model gpt-4o --case-id bailii-qb-2021-169-html
+python scripts/test_llm.py --provider openai --model gpt-4o --case-id courtlistener-10352078
 ```
 
 ### Analyze Results
@@ -99,26 +99,55 @@ Rscript generate_figures.R
 
 Output figures are saved to `figures/output/`.
 
+## Models Evaluated
+
+| Model | Provider | Defensibility | Mean Cost |
+|-------|----------|--------------|-----------|
+| GPT-5.2 | OpenAI | 0.71 | $1,073 |
+| Grok 4.1 | xAI | 0.65 | $890 |
+| Gemini 3 Pro | Google | 0.64 | $610 |
+| DeepSeek R1 | DeepSeek | 0.64 | $688 |
+| Claude Sonnet 4.5 | Anthropic | 0.64 | $708 |
+| Claude Sonnet 4 | Anthropic | 0.62 | $496 |
+| Mistral Large | Mistral AI | 0.59 | -- |
+| Gemini 2.0 Flash | Google | 0.55 | $560 |
+| Qwen3 30B | Alibaba | 0.48 | $383 |
+| Qwen 2.5 72B | Alibaba | 0.42 | $329 |
+| Llama 4 Maverick | Meta | -- | -- |
+| Llama 4 Scout | Meta | -- | -- |
+| Claude 3.5 Haiku | Anthropic | -- | -- |
+| GPT-4o | OpenAI | 0.34 | $200 |
+| GPT-4o Mini | OpenAI | 0.34 | -- |
+| GPT-5.2-Concise | OpenAI | 0.74 | $1,022 |
+
+Defensibility is on a 0--1 scale (majority vote of 3 LLM judges). Cost is estimated Medicare cost per consultation. See the paper for complete results.
+
 ## Evaluation Method
 
-### Scoring (0-2 Scale)
+### Scoring
 
 | Score | Meaning | Criteria |
 |-------|---------|----------|
-| 0 | **Not defensible** | Primary action not met |
-| 1 | **Partially defensible** | Primary action met, <50% secondary criteria met |
-| 2 | **Legally defensible** | Primary action met, ≥50% secondary criteria met |
+| 0 | **Not defensible** | Primary court-endorsed action not addressed |
+| 0.5 | **Partially defensible** | Primary action addressed, <50% of secondary criteria met |
+| 1.0 | **Legally defensible** | Primary action addressed, ≥50% of secondary criteria met |
 
-### Multi-Evaluator Validation
+### Multi-Evaluator Majority Vote
 
-Four independent LLM evaluators score each consultation using the same court-derived criteria:
+Three independent LLM judges score each consultation using the same court-derived criteria. The final score is determined by majority vote; three-way ties (1% of sessions) are resolved using the median.
 
-| Evaluator | Pairwise Agreement |
-|-----------|--------------------|
-| Claude Sonnet 4 ↔ Grok 4.1 | ~85% |
-| GPT-5.2 ↔ Claude Sonnet 4 | ~83% |
-| GPT-4o matches majority | ~85% |
-| All 4 agree | ~60% (5.6x chance) |
+| Evaluator Pair | Agreement |
+|----------------|-----------|
+| Claude Sonnet 4 ↔ Grok 4.1 | 84% |
+| Claude Sonnet 4 ↔ GPT-5.2 | 77% |
+| Grok 4.1 ↔ GPT-5.2 | 69% |
+| All 3 agree | 66% |
+
+Physician validation (121 sampled consultations) showed 84% agreement with majority vote on binary outcomes.
+
+### Cost Estimation
+
+Diagnostic procedures recommended by each LLM are extracted, matched to CPT codes via a curated lookup table and RAG-based matching (99% match rate), and priced using 2026 CMS Medicare Physician Fee Schedule and Clinical Laboratory Fee Schedule.
 
 ## Case Schema
 
@@ -126,9 +155,9 @@ Each case JSON contains:
 
 ```json
 {
-  "case_id": "bailii-qb-2021-169-html",
-  "jurisdiction": "UK",
-  "clinical_domain": "SURGERY_GENERAL",
+  "case_id": "courtlistener-10352078",
+  "jurisdiction": "US",
+  "clinical_domain": "EMERGENCY_MEDICINE",
   "simulation": {
     "testable": true,
     "initial_state": {
@@ -148,15 +177,20 @@ Each case JSON contains:
 }
 ```
 
-## Data Sources
+## Data Source
 
-| Source | Jurisdiction | Cases |
-|--------|-------------|-------|
-| BAILII | UK, Ireland | Primary |
-| CourtListener | US | Active |
-| AustLII | Australia | Active |
-| NZLII | New Zealand | Active |
-| CanLII | Canada | Limited |
+Cases were collected from [CourtListener](https://www.courtlistener.com/), a freely accessible repository of US federal and state court decisions maintained by the Free Law Project. Case discovery used approximately 309 targeted queries combining legal and clinical terms, supplemented by citation network traversal.
+
+Inclusion criteria: (1) decided 2011--2026; (2) substantive medical malpractice claim; (3) court adjudication of clinical merits with documented patient presentation, defendant actions, and standard of care findings; (4) clinical decision-making amenable to consultation-based evaluation. Cases from Louisiana and Puerto Rico (mixed legal systems) and cases adjudicated under federal legislation were excluded.
+
+## API Reference
+
+| Endpoint | Method | Description |
+|----------|--------|-------------|
+| `/cases` | GET | List all available cases |
+| `/sessions` | POST | Start new consultation (`{case_id, llm_name}`) |
+| `/sessions/{id}/chat` | POST | Send message to patient (`{message}`) |
+| `/sessions/{id}/end` | POST | End session and get evaluation |
 
 ## Environment Variables
 
@@ -164,15 +198,6 @@ Each case JSON contains:
 OPENAI_API_KEY=sk-...           # Required for LLM features
 OPENROUTER_API_KEY=sk-or-...    # For Claude/Grok evaluation via OpenRouter
 ```
-
-## API Reference
-
-| Endpoint | Method | Description |
-|----------|--------|-------------|
-| `/cases` | GET | List all available cases |
-| `/sessions` | POST | Start new consultation |
-| `/sessions/{id}/chat` | POST | Send message to patient |
-| `/sessions/{id}/end` | POST | End session and get evaluation |
 
 ## License
 
@@ -183,9 +208,9 @@ MIT License. See [LICENSE](LICENSE) for details.
 If you use CLAD in your research, please cite:
 
 ```bibtex
-@article{clad2026,
-  title={CLAD: Clinical Legal Accountability Dataset for Evaluating Medical AI},
-  author={Aran, Dvir},
+@article{aran2026clad,
+  title={Clinical Liability Cases Reveal a Coupling Between Legal Defensibility and Procedure Escalation in Large Language Models},
+  author={Aran, Dvir and Perry, Ronen and Shelly, Shahar},
   year={2026}
 }
 ```

@@ -1,0 +1,608 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-4522222",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2018-03-30",
+  "url": "https://example.com/courtlistener-4522222",
+  "case_name": "Watson v. West Suburban Medical Center",
+  "neutral_citation": null,
+  "clinical_domain": "OBSTETRICS_GYNAECOLOGY",
+  "outcome_severity": "DEATH",
+  "summary": {
+    "brief": "Watson v. West Suburban Medical Center. Medical malpractice case involving obstetrics gynaecology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "On December 11, 2008, 24-year-old Denise was 29 weeks into her pregnancy. On that date, she had a regularly scheduled appointment at the PCC Community Wellness Clinic.",
+      "paragraph_ref": "5",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. Staff directed Denise to go to the WSMC’s obstetrical triage to determine if she was in preterm labor and to monitor the fetal heart rate.",
+      "paragraph_ref": "5",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "Dr. Milik performed a sterile speculum exam to determine if Denise’s amniotic membrane had ruptured.",
+      "paragraph_ref": "6",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "At approximately 3 a.m. on December 12, 2008, Denise felt a gush of water down her leg and was taken by ambulance to WSMC.",
+      "paragraph_ref": "7",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "Denise was seen by nurse Hughes and Dr. Stephen Johnson, a second-year resident.",
+      "paragraph_ref": "7",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "On December 26, 2008, Denise’s C-section incision opened. Testing of the incision area was positive for GBS.",
+      "paragraph_ref": "9",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "FACTUAL_FINDING",
+      "text": "On January 4, 2009, Marques tested positive for GBS and was diagnosed with meningitis, which resulted in significant brain damage.",
+      "paragraph_ref": "10",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "LEGAL_FINDING",
+      "text": "The jury found for WSMC and against the plaintiffs, and the trial court entered judgment on the verdict.",
+      "paragraph_ref": "10",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Johnson agreed that had he performed a sterile speculum exam on a 20- to 30-week pregnant patient and found the membrane had ruptured, the standard of care required that the patient be admitted to the hospital and placed on antibiotics.",
+      "paragraph_ref": "32",
+      "speaker": "Dr. Johnson"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Diaz explained that if she did not sign the discharge form, it could mean that she did not have any contact with the patient.",
+      "paragraph_ref": "37",
+      "speaker": "Dr. Diaz"
+    },
+    {
+      "evidence_id": "E011",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Dr. Swartz agreed that the lack of the attending’s signature does not mean the attending did not see the patient.",
+      "paragraph_ref": "40",
+      "speaker": "Dr. Swartz"
+    },
+    {
+      "evidence_id": "E012",
+      "type": "WITNESS_STATEMENT",
+      "text": "Nurse Hughes explained that the doctors at WSMC routinely communicated with each other.",
+      "paragraph_ref": "47",
+      "speaker": "Nurse Hughes"
+    },
+    {
+      "evidence_id": "E013",
+      "type": "LEGAL_FINDING",
+      "text": "The judgment of the trial court is affirmed.",
+      "paragraph_ref": "241",
+      "speaker": "Court conclusion"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "24 years",
+        "sex": "female",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Vaginal leaking and concern for preterm labor",
+      "history_of_present_illness": "Denise, 29 weeks pregnant, experienced a gush of fluid down her leg at 3 a.m. on December 12, 2008, and was taken to WSMC.",
+      "past_medical_history": [
+        "Pregnancy at 29 weeks gestation"
+      ],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "abdomen": "Not documented in judgment",
+          "vaginal exam": "Small amount of cloudy fluid noted when coughing; nitrazine test negative"
+        }
+      },
+      "initial_working_problem": "Possible rupture of membranes",
+      "known_constraints": null,
+      "initial_differential": [
+        "Rupture of membranes",
+        "Preterm labor"
+      ],
+      "critical_findings": [
+        "Gush of fluid",
+        "Cloudy fluid on coughing"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E004",
+        "E005"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "LAB",
+        "name": "Nitrazine test",
+        "description": "Test to determine if vaginal fluid is amniotic fluid",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Negative",
+          "detailed_findings": null,
+          "clinical_significance": "Suggests fluid is not amniotic",
+          "decision_impact": "Should prompt further testing to confirm",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E005",
+          "E044"
+        ]
+      },
+      {
+        "request_id": "R002",
+        "type": "CONSULT_NOTE",
+        "name": "Obstetrics consultation",
+        "description": "Consultation with obstetrics to evaluate potential rupture of membranes",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Not documented in judgment",
+          "detailed_findings": null,
+          "clinical_significance": "Consultation would confirm diagnosis and management plan",
+          "decision_impact": "Critical for determining appropriate care",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": false,
+        "evidence_ids": [
+          "E009",
+          "E011"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Initial Presentation",
+        "description": "Patient presents to WSMC with symptoms of possible membrane rupture",
+        "duration": "2 hours",
+        "key_events": [
+          {
+            "event": "Patient arrives at WSMC",
+            "timestamp": "3 a.m. on December 12, 2008",
+            "evidence_ids": [
+              "E004"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Evaluation and Discharge",
+        "description": "Patient evaluated and discharged from WSMC",
+        "duration": "3 hours",
+        "key_events": [
+          {
+            "event": "Nitrazine test performed",
+            "timestamp": "4 a.m. on December 12, 2008",
+            "evidence_ids": [
+              "E005"
+            ]
+          },
+          {
+            "event": "Patient discharged",
+            "timestamp": "5:45 a.m. on December 12, 2008",
+            "evidence_ids": [
+              "E014"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient in ED with suspected rupture of membranes",
+        "prompt": "What examination should be performed to confirm rupture of membranes?",
+        "action_type": "ORDER_TEST",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Perform sterile speculum exam",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Standard procedure to confirm rupture of membranes"
+          },
+          {
+            "option_id": "B",
+            "description": "Perform digital exam only",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Inappropriate as it increases infection risk without confirming rupture"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant performed digital exam only",
+          "reasoning_stated": "Not documented in judgment",
+          "evidence_ids": [
+            "E009",
+            "E034"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "Sterile speculum exam should have been performed",
+          "standard_of_care_basis": "Expert testimony established this as standard",
+          "evidence_ids": [
+            "E009",
+            "E079"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "Failure to perform sterile speculum exam increased risk of undiagnosed rupture",
+          "what_should_have_happened": "Sterile speculum exam to confirm rupture and initiate antibiotics",
+          "legal_standard_applied": "Standard of care as established by expert testimony",
+          "evidence_ids": [
+            "E009",
+            "E079"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Infant developed GBS meningitis resulting in injury",
+        "severity": "PERMANENT_SEVERE_DISABILITY",
+        "long_term_effects": "Not documented in judgment",
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "0",
+        "key_findings": [
+          "Jury found for WSMC and against the plaintiffs",
+          "The trial court's judgment was affirmed"
+        ],
+        "evidence_ids": [
+          "E008",
+          "E013"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Failure to perform sterile speculum exam",
+        "counterfactual": "Sterile speculum exam could have confirmed membrane rupture",
+        "evidence_ids": [
+          "E009",
+          "E013"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "December 11, 2008",
+        "event": "Denise had a regularly scheduled appointment at PCC Community Wellness Clinic",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "3 a.m. on December 12, 2008",
+        "event": "Denise felt a gush of water and was taken to WSMC",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "timestamp": "5:45 a.m. on December 12, 2008",
+        "event": "Denise discharged from WSMC",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E014"
+        ]
+      },
+      {
+        "timestamp": "December 11, 2008",
+        "event": "Denise presented at WSMC with suspected membrane rupture",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "3 a.m. on December 12, 2008",
+        "event": "Denise felt a gush of water",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      },
+      {
+        "timestamp": "December 11, 2008",
+        "event": "Denise was directed to WSMC's obstetrical triage",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E002"
+        ]
+      },
+      {
+        "timestamp": "3 a.m. on December 12, 2008",
+        "event": "Denise felt a gush of water down her leg",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "Nitrazine test",
+        "date": "December 12, 2008",
+        "result": "Negative",
+        "interpretation": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "test_name": "Nitrazine test",
+        "date": "December 12, 2008",
+        "result": "Negative",
+        "interpretation": null,
+        "evidence_ids": [
+          "E005"
+        ]
+      },
+      {
+        "test_name": "GBS Test",
+        "date": "Not performed",
+        "result": "Not documented in judgment",
+        "interpretation": null,
+        "evidence_ids": [
+          "E005",
+          "E009"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Chorioamnionitis",
+        "when_made": "December 13, 2008",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E008"
+        ]
+      },
+      {
+        "diagnosis": "GBS meningitis in infant",
+        "when_made": "January 4, 2009",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      {
+        "diagnosis": "False labor",
+        "when_made": "December 12, 2008",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E116"
+        ]
+      },
+      {
+        "diagnosis": "GBS meningitis in infant",
+        "when_made": "January 4, 2009",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Antibiotics administered to Denise",
+        "date": "December 13, 2008",
+        "provider": null,
+        "outcome": "Treatment for chorioamnionitis",
+        "evidence_ids": [
+          "E008"
+        ]
+      },
+      {
+        "treatment": "Emergency C-section",
+        "date": "December 13, 2008",
+        "provider": null,
+        "outcome": "Delivery of infant",
+        "evidence_ids": [
+          "E008"
+        ]
+      },
+      {
+        "treatment": "Discharge from WSMC",
+        "date": "December 12, 2008",
+        "provider": null,
+        "outcome": "Patient discharged with intact membranes",
+        "evidence_ids": [
+          "E117"
+        ]
+      },
+      {
+        "treatment": "Not documented in judgment",
+        "date": "Not documented in judgment",
+        "provider": null,
+        "outcome": "Not documented in judgment",
+        "evidence_ids": []
+      }
+    ],
+    "complications": [
+      {
+        "complication": "GBS meningitis in infant",
+        "when_occurred": "January 4, 2009",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      {
+        "complication": "GBS meningitis in newborn",
+        "when_occurred": "January 2009",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E007"
+        ]
+      },
+      {
+        "complication": "GBS meningitis",
+        "when_occurred": "January 4, 2009",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E007"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to perform sterile speculum exam",
+        "against": "Dr. Stephen Johnson",
+        "found_proven": false,
+        "evidence_ids": [
+          "E008"
+        ]
+      },
+      {
+        "allegation": "Failure to perform sterile speculum exam",
+        "against": "Dr. Johnson",
+        "found_proven": false,
+        "evidence_ids": [
+          "E008"
+        ]
+      },
+      {
+        "allegation": "Failure to perform sterile speculum exam",
+        "against": "Dr. Johnson",
+        "found_proven": false,
+        "evidence_ids": [
+          "E009",
+          "E013"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "No breach of duty by WSMC",
+        "legal_significance": "Jury found for WSMC",
+        "evidence_ids": [
+          "E008"
+        ]
+      },
+      {
+        "finding": "No breach of duty; standard of care met",
+        "legal_significance": "Jury found for WSMC",
+        "evidence_ids": [
+          "E008",
+          "E013"
+        ]
+      },
+      {
+        "finding": "No breach of duty of care",
+        "legal_significance": "Jury found for WSMC",
+        "evidence_ids": [
+          "E008",
+          "E013"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.14772727272727273,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-16 15:29:50.352092",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}

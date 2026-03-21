@@ -1,0 +1,407 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "courtlistener-9400408",
+  "source": "CourtListener",
+  "jurisdiction": "US",
+  "court": "Unknown",
+  "decision_date": "2023-01-20",
+  "url": "https://example.com/courtlistener-9400408",
+  "case_name": "Dierl v. Birkin",
+  "neutral_citation": null,
+  "clinical_domain": "ONCOLOGY",
+  "outcome_severity": "PERMANENT_SEVERE_DISABILITY",
+  "summary": {
+    "brief": "Dierl v. Birkin. Medical malpractice case involving oncology.",
+    "clinical_synopsis": "Clinical case extracted from judgment.",
+    "legal_synopsis": "Legal proceedings and judgment."
+  },
+  "evidence_index": [
+    {
+      "evidence_id": "E001",
+      "type": "FACTUAL_FINDING",
+      "text": "Dierl was injured at a ski resort in Park City in February 2015 and was taken by ambulance to an emergency room.",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "FACTUAL_FINDING",
+      "text": "Birkin, a radiologist, interpreted Dierl\u2019s CT brain scan and reported it as a '[n]egative CT,' stating that '[t]here are no intracranial masses.'",
+      "paragraph_ref": "13",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "FACTUAL_FINDING",
+      "text": "Beginning in November 2015, Dierl began experiencing 'severe headaches, loss of balance, dizziness, speech impediment, memory loss[,] and loss of vision.'",
+      "paragraph_ref": "14",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "FACTUAL_FINDING",
+      "text": "The doctor 'informed Dierl that he had a large tumor in his brain and that was the reason for his suffering and loss of vision.'",
+      "paragraph_ref": "14",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "FACTUAL_FINDING",
+      "text": "In reality, the scan showed a tumor in Dierl\u2019s brain.",
+      "paragraph_ref": "9",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "FACTUAL_FINDING",
+      "text": "He suffered complications associated with the surgery, including permanent partial loss of vision and pituitary gland damage.",
+      "paragraph_ref": "9",
+      "speaker": "Court finding"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "LEGAL_FINDING",
+      "text": "The district court granted summary judgment to Birkin because Dierl offered no admissible expert testimony establishing that Birkin\u2019s failure to diagnose Dierl\u2019s brain tumor nine months earlier proximately caused Dierl\u2019s injuries.",
+      "paragraph_ref": "10",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Neurosurgeon 1 testified that the tumor grew by four millimeters\u2014from twenty to twenty-four millimeters\u2014over the course of the nine months following the February 2015 CT scan.",
+      "paragraph_ref": "19",
+      "speaker": "Neurosurgeon 1"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "EXPERT_TESTIMONY",
+      "text": "Neurosurgeon 2 had 'determined to a medical degree of certainty . . . [t]hat the failure of [Birkin] to diagnose the head CT scan and report the tumor in . . . Dierl\u2019s brain on February 12, 2015[,] allowed the tumor to enlarge.'",
+      "paragraph_ref": "36",
+      "speaker": "Neurosurgeon 2"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "LEGAL_FINDING",
+      "text": "Accordingly, the court granted summary judgment in Birkin\u2019s favor and dismissed Dierl\u2019s claim with prejudice.",
+      "paragraph_ref": "44",
+      "speaker": "Judge's conclusion"
+    },
+    {
+      "evidence_id": "E011",
+      "type": "COURT_REASONING",
+      "text": "The district court properly exercised its discretion in excluding the affidavits of both experts.",
+      "paragraph_ref": "106",
+      "speaker": "Judge's analysis"
+    }
+  ],
+  "simulation": {
+    "testable": true,
+    "testable_reason": null,
+    "initial_state": {
+      "patient_demographics": {
+        "age_at_presentation": "Not documented in judgment",
+        "sex": "unknown",
+        "relevant_social_history": "Not documented in judgment"
+      },
+      "chief_complaint": "Injury at ski resort",
+      "history_of_present_illness": "Patient was injured at a ski resort and taken by ambulance to an emergency room. A CT scan of the brain was performed.",
+      "past_medical_history": [],
+      "medications": [],
+      "allergies": [],
+      "physical_examination": {
+        "vital_signs": {
+          "blood_pressure": "Not documented in judgment",
+          "heart_rate": "Not documented in judgment",
+          "respiratory_rate": null,
+          "temperature": null,
+          "oxygen_saturation": null,
+          "other": null
+        },
+        "general_appearance": null,
+        "focused_exam": {
+          "neurological": "Not documented in judgment"
+        }
+      },
+      "initial_working_problem": "Head injury assessment",
+      "known_constraints": null,
+      "initial_differential": [
+        "Intracranial injury",
+        "Brain tumor"
+      ],
+      "critical_findings": [
+        "CT scan performed"
+      ],
+      "urgency_level": "URGENT",
+      "evidence_ids": [
+        "E001",
+        "E002"
+      ]
+    },
+    "requestables": [
+      {
+        "request_id": "R001",
+        "type": "IMAGING",
+        "name": "CT Brain Scan",
+        "description": "CT scan of the brain to assess for intracranial injury",
+        "available_phase": "workup",
+        "reveal": {
+          "result_summary": "Negative CT reported by radiologist, but actually showed a brain tumor",
+          "detailed_findings": null,
+          "clinical_significance": "Misinterpretation led to delayed diagnosis of brain tumor",
+          "decision_impact": "Should have prompted further investigation or referral",
+          "if_normal_would_mean": null,
+          "if_abnormal_means": null
+        },
+        "was_ordered_in_case": true,
+        "evidence_ids": [
+          "E002",
+          "E005"
+        ]
+      }
+    ],
+    "timeline_phases": [
+      {
+        "phase_id": "presentation",
+        "name": "Emergency Presentation",
+        "description": "Patient presents to ED after ski injury",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "CT brain scan performed",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E001"
+            ]
+          }
+        ]
+      },
+      {
+        "phase_id": "workup",
+        "name": "Initial Workup",
+        "description": "CT scan interpreted by radiologist",
+        "duration": "Not documented in judgment",
+        "key_events": [
+          {
+            "event": "CT scan reported as negative",
+            "timestamp": "Date not specified in judgment",
+            "evidence_ids": [
+              "E002"
+            ]
+          }
+        ]
+      }
+    ],
+    "decision_points": [
+      {
+        "decision_id": "D001",
+        "phase_id": "workup",
+        "clinical_context": "Patient in emergency room with head injury",
+        "prompt": "How should the CT brain scan be interpreted?",
+        "action_type": "ORDER_TEST",
+        "options": [
+          {
+            "option_id": "A",
+            "description": "Report CT scan as showing a brain tumor",
+            "is_defendant_choice": false,
+            "is_court_endorsed": true,
+            "clinical_reasoning": "Accurate interpretation of imaging findings"
+          },
+          {
+            "option_id": "B",
+            "description": "Report CT scan as negative",
+            "is_defendant_choice": true,
+            "is_court_endorsed": false,
+            "clinical_reasoning": "Misinterpretation of imaging findings"
+          }
+        ],
+        "actual_action_defendant": {
+          "option_id": "B",
+          "description": "Defendant reported CT scan as negative",
+          "reasoning_stated": "Defendant stated there were no intracranial masses",
+          "evidence_ids": [
+            "E002"
+          ]
+        },
+        "expected_action_court": {
+          "option_id": "A",
+          "description": "CT scan should have been reported as showing a brain tumor",
+          "standard_of_care_basis": "Expert evidence indicated tumor was visible",
+          "evidence_ids": [
+            "E005"
+          ]
+        },
+        "scoring_rubric": {
+          "max_score": 10,
+          "criteria": null
+        },
+        "explanation": {
+          "why_defendant_wrong": "The CT scan actually showed a tumor, which was not reported",
+          "what_should_have_happened": "The tumor should have been identified and reported",
+          "legal_standard_applied": "Standard of care requires accurate interpretation of imaging",
+          "evidence_ids": [
+            "E005"
+          ]
+        },
+        "is_malpractice_point": true,
+        "reasoning_error_type": null,
+        "reasoning_error_explanation": null,
+        "defendant_ignored_evidence": null,
+        "what_triggered_error": null,
+        "differential_at_decision": null
+      }
+    ],
+    "end_state": {
+      "patient_outcome": {
+        "description": "Patient developed severe symptoms due to tumor growth, requiring surgery",
+        "severity": "PERMANENT_MODERATE_DISABILITY",
+        "long_term_effects": "Permanent partial loss of vision and pituitary gland damage",
+        "evidence_ids": [
+          "E003",
+          "E006"
+        ]
+      },
+      "legal_outcome": {
+        "verdict": "NO_LIABILITY",
+        "damages_awarded": "None",
+        "key_findings": [
+          "Summary judgment granted due to lack of admissible expert testimony on causation"
+        ],
+        "evidence_ids": [
+          "E007",
+          "E010"
+        ]
+      },
+      "malpractice_determination": {
+        "breach_found": false,
+        "causation_established": false,
+        "point_of_failure": "Failure to diagnose brain tumor on CT scan",
+        "counterfactual": "Earlier diagnosis could have led to earlier treatment",
+        "evidence_ids": [
+          "E007",
+          "E010"
+        ]
+      }
+    }
+  },
+  "ground_truth": {
+    "factual_timeline": [
+      {
+        "timestamp": "February 2015",
+        "event": "Patient injured at ski resort and taken to emergency room",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E001"
+        ]
+      },
+      {
+        "timestamp": "November 2015",
+        "event": "Patient began experiencing severe symptoms",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E003"
+        ]
+      },
+      {
+        "timestamp": "December 2015",
+        "event": "Patient underwent surgery for brain tumor",
+        "actor": null,
+        "location": null,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "tests_performed": [
+      {
+        "test_name": "CT Brain Scan",
+        "date": "February 2015",
+        "result": "Misinterpreted as negative",
+        "interpretation": null,
+        "evidence_ids": [
+          "E002",
+          "E005"
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis": "Brain tumor",
+        "when_made": "November 2015",
+        "made_by": null,
+        "correct": true,
+        "evidence_ids": [
+          "E004"
+        ]
+      }
+    ],
+    "treatments": [
+      {
+        "treatment": "Craniotomy",
+        "date": "December 2015",
+        "provider": null,
+        "outcome": "Tumor resection with complications",
+        "evidence_ids": [
+          "E004",
+          "E006"
+        ]
+      }
+    ],
+    "complications": [
+      {
+        "complication": "Permanent partial loss of vision and pituitary gland damage",
+        "when_occurred": "Post-surgery",
+        "severity": "Severe",
+        "evidence_ids": [
+          "E006"
+        ]
+      }
+    ],
+    "allegations": [
+      {
+        "allegation": "Failure to diagnose brain tumor",
+        "against": "Dr. Barry M. Birkin",
+        "found_proven": false,
+        "evidence_ids": [
+          "E007",
+          "E010"
+        ]
+      }
+    ],
+    "court_findings": [
+      {
+        "finding": "No admissible expert testimony on causation",
+        "legal_significance": "Summary judgment granted for defendant",
+        "evidence_ids": [
+          "E007",
+          "E010"
+        ]
+      }
+    ],
+    "malpractice_analysis": null
+  },
+  "taxonomy_labels": {
+    "malpractice_categories": [
+      "DIAGNOSIS_ERROR"
+    ],
+    "consent_subtypes": null,
+    "diagnosis_subtypes": null,
+    "procedure_subtypes": null
+  },
+  "quality": {
+    "evidence_coverage_score": 0.10185185185185185,
+    "simulation_completeness": 0.7,
+    "decision_point_quality": null,
+    "missing_elements": null,
+    "warnings": null,
+    "validation_passed": true
+  },
+  "extraction_metadata": {
+    "extracted_at": "2026-03-09 18:23:39.545482",
+    "extractor_version": "0.2.0",
+    "model_used": "gpt-4o",
+    "extraction_passes": 3,
+    "human_reviewed": false
+  }
+}
