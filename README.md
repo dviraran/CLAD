@@ -201,7 +201,9 @@ OPENROUTER_API_KEY=sk-or-...    # For Claude/Grok evaluation via OpenRouter
 
 ## License
 
-MIT License. See [LICENSE](LICENSE) for details.
+© 2025–2026 Dvir Aran, Ronen Perry, Shahar Shelly.
+
+CLAD (code and data) is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0). You may share and adapt the material for non-commercial purposes with attribution. See [LICENSE](LICENSE) for the full terms, or https://creativecommons.org/licenses/by-nc/4.0/. For commercial-use licensing, contact the corresponding author.
 
 ## Citation
 
